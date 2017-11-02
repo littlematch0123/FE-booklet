@@ -1,0 +1,53 @@
+{
+  "title": "FE-booklet",
+  "description": "小火柴的前端小册子",
+  "author": "xiaohuochai",
+  "language": "zh-hans",
+  "links": {
+    "sidebar": {
+      "小火柴的博客": "https://webhuochai.com"
+    }
+  },
+  "styles":{
+    "website":"style.css"
+  },
+  "variables": {
+    "cdn": "://static.xiaohuochai.site/"
+  },
+
+  "plugins": [
+    "-lunr",
+    "-search",
+    "-sharing",
+    "expandable-chapters",
+    "search-plus",
+    "splitter",
+    "github",
+    "tbfed-pagefooter",
+    "changyan",
+    "back-to-top-button",
+    "favicon"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/littlematch0123/FE-booklet"
+    },
+    "tbfed-pagefooter": {
+      "copyright": "&copy; xiaohuochai",
+      "modify_label": "文件修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "changyan": {
+      "appid": "cytijbotP"
+    },
+    "favicon": {
+      "shortcut": "://static.xiaohuochai.site/icon/icon_32.ico",
+      "bookmark": "://static.xiaohuochai.site/icon/icon_32.ico",
+      "appleTouch": "://static.xiaohuochai.site/icon/icon_64.ico",
+      "appleTouchMore": {
+        "120x120": "://static.xiaohuochai.site/icon/icon_120.ico",
+        "180x180": "://static.xiaohuochai.site/icon/icon_180.ico"
+      }
+    }
+  }
+}
