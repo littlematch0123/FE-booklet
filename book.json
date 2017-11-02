@@ -19,14 +19,13 @@
     "-lunr",
     "-search",
     "-sharing",
+    "-livereload",
     "expandable-chapters",
     "search-plus",
     "splitter",
     "github",
     "tbfed-pagefooter",
-    "changyan",
-    "back-to-top-button",
-    "favicon"
+    "back-to-top-button"
   ],
   "pluginsConfig": {
     "github": {
@@ -36,18 +35,6 @@
       "copyright": "&copy; xiaohuochai",
       "modify_label": "文件修订时间：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
-    },
-    "changyan": {
-      "appid": "cytijbotP"
-    },
-    "favicon": {
-      "shortcut": "://static.xiaohuochai.site/icon/icon_32.ico",
-      "bookmark": "://static.xiaohuochai.site/icon/icon_32.ico",
-      "appleTouch": "://static.xiaohuochai.site/icon/icon_64.ico",
-      "appleTouchMore": {
-        "120x120": "://static.xiaohuochai.site/icon/icon_120.ico",
-        "180x180": "://static.xiaohuochai.site/icon/icon_180.ico"
-      }
     }
   }
 }
