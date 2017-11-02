@@ -18,14 +18,14 @@
 
 <div class="cnblogs_code">
 <pre>&lt;div&gt;
-    &lt;a href="</span>http://www.baidu.com" accesskey="b"&gt;百度&lt;/a&gt;
-    &lt;a href="http://www.taobao.com" accesskey="a"&gt;阿里&lt;/a&gt;
-    &lt;a href="http://www.qq.com" accesskey="t"&gt;腾讯&lt;/a&gt;    
+    &lt;a href="</span>https://www.baidu.com" accesskey="b"&gt;百度&lt;/a&gt;
+    &lt;a href="https://www.taobao.com" accesskey="a"&gt;阿里&lt;/a&gt;
+    &lt;a href="https://www.qq.com" accesskey="t"&gt;腾讯&lt;/a&gt;    
     &lt;p&gt;快捷键(alt+b)可以跳转到百度；快捷键(alt+a)可以跳转到阿里；快捷键(alt+t)可以跳转到腾讯&lt;/p&gt;
 &lt;/div&gt;</pre>
 </div>
 
-<iframe src="http://iframe.xiaohuochai.site/html/16attr/h1.html" frameborder="0" width="320" height="155"></iframe>
+<iframe src="https://iframe.xiaohuochai.site/html/16attr/h1.html" frameborder="0" width="320" height="155"></iframe>
 
 ### class
 
@@ -43,7 +43,7 @@
 
 　　值：ltr/rtl/auto
 
-<iframe src="http://iframe.xiaohuochai.site/html/16attr/h22.html" frameborder="0" width="300" height="200"></iframe>
+<iframe src="https://iframe.xiaohuochai.site/html/16attr/h22.html" frameborder="0" width="300" height="200"></iframe>
 
 ### id
 
@@ -51,7 +51,7 @@
 
 　　注意：若浏览器中出现多个id名的情况，CSS样式对所以该id名的元素都生效，但javascript脚本仅对第一个出现该id名的元素生效
 
-![id](http://static.xiaohuochai.site/blog/HTML_grammar_id.gif)
+![id](https://static.xiaohuochai.site/blog/HTML_grammar_id.gif)
 
 ### lang
 
@@ -108,19 +108,19 @@ zh-TW 中文 (繁体, 台湾)     对应 cmn-Hant-TW 普通话 (繁体, 台湾)
 
 <div class="cnblogs_code">
 <pre>&lt;div&gt;
-    &lt;a href="http://www.baidu.com" tabindex="3"&gt;百度&lt;/a&gt;
-    &lt;a href="http://www.taobao.com" tabindex="2"&gt;阿里&lt;/a&gt;
-    &lt;a href="http://www.qq.com" tabindex="1"&gt;腾讯&lt;/a&gt;   
+    &lt;a href="https://www.baidu.com" tabindex="3"&gt;百度&lt;/a&gt;
+    &lt;a href="https://www.taobao.com" tabindex="2"&gt;阿里&lt;/a&gt;
+    &lt;a href="https://www.qq.com" tabindex="1"&gt;腾讯&lt;/a&gt;   
 &lt;/div&gt;</pre>
 </div>
 
-<iframe src="http://iframe.xiaohuochai.site/html/16attr/h3.html" frameborder="0" width="300" height="200"></iframe>
+<iframe src="https://iframe.xiaohuochai.site/html/16attr/h3.html" frameborder="0" width="300" height="200"></iframe>
 
 ### title
 
 　　作用：规定关于元素的额外信息，鼠标移到元素上时显示一段提示文本
 
-![title](http://static.xiaohuochai.site/blog/HTML_grammar_title.gif)　
+![title](https://static.xiaohuochai.site/blog/HTML_grammar_title.gif)　
 
 &nbsp;
 
@@ -135,13 +135,13 @@ zh-TW 中文 (繁体, 台湾)     对应 cmn-Hant-TW 普通话 (繁体, 台湾)
 　　注意：设置document.designMode ='on'时，页面的任意位置都可以编辑；使用contenteditable ='true'则只对具体元素和其包含的元素起作用
 
 　　移动端：移动端ios5以及android3之后才支持该属性
-![contenteditable](http://static.xiaohuochai.site/blog/HTML_grammar_contenteditable.gif)
+![contenteditable](https://static.xiaohuochai.site/blog/HTML_grammar_contenteditable.gif)
 
-<iframe src="http://iframe.xiaohuochai.site/html/16attr/h4.html" frameborder="0" width="300" height="200"></iframe>
+<iframe src="https://iframe.xiaohuochai.site/html/16attr/h4.html" frameborder="0" width="300" height="200"></iframe>
 
 　　&lt;演示框&gt;</span>选中文字后，点击下列相应属性值可进行演示</span>
 
-<iframe src="http://iframe.xiaohuochai.site/html/16attr/h5.html" frameborder="0" width="300" height="200"></iframe>
+<iframe src="https://iframe.xiaohuochai.site/html/16attr/h5.html" frameborder="0" width="300" height="200"></iframe>
 
 ### contextmenu(没有浏览器支持)
 
