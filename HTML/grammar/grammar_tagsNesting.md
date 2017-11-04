@@ -8,7 +8,7 @@
 
  　　html5出现之前，经常把元素按照block、inline、inline-block来区分。在html5中，元素不再按照display属性来区分，而是按照[内容模型](http://www.cnblogs.com/xiaohuochai/p/5046584.html)来区分，分为元数据型(metadata content)、区块型(sectioning content)、标题型(heading content)、文档流型(flow content)、语句型(phrasing content)、内嵌型(embedded content)、交互型(interactive content)。元素不属于任何一个类别，被称为穿透的；元素可能属于不止一个类别，称为混合的。
 
-![](http://images2015.cnblogs.com/blog/740839/201604/740839-20160426090647392-1781385917.png)
+![标签嵌套](http://images2015.cnblogs.com/blog/740839/201604/740839-20160426090647392-1781385917.png)
 
 &nbsp;
 
@@ -70,31 +70,31 @@
 <pre>&lt;aside&gt;、&lt;nav&gt;</pre>
 </div>
 
-<span style="line-height: 1.5;">　　【1.2】子元素是流元素，但不包括&lt;table&gt;元素</span>
+　　【1.2】子元素是流元素，但不包括&lt;table&gt;元素
 
 <div class="cnblogs_code">
 <pre>&lt;caption&gt;</pre>
 </div>
 
-<span style="line-height: 1.5;">　　【1.3】子元素是流元素，但不包括&lt;form&gt;元素</span>
+　　【1.3】子元素是流元素，但不包括&lt;form&gt;元素
 
 <div class="cnblogs_code">
 <pre>&lt;form&gt;</pre>
 </div>
 
-<span style="line-height: 1.5;">　　【1.4】子元素是流元素，但不包括&lt;header&gt;、&lt;footer&gt;、&lt;main&gt;元素</span>
+　　【1.4】子元素是流元素，但不包括&lt;header&gt;、&lt;footer&gt;、&lt;main&gt;元素
 
 <div class="cnblogs_code">
 <pre>&lt;header&gt;、&lt;footer&gt;、&lt;main&gt;</pre>
 </div>
 
-<span style="line-height: 1.5;">　　【1.5】子元素是流元素，但不包括&lt;header&gt;、&lt;footer&gt;、区块型元素(sectioning content)、标题型元素(heading content)</span>
+　　【1.5】子元素是流元素，但不包括&lt;header&gt;、&lt;footer&gt;、区块型元素(sectioning content)、标题型元素(heading content)
 
 <div class="cnblogs_code">
 <pre>&lt;dt&gt;、&lt;th&gt;</pre>
 </div>
 
-<span style="line-height: 1.5;">　　【1.6】子元素是流元素，但不包括&lt;header&gt;、&lt;footer&gt;、&lt;address&gt;、区块型元素(sectioning content)、标题型元素(heading content)</span>
+　　【1.6】子元素是流元素，但不包括&lt;header&gt;、&lt;footer&gt;、&lt;address&gt;、区块型元素(sectioning content)、标题型元素(heading content)
 
 <div class="cnblogs_code">
 <pre>&lt;address&gt;</pre>
@@ -242,7 +242,6 @@
 
  　　关于每个元素的详细嵌套规则，上部分已经详细介绍。这部分主要对常用标签的嵌套规则进行总结
 
-　　[注意]将鼠标移动到深灰色背景的文字上，title将显示该元素所包含的标签
 
 【1】&lt;h1&gt;、&lt;h2&gt;、&lt;h3&gt;、&lt;h4&gt;、&lt;h5&gt;、&lt;h6&gt;、&lt;p&gt;的子元素是<span style="background-color: #888888;" title="a abbr area (如果它是map元素的子级) audio b bdi bdo br button canvas cite code data datalist del dfn em embed i iframe img input ins kbd keygen label map mark math meter noscript object output progress q ruby s samp script select small span strong sub sup svg template textarea time u var video wbr text">语句型元素</span>
 
