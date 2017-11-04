@@ -1,6 +1,5 @@
 _book/
-temp/
+
 node_modules/
-img/
 dist/
 gulpfile.js
