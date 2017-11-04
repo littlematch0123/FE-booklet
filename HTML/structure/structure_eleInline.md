@@ -258,6 +258,7 @@
 ### 文字方向
 
 &lt;bdi&gt;　　 忽略周围文字方向的文字
+
 &lt;bdo&gt;　　	覆盖两种方向的设置，允许显式设置方向，并覆盖所有其他当前方向
 
 <div class="cnblogs_code">
@@ -269,9 +270,13 @@
 ### 代码
 
 &lt;code&gt; 　　　&nbsp;表示计算机代码
+
 &lt;kbd&gt;	　　　 &nbsp;定义键盘码
+
 &lt;samp&gt;	　　 &nbsp; 定义计算机例子代码
+
 &lt;tt&gt;	　　　　 &nbsp;定义打字机代码
+
 &lt;var&gt;　　　　	定义变量
 
 <div class="cnblogs_code">
