@@ -28,6 +28,8 @@ gulp.task('move',function(){
   .pipe(gulp.dest('dist'));
   gulp.src('_book/gitbook/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
+  gulp.src('_book/gitbook/images/*')
+    .pipe(gulp.dest('dist/gitbook/images'))  
 })
 gulp.task('concat',function(){
   gulp.src('_book/**/*.js')
@@ -57,4 +59,4 @@ gulp.task('html', ['merge'],function () {
 gulp.task('connect', function () {
   connect.server();
 });
-gulp.task('default',['html','concat','move']);
+gulp.task('default',['html','concat','move','connect']);
