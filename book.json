@@ -38,12 +38,12 @@
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "favicon": {
-      "shortcut": "https://static.xiaohuochai.site/icon/icon_32.ico",
-      "bookmark": "https://static.xiaohuochai.site/icon/icon_32.ico",
-      "appleTouch": "https://static.xiaohuochai.site/icon/icon_64.ico",
+      "shortcut": "icon/icon_32.ico",
+      "bookmark": "icon/icon_32.ico",
+      "appleTouch": "icon/icon_64.ico",
       "appleTouchMore": {
-        "120x120": "https://static.xiaohuochai.site/icon/icon_120.ico",
-        "180x180": "https://static.xiaohuochai.site/icon/icon_180.ico"
+        "120x120": "icon/icon_120.ico",
+        "180x180": "icon/icon_180.ico"
       }
     }    
   }

@@ -8,19 +8,22 @@ var htmlmin = require('gulp-htmlmin');
 
 
 
-gulp.task('merge',function () {
-   gulp.src(['_book/HTML/**/*.html'])
+gulp.task('merge1',function () {
+  return gulp.src(['_book/HTML/**/*.html'])
     .pipe(merge({
       '../../base.css': ['../../**/*.css'],
       '../../base.js': ['../../**/*.js'],
     }))
     .pipe(gulp.dest('dist/HTML')); 
-   gulp.src(['_book/*.html'])
-     .pipe(merge({
-       'base.css': ['**/*.css'],
-       'base.js': ['**/*.js'],
-     }))
-     .pipe(gulp.dest('dist'));     
+
+});
+gulp.task('merge2',function () {
+  return gulp.src(['_book/*.html'])
+    .pipe(merge({
+      'base.css': ['**/*.css'],
+      'base.js': ['**/*.js'],
+    }))
+    .pipe(gulp.dest('dist'));     
 });
 
 gulp.task('move',function(){
@@ -30,7 +33,9 @@ gulp.task('move',function(){
   .pipe(gulp.dest('dist/fonts'))
   gulp.src('_book/gitbook/images/*')
     .pipe(gulp.dest('dist/gitbook/images'))  
-})
+  gulp.src('./icon/*')
+    .pipe(gulp.dest('dist/icon'))      
+});
 gulp.task('concat',function(){
   gulp.src('_book/**/*.js')
     .pipe(concat('base.js'))
@@ -40,8 +45,8 @@ gulp.task('concat',function(){
     .pipe(concat('base.css'))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(gulp.dest('dist'));
-})
-gulp.task('html', ['merge'],function () {
+});
+gulp.task('html',['merge1','merge2'],function () {
   var options = {
     removeComments: true,//清除HTML注释
     collapseWhitespace: true,//压缩HTML
