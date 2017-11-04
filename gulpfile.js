@@ -4,20 +4,25 @@ var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var merge = require('gulp-merge-link');
 var connect = require('gulp-connect');
-gulp.task('merge', function () {
-  gulp.src(['_book/HTML/**/*.html'])
+var htmlmin = require('gulp-htmlmin');
+
+
+
+gulp.task('merge',function () {
+   gulp.src(['_book/HTML/**/*.html'])
     .pipe(merge({
       '../../base.css': ['../../**/*.css'],
       '../../base.js': ['../../**/*.js'],
     }))
-    .pipe(gulp.dest('dist/html/'));
-  gulp.src(['_book/*.html'])
-    .pipe(merge({
-      'base.css': ['**/*.css'],
-      'base.js': ['**/*.js'],
-    }))
-    .pipe(gulp.dest('dist'));    
+    .pipe(gulp.dest('dist/HTML')); 
+   gulp.src(['_book/*.html'])
+     .pipe(merge({
+       'base.css': ['**/*.css'],
+       'base.js': ['**/*.js'],
+     }))
+     .pipe(gulp.dest('dist'));     
 });
+
 gulp.task('move',function(){
   gulp.src('_book/search_plus_index.json')
   .pipe(gulp.dest('dist'));
@@ -34,7 +39,22 @@ gulp.task('concat',function(){
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(gulp.dest('dist'));
 })
+gulp.task('html', ['merge'],function () {
+  var options = {
+    removeComments: true,//清除HTML注释
+    collapseWhitespace: true,//压缩HTML
+    collapseBooleanAttributes: true,//省略布尔属性的值 <input checked="true"/> ==> <input />
+    removeEmptyAttributes: true,//删除所有空格作属性值 <input id="" /> ==> <input />
+    removeScriptTypeAttributes: true,//删除<script>的type="text/javascript"
+    removeStyleLinkTypeAttributes: true,//删除<style>和<link>的type="text/css"
+    minifyJS: true,//压缩页面JS
+    minifyCSS: true//压缩页面CSS
+  };  
+  gulp.src('dist/**/*.html')
+    .pipe(htmlmin(options))
+    .pipe(gulp.dest('dist'));
+});
 gulp.task('connect', function () {
   connect.server();
 });
-gulp.task('default',['merge','concat','connect','move']);
+gulp.task('default',['html','concat','move']);

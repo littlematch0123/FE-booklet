@@ -23,7 +23,7 @@
 &lt;/details&gt;    </pre>
 </div>
 
-<iframe src="http://demo.xiaohuochai.site/html/struc/s1.html" frameborder="0" width="300" height="100"></iframe>
+<iframe src="https://demo.xiaohuochai.site/html/struc/s1.html" frameborder="0" width="300" height="100"></iframe>
 
 &nbsp;
 
@@ -58,4 +58,4 @@ oBtn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe src="http://demo.xiaohuochai.site/html/struc/s2.html" frameborder="0" width="300" height="100"></iframe>
+<iframe src="https://demo.xiaohuochai.site/html/struc/s2.html" frameborder="0" width="300" height="100"></iframe>
