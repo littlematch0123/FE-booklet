@@ -25,7 +25,8 @@
     "splitter",
     "github",
     "tbfed-pagefooter",
-    "back-to-top-button"
+    "back-to-top-button",
+    "favicon"
   ],
   "pluginsConfig": {
     "github": {
@@ -35,6 +36,15 @@
       "copyright": "&copy; xiaohuochai",
       "modify_label": "文件修订时间：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
-    }
+    },
+    "favicon": {
+      "shortcut": "https://static.xiaohuochai.site/icon/icon_32.ico",
+      "bookmark": "https://static.xiaohuochai.site/icon/icon_32.ico",
+      "appleTouch": "https://static.xiaohuochai.site/icon/icon_64.ico",
+      "appleTouchMore": {
+        "120x120": "https://static.xiaohuochai.site/icon/icon_120.ico",
+        "180x180": "https://static.xiaohuochai.site/icon/icon_180.ico"
+      }
+    }    
   }
 }
