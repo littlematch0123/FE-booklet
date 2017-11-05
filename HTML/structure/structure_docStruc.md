@@ -10,7 +10,7 @@
 &emsp;&emsp;`<html>`元素代表HTML文档的根(root)，其他所有元素都是该元素的后代。`<html>`与`</html>`标签限定了文档的开始点和结束点，在它们之间是文档的头部和主体。文档的头部由`<head>`标签定义，而主体由`<body>`标签定义
 
 
-<div><img src="https://pic.xiaohuochai.site/blog/HTML_structure_docStruc.jpg" alt="#"></div>
+<div><img src="{{book.pic}}/blog/HTML_structure_docStruc.jpg" alt="#"></div>
 
 
 【xmlns】
