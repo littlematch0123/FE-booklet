@@ -26,7 +26,8 @@
             * [图片](HTML/tags/tags_img.md)  	
             * [列表](HTML/tags/tags_list.md)  	
             * [框架](HTML/tags/tags_frame.md)  	
-            * [表格](HTML/tags/tags_table.md)  	
+            * [表格](HTML/tags/tags_table.md)  
+            * [DOM操作表格](HTML/tags/tags_DOMTable.md)	
         2.  多媒体	
             * [音频和视频](HTML/tags/tags_img.md)  	
             * [audio和video](HTML/tags/tags_img.md)  	

@@ -166,5 +166,5 @@ document.body.appendChild(table);
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.value}}/html/table/t88.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="{{book.cdn}}/html/table/t88.html" frameborder="0" width="320" height="240"></iframe>
 
