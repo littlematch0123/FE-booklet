@@ -296,11 +296,11 @@
 
 &emsp;&emsp;下面展示的是一个需要1秒来下载，以及1秒来解析执行其他操作的例子，整个页面载入花了大约2秒钟
 
-<div><img src="{{book.pic}}/blog/HTML_structure_docHead_common.png" alt="common"></div>
+<div><img src="https://pic.xiaohuochai.site/blog/HTML_structure_docHead_common.png" alt="common"></div>
 
 
 
 &emsp;&emsp;同样的例子，但这次我们指定了script的defer属性.因为当defer脚本下载的时候，其他操作可以并行执行，所以大概快了1倍
 
-<div><img src="{{book.pic}}/blog/HTML_structure_docHead_defer.png" alt="defer"></div>
+<div><img src="https://pic.xiaohuochai.site/blog/HTML_structure_docHead_defer.png" alt="defer"></div>
 
