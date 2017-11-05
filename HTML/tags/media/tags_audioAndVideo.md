@@ -4,7 +4,7 @@
 
 &nbsp;　 &nbsp;以视频文件举例，它包含了音频轨道、视频轨道和其他一些元数据(封面、标题、子标题、字幕等)
 
-![audioAndVideo](https://pic.xiaohuochai.site/HTML_tags_audioAndVideo.jpg)
+![audioAndVideo](https://pic.xiaohuochai.site/blog/HTML_tags_audioAndVideo.jpg)
 
 ## HTML元素
 
@@ -177,7 +177,7 @@ subtitles    　该轨道定义字幕，用于在视频中显示字幕</pre>
 &lt;/video&gt;</pre>
 </div>
 
-![track](https://pic.xiaohuochai.site/HTML_tags_track.gif)
+![track](https://pic.xiaohuochai.site/blog/HTML_tags_track.gif)
 
 ## API
 
@@ -666,8 +666,8 @@ video.onemptied = function(){
 <table border="0">
 <tbody>
 <tr>
-<td>![process](https://pic.xiaohuochai.site/HTML_tags_progress.jpg)</td>
-<td>![abort](https://pic.xiaohuochai.site/HTML_tags_abort.jpg)</td>
+<td>![process](https://pic.xiaohuochai.site/blog/HTML_tags_progress.jpg)</td>
+<td>![abort](https://pic.xiaohuochai.site/blog/HTML_tags_abort.jpg)</td>
 </tr>
 </tbody>
 </table>
