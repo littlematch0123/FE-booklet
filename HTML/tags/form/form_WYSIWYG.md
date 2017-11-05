@@ -21,7 +21,7 @@
 <div class="cnblogs_code">
 <pre>&lt;iframe name="wysiwyg" src="wysiwyg.html" style="height: 100px;width: 100px;"&gt;&lt;/iframe&gt;    
 &lt;script&gt;
-window.onload= <function(){
+window.onload = function(){
     frames['wysiwyg'].document.designMode = 'on';
 }
 &lt;/script&gt;</pre>
