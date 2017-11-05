@@ -96,7 +96,7 @@
 
 　　想找一个规范使用html5新标签的网站不是很容易，国内大多数网站由于各种各样的原因，依然还是div布局，最终，案例选择使用苹果官网
 
-![apple]({{pic.pic}}/blog/HTML_structure_eleStruc.jpg)
+![apple](https://pic.xiaohuochai.site/blog/HTML_structure_eleStruc.jpg)
 
 <div class="cnblogs_code">
 <pre>&lt;!DOCTYPE html&gt;
