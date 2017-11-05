@@ -666,8 +666,16 @@ video.onemptied = function(){
 <table border="0">
 <tbody>
 <tr>
-<td>![process](https://pic.xiaohuochai.site/blog/HTML_tags_progress.jpg)</td>
-<td>![abort](https://pic.xiaohuochai.site/blog/HTML_tags_abort.jpg)</td>
+<td>
+
+![process](https://pic.xiaohuochai.site/blog/HTML_tags_progress.jpg)
+
+</td>
+<td>
+
+![abort](https://pic.xiaohuochai.site/blog/HTML_tags_abort.jpg)
+
+</td>
 </tr>
 </tbody>
 </table>
