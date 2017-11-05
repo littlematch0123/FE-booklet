@@ -218,7 +218,7 @@ sandbox="allow-scripts"//允许脚本执行</pre>
 &lt;/frameset&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/html/frame/f1.html" frameborder="0" width="100%" height="350"></iframe>
+<iframe src="{{book.demo}}/html/frame/f2.html" frameborder="0" width="100%" height="350"></iframe>
 
 　　top对象始终指向最高(最外)层的框架，也就是浏览器窗口。使用它可以确保在一个框架中正确地访问另一个框架。因为对于在一个框架中编写的任何代码来说，其中的window对象指向的都是那个框架的特定实例，而非最髙层的框架。下图展示了在最髙层窗口中，通过代码来访问前面例子中每个框架的不同方式
 
