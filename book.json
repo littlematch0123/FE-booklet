@@ -24,27 +24,12 @@
     "search-plus",
     "splitter",
     "github",
-    "tbfed-pagefooter",
-    "back-to-top-button",
-    "favicon"
+   "back-to-top-button"
   ],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/littlematch0123/FE-booklet"
-    },
-    "tbfed-pagefooter": {
-      "copyright": "&copy; xiaohuochai",
-      "modify_label": "文件修订时间：",
-      "modify_format": "YYYY-MM-DD HH:mm:ss"
-    },
-    "favicon": {
-      "shortcut": "icon/icon_32.ico",
-      "bookmark": "icon/icon_32.ico",
-      "appleTouch": "icon/icon_64.ico",
-      "appleTouchMore": {
-        "120x120": "icon/icon_120.ico",
-        "180x180": "icon/icon_180.ico"
-      }
-    }    
+    }
   }
+
 }

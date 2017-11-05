@@ -12,7 +12,7 @@
 由于里面许多内容是自己的总结，可能会有错误或纰漏之处，希望不会造成误导，多多交流
 
 
-* [HTML](HTML.md)
+* [HTML](HTML/HTML.md)
 * [CSS](CSS.md)
 * [JS](JS.md)
 * [ES6](ES6.md)

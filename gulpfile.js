@@ -32,9 +32,7 @@ gulp.task('move',function(){
   gulp.src('_book/gitbook/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
   gulp.src('_book/gitbook/images/*')
-    .pipe(gulp.dest('dist/gitbook/images'))  
-  gulp.src('./icon/*')
-    .pipe(gulp.dest('dist/icon'))      
+    .pipe(gulp.dest('dist/gitbook/images'))     
 });
 gulp.task('concat',function(){
   gulp.src('_book/**/*.js')
