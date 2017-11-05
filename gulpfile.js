@@ -62,4 +62,4 @@ gulp.task('html',['merge1','merge2'],function () {
 gulp.task('connect', function () {
   connect.server();
 });
-gulp.task('default',['html','concat','move','connect']);
+gulp.task('default',['html','move','connect','connect']);
