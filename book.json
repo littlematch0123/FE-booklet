@@ -12,7 +12,8 @@
     "website":"style.css"
   },
   "variables": {
-    "cdn": "https://demo.xiaohuochai.site"
+    "demo": "https://demo.xiaohuochai.site",
+    "pic": "https://pic.xiaohuochai.site"
   },
 
   "plugins": [
