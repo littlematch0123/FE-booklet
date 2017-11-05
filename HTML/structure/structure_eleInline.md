@@ -300,5 +300,5 @@
 
 　　&nbsp;&lt;演示框&gt;点击下列相应标签名可进行演示
 
-<iframe src="https://demo.xiaohuochai.site/html/inline/i111.html" frameborder="0" width="100%" height="350"></iframe>
+<iframe src="{{pic.demo}}/html/inline/i111.html" frameborder="0" width="100%" height="350"></iframe>
 
