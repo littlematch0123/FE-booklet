@@ -6,7 +6,7 @@
 
 ### 表单属性
 
-　　在HTML中，表单是由form元素来表示的，而在javascript中，表单对应的则是HTMLFormElement类型，HTMLFormElement继承了HTMLElement，但也有自己独有的属性和方法
+　　在HTML中，表单由form元素表示，而在javascript中，表单对应的则是HTMLFormElement类型，HTMLFormElement继承了HTMLElement，但也有自己独有的属性和方法
 
 　　acceptCharset 　　服务器能够处理的字符集；等价于HTML中的accept-charset特性
 
