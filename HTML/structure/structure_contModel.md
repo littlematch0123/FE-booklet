@@ -6,7 +6,7 @@
 
 &nbsp;　　[HTML标签详细信息见此w3c链接](http://dev.w3.org/html5/spec-author-view/index.html#element-content-categories)
 
-![](https://pic.xiaohuochai.site/blog/HTML_structure_contModel.png)
+![]({{book.pic}}/blog/HTML_structure_contModel.png)
 
 ## 分类
 
