@@ -53,7 +53,7 @@
 </tbody>
 </table>
 
-<div><img src="{{book.pic}}/blog/HTML_structure_doctype.jpg" alt="#"></div>
+<div><img src="https://pic.xiaohuochai.site/blog/HTML_structure_doctype.jpg" alt="#"></div>
 
 
 <p>&nbsp;</p>
