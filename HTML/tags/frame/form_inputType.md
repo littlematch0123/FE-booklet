@@ -8,25 +8,25 @@
 
 ## 传统类型
 
-　　[text](#anchor1-1) 　　 &nbsp; 定义单行的输入字段，用户可在其中输入文本
+　　text 　　 &nbsp; 定义单行的输入字段，用户可在其中输入文本
 
-　　[password](#anchor1-2)&nbsp; &nbsp;定义密码字段。该字段中的字符被掩码
+　　password&nbsp; &nbsp;定义密码字段。该字段中的字符被掩码
 
-　　[file](#anchor1-3) 　　　 定义输入字段和 "浏览"按钮，供文件上传
+　　file 　　　 定义输入字段和 "浏览"按钮，供文件上传
 
-　　[radio](#anchor1-4)　　 &nbsp;定义单选按钮
+　　radio　　 &nbsp;定义单选按钮
 
-　　[checkbox](#anchor1-5)&nbsp;&nbsp; 定义复选框
+　　checkbox&nbsp;&nbsp; 定义复选框
 
-　　[hidden](#anchor1-6) 　 &nbsp;定义隐藏的输入字段
+　　hidden 　 &nbsp;定义隐藏的输入字段
 
-　　[button](#anchor1-7) 　　定义可点击按钮（多数情况下，用于通过JavaScript启动脚本）
+　　button 　　定义可点击按钮（多数情况下，用于通过JavaScript启动脚本）
 
-　　[image](#anchor1-8) 　　定义图像形式的提交按钮
+　　image 　　定义图像形式的提交按钮
 
-　　[reset](#anchor1-9) 　　 定义重置按钮。重置按钮会清除表单中的所有数据
+　　reset 　　 定义重置按钮。重置按钮会清除表单中的所有数据
 
-　　[submit](#anchor1-10) 　 &nbsp;定义提交按钮。提交按钮会把表单数据发送到服务器
+　　submit 　 &nbsp;定义提交按钮。提交按钮会把表单数据发送到服务器
 
 ### text
 
@@ -338,31 +338,31 @@ IE7-
 
 ## **新增类型**
 
-　　[color](#anchor2-1) 　　　　　　定义调色板
+　color 　　　　　　定义调色板
 
-　[tel](#anchor2-2)	　　　　 &nbsp;　　			定义包含电话号码的输入域
+　tel	　　　　 &nbsp;　　			定义包含电话号码的输入域
 
-　[email](#anchor2-3)	　　　 &nbsp;　　定义包含email地址的输入域
+　email	　　　 &nbsp;　　定义包含email地址的输入域
 
-　[url](#anchor2-4)	　　　　 &nbsp;　　			定义包含URL地址的输入域 
+　url	　　　　 &nbsp;　　			定义包含URL地址的输入域 
 
-　[search](#anchor2-5)	　　　　　&nbsp;定义搜索域
+　search	　　　　　&nbsp;定义搜索域
 
-　[number](#anchor2-6)	　　	　　	定义包含数值的输入域
+　number	　　	　　	定义包含数值的输入域
 
-　[range](#anchor2-7)	　　 &nbsp;&nbsp;　　&nbsp;		定义包含一定范围内数字值的输入域
+　range	　　 &nbsp;&nbsp;　　&nbsp;		定义包含一定范围内数字值的输入域
 
-　[date](#anchor2-8)	　　　　　　&nbsp;定义选取日、月、年的输入域 
+　date	　　　　　　&nbsp;定义选取日、月、年的输入域 
 
-　[month](#anchor2-9)	　　&nbsp;	　　&nbsp;	定义选取月、年的输入域
+　month	　　&nbsp;	　　&nbsp;	定义选取月、年的输入域
 
-　[week](#anchor2-10)	　　　　　　定义选取周、年的输入域
+　week	　　　　　　定义选取周、年的输入域
 
-　[time](#anchor2-11)	　　 &nbsp; &nbsp;　　 &nbsp; 定义选取月、年的输入域
+　time	　　 &nbsp; &nbsp;　　 &nbsp; 定义选取月、年的输入域
 
-　[datetime](#anchor2-12)	　　　 &nbsp; &nbsp;定义选取时间、日 月、年的输入域(UTC时间)
+　datetime	　　　 &nbsp; &nbsp;定义选取时间、日 月、年的输入域(UTC时间)
 
-　　[datatime-local](#anchor2-13)	　 &nbsp;定义选取时间、日 月、年的输入域(本地时间)
+　datatime-local	　 &nbsp;定义选取时间、日 月、年的输入域(本地时间)
 
 ### color
 
