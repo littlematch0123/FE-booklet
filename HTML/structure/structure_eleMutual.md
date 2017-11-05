@@ -1,4 +1,4 @@
-# 三个不常用的HTML元素：<details>、<summary>、<dialog>
+# 不常用的HTML元素：details、summary、dialog
 
 　　HTML5不仅新增了语义型区块级元素及表单类元素，也新增了一些其他的功能性元素，这些元素由于浏览器支持等各种原因，并没有被广泛使用
 
