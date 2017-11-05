@@ -212,8 +212,8 @@ sandbox="allow-scripts"//允许脚本执行</pre>
 <pre>&lt;frameset rows = "40%,*"&gt;
     &lt;frame src="https://www.hao123.com/" name="topFrame"&gt;
     &lt;frameset cols = "50%,50%"&gt;
-        &lt;frame src="http://www.baidu.com" name="leftFrame"&gt;
-        &lt;frame src="http://www.kongzhong.com/" name="rightFrame"&gt;
+        &lt;frame src="https://www.baidu.com" name="leftFrame"&gt;
+        &lt;frame src="https://www.263.net/" name="rightFrame"&gt;
     &lt;/frameset&gt;
 &lt;/frameset&gt;</pre>
 </div>
