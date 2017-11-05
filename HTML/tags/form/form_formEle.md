@@ -97,7 +97,7 @@ defaultValue    表示该表单元素的初始值</pre>
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}]/html/formobj/f4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/html/formobj/f4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 方法
 
@@ -123,7 +123,7 @@ btn2.onclick = function(){test.blur();}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}]/html/formobj/f5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 事件
 
@@ -152,7 +152,7 @@ btn2.onclick = function(){test.blur();}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}]/html/formobj/f6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/html/formobj/f6.html" frameborder="0" width="320" height="240"></iframe>
 
 **顺序**
 
@@ -170,5 +170,5 @@ btn2.onclick = function(){test.blur();}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}]/html/formobj/f7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f7.html" frameborder="0" width="320" height="240"></iframe>
 
