@@ -133,4 +133,4 @@
 
 ![area](https://pic.xiaohuochai.site/blog/HTML_tags_img_area.gif)
 
-<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/html/tagsarea.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/html/tagsarea.html" frameborder="0" width="320" height="240"></iframe>
