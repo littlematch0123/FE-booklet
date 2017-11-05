@@ -8,7 +8,7 @@
 
  　　html5出现之前，经常把元素按照block、inline、inline-block来区分。在html5中，元素不再按照display属性来区分，而是按照[内容模型](http://www.cnblogs.com/xiaohuochai/p/5046584.html)来区分，分为元数据型(metadata content)、区块型(sectioning content)、标题型(heading content)、文档流型(flow content)、语句型(phrasing content)、内嵌型(embedded content)、交互型(interactive content)。元素不属于任何一个类别，被称为穿透的；元素可能属于不止一个类别，称为混合的。
 
-![标签嵌套]({{book.pic}}/blog/HTML_grammar_tagsNesting.png)
+![标签嵌套](https://pic.xiaohuochai.site/blog/HTML_grammar_tagsNesting.png)
 
 &nbsp;
 
