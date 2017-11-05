@@ -51,7 +51,7 @@
 
 　　注意：若浏览器中出现多个id名的情况，CSS样式对所以该id名的元素都生效，但javascript脚本仅对第一个出现该id名的元素生效
 
-![id]({{book.pic}}/blog/HTML_grammar_id.gif)
+![id](https://pic.xiaohuochai.site/blog/HTML_grammar_id.gif)
 
 ### lang
 
@@ -120,7 +120,7 @@ zh-TW 中文 (繁体, 台湾)     对应 cmn-Hant-TW 普通话 (繁体, 台湾)
 
 　　作用：规定关于元素的额外信息，鼠标移到元素上时显示一段提示文本
 
-![title]({{book.pic}}/blog/HTML_grammar_title.gif)　
+![title](https://pic.xiaohuochai.site/blog/HTML_grammar_title.gif)　
 
 &nbsp;
 
@@ -135,7 +135,7 @@ zh-TW 中文 (繁体, 台湾)     对应 cmn-Hant-TW 普通话 (繁体, 台湾)
 　　注意：设置document.designMode ='on'时，页面的任意位置都可以编辑；使用contenteditable ='true'则只对具体元素和其包含的元素起作用
 
 　　移动端：移动端ios5以及android3之后才支持该属性
-![contenteditable]({{book.pic}}/blog/HTML_grammar_contenteditable.gif)
+![contenteditable](https://pic.xiaohuochai.site/blog/HTML_grammar_contenteditable.gif)
 
 <iframe src="{{book.demo}}/html/16attr/h4.html" frameborder="0" width="300" height="200"></iframe>
 
