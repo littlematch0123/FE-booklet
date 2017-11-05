@@ -144,7 +144,7 @@ btn2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 180px;" src="https://demo.xiaohuochai.site/html/form/f1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 180px;" src="{{book.demo}}/html/form/f1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -172,5 +172,5 @@ btn2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/form/f2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/html/form/f2.html" frameborder="0" width="320" height="240"></iframe>
 
