@@ -1,7 +1,7 @@
 # Summary
 
 * [小火柴的前端小册子](README.md)
-* HTML
+* HTML(已完成)
     * [介绍](HTML/HTML.md)
     * 语法
         1. [基础语法](HTML/grammar/grammar_baseGrammer.md)
@@ -29,9 +29,9 @@
             * [表格](HTML/tags/tags_table.md)  
             * [DOM操作表格](HTML/tags/tags_DOMTable.md)	
         2.  多媒体	
-            * [音频和视频](HTML/tags/tags_img.md)  	
-            * [audio和video](HTML/tags/tags_img.md)  	
-            * [音乐播放器](HTML/tags/tags_img.md)  		
+            * [音频和视频](HTML/tags/media/media.md)  	
+            * [audio和video](HTML/tags/media/tags_audioAndVideo.md)  	
+            * [音乐播放器](HTML/tags/media/tags_musicPlayer.md)  		
         3. 表单 
             * [form元素](HTML/tags/form/form.md)
             * [input元素属性](HTML/tags/form/form_inputAttr.md)

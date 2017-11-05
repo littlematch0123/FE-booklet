@@ -34,9 +34,9 @@ HTML被认为是前端知识体系里面最简单的知识，几年前，很多�
 	* [表格](tags/tags_table.md)  
 	* [DOM操作表格](tags/tags_DOMTable.md)  	
 2.  多媒体	
-	* [音频和视频](tags/tags_img.md)  	
-	* [audio和video](tags/tags_img.md)  	
-	* [音乐播放器](tags/tags_img.md)  		
+	* [音频和视频](tags/media/media.md)  	
+	* [audio和video](tags/media/tags_audioAndVideo.md)  	
+	* [音乐播放器](tags/media/tags_musicPlayer.md)  	
 3. 表单 
 	* [form元素](tags/form/form.md)
 	* [input元素属性](tags/form/form_inputAttr.md)
