@@ -12,7 +12,7 @@
     "website":"style.css"
   },
   "variables": {
-    "cdn": "://static.xiaohuochai.site/"
+    "cdn": "//demo.xiaohuochai.site/"
   },
 
   "plugins": [
