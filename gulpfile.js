@@ -59,7 +59,7 @@ gulp.task('html',['merge1','merge2'],function () {
     .pipe(htmlmin(options))
     .pipe(gulp.dest('dist'));
 });
-gulp.task('connect', function () {
+gulp.task('connect', ['html'],function () {
   connect.server();
 });
-gulp.task('default',['html','move','connect','connect']);
+gulp.task('default',['move','connect','connect']);
