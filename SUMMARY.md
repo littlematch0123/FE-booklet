@@ -1,7 +1,7 @@
 # Summary
 
 * [小火柴的前端小册子](README.md)
-* HTML(已完成)
+* HTML
     * [介绍](HTML/HTML.md)
     * 语法
         1. [基础语法](HTML/grammar/grammar_baseGrammer.md)
