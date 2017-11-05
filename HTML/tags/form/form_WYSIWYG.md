@@ -40,8 +40,8 @@ window.onload = function(){
 &lt;button id="btn1"&gt;打开富文本编辑&lt;/button&gt;
 &lt;button id="btn2"&gt;关闭富文本编辑&lt;/button&gt;    
 &lt;script&gt;
-btn1.onclick = <function(){wysiwyg.contentEditable = <true;}
-btn2.onclick = <function(){wysiwyg.contentEditable = <false;}
+btn1.onclick = function(){wysiwyg.contentEditable = true;}
+btn2.onclick = function(){wysiwyg.contentEditable = false;}
 &lt;/script&gt;</pre>
 </div>
 
@@ -78,10 +78,10 @@ btn2.onclick = <function(){wysiwyg.contentEditable = <false;}
 &lt;button data-name="indent"&gt;添加缩进&lt;/button&gt;
 &lt;button data-name="outdent"&gt;去掉缩进&lt;/button&gt;    
 &lt;script&gt;
-<var btns = document.getElementsByTagName('button');
-<for(<var i = 0; i &lt; btns.length; i++){
-    btns[i].onclick = <function(){
-        document.execCommand(<this.getAttribute('data-name'));
+var btns = document.getElementsByTagName('button');
+for(var i = 0; i &lt; btns.length; i++){
+    btns[i].onclick = function(){
+        document.execCommand(this.getAttribute('data-name'));
     }
 }
 &lt;/script&gt;</pre>
@@ -110,10 +110,10 @@ btn2.onclick = <function(){wysiwyg.contentEditable = <false;}
 &lt;button data-name="italic"&gt;斜体&lt;/button&gt;    
 &lt;button data-name="underline"&gt;下划线&lt;/button&gt;        
 &lt;script&gt;
-<var btns = document.getElementsByTagName('button');
-<for(<var i = 0; i &lt; btns.length; i++){
-    btns[i].onclick = <function(){
-        document.execCommand(<this.getAttribute('data-name'),<false,<this.getAttribute('data-value'));
+var btns = document.getElementsByTagName('button');
+for(var i = 0; i &lt; btns.length; i++){
+    btns[i].onclick = function(){
+        document.execCommand(this.getAttribute('data-name'),false,this.getAttribute('data-value'));
     }
 }
 &lt;/script&gt;</pre>
@@ -148,10 +148,10 @@ btn2.onclick = <function(){wysiwyg.contentEditable = <false;}
 &lt;button data-name="undo"&gt;后退一步&lt;/button&gt;
 &lt;button data-name="print"&gt;打印&lt;/button&gt;    
 &lt;script&gt;
-<var btns = document.getElementsByTagName('button');
-<for(<var i = 0; i &lt; btns.length; i++){
-    btns[i].onclick = <function(){
-        document.execCommand(<this.getAttribute('data-name'));
+var btns = document.getElementsByTagName('button');
+for(var i = 0; i &lt; btns.length; i++){
+    btns[i].onclick = function(){
+        document.execCommand(this.getAttribute('data-name'));
     }
 }
 &lt;/script&gt;</pre>
@@ -182,10 +182,10 @@ btn2.onclick = <function(){wysiwyg.contentEditable = <false;}
 &lt;button data-name="createlink" data-value="www.cnblogs.com/xiaohuochai"&gt;增加链接&lt;/button&gt;
 &lt;button data-name="unlink"&gt;删除链接&lt;/button&gt;    
 &lt;script&gt;
-<var btns = document.getElementsByTagName('button');
-<for(<var i = 0; i &lt; btns.length; i++){
-    btns[i].onclick = <function(){
-        document.execCommand(<this.getAttribute('data-name'),<false,<this.getAttribute('data-value'));
+var btns = document.getElementsByTagName('button');
+for(var i = 0; i &lt; btns.length; i++){
+    btns[i].onclick = function(){
+        document.execCommand(this.getAttribute('data-name'),false,this.getAttribute('data-value'));
     }
 }
 &lt;/script&gt;</pre>
