@@ -55,11 +55,11 @@ gulp.task('html',['merge1','merge2'],function () {
     minifyJS: true,//压缩页面JS
     minifyCSS: true//压缩页面CSS
   };  
-  gulp.src('dist/**/*.html')
+  return gulp.src('dist/**/*.html')
     .pipe(htmlmin(options))
     .pipe(gulp.dest('dist'));
 });
 gulp.task('connect', ['html'],function () {
   connect.server();
 });
-gulp.task('default',['move','connect','connect']);
+gulp.task('default', ['move', 'connect','concat']);
