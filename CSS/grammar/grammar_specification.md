@@ -41,10 +41,10 @@ main&gt;nav {}</pre>
 
 <div class="cnblogs_code">
 <pre>.selector {
-    margin:< 0;
-    padding:< 0;
+    margin: 0;
+    padding: 0;
 }
-.selector { margin:< 0;}</pre>
+.selector { margin: 0;}</pre>
 </div>
 
 &nbsp;　　4、最后一个属性值也以分号结尾，这样可以减少修改、添加和维护代码时不必要的失误和麻烦
@@ -52,13 +52,13 @@ main&gt;nav {}</pre>
 <div class="cnblogs_code">
 <pre>/* good */
 .selector {
-    margin:< 0;
-    padding:< 0;
+    margin: 0;
+    padding: 0;
 }
 /* bad */
 .selector {
-    margin:< 0;
-    padding:< 0
+    margin: 0;
+    padding: 0
 }</pre>
 </div>
 
@@ -68,15 +68,15 @@ main&gt;nav {}</pre>
 
 <div class="cnblogs_code">
 <pre>html[lang|="zh"] q:before {
-    font-family:< "Microsoft YaHei", sans-serif;
-    content:< "&ldquo;";
+    font-family: "Microsoft YaHei", sans-serif;
+    content: "&ldquo;";
 }</pre>
 </div>
 
 　　2、`url()`&nbsp;函数中的路径不加引号
 
 <div class="cnblogs_code">
-<pre>body {background:< url(bg.png);}</pre>
+<pre>body {background: url(bg.png);}</pre>
 </div>
 
 【省略】
@@ -84,13 +84,13 @@ main&gt;nav {}</pre>
 　　1、对于属性值或颜色参数，省略小于 1 的小数前面的 0&nbsp;
 
 <div class="cnblogs_code">
-<pre>panel {opacity:< .8}</pre>
+<pre>panel {opacity: .8}</pre>
 </div>
 
 　　2、省略值为0时的单位，为节省不必要的字节同时也使阅读方便，将0px、0em、0%等值缩写为0
 
 <div class="cnblogs_code">
-<pre>.m-box{margin:<0 10px;background-position:<50% 0;}</pre>
+<pre>.m-box{margin:0 10px;background-position:50% 0;}</pre>
 </div>
 
 【缩写】
@@ -104,13 +104,13 @@ main&gt;nav {}</pre>
 <div class="cnblogs_code">
 <pre>/* good */
 .post {
-    font:< 12px/1.5 arial, sans-serif;
+    font: 12px/1.5 arial, sans-serif;
 }
 /* bad */
 .post {
-    font-family:< arial, sans-serif;
-    font-size:< 12px;
-    line-height:< 1.5;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
 }</pre>
 </div>
 
@@ -177,9 +177,9 @@ main&gt;nav {}</pre>
 
 <div class="cnblogs_code">
 <pre>.m-box {
-    -webkit-box-shadow:< 0 0 0 #000;
-    -moz-box-shadow:< 0 0 0 #000;
-    box-shadow:< 0 0 0 #000;
+    -webkit-box-shadow: 0 0 0 #000;
+    -moz-box-shadow: 0 0 0 #000;
+    box-shadow: 0 0 0 #000;
 }</pre>
 </div>
 
@@ -199,23 +199,23 @@ main&gt;nav {}</pre>
 <div class="cnblogs_code">
 <pre>.sidebar {
     /* formatting model */
-    position:< absolute;
-    top:< 50px;
-    left:< 0;
-    overflow-x:< hidden;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    overflow-x: hidden;
     /* box model */
-    width:< 200px;
-    padding:< 5px;
-    border:< 1px solid #ddd;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ddd;
     /* typographic */
-    font-size:< 14px;
-    line-height:< 20px;
+    font-size: 14px;
+    line-height: 20px;
     /* visual */
-    background:< #f5f5f5;
-    color:< #333;
-    -webkit-transition:< color 1s;
-       -moz-transition:< color 1s;
-            transition:< color 1s;
+    background: #f5f5f5;
+    color: #333;
+    -webkit-transition: color 1s;
+       -moz-transition: color 1s;
+            transition: color 1s;
 }</pre>
 </div>
 
@@ -229,9 +229,9 @@ main&gt;nav {}</pre>
 
 <div class="cnblogs_code">
 <pre>/* expression */
-.class {width:< expression(this.width&gt;100?'100px':'auto');}
+.class {width: expression(this.width&gt;100?'100px':'auto');}
 /* filter */
-.class {filter:< alpha(opacity=50);}</pre>
+.class {filter: alpha(opacity=50);}</pre>
 </div>
 
 　　3、避免使用&nbsp;`@import，`与&nbsp;`&lt;link&gt;`&nbsp;标签相比，`@import`&nbsp;指令要慢很多，不光增加了额外的请求次数，还会导致不可预料的问题
@@ -243,8 +243,8 @@ main&gt;nav {}</pre>
 <div class="cnblogs_code">
 <pre>/* IE7会显示灰色#888，IE6会显示白色#fff，其他浏览器显示黑色#000 */
 .m-list{
-    color:<#000;
-    *color:<#888;
-    _color:<#fff;
+    color:#000;
+    *color:#888;
+    _color:#fff;
 }</pre>
 </div>
