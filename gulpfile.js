@@ -16,19 +16,27 @@ gulp.task('merge0', function () {
     .pipe(gulp.dest('dist'));
 });
 gulp.task('merge1',function () {
-  return gulp.src(['_book/HTML/**/*.html'])
-    .pipe(merge({
-      '../../base.css': ['../../**/*.css'],
-      '../../base.js': ['../../**/*.js'],
-    }))
-    .pipe(gulp.dest('dist/HTML')); 
+    return gulp.src(['_book/HTML/**/*.html'])
+      .pipe(merge({
+        '../base.css': ['../**/*.css'],
+        '../base.js': ['../**/*.js'],
+        '../../base.css': ['../../**/*.css'],
+        '../../base.js': ['../../**/*.js'],
+        '../../../base.css': ['../../../**/*.css'],
+        '../../../base.js': ['../../../**/*.js']             
+      }))
+      .pipe(gulp.dest('dist/HTML'));
 
 });
 gulp.task('merge2', function () {
   return gulp.src(['_book/CSS/**/*.html'])
     .pipe(merge({
+      '../base.css': ['../**/*.css'],
+      '../base.js': ['../**/*.js'],
       '../../base.css': ['../../**/*.css'],
       '../../base.js': ['../../**/*.js'],
+      '../../../base.css': ['../../../**/*.css'],
+      '../../../base.js': ['../../../**/*.js']      
     }))
     .pipe(gulp.dest('dist/CSS'));
 
@@ -52,16 +60,16 @@ gulp.task('concat',function(){
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(gulp.dest('dist'));
 });
-gulp.task('html',['merge0','merge1','merge2'],function () {
+gulp.task('html', ['move','merge0', 'merge1', 'merge2', 'concat'],function () {
   var options = {
-    removeComments: true,//清除HTML注释
-    collapseWhitespace: true,//压缩HTML
-    collapseBooleanAttributes: true,//省略布尔属性的值 <input checked="true"/> ==> <input />
-    removeEmptyAttributes: true,//删除所有空格作属性值 <input id="" /> ==> <input />
-    removeScriptTypeAttributes: true,//删除<script>的type="text/javascript"
-    removeStyleLinkTypeAttributes: true,//删除<style>和<link>的type="text/css"
-    minifyJS: true,//压缩页面JS
-    minifyCSS: true//压缩页面CSS
+    removeComments: true,
+    collapseWhitespace: true,
+    collapseBooleanAttributes: true,
+    removeEmptyAttributes: true,
+    removeScriptTypeAttributes: true,
+    removeStyleLinkTypeAttributes: true,
+    minifyJS: true,
+    minifyCSS: true
   };  
   return gulp.src('dist/**/*.html')
     .pipe(htmlmin(options))
@@ -70,4 +78,4 @@ gulp.task('html',['merge0','merge1','merge2'],function () {
 gulp.task('connect', ['html'],function () {
   connect.server();
 });
-gulp.task('default', ['move', 'connect','concat']);
+gulp.task('default', [ 'connect']);
