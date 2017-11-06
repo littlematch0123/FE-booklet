@@ -7,7 +7,14 @@ var connect = require('gulp-connect');
 var htmlmin = require('gulp-htmlmin');
 
 
-
+gulp.task('merge0', function () {
+  return gulp.src(['_book/*.html'])
+    .pipe(merge({
+      'base.css': ['**/*.css'],
+      'base.js': ['**/*.js'],
+    }))
+    .pipe(gulp.dest('dist'));
+});
 gulp.task('merge1',function () {
   return gulp.src(['_book/HTML/**/*.html'])
     .pipe(merge({
@@ -17,13 +24,14 @@ gulp.task('merge1',function () {
     .pipe(gulp.dest('dist/HTML')); 
 
 });
-gulp.task('merge2',function () {
-  return gulp.src(['_book/*.html'])
+gulp.task('merge2', function () {
+  return gulp.src(['_book/CSS/**/*.html'])
     .pipe(merge({
-      'base.css': ['**/*.css'],
-      'base.js': ['**/*.js'],
+      '../../base.css': ['../../**/*.css'],
+      '../../base.js': ['../../**/*.js'],
     }))
-    .pipe(gulp.dest('dist'));     
+    .pipe(gulp.dest('dist/CSS'));
+
 });
 
 gulp.task('move',function(){
@@ -44,7 +52,7 @@ gulp.task('concat',function(){
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(gulp.dest('dist'));
 });
-gulp.task('html',['merge1','merge2'],function () {
+gulp.task('html',['merge0','merge1','merge2'],function () {
   var options = {
     removeComments: true,//清除HTML注释
     collapseWhitespace: true,//压缩HTML
