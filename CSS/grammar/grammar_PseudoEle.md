@@ -56,7 +56,7 @@
 <pre>div:after{content:"后缀"}</pre>
 </div>
 
-![beforeAndAfter]()
+![beforeAndAfter](https://pic.xiaohuochai.site/blog/CSS_grammer_beforeAndAfter.gif)
 
 **::selection(IE8-浏览器不支持)**
 
@@ -103,7 +103,7 @@ div:after{
 }</pre>
 </div>
 
-![content]()
+![content](https://pic.xiaohuochai.site/blog/CSS_grammer_content.gif)
 
 【2】&lt;uri&gt;
 
