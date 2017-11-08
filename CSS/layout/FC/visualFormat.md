@@ -305,7 +305,7 @@ img{height: 26px;padding: 2px;margin: 2px;
 <p>&nbsp;</p>
 
 
-##最后
+## 最后
 
 &emsp;&emsp;关于盒模型，基本内容一般都比较熟悉，比较重要的内容就是水平方向和垂直方向上auto不同情况的分析
 
