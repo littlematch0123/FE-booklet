@@ -41,7 +41,7 @@
 
 &emsp;&emsp;<演示框>点击下列相应属性值可进行演示
 
-<p><iframe style="width: 100%; height: 297px;" src="{{book.demo}}css/border/b11.html" frameborder="0" width="320" height="240"></iframe></p>
+<p><iframe style="width: 100%; height: 297px;" src="{{book.demo}}/css/border/b11.html" frameborder="0" width="320" height="240"></iframe></p>
 
 
 
@@ -243,25 +243,25 @@
 
 &emsp;&emsp;<演示框>点击下列相应属性值可进行演示
 
-<p><iframe style="width: 100%; height: 429px;" src="{{book.demo}}css/border/b22.html" frameborder="0" width="320" height="240"></iframe></p>
+<p><iframe style="width: 100%; height: 429px;" src="{{book.demo}}/css/border/b22.html" frameborder="0" width="320" height="240"></iframe></p>
 
 【单侧投影】
 
     box-shadow: 0 5px 4px -4px black;
 
-<p><iframe style="width: 100%; height: 100px" src="{{book.demo}}css/border/b3.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p><iframe style="width: 100%; height: 100px" src="{{book.demo}}/css/border/b3.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
 
 【邻边投影】
 
     box-shadow: 3px 3px 6px -3px black;
 
-<p><iframe style="width: 100%; height: 100px" src="{{book.demo}}css/border/b4.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p><iframe style="width: 100%; height: 100px" src="{{book.demo}}/css/border/b4.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
 
 【双侧投影】
 
     box-shadow: 5px 0 5px -5px black,-5px 0 5px -5px black;
 
-<p><iframe style="width: 100%; height: 100px" src="{{book.demo}}css/border/b5.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p><iframe style="width: 100%; height: 100px" src="{{book.demo}}/css/border/b5.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
 
 <p>&nbsp;</p>
 
@@ -367,7 +367,7 @@
     <div class="box"></div>
 
 
-<iframe style="width: 100%; height: 70px" src="{{book.demo}}css/border/b6.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 70px" src="{{book.demo}}/css/border/b6.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 
@@ -406,7 +406,7 @@
     <div class="box"></div>
 
 
-<iframe style="width: 100%; height: 70px" src="{{book.demo}}css/border/b7.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 70px" src="{{book.demo}}/css/border/b7.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 【信封效果】
 
@@ -424,4 +424,4 @@
     <div class="box" contenteditable ="true">请修改文字</div>    
 
 
-<iframe style="width: 100%; height: 160px" src="{{book.demo}}css/border/b8.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 160px" src="{{book.demo}}/css/border/b8.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
