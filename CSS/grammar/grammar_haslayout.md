@@ -20,7 +20,7 @@
   【4】hr
 
   【5】input,button,select,textarea,fieldset
-	　　
+
   【6】frameset,frame,iframe
 
 &nbsp;
@@ -29,27 +29,27 @@
 
 　　可以触发hasLayout的有如下CSS属性：
 
-  【1】display:inline-block
-	　　
-  【2】height/width:除了auto
-	　　
-  【3】float:left/right
-	　　
-  【4】position:absolute
-	　　
-  【5】writing-mode(IE专有属性，设置文本的垂直显示):tb-rl
-	　　
-  【6】zoom(IE专有属性，设置或检索对象的缩放比例):除了normal
+　　【1】display:inline-block
+
+　　【2】height/width:除了auto
+
+　　【3】float:left/right
+
+　　【4】position:absolute
+
+　　【5】writing-mode(IE专有属性，设置文本的垂直显示):tb-rl
+
+　　【6】zoom(IE专有属性，设置或检索对象的缩放比例):除了normal
 
 &nbsp;
 
 【IE7专有的触发hasLayout的CSS属性】
- 　　
-  【1】min-height/max-height/min-width/max-width:除none
-	　　
-  【2】overflow\overflow-x\overflow-y:除visible
-	　　
-  【3】position:fixed
+
+　　【1】min-height/max-height/min-width/max-width:除none
+
+　　【2】overflow\overflow-x\overflow-y:除visible
+
+　　【3】position:fixed
 
 &nbsp;　
 
