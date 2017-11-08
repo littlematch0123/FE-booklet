@@ -74,92 +74,92 @@
             * [CSS编码技巧](CSS/grammar/grammar_codingTech.md)
     * 布局
         1. 盒模型
-            * [盒模型]
-            * [四个自适应宽高关键字]
-            * [边框和阴影]
-            * [margin要点]
-            * [margin负值]
-            * [轮廓outline]
+            * [盒模型](CSS/layout/box/box.md)
+            * [四个自适应宽高关键字](CSS/layout/box/WHkeywords.md)
+            * [边框和阴影](CSS/layout/box/borderAndShadow.md)
+            * [margin要点](CSS/layout/box/marginKey.md)
+            * [margin负值](CSS/layout/box/marginNeg.md)
+            * [轮廓outline](CSS/layout/box/outline.md)
             * flex
-                1. [弹性盒模型flex]
-                2. [旧版flex及兼容]
-                3. [flex布局应用]
+                1. [弹性盒模型flex](CSS/layout/box/flex.md)
+                2. [旧版flex及兼容](CSS/layout/box/flexCompatible.md)
+                3. [flex布局应用](CSS/layout/box/flexLayout.md)
         2. 普通流
-            * [display]
-            * [haslayout]
-            * [BFC]
-            * [视觉格式化]
-            * [文本方向]
+            * [display](CSS/layout/FC/display.md)
+            * [haslayout](CSS/layout/FC/haslayout.md)
+            * [BFC](CSS/layout/FC/BFC.md)
+            * [视觉格式化](CSS/layout/FC/visualFormat.md)
+            * [文本方向](CSS/layout/FC/dir.md)
         3. 浮动
-            * [浮动]
-            * [清浮动]
+            * [浮动](CSS/layout/float/float.md)
+            * [清浮动](CSS/layout/float/clear.md)
         4. 定位
-            * [定位中的偏移]
-            * [定位中的堆叠z-index]
-            * [绝对定位]
-            * [绝对定位应用]
-            * [相对定位和固定定位]
+            * [定位中的偏移](CSS/layout/position/offset.md)
+            * [定位中的堆叠z-index](CSS/layout/position/zIndex.md)
+            * [绝对定位](CSS/layout/position/absolute.md)
+            * [绝对定位应用](CSS/layout/position/absoluteApply.md)
+            * [相对定位和固定定位](CSS/layout/position/relativeAndFixed.md)
         5. 布局方式   
-            * [Media媒体查询]
-            * [多列布局]
-            * [grid栅格布局]
-            * [两端对齐]
-            * [水平居中]
-            * [垂直居中]
-            * [水平垂直居中]
-            * [单列定宽单列自适应布局]
-            * [两列自适应布局]
-            * [三列布局]
-            * [三栏式布局]
-            * [等分布局]
-            * [等高布局]
-            * [全屏布局] 
+            * [Media媒体查询](CSS/layout/layoutMode/media.md)
+            * [多列布局](CSS/layout/layoutMode/columns.md)
+            * [grid栅格布局](CSS/layout/layoutMode/grid.md)
+            * [两端对齐](CSS/layout/layoutMode/justify.md)
+            * [水平居中](CSS/layout/layoutMode/center.md)
+            * [垂直居中](CSS/layout/layoutMode/middle.md)
+            * [水平垂直居中](CSS/layout/layoutMode/centerAndMiddle.md)
+            * [单列定宽单列自适应布局](CSS/layout/layoutMode/oneFixedAndOneAdaptive.md)
+            * [两列自适应布局](CSS/layout/layoutMode/twoAdaptive.md)
+            * [三列布局](CSS/layout/layoutMode/threeColumns.md)
+            * [三栏式布局](CSS/layout/layoutMode/sepcialThreeColumns.md)
+            * [等分布局](CSS/layout/layoutMode/equalPart.md)
+            * [等高布局](CSS/layout/layoutMode/equalHeight.md)
+            * [全屏布局](CSS/layout/layoutMode/fullScreen.md)
     * 渲染
         1. 字体和文本
-            * [字体]
-            * [基础文本样式]
-            * [行高与垂直对齐]
-            * [换行和空白符]
-            * [文本溢出和文本阴影]
+            * [字体](CSS/render/text/font.md)
+            * [基础文本样式](CSS/render/text/textStyle.md)
+            * [行高与垂直对齐](CSS/render/text/lineHeight.md)
+            * [换行和空白符](CSS/render/text/wrap.md)
+            * [文本溢出和文本阴影](CSS/render/text/textOverflowAndShadow.md)
         2. 颜色和背景
-            * [颜色模式]
-            * [颜色模式转换器]
-            * [前景色和透明度]
-            * [背景]
-            * [光标]
+            * [颜色模式](CSS/render/color/colorMode.md)
+            * [颜色模式转换器](CSS/render/color/colorModer.md)
+            * [前景色和透明度](CSS/render/color/colorAndOpacity.md)
+            * [背景](CSS/render/color/background.md)
+            * [光标](CSS/render/color/cursor.md)
         3. 溢出相关
-            * [溢出overflow]
-            * [裁剪clip]
-            * [拉伸resize]
-            * [滚动条]
-            * [可见性visibility]
+            * [溢出overflow](CSS/render/overflow/overflow.md)
+            * [裁剪clip](CSS/render/overflow/clip.md)
+            * [拉伸resize](CSS/render/overflow/resize.md)
+            * [滚动条](CSS/render/overflow/scrollBar.md)
+            * [可见性visibility](CSS/render/overflow/visibility.md)
         4. 变形和动画
-            * [过渡transition]
-            * [变形transform(2d)]
-            * [变形transform(3d)]
-            * [变形transform的副作用]
-            * [线性渐变]
-            * [径向渐变]
-            * [动画animation]
-            * [动画animation的三个应用]
-            * [animate.css的使用]
+            * [过渡transition](CSS/render/animation/transition.md)
+            * [变形transform(2d)](CSS/render/animation/transform2d.md)
+            * [变形transform(3d)](CSS/render/animation/transform3d.md)
+            * [变形transform的副作用](CSS/render/animation/sideEffectOfTransform.md)
+            * [线性渐变](CSS/render/animation/linearRradient.md)
+            * [径向渐变](CSS/render/animation/radialRradient.md)
+            * [动画animation](CSS/render/animation/animation.md)
+            * [动画animation的三个应用](CSS/render/animation/animationApply.md)
+            * [animate.css的使用](CSS/render/animation/animate.md)
         5. 渲染属性    
-            * [混合模式]
-            * [滤镜]
-            * [倒影]
-            * [页面渲染优化属性will-change]
-            * [遮罩mask]
-            * [路径裁剪clip-path]
+            * [混合模式](CSS/render/renderAttr/blendMode.md)
+            * [滤镜](CSS/render/renderAttr/filter.md)
+            * [倒影](CSS/render/renderAttr/reflect.md)
+            * [页面渲染优化属性will-change](CSS/render/renderAttr/willChange.md)
+            * [遮罩mask](CSS/render/renderAttr/mask.md)
+            * [路径裁剪clip-path](CSS/render/renderAttr/clipPath.md)
     * 效果
-        * [元素显示隐藏的9种思路]
-        * [实现滑动门的3种方法]
-        * [导航条Tab切换]
-        * [CSS画出的图]
-        * [纹理文本]
-        * [CSS文本效果]
-        * [CSS边框效果]
-        * [CSS背景效果]
-        * [CSS遮罩和毛玻璃效果]
+        * [元素显示隐藏的9种思路](CSS/impact/showHide.md)
+        * [实现滑动门的3种方法](CSS/impact/sliding.md)
+        * [导航条Tab切换](CSS/impact/tab.md)
+        * [CSS画出的图](CSS/impact/picture.md)
+        * [纹理文本](CSS/impact/vein.md)
+        * [CSS文本效果](CSS/impact/textEffects.md)
+        * [CSS边框效果](CSS/impact/borderEffects.md)
+        * [CSS背景效果](CSS/impact/backgroundEffects.md)
+        * [CSS遮罩和毛玻璃效果](CSS/impact/maskEffects.md)
 * [JS](JS.md)
 * [ES6](ES6.md)
 * [HTTP](HTTP.md)
