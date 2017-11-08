@@ -72,22 +72,12 @@ frameborder="1"//(默认，有边框)    </pre>
     &lt;/frameset&gt;
 &lt;/frameset&gt;</pre>
 </div>
-<table border="0">
-<tbody>
-<tr>
-<td>
 
 ![frame1](https://pic.xiaohuochai.site/blog/HTML_tags_frame1.jpg)
 
-</td>
-<td>
 
 ![frame2](https://pic.xiaohuochai.site/blog/HTML_tags_frame2.jpg)
 
-</td>
-</tr>
-</tbody>
-</table>
 
 &nbsp;
 
@@ -140,22 +130,13 @@ sandbox="allow-scripts"//允许脚本执行</pre>
 <pre>&lt;iframe srcdoc="&lt;p&gt;Hello world!&lt;/p&gt;" src="/demo/demo_iframe_srcdoc.html"&gt;
 &lt;/iframe&gt;</pre>
 </div>
-<table border="0">
-<tbody>
-<tr>
-<td>
+
 
 ![frame3](https://pic.xiaohuochai.site/blog/HTML_tags_frame3.jpg)
 
-</td>
-<td>
 
 ![frame4](https://pic.xiaohuochai.site/blog/HTML_tags_frame4.jpg)
 
-</td>
-</tr>
-</tbody>
-</table>
 
 &nbsp;
 
@@ -210,15 +191,15 @@ sandbox="allow-scripts"//允许脚本执行</pre>
 
 <div class="cnblogs_code">
 <pre>&lt;frameset rows = "40%,*"&gt;
-    &lt;frame src="https://www.hao123.com/" name="topFrame"&gt;
+    &lt;frame src="https://cli.im/" name="topFrame"&gt;
     &lt;frameset cols = "50%,50%"&gt;
-        &lt;frame src="https://www.baidu.com" name="leftFrame"&gt;
-        &lt;frame src="https://www.263.net/" name="rightFrame"&gt;
+        &lt;frame src="https://shimo.im/" name="leftFrame"&gt;
+        &lt;frame src="https://www.w3cplus.com" name="rightFrame"&gt;
     &lt;/frameset&gt;
 &lt;/frameset&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/html/frame/f2.html" frameborder="0" width="100%" height="350"></iframe>
+<iframe src="{{book.demo}}/html/frame/f22.html" frameborder="0" width="100%" height="350"></iframe>
 
 　　top对象始终指向最高(最外)层的框架，也就是浏览器窗口。使用它可以确保在一个框架中正确地访问另一个框架。因为对于在一个框架中编写的任何代码来说，其中的window对象指向的都是那个框架的特定实例，而非最髙层的框架。下图展示了在最髙层窗口中，通过代码来访问前面例子中每个框架的不同方式
 
