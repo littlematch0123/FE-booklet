@@ -6,7 +6,6 @@
 
 　　小火柴将CSS的知识体系进行了梳理和归纳，总结成以下目录
 
-  * [介绍](CSS.md)
   * 基础
       1. 基础语法
           * [引入CSS](grammar/grammar_intro.md)
