@@ -10,9 +10,9 @@
 由于里面许多内容是自己的总结，可能会有错误或纰漏之处，希望不会造成误导，多多交流
 
 
-* [HTML(已完成)](HTML/HTML.md)
-* [CSS(正在总结)](CSS/CSS.md)
-* [JS](JS/JS.md)
+* [HTML(已完结)](HTML/HTML.md)
+* [CSS(已完结)](CSS/CSS.md)
+* [JS(正在总结)](JS/JS.md)
 * [ES6](ES6/ES6.md)
 * [HTTP](HTTP/HTTP.md)
 * [前端构建](build/build.md)
