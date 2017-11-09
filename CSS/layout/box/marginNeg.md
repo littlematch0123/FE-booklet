@@ -133,7 +133,7 @@
 
 &nbsp;【3】三栏自适应布局
 
-　　中间的主体使用双层标签，外层&lt;div&gt;宽度100%显示，并且浮动，内层&lt;div&gt;为真正的主体内容，含有左右210px的margin值。左栏和右栏都采用margin负值。左栏左浮动，margin-left为-100%，正好使左栏位于页面左侧。右栏左浮动，大小为其本身的宽度200px
+　　中间的主体使用双层标签，外层&lt;div&gt;宽度100%显示，并且浮动，内层&lt;div&gt;为真正的主体内容，含有左右110px的margin值。左栏和右栏都采用margin负值。左栏左浮动，margin-left为-100%，正好使左栏位于页面左侧。右栏左浮动，大小为其本身的宽度100px
 
 <div class="cnblogs_code">
 <pre>html,body{
@@ -148,13 +148,13 @@ body{
     float: left;
 }
 .main .in{
-    margin: 0 210px;
+    margin: 0 110px;
     background-color: pink;
     height: 100%;
 }
 .left,.right{
     height: 100%;
-    width: 200px;
+    width: 100px;
     float: left;
     background-color: lightgreen;
 }
@@ -162,7 +162,7 @@ body{
     margin-left: -100%;
 }
 .right{
-    margin-left: -200px;
+    margin-left: -100px;
 }</pre>
 </div>
 <div class="cnblogs_code">
@@ -197,16 +197,16 @@ ul{
     height: 100%;
 }
 .main{
-    margin: 0 210px;
+    margin: 0 110px;
     background-color: lightgreen;
 }
 .left{
-    width: 200px;
+    width: 100px;
     float: left;
     background-color: pink;
 }
 .right{
-    width: 200px;
+    width: 100px;
     float: right;
     background-color: pink;
 }
