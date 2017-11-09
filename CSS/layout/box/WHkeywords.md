@@ -1,6 +1,6 @@
 # CSS3四个自适应关键字——fill-available、max-content、min-content、fit-content
 
-　　一般地，有两种自适应：撑满空闲空间与收缩到内容尺寸。CSS3将这两种情况分别定义为'fill-availabel'和'fit-content'。除此之外&nbsp;，还新增了更细粒度的'min-content'和'max-content'。这四个关键字可用于设置宽高属性。本文将详细介绍CSS3中的这四个自适应关键字
+　　一般地，有两种自适应：撑满空闲空间与收缩到内容尺寸。CSS3将这两种情况分别定义为'fill-available'和'fit-content'。除此之外&nbsp;，还新增了更细粒度的'min-content'和'max-content'。这四个关键字可用于设置宽高属性。本文将详细介绍CSS3中的这四个自适应关键字
 
 　　[注意]IE浏览器不支持，webkit内核浏览器需添加-webkit-前缀
 
