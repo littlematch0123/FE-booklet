@@ -31,7 +31,7 @@
 
 　　被透视元素也就是被观察者观察的元素，根据属性设置的不同，它有可能是变形元素本身，也可能是它的父级或祖先元素(后面会详细介绍)，主要进行perspective、perspective-origin等属性的设置
 
-![](http://images2015.cnblogs.com/blog/740839/201604/740839-20160406162742797-762317063.jpg)
+![perspactive0](https://pic.xiaohuochai.site/blog/CSS_render_perspactive0.jpg)
 
 **透视距离**
 
@@ -77,7 +77,7 @@ perspective
 
 　　透视原点perspective-origin是指观察者的位置，一般地，观察者位于与屏幕平行的另一个平面上，观察者始终是与屏幕垂直的。观察者的活动区域是被观察元素的盒模型区域
 
-![perspectiveOrigin](https://pic.xiaohuochai.site/blog/CSS_render_perspectiveOrigin.jpg)
+![perspectiveOrigin](https://pic.xiaohuochai.site/blog/CSS_render_perspactiveOrigin.jpg)
 
 perspective-origin
 
