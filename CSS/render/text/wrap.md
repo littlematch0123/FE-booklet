@@ -37,7 +37,7 @@ pre-wrap: 不合并空白符，允许自动换行(在pre基础上，保留自动
     within the Shandong      province after they have entered China via the Qingdao International Airport.&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/wrap/w1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 380px;" src="{{book.demo}}/css/wrap/w1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -101,7 +101,7 @@ keep-all: 对于英文长文本不能换行，但对于中文的处理，各浏�
 
 　　[注意]当word-break值为break-all时，word-wrap属性失效；否则两个属性都起作用
 
-<iframe style="width: 100%; height: 360px;" src="{{book.demo}}/css/wrap/w3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 440px;" src="{{book.demo}}/css/wrap/w3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
