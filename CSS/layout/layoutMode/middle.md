@@ -22,7 +22,7 @@
 <pre>&lt;div class="test"&gt;测试文字&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 160px;" src="{{book.demo}}/css/ycenter/y1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 160px;" src="{{book.demo}}/css/lineheight/l6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -52,7 +52,7 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/css/ycenter/y2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/ycenter/y2.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】若子元素是图片，通过设置父元素的行高来代替高度，且设置父元素的font-size为0
 
@@ -75,7 +75,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/ycenter/y3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/lineheight/l8.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】通过新增元素来实现垂直居中的效果
 
@@ -106,7 +106,7 @@
 &lt;/div&gt; </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/ycenter/y4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/lineheight/l9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
