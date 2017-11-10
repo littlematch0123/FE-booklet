@@ -86,15 +86,15 @@ none:允许左右两侧存在浮动元素</pre>
  　　在所有浏览器中都兼容的清浮动方案如下：
 
 <div class="cnblogs_code">
-<pre>.clear:after{content:{{book.demo}}""; display: block; clear: both;}
-.clear{zoom: {{book.demo}}1;}</pre>
+<pre>.clear:after{content:""; display: block; clear: both;}
+.clear{zoom: 1;}</pre>
 </div>
 
 &nbsp;　　除了清除浮动外，常常也需要解决[外边距margin重叠](http://www.cnblogs.com/xiaohuochai/p/6255046.html#anchor1)的问题。这时，清除浮动和解决margin重叠的代码如下
 
 <div class="cnblogs_code">
-<pre>.clear:before,.clear:after{content:{{book.demo}}"";display:table;}
+<pre>.clear:before,.clear:after{content:"";display:table;}
 .clear:after{clear:both;}
-.clear{zoom:{{book.demo}}1}</pre>
+.clear{zoom:1}</pre>
 </div>
 
