@@ -95,7 +95,7 @@ fadeOutUp
 fadeOutUpBig</pre>
 </div>
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/animate/a3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 536px;" src="{{book.demo}}/css/animate/a3.html" frameborder="0" width="320" height="240"></iframe>
 
 【flip(翻转效果)】
 

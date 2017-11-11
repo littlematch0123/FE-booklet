@@ -92,7 +92,7 @@
 
 　　[注意]单一关键字：当某一方向的关键字为center时可省略
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/background/b4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 570px;" src="{{book.demo}}/css/background/b4.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】具体值
 
@@ -128,7 +128,7 @@
 
 　　在CSS2.1中，背景定位只支持以左上角为参照进行定位，在CSS3中新增了可以选择参照方向的定位。第一个和第三个参数为要参照的方向，第二个和第四个参数为偏移值
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/background/b7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/background/b7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -154,7 +154,7 @@
 
 　　[注意]local属性值IE8-浏览器不支持
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/background/b8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/background/b8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -242,7 +242,7 @@
 
 　　[注意]若background在background-origin和background-clip中仅存在一个值，则该值为background-clip；若存在两个值，则前面为background-origin，后面为background-clip
 
-<iframe style="width: 100%; height: 540px;" src="{{book.demo}}/css/background/b13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 760px;" src="{{book.demo}}/css/background/b13.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]所有背景属性都不能继承
 

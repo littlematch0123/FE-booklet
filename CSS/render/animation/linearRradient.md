@@ -60,7 +60,7 @@ to bottom right -&gt; 135deg</pre>
 
 　　[注意]window系统的safari浏览器并不支持'to'加方向的关键字，如to left。它只支持方向关键字，如left。当然了left 和 to left 方向是正好相反的
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/linearGradient/l3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 420px;" src="{{book.demo}}/css/linearGradient/l3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 

@@ -1,6 +1,10 @@
-h1{
+.markdown-section h1{
   font-size: 180%;
 }
-h2{
+.markdown-section h2{
+  font-size:150%;
   border-bottom: 1px solid #EFEAEA;
+}
+.markdown-section h3{
+  font-size:120%;
 }
