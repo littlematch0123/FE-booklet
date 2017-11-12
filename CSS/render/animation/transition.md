@@ -238,7 +238,7 @@ transition-timing-function
 
 　　[注意]x1,y1,x2,y2都是0到1的值(包括0和1)
 
-<iframe id="iframe" style="line-height: 1.5; width: 100%; height: 500px;" src="http://7xpdkf.com1.z0.glb.clouddn.com/bezier.html" frameborder="0" width="320" height="240"></iframe>
+<iframe id="iframe" style="line-height: 1.5; width: 100%; height: 670px;" src="https://demo.xiaohuochai.site/backup/bezier.html" frameborder="0" width="320" height="240"></iframe>
 
 **关键字**
 
