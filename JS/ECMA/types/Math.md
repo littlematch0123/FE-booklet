@@ -168,6 +168,15 @@ var color = colors[Math.floor(Math.random()*colors.length)];</pre>
 <pre>Math.round(Math.random())</pre>
 </div>
 
+**长度一致的随机数**
+
+```
+var random = Math.random();
+var random = random + '0000000000';
+var random = random.slice(0,10);
+console.log(random);
+```
+
 &nbsp;
 
 ### 绝对值
