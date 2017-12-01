@@ -246,7 +246,7 @@
         6. 继承 
             * [一张图理解prototype、proto和constructor的三角关系](JS/ECMA/inheritance/prototypeProtoAndConstructor.md)
             * [构造函数和原型对象](JS/ECMA/inheritance/functionAndObject.md)
-            * [创建对象的5种模式](JS/ECMA/inheritance/makeObject.md)
+            * [创建对象的5种模式](JS/ECMA/inheritance/createObject.md)
             * [实现继承的3种形式](JS/ECMA/inheritance/inheritance.md)
             * [继承实例之选项卡的实现](JS/ECMA/inheritance/tab.md)
             * [继承实例之拖拽](JS/ECMA/inheritance/drag.md)
@@ -294,7 +294,7 @@
             * 事件类型 
                 * [鼠标事件](JS/DOM/event/mouse.md)
                 * [键盘事件](JS/DOM/event/keyboard.md)
-                * [变动事件](JS/DOM/event/changing.md)
+                * [变动事件](JS/DOM/event/mutation.md)
                 * [剪贴板事件](JS/DOM/event/clipboard.md)
                 * [文本事件](JS/DOM/event/text.md)
                 * [加载事件](JS/DOM/event/load.md)
@@ -392,8 +392,7 @@
         * 二进制数组
         * Blob
         * 文件File
-        * URL
-        * Base64编码器
+         
 * ES6
     * [介绍](ES6/ES6.md)
     * 类型扩展
@@ -421,6 +420,35 @@
         * [async](ES6/async/async.md)
 * HTTP
     * [介绍](HTTP/HTTP.md)
+    * 基础
+        * [网络基础](HTTP/base/network.md)
+        * [数据传输](HTTP/base/transport.md)
+        * [网站架构演化](HTTP/base/WebArchitecture.md)
+        * [连接管理](HTTP/base/connect.md)
+    * 组成
+        * [URL](HTTP/composition/URL.md)
+        * [报文起始行](HTTP/composition/StartingLine.md)
+        * [报文首部](HTTP/composition/MessageHeader.md)  
+    * 结构
+        * [Web服务器](HTTP/structure/server.md)
+        * [代理](HTTP/structure/proxy.md)
+        * [缓存](HTTP/structure/cache.md) 
+        * [网关、隧道和中继](HTTP/structure/others.md) 
+    * 安全
+        * [Web攻击技术](HTTP/security/webAttack.md)
+        * [客户端识别及Cookie](HTTP/security/cookie.md)
+        * [基本认证](HTTP/security/baseAuth.md) 
+        * [摘要认证](HTTP/security/summaryAuth.md) 
+        * [安全HTTP](HTTP/security/https.md) 
+    * 编码
+        * [实体和编码](HTTP/coding/coding.md)
+        * [字符集](HTTP/coding/charset.md)
+        * [内容协商](HTTP/coding/contentNegotiation.md) 
+        * [使用javascript实现base64编码器](HTTP/coding/base64Coding.md) 
+    * 内容发布
+        * [Web主机托管](HTTP/issue/hosting.md)
+        * [重定向和负载均衡](HTTP/issue/redirect.md)
+        * [日志记录](HTTP/issue/log.md)  
 
 * [前端框架](FELib.md)
     * [Bootstrap](bs.md)

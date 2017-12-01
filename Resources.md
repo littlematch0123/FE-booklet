@@ -8,6 +8,7 @@
 * [ES5/词法](https://www.w3.org/html/ig/zh/wiki/ES5)
 * [阮一峰Javascript标准参考教程](http://javascript.ruanyifeng.com)
 * 《你不知道的javascript(上卷)》
+* 《javascript DOM编程艺术(第2版)》
 * 《javascript权威指南(第6版)》
 * 《javascript高级程序设计(第3版)》
 * 《javascript语言精粹(修订版)》
@@ -24,4 +25,5 @@
 * 《细说PHP》
 * 《深入理解Bootstrap》
 * 《移动web手册》
+* 《大型网站技术架构核心原理与案例分析》
 

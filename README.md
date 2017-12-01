@@ -13,8 +13,8 @@
 * [HTML(已完结)](HTML/HTML.md)
 * [CSS(已完结)](CSS/CSS.md)
 * [JS(正在总结)](JS/JS.md)
-* [ES6](ES6/ES6.md)
-* [HTTP](HTTP/HTTP.md)
+* [ES6(已完结)](ES6/ES6.md)
+* [HTTP(已完结)](HTTP/HTTP.md)
 * [前端构建](build/build.md)
 * [版本管理](version/version.md)
 * 前端框架
