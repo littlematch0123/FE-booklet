@@ -253,18 +253,25 @@ g(2);//3</pre>
 </div>
 
 **兼容代码**
-
-<div class="cnblogs_code">
-<pre>function bind(f,o){
-    if(f.bind){
-        return f.bind(o);
-    }else{
-        return function(){
-            return f.apply(o,arguments);
-        }
-    }
-}    </pre>
-</div>
+```
+Function.prototype.bind = function(context){
+  var self = this;
+  return function(){
+    return self.apply(context,arguments);
+  }
+}
+```
+　　通常，会把它实现得稍微复杂一点，使得可以填入一些参数
+```
+Function.prototype.bind = function(context){
+  var self = this,
+      context = [].shift.call(arguments),
+      args = [].slice.call(arguments);
+  return function(){
+    return self.apply(context,[].concat.call(args,[].slice.call(arguments)));
+  }
+}
+```
 
 　　bind()方法不仅是将函数绑定到一个对象，它还附带一些其他应用：除了第一个实参之外，传入bind()的实参也会绑定到this，这个附带的应用是一种常见的函数式编程技术，有时也被称为'柯里化'(currying)
 
