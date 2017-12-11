@@ -94,6 +94,45 @@ for(var i = 0; i &lt; test.length; i++){
 
 <iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/getElement/g2.html" frameborder="0" width="320" height="240"></iframe>
 
+【丢失的this】
+
+　　document.getElementById这个方法名实在有点过长，可以用一个短的函数来代替它
+
+```
+var getId = function(id){
+  return document.getElementById(id);
+}
+```
+　　但是，为什么不能用下面这种更简单的形式呢？
+```
+var getId =  document.getElementById;
+getId('div1');
+```
+　　上面的这段代码中会抛出异常
+
+![getElementById2](https://pic.xiaohuochai.site/blog/JS_DOM_Node_getElementById2.png)
+
+　　这是因为document.getElementById方法的内部实现需要用到this，这个this本来被期望指向document，当getElementById方法作为document对象的属性被调用时，方法内部的this确实指向document。但当用getId来引用document.getElementById之后，再调用getId，此时就成了普通函数调用，函数内部的this指向了window，而不是document
+
+　　代码修改如下，可以取得id为'div1'的元素
+
+```
+<div id="div1"></div>
+<script>
+  var getId = document.getElementById;
+  console.log(getId.call(document,'div1'));
+</script>  
+```
+　　或者，可以这样修改
+
+```
+ var getId = document.getElementById.bind(document);
+```
+　　最终结果如下
+
+![getElementById3](https://pic.xiaohuochai.site/blog/JS_DOM_Node_getElementById3.png)
+
+
 &nbsp;
 
 ### getElementsByTagName()
