@@ -193,3 +193,75 @@ firstLoad(10);//false
 firstLoad(20);//true
 firstLoad(20);//false
 ```
+&nbsp;
+
+### 缓存机制
+
+　　通过闭包加入缓存机制，使得相同的参数不用重复计算，来提高函数的性能
+
+　　未加入缓存机制前的代码如下
+
+```
+var mult = function(){
+  var a = 1;
+  for(var i = 0,len = arguments.length; i<len; i++){
+    a = a * arguments[i];
+  }
+  return a;
+}
+```
+　　加入缓存机制后，代码如下
+
+```
+var mult = function(){
+  var cache = {};
+  var calculate = function(){
+    var a = 1;
+    for(var i = 0,len = arguments.length; i<len; i++){
+      a = a * arguments[i];
+    }
+    return a;
+  };
+  return function(){
+    var args = Array.prototype.join.call(arguments,',');
+    if(args in cache){
+      return cache[args];
+    }
+
+    return cache[args] = calculate.apply(null,arguments);
+  }
+}()
+```
+
+&nbsp;
+
+### img对象
+
+　　img对象经常用于数据上报
+
+```
+var report = function(src){
+  var img = new Image();
+  img.src = src;
+}
+report('http://xx.com/getUserInfo');
+```
+
+　　但是，在一些低版本浏览器中，使用report函数进行数据上报会丢失30%左右的数据，也就是说，report函数并不是每一次都成功地发起了HTTP请求
+
+　　原因是img是report函数中的局部变量，当report函数的调用结束后，img局部变量随即被销毁，而此时或许还没来得及发出HTTP请求，所以此次请求就会丢失掉
+
+　　现在把img变量用闭包封闭起来，就能解决请求丢失的问题
+
+```
+var report = (function(){
+  var imgs = [];
+  return function(src){
+    var img = new Image();
+    imgs.push(img);
+    img.src = src;
+  }
+})()
+report('http://xx.com/getUserInfo');
+```
+
