@@ -365,7 +365,7 @@ EventUtil.addHandler(btn, "click", handler.handleClick.bind(handler, "my-btn"));
 }</pre>
 </div>
 
-　　这样一来，当我们第一次调用该函数时会console.log('a')会被执行；全局变量a被重定义，并被赋予新的函数
+　　这样一来，当我们第一次调用该函数时console.log('a')会被执行；全局变量a被重定义，并被赋予新的函数
 
 　　当该函数再次被调用时， console.log('b')会被执行
 
