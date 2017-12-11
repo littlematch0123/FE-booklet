@@ -239,7 +239,7 @@
             * [从执行环境角度看闭包](JS/ECMA/closure/definitionFromExecutionContext.md)
             * [IIFE](JS/ECMA/closure/IIFE.md)
             * [常见的一个循环和闭包的错误详解](JS/ECMA/closure/commonError.md)
-            * [闭包的7种形式](JS/ECMA/closure/allFormsOfClosure.md) 
+            * [闭包的10种形式](JS/ECMA/closure/allFormsOfClosure.md) 
         5. this
             * [this的4种绑定规则](JS/ECMA/this/binding.md)
             * [this绑定优先级](JS/ECMA/this/order.md)

@@ -84,7 +84,7 @@
           * [从执行环境角度看闭包](ECMA/closure/definitionFromExecutionContext.md)
           * [IIFE](ECMA/closure/IIFE.md)
           * [常见的一个循环和闭包的错误详解](ECMA/closure/commonError.md)
-          * [闭包的7种形式](ECMA/closure/allFormsOfClosure.md) 
+          * [闭包的10种形式](ECMA/closure/allFormsOfClosure.md) 
       5. this
           * [this的4种绑定规则](ECMA/this/binding.md)
           * [this绑定优先级](ECMA/this/order.md)
