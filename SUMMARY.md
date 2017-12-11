@@ -153,6 +153,7 @@
     * 效果
         * [元素显示隐藏的9种思路](CSS/impact/showHide.md)
         * [实现滑动门的3种方法](CSS/impact/sliding.md)
+        * [CSS以图换字的9种方法](CSS/impact/imageReplacing.md)
         * [导航条Tab切换](CSS/impact/tab.md)
         * [CSS画出的图](CSS/impact/picture.md)
         * [纹理文本](CSS/impact/vein.md)
@@ -248,8 +249,34 @@
             * [构造函数和原型对象](JS/ECMA/inheritance/functionAndObject.md)
             * [创建对象的5种模式](JS/ECMA/inheritance/createObject.md)
             * [实现继承的3种形式](JS/ECMA/inheritance/inheritance.md)
+            * [面向对象的6个概念](JS/ECMA/inheritance/conception.md)
             * [继承实例之选项卡的实现](JS/ECMA/inheritance/tab.md)
             * [继承实例之拖拽](JS/ECMA/inheritance/drag.md)
+    * ES6
+        * [介绍](JS/ES6/ES6.md)
+        * 类型扩展
+            * [数字扩展](JS/ES6/typeExtension/numberExtension.md)
+            * [字符串扩展](JS/ES6/typeExtension/stringExtension.md)
+            * [模板字面量](JS/ES6/typeExtension/templateLiteral.md)
+            * [Unicode扩展](JS/ES6/typeExtension/unicodeExtension.md)
+            * [正则扩展](JS/ES6/typeExtension/regExpExtension.md)
+            * [函数扩展](JS/ES6/typeExtension/functionExtension.md)
+            * [对象扩展](JS/ES6/typeExtension/objectExtension.md)
+            * [Symbol类型](JS/ES6/typeExtension/symbol.md)
+            * [Set和Map集合](JS/ES6/typeExtension/setAndMap.md)
+            * [数组扩展](JS/ES6/typeExtension/arrayExtension.md)
+            * [定型数组](JS/ES6/typeExtension/arrayBuffer.md)
+        * 功能扩展
+            * [块级作用域](JS/ES6/abilityExtension/blockScope.md)
+            * [解构赋值](JS/ES6/abilityExtension/destructuring.md)
+            * [类](JS/ES6/abilityExtension/class.md)
+            * [代理(Proxy)和反射(Reflection)](JS/ES6/abilityExtension/proxyAndReflection.md)
+            * [模块](JS/ES6/abilityExtension/module.md)
+            * [修饰器Decorator](JS/ES6/abilityExtension/decorator.md)
+        * 异步操作 
+            * [迭代器(Iterator)和生成器(Generator)](JS/ES6/async/IteratorAndGenerator.md)
+            * [Promise和异步编程](JS/ES6/async/promise.md)
+            * [async](JS/ES6/async/async.md)            
     * DOM
         1. 节点
             * 节点类型
@@ -313,13 +340,13 @@
             * [navigator对象和用户代理检测](JS/BOM/navigator.md)
             * [能力检测](JS/BOM/abilityTest.md)
     * 模块化
-        * 实现javascript下的模块组织
-        * CommonJS规范及Node模块实现
-        * 使用Browserify来实现CommonJS的浏览器加载
-        * AMD及requireJS
-        * r.js打包
-        * CMD及seaJS
-        * ES6中的Module
+        * [实现javascript下的模块组织](JS/modular/ModuleOrganization.md)
+        * [CommonJS规范及Node模块实现](JS/modular/commonjs.md)
+        * [使用Browserify来实现CommonJS的浏览器加载](JS/modular/Browserify.md)
+        * [AMD及requireJS](JS/modular/requirejs.md)
+        * [r.js打包](JS/modular/r.md)
+        * [CMD及seaJS](JS/modular/seajs.md)
+        * [ES6中的Module](JS/modular/es6Modula.md)
     * 动画和运动
         1. 动画
             * 原生拖放
@@ -392,32 +419,10 @@
         * 二进制数组
         * Blob
         * 文件File
-         
-* ES6
-    * [介绍](ES6/ES6.md)
-    * 类型扩展
-        * [数字扩展](ES6/typeExtension/numberExtension.md)
-        * [字符串扩展](ES6/typeExtension/stringExtension.md)
-        * [模板字面量](ES6/typeExtension/templateLiteral.md)
-        * [Unicode扩展](ES6/typeExtension/unicodeExtension.md)
-        * [正则扩展](ES6/typeExtension/regExpExtension.md)
-        * [函数扩展](ES6/typeExtension/functionExtension.md)
-        * [对象扩展](ES6/typeExtension/objectExtension.md)
-        * [Symbol类型](ES6/typeExtension/symbol.md)
-        * [Set和Map集合](ES6/typeExtension/setAndMap.md)
-        * [数组扩展](ES6/typeExtension/arrayExtension.md)
-        * [定型数组](ES6/typeExtension/arrayBuffer.md)
-    * 功能扩展
-        * [块级作用域](ES6/abilityExtension/blockScope.md)
-        * [解构赋值](ES6/abilityExtension/destructuring.md)
-        * [类](ES6/abilityExtension/class.md)
-        * [代理(Proxy)和反射(Reflection)](ES6/abilityExtension/proxyAndReflection.md)
-        * [模块](ES6/abilityExtension/module.md)
-        * [修饰器Decorator](ES6/abilityExtension/decorator.md)
-    * 异步操作 
-        * [迭代器(Iterator)和生成器(Generator)](ES6/async/IteratorAndGenerator.md)
-        * [Promise和异步编程](ES6/async/promise.md)
-        * [async](ES6/async/async.md)
+
+    * 可维护性
+        * [代码风格]()     
+
 * HTTP
     * [介绍](HTTP/HTTP.md)
     * 基础
@@ -462,7 +467,26 @@
     * [NodeJS](node.md)
     * [MongoDB](mongo.md)
 * [服务器端](server.md)
-* [辅助工具](helper.md)
+* 前端工具
+    * [介绍](utils/utils.md)
+    * Photoshop
+        * [准备篇](utils/ps/prepare.md)
+        * [测量篇](utils/ps/mesuration.md)
+        * [切图篇](utils/ps/cut.md)
+        * [图片格式](utils/ps/imgType.md)
+        * [雪碧图](utils/ps/sprite.md)
+        * [自动切图](utils/ps/autoCut.md)
+    * 构建工具
+        * [r.js](utils/build/r.md)
+        * [grunt](utils/build/grunt.md)
+        * [gulp.js](utils/build/gulp.md)
+        * webpack
+            * [webpack入门](utils/build/webpackIntro.md)
+            * [webpack实用配置](utils/build/webpackDeploy.md)
+            * [webpack四个重要概念](utils/build/webpackConcept.md)
+            * [webpack模块解析](utils/build/webpackModule.md)
+            * [webpack命令行](utils/build/webpackCli.md)
+            
 * [术语表](Glossary.md)
 * [参考资料](Resources.md)
 

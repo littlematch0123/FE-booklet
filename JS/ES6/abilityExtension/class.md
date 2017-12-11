@@ -58,7 +58,7 @@ console.log(typeof PersonClass.prototype.sayName); // "function"</pre>
 
 　　私有属性是实例中的属性，不会出现在原型上，且只能在类的构造函数或方法中创建，此例中的name就是一个私有属性。建议在构造函数中创建所有私有属性，从而只通过一处就可以控制类中的所有私有属性
 
-　　类声明仅仅是基于已有自定义类型声明的语法糖。typeofPersonClass最终返回的结果是"function"，所以PersonClass声明实际上创建了一个具有构造函数方法行为的函数。此示例中的sayName()方法实际上是PersonClass.prototype上的一个方法；与之类似的是，在之前的示例中，sayName()也是personType.prototype上的一个方法。通过语法糖包装以后，类就可以代替自定义类型的功能，不必担心使用的是哪种方法，只需关注如何定义正确的类
+　　类声明仅仅是基于已有自定义类型声明的语法糖。typeof PersonClass最终返回的结果是"function"，所以PersonClass声明实际上创建了一个具有构造函数方法行为的函数。此示例中的sayName()方法实际上是PersonClass.prototype上的一个方法；与之类似的是，在之前的示例中，sayName()也是personType.prototype上的一个方法。通过语法糖包装以后，类就可以代替自定义类型的功能，不必担心使用的是哪种方法，只需关注如何定义正确的类
 
 　　[注意]与函数不同的是，类属性不可被赋予新值，在之前的示例中，PersonClass.prototype就是这样一个只可读的类属性
 
@@ -113,7 +113,7 @@ let PersonType2 = (function() {
 
 【常量类名】
 
-　　类的名称只在类中为常童，所以尽管不能在类的方法中修改类名，但可以在外部修改
+　　类的名称只在类中为常量，所以尽管不能在类的方法中修改类名，但可以在外部修改
 
 <div class="cnblogs_code">
 <pre>class Foo {
