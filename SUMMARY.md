@@ -221,7 +221,10 @@
                 * [函数参数](JS/ECMA/types/functionParameters.md)
                 * [函数的属性和方法](JS/ECMA/types/functionOther.md)
                 * [ES6函数扩展](JS/ECMA/types/functionES6.md)
-                * [高级技巧](JS/ECMA/types/functionSkills.md)
+                * [高阶函数](JS/ECMA/types/higherOrderFunction.md)
+                * [函数柯里化](JS/ECMA/types/curring.md)
+                * [函数节流和函数防抖](JS/ECMA/types/debounceAndThrottle.md)
+                * [惰性函数](JS/ECMA/types/LazyFunction.md)
                 * [函数式编程](JS/ECMA/types/FunctionalProgramming.md)
             * 对象 
                 * [初识对象](JS/ECMA/types/Object.md)
