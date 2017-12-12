@@ -1,0 +1,227 @@
+# 深入理解javascript函数进阶系列第三篇——函数节流和函数防抖
+
+　　javascript中的函数大多数情况下都是由用户主动调用触发的，除非是函数本身的实现不合理，否则一般不会遇到跟性能相关的问题。但在一些少数情况下，函数的触发不是由用户直接控制的。在这些场景下，函数有可能被非常频繁地调用，而造成大的性能问题。解决性能问题的处理办法就是函数节流和函数防抖。本文将详细介绍函数节流和函数防抖
+
+&nbsp;
+
+### 常见场景
+
+　　下面是函数被频繁调用的常见的几个场景
+
+　　1、mousemove事件。如果要实现一个拖拽功能，需要一路监听 mousemove 事件，在回调中获取元素当前位置，然后重置 dom 的位置来进行样式改变。如果不加以控制，每移动一定像素而触发的回调数量非常惊人，回调中又伴随着 DOM 操作，继而引发浏览器的重排与重绘，性能差的浏览器可能就会直接假死。
+
+　　2、window.onresize事件。为window对象绑定了resize事件，当浏览器窗口大小被拖动而改变的时候，这个事件触发的频率非常之高。如果在window.onresize事件函数里有一些跟DOM节点相关的操作，而跟DOM节点相关的操作往往是非常消耗性能的，这时候浏览器可能就会吃不消而造成卡顿现象
+
+　　3、射击游戏的 mousedown/keydown 事件（单位时间只能发射一颗子弹）
+
+　　4、搜索联想（keyup事件）
+
+　　5、监听滚动事件判断是否到页面底部自动加载更多（scroll事件）
+
+　　对于这些情况的解决方案就是函数节流（throttle）或函数去抖（debounce），核心其实就是限制某一个方法的频繁触发
+
+&nbsp;
+
+### 函数防抖
+
+　　函数防抖的原理是将即将被执行的函数用setTimeout延迟一段时间执行。对于正在执行的函数和新触发的函数冲突问题有两种处理，也分别对应了定时器管理的两种机制
+
+　　第一种是只要当前函数没有执行完成，任何新触发的函数都会被忽略，简易代码如下
+
+<div class="cnblogs_code">
+<pre>function debounce(method, context) {
+  //忽略新函数
+  if(method.tId){
+    return false;
+  }
+  method.tId = setTimeout(function() {
+    method.call(context);
+  }, 1000);
+}</pre>
+</div>
+
+　　第二种是只要有新触发的函数，就立即停止执行当前函数，转而执行新函数，简易代码如下
+
+<div class="cnblogs_code">
+<pre>function debounce(method, context) {
+ //停止当前函数
+  clearTimeout(method.tId);
+  method.tId = setTimeout(function() {
+    method.call(context);
+  }, 1000);
+}</pre>
+</div>
+
+　　当然，不论是哪种处理，函数去抖的目的是让要执行的函数停止一段时间之后才执行
+
+　　下面是一个比较完整的防抖函数（debounce），该函数接受2个参数，第一个参数为需要被延迟执行的函数，第二个参数为延迟执行的时间
+
+<div class="cnblogs_code">
+<pre>var debounce = function ( fn, interval ) {
+  var  _self = fn,    // 保存需要被延迟执行的函数引用
+      timer,    // 定时器
+      firstTime = true;    // 是否是第一次调用
+  return function () {
+    var args = arguments,
+    _me = this;
+    if ( firstTime ) {    // 如果是第一次调用，不需延迟执行
+      _self.apply( me, args);
+      return firstTime = false;
+    }
+    if ( timer ) {    // 如果定时器还在，说明前一次延迟执行还没有完成
+      return false;
+    }
+    timer = setTimeout(function () { // 延迟一段时间执行
+      clearTimeout(timer); 
+      timer = null;
+      _self.apply(_me, args);
+    }, interval || 500 );
+  };
+};
+window.onresize = debounce(function(){ 
+  console.log( 1 );
+}, 500 );</pre>
+</div>
+
+&nbsp;
+
+### 函数节流
+
+　　函数节流使得连续的函数执行，变为固定时间段间断地执行。关于节流的实现，有两种主流的实现方式，一种是使用时间戳，一种是设置定时器
+
+【使用时间戳】
+
+　　触发事件时，取出当前的时间戳，然后减去之前的时间戳(最一开始值设为 0 )，如果大于设置的时间周期，就执行函数，然后更新时间戳为当前的时间戳，如果小于，就不执行
+
+<div class="cnblogs_code">
+<pre>function throttle(func, wait) {
+    var context, args;
+    var previous = 0;
+    return function() {
+        var now = +new Date();
+        context = this;
+        args = arguments;
+        if (now - previous &gt; wait) {
+            func.apply(context, args);
+            previous = now;
+        }
+    }
+}</pre>
+</div>
+
+【使用定时器】
+
+　　触发事件时，设置一个定时器，再触发事件的时候，如果定时器存在，就不执行，直到定时器执行，然后执行函数，清空定时器，这样就可以设置下个定时器
+
+<div class="cnblogs_code">
+<pre>function throttle(func, wait) {
+    var timeout,args,context;
+    var previous = 0;
+    return function() {
+        context = this;
+        args = arguments;
+        if (!timeout) {
+            timeout = setTimeout(function(){
+                timeout = null;
+                func.apply(context, args)
+            }, wait)
+        }
+    }
+}</pre>
+</div>
+
+&nbsp;
+
+### 数组分块
+
+　　在前面关于函数节流和函数防抖的讨论中，提供了限制函数被频繁调用的解决方案。下面将遇到另外一个问题，某些函数确实是用户主动调用的，但因为一些客观的原因，这些函数会严重地影响页面性能
+
+　　一个例子是创建WebQQ的QQ好友列表。列表中通常会有成百上千个好友，如果一个好友用一个节点来表示，在页面中渲染这个列表的时候，可能要一次性往页面中创建成百上千个节点
+
+　　在短时间内往页面中大量添加DOM节点显然也会让浏览器吃不消，看到的结果往往就是浏览器的卡顿甚至假死。代码如下：
+
+<div class="cnblogs_code">
+<pre>var ary = [];
+for ( var i = 1; i &lt;= 1000; i++ ){
+  ary.push( i );    // 假设 ary 装载了 1000 个好友的数据
+};
+var renderFriendList = function( data ){
+  for ( var i = 0, l = data.length; i &lt; l; i++ ){
+    var div = document.createElement( 'div' );
+    div.innerHTML = i;
+    document.body.appendChild( div );
+  }
+};
+renderFriendList( ary );</pre>
+</div>
+
+　　这个问题的解决方案之一是数组分块技术，下面的timeChunk函数让创建节点的工作分批进行，比如把1秒钟创建1000个节点，改为每隔200毫秒创建8个节点
+
+　　数组分块是一种使用定时器分割循环的技术，为要处理的项目创建一个队列，然后使用定时器取出下一个要处理的项目进行处理，接着再设置另一个定时器
+
+　　在数组分块模式中，array变量本质上就是一个&ldquo;待办事宜&rdquo;列表，它包含了要处理的项目。使用shift()方法可以获取队列中下一个要处理的项目，然后将其传递给某个函数。如果在队列中还有其他项目，则设置另一个定时器，并通过arguments.callee调用同一个匿名函数
+
+　　数组分块的重要性在于它可以将多个项目的处理在执行队列上分开，在每个项目处理之后，给予其他的浏览器处理机会运行，这样就可能避免长时间运行脚本的错误。一旦某个函数需要花50ms以上的时间完成，那么最好看看能否将任务分割为一系列可以使用定时器的小任务
+
+　　下面是数组分块模式的简易代码
+
+<div class="cnblogs_code">
+<pre>function chunk(array,process,context){
+    setTimeout(function(){
+        //取出下一个条目并处理
+        var item = array.shift();
+        process.call(context,item);
+        //若还有条目，再设置另一个定时器
+        if(array.length &gt; 0){
+            setTimeout(arguments.callee,100);
+        }
+    },100);    
+}</pre>
+</div>
+<div class="cnblogs_code">
+<pre>var data = [1,2,3,4,5,6,7,8,9,0];
+function printValue(item){
+    var div = document.getElementById('myDiv');
+    div.innerHTML += item + '&lt;br&gt;';
+}
+chunk(data.concat(),printValue);</pre>
+</div>
+
+　　下面是数组分块的详细代码，timeChunk函数接受3个参数，第1个参数是创建节点时需要用到的数据，第2个参数是封装了创建节点逻辑的函数，第3个参数表示每一批创建的节点数量
+
+<div class="cnblogs_code">
+<pre>var timeChunk = function( ary, fn, count ){ 
+  var obj,t;
+  var len = ary.length;
+  var start = function(){
+    for ( var i = 0; i &lt; Math.min( count || 1, ary.length ); i++ ){ 
+      var obj = ary.shift();
+      fn( obj );
+    }
+  };
+  return function(){
+    t = setInterval(function(){
+      if ( ary.length === 0 ){ // 如果全部节点都已经被创建好
+        return clearInterval( t );
+      }
+      start();
+    }, 200 );    // 分批执行的时间间隔，也可以用参数的形式传入
+  };
+};</pre>
+</div>
+
+　　最后进行一些小测试，假设有1000个好友的数据，利用timeChunk函数，每一批只往页面中创建8个节点
+
+<div class="cnblogs_code">
+<pre>var ary = [];
+for ( var i = 1; i &lt;= 1000; i++ ){ 
+  ary.push( i );
+};
+var renderFriendList = timeChunk( ary, function( n ){ 
+  var div = document.createElement( 'div' ); 
+  div.innerHTML = n;
+  document.body.appendChild( div );
+}, 8 );
+renderFriendList();</pre>
+</div>
+
