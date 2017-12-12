@@ -54,18 +54,6 @@ gulp.task('merge3', function () {
     .pipe(gulp.dest('dist/JS'));
 });
 gulp.task('merge4', function () {
-  return gulp.src(['_book/ES6/**/*.html'])
-    .pipe(merge({
-      '../base.css': ['../**/*.css'],
-      '../base.js': ['../**/*.js'],
-      '../../base.css': ['../../**/*.css'],
-      '../../base.js': ['../../**/*.js'],
-      '../../../base.css': ['../../../**/*.css'],
-      '../../../base.js': ['../../../**/*.js']
-    }))
-    .pipe(gulp.dest('dist/ES6'));
-});
-gulp.task('merge5', function () {
   return gulp.src(['_book/HTTP/**/*.html'])
     .pipe(merge({
       '../base.css': ['../**/*.css'],
@@ -76,6 +64,66 @@ gulp.task('merge5', function () {
       '../../../base.js': ['../../../**/*.js']
     }))
     .pipe(gulp.dest('dist/HTTP'));
+});
+gulp.task('merge5', function () {
+  return gulp.src(['_book/utils/**/*.html'])
+    .pipe(merge({
+      '../base.css': ['../**/*.css'],
+      '../base.js': ['../**/*.js'],
+      '../../base.css': ['../../**/*.css'],
+      '../../base.js': ['../../**/*.js'],
+      '../../../base.css': ['../../../**/*.css'],
+      '../../../base.js': ['../../../**/*.js']
+    }))
+    .pipe(gulp.dest('dist/utils'));
+});
+gulp.task('merge6', function () {
+  return gulp.src(['_book/FELib/**/*.html'])
+    .pipe(merge({
+      '../base.css': ['../**/*.css'],
+      '../base.js': ['../**/*.js'],
+      '../../base.css': ['../../**/*.css'],
+      '../../base.js': ['../../**/*.js'],
+      '../../../base.css': ['../../../**/*.css'],
+      '../../../base.js': ['../../../**/*.js']
+    }))
+    .pipe(gulp.dest('dist/FELib'));
+});
+gulp.task('merge7', function () {
+  return gulp.src(['_book/BE/**/*.html'])
+    .pipe(merge({
+      '../base.css': ['../**/*.css'],
+      '../base.js': ['../**/*.js'],
+      '../../base.css': ['../../**/*.css'],
+      '../../base.js': ['../../**/*.js'],
+      '../../../base.css': ['../../../**/*.css'],
+      '../../../base.js': ['../../../**/*.js']
+    }))
+    .pipe(gulp.dest('dist/BE'));
+});
+gulp.task('merge8', function () {
+  return gulp.src(['_book/server/**/*.html'])
+    .pipe(merge({
+      '../base.css': ['../**/*.css'],
+      '../base.js': ['../**/*.js'],
+      '../../base.css': ['../../**/*.css'],
+      '../../base.js': ['../../**/*.js'],
+      '../../../base.css': ['../../../**/*.css'],
+      '../../../base.js': ['../../../**/*.js']
+    }))
+    .pipe(gulp.dest('dist/server'));
+});
+gulp.task('merge9', function () {
+  return gulp.src(['_book/optimize/**/*.html'])
+    .pipe(merge({
+      '../base.css': ['../**/*.css'],
+      '../base.js': ['../**/*.js'],
+      '../../base.css': ['../../**/*.css'],
+      '../../base.js': ['../../**/*.js'],
+      '../../../base.css': ['../../../**/*.css'],
+      '../../../base.js': ['../../../**/*.js']
+    }))
+    .pipe(gulp.dest('dist/optimize'));
 });
 gulp.task('move',function(){
   gulp.src('_book/search_plus_index.json')
@@ -95,7 +143,7 @@ gulp.task('concat',function(){
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(gulp.dest('dist'));
 });
-gulp.task('html', ['move', 'merge0', 'merge1', 'merge2', 'merge3', 'merge4', 'merge5', 'concat'],function () {
+gulp.task('html', ['move', 'merge0', 'merge1', 'merge2', 'merge3', 'merge4', 'merge5', 'merge6', 'merge7', 'merge8', 'merge9','concat'],function () {
   var options = {
     removeComments: true,
     collapseWhitespace: true,
