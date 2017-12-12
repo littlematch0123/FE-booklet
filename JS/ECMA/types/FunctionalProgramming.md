@@ -99,67 +99,6 @@ var reduce = Array.prototype.reduce
 
 &nbsp;
 
-### 高阶函数
-
-　　高阶函数(higher-order function)指操作函数的函数，它接收一个或多个函数作为参数，并返回一个新函数
-
-<div class="cnblogs_code">
-<pre>//这个高阶函数返回一个新的函数，这个新函数将它的实参传入f()，并返回f的返回值的逻辑非
-function not(f){
-    return function(){
-        var result = f.apply(this,arguments);
-        return !result;
-    };
-}
-var even = function(x){
-    return x % 2 === 0;
-}
-var odd = not(even);
-[1,1,3,5,5].every(odd);//true</pre>
-</div>
-
-　　上面的not()函数就是一个高阶函数，因为它接收一个函数作为参数，并返回一个新函数
-
-　　下面的mapper()函数，也是接收一个函数作为参数，并返回一个新函数，这个新函数将一个数组映射到另一个使用这个函数的数组上
-
-<div class="cnblogs_code">
-<pre>//所返回的函数的参数应当是一个实参数组，并对每个数组元素执行函数f()，并返回所有计算结果组成的数组
-function mapper(f){
-    return function(a){
-        return Array.prototype.map.call(a,f);
-    }
-}
-var increment = function(x){
-    return x+1;
-}
-var incrementer = mapper(increment);
-increment([1,2,3]);//[2,3,4]</pre>
-</div>
-
-　　下面是一个更常见的例子，它接收两个函数f()和g()，并返回一个新函数用以计算f(g())
-
-<div class="cnblogs_code">
-<pre>//返回一个新的可以计算f(g(...))的函数
-//返回的函数h()将它所有的实参传入g()，然后将g()的返回值传入f()
-//调用f()和g()时的this值和调用h()时的this值是同一个this
-function compose(f,g){
-    return function(){
-        //需要给f()传入一个参数，所以使用f()的call()方法
-        //需要给g()传入很多参数，所以使用g()的apply()方法
-        return f.call(this,g.apply(this,arguments));
-    };
-}
-var square = function(x){
-    return x*x;
-}
-var sum = function(x,y){
-    return x + y;
-}
-var squareofsum = compose(square,sum);
-squareofsum(2,3);//25</pre>
-</div>
-
-&nbsp;
 
 ### 不完全函数
 
