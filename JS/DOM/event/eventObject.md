@@ -21,7 +21,7 @@ oBox.onclick = function(a){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【2】另一种方法是直接使用event变量
 
@@ -38,7 +38,7 @@ oBox.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e2.html" frameborder="0" width="320" height="240"></iframe>
 
 **兼容**
 
@@ -55,7 +55,7 @@ oBox.onclick = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e3.html" frameborder="0" width="320" height="240"></iframe>
 
 ## 属性和方法
 
@@ -77,7 +77,7 @@ oBox.onclick = oBox.onmouseout =oBox.onmouseover =function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　通过点击或按tab键将焦点切换到button按钮上可以触发focus事件
 
@@ -92,7 +92,7 @@ oBox.onfocus = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 事件目标
 
@@ -124,7 +124,7 @@ box.onclick = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 90px;" src="{{book.demo}}/js/eventObject/e6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 90px;" src="https://demo.xiaohuochai.site/js/eventObject/e6.html" frameborder="0" width="320" height="240"></iframe>
 
 **target**
 
@@ -155,7 +155,7 @@ box.onmouseout = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 90px;" src="{{book.demo}}/js/eventObject/e7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 90px;" src="https://demo.xiaohuochai.site/js/eventObject/e7.html" frameborder="0" width="320" height="240"></iframe>
 
 **srcElement**
 
@@ -184,7 +184,7 @@ box.onmouseout = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 90px;" src="{{book.demo}}/js/eventObject/e8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 90px;" src="https://demo.xiaohuochai.site/js/eventObject/e8.html" frameborder="0" width="320" height="240"></iframe>
 
 **兼容**　
 
@@ -247,7 +247,7 @@ box.onmouseout = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 190px;" src="{{book.demo}}/js/eventObject/e9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 190px;" src="https://demo.xiaohuochai.site/js/eventObject/e9.html" frameborder="0" width="320" height="240"></iframe>
 
 　　如果可行的话，也可以考虑为document添加一个事件处理程序，用以处理页面上发生的某种特定类型的事件。这样做与采取传统的做法相比有以下优点：
 
@@ -305,7 +305,7 @@ test.onclick = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e10.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>&lt;div id="test" style="height: 50px;width: 200px;overflow:scroll;background:pink;line-height:60px;"&gt;内容&lt;/div&gt;
@@ -317,7 +317,7 @@ test.onscroll = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/eventObject/e11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/eventObject/e11.html" frameborder="0" width="320" height="240"></iframe>
 
 **stopPropagation()**
 
@@ -340,7 +340,7 @@ document.body.onclick = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e12.html" frameborder="0" width="320" height="240"></iframe>
 
 **stopImmediatePropagation()**
 
@@ -369,7 +369,7 @@ document.body.onclick = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e13.html" frameborder="0" width="320" height="240"></iframe>
 
 　　使用stopImmediatePropagation()方法，即可以阻止冒泡，也可以阻止同一事件的其他监听函数被调用
 
@@ -392,7 +392,7 @@ document.body.onclick = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e14.html" frameborder="0" width="320" height="240"></iframe>
 
 **cancelBubble**
 
@@ -414,7 +414,7 @@ document.body.onclick = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e15.html" frameborder="0" width="320" height="240"></iframe>
 
 　　当使用stopIPropagation()方法或stopImmediatePropagation()方法时，关于cancelBubble值的变化，各浏览器表现不同
 
@@ -431,7 +431,7 @@ test.onclick = function(e){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e16.html" frameborder="0" width="320" height="240"></iframe>
 
 **兼容**
 
@@ -470,7 +470,7 @@ test.onclick = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e17.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】以下代码返回1，表示处于捕获阶段
 
@@ -484,7 +484,7 @@ document.addEventListener('click',function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e18.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】以下代码返回3，表示处于冒泡阶段
 
@@ -498,7 +498,7 @@ document.addEventListener('click',function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventObject/e19.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventObject/e19.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 取消默认行为
 
@@ -520,7 +520,7 @@ document.addEventListener('click',function(e){
 <pre>&lt;a id="test" href="http://www.cnblogs.com" target="_blank"&gt;链接&lt;/a&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventObject/e20.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventObject/e20.html" frameborder="0" width="320" height="240"></iframe>
 
 **cancelable**
 
@@ -538,7 +538,7 @@ test.onclick= function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventObject/e21.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventObject/e21.html" frameborder="0" width="320" height="240"></iframe>
 
 **preventDefault()**
 
@@ -556,7 +556,7 @@ test.onclick= function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventObject/e22.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventObject/e22.html" frameborder="0" width="320" height="240"></iframe>
 
 **returnValue**
 
@@ -574,7 +574,7 @@ test.onclick= function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventObject/e23.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventObject/e23.html" frameborder="0" width="320" height="240"></iframe>
 
 **兼容**
 
@@ -602,7 +602,7 @@ test.onclick= function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventObject/e24.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventObject/e24.html" frameborder="0" width="320" height="240"></iframe>
 
 **defaultPrevented**
 
@@ -625,5 +625,5 @@ test.onclick= function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventObject/e25.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventObject/e25.html" frameborder="0" width="320" height="240"></iframe>
 
