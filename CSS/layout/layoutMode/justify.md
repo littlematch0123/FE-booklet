@@ -41,7 +41,7 @@
         <li class="in">行为</li>
     </ul>
 
-<iframe style="width: 100%; height: 40px" src="{{book.demo}}/css/justify/j1.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 40px" src="https://demo.xiaohuochai.site/css/justify/j1.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 
@@ -54,12 +54,12 @@
 &emsp;&emsp;但仅仅是这样，元素也无法实现两端对齐效果
 
 
-<iframe style="width: 100%; height: 40px" src="{{book.demo}}/css/justify/j2.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 40px" src="https://demo.xiaohuochai.site/css/justify/j2.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 &emsp;&emsp;元素必须占满一行才行，如下所示。占满一行的元素可以实现两端对齐，没有占满的则无法实现
 
-<iframe style="width: 100%; height: 70px" src="{{book.demo}}/css/justify/j3.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 70px" src="https://demo.xiaohuochai.site/css/justify/j3.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 【text-align-last】
 
@@ -82,7 +82,7 @@
     </ul>
 
 
-<iframe style="width: 100%; height: 40px" src="{{book.demo}}/css/justify/j4.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 40px" src="https://demo.xiaohuochai.site/css/justify/j4.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 
@@ -106,7 +106,7 @@
     </ul>
 
 
-<iframe style="width: 100%; height: 40px" src="{{book.demo}}/css/justify/j5.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 40px" src="https://demo.xiaohuochai.site/css/justify/j5.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 
@@ -133,7 +133,7 @@
     </ul>
 
 
-<iframe style="width: 100%; height: 40px" src="{{book.demo}}/css/justify/j6.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 40px" src="https://demo.xiaohuochai.site/css/justify/j6.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 &emsp;&emsp;如果子元素之间需要使用竖线，且竖线高度与子元素高度相同时，使用`column-rule`可方便的实现需求
 
@@ -151,7 +151,7 @@
         <li class="in">行为</li>  
     </ul>
 
-<iframe style="width: 100%; height: 40px" src="{{book.demo}}/css/justify/j7.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 40px" src="https://demo.xiaohuochai.site/css/justify/j7.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>&nbsp;</p>
 
@@ -174,5 +174,5 @@
         <li class="in">行为</li>
     </ul>
 
-<iframe style="width: 100%; height: 40px" src="{{book.demo}}/css/justify/j8.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 40px" src="https://demo.xiaohuochai.site/css/justify/j8.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
