@@ -52,7 +52,7 @@ ellipsis: 文本溢出时显示省略标记(...)，省略标记插入的位置�
 overflow(或overflow-y或overflow-x):hidden | auto | scroll</pre>
 </div>
 
-<iframe style="width: 100%; height: 600px;" src="{{book.demo}}/css/textoverflow/t1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 600px;" src="https://demo.xiaohuochai.site/css/textoverflow/t1.html" frameborder="0" width="320" height="240"></iframe>
 
 【多行文本溢出】
 
@@ -79,7 +79,7 @@ display:-webkit-box;
 &lt;/div&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 90px;" src="{{book.demo}}/css/textoverflow/t2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 90px;" src="https://demo.xiaohuochai.site/css/textoverflow/t2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]不要显式地设置高度，而应该让其自适应高度，否则会造成如下效果
 
@@ -89,7 +89,7 @@ display:-webkit-box;
 &lt;/div&gt; </pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/textoverflow/t3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/textoverflow/t3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -118,21 +118,21 @@ color:    阴影颜色，默认和文本颜色一致(可选) </pre>
 
 　　[注意]该属性IE9-浏览器不支持
 
-<iframe style="width: 100%; height: 320px;" src="{{book.demo}}/css/textoverflow/t4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/css/textoverflow/t4.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>//多层阴影
 text-shadow: 1px 1px blue,5px 5px 5px red;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/css/textoverflow/t5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/css/textoverflow/t5.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]不要加太多层阴影，会有性能问题
 
 
 **常见效果**
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/textoverflow/t6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/textoverflow/t6.html" frameborder="0" width="320" height="240"></iframe>
 
 [【文字阴影代码查看】](http://runjs.cn/code/hvb4x6wt)
 
