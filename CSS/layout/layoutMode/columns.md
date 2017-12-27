@@ -22,7 +22,7 @@ column-width
 
 　　[注意]column-width不可为0和负值；当column-width的值为auto或column-width的值大于元素宽度width一半时，没有分列效果(更准确地，由其他属性来决定)
 
-<iframe style="width: 100%; height: 408px;" src="{{book.demo}}/css/column/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 408px;" src="https://demo.xiaohuochai.site/css/column/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 列数
 
@@ -42,7 +42,7 @@ column-count
 
 　　[注意]column-count不可为0和负值；当column-count的值为auto时，默认没有分列效果(更准确地，由其他属性来决定)
 
-<iframe style="width: 100%; height: 441px;" src="{{book.demo}}/css/column/c2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 441px;" src="https://demo.xiaohuochai.site/css/column/c2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 列间距
 
@@ -62,7 +62,7 @@ column-gap
 
 　　[注意]column-gap的normal值默认情况下相当于1em。column-gap值不可为负值
 
-<iframe style="width: 100%; height: 474px;" src="{{book.demo}}/css/column/c3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 474px;" src="https://demo.xiaohuochai.site/css/column/c3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 列rule
 
@@ -78,7 +78,7 @@ column-rule
 
 　　[注意]如果column-rule-width的宽度大于column-gap的宽度，则可能会显示在列框内容中
 
-<iframe style="width: 100%; height: 530px;" src="{{book.demo}}/css/column/c4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 530px;" src="https://demo.xiaohuochai.site/css/column/c4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 跨列
 
@@ -105,7 +105,7 @@ all: 跨越所有列</pre>
 
 　　[注意]当跨列元素与column-rule的修饰线重叠时，在IE和safari中，跨列元素将覆盖修饰线，而chrome浏览器存在bug，跨列元素的文本覆盖修饰线，但跨列元素的背景可能会消失。
 
-<iframe style="width: 100%; height: 551px;" src="{{book.demo}}/css/column/c5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 551px;" src="https://demo.xiaohuochai.site/css/column/c5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 列填充
 
@@ -128,7 +128,7 @@ balance: 各列高度根据内容最多的一列进行统一</pre>
 
 <span style="line-height: 1.5;">　　[注意]目前只有firefox支持带前缀的column-fill属性
 
-<iframe style="width: 100%; height: 377px;" src="{{book.demo}}/css/column/c6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 377px;" src="https://demo.xiaohuochai.site/css/column/c6.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 多列
 
@@ -168,5 +168,5 @@ columns: column-width || column-count
 
 　　[注意]所有的情况都是先推算出实际列数，再由实际列数推算实际列宽
 
-<iframe style="width: 100%; height: 430px;" src="{{book.demo}}/css/column/c7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 430px;" src="https://demo.xiaohuochai.site/css/column/c7.html" frameborder="0" width="320" height="240"></iframe>
 
