@@ -12,7 +12,7 @@
 
 　　[注意]如果相对定位元素遇到过度受限的问题，一个值会重置为另一个值的相反数。bottom总是等于-top，right总是等于-left
 
-<iframe style="width: 100%; height: 361px;" src="{{book.demo}}/css/relative/r1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 361px;" src="https://demo.xiaohuochai.site/css/relative/r1.html" frameborder="0" width="320" height="240"></iframe>
 
 **百分比**
 
@@ -20,7 +20,7 @@
 
 　　[注意]对于IE7-和firefox浏览器来说，若包含块的高度height为auto，则百分比的top和bottom设置有效果，而其他浏览器则都没有效果&nbsp;
 
-<iframe style="width: 100%; height: 459px;" src="{{book.demo}}/css/relative/r2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 459px;" src="https://demo.xiaohuochai.site/css/relative/r2.html" frameborder="0" width="320" height="240"></iframe>
 
 **特性**
 
@@ -38,7 +38,7 @@
 
  　　不同于绝对定位元素可以使元素具有块级元素属性，相对定位应用于inline元素后，由于无法改变其行内元素的属性，不具备块级元素属性，无法设置宽高，其上下margin也依然存在问题
 
-<iframe style="width: 100%; height: 557px;" src="{{book.demo}}/css/relative/r3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 557px;" src="https://demo.xiaohuochai.site/css/relative/r3.html" frameborder="0" width="320" height="240"></iframe>
 
 **IE兼容**
 
@@ -97,5 +97,5 @@ for(var i = 0; i &lt; btns.length; i++){
 
 //分别点击两个按钮，并拖动横向滚动条查看效果
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/relative/r4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/relative/r4.html" frameborder="0" width="320" height="240"></iframe>
 
