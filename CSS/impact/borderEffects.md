@@ -11,7 +11,7 @@
   background-clip:padding-box;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/bordershow/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/bordershow/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -24,7 +24,7 @@
   background:#795548;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bordershow/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bordershow/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -39,7 +39,7 @@
   box-shadow:0 0 0 5px #655;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bordershow/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bordershow/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -65,7 +65,7 @@
 
 　　效果如下
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/css/bordershow/b4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/css/bordershow/b4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -79,7 +79,7 @@
   border-image: 100% 0 0 linear-gradient(90deg,currentColor 4em,transparent 0);</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/css/bordershow/b5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/css/bordershow/b5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -96,5 +96,5 @@ div{
 }  </pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bordershow/b6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bordershow/b6.html" frameborder="0" width="320" height="240"></iframe>
 
