@@ -18,7 +18,7 @@ setInterval(function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/timerApp/t1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/timerApp/t1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -55,7 +55,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="{{book.demo}}/js/timerApp/t2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/timerApp/t2.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】精确倒计时
 
@@ -124,7 +124,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="{{book.demo}}/js/timerApp/t3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/timerApp/t3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -168,7 +168,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/timerApp/t4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/timerApp/t4.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】精确秒表
 
@@ -218,7 +218,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/timerApp/t5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/timerApp/t5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -284,7 +284,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 80px;" src="{{book.demo}}/js/timerApp/t6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/timerApp/t6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
