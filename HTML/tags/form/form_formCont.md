@@ -43,7 +43,7 @@
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/html/control/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/html/control/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 【默认样式】
 
@@ -247,7 +247,7 @@ btn3d.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/html/control/c2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/html/control/c2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### textarea
 
@@ -327,7 +327,7 @@ btn4.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/html/control/c3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/html/control/c3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　form 　　　 &nbsp;&nbsp;规定文本区域所属的一个或多个表单
 
@@ -371,7 +371,7 @@ btn4.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/html/control/c4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/html/control/c4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　maxlength 　　 规定文本区域的最大字符数
 
@@ -399,7 +399,7 @@ btn4.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/html/control/c5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/html/control/c5.html" frameborder="0" width="320" height="240"></iframe>
 
 　　cols 　　&nbsp;规定文本区内的可见列数
 
@@ -427,7 +427,7 @@ set.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/html/control/c6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/control/c6.html" frameborder="0" width="320" height="240"></iframe>
 
 　　wrap&nbsp;&nbsp;　　规定当在表单中提交时，文本区域中折行如何处理
 
@@ -456,7 +456,7 @@ soft.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/html/control/c7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/html/control/c7.html" frameborder="0" width="320" height="240"></iframe>
 
 ### fieldset
 
@@ -506,7 +506,7 @@ IE7-
 &lt;/fieldset&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/html/control/c8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/html/control/c8.html" frameborder="0" width="320" height="240"></iframe>
 
 ### label
 
@@ -535,7 +535,7 @@ IE7-
 &lt;label&gt;Female&lt;input type="radio" name="sex2"  /&gt;&lt;/label&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/html/control/c9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/html/control/c9.html" frameborder="0" width="320" height="240"></iframe>
 
 【js属性】
 
@@ -591,7 +591,7 @@ console.log(myLabel.control);//&lt;input type="file" id="myFile"&gt;
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/html/control/c10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/html/control/c10.html" frameborder="0" width="320" height="240"></iframe>
 
 ### keygen
 
@@ -622,7 +622,7 @@ console.log(myLabel.control);//&lt;input type="file" id="myFile"&gt;
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/control/c11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/control/c11.html" frameborder="0" width="320" height="240"></iframe>
 
 ### output
 
@@ -646,7 +646,7 @@ console.log(myLabel.control);//&lt;input type="file" id="myFile"&gt;
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/control/c12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/control/c12.html" frameborder="0" width="320" height="240"></iframe>
 
 ### progress
 
@@ -666,7 +666,7 @@ console.log(myLabel.control);//&lt;input type="file" id="myFile"&gt;
 <pre>&lt;progress&gt;&lt;/progress&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/html/control/c13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/html/control/c13.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>&lt;input id="btn" type="button" value="开始下载"&gt;
@@ -687,7 +687,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/control/c14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/control/c14.html" frameborder="0" width="320" height="240"></iframe>
 
 ### meter
 
@@ -732,7 +732,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/control/c15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/control/c15.html" frameborder="0" width="320" height="240"></iframe>
 
 　　如果meter标签的value属性，取值为小数，如0.3，且没有max属性值时，则颜色块显示为宽高的30%
 
@@ -740,4 +740,4 @@ btn.onclick = function(){
 <pre>&lt;meter value="0.3"&gt;&lt;/meter&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/html/control/c16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/html/control/c16.html" frameborder="0" width="320" height="240"></iframe>
