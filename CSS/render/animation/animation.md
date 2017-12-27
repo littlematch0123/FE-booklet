@@ -43,7 +43,7 @@ animation-fill-mode: 填充模式(默认值为none)</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/animation/a1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/animation/a1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -84,7 +84,7 @@ animation-fill-mode: 填充模式(默认值为none)</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/animation/a2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/animation/a2.html" frameborder="0" width="320" height="240"></iframe>
 
  【2】如果存在负百分数或高于100%的百分数，则该关键帧将被忽略
 
@@ -100,7 +100,7 @@ animation-fill-mode: 填充模式(默认值为none)</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/animation/a3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/animation/a3.html" frameborder="0" width="320" height="240"></iframe>
 
  【3】如果0%或100%不指定关键帧，将使用该元素默认的属性值
 
@@ -112,7 +112,7 @@ animation-fill-mode: 填充模式(默认值为none)</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/animation/a4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/animation/a4.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】若存在多个@keyframes，浏览器只识别最后一个@keyframes里面的值&nbsp;
 
@@ -132,7 +132,7 @@ animation-fill-mode: 填充模式(默认值为none)</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/animation/a5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/animation/a5.html" frameborder="0" width="320" height="240"></iframe>
 
 【5】空的keyframes规则是有效的，它们会覆盖前面有效的关键帧规则
 
@@ -148,7 +148,7 @@ animation-fill-mode: 填充模式(默认值为none)</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/animation/a6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/animation/a6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -196,7 +196,7 @@ div{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/animation/a7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/animation/a7.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】如果动画的其他7个子属性和动画名称的长度不同，动画名称列表的长度决定最终的长度，多余的值无余，缺少的值按照顺序进行重复
 
@@ -233,7 +233,7 @@ div{
 <pre>&lt;div&gt;测试文字&lt;/div&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/animation/a8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/animation/a8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -300,7 +300,7 @@ animation-timing-function
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/animation/a9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/animation/a9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -318,7 +318,7 @@ animation-iteration-count
 
 　　默认为1，可以是整数也可以小数，但不能是0和负数。如果为infinite则表示无限次动画
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/animation/a10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/animation/a10.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -346,7 +346,7 @@ alternate-reverse: 若动画只播放一次，则和反向播放一样。若播�
 
 　　[注意]safari浏览器不支持reverse属性和alternate-reverse属性
 
-<iframe style="width: 100%; height: 350px;" src="{{book.demo}}/css/animation/a11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 350px;" src="https://demo.xiaohuochai.site/css/animation/a11.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -364,7 +364,7 @@ animation-play-state
 
 　　running表示播放中，paused表示动画暂停
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/animation/a12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/animation/a12.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -390,7 +390,7 @@ animation-delay
 
 　　如果该值是负值，则表示动画的起始时间从0s变为延迟时间的绝对值
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/animation/a13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/animation/a13.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -425,7 +425,7 @@ both: 同时具有forwards和backwards的效果</pre>
 
 　　[注意]当持续时间animation-duration为0s时，animation-fill-mode依然适用，当animation-fill-mode的值为backwards时，动画填充在任何animation-delay的阶段。当animation-fill-mode的值为forwards时，动画将保留在100%的关键帧上
 
-<iframe style="width: 100%; height: 550px;" src="{{book.demo}}/css/animation/a14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 550px;" src="https://demo.xiaohuochai.site/css/animation/a14.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -464,7 +464,7 @@ animation
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/css/animation/a15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/css/animation/a15.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -491,7 +491,7 @@ animationstart
     },false);</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/animation/a16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/animation/a16.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -506,7 +506,7 @@ animationend
 },false);</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/css/animation/a17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/css/animation/a17.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -522,7 +522,7 @@ oSb.addEventListener('animationiteration',function(){
 },false);</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/animation/a18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/animation/a18.html" frameborder="0" width="320" height="240"></iframe>
 
 【补充】
 
@@ -584,5 +584,5 @@ function listener(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 170px;" src="{{book.demo}}/css/animation/a19.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 170px;" src="https://demo.xiaohuochai.site/css/animation/a19.html" frameborder="0" width="320" height="240"></iframe>
 
