@@ -18,7 +18,7 @@
 
 　　　　[注意]inline-block使用上下方向的margin负值只是看上去无效，这与其默认的vertical-align:baseline有关系，当垂直对齐的属性值为其他值时，则会显示不同的视觉效果
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/margin/m999.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/margin/m999.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 重叠
 
@@ -32,7 +32,7 @@
 
 　　综上所述，个人理解，在普通流布局中，浏览器将页面布局分为内容和背景，内容的层叠显示始终高于背景。block元素分为内容和背景，而inline元素或inline-block元素，它本身就是内容(包括其背景等样式设置)
 
-<iframe style="width: 100%; height: 438px;" src="{{book.demo}}/css/margin/m100.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 438px;" src="https://demo.xiaohuochai.site/css/margin/m100.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 浮动
 
@@ -40,7 +40,7 @@
 
 　　【2】inline或inline-block元素与浮动元素重叠时，其边框、背景和内容都在该浮动元素之上显示
 
-<iframe style="width: 100%; height: 493px;" src="{{book.demo}}/css/margin/m111.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 493px;" src="https://demo.xiaohuochai.site/css/margin/m111.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 定位
 
@@ -48,7 +48,7 @@
 
 　　【2】将relative属性值应用于inline元素，由于无法改变其行内元素的本质，所以其上下margin依然存在问题
 
-<iframe style="width: 100%; height: 549px;" src="{{book.demo}}/css/margin/m122.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 549px;" src="https://demo.xiaohuochai.site/css/margin/m122.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 应用
 
@@ -87,7 +87,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/margin/m13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/margin/m13.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;【2】列表项两端对齐
 
@@ -129,7 +129,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/margin/m14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/margin/m14.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;【3】三栏自适应布局
 
@@ -175,7 +175,7 @@ body{
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/margin/m15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/margin/m15.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;【4】三栏等高布局
 
@@ -224,5 +224,5 @@ ul{
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 300px;" src="{{book.demo}}/css/margin/m16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/margin/m16.html" frameborder="0" width="320" height="240"></iframe>
 
