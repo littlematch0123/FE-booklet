@@ -36,7 +36,7 @@
 
 　　[2]对于处于同一堆叠上下文中的同一层次的元素来说，默认z-index较大值覆盖z-index较小值
 
-<iframe style="width: 100%; height: 361px;" src="{{book.demo}}/css/zindex/z1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 361px;" src="https://demo.xiaohuochai.site/css/zindex/z1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 堆叠上下文
 
@@ -96,11 +96,11 @@
 
 　　[注意]auto,2和auto,-1相当于2和-1，因为auto代表未产生堆叠上下文。则#seven和#eight相当于和它们的父级.box2以及.box1处于同一层次
 
-<iframe style="width: 100%; height: 498px;" src="{{book.demo}}/css/zindex/z2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 498px;" src="https://demo.xiaohuochai.site/css/zindex/z2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　元素不会叠放在其堆叠上下文(即定位父级z-index为数字值)的背景之下，但可以叠放在其内容之下；当元素没有处于堆叠上下文中，元素不会叠放在&lt;body&gt;元素的背景之下，但可以叠放在其内容之下
 
-<iframe style="width: 100%; height: 393px;" src="{{book.demo}}/css/zindex/z3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 393px;" src="https://demo.xiaohuochai.site/css/zindex/z3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 兼容
 
@@ -302,5 +302,5 @@ select{
 
 　　设置以上8个属性的任意一个，都和设置absolute类似，层叠上下文z-index会生效。下面以opacity透明度为例，进行说明
 
-<iframe style="width: 100%; height: 468px;" src="{{book.demo}}/css/zindex/z4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 468px;" src="https://demo.xiaohuochai.site/css/zindex/z4.html" frameborder="0" width="320" height="240"></iframe>
 
