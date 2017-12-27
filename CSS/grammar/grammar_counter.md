@@ -58,7 +58,7 @@ couter-increment: c1;//将c1计数器的递增设为1</pre>
 
 　　&nbsp;&lt;演示框&gt;点击下列相应属性值可进行演示
 
-<iframe style="width: 100%; height: 340px;" src="{{book.demo}}/css/base/b45.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 340px;" src="https://demo.xiaohuochai.site/css/base/b45.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -68,7 +68,7 @@ couter-increment: c1;//将c1计数器的递增设为1</pre>
 
 　　&lt;演示框&gt;点击下列相应属性值可进行演示
 
-<iframe style="width: 100%; height: 250px;" src="{{book.demo}}/css/base/b46.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/css/base/b46.html" frameborder="0" width="320" height="240"></iframe>
 
 **层级目录演示**
 
@@ -125,8 +125,8 @@ couter-increment: c1;//将c1计数器的递增设为1</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 440px;" src="{{book.demo}}/css/base/b43.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 440px;" src="https://demo.xiaohuochai.site/css/base/b43.html" frameborder="0" width="320" height="240"></iframe>
 
 　　&lt;演示框&gt;点击下列相应属性值可进行演示
 
-<iframe style="width: 100%; height: 660px;" src="{{book.demo}}/css/base/b44.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 660px;" src="https://demo.xiaohuochai.site/css/base/b44.html" frameborder="0" width="320" height="240"></iframe>
