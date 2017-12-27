@@ -30,7 +30,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/mutation/m1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/mutation/m1.html" frameborder="0" width="320" height="240"></iframe>
 
 **DOMNodeRemovedFromDocument**
 
@@ -102,7 +102,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 90px;" src="{{book.demo}}/js/mutation/m2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 90px;" src="https://demo.xiaohuochai.site/js/mutation/m2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 插入节点
 
@@ -133,7 +133,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/mutation/m3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/mutation/m3.html" frameborder="0" width="320" height="240"></iframe>
 
 **DOMNodeInsertedIntoDocument**
 
@@ -156,7 +156,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/mutation/m4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/mutation/m4.html" frameborder="0" width="320" height="240"></iframe>
 
 **顺序**
 
@@ -182,7 +182,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 90px;" src="{{book.demo}}/js/mutation/m5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 90px;" src="https://demo.xiaohuochai.site/js/mutation/m5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 特性节点
 
@@ -233,7 +233,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/mutation/m6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/mutation/m6.html" frameborder="0" width="320" height="240"></iframe>
 
 ## 最后
 
