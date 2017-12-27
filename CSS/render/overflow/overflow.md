@@ -18,7 +18,7 @@
 
 　　[注意]除了IE7-浏览器外，其他浏览器都不支持给table-cell元素设置overflow属性。firefox和IE11浏览器不支持给table-cell元素的设置100%高度的子元素设置overflow属性
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/overflow/o1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/overflow/o1.html" frameborder="0" width="320" height="240"></iframe>
 
 **overflow-X | overflow-y**
 
@@ -34,7 +34,7 @@
 
 　　继承性: 无
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/overflow/o2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/overflow/o2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 属性
 
@@ -160,7 +160,7 @@ html{overflow: hidden;}</pre>
 
  　　　　[注意]由于固定定位是相对于视窗定位的，所以固定定位元素无法被其所有的父级元素overflow属性剪裁&nbsp;
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/overflow/o3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/overflow/o3.html" frameborder="0" width="320" height="240"></iframe>
 
 【解决办法】
 
@@ -168,7 +168,7 @@ html{overflow: hidden;}</pre>
 
 　　给父级设置position:absolute或fixed或relative
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/overflow/o4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/overflow/o4.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】overflow元素的子元素为包含块
 
@@ -190,7 +190,7 @@ html{overflow: hidden;}</pre>
 
 【1】清除浮动影响
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/overflow/o5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/overflow/o5.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]IE6-浏览器使用overflow这种方式并不能清除浮动，常用的消除浮动的方法是
 
@@ -209,7 +209,7 @@ html{overflow: hidden;}</pre>
 
 【2】避免margin穿透
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/overflow/o6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/overflow/o6.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]使用overflow属性只是避免margin穿透的很多方法中的一个，其他的方法还有BFC化、设置padding、设置border等&nbsp;
 
@@ -217,7 +217,7 @@ html{overflow: hidden;}</pre>
 
 【3】两栏自适应布局
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/overflow/o7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/overflow/o7.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]使用overflow属性的场景限制比较明显，常用的两栏自适应布局的方法:
 
@@ -301,5 +301,5 @@ a{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/css/overflow/o8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/css/overflow/o8.html" frameborder="0" width="320" height="240"></iframe>
 
