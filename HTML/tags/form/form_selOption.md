@@ -68,7 +68,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/html/formobj/f12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/formobj/f12.html" frameborder="0" width="320" height="240"></iframe>
 
 **type**
 
@@ -90,7 +90,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/html/formobj/f13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/html/formobj/f13.html" frameborder="0" width="320" height="240"></iframe>
 
 **value**
 
@@ -125,7 +125,7 @@ btn2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/html/formobj/f14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/html/formobj/f14.html" frameborder="0" width="320" height="240"></iframe>
 
 **selectedIndex**
 
@@ -150,7 +150,7 @@ btn2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/html/formobj/f15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/html/formobj/f15.html" frameborder="0" width="320" height="240"></iframe>
 
 **size**
 
@@ -179,7 +179,7 @@ btn3.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/html/formobj/f16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/html/formobj/f16.html" frameborder="0" width="320" height="240"></iframe>
 
 **options**
 
@@ -266,7 +266,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f17.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【2】可以使用选择框的add()方法，add(newoption,reloption)方法向控件中插入新&lt;option&gt;元素，其位置在相关项(reloption)之前
 
@@ -286,7 +286,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f18.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -310,7 +310,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f19.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f19.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【2】使用选择框的remove()方法。这个方法接受一个参数，即要移除选项的索引
 
@@ -330,7 +330,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f20.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f20.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【3】将相应选项设置为null
 
@@ -350,5 +350,5 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f21.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f21.html" frameborder="0" width="320" height="240"></iframe>
 
