@@ -14,7 +14,7 @@
 <pre>&lt;div id="box" style="height:30px;width:200px;background-color:pink;"onclick = "this.innerHTML+= '1';"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　在HTML中定义的事件处理程序也可以调用在页面其他地方定义的脚本
 
@@ -25,7 +25,7 @@
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　HTML事件处理程序会创建一个封装着元素属性值的函数。这个函数中有一个局部变量event，也就是事件对象。通过event变量，可以直接访问事件对象，不用自己定义它，也不用从函数的参数列表中获取
 
@@ -33,7 +33,7 @@
 <pre>&lt;div id="box" style="height:30px;width:200px;background-color:pink;"onclick = "this.innerHTML+= event.type;"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　在事件处理程序函数内部，可以像访问局部变量一样访问document及该元素本身的成员。如此一来，事件处理程序要访问自己的属性就简单多了
 
@@ -41,7 +41,7 @@
 <pre>&lt;button id="box" value="test" style="height:30px;width:200px;background-color:pink;"onclick = "this.innerHTML+= value;"&gt;&lt;/button&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e4.html" frameborder="0" width="320" height="240"></iframe>
 
 【扩展】
 
@@ -54,7 +54,7 @@ var value=123;
 &lt;button style="height:30px;width:200px;background-color:pink;"onclick = "this.innerHTML+= value;"&gt;&lt;/button&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e5.html" frameborder="0" width="320" height="240"></iframe>
 
 **缺点**
 
@@ -91,7 +91,7 @@ box.onclick = function(){this.innerHTML += '1';}
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e6.html" frameborder="0" width="320" height="240"></iframe>
 
 　　可以通过将事件处理程序属性设置为null来删除事件处理程序
 
@@ -125,7 +125,7 @@ box.addEventListener('click',function(){this.innerHTML += '2'},false);
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e7.html" frameborder="0" width="320" height="240"></iframe>
 
 　　以下代码以2-1的顺序输出
 
@@ -139,7 +139,7 @@ box.addEventListener('click',function(){this.innerHTML += '2'},false);
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e8.html" frameborder="0" width="320" height="240"></iframe>
 
 **参数**
 
@@ -155,7 +155,7 @@ function test(x){box.innerHTML += x;}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e9.html" frameborder="0" width="320" height="240"></iframe>
 
 **移除**
 
@@ -175,7 +175,7 @@ box.removeEventListener('click',function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e10.html" frameborder="0" width="320" height="240"></iframe>
 
 　　以下有效
 
@@ -188,7 +188,7 @@ box.removeEventListener('click',handle,false);
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e11.html" frameborder="0" width="320" height="240"></iframe>
 
 ### IE事件处理程序
 
@@ -203,7 +203,7 @@ box.attachEvent('onclick',function(){this.innerHTML += '1';});
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e12.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;　　[注意]attachEvent()方法只冒泡到document，且IE10-浏览器支持
 
@@ -222,7 +222,7 @@ window.attachEvent('onclick',function(){box.innerHTML += 'window\n';});
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/eventHandler/e13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/eventHandler/e13.html" frameborder="0" width="320" height="240"></iframe>
 
 **this**
 
@@ -274,7 +274,7 @@ box.attachEvent('onclick',function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/eventHandler/e14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/eventHandler/e14.html" frameborder="0" width="320" height="240"></iframe>
 
 **移除**
 
@@ -342,7 +342,7 @@ box.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/eventHandler/e15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/eventHandler/e15.html" frameborder="0" width="320" height="240"></iframe>
 
 【相同点】
 
