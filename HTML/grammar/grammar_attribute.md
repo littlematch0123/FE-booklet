@@ -25,7 +25,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/html/16attr/h1.html" frameborder="0" width="320" height="155"></iframe>
+<iframe src="https://demo.xiaohuochai.site/html/16attr/h1.html" frameborder="0" width="320" height="155"></iframe>
 
 ### class
 
@@ -43,7 +43,7 @@
 
 　　值：ltr/rtl/auto
 
-<iframe src="{{book.demo}}/html/16attr/h22.html" frameborder="0" width="300" height="200"></iframe>
+<iframe src="https://demo.xiaohuochai.site/html/16attr/h22.html" frameborder="0" width="300" height="200"></iframe>
 
 ### id
 
@@ -114,7 +114,7 @@ zh-TW 中文 (繁体, 台湾)     对应 cmn-Hant-TW 普通话 (繁体, 台湾)
 &lt;/div&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/html/16attr/h3.html" frameborder="0" width="300" height="200"></iframe>
+<iframe src="https://demo.xiaohuochai.site/html/16attr/h3.html" frameborder="0" width="300" height="200"></iframe>
 
 ### title
 
@@ -137,11 +137,11 @@ zh-TW 中文 (繁体, 台湾)     对应 cmn-Hant-TW 普通话 (繁体, 台湾)
 　　移动端：移动端ios5以及android3之后才支持该属性
 ![contenteditable](https://pic.xiaohuochai.site/blog/HTML_grammar_contenteditable.gif)
 
-<iframe src="{{book.demo}}/html/16attr/h4.html" frameborder="0" width="300" height="200"></iframe>
+<iframe src="https://demo.xiaohuochai.site/html/16attr/h4.html" frameborder="0" width="300" height="200"></iframe>
 
 　　&lt;演示框&gt;</span>选中文字后，点击下列相应属性值可进行演示</span>
 
-<iframe src="{{book.demo}}/html/16attr/h5.html" frameborder="0" width="300" height="200"></iframe>
+<iframe src="https://demo.xiaohuochai.site/html/16attr/h5.html" frameborder="0" width="300" height="200"></iframe>
 
 ### contextmenu(没有浏览器支持)
 
