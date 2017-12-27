@@ -34,7 +34,7 @@ div{
 
 　　效果如下
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/standard/s1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/standard/s1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　下面来对上面糟糕的代码一一修复
 
@@ -82,7 +82,7 @@ line-height:1.5;</pre>
 .ok{background-color: #6b0;}</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/css/standard/s2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/css/standard/s2.html" frameborder="0" width="320" height="240"></iframe>
 
 【代码易维护vs代码量少】
 
