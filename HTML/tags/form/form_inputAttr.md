@@ -36,7 +36,7 @@
 <pre>&lt;input type="file" accept="image/gif,image/jpeg,image/jpg"&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### alt
 
@@ -48,7 +48,7 @@
 <pre>&lt;input type="image" src="#" alt="测试图片"&gt;</pre>
 </div>
 
-<div><iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i2.html" frameborder="0" width="320" height="240"></iframe></div>
+<div><iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i2.html" frameborder="0" width="320" height="240"></iframe></div>
 
 &nbsp;
 
@@ -73,7 +73,7 @@ for(var i = 0,len = oInput.length; i &lt; len; i++){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### disabled
 
@@ -97,7 +97,7 @@ btn2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### readonly
 
@@ -121,7 +121,7 @@ btn2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### maxlength
 
@@ -134,7 +134,7 @@ btn2.onclick = function(){
 &lt;input type="password" maxlength="6"&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i6.html" frameborder="0" width="320" height="240"></iframe>
 
 ### size
 
@@ -147,7 +147,7 @@ btn2.onclick = function(){
 &lt;input type="password" size="2"&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i7.html" frameborder="0" width="320" height="240"></iframe>
 
 ### src
 
@@ -158,11 +158,11 @@ btn2.onclick = function(){
 <div class="cnblogs_code">
 <pre>&lt;form action="#"&gt;
     &lt;input name="test"&gt;
-    &lt;input type="image" src="{{book.demo}}/submit.jpg" width="99" height="99" alt="测试图片"&gt;
+    &lt;input type="image" src="https://demo.xiaohuochai.site/submit.jpg" width="99" height="99" alt="测试图片"&gt;
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/html/input/i8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/html/input/i8.html" frameborder="0" width="320" height="240"></iframe>
 
 ### value
 
@@ -189,7 +189,7 @@ btn1.onclick = btn2.onclick =function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -221,7 +221,7 @@ btn1.onclick = btn2.onclick =function(){
 &lt;input name="test2" autofocus&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i10.html" frameborder="0" width="320" height="240"></iframe>
 
 ### novalidate
 
@@ -253,7 +253,7 @@ btn1.onclick = btn2.onclick =function(){
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/html/input/i11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/html/input/i11.html" frameborder="0" width="320" height="240"></iframe>
 
 ### list
 
@@ -283,13 +283,13 @@ btn1.onclick = btn2.onclick =function(){
 <pre>&lt;input type="number" min="0" max="10" step="0.5" value="6" /&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i12.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>&lt;input type="range" min="0" max="10" step="0.5" value="6" /&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i13.html" frameborder="0" width="320" height="240"></iframe>
 
 ### multiple
 
@@ -314,7 +314,7 @@ btn2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/html/input/i14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/input/i14.html" frameborder="0" width="320" height="240"></iframe>
 
 ### pattern
 
@@ -331,7 +331,7 @@ btn2.onclick = function(){
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i15.html" frameborder="0" width="320" height="240"></iframe>
 
 ### placeholder
 
@@ -348,7 +348,7 @@ btn2.onclick = function(){
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i16.html" frameborder="0" width="320" height="240"></iframe>
 
 　　要修改placeholder的颜色需要使用::placeholder
 
@@ -356,7 +356,7 @@ btn2.onclick = function(){
 <pre>::placeholder{color:green;}</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i17.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -375,7 +375,7 @@ btn2.onclick = function(){
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/input/i18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/input/i18.html" frameborder="0" width="320" height="240"></iframe>
 
 ### form
 
@@ -392,7 +392,7 @@ btn2.onclick = function(){
 &lt;input name="test" form="form"&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/html/input/i19.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/html/input/i19.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -415,7 +415,7 @@ Last name: &lt;input type="text" name="lname" /&gt;&lt;br /&gt;
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/html/input/i20.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/html/input/i20.html" frameborder="0" width="320" height="240"></iframe>
 
 ### formenctype
 
@@ -431,7 +431,7 @@ Last name: &lt;input type="text" name="lname" /&gt;&lt;br /&gt;
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/html/input/i21.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/html/input/i21.html" frameborder="0" width="320" height="240"></iframe>
 
 ### formmethod
 
@@ -448,7 +448,7 @@ Last name: &lt;input type="text" name="lname" /&gt;&lt;br /&gt;
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/html/input/i22.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/input/i22.html" frameborder="0" width="320" height="240"></iframe>
 
 ### formnovalidate
 
@@ -464,7 +464,7 @@ E-mail: &lt;input type="email" name="userid" /&gt;&lt;br /&gt;
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/html/input/i23.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/input/i23.html" frameborder="0" width="320" height="240"></iframe>
 
 ### formtarget
 
@@ -481,5 +481,5 @@ E-mail: &lt;input type="email" name="userid" /&gt;&lt;br /&gt;
 &lt;/form&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/html/input/i24.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/input/i24.html" frameborder="0" width="320" height="240"></iframe>
 
