@@ -12,32 +12,32 @@
 <pre>a:link{background-color:pink;}/*品红，未访问*/</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/base/b32.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/base/b32.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>a:hover{background-color:lightblue;}/*浅蓝，鼠标悬停*/</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/base/b33.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/base/b33.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>a:active{background-color:lightgreen;}/*浅绿，正被点击*/</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/base/b34.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/base/b34.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>a:focus{background-color:lightgrey;}/*浅灰，拥有焦点*/</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="{{book.demo}}/css/base/b35.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/base/b35.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>a:visited{color:orange;}/*字体颜色为橙色，已被访问*/
 /*[注意]visited伪类只能设置字体颜色、边框颜色、outline颜色的样式*/</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/base/b36.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/base/b36.html" frameborder="0" width="320" height="240"></iframe>
 
 **伪类顺序**
 
@@ -63,7 +63,7 @@ a:hover{background-color:lightblue;}/*浅蓝，鼠标悬停*/
 a:active{background-color:lightgreen;}/*浅绿，正被点击*/</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/base/b37.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/base/b37.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -100,7 +100,7 @@ input:checked{
 
 　　[注意]input和:和enabled之间都不可以有空格
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/base/b38.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/base/b38.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 结构伪类
 
@@ -145,7 +145,7 @@ div:only-child{background-color:lightgrey;}</pre>
 &lt;/ul&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 160px;" src="{{book.demo}}/css/base/b39.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 160px;" src="https://demo.xiaohuochai.site/css/base/b39.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】:nth-of-type(n)、:nth-last-of-type(n)、:first-of-type、:last-of-type、:only-of-type
 
@@ -177,7 +177,7 @@ E F:only-of-type        　　 选择父元素中只包含一个同类型的子�
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/base/b40.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/base/b40.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】:root、:not、:empty、:target
 
@@ -207,7 +207,7 @@ p:empty{height:30px;width:30px;background:pink;}
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/base/b41.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/base/b41.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -232,5 +232,5 @@ div:last-of-type:active{background-color: lightblue;}    </pre>
     &lt;div&gt;第二个div&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/base/b42.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/base/b42.html" frameborder="0" width="320" height="240"></iframe>
 
