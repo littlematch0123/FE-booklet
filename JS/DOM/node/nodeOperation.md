@@ -110,7 +110,7 @@ btn.onclick = function(){
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/nodeOperation/n1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/nodeOperation/n1.html" frameborder="0" width="320" height="240"></iframe>
 
 **insertBefore()**
 
@@ -143,7 +143,7 @@ btn3.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/js/nodeOperation/n2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/js/nodeOperation/n2.html" frameborder="0" width="320" height="240"></iframe>
 
 【小效果】
 
@@ -183,7 +183,7 @@ setTimeout(incrementNumber,1000);
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/js/nodeOperation/n3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/js/nodeOperation/n3.html" frameborder="0" width="320" height="240"></iframe>
 
 **insertAfter()**
 
@@ -219,7 +219,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/nodeOperation/n4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/nodeOperation/n4.html" frameborder="0" width="320" height="240"></iframe>
 
 **insertAdjacentHTML()**
 
@@ -257,7 +257,7 @@ for(var i = 0 ; i &lt; 4; i++){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/nodeOperation/n5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/nodeOperation/n5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 移除节点
 
@@ -275,7 +275,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/nodeOperation/n6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/nodeOperation/n6.html" frameborder="0" width="320" height="240"></iframe>
 
 　　下面代码可以移除当前节点的所有子节点
 
@@ -318,7 +318,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 180px;" src="{{book.demo}}/js/nodeOperation/n7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 180px;" src="https://demo.xiaohuochai.site/js/nodeOperation/n7.html" frameborder="0" width="320" height="240"></iframe>
 
 **remove()**
 
@@ -377,7 +377,7 @@ btn1.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/nodeOperation/n8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/nodeOperation/n8.html" frameborder="0" width="320" height="240"></iframe>
 
 【小效果】
 
@@ -419,7 +419,7 @@ function incrementNumber(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 180px;" src="{{book.demo}}/js/nodeOperation/n9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 180px;" src="https://demo.xiaohuochai.site/js/nodeOperation/n9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
