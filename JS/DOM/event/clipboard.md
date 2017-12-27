@@ -31,7 +31,7 @@ test.onpaste= test.oncopy = test.oncut = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/clipboard/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/clipboard/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　beforecopy：在发生复制操作前触发
 
@@ -50,7 +50,7 @@ test.onbeforepaste= test.onbeforecopy = test.onbeforecut = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/clipboard/c2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/clipboard/c2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 对象方法
 
@@ -81,7 +81,7 @@ test.onpaste=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/clipboard/c3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/clipboard/c3.html" frameborder="0" width="320" height="240"></iframe>
 
 **setData()**
 
@@ -104,7 +104,7 @@ test.oncopy=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/clipboard/c4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/clipboard/c4.html" frameborder="0" width="320" height="240"></iframe>
 
 **clearData()**
 
@@ -126,7 +126,7 @@ test.oncopy=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/clipboard/c5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/clipboard/c5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 应用
 
@@ -148,7 +148,7 @@ test.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/clipboard/c6.html" frameborder="0" width="320" height="240"></iframe>【2】过滤字符
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/clipboard/c6.html" frameborder="0" width="320" height="240"></iframe>【2】过滤字符
 
 　　如果确保粘贴到文本框中的文本中包含某些字符，或者符合某种形式时，可以使用剪贴板事件。比如只允许粘贴数字
 
@@ -165,5 +165,5 @@ test.onpaste = function(e){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/clipboard/c7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/clipboard/c7.html" frameborder="0" width="320" height="240"></iframe>
 
