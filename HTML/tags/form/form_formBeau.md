@@ -8,7 +8,7 @@
 
 【实现效果】
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/html/beauty/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/html/beauty/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 【实现过程】
 
@@ -38,7 +38,7 @@
     left: -2px;
     height: 19px;
     width: 19px;
-    background: url('{{book.demo}}/radiobutton.gif') no-repeat -14px -18px;
+    background: url('https://demo.xiaohuochai.site/radiobutton.gif') no-repeat -14px -18px;
 }
 .box label:hover{
     color: red;
@@ -51,7 +51,7 @@
 }</pre>
 </div>
 <div class="cnblogs_code">
-<pre>&lt;div class="box" id="box"&gt;{{book.demo}}
+<pre>&lt;div class="box" id="box"&gt;https://demo.xiaohuochai.site
     选择一项游戏方式：
     &lt;label for="xiu"&gt;&lt;i&gt;&lt;/i&gt;咻一咻&lt;/label&gt;
     &lt;input id="xiu" type="radio" value="咻一咻"&gt;
@@ -80,7 +80,7 @@ for(var i = 0, leni = aLabel.length; i &lt; leni; i++){
 
 【实现效果】
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/html/beauty/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/html/beauty/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 【实现过程】
 
@@ -110,7 +110,7 @@ for(var i = 0, leni = aLabel.length; i &lt; leni; i++){
     left: -2px;
     height: 19px;
     width: 19px;
-    background: url('{{book.demo}}/checkbox.gif') no-repeat -14px -18px;
+    background: url('https://demo.xiaohuochai.site/checkbox.gif') no-repeat -14px -18px;
 }
 .box label:hover{
     color: red;
@@ -123,7 +123,7 @@ for(var i = 0, leni = aLabel.length; i &lt; leni; i++){
 }</pre>
 </div>
 <div class="cnblogs_code">
-<pre>&lt;div class="box" id="box"&gt;{{book.demo}}
+<pre>&lt;div class="box" id="box"&gt;https://demo.xiaohuochai.site
     选择日常手机交易方式(可多选)：
     &lt;label for="a"&gt;&lt;i&gt;&lt;/i&gt;支付宝&lt;/label&gt;
     &lt;input id="a" type="radio" value="支付宝"&gt;
@@ -153,7 +153,7 @@ for(var i = 0, leni = aLabel.length; i &lt; leni; i++){
 
 【实现效果】
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/html/beauty/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/html/beauty/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 【实现过程】
 
