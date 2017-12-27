@@ -20,13 +20,13 @@
 
 　　一般来说，前景是元素的文本，不过前景还包括元素周围的边框。有两种方式直接影响一个元素的前景色，可以使用color属性，也可以使用属性border-color设置边框颜色
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/colorAndOpacity/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/colorAndOpacity/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 【继承颜色】
 
 　　color是可以继承的，可以把文档中的所有正常文本设置为某种颜色，如通过声明body{color:red;}设置为红色。这会把所有没有其他样式的文本变成红色(如锚就不包含在内，锚有其自己的颜色样式)。但浏览器对表单类元素有预定义的颜色，使body颜色无法继承到表单类元素中
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/colorAndOpacity/c2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/colorAndOpacity/c2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -55,5 +55,5 @@
 filter:alpha(opacity=80);</pre>
 </div>
 
-<iframe style="width: 100%; height: 240px;" src="{{book.demo}}/css/colorAndOpacity/c3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 240px;" src="https://demo.xiaohuochai.site/css/colorAndOpacity/c3.html" frameborder="0" width="320" height="240"></iframe>
 
