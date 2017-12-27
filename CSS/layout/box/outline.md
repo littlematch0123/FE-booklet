@@ -4,7 +4,7 @@
 
 　　[注意]IE7-浏览器不支持
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/outline/o1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/outline/o1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 轮廓样式
 
@@ -20,7 +20,7 @@ outline-style
 
 　　继承性: 无
 
-<iframe style="width: 100%; height: 240px;" src="{{book.demo}}/css/outline/o222.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 240px;" src="https://demo.xiaohuochai.site/css/outline/o222.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 轮廓宽度
 
@@ -38,7 +38,7 @@ outline-width
 
 　　[注意]如果轮廓的样式是none，则轮廓宽度计算值为0
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/outline/o333.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/outline/o333.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 轮廓颜色
 
@@ -54,7 +54,7 @@ outline-color
 
 　　继承性: 无
 
-<iframe style="width: 100%; height: 340px;" src="{{book.demo}}/css/outline/o44.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 340px;" src="https://demo.xiaohuochai.site/css/outline/o44.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 轮廓偏移
 
@@ -72,7 +72,7 @@ outline-offset
 
 　　继承性: 无
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/outline/o55.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/outline/o55.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 轮廓
 
@@ -98,7 +98,7 @@ outline
 
 　　firefox浏览器支持私有属性-moz-outline-radius来设置轮廓圆角。该属性对应的js写法是MozOutlineRadius
 
-<iframe style="width: 100%; height: 250px;" src="{{book.demo}}/css/outline/o66.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/css/outline/o66.html" frameborder="0" width="320" height="240"></iframe>
 
 　　对于其他浏览器，我们可以使用其他属性实现类似效果。box-shadow与border-radius属性一脉相承，也就是说如果border-radius是圆角，则box-shadow的投影也是圆角
 
@@ -116,5 +116,5 @@ outline
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/css/outline/o7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/css/outline/o7.html" frameborder="0" width="320" height="240"></iframe>
 
