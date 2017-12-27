@@ -103,7 +103,7 @@ font-weight: bold(加粗)</pre>
 
 　　百分数: 相对于父元素的字体大小font-size
 
-<iframe style="width: 100%; height: 264px;" src="{{book.demo}}/css/font/f1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 264px;" src="https://demo.xiaohuochai.site/css/font/f1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 字体风格
 
@@ -161,7 +161,7 @@ line-height: 具体值</pre>
 　　status-bar: 窗口状态条中文本使用的字体样式</pre>
 </div>
 
-<iframe style="width: 100%; height: 222px;" src="{{book.demo}}/css/font/f2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 222px;" src="https://demo.xiaohuochai.site/css/font/f2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### font-face
 
@@ -208,7 +208,7 @@ div:before{
 
 　　下面以一个实例来说明如何使用字体图标，最终的效果如下
 
-<div><iframe src="{{book.demo}}/css/font/f3.html" frameborder="0" width="320" height="40"></iframe></div>
+<div><iframe src="https://demo.xiaohuochai.site/css/font/f3.html" frameborder="0" width="320" height="40"></iframe></div>
 
 　　一般地，使用国内的[iconfont](http://www.iconfont.cn/)网站来寻找需要的字体图标，如晴、阴、雨、雪图标，将其新建为一个项目，并将项目文件下载到本地。下载的文件中包含了需要的字体文件及使用范例
 
