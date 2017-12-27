@@ -55,7 +55,7 @@ body,html,.parent{height: 100%;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/quanpin/q1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/quanpin/q1.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】float + absolute + (fix)
 
@@ -120,7 +120,7 @@ body,html,.parent{height: 100%;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/quanpin/q2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/quanpin/q2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -178,7 +178,7 @@ body,html,.parent{height: 100%;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/quanpin/q3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/quanpin/q3.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】inline-block + absolute + (fix)
 
@@ -255,7 +255,7 @@ body,html,.parent{height: 100%;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/quanpin/q4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/quanpin/q4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -327,7 +327,7 @@ body,html,.parent{height: 100%;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/quanpin/q5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/quanpin/q5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -393,7 +393,7 @@ body,html,.parent{height: 100%;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/quanpin/q6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/quanpin/q6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -450,7 +450,7 @@ body,html,.parent{height: 100%;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/quanpin/q7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/quanpin/q7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -499,7 +499,7 @@ body,html,.parent{height: 100%;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/quanpin/q8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/quanpin/q8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
