@@ -32,4 +32,4 @@
 
 ### DEMO
 
-<iframe style="width: 100%; height: 490px" src="{{book.demo}}/css/reflect/r1.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 490px" src="https://demo.xiaohuochai.site/css/reflect/r1.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
