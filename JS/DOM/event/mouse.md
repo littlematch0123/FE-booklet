@@ -37,7 +37,7 @@ test.onmouseenter = test.onmouseleave =function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/mouse/m1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/mouse/m1.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>&lt;button id="test" style="height: 30px;width: 200px;"&gt;&lt;/button&gt;
@@ -49,7 +49,7 @@ test.onmouseover = test.onmouseout =function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/mouse/m2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/mouse/m2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 顺序
 
@@ -72,7 +72,7 @@ oBox.onmouseover = oBox.onmouseenter=oBox.onmousemove =function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/mouse/m3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/mouse/m3.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】鼠标移出时，触发mousemove、mouseleave和mouseout事件
 
@@ -91,7 +91,7 @@ oBox.onmouseleave = oBox.onmouseout=oBox.onmousemove =function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/mouse/m4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/mouse/m4.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】双击鼠标时，触发mousedown、mouseup、click、dblclick事件
 
@@ -112,7 +112,7 @@ oBox.onclick = oBox.ondblclick  = oBox.onmousedown = oBox.onmouseup=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/mouse/m5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/mouse/m5.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】点击鼠标右键时，触发mousedown、mouseup、contextmenu事件
 
@@ -133,7 +133,7 @@ oBox.oncontextmenu  = oBox.onmousedown = oBox.onmouseup=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/mouse/m6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/mouse/m6.html" frameborder="0" width="320" height="240"></iframe>
 
 【5】嵌套元素的移入移出时，触发mouseover、mouseenter、mouseleave、mouseout事件
 
@@ -154,7 +154,7 @@ inner.onmouseout=inner.onmouseleave=inner.onmouseover=inner.onmouseenter=box.onm
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 260px;" src="{{book.demo}}/js/mouse/m7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/js/mouse/m7.html" frameborder="0" width="320" height="240"></iframe>
 
 　　从上面的结果可以看出mouseover、mouseout和mouseleave、mouseenter事件的区别
 
@@ -190,7 +190,7 @@ box.onmousemove=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/js/mouse/m8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/js/mouse/m8.html" frameborder="0" width="320" height="240"></iframe>
 
 **screenX/Y**
 
@@ -206,7 +206,7 @@ box.onmousemove=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/js/mouse/m9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/js/mouse/m9.html" frameborder="0" width="320" height="240"></iframe>
 
 **pageX/Y与layerX/Y**
 
@@ -228,7 +228,7 @@ oBox.onmousemove=function(e){
 &lt;/body&gt; </pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/js/mouse/m10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/js/mouse/m10.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]IE8-浏览器不支持pageX/Y和layerX/Y，不过可以根据scrollTop/Left和clientX/Y计算出来
 
@@ -263,7 +263,7 @@ oBox.onmousemove=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/js/mouse/m11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/js/mouse/m11.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 修改键
 
@@ -291,7 +291,7 @@ box.onclick=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/mouse/m12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/mouse/m12.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 相关元素
 
@@ -335,7 +335,7 @@ box.onmouseover=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 160px;" src="{{book.demo}}/js/mouse/m13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 160px;" src="https://demo.xiaohuochai.site/js/mouse/m13.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 鼠标按键
 
@@ -378,7 +378,7 @@ box.onmouseup=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/mouse/m14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/mouse/m14.html" frameborder="0" width="320" height="240"></iframe>
 
 　　但，IE8-浏览器的button属性的值与标准的button属性有很大差异
 
@@ -429,7 +429,7 @@ box.onmouseup=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/mouse/m15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/mouse/m15.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 滚轮事件
 
@@ -458,7 +458,7 @@ box.onmousewheel=function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/mouse/m16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/mouse/m16.html" frameborder="0" width="320" height="240"></iframe>
 
 　　firefox浏览器不支持mousewheel事件，它支持DOMMouseScroll事件，而有关鼠标滚轮的信息则保存在detail属性中，当向前滚动鼠标滚轮时，这个属性的值是-3的倍数，当向后滚动鼠标滚轮时，这个属性的值是3的倍数
 
@@ -480,7 +480,7 @@ box.addEventListener('DOMMouseScroll',function(e){
 &lt;/script&gt; </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/mouse/m17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/mouse/m17.html" frameborder="0" width="320" height="240"></iframe>
 
 **兼容**
 
@@ -514,7 +514,7 @@ document.body.addEventListener('DOMMouseScroll',wheel,false);
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/mouse/m18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/mouse/m18.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
