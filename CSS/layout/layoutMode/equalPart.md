@@ -45,7 +45,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/dengfen/d1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/dengfen/d1.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】float + margin + calc
 
@@ -80,7 +80,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/dengfen/d2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/dengfen/d2.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】float + margin + (fix)
 
@@ -125,7 +125,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/dengfen/d3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/dengfen/d3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -170,7 +170,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/dengfen/d4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/dengfen/d4.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】inline-block + margin + calc
 
@@ -205,7 +205,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/dengfen/d5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/dengfen/d5.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】inline-block + margin + (fix)
 
@@ -250,7 +250,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/dengfen/d6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/dengfen/d6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -299,7 +299,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/dengfen/d7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/dengfen/d7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -331,7 +331,7 @@ body,p{margin: 0;}
 &lt;/div&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/dengfen/d8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/dengfen/d8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -359,5 +359,5 @@ body,p{margin: 0;}
 &lt;/div&gt; </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/dengfen/d99.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/dengfen/d99.html" frameborder="0" width="320" height="240"></iframe>
 
