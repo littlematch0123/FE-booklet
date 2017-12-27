@@ -38,7 +38,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/active/a1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/active/a1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -78,7 +78,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/active/a2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/active/a2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　在标准浏览器下，上面代码可以正常运行。但是，在IE8-浏览器下却报错。这是因为IE8-浏览器将&lt;script&gt;元素视为一个特殊的元素，不允许DOM访问其子节点，使用appendChild()方法或innerHTML属性都会报错
 
@@ -107,5 +107,5 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/active/a3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/active/a3.html" frameborder="0" width="320" height="240"></iframe>
 
