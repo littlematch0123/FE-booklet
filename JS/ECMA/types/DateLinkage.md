@@ -6,7 +6,7 @@
 
 ### 演示
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/js/date/d2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/date/d2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 规划
 
