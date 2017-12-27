@@ -6,7 +6,7 @@
 
 ### 效果演示
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/js/date/d1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/js/date/d1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
