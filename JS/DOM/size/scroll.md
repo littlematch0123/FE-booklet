@@ -125,7 +125,7 @@ btn1.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 200px;" src="{{book.demo}}/js/scroll/s1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/js/scroll/s1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　与scrollHeight和scrollWidth属性不同的是，scrollLeft和scrollTop是可写的
 
@@ -142,7 +142,7 @@ btn2.onclick = function(){test.scrollTop -= 10;}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 180px;" src="{{book.demo}}/js/scroll/s2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 180px;" src="https://demo.xiaohuochai.site/js/scroll/s2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -162,7 +162,7 @@ btn1.onclick = function(){
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 50px;" src="{{book.demo}}/js/scroll/s3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/scroll/s3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　所以，页面的滚动高度兼容写法是
 
@@ -195,7 +195,7 @@ btn.onclick = scrollTop;
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/scroll/s4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/scroll/s4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　还有两个window的只读属性可以获取整个页面滚动的像素值，它们是pageXOffset和pageYOffset
 
@@ -221,7 +221,7 @@ btn1.onclick = function(){
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 100px;" src="{{book.demo}}/js/scroll/s5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/scroll/s5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -239,7 +239,7 @@ btn.onclick = function(){scrollTo(0,0);}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/scroll/s6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/scroll/s6.html" frameborder="0" width="320" height="240"></iframe>
 
 **scrollBy(x,y)**
 
@@ -255,7 +255,7 @@ btn2.onclick = function(){scrollBy(0,-100);}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/scroll/s7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/scroll/s7.html" frameborder="0" width="320" height="240"></iframe>
 
 【小应用】
 
@@ -278,7 +278,7 @@ btn2.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/scroll/s8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/scroll/s8.html" frameborder="0" width="320" height="240"></iframe>
 
 **scrollIntoView()**
 
@@ -301,7 +301,7 @@ btn2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/scroll/s9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/scroll/s9.html" frameborder="0" width="320" height="240"></iframe>
 
 **scrollIntoViewIfNeeded()**
 
@@ -322,7 +322,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/js/scroll/s10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/js/scroll/s10.html" frameborder="0" width="320" height="240"></iframe>
 
 **scrollByLines(lineCount)**
 
@@ -375,7 +375,7 @@ window.onscroll = function(){
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 50px;" src="{{book.demo}}/js/scroll/s11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/scroll/s11.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
