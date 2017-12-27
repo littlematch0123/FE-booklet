@@ -43,7 +43,7 @@
 
 　　[注意]对于webkit内核的浏览器来说，使用javascript改变元素的样式。当带-webkit-的私有样式和不带-webkit-的标准样式同时存在的时候，并不一定是后面覆盖前面。所以如果两种写法产生的效果相同，但参数不同时，要使用浏览器识别来分别写不同的情况。
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/linearGradient/l2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/linearGradient/l2.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】使用关键字
 
@@ -60,7 +60,7 @@ to bottom right -&gt; 135deg</pre>
 
 　　[注意]window系统的safari浏览器并不支持'to'加方向的关键字，如to left。它只支持方向关键字，如left。当然了left 和 to left 方向是正好相反的
 
-<iframe style="width: 100%; height: 420px;" src="{{book.demo}}/css/linearGradient/l3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 420px;" src="https://demo.xiaohuochai.site/css/linearGradient/l3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -95,7 +95,7 @@ background-image: linear-gradient(red,blue);</pre>
 background-image: linear-gradient(red 0%,red 30%,blue 60%,blue 100%);</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/linearGradient/l4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/linearGradient/l4.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】若渐变颜色没有指定位置，则它们会均匀分布
 
@@ -103,7 +103,7 @@ background-image: linear-gradient(red 0%,red 30%,blue 60%,blue 100%);</pre>
 <pre>background-image: linear-gradient(red,yellow,green,blue);</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/linearGradient/l5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/linearGradient/l5.html" frameborder="0" width="320" height="240"></iframe>
 
 【5】若多色占据同一个位置，例a、b、c三色均占据n%这一位置，则0%-n%为前一种颜色与a颜色的颜色渐变；然后是n%-n%的a颜色与c颜色的颜色突变；n%-100%是c颜色与后一种颜色的颜色渐变。因此，中间的b是无用的
 
@@ -113,7 +113,7 @@ background-image: linear-gradient(red 0%,red 30%,blue 60%,blue 100%);</pre>
 background-image: linear-gradient(red,yellow 50%,black 50%,blue);</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/linearGradient/l6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/linearGradient/l6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -128,7 +128,7 @@ background-image: linear-gradient(red,yellow 50%,black 50%,blue);</pre>
 background-image: repeating-linear-gradient(blue 20%,green 50%);</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/linearGradient/l7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/linearGradient/l7.html" frameborder="0" width="320" height="240"></iframe>
 
 **纸张效果**
 
@@ -145,7 +145,7 @@ background-image: repeating-linear-gradient(blue 20%,green 50%);</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/linearGradient/l8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/linearGradient/l8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -157,7 +157,7 @@ background-image: repeating-linear-gradient(blue 20%,green 50%);</pre>
 <pre>background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.8)),url('http://sandbox.runjs.cn/uploads/rs/26/ddzmgynp/img1.gif');</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/linearGradient/l9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/linearGradient/l9.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>&lt;style&gt;
@@ -171,7 +171,7 @@ div{width: 200px;height: 200px;display: inline-block;}
 &lt;div class="test2"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/linearGradient/l10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/linearGradient/l10.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -188,7 +188,7 @@ background-image: linear-gradient(pink,lightblue,lightgreen);</pre>
 
  　　[注意]渐变框的大小由[background-size](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor8)决定，默认是padding box
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/linearGradient/l11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/linearGradient/l11.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】list-style-image
 
@@ -202,7 +202,7 @@ font-size: 50px;</pre>
 
 　　[注意]firefox不支持在list-style-image中设置
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/linearGradient/l12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/linearGradient/l12.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】border-image
 
@@ -213,7 +213,7 @@ border-image:  linear-gradient(black,green) 1/10px;</pre>
 
  　　[注意]渐变框的大小由borer-width决定，safari浏览器始终实现的都是带有fill参数的表现
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/linearGradient/l1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/linearGradient/l1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -237,5 +237,5 @@ endColorstr的默认值是#ff000000</pre>
 <pre>filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ff0000ff', endColorstr='#ffff00ff');</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/linearGradient/l13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/linearGradient/l13.html" frameborder="0" width="320" height="240"></iframe>
 
