@@ -46,25 +46,25 @@ y轴
     top: 0% center: 50% bottom: 100%</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 360px;" src="{{book.demo}}/css/radialGradient/r1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 360px;" src="https://demo.xiaohuochai.site/css/radialGradient/r1.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】数值
 
 　　x轴数值表示在x轴上离0点(渐变框左上角)的偏移量；y轴数值表示在y轴上离0点的偏移量
 
-<iframe style="width: 100%; height: 320px;" src="{{book.demo}}/css/radialGradient/r2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/css/radialGradient/r2.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】百分比
 
  　　其中x轴的百分比相对于渐变框的宽度，而y轴的百分比相对于渐变框的高度。渐变框的宽高由[background-size](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor8)决定
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/radialGradient/r3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/radialGradient/r3.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】单个值
 
 　　当只有一个值时，默认第二个值为center
 
-<iframe style="width: 100%; height: 420px;" src="{{book.demo}}/css/radialGradient/r4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 420px;" src="https://demo.xiaohuochai.site/css/radialGradient/r4.html" frameborder="0" width="320" height="240"></iframe>
 
 **shape**
 
@@ -74,7 +74,7 @@ y轴
 <pre>&lt;shape&gt;: circle | ellipse</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/radialGradient/r5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/radialGradient/r5.html" frameborder="0" width="320" height="240"></iframe>
 
 **size**
 
@@ -111,7 +111,7 @@ farthest-side:半径为从圆心到最远角</pre>
 </tbody>
 </table>
 
-<iframe style="width: 100%; height: 370px;" src="{{book.demo}}/css/radialGradient/r6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 370px;" src="https://demo.xiaohuochai.site/css/radialGradient/r6.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】圆
 
@@ -123,7 +123,7 @@ farthest-side:半径为从圆心到最远角</pre>
 
 //以下DEMO只有IE10+及firefox可以正常运行
 
-<iframe style="width: 100%; height: 350px;" src="{{book.demo}}/css/radialGradient/r7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 350px;" src="https://demo.xiaohuochai.site/css/radialGradient/r7.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】椭圆
 
@@ -135,7 +135,7 @@ farthest-side:半径为从圆心到最远角</pre>
 
 　　[重要]由于webkit浏览器在使用circle或ellipse关键字时渲染不正常，所以若使用circle时，可以不写shape(默认为ellipse)，用水平和垂直直径相同的椭圆替代
 
-<iframe style="width: 100%; height: 480px;" src="{{book.demo}}/css/radialGradient/r8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 480px;" src="https://demo.xiaohuochai.site/css/radialGradient/r8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -147,7 +147,7 @@ farthest-side:半径为从圆心到最远角</pre>
 <pre>&lt;color-stop&gt; = &lt;color&gt; [ &lt;percentage&gt; | &lt;length&gt; ]?</pre>
 </div>
 
-<iframe style="width: 100%; height: 570px;" src="{{book.demo}}/css/radialGradient/r9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 570px;" src="https://demo.xiaohuochai.site/css/radialGradient/r9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -162,7 +162,7 @@ farthest-side:半径为从圆心到最远角</pre>
 background-image: repeating-radial-gradient(blue 20%,green 50%);</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/radialGradient/r10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/radialGradient/r10.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
