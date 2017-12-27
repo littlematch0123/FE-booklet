@@ -23,13 +23,13 @@
 &lt;/span&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 290px;" src="{{book.demo}}/css/flex/f20.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 290px;" src="https://demo.xiaohuochai.site/css/flex/f20.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 伸缩流方向
 
  　　旧版本flex的伸缩流方向中的reverse值，只改变伸缩项目的排列顺序，并不改变其对齐方式。所以建议使用direction:rtl来实现伸缩流反向效果
 
-<iframe style="width: 100%; height: 308px;" src="{{book.demo}}/css/flex/f21.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 308px;" src="https://demo.xiaohuochai.site/css/flex/f21.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 伸缩流换行
 
@@ -49,7 +49,7 @@
 
 　　[注意]该值支持小数，但不能为负数
 
-<iframe style="width: 100%; height: 427px;" src="{{book.demo}}/css/flex/f22.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 427px;" src="https://demo.xiaohuochai.site/css/flex/f22.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 显示顺序
 
