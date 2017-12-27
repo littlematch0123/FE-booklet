@@ -94,7 +94,7 @@ btn1.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/stylesheets/s1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/stylesheets/s1.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】href
 
@@ -433,7 +433,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/stylesheets/s2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/stylesheets/s2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　虽然，IE8-浏览器不支持insertRule()方法，但支持类似的addRule()方法
 
@@ -459,7 +459,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/stylesheets/s3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/stylesheets/s3.html" frameborder="0" width="320" height="240"></iframe>
 
 **兼容**
 
@@ -497,7 +497,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/stylesheets/s4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/stylesheets/s4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　虽然，IE8-浏览器不支持deleteRule()方法，但支持类似的removeRule()方法
 
@@ -525,7 +525,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/stylesheets/s5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/stylesheets/s5.html" frameborder="0" width="320" height="240"></iframe>
 
 **兼容**
 
