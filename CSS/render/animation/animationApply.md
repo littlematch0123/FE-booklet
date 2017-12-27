@@ -8,7 +8,7 @@
 
 **【效果演示】**
 
-<iframe style="width: 100%; height: 320px;" src="{{book.demo}}/css/animationApply/a1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/css/animationApply/a1.html" frameborder="0" width="320" height="240"></iframe>
 
 【简要介绍】
 
@@ -55,7 +55,7 @@
 
 **【效果演示】**
 
-<iframe style="width: 100%; height: 430px;" src="{{book.demo}}/css/animationApply/a2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 430px;" src="https://demo.xiaohuochai.site/css/animationApply/a2.html" frameborder="0" width="320" height="240"></iframe>
 
 ** 【简要介绍】**
 
@@ -151,7 +151,7 @@ div:hover,div:focus{
 
 　　鼠标移入后，动画停止；移出时，动画继续
 
-<iframe style="width: 100%; height: 160px;" src="{{book.demo}}/css/animationApply/a3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 160px;" src="https://demo.xiaohuochai.site/css/animationApply/a3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -159,7 +159,7 @@ div:hover,div:focus{
 
 **【效果演示】**
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/animationApply/a4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/animationApply/a4.html" frameborder="0" width="320" height="240"></iframe>
 
 **【简要介绍】**
 
