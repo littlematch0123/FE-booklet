@@ -16,7 +16,7 @@
   text-shadow:0 .03em .03em hsla(0,0%,100%,.8);</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/word/w1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/word/w1.html" frameborder="0" width="320" height="240"></iframe>
 
 【深色背景浅色文本】&nbsp;
 
@@ -26,7 +26,7 @@
   text-shadow:0 -1px 1px black;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/word/w2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/word/w2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -37,7 +37,7 @@
   text-shadow:1px 1px black,-1px -1px black,1px -1px black,-1px 1px black;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/word/w3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/word/w3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -49,7 +49,7 @@
   text-shadow:0 0 .1em,0 0 .3em;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/word/w4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/word/w4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -70,7 +70,7 @@ div:hover{
 
 　　鼠标移入后，文字由模糊变清晰
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/word/w5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/word/w5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -84,7 +84,7 @@ div:hover{
   text-shadow:0 1px hsl(0,0%,85%),0 2px hsl(0,0%,80%),0 3px hsl(0,0%,75%),0 4px hsl(0,0%,70%),0 5px hsl(0,0%,65%),0 5px 10px black;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/word/w6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/word/w6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -97,7 +97,7 @@ div{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/word/w7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/word/w7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -121,7 +121,7 @@ div{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/word/w8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/word/w8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -146,7 +146,7 @@ svg{margin-left: -20px;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/word/w9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/word/w9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -175,7 +175,7 @@ svg{margin-left: -20px;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/word/w10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/word/w10.html" frameborder="0" width="320" height="240"></iframe>
 
 　　为其中一个元素添加动画后，效果更明显
 
@@ -193,7 +193,7 @@ svg{margin-left: -20px;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/css/word/w11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/css/word/w11.html" frameborder="0" width="320" height="240"></iframe>
 
 【文字显隐效果】
 
@@ -213,7 +213,7 @@ svg{margin-left: -20px;}
 
 　　鼠标移入后，文字消失；移出后，文字恢复
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/word/w12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/word/w12.html" frameborder="0" width="320" height="240"></iframe>
 
 【文字融合】
 
@@ -233,5 +233,5 @@ svg{margin-left: -20px;}
 
 　　鼠标移入后，文字融合；移出后，文字恢复
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/word/w13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/word/w13.html" frameborder="0" width="320" height="240"></iframe>
 
