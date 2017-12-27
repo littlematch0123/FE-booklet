@@ -135,7 +135,7 @@ btn.onclick = function(){
 &lt;p&gt;hello world&lt;/p&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/JS/xhr/x1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/xhr/x1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -196,7 +196,7 @@ btn.onclick = function(){
 &lt;p&gt;hello world&lt;/p&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/JS/xhr/x2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/xhr/x2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 超时
 
