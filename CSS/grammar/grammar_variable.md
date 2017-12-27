@@ -47,7 +47,7 @@
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src=" {{book.demo}}/css/base/b23.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src=" https://demo.xiaohuochai.site/css/base/b23.html" frameborder="0" width="320" height="240"></iframe>
 
 　　var()函数还有一个可选参数，用来设置默认值，当变量无法取得值时，则使用默认值
 
@@ -57,7 +57,7 @@
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src=" {{book.demo}}/css/base/b24.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src=" https://demo.xiaohuochai.site/css/base/b24.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -71,7 +71,7 @@
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src=" {{book.demo}}/css/base/b25.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src=" https://demo.xiaohuochai.site/css/base/b25.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -95,7 +95,7 @@
 &lt;div class="box"&gt;&lt;/div&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src=" {{book.demo}}/css/base/b26.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src=" https://demo.xiaohuochai.site/css/base/b26.html" frameborder="0" width="320" height="240"></iframe>
 
 　　但是，CSS变量不能进行如下形式的组合，var(--color1)var(--color2)不被浏览器识别，如果分开，如var(--color1) var(--color2)，则被解析为# 333，同样无法被浏览器识别
 
@@ -129,7 +129,7 @@
 &lt;div class="box"&gt;&lt;/div&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src=" {{book.demo}}/css/base/b27.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src=" https://demo.xiaohuochai.site/css/base/b27.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -143,7 +143,7 @@
 <pre>&lt;div id="box" style="--color:lightgreen;background-color: var(--color)"&gt;&lt;/div&gt;    
 &lt;script&gt;
 　　var oBox = document.getElementById('box');
-　　console.log(oBox.style['--color']);     {{book.demo}}// {{book.demo}}undefined
+　　console.log(oBox.style['--color']);     https://demo.xiaohuochai.site// https://demo.xiaohuochai.siteundefined
 &lt;/script&gt;</pre>
 </div>
 
@@ -153,7 +153,7 @@
 <pre>&lt;div id="box" style="--color:lightgreen;background-color: var(--color)"&gt;&lt;/div&gt;    
 &lt;script&gt;
 　　var oBox = document.getElementById('box');
-　　console.log(oBox.style.getPropertyValue('--color')); {{book.demo}}// {{book.demo}}'lightgreen'
+　　console.log(oBox.style.getPropertyValue('--color')); https://demo.xiaohuochai.site// https://demo.xiaohuochai.site'lightgreen'
 &lt;/script&gt;</pre>
 </div>
 
@@ -181,7 +181,7 @@ oBtn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src=" {{book.demo}}/css/base/b28.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src=" https://demo.xiaohuochai.site/css/base/b28.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
