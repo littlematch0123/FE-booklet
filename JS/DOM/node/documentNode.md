@@ -284,7 +284,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/dom/d1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/dom/d1.html" frameborder="0" width="320" height="240"></iframe>
 
 **open()和close()**
 
@@ -301,7 +301,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/dom/d2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/dom/d2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　close()方法用于关闭open方法所新建的文档。一旦关闭，write方法就无法写入内容了。如果再调用write方法，就等同于又调用open方法，新建一个文档，再写入内容。所以，实际上，close()只是和open()方法配套使用而已
 
@@ -318,7 +318,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/dom/d3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/dom/d3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　一般地，先使用open()方法用于新建一个文档，然后使用write()和writeln()方法写入文档，最后使用close()方法，停止写入
 
@@ -334,7 +334,7 @@ btn.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/dom/d4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/dom/d4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]如果是在页面加载期间使用write()和writeln()方法，则不需要用到这两个方法&nbsp;
 
