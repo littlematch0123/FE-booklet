@@ -33,7 +33,7 @@
 
 　　效果如下
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/frostedglass/f1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/frostedglass/f1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -73,7 +73,7 @@
 &lt;div class="lightbox"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/frostedglass/f2.html" frameborder="0" width="320" height="240"></iframe>&nbsp;
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/frostedglass/f2.html" frameborder="0" width="320" height="240"></iframe>&nbsp;
 
 ### 模糊遮罩
 
@@ -85,7 +85,7 @@
 
 　　下面是一个实例，鼠标移出弹出框时， 模糊消失
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/frostedglass/f3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/frostedglass/f3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -128,7 +128,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/frostedglass/f4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/frostedglass/f4.html" frameborder="0" width="320" height="240"></iframe>
 
 【增大不透明度】
 
@@ -138,7 +138,7 @@
 <pre>background:hsla(0,0%,100%,.6);</pre>
 </div>
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/frostedglass/f5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/frostedglass/f5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -178,7 +178,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/frostedglass/f6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/frostedglass/f6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;【伪元素模糊】
 
@@ -220,7 +220,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/frostedglass/f7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/frostedglass/f7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -270,7 +270,7 @@
 
 　　效果如下
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/frostedglass/f8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/frostedglass/f8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -326,5 +326,5 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/frostedglass/f9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/frostedglass/f9.html" frameborder="0" width="320" height="240"></iframe>
 
