@@ -34,7 +34,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 60px;" src="{{book.demo}}/css/buju1/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju1/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[缺点1]IE6-浏览器下3像素bug，具体表现在右侧首行文字会向右偏移3px。解决办法是在left元素上设置margin-right: -100px
 
@@ -71,7 +71,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju1/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju1/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】float + margin + calc
 
@@ -99,7 +99,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju1/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju1/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】float + overflow
 
@@ -125,7 +125,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju1/b4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju1/b4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -161,7 +161,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju1/b5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju1/b5.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】inline-block + margin + (fix)
 
@@ -188,7 +188,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju1/b6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju1/b6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -221,7 +221,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju1/b7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju1/b7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -253,7 +253,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju1/b8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju1/b8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -285,7 +285,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju1/b9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju1/b9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -313,4 +313,4 @@ p{margin: 0;}
 &lt;/div&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju1/b10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju1/b10.html" frameborder="0" width="320" height="240"></iframe>
