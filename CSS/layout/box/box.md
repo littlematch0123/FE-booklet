@@ -68,7 +68,7 @@ max-width | max-height
 
 　　[注意]当最小宽度(高度)大于最大宽度(高度)时，以最小宽高的值为准
 
-<iframe style="width: 100%; height: 380px;" src="{{book.demo}}/css/box/b11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 380px;" src="https://demo.xiaohuochai.site/css/box/b11.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 内边距
 
@@ -257,7 +257,7 @@ span{
 <pre>&lt;div&gt;&lt;span&gt;测试文字测试文字测试文字&lt;/span&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/box/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/box/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### box-sizing
 
@@ -281,4 +281,4 @@ box-sizing
 
 　　[注意2]IE浏览器在getComputedStyle得到width/height是按照标准模式计算的，而不论box-sizing的取值
 
-<iframe style="width: 100%; height: 340px;" src="{{book.demo}}/css/box/b33.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 340px;" src="https://demo.xiaohuochai.site/css/box/b33.html" frameborder="0" width="320" height="240"></iframe>
