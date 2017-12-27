@@ -27,7 +27,7 @@ div{
 &lt;div&gt;小火柴的蓝色理想&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/auto/a1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/auto/a1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　类似地，高度也有此特性
 
@@ -45,7 +45,7 @@ div.inner{
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/auto/a2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/auto/a2.html" frameborder="0" width="320" height="240"></iframe>
 
 【等高布局】
 
@@ -69,7 +69,7 @@ div.inner{
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/auto/a3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/auto/a3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -89,7 +89,7 @@ div{
 &lt;div&gt;小火柴的蓝色理想&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/auto/a4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/auto/a4.html" frameborder="0" width="320" height="240"></iframe>
 
 【水平居中】
 
@@ -106,7 +106,7 @@ div{
 &lt;div&gt;小火柴的蓝色理想&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/auto/a5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/auto/a5.html" frameborder="0" width="320" height="240"></iframe>
 
 　　类似地，高度也有此特性，但不常用
 
@@ -130,7 +130,7 @@ div{
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/css/auto/a6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/css/auto/a6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -151,4 +151,4 @@ div{
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/css/auto/a7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/css/auto/a7.html" frameborder="0" width="320" height="240"></iframe>
