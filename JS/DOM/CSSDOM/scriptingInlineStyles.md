@@ -12,7 +12,7 @@
 <pre>&lt;div style="height: 40px;width: 40px;background-color: blue;"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/CSSDOM/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/CSSDOM/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[element元素节点](http://www.cnblogs.com/xiaohuochai/p/5819638.html)提供style属性，用来操作CSS行间样式，style属性指向cssStyleDeclaration对象
 
