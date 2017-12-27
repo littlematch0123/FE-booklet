@@ -73,7 +73,7 @@ window.onclick = function(){box.innerHTML += 'window\n';}
 &lt;/html&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/eventFlow/e1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/eventFlow/e1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 事件捕获
 
@@ -137,7 +137,7 @@ window.addEventListener('click',function(){box.innerHTML += 'window\n';},true);
 &lt;/html&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/eventFlow/e2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/eventFlow/e2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 事件流
 
