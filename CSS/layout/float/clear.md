@@ -27,7 +27,7 @@ none:允许左右两侧存在浮动元素</pre>
 
 　　CSS2.1引入了一个清除区域，清除区域是在元素上外边距之上增加的额外间隔，不允许任何浮动元素进入这个范围，这意味着元素设置clear属性时，它的外边距不改变
 
-<iframe style="width: 100%; height: 269px;" src="{{book.demo}}/css/float/f7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 269px;" src="https://demo.xiaohuochai.site/css/float/f7.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 方法
 
