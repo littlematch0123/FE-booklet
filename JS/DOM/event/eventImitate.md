@@ -17,7 +17,7 @@ btn1.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e1.html" frameborder="0" width="320" height="240"></iframe>
 
 **事件复制**
 
@@ -34,7 +34,7 @@ btn2.onclick = btn1.onclick;
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　但是，有一个问题，在不知道按钮一的事件处理函数以及以何种调用形式调用时，这种方法是危险的
 
@@ -53,7 +53,7 @@ btn2.onclick = btn1.onclick;
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e3.html" frameborder="0" width="320" height="240"></iframe>
 
 **click()方法**
 
@@ -74,7 +74,7 @@ btn2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　虽然click()方法可以完美模拟click事件，但是对于其他事件并没有相应的模拟方法，就需要用到下面要介绍的事件模拟了。好吧，我承认这个引入比较长。但是，我不知道如何再缩短了&nbsp;
 
@@ -127,7 +127,7 @@ btn2.onmouseover = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e5.html" frameborder="0" width="320" height="240"></iframe>
 
 **creatEvent()**
 
@@ -211,7 +211,7 @@ btn2.onmouseover = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e6.html" frameborder="0" width="320" height="240"></iframe>
 
 【写法二】createEvent()方法使用Event参数
 
@@ -242,7 +242,7 @@ btn2.onmouseover = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e7.html" frameborder="0" width="320" height="240"></iframe>
 
 **createEventObject()**
 
@@ -308,7 +308,7 @@ btn2.onmouseover = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e8.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 自定义事件
 
@@ -336,7 +336,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e9.html" frameborder="0" width="320" height="240"></iframe>
 
 **CustomEvent()**
 
@@ -360,7 +360,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e10.html" frameborder="0" width="320" height="240"></iframe>
 
 **createEvent()**
 
@@ -395,7 +395,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/eventImitate/e11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/eventImitate/e11.html" frameborder="0" width="320" height="240"></iframe>
 
 ## 最后
 
