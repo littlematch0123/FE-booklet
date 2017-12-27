@@ -64,7 +64,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/buju4/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/buju4/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】双飞翼布局
 
@@ -115,7 +115,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/buju4/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/buju4/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】float + box-sizing + background-clip
 
@@ -168,7 +168,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/buju4/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/buju4/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -225,7 +225,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/buju4/b4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/buju4/b4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -272,7 +272,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/buju4/b5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/buju4/b5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -309,7 +309,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/buju4/b6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/buju4/b6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
