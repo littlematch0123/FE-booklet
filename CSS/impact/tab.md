@@ -51,7 +51,7 @@
         </ul>   
     </div>
 
-<iframe style="width: 100%; height: 250px" src="{{book.demo}}/css/nav/n1.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n1.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 【视觉布局】
 
@@ -81,7 +81,7 @@
         </ul>
     </div>
 
-<iframe style="width: 100%; height: 250px" src="{{book.demo}}/css/nav/n2.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n2.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>&nbsp;</p>
 
@@ -126,7 +126,7 @@
         </ul>   
     </div>
 
-<iframe style="width: 100%; height: 250px" src="{{book.demo}}/css/nav/n3.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n3.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 &emsp;&emsp;[缺点]：初始状态时，第一个导航标题无法实现默认被选中的状态(背景白色，无下划线)；鼠标移出导航模块时，导航内容部分无法固定，显示第一个导航内容；鼠标移出导航模块时，导航标题的样式无法固定，恢复到默认状态
 
@@ -185,7 +185,7 @@
         </ul>   
     </div>
 
-<iframe style="width: 100%; height: 250px" src="{{book.demo}}/css/nav/n4.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n4.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 &emsp;&emsp;[缺点]：初始态默认选中的导航标题样式无法设置；改变了HTML结构；锚点技术本身的局限是锚点目标会尽可能的到达可视区域上方，从而可能会生成页面跳动
 
@@ -225,7 +225,7 @@
         </ul>
     </div>
 
-<iframe style="width: 100%; height: 250px" src="{{book.demo}}/css/nav/n5.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n5.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 &emsp;&emsp;[缺点]：初始态默认选中的导航标题样式无法设置；锚点技术本身的局限是锚点目标会尽可能的到达可视区域上方，从而可能会生成页面跳动；hover态与点击态分开，可能会让人犯晕；鼠标移出导航模块时，导航标题的样式无法固定，恢复到默认状态
 
@@ -289,7 +289,7 @@
         </ul>   
     </div>
 
-<iframe style="width: 100%; height: 250px" src="{{book.demo}}/css/nav/n6.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n6.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 &emsp;&emsp;[缺点]：HTML结构较复杂
 
@@ -330,7 +330,7 @@
         </nav>
     </div>
 
-<iframe style="width: 100%; height: 250px" src="{{book.demo}}/css/nav/n7.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n7.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 &emsp;&emsp;[缺点]：初始态默认选中的导航标题样式无法设置；有时会出现页面跳动的效果；hover态与点击态分开，可能会让人犯晕；鼠标移出导航模块时，导航标题的样式无法固定，恢复到默认状态
 
