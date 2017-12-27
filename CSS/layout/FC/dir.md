@@ -21,7 +21,7 @@
 //right: 1 23 456</pre>
 </div>
 
-<iframe style="width: 100%; height: 263px;" src="{{book.demo}}/css/dir/d1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 263px;" src="https://demo.xiaohuochai.site/css/dir/d1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### writing-mode
 
@@ -39,7 +39,7 @@
 
 　　[注意]safari和移动端IOS和android需要添加-webkit-前缀；IE浏览器只支持自己的私有属性值
 
-<iframe style="width: 100%; height: 231px;" src="{{book.demo}}/css/dir/d2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 231px;" src="https://demo.xiaohuochai.site/css/dir/d2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### dir
 
@@ -52,7 +52,7 @@
 //rtl: 456 23 1</pre>
 </div>
 
-<iframe style="width: 100%; height: 231px;" src="{{book.demo}}/css/dir/d3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 231px;" src="https://demo.xiaohuochai.site/css/dir/d3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### direction
 
@@ -79,7 +79,7 @@ rtl: 从右到左(right to left)</pre>
 //rtl: 456 23 1</pre>
 </div>
 
-<iframe style="width: 100%; height: 326px;" src="{{book.demo}}/css/dir/d4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 326px;" src="https://demo.xiaohuochai.site/css/dir/d4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### unicode-bidi
 
@@ -110,5 +110,5 @@ bidi-override: 654 32 1</pre>
 
 　　[注意]只有当dir为rtl或direction为rtl时，unicode-bidi属性才起作用
 
-<iframe style="width: 100%; height: 358px;" src="{{book.demo}}/css/dir/d5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 358px;" src="https://demo.xiaohuochai.site/css/dir/d5.html" frameborder="0" width="320" height="240"></iframe>
 
