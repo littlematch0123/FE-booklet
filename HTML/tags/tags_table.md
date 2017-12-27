@@ -55,7 +55,7 @@ border="8"//8像素宽的边框</pre>
 &lt;/table&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/html/table/t1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/table/t1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　6、frame(IE7-浏览器不能正常显示)(html5已废弃)
 
@@ -133,7 +133,7 @@ border="8"//8像素宽的边框</pre>
 
 　　&lt;演示框&gt;点击下列相应属性值可进行演示
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/html/table/t2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/html/table/t2.html" frameborder="0" width="320" height="240"></iframe>
 
 【样式】
 
@@ -181,7 +181,7 @@ empty-cells: show(默认) 在空单元格周围绘制边框和背景</pre>
 
 &nbsp;　　&lt;演示框&gt;点击下列相应属性值可进行border-style的演示
 
-<iframe style="width: 100%; height: 440px;" src="{{book.demo}}/html/table/t3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 440px;" src="https://demo.xiaohuochai.site/html/table/t3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　4、table-layout
 
@@ -263,7 +263,7 @@ td{
 
 　　&nbsp;&lt;演示框&gt;点击下列相应属性值可进行演示
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/html/table/t4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/html/table/t4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -325,7 +325,7 @@ td{
 &lt;/table&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/html/table/t5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/table/t5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 其他表格元素
 
@@ -386,7 +386,7 @@ caption-side: bottom</pre>
 &lt;/table&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 170px;" src="{{book.demo}}/html/table/t6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 170px;" src="https://demo.xiaohuochai.site/html/table/t6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -438,7 +438,7 @@ caption{display: table-caption;}</pre>
 
 　　&lt;演示框&gt;点击下列相应属性值可进行演示
 
-<iframe style="width: 100%; height: 320px;" src="{{book.demo}}/html/table/t7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/html/table/t7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
