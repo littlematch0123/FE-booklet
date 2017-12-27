@@ -26,25 +26,25 @@
 
 　　正常流中元素一个接一个排列；浮动元素也构成浮动流
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/float/f1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/float/f1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【2】块级框
 
 　　浮动元素自身会生成一个块级框，而不论这个元素本身是什么，使浮动元素周围的外边距不会合并
 
-<iframe style="width: 100%; height: 483px;" src="{{book.demo}}/css/float/f2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 483px;" src="https://demo.xiaohuochai.site/css/float/f2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【3】包裹性
 
 　　浮动元素的包含块是指其最近的块级祖先元素，后代浮动元素不应该超出包含块的上、左、右边界。若不设置包含块的高度，包含块若浮动，则包含块会延伸，进而包含其所有后代浮动元素；若不设置包含块的宽度，包含块若浮动，则包含块宽度由后代浮动元素撑开
 
-<iframe style="width: 100%; height: 307px;" src="{{book.demo}}/css/float/f3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 307px;" src="https://demo.xiaohuochai.site/css/float/f3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【4】破坏性
 
 　　浮动元素脱离正常流，并破坏了自身的行框属性，使其包含块元素的高度塌陷，使浮动框旁边的行框被缩短，从而给浮动框留出空间，行框围绕浮动框重新排列
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/float/f4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/float/f4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 表现
 
@@ -66,7 +66,7 @@
 
 　　[9]左浮动元素必须向左尽可能远，右浮动元素则必须向右尽可能远。位置越高，就会向右或向左浮动得越远
 
-<iframe style="width: 100%; height: 416px;" src="{{book.demo}}/css/float/f5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 416px;" src="https://demo.xiaohuochai.site/css/float/f5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 重叠
 
@@ -76,5 +76,5 @@
 
 　　【2】块框与一个浮动元素重叠时，其边框和背景在该浮动元素之下显示，而内容在浮动元素之上显示
 
-<iframe style="width: 100%; height: 301px;" src="{{book.demo}}/css/float/f6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 301px;" src="https://demo.xiaohuochai.site/css/float/f6.html" frameborder="0" width="320" height="240"></iframe>
 
