@@ -70,7 +70,7 @@ location.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/getElement/g1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/getElement/g1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　在IE浏览器中，HTML某些元素如果有name属性，也与id属性相同，隐式地成为全局变量，包括：
 
@@ -92,7 +92,7 @@ for(var i = 0; i &lt; test.length; i++){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/getElement/g2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/getElement/g2.html" frameborder="0" width="320" height="240"></iframe>
 
 【丢失的this】
 
@@ -149,7 +149,7 @@ divs.item(1).style.backgroundColor = 'pink';
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/getElement/g3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/getElement/g3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]通过getElementsByTagName()方法取得的类数组对象有一个namedItem()方法，可以通过元素的name属性取得集合中的第一个值。safari和IE不支持该方法
 
@@ -163,7 +163,7 @@ divs.namedItem('test').style.color = 'red';
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 80px;" src="{{book.demo}}/js/getElement/g4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/getElement/g4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　getElementsByTagName()方法可以用于document对象，也可以用于element元素对象，用于调用该方法的元素的后代元素
 
@@ -179,7 +179,7 @@ lis[0].style.color = 'red';
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/js/getElement/g5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/js/getElement/g5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -196,7 +196,7 @@ button[0].style.color = 'red';
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/getElement/g6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/getElement/g6.html" frameborder="0" width="320" height="240"></iframe>
 
 　　关于getElementsByName()方法，IE浏览器与其他浏览器相比，有三个不同之处
 
@@ -212,7 +212,7 @@ divs[0].style.color = 'red';
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/getElement/g7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/getElement/g7.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【2】IE9-浏览器中使用getElementsByName()方法也会返回id属性匹配的元素。因此，不要将name和id属性设置为相同的值
 
@@ -229,7 +229,7 @@ for(var i = 0; i &lt; buttons.length; i++){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/getElement/g8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/getElement/g8.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【3】如果对getElementsByName()方法取得的类数组对象使用namedItem()方法，因为每一项的name属性都相同，所以只会返回第一项
 
