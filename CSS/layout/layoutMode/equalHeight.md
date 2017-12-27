@@ -54,7 +54,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="{{book.demo}}/css/denggao/d1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/denggao/d1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -104,7 +104,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="{{book.demo}}/css/denggao/d2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/denggao/d2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -147,7 +147,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="{{book.demo}}/css/denggao/d3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/denggao/d3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -196,7 +196,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/denggao/d4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/denggao/d4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -233,7 +233,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/denggao/d5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/denggao/d5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -264,7 +264,7 @@ body,p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/denggao/d6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/denggao/d6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -327,4 +327,4 @@ eqHeight(oLeft,oRight);
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/denggao/d7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/denggao/d7.html" frameborder="0" width="320" height="240"></iframe>
