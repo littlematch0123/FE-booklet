@@ -46,7 +46,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/dynamicStyles/d1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/dynamicStyles/d1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 内部样式
 
@@ -80,7 +80,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/dynamicStyles/d2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/dynamicStyles/d2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]该方法在IE8-浏览器中报错，因为IE8-浏览器将&lt;style&gt;视为当作特殊的节点，不允许访问其子节点或设置[innerHTML属性](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor1)
 
@@ -118,7 +118,7 @@ btn.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/dynamicStyles/d3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/dynamicStyles/d3.html" frameborder="0" width="320" height="240"></iframe>
 
 **兼容二**
 
@@ -159,5 +159,5 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/dynamicStyles/d4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/dynamicStyles/d4.html" frameborder="0" width="320" height="240"></iframe>
 
