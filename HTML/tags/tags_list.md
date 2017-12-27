@@ -90,7 +90,7 @@ ol{
 
 　　&lt;演示框&gt;点击下列相应属性值可进行演示
 
-<iframe src="{{book.demo}}/html/list/l111.html" frameborder="0" width="100%" height="400"></iframe>
+<iframe src="https://demo.xiaohuochai.site/html/list/l111.html" frameborder="0" width="100%" height="400"></iframe>
 
 　　[注意]IE7-浏览器不支持属性值 "decimal-leading-zero"、"lower-greek"、"lower-latin"、"upper-latin"、"armenian"、"georgian"
 
