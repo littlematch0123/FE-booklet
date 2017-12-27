@@ -133,7 +133,7 @@
 
 &emsp;&emsp;关于水平auto的演示
 
-<p><iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/context/c1.html" frameborder="0" width="320" height="240"></iframe></p>
+<p><iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/context/c1.html" frameborder="0" width="320" height="240"></iframe></p>
 
 <p><strong>替换元素</strong></p>
 
@@ -144,7 +144,7 @@
 
 &emsp;&emsp;如果一个替换元素的width不同于其固有宽度，那么height值也会成比例变化，除非Height显式设置一个特定值，反过来也一样
 
-<p><iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/context/c2.html" frameborder="0" width="320" height="240"></iframe></p>
+<p><iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/context/c2.html" frameborder="0" width="320" height="240"></iframe></p>
 
 
 【垂直格式化】
@@ -275,7 +275,7 @@ span{border: 1px solid black;background-color: yellow;padding: 6px;margin: 6px;f
 <div class="cnblogs_code">
 <pre>&lt;div&gt;&lt;span&gt;测试文字测试文字测试文字&lt;/span&gt;&lt;/div&gt;</pre>
 </div>
-<p><iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/context/c3.html" frameborder="0" width="320" height="240"></iframe></p>
+<p><iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/context/c3.html" frameborder="0" width="320" height="240"></iframe></p>
 
 【行内替换元素】
 
@@ -299,7 +299,7 @@ img{height: 26px;padding: 2px;margin: 2px;
 <div class="cnblogs_code">
 <pre>&lt;div&gt;&lt;span&gt;测试文字测试&lt;<br>img src="backup/lamp.gif" alt="测试图片"&gt;文字测试文字&lt;/span&gt;&lt;/div&gt;</pre>
 </div>
-<p><iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/context/c4.html" frameborder="0" width="320" height="240"></iframe></p>
+<p><iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/context/c4.html" frameborder="0" width="320" height="240"></iframe></p>
 
 
 <p>&nbsp;</p>
