@@ -53,7 +53,7 @@ jello</pre>
 <pre>&lt;div class="animated bounce"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/animate/a1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/animate/a1.html" frameborder="0" width="320" height="240"></iframe>
 
 【bounce(弹性缓冲效果)】
 
@@ -70,7 +70,7 @@ bounceOutRight
 bounceOutUp</pre>
 </div>
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/animate/a2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/animate/a2.html" frameborder="0" width="320" height="240"></iframe>
 
 【fade(透明度变化效果)】
 
@@ -95,7 +95,7 @@ fadeOutUp
 fadeOutUpBig</pre>
 </div>
 
-<iframe style="width: 100%; height: 536px;" src="{{book.demo}}/css/animate/a3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 536px;" src="https://demo.xiaohuochai.site/css/animate/a3.html" frameborder="0" width="320" height="240"></iframe>
 
 【flip(翻转效果)】
 
@@ -107,7 +107,7 @@ flipOutX
 flipOutY</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/animate/a4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/animate/a4.html" frameborder="0" width="320" height="240"></iframe>
 
 【rotate(旋转效果)】&nbsp;
 
@@ -124,7 +124,7 @@ rotateOutUpLeft
 rotateOutUpRight</pre>
 </div>
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/animate/a5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/animate/a5.html" frameborder="0" width="320" height="240"></iframe>
 
 【slide(滑动效果)】&nbsp;
 
@@ -139,7 +139,7 @@ slideOutRight
 slideOutUp</pre>
 </div>
 
-<iframe style="width: 100%; height: 320px;" src="{{book.demo}}/css/animate/a6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/css/animate/a6.html" frameborder="0" width="320" height="240"></iframe>
 
 【zoom(变焦效果)】
 
@@ -156,7 +156,7 @@ zoomOutRight
 zoomOutUp</pre>
 </div>
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/animate/a7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/animate/a7.html" frameborder="0" width="320" height="240"></iframe>
 
 【special(特殊效果)】&nbsp;
 
@@ -168,7 +168,7 @@ lightSpeedIn
 lightSpeedOut</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/animate/a8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/animate/a8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -228,7 +228,7 @@ oBtn2.onclick = function(){
 &lt;/html&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/css/animate/a9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/css/animate/a9.html" frameborder="0" width="320" height="240"></iframe>
 
 　　至于动画的配置参数，比如动画持续时间，动画的执行次数等等，可以在元素上自行定义，覆盖掉animate.css里面所定义的就行了&nbsp;
 
@@ -265,4 +265,4 @@ oBtn2.onclick = function(){
 &lt;/html&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/css/animate/a10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/css/animate/a10.html" frameborder="0" width="320" height="240"></iframe>
