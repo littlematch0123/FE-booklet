@@ -24,7 +24,7 @@ text-indent
 
 　　百分数: 相对于包含块的宽度
 
-<iframe style="width: 100%; height: 323px;" src="{{book.demo}}/css/text/t1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 323px;" src="https://demo.xiaohuochai.site/css/text/t1.html" frameborder="0" width="320" height="240"></iframe>
 
 **应用**
 
@@ -40,7 +40,7 @@ text-indent
 </pre>
 </div>
 
-<iframe src="{{book.demo}}/css/text/t2.html" frameborder="0" width="320" height="210"></iframe>
+<iframe src="https://demo.xiaohuochai.site/css/text/t2.html" frameborder="0" width="320" height="210"></iframe>
 
 &nbsp;【首字下沉】
 
@@ -56,7 +56,7 @@ div:first-<span>letter{
 }  </pre>
 </div>
 
-<iframe src="{{book.demo}}/css/text/t3.html" frameborder="0" width="320" height="230"></iframe>
+<iframe src="https://demo.xiaohuochai.site/css/text/t3.html" frameborder="0" width="320" height="230"></iframe>
 
 ### 水平对齐
 
@@ -74,13 +74,13 @@ text-align
 
 　　继承性: 有
 
-<iframe style="width: 100%; height: 258px;" src="{{book.demo}}/css/text/t4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 258px;" src="https://demo.xiaohuochai.site/css/text/t4.html" frameborder="0" width="320" height="240"></iframe>
 
 **两端对齐**
 
  　　当水平对齐方式为两端对齐时，word-spacing可能会调整，以便文本在整行中正好放下。如果为letter-spacing指定一个长度值，则letter-spacing不会受两端对齐影响，除非letter-spacing值为normal
 
-<iframe style="width: 100%; height: 274px;" src="{{book.demo}}/css/text/t5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 274px;" src="https://demo.xiaohuochai.site/css/text/t5.html" frameborder="0" width="320" height="240"></iframe>
 
 **IE兼容**
 
@@ -126,7 +126,7 @@ word-spacing
 
 　　继承性: 有
 
-<iframe style="width: 100%; height: 268px;" src="{{book.demo}}/css/text/t6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 268px;" src="https://demo.xiaohuochai.site/css/text/t6.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 字母间隔
 
@@ -144,7 +144,7 @@ letter-spacing
 
 　　继承性: 有
 
-<iframe style="width: 100%; height: 268px;" src="{{book.demo}}/css/text/t7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 268px;" src="https://demo.xiaohuochai.site/css/text/t7.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 文本转换
 
@@ -160,7 +160,7 @@ text-transform
 
 　　继承性: 有
 
-<iframe style="width: 100%; height: 319px;" src="{{book.demo}}/css/text/t8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 319px;" src="https://demo.xiaohuochai.site/css/text/t8.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 文本修饰
 
@@ -184,11 +184,11 @@ text-decoration
 
 　　文本修饰属性无法继承，意味着子元素文本上的任何修饰线与父元素的颜色相同。子元素文本上的修饰线实际上是父元素的，只是正好"经过"而已。
 
-<iframe style="width: 100%; height: 268px;" src="{{book.demo}}/css/text/t9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 268px;" src="https://demo.xiaohuochai.site/css/text/t9.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]互不冲突的文本修饰线可出现多条
 
-<iframe style="width: 100%; height: 321px;" src="{{book.demo}}/css/text/t10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 321px;" src="https://demo.xiaohuochai.site/css/text/t10.html" frameborder="0" width="320" height="240"></iframe>
 
 ## 最后
 
