@@ -45,7 +45,7 @@ btn2.onclick = function(){wysiwyg.contentEditable = false;}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/html/fuwenben/f1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/html/fuwenben/f1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 命令
 
@@ -87,7 +87,7 @@ for(var i = 0; i &lt; btns.length; i++){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/html/fuwenben/f2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/html/fuwenben/f2.html" frameborder="0" width="320" height="240"></iframe>
 
 **文本格式**
 
@@ -119,7 +119,7 @@ for(var i = 0; i &lt; btns.length; i++){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/html/fuwenben/f3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/html/fuwenben/f3.html" frameborder="0" width="320" height="240"></iframe>
 
 **编辑**
 
@@ -157,7 +157,7 @@ for(var i = 0; i &lt; btns.length; i++){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/html/fuwenben/f4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/html/fuwenben/f4.html" frameborder="0" width="320" height="240"></iframe>
 
 **插入**
 
@@ -191,7 +191,7 @@ for(var i = 0; i &lt; btns.length; i++){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/html/fuwenben/f5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/html/fuwenben/f5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 选区
 
