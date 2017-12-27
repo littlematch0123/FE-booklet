@@ -46,7 +46,7 @@ document.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/attrAndPro/a1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/attrAndPro/a1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【2】修改对象属性
 
@@ -61,7 +61,7 @@ document.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/attrAndPro/a2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/attrAndPro/a2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 例外
 
