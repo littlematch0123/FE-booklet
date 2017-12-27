@@ -167,22 +167,22 @@ console.log(rgbToHsl('rgb(300,1,1)'));//false</pre>
 
 **简易拾色器**
 
-<iframe style="width: 100%; height: 240px;" src="{{book.demo}}/css/colorModer/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 240px;" src="https://demo.xiaohuochai.site/css/colorModer/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
 **16进制颜色转换器**
 
-<iframe style="width: 100%; height: 320px;" src="{{book.demo}}/css/colorModer/c2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/css/colorModer/c2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
 **RGB颜色转换器**
 
-<iframe style="width: 100%; height: 340px;" src="{{book.demo}}/css/colorModer/c3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 340px;" src="https://demo.xiaohuochai.site/css/colorModer/c3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
 **HSL颜色转换器**
 
-<iframe style="width: 100%; height: 340px;" src="{{book.demo}}/css/colorModer/c4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 340px;" src="https://demo.xiaohuochai.site/css/colorModer/c4.html" frameborder="0" width="320" height="240"></iframe>
