@@ -50,7 +50,7 @@ display: flexbox | inline-flexbox;
 display: box | inline-box;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 503px;" src="{{book.demo}}/css/flex/f1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 503px;" src="https://demo.xiaohuochai.site/css/flex/f1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 基本概念
 
@@ -95,11 +95,11 @@ box-orient: horizontal(水平) |vertical(垂直) |inline-axis[默认](内联轴�
 box-direction: normal(正常) | reverse(反向) </pre>
 </div>
 
-<iframe style="width: 100%; height: 312px;" src="{{book.demo}}/css/flex/f2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 312px;" src="https://demo.xiaohuochai.site/css/flex/f2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]伸缩流方向与direction和wrinting-mode有关系
 
-<iframe style="width: 100%; height: 407px;" src="{{book.demo}}/css/flex/f3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 407px;" src="https://demo.xiaohuochai.site/css/flex/f3.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】伸缩流换行:指定伸缩项目溢出伸缩容器时是否换行
 
@@ -111,13 +111,13 @@ flex-wrap: nowrap[默认] | wrap | wrap-reverse
 box-lines: single[默认] | multiple | N/A</pre>
 </div>
 
-<iframe style="width: 100%; height: 253px;" src="{{book.demo}}/css/flex/f4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 253px;" src="https://demo.xiaohuochai.site/css/flex/f4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]此时，CSS允许使用overflow属性来处理溢出内容的显示方式
 
 　　[注意]伸缩项目的排列顺序同样与direction和wrinting-mode有关系
 
-<iframe style="width: 100%; height: 528px;" src="{{book.demo}}/css/flex/f5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 528px;" src="https://demo.xiaohuochai.site/css/flex/f5.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】伸缩流:伸缩流方向与伸缩行换行的缩写
 
@@ -129,9 +129,9 @@ flex-flow: &lt;flex-direction&gt; | &lt;flex-wrap&gt;
 //旧版本无对应属性</pre>
 </div>
 
-<iframe style="width: 100%; height: 401px;" src="{{book.demo}}/css/flex/f6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 401px;" src="https://demo.xiaohuochai.site/css/flex/f6.html" frameborder="0" width="320" height="240"></iframe>
 
-<iframe style="width: 100%; height: 553px;" src="{{book.demo}}/css/flex/f7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 553px;" src="https://demo.xiaohuochai.site/css/flex/f7.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】主轴对齐:用来设置伸缩容器当前行伸缩项目在主轴方向的对齐方式，指定如何在伸缩项目之间分布伸缩容器额外空间
 
@@ -147,11 +147,11 @@ flex-pack: start[默认] | center | end | justify | distribute
 box-pack: start[默认] | center | end | justify | N/A</pre>
 </div>
 
-<iframe style="width: 100%; height: 271px;" src="{{book.demo}}/css/flex/f8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 271px;" src="https://demo.xiaohuochai.site/css/flex/f8.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]主轴对齐方式与direction、writing-mode、flex-flow都有关
 
-<iframe style="width: 100%; height: 628px;" src="{{book.demo}}/css/flex/f9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 628px;" src="https://demo.xiaohuochai.site/css/flex/f9.html" frameborder="0" width="320" height="240"></iframe>
 
 【5】侧轴对齐:用来设置伸缩容器当前行在侧轴方向的对齐方式
 
@@ -167,11 +167,11 @@ box-align: start | center | end | baseline | stretch[默认]</pre>
 
 　　[注意]如果伸缩项目有width/height属性将优先于侧轴对齐为拉伸的方式
 
-<iframe style="width: 100%; height: 342px;" src="{{book.demo}}/css/flex/f10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 342px;" src="https://demo.xiaohuochai.site/css/flex/f10.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]侧轴对齐方式与direction、writing-mode、flex-flow都有关
 
-<iframe style="width: 100%; height: 688px;" src="{{book.demo}}/css/flex/f11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 688px;" src="https://demo.xiaohuochai.site/css/flex/f11.html" frameborder="0" width="320" height="240"></iframe>
 
 【6】堆栈伸缩行:指定多个伸缩项目行在侧轴的对齐方式
 
@@ -186,11 +186,11 @@ flex-line-pack: start | center | end | justify | distribute | stretch[默认]
 
  　　[注意]该属性只有在flex-wrap:wrap | wrap-reverse;且伸缩项目存在多行时才生效
 
-<iframe style="width: 100%; height: 364px;" src="{{book.demo}}/css/flex/f12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 364px;" src="https://demo.xiaohuochai.site/css/flex/f12.html" frameborder="0" width="320" height="240"></iframe>
 
  　　[注意]堆栈伸缩行与direction、writing-mode、flex-flow都有关
 
-<iframe style="width: 100%; height: 689px;" src="{{book.demo}}/css/flex/f13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 689px;" src="https://demo.xiaohuochai.site/css/flex/f13.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 伸缩项目
 
@@ -226,7 +226,7 @@ flex-item-align: auto[默认] | start | center | end | baseline | stretch
 
  　　[注意]如果伸缩项目的任一个侧轴上的外边距为auto，则该伸缩项目在伸缩容器的剩余空间内居中对齐，且align-self没有效果。
 
-<iframe style="width: 100%; height: 417px;" src="{{book.demo}}/css/flex/f14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 417px;" src="https://demo.xiaohuochai.site/css/flex/f14.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】伸缩基准值: 伸缩项目在主轴方向上的初始大小
 
@@ -242,7 +242,7 @@ positive-flex: &lt;number&gt;[默认为1]
 
 　　[注意]flex-basis的&lt;length&gt;值可以是一个数字后面跟着px、em等单位，也可以是一个百分数，相对于其父伸缩容器的主轴长度
 
-<iframe style="width: 100%; height: 295px;" src="{{book.demo}}/css/flex/f15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 295px;" src="https://demo.xiaohuochai.site/css/flex/f15.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】扩展比率: 当伸缩容器的额外空间为正值时，此伸缩项目相对伸缩容器里其他伸缩项目能扩展的空间比例
 
@@ -256,7 +256,7 @@ positive-flex: &lt;number&gt;[默认为0]
 
 　　若flex-grow的值为0表示即使存在剩余空间也不放大；若所有项目的flex-grow属性都为1，则它们将等分剩余空间(如果有的话)；若一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍
 
-<iframe style="width: 100%; height: 328px;" src="{{book.demo}}/css/flex/f16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 328px;" src="https://demo.xiaohuochai.site/css/flex/f16.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】收缩比率:当伸缩容器的额外空间为负值时，此伸缩项目相对于伸缩容器里其他伸缩项目能收缩的空间比例
 
@@ -272,7 +272,7 @@ negative-flex: &lt;number&gt;[默认为0]
 
 　　[注意]伸缩基准值、扩展比率和收缩比率都可以为小数，但不能为负数
 
-<iframe style="width: 100%; height: 360px;" src="{{book.demo}}/css/flex/f17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 360px;" src="https://demo.xiaohuochai.site/css/flex/f17.html" frameborder="0" width="320" height="240"></iframe>
 
 【5】伸缩性:是扩展比率、收缩比率和伸缩基准值的缩写
 
@@ -296,7 +296,7 @@ flex: none | [&lt;pos-flex&gt; &lt;neg-flex&gt;? || &lt;preferred-size&gt;]
 box-flex: &lt;number&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 422px;" src="{{book.demo}}/css/flex/f18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 422px;" src="https://demo.xiaohuochai.site/css/flex/f18.html" frameborder="0" width="320" height="240"></iframe>
 
 【6】显示顺序: 定义伸缩项目的排列顺序，数值越小，排列越靠前
 
@@ -313,5 +313,5 @@ box-ordinal-group: &lt;integer&gt;[默认为1]</pre>
 
  　　[注意]order的属性值可以是负数，但不能是小数
 
-<iframe style="width: 100%; height: 295px;" src="{{book.demo}}/css/flex/f19.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 295px;" src="https://demo.xiaohuochai.site/css/flex/f19.html" frameborder="0" width="320" height="240"></iframe>
 
