@@ -16,7 +16,7 @@ visibility
 
 　　继承性: 有
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/visibility/v1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/visibility/v1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -28,13 +28,13 @@ visibility
 
 　　[注意]可以将一个hidden元素的后代元素置为visible，这会使该后代元素正常出现
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/visibility/v2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/visibility/v2.html" frameborder="0" width="320" height="240"></iframe>
 
 　collapse：在表格中&lt;col&gt;或&lt;colgroup&gt;中使用，表示该列或列组的所有单元格不显示。如果用于非表格元素，collapse与hidden含义相同
 
 　　[注意]webkit内核浏览器不支持给&lt;col&gt;或&lt;colgroup&gt;元素使用collapse属性
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/visibility/v3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/visibility/v3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -42,7 +42,7 @@ visibility
 
  　　visibility:hidden与display:none作为隐藏元素的两种方式，常常被人们拿来比较。其实区别很简单，前者不脱离文档流，保留隐藏之前元素占据的物理区域；而后者则脱离文档流，如果重新显示则需要页面的重新绘制。还有一点区别却很少人提到，如果父级设置display:none;子级设置display:block也不会显示；而如果父级设置visibility:hidden;子级设置visibility:visible时子级会显示出来
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/visibility/v4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/visibility/v4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -52,7 +52,7 @@ visibility
 
 　　//js效果:当鼠标移入元素时，父级的背景颜色变成黑色；移出时背景颜色恢复初始值
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/visibility/v5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/visibility/v5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -70,7 +70,7 @@ visibility
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/visibility/v6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/visibility/v6.html" frameborder="0" width="320" height="240"></iframe>
 
 　　visibility配合opacity和transtion可以实现真正的元素淡入淡出。如果只用opacity时，即使最后元素opacity变为0，但实现上该图片还是可以覆盖其他元素以及可以接受js效果。所以使用visibility可以实现元素真正的隐藏
 
@@ -86,7 +86,7 @@ visibility
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/visibility/v7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/visibility/v7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -175,7 +175,7 @@ document.addEventListener('visibilitychange',function(){
 },false);</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/visibility/v8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/visibility/v8.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】页面切换来控制音乐的播放和暂停
 
@@ -202,5 +202,5 @@ document.addEventListener('visibilitychange',function(){
 },false);</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 120px;" src="{{book.demo}}/css/visibility/v9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/visibility/v9.html" frameborder="0" width="320" height="240"></iframe>
 
