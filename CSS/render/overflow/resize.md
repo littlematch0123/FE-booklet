@@ -25,6 +25,6 @@ horizontal: 用户只可调整元素的宽度
 vertical: 用户只可调整元素的高度</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/resize/r1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/resize/r1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]在win7下resize拖拽区域的大小是17px*17px，实际上它就是滚动条尺寸
