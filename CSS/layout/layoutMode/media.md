@@ -31,7 +31,7 @@ all            适合所有设备</pre>
 &lt;div class="box"&gt;&lt;/div&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/media/m1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/media/m1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 媒体属性
 
@@ -70,7 +70,7 @@ all            适合所有设备</pre>
 &lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/media/m2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/media/m2.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】颜色索引（color-index）
 
@@ -102,7 +102,7 @@ all            适合所有设备</pre>
 &lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/media/m3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/media/m3.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】设备宽高比（device-aspect-ratio）
 
@@ -119,7 +119,7 @@ all            适合所有设备</pre>
 &lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/media/m4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/media/m4.html" frameborder="0" width="320" height="240"></iframe>
 
 【5】设备高度（device-height）
 
@@ -136,7 +136,7 @@ all            适合所有设备</pre>
 &lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/media/m5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/media/m5.html" frameborder="0" width="320" height="240"></iframe>
 
 【6】设备宽度（device-width）
 
@@ -153,7 +153,7 @@ all            适合所有设备</pre>
 &lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/media/m6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/media/m6.html" frameborder="0" width="320" height="240"></iframe>
 
 【7】网格（grid）
 
@@ -170,7 +170,7 @@ all            适合所有设备</pre>
 &lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/media/m7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/media/m7.html" frameborder="0" width="320" height="240"></iframe>
 
 【8】高度（height）
 
@@ -217,7 +217,7 @@ all            适合所有设备</pre>
 &lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/media/m8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/media/m8.html" frameborder="0" width="320" height="240"></iframe>
 
 【11】方向（orientation）
 
@@ -253,7 +253,7 @@ all            适合所有设备</pre>
 &lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/media/m9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/media/m9.html" frameborder="0" width="320" height="240"></iframe>
 
 【13】扫描（scan）
 
@@ -411,7 +411,7 @@ function mqCallback(mql) {
 }</pre>
 </div>
 
-　　[打开mediaQuery的DEMO]({{book.demo}}/css/media/matchMedia.html)
+　　[打开mediaQuery的DEMO](https://demo.xiaohuochai.site/css/media/matchMedia.html)
 
 &nbsp;
 
