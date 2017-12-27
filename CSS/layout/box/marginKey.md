@@ -32,7 +32,7 @@
     <p>兄弟一</p>
     <p>兄弟二</p>
 
-<p><iframe style="width: 100%; height: 120px" src="{{book.demo}}/css/margin/m1.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+<p><iframe style="width: 100%; height: 120px" src="https://demo.xiaohuochai.site/css/margin/m1.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
 
 
 2、父级元素和第一个或最后一个子元素，父子级的margin重叠又叫margin传递
@@ -51,7 +51,7 @@
         <div class="inner">子级</div>
     </div>  
 
-<iframe style="width: 100%; height: 60px" src="{{book.demo}}/css/margin/m2.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 60px" src="https://demo.xiaohuochai.site/css/margin/m2.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p><strong>条件</strong></p>
 
@@ -67,7 +67,7 @@
     
 &emsp;&emsp;如果是父子级的margin-bottom重叠，第d条改为父元素和最后一个子元素之间没有inline元素分隔，以及还需要满足父元素没有height、min-height、max-height限制
 
-<iframe style="width: 100%; height: 350px" src="{{book.demo}}/css/margin/m33.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 350px" src="https://demo.xiaohuochai.site/css/margin/m33.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 3、空的block元素
 
@@ -89,7 +89,7 @@
 
 &emsp;&emsp;从下面结果中，可以看出空block元素应该撑开父级margin-top+margin-bottom共2em的高度，但由于margin重叠，只有1em
 
-<iframe style="width: 100%; height: 60px" src="{{book.demo}}/css/margin/m4.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 60px" src="https://demo.xiaohuochai.site/css/margin/m4.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 &emsp;&emsp;同样地，空block元素发生margin重叠也需要满足一些条件
 
@@ -108,7 +108,7 @@
 
 &emsp;&emsp;简单点说，就是正正取大值、正负值相加、负负最负值
 
-<p><iframe style="width: 100%; height: 384px;" src="{{book.demo}}/css/margin/m55.html" frameborder="0" width="320" height="240"></iframe></p>
+<p><iframe style="width: 100%; height: 384px;" src="https://demo.xiaohuochai.site/css/margin/m55.html" frameborder="0" width="320" height="240"></iframe></p>
 
 【用途】
 
@@ -129,7 +129,7 @@
 &emsp;&emsp;该属性用于设置margin是否重叠，作用于发生margin重叠的两个元素之一。如果，两个都使用该属性，一个设置为discard，一个设置为separate，则最终效果为重叠collase
 
 
-<iframe style="width: 100%; height: 380px" src="{{book.demo}}/css/margin/m66.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 380px" src="https://demo.xiaohuochai.site/css/margin/m66.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 
@@ -196,7 +196,7 @@
 
 &emsp;&emsp;左侧元素使用浮动，右侧元素使用overflow-hidden实现两栏自适应的布局时，右侧元素的margin-left值只有足够大，才能看到效果。这是因为margin-left是相对于父元素左侧，而不是图片右侧
 
-<iframe style="width: 100%; height: 170px" src="{{book.demo}}/css/margin/m7.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 170px" src="https://demo.xiaohuochai.site/css/margin/m7.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 &emsp;&emsp;5、内联特性导致的margin无效
@@ -205,5 +205,5 @@
 &emsp;&emsp;一个div里面包着一张图片，当图片的margin-top小到一定值时，图片就不再接着向上移动了。这是因为图片是内联元素，它受制于内联元素vertical-align对齐特性的影响。默认基线对齐。以页面假想的大写X字符为例，X是不会因为图片margin-top足够小而跑到父元素外面的，所以图片移动到一定位置就不再接着向上移动了
 
 
-<iframe style="width: 100%; height: 240px" src="{{book.demo}}/css/margin/m8.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 240px" src="https://demo.xiaohuochai.site/css/margin/m8.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
