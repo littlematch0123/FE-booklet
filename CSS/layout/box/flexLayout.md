@@ -23,7 +23,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/flexshow/f1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/flexshow/f1.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】在伸缩项目上使用margin:auto
 
@@ -43,7 +43,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/flexshow/f2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/flexshow/f2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -66,7 +66,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/flexshow/f3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/flexshow/f3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -89,7 +89,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/flexshow/f4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/flexshow/f4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -113,7 +113,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/flexshow/f5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/flexshow/f5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -143,7 +143,7 @@ body,p{margin: 0;}
 &lt;/div&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/flexshow/f6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/flexshow/f6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -174,7 +174,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/flexshow/f7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/flexshow/f7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -204,7 +204,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/flexshow/f8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/flexshow/f8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -259,5 +259,5 @@ body,html,.parent{height: 100%;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/flexshow/f9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/flexshow/f9.html" frameborder="0" width="320" height="240"></iframe>
 
