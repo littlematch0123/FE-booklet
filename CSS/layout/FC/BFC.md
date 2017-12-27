@@ -30,17 +30,17 @@
 
 　　&lt;说明&gt;通过改变内容为BFC背景为红色的盒子的属性值，使其成为BFC，以此阻止被绿色的浮动盒子覆盖
 
-<iframe style="line-height: 1.5; width: 100%; height: 437px;" src="{{book.demo}}/css/bfc/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 437px;" src="https://demo.xiaohuochai.site/css/bfc/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【2】可以包含浮动元素
 
 　　&lt;说明&gt;通过改变高度塌陷的黑色边框的盒子的属性值，使其成为BFC，以此来包含绿色的浮动盒子
 
-<iframe style="width: 100%; height: 349px;" src="{{book.demo}}/css/bfc/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 349px;" src="https://demo.xiaohuochai.site/css/bfc/b2.html" frameborder="0" width="320" height="240"></iframe>
 
  　　【3】属于同一个BFC的两个相邻块级子元素的上下margin会发生重叠，(设置writing-mode:tb-rl时，水平margin会发生重叠)。所以当两个相邻块级子元素分属于不同的BFC时可以阻止margin重叠
 
 　　&lt;说明&gt;淡红色背景的块级盒子二的外面包一个div，通过改变此div的属性使红色盒子与绿色盒子分属于两个不同的BFC，以此来阻止margin重叠
 
-<iframe style="width: 100%; height: 453px;" src="{{book.demo}}/css/bfc/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 453px;" src="https://demo.xiaohuochai.site/css/bfc/b3.html" frameborder="0" width="320" height="240"></iframe>
 
