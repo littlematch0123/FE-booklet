@@ -25,7 +25,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="{{book.demo}}/js/window/w1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　screenX和screenY属性(IE8-)也提供相同的窗口位置信息
 
@@ -45,7 +45,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w2.html" frameborder="0" width="320" height="240"></iframe>
 
 **兼容**
 
@@ -104,7 +104,7 @@ myDiv.onclick = function(){
 document.body.innerHTML = 'outerWidth:' + window.outerWidth + ';outerHeight:' + window.outerHeight</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　innerWidth和innerHeight属性用于表示页面大小，实际上等于浏览器窗口尺寸大小减去浏览器自身边框及菜单栏、地址栏、状态栏等的宽度
 
@@ -120,7 +120,7 @@ document.body.innerHTML = 'outerWidth:' + window.outerWidth + ';outerHeight:' + 
 document.body.innerHTML = 'innerWidth:' + window.innerWidth + ';innerHeight:' + window.innerHeight</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　DOM中的document.documentElement.clientWidth和document.documentElement.clientHeight也可以表示页面大小(不包含滚动条)，与innerWidth和innerHeight返回相同的值
 
@@ -134,7 +134,7 @@ document.body.innerHTML = 'innerWidth:' + window.innerWidth + ';innerHeight:' + 
 document.body.innerHTML = 'clientWidth:' + document.documentElement.clientWidth + ';clientHeight:' + document.documentElement.clientHeight</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w5.html" frameborder="0" width="320" height="240"></iframe>
 
 　　如果没有滚动条，这两类属性在电脑端表示同样的值，在移动端却有不同的用途。innerWidth和innerHeight表示的是视觉视口，即用户正在看到的网站的区域；而document.documentElement.clientWidth和clientHeight表示的是布局视口，指CSS布局的尺寸。[详细情况移步至此](http://www.cnblogs.com/xiaohuochai/p/5496995.html)
 
@@ -187,7 +187,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w6.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【2】第二个参数表示已有窗口或者框架的名称，或者是_self、_parent、_top、_blank等窗口打开方式
 
@@ -203,7 +203,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w7.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【3】第三个参数是一个逗号分隔的设置字符串，表示在新窗口中都显示哪些特性
 
@@ -218,7 +218,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w8.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【4】第四个参数只在第二个参数命名的是一个存在的窗口时才有用。它是一个布尔值，声明了由第一个参数指定的URL是应用替换掉窗口浏览历史的当前条目(true)，还是应该在窗口浏览历史中创建一个新的条目(false)，后者是默认的设置
 
@@ -236,7 +236,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w9.html" frameborder="0" width="320" height="240"></iframe>
 
 　　新创建的window对象有一个opener属性，其中保存着打开它的原始窗口对象
 
@@ -250,7 +250,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w10.html" frameborder="0" width="320" height="240"></iframe>
 
 **过滤**
 
@@ -288,7 +288,7 @@ span2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w11.html" frameborder="0" width="320" height="240"></iframe>
 
 　　新窗口的对象w还有一个closed属性，用于检测是否被关闭
 
@@ -308,7 +308,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w12.html" frameborder="0" width="320" height="240"></iframe>
 
 **小应用**
 
@@ -333,5 +333,5 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/window/w13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/window/w13.html" frameborder="0" width="320" height="240"></iframe>
 
