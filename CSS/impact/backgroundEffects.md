@@ -22,7 +22,7 @@
   background-size: 100% 30px;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 【多条纹背景】&nbsp;
 
@@ -33,7 +33,7 @@
 background-size: 100% 45px;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 【垂直条纹】
 
@@ -44,7 +44,7 @@ background-size: 100% 45px;  </pre>
   background-size: 30px 100% ;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 【45度斜向条纹】
 
@@ -61,7 +61,7 @@ background-size: 100% 45px;  </pre>
 <pre>background:repeating-linear-gradient(45deg,#fb3, #fb3 15px, #58a 0,#58a 30px);</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b4.html" frameborder="0" width="320" height="240"></iframe>
 
 【任意角度斜向条纹】
 
@@ -69,7 +69,7 @@ background-size: 100% 45px;  </pre>
 <pre>background:repeating-linear-gradient(60deg,#fb3, #fb3 15px, #58a 0,#58a 30px);</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b5.html" frameborder="0" width="320" height="240"></iframe>
 
 【同色系条纹】
 
@@ -90,7 +90,7 @@ background-size: 100% 45px;  </pre>
 
 　　现在只需要修改一个地方就可以改变所有颜色了。还得到了一个额外的好处，对于那些不支持css渐变的浏览器来说，这里的背景色还起到了回退的作用
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -106,7 +106,7 @@ background-size: 100% 45px;  </pre>
   background-size: 30px 30px;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b8.html" frameborder="0" width="320" height="240"></iframe>
 
 【图纸辅助线】
 
@@ -118,7 +118,7 @@ background-size: 100% 45px;  </pre>
   background-size: 30px 30px;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b9.html" frameborder="0" width="320" height="240"></iframe>
 
 【蓝图网格】
 
@@ -130,7 +130,7 @@ background-size: 100% 45px;  </pre>
   background-size: 75px 75px,75px 75px,15px 15px,15px 15px;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b10.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -146,7 +146,7 @@ background-size: 100% 45px;  </pre>
   background-size: 30px 30px;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b11.html" frameborder="0" width="320" height="240"></iframe>
 
 【波点图案】
 
@@ -159,7 +159,7 @@ background-size: 100% 45px;  </pre>
   background-position: 0 0 ,15px 15px;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b12.html" frameborder="0" width="320" height="240"></iframe>
 
 　　为了达到效果，第一层背景的偏移定位值必须是贴片宽高的一半。这意味着如果要改动贴片的尺寸，需要修改四处
 
@@ -212,7 +212,7 @@ background-size: 100% 45px;  </pre>
   @inclue checkerboard(15px,#58a,tan);</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b13.html" frameborder="0" width="320" height="240"></iframe>
 
 【SVG】
 
@@ -230,7 +230,7 @@ background-size: 100% 45px;  </pre>
 &lt;/svg&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/bgshow/b14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/bgshow/b14.html" frameborder="0" width="320" height="240"></iframe>
 
 　　可能有人会说，CSS渐变可以节省HTTP请求。但实际上，可以把SVG文件以dataURL的方式内嵌到样式表中
 
@@ -264,7 +264,7 @@ background-size: 100% 45px;  </pre>
   background-size: 80px 100%;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b15.html" frameborder="0" width="320" height="240"></iframe>
 
 　　为了更真实地模拟条纹的随机性，把这组条纹从一个平面拆散为多个图层：一种颜色作为底色，另三种颜色作为条纹，然后再让条纹以不同的间隔进行重复平铺
 
@@ -276,7 +276,7 @@ background-size: 100% 45px;  </pre>
   background-size: 80px 100%,60px 100%,40px 100%;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b16.html" frameborder="0" width="320" height="240"></iframe>
 
 　　因为最顶层贴片的重复规律最容易被察觉，应该把平铺间距最大的贴片安排在最顶层
 
@@ -294,7 +294,7 @@ background-size: 100% 45px;  </pre>
   background-size: 41px 100%,61px 100%,83px 100%;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/bgshow/b17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/bgshow/b17.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -308,4 +308,4 @@ background-size: 100% 45px;  </pre>
   background:beige linear-gradient(rgba(0,0,0,0.2) 50%,transparent 0) content-box 0 0/ auto 3em;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/bgshow/b18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/bgshow/b18.html" frameborder="0" width="320" height="240"></iframe>
