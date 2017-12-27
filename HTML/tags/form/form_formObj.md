@@ -95,7 +95,7 @@ form.onsubmit = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 表单方法
 
@@ -116,7 +116,7 @@ form.onsubmit = function(){
 &lt;button type="reset"&gt;Reset Form&lt;/button&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/html/formobj/f2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/html/formobj/f2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　与调用submit()方法不同，调用reset()方法会像单击重置按钮一样触发reset事件
 
@@ -142,5 +142,5 @@ btn2.onclick = function(){form.reset();}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/html/formobj/f3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/html/formobj/f3.html" frameborder="0" width="320" height="240"></iframe>
 
