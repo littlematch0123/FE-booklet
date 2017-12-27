@@ -32,7 +32,7 @@ Array.prototype.forEach.call(list.getElementsByClassName('a c'),function(item,in
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 120px;" src="{{book.demo}}/js/className/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/className/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -78,7 +78,7 @@ toggle(value)          如果列表中已经存在给定的值，删除它；如
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/className/c2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/className/c2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -176,7 +176,7 @@ getElementsByClassName(list,'b,c').forEach(function(item,index,arr){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/className/c3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/className/c3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【2】由于IE9-浏览器不支持classList属性，也就不支持add()、contains()、remove()和toggle()这四个方法，下面是这四个方法的兼容写法
 
@@ -289,4 +289,4 @@ function trim(arr){
 &lt;button id="btn4" onclick = "toggleClass(test,'cB')"&gt;toggle&lt;/button&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/className/c4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/className/c4.html" frameborder="0" width="320" height="240"></iframe>
