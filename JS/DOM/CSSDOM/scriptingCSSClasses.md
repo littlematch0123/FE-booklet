@@ -17,7 +17,7 @@ test.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/CSSClass/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/CSSClass/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### cssText
 
@@ -32,7 +32,7 @@ test.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/CSSClass/c2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/CSSClass/c2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### css类
 
@@ -60,7 +60,7 @@ test.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/CSSClass/c3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/CSSClass/c3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### classList
 
@@ -98,7 +98,7 @@ btn2.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 140px;" src="{{book.demo}}/js/CSSClass/c4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/js/CSSClass/c4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 性能
 
