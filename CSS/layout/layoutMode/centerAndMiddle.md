@@ -20,7 +20,7 @@
 <pre>&lt;div class="test" style="background-color: lightblue;width: 200px;"&gt;测试文字&lt;/div&gt;   </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -50,7 +50,7 @@
 &lt;/div&gt; </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x2.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】若子元素是[图像](http://www.cnblogs.com/xiaohuochai/p/5008341.html)，可不使用table-cell，而是其父元素用[行高](http://www.cnblogs.com/xiaohuochai/p/5271217.html#anchor1)替代高度，且[字体大小](http://www.cnblogs.com/xiaohuochai/p/4986285.html#anchor3)设为0。子元素本身设置vertical-align:middle
 
@@ -72,7 +72,7 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -102,7 +102,7 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -135,7 +135,7 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x5.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】利用绝对定位元素的偏移属性和[translate()函数](http://www.cnblogs.com/xiaohuochai/p/5350254.html#anchor2)的自身偏移达到水平垂直居中的效果
 
@@ -160,7 +160,7 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x6.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】在子元素宽高已知的情况下，可以配合[margin负值](http://www.cnblogs.com/xiaohuochai/p/5314289.html)达到水平垂直居中效果
 
@@ -186,7 +186,7 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -214,7 +214,7 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x8.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】在[伸缩容器](http://www.cnblogs.com/xiaohuochai/p/5323146.html#anchor4)上使用主轴对齐justify-content和侧轴对齐align-items
 
@@ -233,7 +233,7 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -263,7 +263,7 @@
 &lt;/div&gt; </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x10.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】在网格容器上设置justify-items、align-items或justify-content、align-content
 
@@ -284,5 +284,5 @@
 &lt;/div&gt; </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/xycenter/x11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/xycenter/x11.html" frameborder="0" width="320" height="240"></iframe>
 
