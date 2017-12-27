@@ -12,7 +12,7 @@
 <pre>&lt;input type="text" value="223"&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/focus/f1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/focus/f1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;　　让非表单元素获得焦点也是有办法的，先将tabIndex属性设置为-1，再调用focus()方法
 
@@ -30,7 +30,7 @@ test.onfocus = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 80px;" src="{{book.demo}}/js/focus/f2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/js/focus/f2.html" frameborder="0" width="320" height="240"></iframe>
 
 **activeElement**
 
@@ -102,7 +102,7 @@ box.onkeyup = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/focus/f3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/focus/f3.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】focus()
 
@@ -121,7 +121,7 @@ btn2.onclick = function(){test2.focus();}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/focus/f4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/focus/f4.html" frameborder="0" width="320" height="240"></iframe>
 
 **【4】autofocus**
 
@@ -163,7 +163,7 @@ btn2.onclick = function(){test.blur();}
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/focus/f5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/focus/f5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 焦点事件
 
@@ -232,7 +232,7 @@ box.onblur = fnBlur;
 
 　　由运行结果可知，focusin事件可冒泡；而blur事件不可冒泡
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/js/focus/f6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/js/focus/f6.html" frameborder="0" width="320" height="240"></iframe>
 
 　　焦点事件常用于表单展示及验证
 
@@ -285,5 +285,5 @@ function fnOut(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/focus/f7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/focus/f7.html" frameborder="0" width="320" height="240"></iframe>
 
