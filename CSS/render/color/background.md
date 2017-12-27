@@ -16,7 +16,7 @@
 
 　　继承性: 无
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/background/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/background/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -32,7 +32,7 @@
 
 　　继承性: 无
 
-<iframe style="width: 100%; height: 240px;" src="{{book.demo}}/css/background/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 240px;" src="https://demo.xiaohuochai.site/css/background/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -52,7 +52,7 @@
 
 　　继承性: 无
 
-<iframe style="width: 100%; height: 310px;" src="{{book.demo}}/css/background/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 310px;" src="https://demo.xiaohuochai.site/css/background/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -92,7 +92,7 @@
 
 　　[注意]单一关键字：当某一方向的关键字为center时可省略
 
-<iframe style="width: 100%; height: 570px;" src="{{book.demo}}/css/background/b4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 570px;" src="https://demo.xiaohuochai.site/css/background/b4.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】具体值
 
@@ -108,7 +108,7 @@
 
 　　[注意]背景图像移出到元素范围外的部分不显示
 
-<iframe style="width: 100%; height: 210px;" src="{{book.demo}}/css/background/b5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 210px;" src="https://demo.xiaohuochai.site/css/background/b5.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】百分比
 
@@ -122,13 +122,13 @@
 
 　　[注意]若只写了一个值，另一个值将是50%
 
-<iframe style="width: 100%; height: 210px;" src="{{book.demo}}/css/background/b6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 210px;" src="https://demo.xiaohuochai.site/css/background/b6.html" frameborder="0" width="320" height="240"></iframe>
 
 【新用法】
 
 　　在CSS2.1中，背景定位只支持以左上角为参照进行定位，在CSS3中新增了可以选择参照方向的定位。第一个和第三个参数为要参照的方向，第二个和第四个参数为偏移值
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/background/b7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/background/b7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -154,7 +154,7 @@
 
 　　[注意]local属性值IE8-浏览器不支持
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/background/b8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/background/b8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -174,7 +174,7 @@
 
  　　[注意]如果将background-attachment设置为fixed，background-origin将不起任何作用
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/background/b9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/background/b9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -192,7 +192,7 @@
 
 　　配合-webkit-text-fill-color: transparent;的属性可以使文字颜色呈现背景图像的效果
 
-<iframe style="width: 100%; height: 420px;" src="{{book.demo}}/css/background/b10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 420px;" src="https://demo.xiaohuochai.site/css/background/b10.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -218,7 +218,7 @@
 
 　　contain: 保持背景图像本身的宽度比例，将背景图像缩放到宽度或高度正好适应所定义背景容器的区域
 
-<iframe style="width: 100%; height: 420px;" src="{{book.demo}}/css/background/b11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 420px;" src="https://demo.xiaohuochai.site/css/background/b11.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -232,7 +232,7 @@
 
 　　CSS3多背景有层次之分，按照浏览器中显示时图像叠放的顺序从上到下指定，最先声明的背景图像将会居于最上层，最后指定的背景图像将置于最底层
 
-<iframe style="width: 100%; height: 420px;" src="{{book.demo}}/css/background/b12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 420px;" src="https://demo.xiaohuochai.site/css/background/b12.html" frameborder="0" width="320" height="240"></iframe>
 
 　　除了背景颜色之外，其他的属性都可以设置多个属性值，前提是元素有多个背景图像存在
 
@@ -242,7 +242,7 @@
 
 　　[注意]若background在background-origin和background-clip中仅存在一个值，则该值为background-clip；若存在两个值，则前面为background-origin，后面为background-clip
 
-<iframe style="width: 100%; height: 760px;" src="{{book.demo}}/css/background/b13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 760px;" src="https://demo.xiaohuochai.site/css/background/b13.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]所有背景属性都不能继承
 
