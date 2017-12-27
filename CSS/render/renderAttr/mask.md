@@ -90,4 +90,4 @@ oBox.onmousemove = function(e){
 &lt;/html&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 320px;" src="{{book.demo}}/css/mask/m1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/css/mask/m1.html" frameborder="0" width="320" height="240"></iframe>
