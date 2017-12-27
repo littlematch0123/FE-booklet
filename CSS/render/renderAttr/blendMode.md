@@ -29,7 +29,7 @@
 
 
 
-<iframe style="width: 100%; height: 180px" src="{{book.demo}}/css/mode/m1.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 180px" src="https://demo.xiaohuochai.site/css/mode/m1.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 ### 背景混合
@@ -49,7 +49,7 @@
 
 兼容性: IE浏览器、android4.4-不支持，safari和IOS需要添加-webkit-前缀
 
-<iframe style="width: 100%; height: 180px" src="{{book.demo}}/css/mode/m2.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 180px" src="https://demo.xiaohuochai.site/css/mode/m2.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 
@@ -85,7 +85,7 @@
         <div class="in"></div>
     </div>
 
-<iframe style="width: 100%; height: 150px" src="{{book.demo}}/css/mode/m3.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 150px" src="https://demo.xiaohuochai.site/css/mode/m3.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 &emsp;&emsp;如果不使用`isolation: isolate`创建堆叠上下文，由于`.test1`和`.test2`背景颜色透明，则`.in`会和`<body>`背景颜色混合，成为粉色。使用`isolation: isolate`后，`.test2`从`<body>`中隔离出来，不与`<body>`的背景进行混合，从而保留其原先的红色
 
