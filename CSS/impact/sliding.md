@@ -124,5 +124,5 @@
 
 ## 实现效果
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/slide/s1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/slide/s1.html" frameborder="0" width="320" height="240"></iframe>
 
