@@ -81,7 +81,7 @@ border: 1px solid;</pre>
 
 　　&nbsp;&lt;演示框&gt;点击下列相应按钮可进行演示
 
-<iframe style="width: 100%; height: 170px;" src="{{book.demo}}/html/type/t1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 170px;" src="https://demo.xiaohuochai.site/html/type/t1.html" frameborder="0" width="320" height="240"></iframe>
 
 【tips】模拟密码显示隐藏的功能
 
@@ -127,7 +127,7 @@ set.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 30px;" src="{{book.demo}}/html/type/t2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 30px;" src="https://demo.xiaohuochai.site/html/type/t2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### file
 
@@ -297,7 +297,7 @@ IE7-
 <pre>&lt;input type="button" value="Click me" onclick="alert(1)" /&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/html/type/t3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/html/type/t3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　type="button"的input输入类型和button元素有很多重叠特性
 
@@ -312,11 +312,11 @@ IE7-
 <div class="cnblogs_code">
 <pre>&lt;form action="#"&gt;
     &lt;input name="test"&gt;
-    &lt;input type="image" name="imagesubmit" src="{{book.demo}}/submit.jpg" width="99" height="99" alt="测试图片"&gt;
+    &lt;input type="image" name="imagesubmit" src="https://demo.xiaohuochai.site/submit.jpg" width="99" height="99" alt="测试图片"&gt;
 &lt;/form&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/html/type/t4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/html/type/t4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### submit
 
@@ -334,7 +334,7 @@ IE7-
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/type/t5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/type/t5.html" frameborder="0" width="320" height="240"></iframe>
 
 ## **新增类型**
 
@@ -388,7 +388,7 @@ firefox
 <pre>&lt;input type="color"&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/type/t6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/type/t6.html" frameborder="0" width="320" height="240"></iframe>
 
 ### tel
 
@@ -401,7 +401,7 @@ firefox
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/type/t7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/type/t7.html" frameborder="0" width="320" height="240"></iframe>
 
 ### email
 
@@ -418,7 +418,7 @@ firefox
 &lt;/form&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/type/t8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/type/t8.html" frameborder="0" width="320" height="240"></iframe>
 
 ### url
 
@@ -430,7 +430,7 @@ firefox
 <pre>&lt;input type="url"&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/type/t9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/type/t9.html" frameborder="0" width="320" height="240"></iframe>
 
 ### search
 
@@ -440,7 +440,7 @@ firefox
 <pre>&lt;input type="search"&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/type/t10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/type/t10.html" frameborder="0" width="320" height="240"></iframe>
 
 ### number
 
@@ -475,7 +475,7 @@ firefox
 <pre>&lt;input type="number" min="0" max="10" step="0.5" value="6" /&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/type/t11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/type/t11.html" frameborder="0" width="320" height="240"></iframe>
 
 ### range
 
@@ -512,7 +512,7 @@ IE10+
 <pre>&lt;input type="range" min="0" max="10" step="0.5" value="6" /&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/type/t12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/type/t12.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]如果不设置min和max属性，则默认min=0，max=100
 
@@ -560,7 +560,7 @@ IE10+
 &lt;input type="datetime-local"&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 270px;" src="{{book.demo}}/html/type/t13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 270px;" src="https://demo.xiaohuochai.site/html/type/t13.html" frameborder="0" width="320" height="240"></iframe>
 
 　　要预设控件的日期和时间，可以用字符串设置value属性
 
@@ -595,5 +595,5 @@ Wnn=W周数，从1月的第一周开始是1，直到52</pre>
 <pre>&lt;input type="week" value="2015-W36" step="2" min="2015-W25" max="2015-W40"&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/type/t14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/type/t14.html" frameborder="0" width="320" height="240"></iframe>
 
