@@ -33,7 +33,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】float + margin + (fix)
 
@@ -63,7 +63,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路二: inline-block**
 
@@ -93,7 +93,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】inline-block + margin + (fix)
 
@@ -124,7 +124,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b4.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路三: table**
 
@@ -154,7 +154,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b5.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路四: absolute**
 
@@ -183,7 +183,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b6.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路五: flex**
 
@@ -210,7 +210,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b7.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路六: grid**
 
@@ -237,7 +237,7 @@ p{margin: 0;}
 &lt;/style&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -274,7 +274,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b9.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】float + margin + calc
 
@@ -301,7 +301,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b10.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】float + margin + (fix)
 
@@ -331,7 +331,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b11.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;【4】float + overflow
 
@@ -358,7 +358,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b12.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路二: inline-block**
 
@@ -388,7 +388,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b13.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】inline-block + margin + (fix)
 
@@ -419,7 +419,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b14.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路三: table**
 
@@ -451,7 +451,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b15.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路四: absolute**
 
@@ -479,7 +479,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b16.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路五: flex**
 
@@ -506,7 +506,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b17.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路六: grid**
 
@@ -531,7 +531,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b18.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -564,7 +564,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b19.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b19.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路二: table**
 
@@ -598,7 +598,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b20.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b20.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路三: flex**
 
@@ -627,7 +627,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b21.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b21.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路四: grid**
 
@@ -652,7 +652,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b22.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b22.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -685,7 +685,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b23.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b23.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路二: table**
 
@@ -719,7 +719,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b24.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b24.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路三: flex**
 
@@ -748,7 +748,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b25.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b25.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路四: grid**
 
@@ -773,7 +773,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b26.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b26.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -806,7 +806,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b27.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b27.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路二: table**
 
@@ -840,7 +840,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b28.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b28.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路三: flex**
 
@@ -869,7 +869,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b29.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b29.html" frameborder="0" width="320" height="240"></iframe>
 
 **思路四: grid**
 
@@ -894,7 +894,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju3/b30.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju3/b30.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
