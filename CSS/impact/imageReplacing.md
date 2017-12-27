@@ -25,7 +25,7 @@
   &lt;/h1&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/CSS/imageReplacement/i1.html" width="80" height="80"></iframe>
+<iframe src="https://demo.xiaohuochai.site/CSS/imageReplacement/i1.html" width="80" height="80"></iframe>
 
 &nbsp;
 
@@ -46,7 +46,7 @@
   &lt;h1&gt;小火柴的蓝色理想&lt;/h1&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/CSS/imageReplacement/i2.html" width="80" height="80"></iframe>
+<iframe src="https://demo.xiaohuochai.site/CSS/imageReplacement/i2.html" width="80" height="80"></iframe>
 
 &nbsp;
 
@@ -67,7 +67,7 @@
   &lt;h1&gt;小火柴的蓝色理想&lt;/h1&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/CSS/imageReplacement/i3.html" width="80" height="80"></iframe>
+<iframe src="https://demo.xiaohuochai.site/CSS/imageReplacement/i3.html" width="80" height="80"></iframe>
 
 &nbsp;
 
@@ -89,7 +89,7 @@
   &lt;h1&gt;小火柴的蓝色理想&lt;/h1&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/CSS/imageReplacement/i4.html" width="80" height="80"></iframe>
+<iframe src="https://demo.xiaohuochai.site/CSS/imageReplacement/i4.html" width="80" height="80"></iframe>
 
 &nbsp;
 
@@ -110,7 +110,7 @@
   &lt;h1&gt;&lt;span&gt;小火柴的蓝色理想&lt;/span&gt;&lt;/h1&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/CSS/imageReplacement/i5.html" width="80" height="80"></iframe>
+<iframe src="https://demo.xiaohuochai.site/CSS/imageReplacement/i5.html" width="80" height="80"></iframe>
 
 &nbsp;
 
@@ -131,7 +131,7 @@
   &lt;h1&gt;小火柴的蓝色理想&lt;/h1&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/CSS/imageReplacement/i6.html" width="80" height="80"></iframe>
+<iframe src="https://demo.xiaohuochai.site/CSS/imageReplacement/i6.html" width="80" height="80"></iframe>
 
 ### 伪元素
 
@@ -153,7 +153,7 @@
   &lt;h1&gt;小火柴的蓝色理想&lt;/h1&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/CSS/imageReplacement/i7.html" width="80" height="80"></iframe>
+<iframe src="https://demo.xiaohuochai.site/CSS/imageReplacement/i7.html" width="80" height="80"></iframe>
 
 &nbsp;
 
@@ -176,7 +176,7 @@
   &lt;h1&gt;小火柴的蓝色理想&lt;/h1&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/CSS/imageReplacement/i8.html" width="80" height="80"></iframe>
+<iframe src="https://demo.xiaohuochai.site/CSS/imageReplacement/i8.html" width="80" height="80"></iframe>
 
 &nbsp;
 
@@ -196,5 +196,5 @@
   &lt;h1&gt;小火柴的蓝色理想&lt;/h1&gt;</pre>
 </div>
 
-<iframe src="{{book.demo}}/CSS/imageReplacement/i9.html" width="80" height="80"></iframe>
+<iframe src="https://demo.xiaohuochai.site/CSS/imageReplacement/i9.html" width="80" height="80"></iframe>
 
