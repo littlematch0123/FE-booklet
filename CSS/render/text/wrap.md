@@ -37,7 +37,7 @@ pre-wrap: 不合并空白符，允许自动换行(在pre基础上，保留自动
     within the Shandong      province after they have entered China via the Qingdao International Airport.&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 380px;" src="{{book.demo}}/css/wrap/w1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 380px;" src="https://demo.xiaohuochai.site/css/wrap/w1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -72,7 +72,7 @@ word-wrap:break-word(截断单词换行，长单词从下一行开始)</pre>
 
 　　[注意]word-wrap在标准中被改为overflow-wrap，但由于兼容问题，一般还是使用word-wrap
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/wrap/w2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/wrap/w2.html" frameborder="0" width="320" height="240"></iframe>
 
 word-break
 
@@ -101,7 +101,7 @@ keep-all: 对于英文长文本不能换行，但对于中文的处理，各浏�
 
 　　[注意]当word-break值为break-all时，word-wrap属性失效；否则两个属性都起作用
 
-<iframe style="width: 100%; height: 440px;" src="{{book.demo}}/css/wrap/w3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 440px;" src="https://demo.xiaohuochai.site/css/wrap/w3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -109,7 +109,7 @@ keep-all: 对于英文长文本不能换行，但对于中文的处理，各浏�
 
  　　对于表单元格的长文本来说，使用word-wrap或word-break来强制换行需要设置table-layout:fixed
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/wrap/w4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/wrap/w4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -137,7 +137,7 @@ dd+dd::before{content:',';font-weight:normal;}
 &lt;/dl&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/css/wrap/w5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/css/wrap/w5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
