@@ -20,7 +20,7 @@
 
 　　[注意]默认值auto表示元素的内容不应剪裁
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/clip/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/clip/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### rect
 
@@ -34,7 +34,7 @@
 
 　　[注意]该元素水平方向或垂直方向的clip区域的边界是外框外侧，不包括outline
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/clip/c2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/clip/c2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 应用
 
@@ -67,7 +67,7 @@ img:hover{
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 160px;" src="{{book.demo}}/css/clip/c3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 160px;" src="https://demo.xiaohuochai.site/css/clip/c3.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】歌词演示效果
 
@@ -102,4 +102,4 @@ img:hover{
 &lt;div class="con"&gt;我曾经跨过山和大海，也穿过人山人海&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/clip/c4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/clip/c4.html" frameborder="0" width="320" height="240"></iframe>
