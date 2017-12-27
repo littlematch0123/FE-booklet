@@ -8,7 +8,7 @@
 <pre>&lt;input type="range" min="0" max="10" step="0.5" value="6" /&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/text/t1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/text/t1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　那么哪些文本事件可以实时监测游标变化呢？本文将以此为引子详细介绍文本事件
 
@@ -29,7 +29,7 @@ test.onchange = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/text/t2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/text/t2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　只有在IE浏览器下，change事件对游标实时变化起作用；其他浏览器下，必须松开鼠标后，change事件才起作用
 
@@ -43,7 +43,7 @@ test.onchange = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/text/t3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/text/t3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### textInput
 
@@ -88,7 +88,7 @@ test.addEventListener('textInput',function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/text/t4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/text/t4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　由于&lt;input type="range"&gt;的游标并不是可编辑区域，所以，textInput事件对游标变化无作用
 
@@ -113,7 +113,7 @@ test.oninput = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/text/t5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/text/t5.html" frameborder="0" width="320" height="240"></iframe>
 
 　　该事件可以在chrome/safari/firefox/IE9浏览器中，实时监测游标的变化
 
@@ -126,7 +126,7 @@ test.oninput = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/text/t6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/text/t6.html" frameborder="0" width="320" height="240"></iframe>
 
 ### propertychange
 
@@ -143,7 +143,7 @@ test.oninput = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/text/t7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/text/t7.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 兼容
 
@@ -185,7 +185,7 @@ if(isIE()){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/text/t8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/text/t8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
