@@ -17,7 +17,7 @@
 &lt;div class="box-with-text"&gt;match&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/vein/v1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/vein/v1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　下面使用一张枫叶的背景，来制作纹理文本
 
@@ -29,7 +29,7 @@
 </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/vein/v2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/vein/v2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　当然了，放一张动态gif图，也是没问题的
 
@@ -40,7 +40,7 @@
 &lt;div class="box-with-text"&gt;match&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/vein/v3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/vein/v3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　如果想要让填充动起来，可以通过[animation](http://www.cnblogs.com/xiaohuochai/p/5391663.html)移动背景的位置和尺寸来添加动画
 
@@ -52,7 +52,7 @@
 &lt;div class="box-with-text"&gt;match&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/vein/v4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/vein/v4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　使用background-clip背景裁切的技术，文本可以被选中。但是，由于只有webkit内核的浏览器支持，因此并不是跨浏览器的好方案
 
@@ -82,7 +82,7 @@
 &lt;/svg&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/vein/v5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/vein/v5.html" frameborder="0" width="320" height="240"></iframe>
 
 　　使用[SVG图案pattern](http://www.cnblogs.com/xiaohuochai/p/7497096.html)，可以实现更精细的纹理动画效果
 
@@ -112,7 +112,7 @@
 &lt;/svg&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/vein/v6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/vein/v6.html" frameborder="0" width="320" height="240"></iframe>
 
 　　如果想实现虚线动画的效果，则需要使用SVG文本的虚线描边
 
@@ -141,7 +141,7 @@
 &lt;/svg&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/vein/v7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/vein/v7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -157,7 +157,7 @@
 &lt;div class="box-with-text"&gt;&lt;span class="text"&gt;match&lt;/span&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/vein/v8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/vein/v8.html" frameborder="0" width="320" height="240"></iframe>
 
 　　关于背景为图片的效果就不再赘述，和backgroung-clip方法类似
 
@@ -174,7 +174,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/vein/v9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/vein/v9.html" frameborder="0" width="320" height="240"></iframe>
 
 　　当然，还可以是有声动画
 
@@ -191,7 +191,7 @@
 &lt;button onclick = 'video1.pause()'&gt;暂停&lt;/button&gt;　　</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/css/vein/v10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/css/vein/v10.html" frameborder="0" width="320" height="240"></iframe>
 
 　　虽然混合模式有更大的自由度，但是由于其是CSS3的属性，IE浏览器、android4.4-不支持，safari和IOS需要添加-webkit-前缀。浏览器兼容性并不是很好
 
