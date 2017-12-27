@@ -128,7 +128,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 60px;" src="{{book.demo}}/js/requestAnimationFrame/r1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/requestAnimationFrame/r1.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】setTimeout
 
@@ -153,7 +153,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 60px;" src="{{book.demo}}/js/requestAnimationFrame/r2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/requestAnimationFrame/r2.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】requestAnimationFrame
 
@@ -178,5 +178,5 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/requestAnimationFrame/r3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/requestAnimationFrame/r3.html" frameborder="0" width="320" height="240"></iframe>
 
