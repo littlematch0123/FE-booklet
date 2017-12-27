@@ -19,7 +19,7 @@
 //左图是无变形和透视样式的原始效果，中图是设置变形和透视样式的效果，右图是设置变形但未设置透视样式的效果</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transform3d/t1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transform3d/t1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　由以上三个图可说明，如果不设置透视，那么浏览器会将元素的3D变形操作投射垂直到2D视平面上，最终呈现出来的只是元素的宽高变化
 
@@ -55,7 +55,7 @@ perspective
 
 【1】一般地，物体离得越远，显得越小。反映在perspective属性上，就是该属性值越大，元素的3d效果越不明显。(就像离一个人很近，甚至可以看到他的毛孔；如果离一个人很远，可能只看到一个轮廓)
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transform3d/t2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transform3d/t2.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】设置透视perspective属性的元素就是被透视元素。一般地，该属性只能设置在变形元素的父级或祖先级。因为浏览器会为其子级的变形产生透视效果，但并不会为其自身产生透视效果
 
@@ -71,7 +71,7 @@ perspective
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 120px;" src="{{book.demo}}/css/transform3d/t3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transform3d/t3.html" frameborder="0" width="320" height="240"></iframe>
 
 **透视原点**
 
@@ -103,19 +103,19 @@ y轴
     top: 0% center: 50% bottom: 100%</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transform3d/t4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transform3d/t4.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】数值
 
 　　x轴数值表示在x轴上离0点(元素边框外侧左上角)的偏移量；y轴数值表示在y轴上离0点的偏移量
 
-<iframe style="width: 100%; height: 340px;" src="{{book.demo}}/css/transform3d/t5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 340px;" src="https://demo.xiaohuochai.site/css/transform3d/t5.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】百分比
 
 　　其中x轴的百分比相对于被透视元素的宽度和(width+横向padding+横向border)，而y轴的百分比相对于被透视元素的高度和(height+纵向padding+纵向border)
 
-<iframe style="width: 100%; height: 340px;" src="{{book.demo}}/css/transform3d/t6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 340px;" src="https://demo.xiaohuochai.site/css/transform3d/t6.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】单个值
 
@@ -123,7 +123,7 @@ y轴
 
 [注意]perspective-origin必须定义在设置perspective的元素上，也就是说必须设置在元素的父元素或祖先元素上
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transform3d/t7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transform3d/t7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -153,7 +153,7 @@ translate3d(x,y,z)
 
 traslateZ(z)相当于translate3d(0,0,z)
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transform3d/t8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transform3d/t8.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]常用-webkit-transform: translateZ(0);来开启硬件加速
 
@@ -190,7 +190,7 @@ scaleZ(z)相当于scale3d(1,1,z)
 
 　　所以transform: scaleZ(5) translateZ(-100px)和transform: translateZ(-500px)是等价的
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transform3d/t9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transform3d/t9.html" frameborder="0" width="320" height="240"></iframe>
 
 **3d旋转**
 
@@ -208,7 +208,7 @@ rotateY(Ndeg)相当于rotate3d(0,1,0,Ndeg)
 
 rotateZ(Ndeg)相当于rotate3d(0,0,1,Ndeg)
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transform3d/t10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transform3d/t10.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -224,7 +224,7 @@ perspective(&lt;length&gt;)
 
 　　[注意]由于transform属性是从前向后的顺序解析属性值的，所以一定要把perspective()函数写在其他变形函数前面，否则将没有透视效果&nbsp;
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transform3d/t11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transform3d/t11.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -254,7 +254,7 @@ z轴: &lt;length&gt;</pre>
 
 //变形元素默认样式是 transform:rotate3d(1,1,1,45deg);
 
-<iframe style="width: 100%; height: 440px;" src="{{book.demo}}/css/transform3d/t12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 440px;" src="https://demo.xiaohuochai.site/css/transform3d/t12.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -273,7 +273,7 @@ hidden:不可见</pre>
 
 　　[注意]若一个元素覆盖于另一个元素上，不仅仅是正面覆盖，背面也是覆盖的
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transform3d/t13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transform3d/t13.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -287,5 +287,5 @@ hidden:不可见</pre>
 <pre>transform-style: flat | preserve-3d</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transform3d/t14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transform3d/t14.html" frameborder="0" width="320" height="240"></iframe>
 
