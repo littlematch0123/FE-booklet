@@ -25,7 +25,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/alert/a1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/alert/a1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　`alert()`方法的参数可以用`\n`指定换行
 
@@ -33,7 +33,7 @@ myDiv.onclick = function(){
 <pre>alert('本条提示\n分成两行');</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/alert/a2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/alert/a2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### confirm()
 
@@ -53,7 +53,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/alert/a3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/alert/a3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### prompt()
 
@@ -82,7 +82,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/alert/a4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/alert/a4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### print()
 
@@ -97,4 +97,4 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/alert/a5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/alert/a5.html" frameborder="0" width="320" height="240"></iframe>
