@@ -35,7 +35,7 @@ i{
 <pre>&lt;div&gt;长度可变文字&lt;i&gt;&lt;/i&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/absoluteshow/a1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/absoluteshow/a1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 视频提示
 
@@ -88,7 +88,7 @@ i{
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 240px;" src="{{book.demo}}/css/absoluteshow/a2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 240px;" src="https://demo.xiaohuochai.site/css/absoluteshow/a2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 下拉菜单
 
@@ -165,7 +165,7 @@ input.onblur = function(){
 }</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 140px;" src="{{book.demo}}/css/absoluteshow/a3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/css/absoluteshow/a3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 边缘对齐
 
@@ -217,7 +217,7 @@ ul{
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 120px;" src="{{book.demo}}/css/absoluteshow/a4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/absoluteshow/a4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 星号
 
@@ -259,7 +259,7 @@ i{
 &lt;/ul&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/absoluteshow/a5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/absoluteshow/a5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -287,7 +287,7 @@ i{
 <pre>&lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/absoluteshow/a6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/absoluteshow/a6.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 左右半区翻图
 
@@ -375,7 +375,7 @@ function move(index){
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/absoluteshow/a7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/absoluteshow/a7.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 九宫格
 
@@ -438,7 +438,7 @@ function move(index){
 &lt;/ul&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/absoluteshow/a8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/absoluteshow/a8.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 等高布局
 
@@ -488,7 +488,7 @@ function move(index){
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/absoluteshow/a9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/absoluteshow/a9.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 整体布局
 
@@ -551,5 +551,5 @@ aside{
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/absoluteshow/a10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/absoluteshow/a10.html" frameborder="0" width="320" height="240"></iframe>
 
