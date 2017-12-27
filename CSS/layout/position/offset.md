@@ -24,7 +24,7 @@
 
 　　[注意]相对定位实际上被看作普通流定位模型的一部分，因为元素的位置相对于它在普通流中的位置
 
-<iframe style="width: 100%; height: 241px;" src="{{book.demo}}/css/position/p1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 241px;" src="https://demo.xiaohuochai.site/css/position/p1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 包含块
 
@@ -70,7 +70,7 @@
 
 　　[注意]定位元素的边界是指定位元素margin外侧的边界；包含块的包含区域是指包含块的border内侧的padding+content区域
 
-<iframe style="width: 100%; height: 388px;" src="{{book.demo}}/css/position/p2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 388px;" src="https://demo.xiaohuochai.site/css/position/p2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 绝对定位
 
@@ -101,7 +101,7 @@
 <pre>//DEMO中，包含块的width和height都是180px，padding为10px，所以包含块的clientWidth和clientHeight都是200px</pre>
 </div>
 
-<iframe style="width: 100%; height: 674px;" src="{{book.demo}}/css/position/p3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 674px;" src="https://demo.xiaohuochai.site/css/position/p3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 格式化
 
@@ -221,4 +221,4 @@
 <pre>//DEMO中，定位元素的padding、border都为0。而父级元素也就是包含块的width和height都设为200px，边框为2px</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 711px;" src="{{book.demo}}/css/position/p4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 711px;" src="https://demo.xiaohuochai.site/css/position/p4.html" frameborder="0" width="320" height="240"></iframe>
