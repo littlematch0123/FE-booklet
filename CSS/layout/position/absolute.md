@@ -12,7 +12,7 @@
 
 　　//滚动滚动条时会发现，绝对定位元素会随着其滚动，但固定定位不会
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/css/absolute/a1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/css/absolute/a1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 特性
 
@@ -24,7 +24,7 @@
 
 　　[注意]浮动的包含块会延伸，进而包含所有后代浮动元素，但绝对定位的包含块并不会包含后代的定位元素，只是作为后代定位元素的定位父级
 
-<iframe style="width: 100%; height: 318px;" src="{{book.demo}}/css/absolute/a2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 318px;" src="https://demo.xiaohuochai.site/css/absolute/a2.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】破坏性
 
@@ -32,13 +32,13 @@
 
 　　//父级元素有10px的padding，且背景颜色为天蓝色
 
-<iframe style="width: 100%; height: 397px;" src="{{book.demo}}/css/absolute/a3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 397px;" src="https://demo.xiaohuochai.site/css/absolute/a3.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】去浮动
 
  　　元素绝对定位后，元素原来的浮动效果将失效
 
-<iframe style="width: 100%; height: 227px;" src="{{book.demo}}/css/absolute/a4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 227px;" src="https://demo.xiaohuochai.site/css/absolute/a4.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】偏移特性
 
@@ -46,7 +46,7 @@
 
 　　使用偏移属性拉伸的绝对定位元素，其内部元素支持百分比width/height值。通常情况下，元素高度百分比要想起作用，需要父级窗口的高度值不是auto；但是如果容器由绝对定位拉伸形成，百分比高度值也是支持的
 
-<iframe style="width: 100%; height: 489px;" src="{{book.demo}}/css/absolute/a5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 489px;" src="https://demo.xiaohuochai.site/css/absolute/a5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### display
 
@@ -68,7 +68,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 242px;" src="{{book.demo}}/css/absolute/a6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 242px;" src="https://demo.xiaohuochai.site/css/absolute/a6.html" frameborder="0" width="320" height="240"></iframe>
 
 ### clip
 
@@ -89,13 +89,13 @@
 
 　　但对于居中对齐的行内元素来说，将元素设置为absolute或fixed会发生静态位置跳动问题。而relative或static则不会有此问题。这是因为元素默认的居中对齐是元素的内容中线对应父级块级元素中线，而当元素绝对定位或固定定位之后，定位元素左边界将与其父级块级元素的中线对齐。
 
-<iframe style="width: 100%; height: 218px;" src="{{book.demo}}/css/absolute/a7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 218px;" src="https://demo.xiaohuochai.site/css/absolute/a7.html" frameborder="0" width="320" height="240"></iframe>
 
 ### overflow
 
  　　当overflow在绝对定位元素和其包含块之间时，绝对定位元素不会被父级overflow属性剪裁。[关于overflow失效解决方法移步至此](http://www.cnblogs.com/xiaohuochai/p/5289653.html#anchor3)
 
-<iframe style="width: 100%; height: 295px;" src="{{book.demo}}/css/absolute/a8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 295px;" src="https://demo.xiaohuochai.site/css/absolute/a8.html" frameborder="0" width="320" height="240"></iframe>
 
 　　可以应用绝对定位元素的overflow属性失效实现按钮外置的效果
 
@@ -128,5 +128,5 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/absolute/a9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/absolute/a9.html" frameborder="0" width="320" height="240"></iframe>
 
