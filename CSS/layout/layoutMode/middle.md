@@ -22,7 +22,7 @@
 <pre>&lt;div class="test"&gt;测试文字&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 160px;" src="{{book.demo}}/css/lineheight/l6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 160px;" src="https://demo.xiaohuochai.site/css/lineheight/l6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -52,7 +52,7 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/ycenter/y2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/ycenter/y2.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】若子元素是图片，通过设置父元素的行高来代替高度，且设置父元素的font-size为0
 
@@ -75,7 +75,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/lineheight/l8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/lineheight/l8.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】通过新增元素来实现垂直居中的效果
 
@@ -106,7 +106,7 @@
 &lt;/div&gt; </pre>
 </div>
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/lineheight/l9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/lineheight/l9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -140,7 +140,7 @@
 &lt;/div&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/ycenter/y5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/ycenter/y5.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】若子元素定高，结合绝对定位的盒模型属性，实现居中效果
 
@@ -164,7 +164,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/ycenter/y6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/ycenter/y6.html" frameborder="0" width="320" height="240"></iframe>
 
 &lt;关于增加div层级的说明&gt;
 
@@ -194,7 +194,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/ycenter/y7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/ycenter/y7.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】在[伸缩项目](http://www.cnblogs.com/xiaohuochai/p/5323146.html#anchor5)上设置margin: auto 0
 
@@ -214,7 +214,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/ycenter/y8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/ycenter/y8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -241,7 +241,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/ycenter/y9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/ycenter/y9.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】在网格项目中设置align-self或者margin: auto&nbsp;0
 
@@ -262,4 +262,4 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/ycenter/y10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/ycenter/y10.html" frameborder="0" width="320" height="240"></iframe>
