@@ -42,7 +42,7 @@ wait: 指示程序正忙
 help: 帮助指针</pre>
 </div>
 
-<iframe style="width: 100%; height: 320px;" src="{{book.demo}}/css/cursor/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/css/cursor/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -74,7 +74,7 @@ cursor:col-resize
 cursor:row-resize</pre>
 </div>
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/cursor/c2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/cursor/c2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 私有样式
 
@@ -89,7 +89,7 @@ cursor:-webkit-zoom-in; cursor: -moz-zoom-in;
 cursor:-webkit-zoom-out; cursor: -moz-zoom-out;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/cursor/c3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/cursor/c3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 自定义样式
 
@@ -104,7 +104,7 @@ cursor: url('m.cur');
 cursor: url('m.cur'),auto;</pre>
 </div>
 
-<iframe style="width: 100%; height: 280px;" src="{{book.demo}}/css/cursor/c44.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 280px;" src="https://demo.xiaohuochai.site/css/cursor/c44.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 常见应用
 
@@ -122,4 +122,4 @@ cursor: url('m.cur'),auto;</pre>
 <pre>&lt;div&gt;&lt;span title="Cascading Style Sheets"&gt;CSS&lt;/span&gt; is much too interesting&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/cursor/c5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/cursor/c5.html" frameborder="0" width="320" height="240"></iframe>
