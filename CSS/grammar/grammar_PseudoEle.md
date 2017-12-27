@@ -191,7 +191,7 @@ div:first-letter{
 }  </pre>
 </div>
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/base/b29.html" frameborder="0" width="320" height="200"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/base/b29.html" frameborder="0" width="320" height="200"></iframe>
 
 **钉子效果**
 
@@ -226,7 +226,7 @@ div:first-letter{
 <pre>&lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/base/b30.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/base/b30.html" frameborder="0" width="320" height="240"></iframe>
 
 **图片叠加效果**
 
@@ -271,4 +271,4 @@ body{
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/base/b31.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/base/b31.html" frameborder="0" width="320" height="240"></iframe>
