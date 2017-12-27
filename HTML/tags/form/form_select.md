@@ -18,7 +18,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f8.html" frameborder="0" width="320" height="240"></iframe>
 
 ### select事件
 
@@ -35,7 +35,7 @@ text.onselect = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f9.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 取得选择文本
 
@@ -63,7 +63,7 @@ text.onselect = function(){
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/html/formobj/f10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/formobj/f10.html" frameborder="0" width="320" height="240"></iframe>
 
 ### setSelectionRange()
 
@@ -84,7 +84,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/html/formobj/f11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f11.html" frameborder="0" width="320" height="240"></iframe>
 
 　　IE8-浏览器支持使用范围选择部分文本。要选择文本框中的部分文本，必须首先使用createTextRange()方法创建一个范围，并将其放在恰当的位置上。然后，再使用moveStart()和moveEnd()这两个范围方法将范围移动到位
 
