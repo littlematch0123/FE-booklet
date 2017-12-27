@@ -28,7 +28,7 @@ document.onkeydown = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/js/keyboard/k1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/js/keyboard/k1.html" frameborder="0" width="320" height="240"></iframe>
 
 **keypress**
 
@@ -59,7 +59,7 @@ test.onkeypress = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/js/keyboard/k2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/js/keyboard/k2.html" frameborder="0" width="320" height="240"></iframe>
 
 **keyup**
 
@@ -81,7 +81,7 @@ document.onkeyup = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/js/keyboard/k3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/js/keyboard/k3.html" frameborder="0" width="320" height="240"></iframe>
 
 **时间间隔**
 
@@ -108,7 +108,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 90px;" src="{{book.demo}}/js/keyboard/k4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 90px;" src="https://demo.xiaohuochai.site/js/keyboard/k4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 顺序
 
@@ -139,7 +139,7 @@ test.onkeypress =test.onkeydown =test.onkeyup = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/js/keyboard/k5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/js/keyboard/k5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 按键信息
 
@@ -167,7 +167,7 @@ document.onkeyup = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 70px;" src="{{book.demo}}/js/keyboard/k6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/js/keyboard/k6.html" frameborder="0" width="320" height="240"></iframe>
 
 **key**
 
@@ -187,7 +187,7 @@ document.onkeyup = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/js/keyboard/k7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/js/keyboard/k7.html" frameborder="0" width="320" height="240"></iframe>
 
 **char**
 
@@ -213,7 +213,7 @@ document.onkeyup = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/js/keyboard/k8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/js/keyboard/k8.html" frameborder="0" width="320" height="240"></iframe>
 
 **兼容**
 
@@ -273,7 +273,7 @@ document.onkeydown = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/keyboard/k9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/keyboard/k9.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 应用
 
@@ -307,7 +307,7 @@ test.onkeydown = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/keyboard/k10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/keyboard/k10.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】过滤输入
 
@@ -331,5 +331,5 @@ test.onkeydown = function(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 50px;" src="{{book.demo}}/js/keyboard/k11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/js/keyboard/k11.html" frameborder="0" width="320" height="240"></iframe>
 
