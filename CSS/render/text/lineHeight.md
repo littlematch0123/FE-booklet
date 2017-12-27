@@ -24,7 +24,7 @@
 
 ![lineHeight](https://pic.xiaohuochai.site/blog/CSS_layout_lineHeight.jpg)
 
-<iframe style="width: 100%; height: 320px;" src="{{book.demo}}/css/lineheight/l1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/css/lineheight/l1.html" frameborder="0" width="320" height="240"></iframe>
 
 【术语】
 
@@ -65,7 +65,7 @@
 
 　　margin-left、padding-left、border-left应用到元素的开始处；而margin-right、padding-right、border-right应用到元素的结尾处
 
-<iframe style="width: 100%; height: 370px;" src="{{book.demo}}/css/lineheight/l2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 370px;" src="https://demo.xiaohuochai.site/css/lineheight/l2.html" frameborder="0" width="320" height="240"></iframe>
 
 【替换元素】
 
@@ -107,11 +107,11 @@ vertical-align:x%(相对于元素的line-height值)
 vertical-align:inherit(从父元素继承vertical-align属性的值)</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/lineheight/l3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/lineheight/l3.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]&lt;sub&gt;和&lt;sup&gt;默认携带样式vertical-align:sub/super
 
-<iframe style="width: 100%; height: 466px;" src="{{book.demo}}/css/lineheight/l4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 466px;" src="https://demo.xiaohuochai.site/css/lineheight/l4.html" frameborder="0" width="320" height="240"></iframe>
 
 【inline-block底部空隙】
 
@@ -129,7 +129,7 @@ vertical-align:inherit(从父元素继承vertical-align属性的值)</pre>
 
 　　3、vertical-align: top/middle/bottom
 
-<iframe style="width: 100%; height: 372px;" src="{{book.demo}}/css/lineheight/l5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 372px;" src="https://demo.xiaohuochai.site/css/lineheight/l5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -151,7 +151,7 @@ vertical-align:inherit(从父元素继承vertical-align属性的值)</pre>
 
 　　[注意]好多地方都写着单行文本垂直居中是将高度和行高设置成一样的值，但高度其实是没有必要设置的。仅仅设置行高就可以，文字在一行中本身就是垂直居中显示的
 
-<iframe style="width: 100%; height: 160px;" src="{{book.demo}}/css/lineheight/l6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 160px;" src="https://demo.xiaohuochai.site/css/lineheight/l6.html" frameborder="0" width="320" height="240"></iframe>
 
 **【2】图片近似垂直居中**
 
@@ -186,7 +186,7 @@ img{
 &lt;div&gt;&lt;img src="#" alt="#"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 352px;" src="{{book.demo}}/css/lineheight/l7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 352px;" src="https://demo.xiaohuochai.site/css/lineheight/l7.html" frameborder="0" width="320" height="240"></iframe>
 
 **【3】图片完全垂直居中**
 
@@ -208,7 +208,7 @@ img{
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/lineheight/l8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/lineheight/l8.html" frameborder="0" width="320" height="240"></iframe>
 
 **【4】多行文本水平垂直居中**
 
@@ -239,7 +239,7 @@ i{
     &lt;/div&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 230px;" src="{{book.demo}}/css/lineheight/l9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 230px;" src="https://demo.xiaohuochai.site/css/lineheight/l9.html" frameborder="0" width="320" height="240"></iframe>
 
 **【5】图标和文本对齐**
 
@@ -263,4 +263,4 @@ i{
 
 　　使用baseline会使图标偏上；使用top/bottom会受到其他行内元素影响造成定位偏差；使用middle需要恰好的字体大小且兼容性不高；使用text-bottom较合适，不受行高及其他内联元素影响
 
-<iframe style="width: 100%; height: 306px;" src="{{book.demo}}/css/lineheight/l10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 306px;" src="https://demo.xiaohuochai.site/css/lineheight/l10.html" frameborder="0" width="320" height="240"></iframe>
