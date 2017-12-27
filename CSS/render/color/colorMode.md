@@ -38,7 +38,7 @@
 
 　　[注意]IE8-不支持该属性值
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/css/colorMode/c1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/css/colorMode/c1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 16进制
 
@@ -53,7 +53,7 @@
 
 　　web安全颜色是指在256色计算机系统上总能避免抖动的颜色，表示为RGB值20%和51(相应的16进制值为33)的倍数。因此，采用16进制时，使用00\33\66\99\cc\ff认为是Web安全色，一共6*6*6=216种
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/css/colorMode/c2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/css/colorMode/c2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### RGB模式
 
@@ -68,7 +68,7 @@
 
 　　[注意]若数值小于最小值0,则默认调整为0;若数值大小最大值255,则默认调整为255
 
-<iframe style="width: 100%; height: 250px;" src="{{book.demo}}/css/colorMode/c3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/css/colorMode/c3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### RGBA模式
 
@@ -92,7 +92,7 @@
 
 　　[注意]IE滤镜只能兼容背景色，而不能兼容前景色
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/colorMode/c4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/colorMode/c4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### HSL模式
 
@@ -113,7 +113,7 @@
 ![hsl1](https://pic.xiaohuochai.site/blog/CSS_render_hsl1.jpg)
 ![hsl2](https://pic.xiaohuochai.site/blog/CSS_render_hsl2.jpg)
 
-<iframe style="width: 100%; height: 250px;" src="{{book.demo}}/css/colorMode/c5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/css/colorMode/c5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### HSLA模式
 
@@ -125,5 +125,5 @@
 <pre>    hsla(&lt;length&gt;,&lt;percentage&gt;,&lt;percentage&gt;,&lt;opacity&gt;)</pre>
 </div>
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/css/colorMode/c6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/colorMode/c6.html" frameborder="0" width="320" height="240"></iframe>
 
