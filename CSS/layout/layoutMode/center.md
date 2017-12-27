@@ -24,7 +24,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="{{book.demo}}/css/xcenter/x1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/xcenter/x1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　 这种方法的不足之处在于，子元素的text-align继承了父元素的center，文字也居中显示，所以需要在子元素中设置text-align:left
 
@@ -52,7 +52,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/xcenter/x2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/xcenter/x2.html" frameborder="0" width="320" height="240"></iframe>
 
 　　该方案的优点在于，只设置父级元素即可实现居中效果
 
@@ -78,7 +78,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/xcenter/x3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/xcenter/x3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -110,7 +110,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/xcenter/x4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/xcenter/x4.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】配合relative
 
@@ -141,7 +141,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/xcenter/x5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/xcenter/x5.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】配合负margin
 
@@ -172,7 +172,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/xcenter/x6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/xcenter/x6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -198,7 +198,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/xcenter/x7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/xcenter/x7.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】在[伸缩项目](http://www.cnblogs.com/xiaohuochai/p/5323146.html#anchor5)上设置margin: 0 auto
 
@@ -214,7 +214,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/xcenter/x8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/xcenter/x8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -241,7 +241,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/xcenter/x9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/xcenter/x9.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】在网格项目中设置justify-self或者margin: 0 auto
 
@@ -262,5 +262,5 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/css/xcenter/x10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/css/xcenter/x10.html" frameborder="0" width="320" height="240"></iframe>
 
