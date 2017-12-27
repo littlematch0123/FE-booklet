@@ -12,7 +12,7 @@
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/shape/s1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/shape/s1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -27,7 +27,7 @@
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/shape/s2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/shape/s2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -44,7 +44,7 @@
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/shape/s3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/shape/s3.html" frameborder="0" width="320" height="240"></iframe>
 
 【半椭圆或半圆】
 
@@ -57,7 +57,7 @@
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s4.html" frameborder="0" width="320" height="240"></iframe>
 
 【四分之一椭圆】
 
@@ -70,7 +70,7 @@
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -87,7 +87,7 @@
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/shape/s6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/shape/s6.html" frameborder="0" width="320" height="240"></iframe>
 
 【正三角形】
 
@@ -101,7 +101,7 @@
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/css/shape/s7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/css/shape/s7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -119,7 +119,7 @@
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/shape/s8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/shape/s8.html" frameborder="0" width="320" height="240"></iframe>
 
 【改进版本】
 
@@ -144,7 +144,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s9.html" frameborder="0" width="320" height="240"></iframe>
 
 　　2、伪元素
 
@@ -168,7 +168,7 @@ div::before{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s10.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -184,7 +184,7 @@ div::before{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/shape/s11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/shape/s11.html" frameborder="0" width="320" height="240"></iframe>
 
 【增强版本】
 
@@ -212,7 +212,7 @@ div:before{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s12.html" frameborder="0" width="320" height="240"></iframe>
 
 【梯形选项卡】
 
@@ -251,7 +251,7 @@ nav &gt; a:before{
 &lt;/nav&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 70px;" src="{{book.demo}}/css/shape/s13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 70px;" src="https://demo.xiaohuochai.site/css/shape/s13.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -302,7 +302,7 @@ nav &gt; a:before{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 520px;" src="{{book.demo}}/css/shape/s14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 520px;" src="https://demo.xiaohuochai.site/css/shape/s14.html" frameborder="0" width="320" height="240"></iframe>
 
 【六角星】
 
@@ -328,7 +328,7 @@ div:after{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 180px;" src="{{book.demo}}/css/shape/s15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 180px;" src="https://demo.xiaohuochai.site/css/shape/s15.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -356,7 +356,7 @@ div:after{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/css/shape/s16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/css/shape/s16.html" frameborder="0" width="320" height="240"></iframe>
 
 【八边形】
 
@@ -375,7 +375,7 @@ div:after{
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s17.html" frameborder="0" width="320" height="240"></iframe>
 
 【菱形】
 
@@ -397,7 +397,7 @@ div:after{
 &lt;/style&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 180px;" src="{{book.demo}}/css/shape/s18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 180px;" src="https://demo.xiaohuochai.site/css/shape/s18.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -433,7 +433,7 @@ div:after{
 <pre>&lt;div&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/shape/s19.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/shape/s19.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -445,7 +445,7 @@ div:after{
 <pre>background: linear-gradient(-45deg,transparent 5%,#58a 0);</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s20.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s20.html" frameborder="0" width="320" height="240"></iframe>
 
 【双角】
 
@@ -455,7 +455,7 @@ div:after{
   background-repeat:no-repeat;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s21.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s21.html" frameborder="0" width="320" height="240"></iframe>
 
 【四角】
 
@@ -465,7 +465,7 @@ div:after{
   background-repeat:no-repeat;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s22.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s22.html" frameborder="0" width="320" height="240"></iframe>
 
 【弧形切角】
 
@@ -475,7 +475,7 @@ div:after{
   background-repeat:no-repeat;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s23.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s23.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -485,7 +485,7 @@ div:after{
 <pre>background:linear-gradient(to left bottom,transparent 50%,rgba(0,0,0,0.4) 0) no-repeat 100% 0 /2em 2em,linear-gradient(-135deg,transparent 1.414em ,#58a 0);</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s24.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s24.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -527,7 +527,7 @@ div:after{
 &lt;div class="pie" style="animation-delay:-90s"&gt;90%&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s25.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s25.html" frameborder="0" width="320" height="240"></iframe>
 
 【动态效果】
 
@@ -565,7 +565,7 @@ div:after{
 
 　　鼠标移入时，饼图发生移动
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s26.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s26.html" frameborder="0" width="320" height="240"></iframe>
 
 【SVG实现】
 
@@ -594,7 +594,7 @@ circle{
 &lt;/svg&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/shape/s27.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s27.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
