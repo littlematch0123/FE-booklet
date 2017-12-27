@@ -24,7 +24,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 80px;" src="{{book.demo}}/css/base/b6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/css/base/b6.html" frameborder="0" width="320" height="240"></iframe>
 
 ### inherit
 
@@ -54,7 +54,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/base/b7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/base/b7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -104,7 +104,7 @@ writing-mode</pre>
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 80px;" src="{{book.demo}}/css/base/b8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 80px;" src="https://demo.xiaohuochai.site/css/base/b8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -159,5 +159,5 @@ writing-mode</pre>
 <pre>border:none;padding:0;color:red;</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/base/b9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/base/b9.html" frameborder="0" width="320" height="240"></iframe>
 
