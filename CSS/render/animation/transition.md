@@ -38,7 +38,7 @@ transition-delay: 过渡延迟时间(默认值为0s)</pre>
 
 //鼠标移动到元素上，会出现宽度变化效果
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t1.html" frameborder="0" width="320" height="240"></iframe>
 
 **复合属性**
 
@@ -66,7 +66,7 @@ transition-delay: 过渡延迟时间(默认值为0s)</pre>
 <pre>&lt;div class="test"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t2.html" frameborder="0" width="320" height="240"></iframe>
 
 <div class="cnblogs_code">
 <pre>.test{
@@ -84,7 +84,7 @@ transition-delay: 过渡延迟时间(默认值为0s)</pre>
 <pre>&lt;div class="test"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -106,7 +106,7 @@ all: 默认值，表示指定元素所有支持transition-property属性的样�
 &lt;transition-property&gt;: 可过渡的样式，可用逗号分开写多个样式</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transition/t4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transition/t4.html" frameborder="0" width="320" height="240"></iframe>
 
 **可过渡的样式**
 
@@ -157,7 +157,7 @@ transition-duration
 transition-property: width,background;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transition/t5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transition/t5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -186,7 +186,7 @@ transition-delay
 transition-property: width,background;</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 300px;" src="{{book.demo}}/css/transition/t6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transition/t6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -224,7 +224,7 @@ transition-timing-function
 
 ![steps](https://pic.xiaohuochai.site/blog/CSS_render_steps.png)
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transition/t7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transition/t7.html" frameborder="0" width="320" height="240"></iframe>
 
 **贝塞尔曲线**
 
@@ -254,7 +254,7 @@ step-start: 直接位于结束处。相当于steps(1,start)
 step-end: 位于开始处经过时间间隔后结束。相当于steps(1,end)</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/transition/t8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/transition/t8.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -288,7 +288,7 @@ transition: 0s;</pre>
 }</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 250px;" src="{{book.demo}}/css/transition/t9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/css/transition/t9.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】当transition-property值的个数多于对应的transition-delay | transition-timing-function | transition-duration的属性值(属性值的个数大于1个)时，将按顺序开始取值
 
@@ -305,7 +305,7 @@ transition: 0s;</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 250px;" src="{{book.demo}}/css/transition/t10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/css/transition/t10.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】当transition-property值的个数少于对应的transition-delay | transition-timing-function | transition-duration的属性值个数时，多余的属性值将无效
 
@@ -322,7 +322,7 @@ transition: 0s;</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 250px;" src="{{book.demo}}/css/transition/t11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/css/transition/t11.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】当transition-property的值中出现一个无效值，它依然按顺序对应transition的其他属性值(其他属性出现无效值，处理情况也类似)
 
@@ -339,7 +339,7 @@ transition: 0s;</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 250px;" src="{{book.demo}}/css/transition/t12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/css/transition/t12.html" frameborder="0" width="320" height="240"></iframe>
 
 【5】当transition-property的值中，有些值重复出现多次，则以最后出现的值为准，前面所有出现的值都被认定为无效值，但依然按顺序对应transition的其他属性值
 
@@ -356,7 +356,7 @@ transition: 0s;</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 250px;" src="{{book.demo}}/css/transition/t13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/css/transition/t13.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -368,7 +368,7 @@ transition: 0s;</pre>
 
 【3】过渡分为两个阶段：前进(forward)和反向(reverse)。若前进阶段进行一段时间后进入反向阶段，则反向阶段的初始值是前进阶段结束时的瞬时值
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t14.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】以hover为例，若在元素非hover态时设置transition，相当于设置的反向状态。而前进和反向是一致的。而如果在元素hover态设置transition，则前进状态以hover态设置的为准，而反向状态以非hover态设置的为准
 
@@ -383,7 +383,7 @@ transition: 0s;</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t15.html" frameborder="0" width="320" height="240"></iframe>
 
 【5】如果子元素和父元素过渡属性都一致。若触发子元素过渡时，父元素正在过渡，则将父元素过渡的中间态的值作为子元素过渡的初始值
 
@@ -401,7 +401,7 @@ transition: 0s;</pre>
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 190px;" src="{{book.demo}}/css/transition/t16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 190px;" src="https://demo.xiaohuochai.site/css/transition/t16.html" frameborder="0" width="320" height="240"></iframe>
 
 【6】若过渡起始值或过渡开始值为auto，则浏览器不会自己计算成具体数字值，而是不发生过渡效果。所以要过渡某些属性，首先需要将其重置成具体数字值
 
@@ -418,7 +418,7 @@ transition: 0s;</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t17.html" frameborder="0" width="320" height="240"></iframe>
 
 【7】隐式过渡是指一个属性改变时引起另一个属性的改变。如border-width是1em，则font-size改变时，border-width也会相应的改变。firefox和IE浏览器支持隐式过渡。而webkit内核浏览器不支持隐式过渡。&nbsp;
 
@@ -435,7 +435,7 @@ transition: 0s;</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t18.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -447,19 +447,19 @@ transition: 0s;</pre>
 
 　　鼠标悬停触发
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t19.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t19.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】active
 
 　　用户单击元素并按住鼠标时触发
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t20.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t20.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】focus
 
 　　获得焦点时触发
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/transition/t21.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/transition/t21.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】@media触发
 
@@ -487,7 +487,7 @@ transition: 0s;</pre>
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t22.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t22.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -524,7 +524,7 @@ function myFunction(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/transition/t23.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/transition/t23.html" frameborder="0" width="320" height="240"></iframe>
 
 　　&nbsp;pseudoElement：如果transition效果发生在伪元素，会返回该伪元素的名称，以&ldquo;::&rdquo;开头。如果不发生在伪元素上，则返回一个空字符串''
 
@@ -549,7 +549,7 @@ function myFunction(e){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/transition/t24.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/transition/t24.html" frameborder="0" width="320" height="240"></iframe>
 
 **注意事项**
 
@@ -567,7 +567,7 @@ function myFunction() {
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t25.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t25.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】过渡事件触发的次数与transition-property过渡属性的个数有关。过渡属性有几个就会触发几次
 
@@ -576,7 +576,7 @@ function myFunction() {
     -webkit-transition: width 1s,background-color 1s;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t26.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t26.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】如果过渡属性是复合属性，如border-width相当于是border-top-width、border-bottom-width、border-left-width和border-right-width这四个属性的集合。则过渡事件触发4次
 
@@ -587,7 +587,7 @@ function myFunction() {
     -webkit-transition: border-width 1s;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/transition/t27.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/transition/t27.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】如果过渡属性是默认值all，则过渡事件的次数是计算后的非复合的过渡属性的个数。如果发生过渡的属性是border-width和width，则经过计算后过渡事件应该触发5次
 
@@ -606,7 +606,7 @@ function myFunction() {
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/css/transition/t28.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/transition/t28.html" frameborder="0" width="320" height="240"></iframe>
 
 【5】如果过渡延迟时间为负值，且绝对值大于等于过渡持续时间时，低版本webkit内核浏览器不会产生过渡效果，但会触发过渡事件；而其他浏览器即不会产生过渡效果，也不会触发过渡事件
 
@@ -615,7 +615,7 @@ function myFunction() {
     -webkit-transition: width 1s -1s;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t29.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t29.html" frameborder="0" width="320" height="240"></iframe>
 
 【6】如果过渡属性存在复合属性及该复合属性包含的非复合属性，则浏览器计算复合属性的子属性时，不会重复计算已包含的属性
 
@@ -632,7 +632,7 @@ function myFunction() {
 }</pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 100px;" src="{{book.demo}}/css/transition/t30.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/css/transition/t30.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]当过渡事件执行完后，应及时使用removeEventListener取消绑定，以免对其他效果造成影响
 
@@ -652,5 +652,5 @@ function myFunction() {
 }</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/transition/t31.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/transition/t31.html" frameborder="0" width="320" height="240"></iframe>
 
