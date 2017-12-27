@@ -197,7 +197,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/setTimeoutAndSetInterval/s1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/setTimeoutAndSetInterval/s1.html" frameborder="0" width="320" height="240"></iframe>
 
 　　[注意]HTML5标准规定，setTimeout的最短时间间隔是4毫秒；setInterval的最短间隔时间是10毫秒，也就是说，小于10毫秒的时间间隔会被调整到10毫秒
 
@@ -277,7 +277,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/setTimeoutAndSetInterval/s2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/setTimeoutAndSetInterval/s2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;　　使用链式setTimeout()
 
@@ -297,7 +297,7 @@ myDiv.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/setTimeoutAndSetInterval/s3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/setTimeoutAndSetInterval/s3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -322,7 +322,7 @@ document.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/setTimeoutAndSetInterval/s4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/setTimeoutAndSetInterval/s4.html" frameborder="0" width="320" height="240"></iframe>
 
 　　如果进行想让document的onclick事件先发生，即点击div元素，先弹出1，再弹出0。则进行如下设置
 
@@ -340,7 +340,7 @@ document.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/js/setTimeoutAndSetInterval/s5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/js/setTimeoutAndSetInterval/s5.html" frameborder="0" width="320" height="240"></iframe>
 
 　　【2】用户自定义的回调函数，通常在浏览器的默认动作之前触发。比如，用户在输入框输入文本，keypress事件会在浏览器接收文本之前触发。因此，下面的回调函数是达不到目的
 
@@ -353,7 +353,7 @@ myInput.onkeypress = function(event) {
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/setTimeoutAndSetInterval/s6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/setTimeoutAndSetInterval/s6.html" frameborder="0" width="320" height="240"></iframe>
 
 　　上面代码想在用户输入文本后，立即将字符转为大写。但是实际上，它只能将上一个字符转为大写，因为浏览器此时还没接收到文本，所以this.value取不到最新输入的那个字符
 
@@ -370,4 +370,4 @@ myInput.onkeypress = function(event) {
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 40px;" src="{{book.demo}}/js/setTimeoutAndSetInterval/s7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/setTimeoutAndSetInterval/s7.html" frameborder="0" width="320" height="240"></iframe>
