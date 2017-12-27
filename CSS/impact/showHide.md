@@ -26,7 +26,7 @@ hide.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/showhide/s1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/showhide/s1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -54,7 +54,7 @@ hide.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/showhide/s2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/showhide/s2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -82,7 +82,7 @@ hide.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 120px;" src="{{book.demo}}/css/showhide/s3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/showhide/s3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -115,7 +115,7 @@ reset.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/showhide/s4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/showhide/s4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -152,7 +152,7 @@ hide.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="line-height: 1.5; width: 100%; height: 120px;" src="{{book.demo}}/css/showhide/s5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/showhide/s5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -180,7 +180,7 @@ hide.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/showhide/s6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/showhide/s6.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -210,7 +210,7 @@ hide.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/showhide/s7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/showhide/s7.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】rotate
 
@@ -232,7 +232,7 @@ hide.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/showhide/s8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/showhide/s8.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】skew
 
@@ -254,7 +254,7 @@ hide.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/showhide/s9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/showhide/s9.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -279,7 +279,7 @@ hide.onclick = function(){
 
 //鼠标移入移出会出现元素的显隐效果
 
-<iframe style="width: 100%; height: 90px;" src="{{book.demo}}/css/showhide/s10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 90px;" src="https://demo.xiaohuochai.site/css/showhide/s10.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -307,7 +307,7 @@ hide.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/showhide/s11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/showhide/s11.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】left
 
@@ -337,7 +337,7 @@ hide.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/showhide/s12.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/showhide/s12.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】translate
 
@@ -357,4 +357,4 @@ hide.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 110px;" src="{{book.demo}}/css/showhide/s13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 110px;" src="https://demo.xiaohuochai.site/css/showhide/s13.html" frameborder="0" width="320" height="240"></iframe>
