@@ -30,7 +30,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju2/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju2/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -63,7 +63,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju2/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju2/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -94,7 +94,7 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju2/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju2/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -122,4 +122,4 @@ p{margin: 0;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/css/buju2/b4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/css/buju2/b4.html" frameborder="0" width="320" height="240"></iframe>
