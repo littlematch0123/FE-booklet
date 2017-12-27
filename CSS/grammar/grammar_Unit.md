@@ -82,7 +82,7 @@
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 220px;" src="{{book.demo}}/css/base/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 220px;" src="https://demo.xiaohuochai.site/css/base/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### rem
 
@@ -115,7 +115,7 @@ html{font-size: 2rem;}
 &lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 160px;" src="{{book.demo}}/css/base/b2.html
+<iframe style="width: 100%; height: 160px;" src="https://demo.xiaohuochai.site/css/base/b2.html
 " frameborder="0" width="320" height="240"></iframe>
 
 　　默认地，浏览器的字体大小font-size是16px，也就是1rem=16px。而如果将HTML的font-size设置为100px，方便后续计算，不设置为10px是因为chrome下最小字体大小为12px
@@ -157,7 +157,7 @@ for(var i = 0; i &lt; aBtns.length; i++ ){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 130px;" src="{{book.demo}}/css/base/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/base/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 ### ch
 
@@ -196,7 +196,7 @@ for(var i = 0; i &lt; aBtns.length; i++ ){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/css/base/b4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/css/base/b4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -232,7 +232,7 @@ body{margin: 0;}
 <pre>&lt;div class="box"&gt;&lt;/div&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/css/base/b5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/base/b5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### vmin
 
