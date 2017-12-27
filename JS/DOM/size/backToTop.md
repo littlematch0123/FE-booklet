@@ -19,7 +19,7 @@
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/backToTop/b1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/backToTop/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】scrollTop
 
@@ -40,7 +40,7 @@
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/backToTop/b2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/backToTop/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 【3】scrollTo()
 
@@ -59,7 +59,7 @@
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/backToTop/b3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/backToTop/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 【4】scrollBy()
 
@@ -79,7 +79,7 @@
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/backToTop/b4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/backToTop/b4.html" frameborder="0" width="320" height="240"></iframe>
 
 【5】scrollIntoView()
 
@@ -101,7 +101,7 @@
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/backToTop/b5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/backToTop/b5.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 增强
 
@@ -161,7 +161,7 @@
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 100px;" src="{{book.demo}}/js/backToTop/b6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/js/backToTop/b6.html" frameborder="0" width="320" height="240"></iframe>
 
 【2】动画增强
 
@@ -197,7 +197,7 @@ box.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/js/backToTop/b7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/js/backToTop/b7.html" frameborder="0" width="320" height="240"></iframe>
 
 　【时间版运动】
 
@@ -229,7 +229,7 @@ test.onclick = function(){
 &lt;/body&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/js/backToTop/b8.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/js/backToTop/b8.html" frameborder="0" width="320" height="240"></iframe>
 
 　　2、增加scrollTo()动画效果
 
@@ -253,7 +253,7 @@ box.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/js/backToTop/b9.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/js/backToTop/b9.html" frameborder="0" width="320" height="240"></iframe>
 
 　　3、增加scrollBy()动画效果
 
@@ -277,7 +277,7 @@ box.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/js/backToTop/b10.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/js/backToTop/b10.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -362,6 +362,6 @@ box.onclick = function(){
 &lt;/html&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 200px;" src="{{book.demo}}/js/backToTop/b11.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/js/backToTop/b11.html" frameborder="0" width="320" height="240"></iframe>
 
 　　欢迎交流
