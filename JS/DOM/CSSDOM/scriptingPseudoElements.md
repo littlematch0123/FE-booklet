@@ -48,7 +48,7 @@ btn.onclick = function(){
 &lt;/script&gt;        </pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/scriptingPseudoElements/s1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/scriptingPseudoElements/s1.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 添加自带伪元素的类名
 
@@ -68,7 +68,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/scriptingPseudoElements/s2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/scriptingPseudoElements/s2.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 利用setAttribute()方法实现自定义伪元素内容
 
@@ -100,7 +100,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/scriptingPseudoElements/s3.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/scriptingPseudoElements/s3.html" frameborder="0" width="320" height="240"></iframe>
 
 **dataset**
 
@@ -126,7 +126,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/scriptingPseudoElements/s4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/scriptingPseudoElements/s4.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 通过CSSRule对象添加样式
 
@@ -182,7 +182,7 @@ btn.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/scriptingPseudoElements/s5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/scriptingPseudoElements/s5.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -209,7 +209,7 @@ btn.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/scriptingPseudoElements/s6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/scriptingPseudoElements/s6.html" frameborder="0" width="320" height="240"></iframe>
 
 ### 通过CSSRule对象删除指定
 
@@ -247,7 +247,7 @@ btn.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/js/scriptingPseudoElements/s7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/scriptingPseudoElements/s7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
