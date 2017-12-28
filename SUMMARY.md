@@ -412,6 +412,7 @@
             * [CORS](JS/ajaxAndStorage/CORS.md)
             * [图片Ping](JS/ajaxAndStorage/imgPing.md)
             * [JSONP](JS/ajaxAndStorage/JSONP.md)
+            * [iframe跨域](JS/ajaxAndStorage/iframe.md)
         3. 存储
             * [Cookie](JS/ajaxAndStorage/cookie.md)
             * [IE userData](JS/ajaxAndStorage/userData.md)
