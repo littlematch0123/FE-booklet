@@ -156,7 +156,7 @@ echo "\n数据库客户端版本号信息：". $dbh-&gt;getAttribute(PDO::ATTR_C
 <pre>&lt;?php
 try {
     //创建对象
-    $dbh = new PDO("mysql:host=localhost;dbname=testdb", "root", "zhiaihebe0123");
+    $dbh = new PDO("mysql:host=localhost;dbname=testdb", "root", "123456");
 }catch(PDOException $e) {
     echo "数据库连接失败：".$e-&gt;getMessage();
     exit;
@@ -194,7 +194,7 @@ if($affected){
 <pre>&lt;?php
 try {
     //创建对象
-    $dbh = new PDO("mysql:host=localhost;dbname=testdb", "root", "zhiaihebe0123");
+    $dbh = new PDO("mysql:host=localhost;dbname=testdb", "root", "123456");
 }catch(PDOException $e) {
     echo "数据库连接失败：".$e-&gt;getMessage();
     exit;
@@ -228,7 +228,7 @@ try{
 <pre>&lt;?php
 try {
     //创建对象
-    $dbh = new PDO("mysql:host=localhost;dbname=testdb", "root", "zhiaihebe0123");
+    $dbh = new PDO("mysql:host=localhost;dbname=testdb", "root", "123456");
 }catch(PDOException $e) {
     echo "数据库连接失败：".$e-&gt;getMessage();
     exit;
@@ -304,7 +304,7 @@ try{
 <pre>&lt;?php
 try {
     //创建对象
-    $dbh = new PDO("mysql:host=localhost;dbname=testdb", "root", "zhiaihebe0123");
+    $dbh = new PDO("mysql:host=localhost;dbname=testdb", "root", "123456");
     //设置错误使用异常的模式
     $dbh -&gt; setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //关闭自动提交

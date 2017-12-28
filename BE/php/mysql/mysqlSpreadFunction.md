@@ -78,7 +78,7 @@ if(!$link){
 </div>
 <div class="cnblogs_code">
 <pre>&lt;?php
-$link = mysql_connect('localhost','root','zhiaihebe0123');
+$link = mysql_connect('localhost','root','123456');
 var_dump($link);//resource(3, mysql link)
 if(!$link){
     die('连接失败：'.mysql_error());
