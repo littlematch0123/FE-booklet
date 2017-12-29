@@ -713,7 +713,6 @@ function parseHeader(stream, callback) {
 
 <div class="cnblogs_code">
 <pre>const Duplex = require('stream').Duplex;
-
 const myDuplex = new Duplex({
   read(size) {
     // ...
@@ -753,7 +752,6 @@ crypto streams</pre>
   this.push(data);
   callback();
 };
-
 transform.prototype._transform = function (data, encoding, callback) {
   callback(null, data);
 };</pre>
@@ -784,13 +782,11 @@ var client = net.connect({port: 1234}, function() {
     console.log('已连接到服务器');
     client.write('Hi!');
 });
-
 //data事件监听。收到数据后，断开连接
 client.on('data', function(data) {
     console.log(data.toString());
     client.end();
 });
-
 //end事件监听，断开连接时会被触发
 client.on('end', function() {
     console.log('已与服务器断开连接');
@@ -852,10 +848,8 @@ const rs = fs.createReadStream(FILEPATH);</pre>
 <div class="cnblogs_code">
 <pre>const fs = require('fs');
 const FILEPATH = '...';
-
 const rs = fs.createReadStream(FILEPATH);
 const ws = fs.createWriteStream(DEST);
-
 rs.pipe(ws);</pre>
 </div>
 
@@ -889,7 +883,6 @@ lower -&gt; ws：相对而言，lower 又在上游，所以 lower 需要是个 r
 <div class="cnblogs_code">
 <pre>const http = require('http');
 const fs = require('fs');
-
 http.createServer((req, res) =&gt; {
    fs.readFile(moviePath, (err, data) =&gt; {
       res.end(data);
