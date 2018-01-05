@@ -21,6 +21,7 @@
   * 《javascript面向对象摘要》
   * 《javascript面向对象编程指南(第2版)》
   * 《javascript设计模式与开发实践》
+  * 《学习Javascript数据结构与算法(第2版)》
   * 《正则指引》
   * 《精通正则表达式》
   * 《深入理解ES6》
