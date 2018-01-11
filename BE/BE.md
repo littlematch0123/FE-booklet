@@ -1,0 +1,88 @@
+# 后端知识结构
+
+小火柴的后端知识包括PHP、MySQL、NodeJS、Mongodb这几部分
+
+* PHP
+    * [介绍](php/php.md)
+    * 基础
+        * [基础语法](php/base/base.md)
+        * [运算符](php/base/operator.md)
+        * [语句](php/base/statement.md)
+    * 变量
+        * [变量](php/base/variable.md) 
+        * [变量范围](php/base/variableRange.md) 
+        * [常量](php/base/const.md) 
+        * [命名空间](php/base/namespace.md) 
+    * 数据类型
+        * [数据类型概述](php/types/typesOverview.md)
+        * [函数](php/types/function.md) 
+        * [数组函数](php/types/arrayFunction.md) 
+        * [字符串函数](php/types/stringFunction.md) 
+    * OOP
+        * [类和对象](php/oop/classAndObj.md)
+        * [魔术方法](php/oop/magicMethod.md)
+        * [三大特性](php/oop/property.md)
+        * [关键字](php/oop/keywords.md)
+        * [对象操作](BmysqlSpreadFunctionE/php/oop/object.md)
+    * 常用功能
+        * [正则表达式语法](php/common/regexp.md)
+        * [正则表达式函数](php/common/regexpFunction.md)
+        * [错误处理](php/common/error.md) 
+    * 数据库开发
+        * [mysql扩展函数](php/mysql/mysqlSpreadFunction.md)
+        * [PDO基础操作](php/mysql/pdoBase.md)
+        * [PDO预处理语句](php/mysql/pdoPretreatment.md)
+        * [memcache](php/mysql/memcache.md)
+        * [php操作memcache](php/mysql/memcacheOperation.md) 
+* MySQL
+    *  [基础操作](mysql/base.md)
+    *  [数据类型](mysql/types.md)
+    *  [数据表操作](mysql/tables.md)
+    *  [记录操作](mysql/into.md) 
+    *  [中文乱码](mysql/chinese.md) 
+    *  [子查询](mysql/subquery.md) 
+    *  [多表操作](mysql/multilist.md) 
+    *  [函数](mysql/function.md) 
+    *  [存储](mysql/storage.md) 
+    *  [数据库设计](mysql/design.md)
+* NodeJS
+    * [介绍](node/node.md)
+    * 基础
+        * [初识](node/base/base.md)
+        * [安装](node/base/setup.md)
+        * [事件events](node/base/events.md)
+    * 代码组织
+        * [模块](node/code/module.md) 
+        * [包](node/code/packet.md) 
+        * [NPM](node/code/npm.md) 
+    * 文件操作
+        * [二进制buffer](node/file/buffer.md) 
+        * [文件fs](node/file/file.md) 
+        * [路径path](node/file/path.md) 
+        * [数据流stream](node/file/stream.md) 
+    * 网络操作
+        * [域名DNS](node/network/dns.md) 
+        * [URL](node/network/url.md) 
+        * [querystring](node/network/querystring.md) 
+        * [NET](node/network/net.md) 
+        * [HTTP](node/network/http.md) 
+    * 其他操作
+        * [加密crypto](node/others/crypto.md) 
+        * [进程process](node/others/process.md)
+    * 功能实现
+          * [前端自动化](node/ability/auto.md)
+          * [路由](node/ability/route.md)
+          * [爬虫](node/ability/reptile.md)   
+    * 框架
+          * [express框架](node/frame/express.md)
+          * [ejs模板引擎](node/frame/ejs.md)
+          * [pug模板引擎](node/frame/pug.md) 
+* MongoDB
+    * [基础操作](mongodb/base.md)
+    * [数据类型](mongodb/types.md)
+    * [文档操作](mongodb/doc.md)
+    * [索引](mongodb/index.md)
+    * [索引构建情况分析](mongodb/stat.md)
+    * [安全及身份认证](mongodb/auth.md)
+    * [聚合](mongodb/aggregate.md)
+    * [Mongoose](mongodb/Mongoose.md) 
