@@ -1,4 +1,4 @@
-# jQuery过滤选择器之子元素选择器
+# jQuery子元素选择器
 
 　　在[上一篇](http://www.cnblogs.com/xiaohuochai/p/5800164.html)中已经介绍过基础选择器和层级选择器，本文开始介绍过滤选择器。过滤选择器是jQuery选择器中最为庞大也是最为出彩的一部分。以[CSS结构伪类选择器](http://www.cnblogs.com/xiaohuochai/p/5518943.html#anchor3)为基础，jQuery过滤选择器增加了很多扩展功能。本文先从与CSS选择器最相近的子元素过滤选择器开始说起
 
