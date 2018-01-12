@@ -1,6 +1,7 @@
 # Summary
 
-* [小火柴的前端小册子](README.md)
+* [目录](README.md)
+* [说明](introduce.md)
 * HTML
     * [介绍](HTML/HTML.md)
     * 语法
@@ -349,52 +350,6 @@
         * [r.js打包](JS/modular/r.md)
         * [CMD及seaJS](JS/modular/seajs.md)
         * [ES6中的Module](JS/modular/es6Modula.md)
-    * 动画和运动
-        1. 动画
-            * 原生拖放
-            * 模拟拖拽
-            * 磁性吸附
-            * 碰撞检测
-            * 拖拽改变元素大小
-            * 模拟滚动条
-        2. 运动
-            * 匀速运动
-            * 变速运动
-            * 曲线运动
-            * 抖动
-            * 缓冲运动和弹性运动
-            * 投掷和轨迹
-            * 鼠标跟随运动
-            * 碰壁运动
-            * 碰撞运动
-            * 时间版运动
-            * velocity.js的使用
-            * tween.js的使用
-            * 帧动画
-    * canvas和SVG
-        1. canvas
-            * 基础语法
-            * 图形处理和进阶用法
-            * 图形绘制
-            * 图像编辑
-            * 贝塞尔曲线演示
-            * 自适应圆形时钟
-            * 粒子时钟
-            * 动态小球重叠效果
-            * 探照灯效果
-            * 粒子系统的构建
-        2. SVG
-            * 基本形状和样式设置
-            * 文本
-            * 路径
-            * 贝塞尔曲线演示
-            * 辅助标签
-            * 视野
-            * 渐变
-            * 图案
-            * 裁切和蒙版
-            * 动画
-            * 基本操作API
     * AJAX和存储
         1. 基础
             * [JSON](JS/ajaxAndStorage/JSON.md)
@@ -417,14 +372,12 @@
             * [IE userData](JS/ajaxAndStorage/userData.md)
             * [Web Storage](JS/ajaxAndStorage/storage.md)
     * HTML5
-        * [Web计时机制](JS/HTML5/performance.md)
-        * [Web Worker](JS/HTML5/webWorker.md) 
         * [二进制数组](JS/HTML5/arrayBuffer.md)
         * [Blob](JS/HTML5/blob.md)
         * [文件File](JS/HTML5/file.md)
-
-    * 可维护性
-        * [代码风格]()     
+    * 代码优化
+        * [编码标准](JS/optimize/codingStandard.md) 
+        * [代码优化](JS/optimize/codeOptimization.md)  
 * HTTP
     * [介绍](HTTP/HTTP.md)
     * 基础
@@ -457,12 +410,86 @@
         * [重定向和负载均衡](HTTP/issue/redirect.md)
         * [日志记录](HTTP/issue/log.md)  
 * 前端框架
-    * [Bootstrap](bs.md)
-    * [jQuery](jq.md)
-    * [Vue](vue.md)
-* [前端构建](build.md)
-* [版本管理](version.md)
-* 后端相关
+    * [介绍](FELib/FELib.md)       
+    * jQuery
+        *  [介绍](FELib/jq/jq.md)   
+        * 基础
+            * [设计思想](FELib/jq/base/design.md)
+            * [理解jQuery对象$](FELib/jq/base/jqueryObj.md)
+            * [简易版jQuery——mQuery](FELib/jq/base/mQuery.md)
+            * [代码优化](FELib/jq/base/optimize.md)
+        * 选择器
+            * [基础和层级选择器](FELib/jq/selector/baseAndLevelSelector.md) 
+            * [表单选择器](FELib/jq/selector/formSelector.md)  
+            * 过滤选择器
+                * [子元素选择器](FELib/jq/selector/childElementSelector.md)  
+                * [索引选择器](FELib/jq/selector/indexSelector.md)  
+                * [属性选择器](FELib/jq/selector/attrSelector.md)  
+                * [内容选择器](FELib/jq/selector/contentSelector.md)
+                * [状态选择器](FELib/jq/selector/statusSelector.md)  
+                * [伪子元素选择器](FELib/jq/selector/pseudoChildElementSelector.md)  
+            *  常见操作
+                * [杂项方法](FELib/jq/method/miscellaneous.md)
+                * [工具方法](FELib/jq/method/utils.md)
+                * [节点关系](FELib/jq/method/nodeRelation.md)
+                * [节点操作](FELib/jq/method/nodeOperation.md)
+                * [特性操作](FELib/jq/method/attrOperation.md)
+                * [文本内容](FELib/jq/method/contents.md)
+                * [样式操作](FELib/jq/method/styleOperation.md)
+                * [元素尺寸和位置操作](FELib/jq/method/clientBounding.md)
+                * [ajax](FELib/jq/method/ajax.md) 
+            * 事件
+                * [事件绑定](FELib/jq/event/eventHandle.md)
+                * [事件对象](FELib/jq/event/eventObject.md)
+                * [鼠标事件](FELib/jq/event/mouse.md)
+            * 动画
+                * [常见动画](FELib/jq/animate/threeAnimation.md) 
+                * [自定义动画](FELib/jq/animate/customAnimation.md) 
+                * [动画队列](FELib/jq/animate/queueAnimation.md) 
+                * [动画控制](FELib/jq/animate/controlAnimation.md) 
+            * 插件
+                * [validation](FELib/jq/validate/validation.md)
+                * [编写jQuery插件](FELib/jq/validate/makePlug.md) 
+    * Bootstrap
+        * [介绍](FELib/bs/bs.md)
+        * 排版
+            * [概述](FELib/bs/makeup/overview.md)
+            * [排版](FELib/bs/makeup/makeup.md)
+            * [表格](FELib/bs/makeup/table.md)
+            * [表单](FELib/bs/makeup/form.md)
+            * [图像](FELib/bs/makeup/image.md)
+            * [栅格系统](FELib/bs/makeup/grid.md)
+            * [辅助类](FELib/bs/makeup/assist.md)
+        * 组件
+            * [图标](FELib/bs/module/icon.md)
+            * [下拉菜单](FELib/bs/module/dropdown.md)
+            * [按钮组](FELib/bs/module/btn-group.md)
+            * [按钮式下拉菜单](FELib/bs/module/dropdown-menu.md)
+            * [输入框组](FELib/bs/module/input-group.md)
+            * [导航](FELib/bs/module/nav.md)
+            * [导航条](FELib/bs/module/navbar.md)
+            * [分页](FELib/bs/module/page.md)
+            * [提示信息](FELib/bs/module/label.md)
+            * [缩略图](FELib/bs/module/thumbnail.md)
+            * [警告框](FELib/bs/module/alert.md)
+            * [进度条](FELib/bs/module/progress.md)
+            * [媒体对象](FELib/bs/module/media.md)
+            * [列表组](FELib/bs/module/list-group.md)
+            * [面板](FELib/bs/module/panel.md)
+            * [洼地](FELib/bs/module/well.md)
+        * JS插件    
+            * [概述](FELib/bs/plug/overview.md)
+            * [模态弹出框](FELib/bs/plug/modal.md)
+            * [滚动监控器](FELib/bs/plug/scroll.md)
+            * [选项卡](FELib/bs/plug/tab.md)
+            * [提示框](FELib/bs/plug/tooltip.md)
+            * [弹出框](FELib/bs/plug/popover.md)
+            * [按钮插件](FELib/bs/plug/btn.md)
+            * [手风琴效果](FELib/bs/plug/collapse.md)
+            * [图片轮播](FELib/bs/plug/carousel.md)
+            * [自动定位浮标](FELib/bs/plug/affix.md)
+* 后端相关 
+    * [介绍](BE/BE.md)  
     * PHP
         * [介绍](BE/php/php.md)
         * 基础
@@ -547,7 +574,6 @@
         * [安全及身份认证](BE/mongodb/auth.md)
         * [聚合](BE/mongodb/aggregate.md)
         * [Mongoose](BE/mongodb/Mongoose.md) 
-* [服务器端](server.md)
 * 前端工具
     * [介绍](utils/utils.md)
     * Photoshop
