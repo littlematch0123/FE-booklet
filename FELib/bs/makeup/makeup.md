@@ -8,7 +8,7 @@
 
 【h】
 
-　　HTML 中的所有标题标签，`&lt;h1&gt;`&nbsp;到&nbsp;`&lt;h6&gt;`&nbsp;均可使用
+　　HTML 中的所有标题标签，&lt;h1&gt;&nbsp;到&nbsp;&lt;h6&gt;&nbsp;均可使用
 
 　　默认情况下，从h1到h6的font-size如下所示
 
