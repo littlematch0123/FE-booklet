@@ -1,766 +1,780 @@
-# Linux常见操作
+# Linux常用命令
 
-　　本文将详细介绍Linux常见操作
-
-&nbsp;
-
-### 基本概念
-
-　　Linux严格区分大小写，所有内容以文件形式保存，包括硬件
-
-　　Linux没有扩展名的概念，不靠扩展名来区分文件类型。但有一些约定俗成的扩展名
-
-<div class="cnblogs_code">
-<pre>压缩包: .gz .bz2 .tar.bz2 .tgz
-二进制软件包：.rpm
-网页文件： .html .php
-脚本文件： .sh
-配置文件： .conf</pre>
-</div>
-
-　　[注意]windows下的程序不能直接在linux中安装和运行
-
-　　Linux字符界面的优势如下：
-
-　　1、占用的系统资源更少
-
-　　2、减少了出错、被攻击的可能性
-
-【分区类型】
-
-　　主分区：最多只能有4个
-
-　　扩展分区：最多只能有1个，主分区加扩展分区最多有4个，不能写入数据，只能包含逻辑分区
-
-【硬件设置文件名】
-
-<div class="cnblogs_code">
-<pre>硬件  设置文件名
-IDE硬盘 /dev/hd[a-d]
-SCSI/SATA/USB硬盘 /dev/sd[a-p]
-光驱  /dev/cdrom 或/dev/hdc
-软盘  /dev/fd[0-1]
-打印机(25针)  /dev/1p[0-2]
-打印机(USB)  /dev/usb/1p[0-15]
-鼠标  /dev/mouse</pre>
-</div>
-
-【挂载】
-
-<div class="cnblogs_code">
-<pre>必须分区
-/ (根分区)
-swap分区 (交换分区，内存2倍，不超过2GB)
-
-推荐分区
-/boot (启动分区，200MB)</pre>
-</div>
+　　自以为前端工程师可能用不到Linux命令。但在学习Git时，发现除了Git命令，还有好多是需要Linux命令来配合的。所以，Linux命令需要系统的学习并进行总结，本文将详细介绍Linux常用命令
 
 &nbsp;
 
-### 显示
+### 特殊字符
 
-【起始标识】
-
-<div class="cnblogs_code">
-<pre>[root@bogon ~]#</pre>
-</div>
-
-　　root表示当前登录用户为管理员
-
-　　bogon表示主机名
-
-　　~表示当前所在目录
-
-　　#是管理员的提示符
-
-　　$是普通用户的提示符
-
-&nbsp;【命令格式】
-
-　　当有多个选项时，可以写在一起
-
-　　选项包括简化选项与完整选择如-a 等于 --all
+　　特殊字符对shell具有特殊含义，不要把它们当作普通字符使用。某些特殊字符用于[正则表达式](http://www.cnblogs.com/xiaohuochai/p/5608807.html)匹配
 
 <div class="cnblogs_code">
-<pre>命令 [选项] [参数]</pre>
+<pre>&amp; ; | * ? ' " ` [ ] ( ) $ &lt; &gt; { } # / \ ! ~</pre>
 </div>
 
-　　[注意]个别命令使用不遵循此格式
+**空白符**
 
-&nbsp;
+　　尽管RETURN、SPACE、TAB都不是特殊字符，但它们对shell具有特殊含义
 
-### 文件
+　　RETURN键通常用于结束命令行并开始命令的执行
 
-【文件类型】
+　　SPACE键和TAB键则用作命令行上的分隔符
 
-　　Linux包括以下7种文件类型，以文件位第一位来表示文件类型
+**转义字符**
+
+　　要将特殊字符当作普通字符使用，可对它们转义引用
+
+![linux_com1](https://pic.xiaohuochai.site/blog/linux_com1.png)
+
+　　[注意]斜杠(/)无法被转义，它总是表示路径名中的分隔符
+
+　　在特殊字符前加反斜杠(\)即可将将、特殊字符转义。要将连续的两个或多个特殊字符转义，必须在每个字符前面加一个反斜杠(\)
+
+　　另一种将特殊字符转义的方法是使用单引号将它们引起来('**')，也可以将特殊字符和普通字符一起用一对单引号引起来
+
+![linux_com2](https://pic.xiaohuochai.site/blog/linux_com2.png)
+
+【echo】
 
 <div class="cnblogs_code">
-<pre>- 文件
-d 目录
-l 软链接文件</pre>
-</div>
-
-![linux_command1](https://pic.xiaohuochai.site/blog/linux_command1.png)
-
-
-　　除了上面这3种，还有块设备文件、字符设备文件、套接字文件和管道文件。这4种文件都是linux系统中的特殊文件
-
-【文件身份】
-
-　　文件位共有10位组成，除了第1位表示文件类型外，后9位每3位为一组，表示文件的所有者、所属组和其他人
-
-【文件权限】
-
-<div class="cnblogs_code">
-<pre>r读
-w写
-x执行</pre>
-</div>
-
-　　下面这个例子中，表示这是一个文件，所有者有读写权限，而所属组和其他人只有读权限
-
-
-![linux_command2](https://pic.xiaohuochai.site/blog/linux_command2.png)
-
-
-　　一般地，用户在自己主目录下拥有写权限，主目录之外只有读权限。如果一定在要不具有写权限的目录下操作文件，如新建文件。则可以使用sudo命令，变身管理员，然后输入管理员的密码来执行这个操作
-
-<div class="cnblogs_code">
-<pre> sudo touch aaa</pre>
-</div>
-
-【文件信息】
-
-　　上面的例子中，两个root之后，分别代码文件大小、文件最后一次修改时间及文件名称
-
-　　[注意]linux中文件名以.开头的文件是隐藏文件
-
-【修改文件权限】
-
-　　比如，将a.txt文件的权限变更为读写权限
-
-<div class="cnblogs_code">
-<pre>chmod 666 a.txt</pre>
-</div>
-
-![linux_command3](https://pic.xiaohuochai.site/blog/linux_command3.png)
-
-
-　　实际中使用 chmod 命令最多的一种情形可能是给自己写的脚本加一个执行权限
-
-<div class="cnblogs_code">
-<pre>chmod +x a.sh</pre>
-</div>
-
-【常用一级目录作用】&nbsp;
-
-<div class="cnblogs_code">
-<pre>/ 根目录
-/bin 存放系统命令
-/sbin 存放只有管理员才能执行的系统命令 
-/usr 系统资源保存目录，包含了一般不需要修改的应用程序，命令程序文件、程序库、手册和其它文档
-/usr/bin 存放系统命令 
-/usr/sbin 存放只有管理员才能执行的系统命令</pre>
-</div>
-<div>
-<div class="cnblogs_code">
-<pre>/boot 存放内核以及启动所需的文件等 
-/dev 存放设备文件 
-/etc 存放系统的配置文件 
-/lib 存放函数库
-/home 用户文件的主目录，用户数据存放在此目录中
-/root 管理员的主目录</pre>
-</div>
-</div>
-<div class="cnblogs_code">
-<pre>/mnt 空目录，存放临时的映射文件系统，常把软驱和光驱挂装在这里的floppy和cdrom子目录下
-/media 空目录，存放临时的映射文件系统，老式linux无该目录
-/misc 空目录，存放临时的映射文件系统，老式linux无该目录
-/proc 不能直接操作，存放存储进程和系统信息 
-/sys 不能直接操作，存放存储进程和系统信息
-/tmp 存放临时文件的目录 
-/var 包含系统产生的经常变化的文件</pre>
-</div>
-
-&nbsp;
-
-### 关机
-
-**关机**
-
-【shutdown】
-
-<div class="cnblogs_code">
-<pre>shutdown [选项] 时间
+<pre>echo [选项] [输出内容]
 选项：
-    -c: 取消前一个关机命令
-    -h: 关机
-    -r: 重启</pre>
-</div>
-<div class="cnblogs_code">
-<pre>shutdown -h now 立刻关机</pre>
+　　-e: 支持反斜线控制的字符转换</pre>
 </div>
 
-【其他关机命令】
+**管道符**
+
+【多命令顺序执行】
+
+![linux_com3](https://pic.xiaohuochai.site/blog/linux_com3.png)
+
+【管道符】
 
 <div class="cnblogs_code">
-<pre>halt
-poweroff
-init 0</pre>
+<pre>命令1 | 命令2
+#命令1的正确输出作为命令2的操作对象</pre>
 </div>
 
-【其他重启命令】
+![linux_com4](https://pic.xiaohuochai.site/blog/linux_com4.png)
+
+![linux_com5](https://pic.xiaohuochai.site/blog/linux_com5.png)
+
+**通配符**
+
+![linux_com6](https://pic.xiaohuochai.site/blog/linux_com6.png)
+
+**其他特殊符号**
+
+![linux_com7](https://pic.xiaohuochai.site/blog/linux_com7.png)
+
+&nbsp;&nbsp;
+
+### 目录相关
+
+**显示目录路径**
+
+【pwd】 显示当前目录
+
+　　[注意]如果使用Windows系统，为了避免遇到各种莫名其妙的问题，请确保目录名(包括父目录)不包含中文
+
+![linux_com8](https://pic.xiaohuochai.site/blog/linux_com8.png)
+
+**切换目录**
+
+【cd】 切换到另一个工作目录，参数direction为要指定为新工作目录的目录路径名
 
 <div class="cnblogs_code">
-<pre>reboot
-init 6</pre>
+<pre>cd [options] [direction]</pre>
 </div>
 
-【运行级别】
+![linux_com9](https://pic.xiaohuochai.site/blog/linux_com9.png)
 
-　　系统运行级别包括以下7个
+　　如果不带任何参数，或使用波浪号(~)，切换到主目录
+
+![linux_com10](https://pic.xiaohuochai.site/blog/linux_com10.png)
+
+　　使用连字符(-)来切换到前一次的工作目录
+
+　　使用点(.)表示当前目录
+
+　　使用双句点(..)来返回到当前目录下的上一级目录
+
+　　[注意]cd和符号之间一定要有空格，否则会提示未找到命令
+
+![linux_com11](https://pic.xiaohuochai.site/blog/linux_com11.png)
+
+**创建目录**
+
+【mkdir】创建目录，如果已经存在同名目录，则无法创建成功
 
 <div class="cnblogs_code">
-<pre>0 关机
-1 单用户，安全模式
-2 不完全多用户，不含nfs服务
-3 完全多用户
-4 未分配
-5 图形界面
-6 重启</pre>
+<pre>mkdir [option] directory-list</pre>
+</div>
+
+　[注意]如果存在-p命令，则为递归创建
+
+　　下面代码中，先创建了test目录，然后在test目录下，创建了abc目录
+
+<div class="cnblogs_code">
+<pre>mkdir -p test/abc</pre>
+</div>
+
+**删除目录**
+
+【rmdir】删除目录，如果不是空目录，则无法删除成功
+
+<div class="cnblogs_code">
+<pre>rmdir directory-list</pre>
+</div>
+
+![linux_com12](https://pic.xiaohuochai.site/blog/linux_com12.png)
+
+【rm -rf】删除目录及目录里的文件
+
+　　[注意]如果使用"rm -rf /"，会删除所有文件
+
+&nbsp;
+
+### 文件相关
+
+**显示所有文件**
+
+【ls】 类似于dos下的dir命令，用于显示一个或多个文件的相关信息
+
+　　默认情况下，ls按照文件名的字母顺序列出文件的信息
+
+<div class="cnblogs_code">
+<pre>ls [options] [file-list]</pre>
+</div>
+
+　　options有很多选项，常用选项如下
+
+<div class="cnblogs_code">
+<pre>ls &ndash;a 显示所有文件，包括隐藏文件
+ls &ndash;F 在文件的后面添加表示文件类型的符号。*表示可执行，/表示目录，@表示连结文件
+ls &ndash;l 列出每个文件更详细的信息
+ls -ld 查看当前目录属性
+ls -lh 文件大小以K为单位
+ls -R 递归地列出子目录的内容
+ls -t 按最后一次修改时间的顺序显示文件
+ls -i 显示iNode号</pre>
+</div>
+
+　　[注意]ls -l命令可以简写成ll命令
+
+![linux_com13](https://pic.xiaohuochai.site/blog/linux_com13.png)
+
+　　file-list包含目录时，ls将显示该目录的内容
+
+<div class="cnblogs_code">
+<pre>ls mygit 显示mygit目录下的文件
+ls g* 显示所有以g字母开头的文件</pre>
+</div>
+
+![linux_com14](https://pic.xiaohuochai.site/blog/linux_com14.png)
+
+**显示文件内容**
+
+【cat】 显示文本文件的内容，类似于dos下的type命令
+
+<div class="cnblogs_code">
+<pre>cat [options] [direction]</pre>
 </div>
 <div class="cnblogs_code">
-<pre>cat /etc/inittab
-#修改系统默认运行级别
-id:3:initdefault:
+<pre>cat file1 显示file1文件内容
+cat file1 file2 依次显示file1,file2的内容
+cat file1 file2 &gt; file3 把file1,file2的内容结合起来，再重定向(&gt;)到file3文件中</pre>
+</div>
 
-runlevel
-#查询系统运行级别</pre>
+　　"&gt;"是右重定向符，表示将左边命令结果当成右边命令的输入。如果右侧文件是一个已存在文件，其原有内容将会被清空，而变成左侧命令输出内容。如果希望以追加方式写入，请改用"&gt;&gt;"重定向符
+
+![linux_com15](https://pic.xiaohuochai.site/blog/linux_com15.png)
+
+**重写文件**
+
+　　如果"&gt;"左边没有指定文件，如： cat &gt;file1，将会等用户输入，输入完毕后再按[Ctrl]+[d]，就会将用户的输入内容写入file1
+
+![linux_com16](https://pic.xiaohuochai.site/blog/linux_com16.png)
+
+**删除文件**
+
+【rm】 删除文件，与dos下的del/erase命令相似
+
+<div class="cnblogs_code">
+<pre>rm [options] file-list</pre>
+</div>
+
+　　options有很多选项，常用选项如下
+
+<div class="cnblogs_code">
+<pre>rm &ndash;i 系统在删除文件之前会先询问确认，用户回复y或Y之后，文件才会真的被删除
+rm &ndash;r 递归删除指定目录的内容，包含所有子目录和目录自身
+rm &ndash;f 和-i参数相反，-f表示强制删除
+rm -v 显示被删除的每个文件的文件名</pre>
+</div>
+
+![linux_com17](https://pic.xiaohuochai.site/blog/linux_com17.png)
+
+**复制文件**
+
+【cp】 复制文件
+
+<div class="cnblogs_code">
+<pre>cp [options] source-file destination-file
+cp [options] source-file-list destination-directory</pre>
+</div>
+
+　　使用cp命令可以生成一个文件的一个副本
+
+![linux_com18](https://pic.xiaohuochai.site/blog/linux_com18.png)
+
+　　使用cp命令也可以把一个或者多个文件复制到某个目录
+
+![linux_com19](https://pic.xiaohuochai.site/blog/linux_com19.png)
+
+![linux_com20](https://pic.xiaohuochai.site/blog/linux_com20.png)
+
+　　cp -R 递归地复制包含普通文件的目录层次结构
+
+![linux_com21](https://pic.xiaohuochai.site/blog/linux_com21.png)
+
+[注意]如果使用ls -a命令，则不仅文件内容，所有的文件属性也相同，如文件创建时间等
+
+**移动文件或重命名**
+
+【mv】重命名或移动文件
+
+<div class="cnblogs_code">
+<pre>mv [options] existing-file new-filename
+mv [options] existing-file-list direction
+mv [options] existing-direction new-direction</pre>
+</div>
+
+　　使用mv命令可以重命名文件
+
+![linux_com22](https://pic.xiaohuochai.site/blog/linux_com22.png)
+
+　　使用mv命令可以将一个文件移动到另一个目录
+
+![linux_com23](https://pic.xiaohuochai.site/blog/linux_com23.png)
+
+　　使用mv命令可以将一个文件移动到另一个目录，并改名
+
+![linux_com24](https://pic.xiaohuochai.site/blog/linux_com24.png)
+
+　　使用mv命令也可以移动目录
+
+![linux_com25](https://pic.xiaohuochai.site/blog/linux_com25.png)
+
+**新建文件**
+
+【touch】 新建文件，或改变文件的访问和修改时间
+
+<div class="cnblogs_code">
+<pre>touch [options] file-list</pre>
+</div>
+
+　　同名文件不存在时，touch用于新建文件
+
+![linux_com26](https://pic.xiaohuochai.site/blog/linux_com26.png)
+
+　　同名文件存在时，touch用于修改文件的访问和修改时间
+
+![linux_com27](https://pic.xiaohuochai.site/blog/linux_com27.png)
+
+&nbsp;
+
+### 文件链接
+
+　　通过ln命令来生成链接文件，-s选项表示生成软链接，没有选项则表示生成硬链接
+
+<div class="cnblogs_code">
+<pre>ln -s [原文件] [目标文件]</pre>
+</div>
+
+　　硬链接包括以下特征：
+
+　　1、拥有相同的i节点和存储block块，可以看做是同一个文件
+
+　　2、可通过i节点识别
+
+　　3、不能跨分区
+
+　　4、不能针对目录使用
+
+　　软链接包含以下特征：
+
+　　1、类似windows快捷方式
+
+　　2、软链接拥有自己的I节点和Block块，但是数据块中只保存原文件的文件名和I节点号，并没有实际的文件数据
+
+　　3、修改任意文件，另一个都改变
+
+　　4、删除原文件，软链接不能使用
+
+　　5、软链接文件权限都为rwxrwxrwx
+
+　　6、软链接的原文件一定要写绝对路径
+
+&nbsp;
+
+### 文件搜索
+
+【locate】
+
+　　该命令搜索速度非常快，因为其在后台数据库中按文件名搜索，格式如下
+
+<div class="cnblogs_code">
+<pre>locate 文件名</pre>
+</div>
+
+　　后台数据库的地址如下
+
+<div class="cnblogs_code">
+<pre>/var/lib/mlocate</pre>
+</div>
+
+　　后台数据库一般1天更新一次，所以当天新建的文件不会被放到数据库中，但可以通过updatadb命令来强制更新数据库
+
+<div class="cnblogs_code">
+<pre>updatedb</pre>
+</div>
+
+　　locate命令的缺点是只可以按照文件名来搜索
+
+　　locate是按照/etc/updatedb.conf配置文件来搜索的
+
+<div class="cnblogs_code">
+<pre>PRUNE_BIND_MOUNTS = "yes" #开启搜索限制
+PRUNEFS =  #搜索时，不搜索的文件系统
+PRUNENAMES = #搜索时，不搜索的文件类型
+PRUNEPATHS = #搜索时，不搜索的路径</pre>
+</div>
+
+**命令搜索**
+
+【whereis】
+
+　　搜索该命令的所在路径及帮助文档所在位置
+
+![linux_com28](https://pic.xiaohuochai.site/blog/linux_com28.png)
+
+<div class="cnblogs_code">
+<pre>-b 只查找可执行文件
+-m 只查找帮助文件</pre>
+</div>
+
+【which】
+
+　　搜索命令的所在路径及可能存在的别名
+
+![linux_com29](https://pic.xiaohuochai.site/blog/linux_com29.png)
+
+【PATH环境变量】
+
+　　PATH环境变量定义的是系统搜索命令的路径
+
+![linux_com30](https://pic.xiaohuochai.site/blog/linux_com30.png)
+
+【find】
+
+　　在Linux中，最强大的搜索命令是find命令，该命令会把所有文件都搜索一遍
+
+<div class="cnblogs_code">
+<pre>find [搜索范围] [搜索条件]
+#搜索文件
+find / -name install.log
+#避免大范围搜索，会非常耗费系统资源
+#find是在系统之中搜索符合条件的文件名</pre>
+</div>
+<div>　　如果要模糊匹配，需要使用通配符匹配，通配符是完全匹配</div>
+<div class="cnblogs_code">
+<pre>find /root -iname install.log
+#不区分大小写
+find /root -user root
+#按照所有者搜索
+find /root -nouser
+#查找没有所有者的文件</pre>
+</div>
+<div class="cnblogs_code">
+<pre>find /var/log -mtime +10
+#查找10天前修改的文件
+-10 10天内修改的文件
+10 第10天修改的文件
++10 10天前修改的文件
+atime 文件访问时间
+ctime 改变文件属性
+mtime 修改文件内容</pre>
+</div>
+<div class="cnblogs_code">
+<pre>find . -size 25k
+#查找文件大小是25KB的文件
+-25K 小于25KB的文件
+25K 等于25KB的文件
++25K 大于25KB的文件
+find . -inum 262422
+#查找i节点是262422的文件</pre>
+</div>
+<div class="cnblogs_code">
+<pre>find /etc -size +20K -a -size -50K
+#查找/etc/目录下，大于20KB并且小于50KB的文件
+-a and 逻辑与，两个条件都满足
+-o or 逻辑或，两个条件满足一个即可
+find /etc -size +20K -a -size -50K -exec ls -lh {} \;
+#查找/etc/目录下，大于20KB并且小于50KB的文件，并显示详细信息
+#-exec/-ok 命令{} \; 对搜索结果执行操作</pre>
+</div>
+
+【grep】
+
+　　该命令是搜索字符串的命令
+
+<div class="cnblogs_code">
+<pre>grep [选项] 字符串 文件名
+#在文件当中匹配符合条件的字符串
+-i 忽略大小写
+-v 排除指定字符串</pre>
+</div>
+
+　　find命令是在系统当中探索符合条件的文件名，如果需要匹配，使用通配符匹配，通配符是完全匹配
+
+　　grep命令是在文件当中搜索符合条件的字符串，如果需要匹配，使用正则表达式进行匹配，正则表达式是包含匹配
+
+&nbsp;
+
+### 文件比较
+
+【cmp】 逐字节地比较两个文件，如果两个文件相同，则cmp不显示任何内容；否则，cmp将显示第1个不同处对应的字节数和行号
+
+<div class="cnblogs_code">
+<pre>cmp [options] file1 [file2 [skip1 [skip2]]]</pre>
+</div>
+
+![linux_com31](https://pic.xiaohuochai.site/blog/linux_com31.png)
+
+**显示不同**
+
+【diff】 按行显示两个文本文件的不同。默认情况下，可以按照diff显示的不同来编辑其中的一个文件，使之与另一个文件相同
+
+<div class="cnblogs_code">
+<pre>diff [options] file1 file2
+diff [options] file1 directory
+diff [options] directory file2
+diff [options] directory1 directory2</pre>
+</div>
+
+　　file1和file2为diff要比较的普通文本文件的路径名。当file2被directory参数替换时，diff将在directory目录下查找与file1同名的文件；类似地，当file1被directory替换，diff将在directory目录下查找与file2同名的文件；当指定两个目录参数时，diff将比较directory1目录下与directory2目录下具有相同的简单文件名的两个文件
+
+![linux_com32](https://pic.xiaohuochai.site/blog/linux_com32.png)
+
+　　1c1表示更改a.txt的第1行，使之与b.txt的第一行相同
+
+**统计**
+
+【wc】 显示行数、单词数和字节数
+
+<div class="cnblogs_code">
+<pre>wc [options] [file-list]</pre>
+</div>
+
+![linux_com33](https://pic.xiaohuochai.site/blog/linux_com33.png)
+
+&nbsp;
+
+### 帮助命令
+
+【man】
+
+<div class="cnblogs_code">
+<pre>man 命令
+#获取指定命令的帮助
+man ls
+#查看ls的帮助</pre>
+</div>
+
+**man级别**
+
+<div class="cnblogs_code">
+<pre>1：查看命令帮助
+2：查看可被内核调用的函数的邦族
+3：查看函数和函数库的帮助
+4：查看特殊文件的帮助(主要是/dev目录下的文件)
+5：查看配置文件的帮助
+6：查看游戏的帮助
+7：查看其他杂项
+8：查看系统管理员可用的命令帮助
+9：查看和内核相关的文件帮助</pre>
+</div>
+<div class="cnblogs_code">
+<pre>man -f 命令
+相当于
+whatis 命令</pre>
+</div>
+
+![linux_com34](https://pic.xiaohuochai.site/blog/linux_com34.png)
+
+【help】
+
+<div class="cnblogs_code">
+<pre>命令 --help
+#获取命令选项的帮助</pre>
+</div>
+<div class="cnblogs_code">
+<pre>help shell内部命令
+#获取shell内部命令的帮助</pre>
+</div>
+<div class="cnblogs_code">
+<pre>whereis cd
+#确定是否是shell内部命令
+help cd
+#获取内部命令帮助</pre>
+</div>
+
+【info】
+
+<div class="cnblogs_code">
+<pre>info 命令
+-回车 进入子帮助页面(带有*号标记)
+-u 进入上层页面
+-n 进入下一个帮助小节
+-p 进入上一个帮助小节
+-q 退出</pre>
 </div>
 
 &nbsp;
 
-### 登录
+### 压缩命令
 
-【查看登录用户信息】
+　　5种常用的压缩格式: .zip .gz .bz2 .tar.gz .tar.bz2
 
-
-![linux_command4](https://pic.xiaohuochai.site/blog/linux_command4.png)
-
-
-![linux_command5](https://pic.xiaohuochai.site/blog/linux_command5.png)
-
-
-【退出登录】
+【zip】
 
 <div class="cnblogs_code">
-<pre>logout</pre>
+<pre>zip 压缩文件名 源文件
+#压缩文件
+
+zip -r 压缩文件名 源目录
+#压缩目录
+
+upzip 压缩文件
+#解压缩.zip文件</pre>
 </div>
 
-【who】
+【gz】
 
-
-![linux_command6](https://pic.xiaohuochai.site/blog/linux_command6.png)
-
-
-![linux_command7](https://pic.xiaohuochai.site/blog/linux_command7.png)
-
-
-【查询当前登录和过去登录的用户信息】
-
-
-![linux_command8](https://pic.xiaohuochai.site/blog/linux_command8.png)
-
-
-![linux_command9](https://pic.xiaohuochai.site/blog/linux_command9.png)
-
-
-【查看所有用户的最后一次登录时间】
-
-
-![linux_command10](https://pic.xiaohuochai.site/blog/linux_command10.png)
-
-
-### shell
-
-　　shell是一个命令行解释器，它为用户提供了一个向Linux内核发送请求以便运行程序的界面系统级程序，用户可以用shell来启动、挂起、停止甚至是编写一些程序
-
-　　shell还是一个功能非常强大的编程语言，易编写，易调试，灵活性较强。shell是解释执行的脚本语言，在shell中可以直接调用linux系统命令
-
-
-![linux_command11](https://pic.xiaohuochai.site/blog/linux_command11.png)
-
-
-&nbsp;
-
-【语法类型】
+　　可在windows中解压缩，但是windows中的rar格式不能在Linux中解压
 
 <div class="cnblogs_code">
-<pre>Bourne Shell:    主文件名为  sh
-语法类型：sh、ksh、Bash、psh、zsh
-C Shell  :  主要在BSD版的Unix系统中使用
-语法类型：  csh、 tcsh</pre>
+<pre>gzip 源文件
+#压缩为.gz格式的压缩文件，源文件会消失
+gzip -c 源文件 &gt; 压缩文件 
+#利用&gt;输出重定向，将源文件保留（没有太大的意义）
+gzip -r 目录
+#压缩目录下所有的子文件，但是不能压缩目录
+gzip -d 压缩文件
+#解压缩
+gunzip 压缩文件
+#解压缩</pre>
 </div>
 
-【查看当前系统的SHELL类型】
-
-
-![linux_command12](https://pic.xiaohuochai.site/blog/linux_command12.png)
-
-
-【编辑脚本】
+【bz2】
 
 <div class="cnblogs_code">
-<pre>vi hellp.sh</pre>
+<pre>bzip2 源文件
+#压缩为.bz2格式，不保留源文件
+bzip2 -k 源文件
+#压缩之后保留源文件
+bzip2 -d 压缩文件
+#解压缩，-k保留压缩文件
+bunzip2 压缩文件
+#解压缩，-k保留压缩文件</pre>
 </div>
 
-![linux_command13](https://pic.xiaohuochai.site/blog/linux_command13.png)
+　　[注意]bzip2命令不能压缩目录
 
-
-【退出脚本】
-
-　　在vim中编辑好之后，按esc键，回到一般模式，再输入&ldquo;:wq&rdquo;，回车执行
-
-【脚本执行】
-
-　　1、赋予执行权限，直接运行
+【tar】
 
 <div class="cnblogs_code">
-<pre>chmod 755 hello.sh
-./hello.sh</pre>
-</div>
-
-　　2、或者，可以通过bash调用执行脚本
-
-<div class="cnblogs_code">
-<pre>bash hello.sh</pre>
-</div>
-
-![linux_command14](https://pic.xiaohuochai.site/blog/linux_command14.png)
-
-
-&nbsp;
-
-### VIM
-
-　　VIM是linux系统中的编辑器，类似于windows系统中的记事本
-
-【操作模式】
-
-　　vim编辑器有三种模式：
-
-　　1、命令模式（等待用户输入命令）
-
-　　2、输入模式（等待用户向文本中输入内容）
-
-　　3、底行模式（可以输入一些指令）
-
-<div class="cnblogs_code">
-<pre>vim abc.sh 打开或创建并打开abc.sh文件</pre>
-</div>
-
-**i**
-
-　　进入vim之后，vim进入命令模式，这时敲击i键，可以把命令模式切换到输入模式，这时就可以输入内容了
-
-**ESC**
-
-　　在输入完成之后 ，敲击ESC键，可以把输入模式切换到底行模式，输入:wq即可保存退出
-
-【命令格式】
-
-<div class="cnblogs_code">
-<pre>vim + abc.sh 打开文件后将光标定位到文件的最后一行</pre>
+<pre>tar -cvf 打包文件名 源文件
+选项：
+-c 打包
+-v 显示过程
+-f 指定打包后的文件名</pre>
 </div>
 <div class="cnblogs_code">
-<pre>vim +3 abc.sh 打开文件后将光标定位到文件的第三行</pre>
-</div>
-<div class="cnblogs_code">
-<pre>vim +/123  abc.sh 打开文件后将光标定位到123第一次出现的那行，进入文件后，可以按n键使光标在多个123中切换</pre>
-</div>
-
-【常用指令】
-
-　　1、底行模式
-
-<div class="cnblogs_code">
-<pre>  :w    保存
-  :q    退出
-  :!    强制执行
-  :ls   列出当前编辑器中打开的所有文件
-  :n    切换到下一个文件
-  :N    切换到上一个文件
-  :15   光标快速定位到15行
-  /xxx  从光标位置开始向后搜索第一次出现xxx的行
-  ?xxx  从光标位置开始向前搜索第一次出现xxx的行</pre>
+<pre>tar -xvf 打包文件名
+选项：
+    -x: 解打包</pre>
 </div>
 
-　　2、命令模式
+　　其实，.tar.gz格式是先打包为.tar格式，再压缩为.gz格式
 
 <div class="cnblogs_code">
-<pre>  h  光标左移
-  j  光标下移
-  k  光标上移
-  l  光标右移
-  Ctrl+f  向下翻页(front)
-  Ctrl+b  向上翻页(back)
-  ctrl+d  向下翻半页(down)
-  Ctrl+u  向上翻半页(up)
-  dd  删除光标所在行
-  o  在光标所在行的下方插入一行并切换到输入模式
-  yy  复制光标所在的行
-  p  在光标所在行的下方粘贴
-  P  在光标所在行的上方粘贴</pre>
+<pre>tar -zcvf 压缩包名.tar.gz 源文件
+选项：
+    -z: 压缩为.tar.gz格式
+tar -zxvf 压缩包名.tar.gz
+选项：
+    -x: 解压缩.tar.gz格式</pre>
+</div>
+<div class="cnblogs_code">
+<pre>tar -jcvf 压缩包名.tar.bz2 源文件
+选项：
+    -z: 压缩为.tar.bz2格式
+tar -jxvf 压缩包名.tar.bz2
+选项：
+    -x: 解压缩.tar.bz2格式</pre>
+</div>
+
+【tar.xz】
+
+　　对于tar.xz文件来说，解压缩命令如下所示
+
+<div class="cnblogs_code">
+<pre>$xz -d ***.tar.xz
+$tar -xvf  ***.tar</pre>
+</div>
+
+【tgz】
+
+　　对于taz文件来说，解压缩命令如下所示
+
+<div class="cnblogs_code">
+<pre>$tar -zxvf  ***.tgz</pre>
 </div>
 
 &nbsp;
 
-### 输入输出
+### 挂载命令
 
+　　挂载就是指分配盘符
 
-![linux_command15](https://pic.xiaohuochai.site/blog/linux_command15.png)
-
-
-【输出重定向】
-
-
-![linux_command16](https://pic.xiaohuochai.site/blog/linux_command16.png)
-
-
-![linux_command17](https://pic.xiaohuochai.site/blog/linux_command17.png)
-
-
-【输入重定向】
+【查询与自动挂载】
 
 <div class="cnblogs_code">
-<pre>wc [选项] [文件名]
-    选项：
-        -c  统计字节数
-        -w  统计单词数
-        -l  统计行数</pre>
+<pre>mount
+#查询系统中已经挂载的设备
+
+mount -a
+#依据配置文件/etc/fstab的内容，自动挂载</pre>
 </div>
 
-　　命令&lt;文件把文件作为命令的输入
+【挂载命令格式】
 
-　　命令&lt;&lt;标识符把标识符之间的内容作为命令的输入
+<div class="cnblogs_code">
+<pre>mount [-t 文件系统] [-o 特殊选项] 设备文件名 挂载点
+选项：
+-t 文件系统： 加入文件系统类型来指定挂载的类型，可以ext3、ext4、iso9660等文件系统
+-o 特殊选项： 可以指定挂载的额外选项</pre>
+</div>
+
+![linux_com35](https://pic.xiaohuochai.site/blog/linux_com35.png)
+
+【挂载光盘】
+
+<div class="cnblogs_code">
+<pre>mkdir /mnt/cdrom/
+#建立挂载点
+
+mount -t iso9660 /dev/cdrom /mnt/cdrom/
+#挂载光盘
+
+mount /dev/sr0 /mnt/cdrom/</pre>
+</div>
+
+&nbsp;【卸载光盘】
+
+<div class="cnblogs_code">
+<pre>umount 设备名或挂载点
+
+umount /mnt/cdrom</pre>
+</div>
+
+【U盘挂载】
+
+<div class="cnblogs_code">
+<pre>fdist -l
+#查看U盘设备文件名
+mount -t vfat /dev/sdb1 /mnt/usb/</pre>
+</div>
+
+　　[注意]Linux默认是不支持NTFS文件系统的
 
 &nbsp;
 
-### 进程管理
+### 别名
 
-　　Linux 系统上有一个命令ps用来报告系统当前的进程状态
-
-<div class="cnblogs_code">
-<pre>$ ps aux</pre>
-</div>
-
-　　上面指令可以查看系统当前所有进程
+【alias】
 
 <div class="cnblogs_code">
-<pre>$ kill 1234</pre>
+<pre>alias
+#查看系统中所有的命令别名
+alias 别名= '原命令'
+#设定命令别名</pre>
 </div>
 
-　　上面指令可以强制关闭进程号为1234的进程
+![linux_com36](https://pic.xiaohuochai.site/blog/linux_com36.png)
+
+　　&nbsp;一般地，别名在用户注销或重新登录时就会失效。如果在长期使用，则需要将其写入环境变量配置文件中
 
 <div class="cnblogs_code">
-<pre>$ bg</pre>
+<pre>vi ~/.bashrc
+#写入环境变量配置文件
+
+unallias 别名
+#删除别名</pre>
 </div>
 
-　　上面指令让程序变成后台执行
+　　[注意]如果要彻底删除别名，需要修改配置文件
 
-<div class="cnblogs_code">
-<pre>$ fg</pre>
-</div>
+【命令生效顺序】
 
-　　上面指令让程序回到前台
+　　1、执行用绝对路径或相对路径执行的命令
+
+　　2、执行别名
+
+　　3、执行bash的内部命令
+
+　　4、执行按照$PASH环境变量定义的目录查找顺序找到的第一个命令
 
 &nbsp;
 
-### 磁盘管理
+### 历史命令
 
-【df】查看磁盘分区使用状况
-
-<div class="cnblogs_code">
-<pre>-I 仅显示本地磁盘(默认)
--a 显示所有文件系统的磁盘使用情况
--h 以1024进制计算最合适的单位显示磁盘容量
--H 以1000进制计算最合适的单位显示磁盘容量(新购买的U盘实际容量小于标识容量，是因为工业生产使用1000进制，而不是1024进制)
--T 显示磁盘分区类型
--t 显示指定类型文件系统的磁盘分区
--x 不显示指定类型文件系统的磁盘分区</pre>
-</div>
-
-![linux_command18](https://pic.xiaohuochai.site/blog/linux_command18.png)
-
-
-【du】统计磁盘上的文件大小
+【history】
 
 <div class="cnblogs_code">
-<pre>-b 以Byte为单位统计文件
--k 以KB为单位统计文件
--m 以MB为单位统计文件
--h 按照1024进制以最适合的单位统计文件
--H 按照1000进制以最适合的单位统计文件
--s 指定统计目标</pre>
+<pre>history [选项] [历史命令保存文件]
+选项：
+    -c: 清空历史命令
+    -w: 把缓存中的历史命令写入历史命令保存文件~/.bash_history</pre>
 </div>
 
-![linux_command19](https://pic.xiaohuochai.site/blog/linux_command19.png)
+【历史命令的调用】
 
+　　使用上下箭头调用以前的历史命令
 
-【MBR分区】
+　　使用"!n"重复执行第n条历史命令
 
-<div class="cnblogs_code">
-<pre>fdisk -l 查看当前磁盘分区</pre>
-</div>
+　　使用"!!"重复执行上一条命令
 
-![linux_command20](https://pic.xiaohuochai.site/blog/linux_command20.png)
-
-<div class="cnblogs_code">
-<pre>fdisk /dev/sdb 进入分区模式</pre>
-</div>
-
-![linux_command21](https://pic.xiaohuochai.site/blog/linux_command21.png)
-
-
-&nbsp;　　通过下面的命令为磁盘分得一个3GB的主分区
-
-
-![linux_command22](https://pic.xiaohuochai.site/blog/linux_command22.png)
-
-
-　　分配结束后，输入p命令来查看分区信息
-
-
-![linux_command23](https://pic.xiaohuochai.site/blog/linux_command23.png)
-
-
-　　最后输入w来保存并结束当前分区结果
-
-
-![linux_command24](https://pic.xiaohuochai.site/blog/linux_command24.png)
-
-
-&nbsp;【GPT分区】
-
-　　MBR分区的限制在于主分区不超过4个，单个分区容量最大为2TB。而GPT分区最多支持128个分区，单个分区容量最大为18EB
-
-<div class="cnblogs_code">
-<pre>1EB = 1024PB
-1PB = 1024TB
-1TB = 1024GB</pre>
-</div>
-
-　　GPT分区中，不适合安装X86架构的系统，即32位操作系统
-
-　　fdisk命令只适合于MBR分区，而parted命令同时适合于MBR分区和GPT分区
-
-　　[注意]下面分区从1M开始是为了保持4K对齐
-
-
-![linux_command25](https://pic.xiaohuochai.site/blog/linux_command25.png)
-
-
-【分区格式化】
-
-　　先使用ll /dev/sdb*来查看sdb的分区情况
-
-
-![linux_command26](https://pic.xiaohuochai.site/blog/linux_command26.png)
-
-
-　　使用mkfs命令来进行分区格式化
-
-　　[注意]扩展分区不能进行分区格式化
-
-<div class="cnblogs_code">
-<pre>mkfs .ext4 /dev/sdb1</pre>
-</div>
-
-【挂载】
-
-　　格式化后的分区必须进行挂载操作，才能使用。一般地，挂载在mnt目录下
-
-　　下面代码中，将sdb1挂载到mnt目录下的sdb1目录中
-
-<div class="cnblogs_code">
-<pre>mkdir -p /mnt/sdb1
-mount /dev/sdb1 /mnt/sdb1</pre>
-</div>
-
-　　通过mount命令挂载的分区不具有永久性，关机后失效。更好的方式是需要编辑etc目录下的fstab文件
-
-<div class="cnblogs_code">
-<pre>vim +  /etc/fstab</pre>
-</div>
-
-![linux_command27](https://pic.xiaohuochai.site/blog/linux_command27.png)
-
-
-　　这样一来，即使系统重启，也会进行自动挂载
-
-【swap交换分区】
-
-　　在linux中添加swap交换分区的步骤如下
-
-　　1、先建立一个linux普通分区 (用MBR建立)输入fdisk /dev/sdb
-
-　　2、修改分区类型的16进制：输入t，再输入该硬盘的分区号如6，再输入16进制的编码L。修改编码83，改为82（swap类型）输入w保存退出
-
-　　3、格式交换分区 mkswap /dev/sdb6
-
-　　4、启动分区 swapon /dev/sdb6
-
-　　5、关闭分区 swapoff /dev/sdb6
+　　使用"!字串"重复执行最后一条以该字串开头的命令
 
 &nbsp;
 
-### 用户管理
-
-　　linux允许多个用户在同一个时间登录同一个操作系统
-
-【group】
+### 快捷键
 
 <div class="cnblogs_code">
-<pre>/etc/group 存储当前系统中所有的用户组信息</pre>
-</div>
-<div class="cnblogs_code">
-<pre>  Group:      x    : 123  :abc,def,xyz
-  组名称:组密码占位符:组编号:组中用户名列表</pre>
-</div>
-
-　　当用户组名称与用户名相同时，可以省略用户名列表的信息
-
-　　组编号0为root，1-499为系统保留组编号，一般用于安装在系统中的软件或服务；用户手动创建的用户组从500开始
-
-
-![linux_command28](https://pic.xiaohuochai.site/blog/linux_command28.png)
-
-
-【gshadow】
-
-<div class="cnblogs_code">
-<pre>/etc/gshadow 存储当前系统中用户组的密码信息</pre>
-</div>
-<div class="cnblogs_code">
-<pre>Group:   *  :       : abc,def,xyz
-组名称:组密码:组管理者:组中用户名列表</pre>
-</div>
-
-　　该文件中的内容与group里面的内容一一对应
-
-
-![linux_command29](https://pic.xiaohuochai.site/blog/linux_command29.png)
-
-
-【passwd】
-
-<div class="cnblogs_code">
-<pre>/etc/passwd 存储当前系统中所有用户的信息</pre>
-</div>
-<div class="cnblogs_code">
-<pre> user:     x    :  123  :    456  :  xxxxxxx :/home/user:/bin/bash
-用户名:密码占位符:用户编号:用户组编号:用户注释信息:用户主目录:shell类型</pre>
-</div>
-
-![linux_command30](https://pic.xiaohuochai.site/blog/linux_command30.png)
-
-<div class="cnblogs_code">
-<pre>/etc/shadow存储当前系统中所有用户的密码信息</pre>
-</div>
-<div class="cnblogs_code">
-<pre> user :vf;/Zu8sdf...:::::
-用户名:     密码    :::::</pre>
-</div>
-
-![linux_command31](https://pic.xiaohuochai.site/blog/linux_command31.png)
-
-
-　　由于系统运行过程中，group和passwd这两个文件经常需要被读取，而密码又属于敏感数据，于是单独设置了gshadow和shadow来保存密码
-
-【基本命令】
-
-<div class="cnblogs_code">
-<pre>groupadd  用户组名 #创建用户组
-groupmod -n 新组名 原组名 #修改用户组名    
-groupmod -g 组编号 组名称 #修改组编号
-groupadd -g 组编号 组名称 #创建用户组并指定组编号
-groupdel 组名称 #删除用户组
-
-useradd -g 用户组 用户 #向指定用户组中添加用户
-useradd -d 文件夹 用户 #创建用户并指定用户的个人文件夹
-usermod -c 备注信息 用户 #给用户添加备注信息
-usermod -l 新用户 原用户 #修改用户名
-usermod -g 目标用户组名 用户 #切换用户组
-userdel 用户名 #删除用户
-userdel -r 用户名 #删除用户及对应的个人文件夹
-touch /etc/nologin #禁止除root外的用户登录服务器
-passwd abc #给用户adc设置密码</pre>
-</div>
-
-　　[注意]在centos系统下，使用useradd会默认在home目录下，新增一个与用户名同名的目录。如果是ubuntu系统，默认不创建目录，如果需要则添加-m参数
-
-【进阶命令】
-
-<div class="cnblogs_code">
-<pre>passwd -l 用户名 #锁定用户 禁用
-passwd -u 用户名 #解锁用户
-passwd -d 用户名 #清除用户密码，可以无密码登录</pre>
-</div>
-
-　　用户可以同时属于多个组，一个是主要组，其他的为附属组
-
-<div class="cnblogs_code">
-<pre>gpasswd -a 用户名 附属组，附属组，..... #添加附属组</pre>
-</div>
-
-　　用户创建的文件默认为主要组；需要以附属组创建文件的，需将身份切换到附属组
-
-<div class="cnblogs_code">
-<pre>newgrp 附属组名称 #切换附属组</pre>
-</div>
-
-　　[注意]需要用户登录后，自己执行，切换，组密码是在组切换时用的，如果有，会要求输入组密码
-
-<div class="cnblogs_code">
-<pre>gpasswd -d 用户名 附属组 #删除附属组</pre>
-</div>
-<div class="cnblogs_code">
-<pre>useradd -g group1 -G group2,group3,.... #创建用户同时指定主要组和附属组</pre>
-</div>
-<div class="cnblogs_code">
-<pre>gpasswd 用户组 #设定组密码</pre>
-</div>
-
-　　[注意]输入后回车，会有提示让输入密码
-
-<div class="cnblogs_code">
-<pre>su username #切换当前用户身份，su后不加参数切换到root
-sudo su #切换到root用户
-whoami #显示当前登录用户名
-id 用户名 #显示制定用户信息，包括用户编号，用户名，主要组编号及名称，附属组列表
-groups 用户名 #显示用户所在的所有组
-chfn 用户名 #设置用户资料
-finger 用户名  #显示用户详细资料</pre>
-</div>
-
-&nbsp;
-
-### 端口设置
-
-　　查看某个端口被占用情况
-
-<div class="cnblogs_code">
-<pre>lsof -i:8081</pre>
-</div>
-
-![linux_command32](https://pic.xiaohuochai.site/blog/linux_command32.png)
-
-
-　　然后使用kill -9命令来结束进程
-
-<div class="cnblogs_code">
-<pre>kill -9 18446</pre>
+<pre>ctrl+l 清屏
+ctrl+c 强制终止当前命令
+ctrl+a 光标移动到命令行首
+ctrl+e 光标移动到命令行尾
+ctrl+u 从光标所在位置删除到行首
+ctrl+z 把命令放入后台
+ctrl+r 在历史命令中搜索
+一次tab 补全
+两次tab 提示
+shift+pageup 向上翻页
+shift+pagedown 向下翻页</pre>
 </div>
 
