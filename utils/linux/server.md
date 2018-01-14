@@ -347,7 +347,7 @@ server{
 
 　　我个人是在七牛申请并设置的SSL证书，非常方便
 
-&nbsp;　　首先，进入七牛的SSL证书购买界面，选择免费证书进行购买
+　　首先，进入七牛的SSL证书购买界面，选择免费证书进行购买
 
 
 ![linux_server15](https://pic.xiaohuochai.site/blog/linux_server15.png)
@@ -385,7 +385,75 @@ server{
 ![linux_server20](https://pic.xiaohuochai.site/blog/linux_server20.png)
 
 
-&nbsp;
+【证书配置】
+
+　　配置下发后，如果要nginx服务器下配置SSL证书，则需要下载相关的证书
+
+　　点击下载证书
+
+![linux_ssl1](https://pic.xiaohuochai.site/blog/linux_ssl1.png)
+
+
+　　然后，选择相应的证书并确认
+
+![linux_ssl2](https://pic.xiaohuochai.site/blog/linux_ssl2.png)
+
+
+　　下载到本地后，解压缩
+
+![linux_ssl3](https://pic.xiaohuochai.site/blog/linux_ssl3.png)
+
+
+　　然后将这两个文件上传到服务器中的`www/mall/crt`目录下
+
+![linux_ssl4](https://pic.xiaohuochai.site/blog/linux_ssl4.png)
+
+
+　　修改test-8081.conf配置文件的内容如下
+
+```
+upstream mi {
+        server 127.0.0.1:3000;
+}
+server{
+        listen 80;
+        server_name mi.xiaohuochai.shop;
+        return 301 https://mi.xiaohuochai.shop$request_uri;
+}
+server{
+        listen 443;
+        server_name mi.xiaohuochai.shop;
+        ssl on;
+        ssl_certificate /home/xiaohuochai/www/mall/crt/mi.xiaohuochai.shop.crt;
+        ssl_certificate_key /home/xiaohuochai/www/mall/crt/mi.xiaohuochai.shop.key;
+        ssl_session_timeout 5m;
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_prefer_server_ciphers on;
+        if ($ssl_protocol = "") {
+                rewrite ^(.*)https://$host$1 permanent;
+        }
+        location / {
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-Nginx-Proxy true;
+                proxy_pass http://mi;
+                proxy_redirect off;
+        }
+}                                                                
+```
+　　使用sudo nginx -t命令进行测试
+
+![linux_ssl5](https://pic.xiaohuochai.site/blog/linux_ssl5.png)
+
+
+　　测试成功后，重启nginx服务即可
+
+![linux_ssl6](https://pic.xiaohuochai.site/blog/linux_ssl6.png)
+
+
+　　　　&nbsp;
 
 ### PM2部署
 
