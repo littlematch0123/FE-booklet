@@ -607,5 +607,20 @@
         * [标签管理](utils/version/tag.md) 
         * [常用命令](utils/version/command.md) 
         * [要点](utils/version/point.md) 
+    * Linux
+        * [CMD](utils/linux/cmd.md) 
+        * [常用命令](utils/linux/command.md) 
+        * [常用操作](utils/linux/operation.md) 
+        * [系统安装](utils/linux/systemSetup.md) 
+        * [软件安装](utils/linux/softSetup.md) 
+        * [nodeJS和MongoDB安装](utils/linux/nodeJSAndMongoDB.md) 
+        * [云服务器常用设置](utils/linux/server.md) 
+    * 辅助工具
+        * [sublime](utils/helper/sublime.md) 
+        * [chrome调试工具](utils/helper/chrome.md) 
+        * [电脑常见问题处理](utils/helper/common.md) 
+        * [markdown](utils/helper/markdown.md) 
+        * [sass](utils/helper/sass.md) 
+        * [gitbook](utils/helper/gitbook.md) 
 * [参考资料](Resources.md)
 
