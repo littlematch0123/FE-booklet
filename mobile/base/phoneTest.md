@@ -99,6 +99,9 @@ div{
 
 ![mobile_phoneTest5](https://pic.xiaohuochai.site/blog/mobile_phoneTest5.jpg)
 
+　　[注意]如果网页中显示Cannot get/，是因为在项目目录下找不到默认首页index.html
+
+
 ### 移动端设置
 
 　　若使用移动端则首先先保证移动端设备和桌面端设备处于同一局域网(一般地，都连入一个路由器即可)。而且，移动端无法访问localhost，需要查找电脑的内网ip。通过在命令行中输入ipconfig，查看ip地址为192.168.1.100。所以手机端访问的地址为`http://192.168.1.100:3000`
