@@ -40,16 +40,16 @@ String.toString();//"function String() { [native code] }"</pre>
 <pre>Number.toString();//"function Number() { [native code] }"</pre>
 </div>
 
-　　1、正浮点数及NaN、Infinity、-Infinity加引号返回
+　　1、正浮点数及NaN、Infinity加引号返回
 
 <div class="cnblogs_code">
 <pre>1.23.toString();//'1.23'
 NaN.toString();//'NaN'
 Infinity.toString();//'Infinity'
--Infinity.toString();//'-Infinity'</pre>
+</pre>
 </div>
 
-　　2、负浮点数或加'+'号的正浮点数直接跟上.toString()，toString()无效并返回原数值
+　　2、负浮点数或加'+'号的正浮点数直接跟上.toString()，相当于先运行toString()方法，再添加正负号，转换为数字
 
 <div class="cnblogs_code">
 <pre>+1.23.toString();//1.23
