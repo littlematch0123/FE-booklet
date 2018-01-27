@@ -430,7 +430,13 @@ module.exports = {
 
 ### 插件
 
-　　插件是wepback的支柱功能。在使用webpack配置时，webpack自身也构建于同样的插件系统上。插件目的在于解决loader无法实现的其他事情。由于loader仅在每个文件的基础上执行转换，而插件(plugins)最常用于（但不限于）在打包模块的&ldquo;compilation&rdquo;和&ldquo;chunk&rdquo;生命周期执行操作和自定义功能。webpack的插件系统极其强大和可定制化。
+　　插件是wepback的支柱功能。在使用webpack配置时，webpack自身也构建于同样的插件系统上。插件目的在于解决loader无法实现的其他事情。由于loader仅在每个文件的基础上执行转换，而插件(plugins)最常用于（但不限于）在打包模块的&ldquo;compilation&rdquo;和&ldquo;chunk&rdquo;生命周期执行操作和自定义功能，包括打包优化压缩及配置编译时的变量等功能。webpack的插件系统极其强大和可定制化。
+
+　　常用的plugin插件包括以下两类：
+
+　　1、优化相关：commonsChunkPlugin、UglifyjsWbpackPlugin
+
+　　2、功能相关：ExtractTextWebpackPlugin、HtmlWebpackPlugin、HotModuleReplacementPlugin、CopyWebpackPlugin
 
 　　想要使用一个插件，只需要require()它，然后把它添加到plugins数组中。多数插件可以通过选项(option)自定义。也可以在一个配置文件中因为不同目的而多次使用同一个插件，需要使用new创建实例来调用它
 
