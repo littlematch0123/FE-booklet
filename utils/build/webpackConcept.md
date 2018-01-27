@@ -484,3 +484,5 @@ var config = {
 };
 module.exports = config;</pre>
 </div>
+
+　　最后，介绍两个webpack中常见的名词：chunk和bundle。chunk是指代码块，而bundle是指打包后的代码
