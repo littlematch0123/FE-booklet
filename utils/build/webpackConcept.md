@@ -294,6 +294,14 @@ output: {
 
 　　webpack的配置要能识别出(identify)应该被对应的loader进行转换(transform)的那些文件。由于进行过文件转换，所以能够将被转换的文件添加到依赖图表(并且最终添加到bundle中)(use属性)
 
+　　常见的加载器loader包括以下三类：
+
+　　1、编译相关：babel-loader、ts-loader
+
+　　2、样式相关：style-loader、css-loader、less-loader、postcss-loader
+
+　　3、文件相关：file-loader、url-loader
+
 <div class="cnblogs_code">
 <pre>var path = require('path');
 var config = {
