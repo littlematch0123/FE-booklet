@@ -122,7 +122,7 @@ sel.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 400px;" src="{{book.demo}}/http/h2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 400px;" src="https://demo.xiaohuochai.site/http/h2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -265,5 +265,5 @@ targetArea.ondrop = function(e){
 &lt;/script&gt;  </pre>
 </div>
 
-<iframe style="width: 100%; height: 260px;" src="{{book.demo}}/http/h1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/http/h1.html" frameborder="0" width="320" height="240"></iframe>
 
