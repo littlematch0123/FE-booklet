@@ -52,6 +52,14 @@
 <pre>$ npm install webpack -g</pre>
 </div>
 
+　　如果热衷于使用最新版本的 webpack，可以使用以下命令，直接从 webpack 的仓库中安装
+
+```
+npm install webpack@beta
+```
+
+　　安装最新体验版本时要小心！它们可能仍然包含 bug，因此不应该用于生产环境
+
 &nbsp;
 
 ### 使用
