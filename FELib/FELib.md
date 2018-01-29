@@ -1,6 +1,6 @@
 # 前端框架知识结构
 
-小火柴的前端框架包括jQuery、Bootstrap这几部分
+小火柴的前端框架包括jQuery、Bootstrap、Vue这几部分
 
 * jQuery
   * 基础
@@ -77,3 +77,41 @@
     * [手风琴效果](bs/plug/collapse.md)
     * [图片轮播](bs/plug/carousel.md)
     * [自动定位浮标](bs/plug/affix.md)      
+* Vue
+  * 基础
+      * [入门基础](vue/base/base.md) 
+      * [实例对象的数据选项](vue/base/dataOption.md)
+      * [实例生命周期](vue/base/lifecycle.md)
+      * [自定义指令](vue/base/customDirectives.md)
+      * [响应式原理](vue/base/reactivity.md)
+      * [渲染函数](vue/base/renderFunctions.md)
+      * [vue-cli](vue/base/vue-cli.md)
+  * 模板语法
+      * [模板内容](vue/template/templateContent.md)
+      * [模板逻辑](vue/template/templateLogic.md)  
+      * [数组更新及过滤排序](vue/template/listRendering.md)
+      * [事件处理](vue/template/eventHandling.md)
+      * [表单控件绑定](vue/template/formInputBindings.md)
+  * 组件
+      * [基础用法](vue/components/base.md)
+      * [组件选项props](vue/components/props.md)
+      * [自定义事件](vue/components/customEvents.md)
+      * [内容分发slot](vue/components/slot.md)
+      * [动态组件](vue/components/dynamicComponents.md)
+      * [组件实例间的直接访问](vue/components/DirectAccess.md)
+      * [单文件组件](vue/components/singleFile.md)
+  * 过渡
+      * [CSS过渡](vue/transition/css.md) 
+      * [JS过渡](vue/transition/js.md) 
+      * [多元素过渡](vue/transition/elements.md) 
+      * [列表过渡](vue/transition/list.md) 
+      * [可复用过渡和动态过渡](vue/transition/others.md) 
+      * [过渡状态](vue/transition/state.md) 
+  * 插件
+      * [混合mixins](vue/plug/mixins.md) 
+      * [基本操作](vue/plug/base.md) 
+      * [Vue-router](vue/plug/Vue-router.md) 
+      * [Vue-router的API](vue/plug/Vue-routerAPI.md) 
+      * [Vuex](vue/plug/Vuex.md) 
+      * [Vuex的API](vue/plug/VuexAPI.md) 
+      * [axios](vue/plug/axios.md)     
