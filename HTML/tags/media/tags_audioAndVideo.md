@@ -29,7 +29,7 @@ src              要播放的音频的URL        </pre>
 
 　　&lt;演示框&gt;点击下列相应属性值可进行演示
 
-<iframe style="width: 100%; height: 150px;" src="{{book.demo}}/html/movie/m2.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/html/movie/m2.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -54,7 +54,7 @@ poster        　　　 规定视频下载时显示的图像，或者在用户�
 
 　　&lt;演示框&gt;点击下列相应属性值可进行演示
 
-<iframe style="width: 100%; height: 320px;" src="{{book.demo}}/html/movie/m33.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/html/movie/m33.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -246,7 +246,7 @@ console.log(audio.canPlayType('video/ogg;codecs="theora,vorbis"'));
 
 　　&lt;演示框&gt;点击下列相应属性值可进行演示
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/html/movie/m4.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/html/movie/m4.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -266,7 +266,7 @@ buffered.end(0)//获取当前已缓冲的秒数</pre>
 </div>
 <div class="cnblogs_code">
 <pre>&lt;button&gt;获取缓冲时间&lt;/button&gt;
-&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 var oBtn = document.getElementsByTagName('button')[0];
 oBtn.onclick = function(){
@@ -275,17 +275,17 @@ oBtn.onclick = function(){
 &lt;/script&gt;    </pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/html/movie/m5.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/html/movie/m5.html" frameborder="0" width="320" height="240"></iframe>
 
 2、currentSrc
 
  　　返回当前音频或视频的URL
 
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 var audio = document.getElementById('audio');
-//{{book.demo}}/myocean.mp3
+//https://demo.xiaohuochai.site/myocean.mp3
 setInterval(function(){
     console.log(audio.currentSrc);    
 },1000); 
@@ -297,7 +297,7 @@ setInterval(function(){
 　　返回音频或视频是否已结束
 
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 document.onclick = function(){
     console.log(audio.ended);
@@ -310,7 +310,7 @@ document.onclick = function(){
 　　返回当前音频或视频的长度(以秒计)，如果未设置则返回NaN
 
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 //NaN
 <span>console.log(audio.duration);
@@ -331,7 +331,7 @@ networkState:2(正在下载数据)
 networkState:3(未找到资源来源)</pre>
 </div>
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 //3
 console.log(audio.networkState)
@@ -351,7 +351,7 @@ document.onclick = function(){
 paused:false;(未暂停)    </pre>
 </div>
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 console.log(audio.paused)
 document.onclick = function(){
@@ -373,7 +373,7 @@ played.end(index)(获得某个已播范围的结束位置)</pre>
  　　[注意]首段已播范围的下标是0
 
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 document.onclick = function(){
     console.log(audio.played.end(0));
@@ -393,7 +393,7 @@ readyState:3(当前及至少下一帧的数据是可用的)
 readyState:4(可用数据足以开始播放)</pre>
 </div>
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 //0
 console.log(audio.readyState);
@@ -414,7 +414,7 @@ seekable.start(index)(获得可寻址范围的开始位置)
 seekable.end(index)(获得可寻址范围的结束位置)</pre>
 </div>
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 document.onclick = function(){
     console.log(audio.seekable.end(0));
@@ -429,7 +429,7 @@ document.onclick = function(){
 seeking:false(用户没有在寻址)</pre>
 </div>
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 audio.onseeking = function(){
     console.log(audio.seeking);    
@@ -462,7 +462,7 @@ controls:true(显示控件)</pre>
 　　设置或返回音频或视频的当前位置(以秒计)
 
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 var audio = document.getElementById('audio');
 document.onclick = function(){
@@ -491,10 +491,10 @@ muted:false(不静音)</pre>
 </div>
 <div class="cnblogs_code">
 <pre>&lt;button onclick="audio.muted = !audio.muted"&gt;音量开关&lt;/button&gt;
-&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;</pre>
+&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/html/movie/m6.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/html/movie/m6.html" frameborder="0" width="320" height="240"></iframe>
 
 7、defaultPlaybackRate
 
@@ -523,7 +523,7 @@ playbackRate:-1(向后正常速度)
 playbackRate:-0.5(向后半速)</pre>
 </div>
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 var array = [-1,-0.5,0.5,1,2];
 var i = 0;
@@ -560,12 +560,12 @@ preload:none;(页面加载后不加载音频或视频)</pre>
 　　设置或返回音频或视频的当前来源
 
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 console.log(audio.src);
 document.onclick = function(){
     console.log(audio.src);
-    audio.src = '{{book.demo}}/song.mp3';
+    audio.src = 'https://demo.xiaohuochai.site/song.mp3';
     audio.load();
     console.log(audio.src);
 }    
@@ -582,10 +582,10 @@ document.onclick = function(){
 <div class="cnblogs_code">
 <pre>&lt;button onclick = "if(audio.volume&lt;=0.9)audio.volume+=0.1;"&gt;增大音量&lt;/button&gt;
 &lt;button onclick = "if(audio.volume&gt;=0.1)audio.volume-=0.1;"&gt;减小音量&lt;/button&gt;
-&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;</pre>
+&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 60px;" src="{{book.demo}}/html/movie/m7.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/html/movie/m7.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -604,7 +604,7 @@ canplaythrough:提示音频或视频能够不停顿地一直播放
 progress:提示浏览器正在下载指定的音频或视频</pre>
 </div>
 <div class="cnblogs_code">
-<pre>&lt;audio id="audio" src="{{book.demo}}/myocean.mp3" controls&gt;&lt;/audio&gt;
+<pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;    
 audio.onloadstart = function(){
     console.log('loadstart');
@@ -641,7 +641,7 @@ empted:在发生故障并且文件突然不可用时触发
 </pre>
 </div>
 <div class="cnblogs_code">
-<pre>&lt;video id="video" src="{{book.demo}}/movie.mp4" controls&gt;&lt;/video&gt;
+<pre>&lt;video id="video" src="https://demo.xiaohuochai.site/movie.mp4" controls&gt;&lt;/video&gt;
 &lt;script&gt;
 setTimeout(function(){
     video.src='';
@@ -738,7 +738,7 @@ audio.onwaiting = function(){
 </div>
 <div class="cnblogs_code">
 <pre>&lt;script&gt;
-var audio = new Audio('{{book.demo}}/honey.mp3');
+var audio = new Audio('https://demo.xiaohuochai.site/honey.mp3');
 audio.oncanplaythrough = function(){
     audio.controls = true;
     document.body.appendChild(audio);
