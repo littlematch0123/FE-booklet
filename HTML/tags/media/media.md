@@ -226,5 +226,5 @@ valuetype    规定值的MIME类型(data/ref/object)</pre>
 &lt;/video&gt;</pre>
 </div>
 
-<iframe style="width: 100%; height: 300px;" src="{{book.demo}}/html/movie/m1.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/html/movie/m1.html" frameborder="0" width="320" height="240"></iframe>
 
