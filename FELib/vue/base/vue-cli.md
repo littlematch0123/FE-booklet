@@ -167,7 +167,6 @@ $ npm install</pre>
 ![vue_base_vueCli9](https://pic.xiaohuochai.site/blog/vue_base_vueCli9.png)
 
 
-&nbsp;
 
 　　打开app.vue文件，在模板中加入&lt;p&gt;小火柴的蓝色理想&lt;/p&gt;&nbsp;这一行代码，并保存
 
