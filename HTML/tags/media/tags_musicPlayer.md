@@ -10,7 +10,7 @@
 
 ### 效果展示
 
-<iframe src="{{book.demo}}/html/movie/m8.html" frameborder="0" width="320" height="200"></iframe>
+<iframe src="https://demo.xiaohuochai.site/html/movie/m8.html" frameborder="0" width="320" height="200"></iframe>
 
 &nbsp;
 
