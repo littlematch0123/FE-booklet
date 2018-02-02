@@ -1,4 +1,4 @@
-# 变量variable
+# CSS变量variable
 
 　　一直以来，CSS中是没有变量而言的，要使用 CSS 变量，只能借助 SASS 或者 LESS 这类预编译器。新的草案发布之后，直接在 CSS 中定义和使用变量不再是幻想了。本文将详细介绍CSS变量variable
 
