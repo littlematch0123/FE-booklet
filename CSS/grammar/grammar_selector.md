@@ -1,4 +1,4 @@
-# 选择器
+# CSS选择器
 
 　　CSS的一个核心特性是能向文档中的一组元素类型应用某些规则，本文将详细介绍CSS选择器
 
@@ -10,7 +10,7 @@
 
 　　星号*代表通配选择器，可以与任何元素匹配
 
-<div class="cnblogs_code">
+<div>
 <pre>*{color: red;}</pre>
 </div>
 
@@ -20,7 +20,7 @@
 
 　　文档的元素是最基本的选择器
 
-<div class="cnblogs_code">
+<div>
 <pre>html{color: black;}
 p{color: gray;}
 h2{color: silver;}    </pre>
@@ -32,19 +32,19 @@ h2{color: silver;}    </pre>
 
 　　类选择器用于选择一类元素
 
-<div class="cnblogs_code">
+<div>
 <pre>.div{color: red;}</pre>
 </div>
 
 　　1、多类选择器
 
-<div class="cnblogs_code">
+<div>
 <pre>.div1.div2{color: red;}</pre>
 </div>
 
 　　2、结合元素的类选择器
 
-<div class="cnblogs_code">
+<div>
 <pre>p.div{color: red;}</pre>
 </div>
 
@@ -54,7 +54,7 @@ h2{color: silver;}    </pre>
 
 　　ID选择器用于选择一个元素
 
-<div class="cnblogs_code">
+<div>
 <pre>#test{color: red;}</pre>
 </div>
 
@@ -62,7 +62,7 @@ h2{color: silver;}    </pre>
 
 　　1、结合元素的ID选择器
 
-<div class="cnblogs_code">
+<div>
 <pre>div#test{color: red;}</pre>
 </div>
 
@@ -74,7 +74,7 @@ h2{color: silver;}    </pre>
 
 　　1、简单属性选择器
 
-<div class="cnblogs_code">
+<div>
 <pre>h1[class]{color: red;}
 img[alt]{color: red;}
 a[href][title]{color: red;}
@@ -85,37 +85,37 @@ a[href][title]{color: red;}
 
 　　2、具体属性选择器
 
-<div class="cnblogs_code">
+<div>
 <pre>a[href="http://www.baidu.com"][title="baidu"] {color: red;}    </pre>
 </div>
 
 　　class里面的值以及顺序必须完全相同，并且不可多空格或者少空格
 
-<div class="cnblogs_code">
+<div>
 <pre>[class="test box"]{color: red;}</pre>
 </div>
 
 　　ID选择器和指定id属性的属性选择器并不是一回事，主要在于优先级不同
 
-<div class="cnblogs_code">
+<div>
 <pre>[id="tox"]{color: red;}    </pre>
 </div>
 
 　　3、部分属性选择器
 
-<div class="cnblogs_code">
+<div>
 <pre>[class ~="b"] 选择class属性值在用空格分隔的词列表中包含词语"b"的所有元素</pre>
 </div>
 
 <span>　　例如：class="ab"不满足[class ~="b"]，而class="a b"或class="b"满足
 
-<div class="cnblogs_code">
+<div>
 <pre>[class |="b"] 选择class属性值等于b或以b-开头的所有元素</pre>
 </div>
 
 　　例如：class="ab"或class="ab-"不满足[class |="a"]，而class="a"或class="a-"满足
 
-<div class="cnblogs_code">
+<div>
 <pre>[class ^="b"] 选择class属性值以"b"开头的所有元素
 [class $="b"] 选择class属性值以"b"结尾的所有元素
 [class *="b"] 选择class属性值包含"b"的所有元素  
@@ -130,7 +130,7 @@ a[href][title]{color: red;}
 
 　　将要分组的选择器放在规则左边，并用逗号隔开
 
-<div class="cnblogs_code">
+<div>
 <pre>h1,p{color: red;}</pre>
 </div>
 
@@ -138,14 +138,14 @@ a[href][title]{color: red;}
 
 ### 后代选择器
 
-<div class="cnblogs_code">
+<div>
 <pre>ul li{color: red;}
 div p, ul li{color: red;}</pre>
 </div>
 
 　　1、子元素选择器(IE6-不支持)
 
-<div class="cnblogs_code">
+<div>
 <pre>ul &gt; li{color: red;}</pre>
 </div>
 
@@ -155,7 +155,7 @@ div p, ul li{color: red;}</pre>
 
 　　1、相邻兄弟选择器(IE6-不支持)
 
-<div class="cnblogs_code">
+<div>
 <pre>div + p{color: red;}    </pre>
 </div>
 
@@ -165,7 +165,7 @@ div p, ul li{color: red;}</pre>
 
 　　选择匹配的F元素，且位于匹配的E元素后的所有匹配的同级F元素
 
-<div class="cnblogs_code">
+<div>
 <pre>div ~ p {color:red;}</pre>
 </div>
 
@@ -181,7 +181,7 @@ div p, ul li{color: red;}</pre>
 
 　　[注意]visited伪类只能设置字体颜色、边框颜色、outline颜色的样式
 
-<div class="cnblogs_code">
+<div>
 <pre>:link       未访问
 :visited    已访问
 a:link{color: red;}
@@ -190,7 +190,7 @@ a:visited{color: green;}</pre>
 
 　　2、动态伪类(可应用于任何元素)
 
-<div class="cnblogs_code">
+<div>
 <pre>:focus     拥有焦点(IE7-不支持)
 :hover     鼠标停留(IE6-不支持给&lt;a&gt;以外的其他元素设置伪类)
 :active    正被点击(IE7-不支持给&lt;a&gt;以外的其他元素设置伪类)</pre>
@@ -200,19 +200,19 @@ a:visited{color: green;}</pre>
 
 　　匹配锚点对应的目标元素
 
-<div class="cnblogs_code">
+<div>
 <pre>:target{color: red;}
 #test :target{color: red;}//id为test的目标元素</pre>
 </div>
 
 　　4、UI元素伪类(IE8-不支持)
 
-<div class="cnblogs_code">
+<div>
 <pre>:enabled    可用状态
 :disabled    不可用状态
 :checked    选中状态</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>input:enabled{color: red}</pre>
 </div>
 
@@ -220,7 +220,7 @@ a:visited{color: green;}</pre>
 
 　　5、结构伪类(IE8-不支持)
 
-<div class="cnblogs_code">
+<div>
 <pre>
 E:first-child(IE6-不支持) 父元素的第一个子元素,且该子元素是E，与E:nth-child(1)等同
 E:last-child(IE6-不支持) 父元素的最后一个子元素，且该子元素是E，与E:nth-last-child(1)等同
@@ -239,7 +239,7 @@ E:empty			选择没有子元素的元素，而且该元素也不包含任何文�
 
 　　[注意]n可以是整数(从1开始)，也可以是公式，也可以是关键字(even、odd)
 
-<div class="cnblogs_code">
+<div>
 <pre>p:first-child    代表的并不是&lt;p&gt;的第一个子元素，而是&lt;p&gt;元素是某元素的第一个子元素
 p &gt; i:first-child    匹配所有&lt;p&gt;元素中的第一个&lt;i&gt;元素
 p:first-child i 匹配所有作为第一个子元素的&lt;p&gt;元素中的所有&lt;i&gt;元素</pre>
@@ -247,13 +247,13 @@ p:first-child i 匹配所有作为第一个子元素的&lt;p&gt;元素中的所�
 
 　　6、:lang 相当于|=属性选择器(IE7-不支持)
 
-<div class="cnblogs_code">
+<div>
 <pre>p:lang(en) 匹配语言为"en"的&lt;p&gt;</pre>
 </div>
 
 　　7、伪类的结合
 
-<div class="cnblogs_code">
+<div>
 <pre>a:visited:hover:first-child{color: black;}</pre>
 </div>
 
@@ -271,7 +271,7 @@ p:first-child i 匹配所有作为第一个子元素的&lt;p&gt;元素中的所�
 
 　　所有前导标点符号应与第一个字母一同应用该样式；只能与块级元素关联；只有当选择器部分和左大括号之间有空格时，IE6-浏览器才支持。因为first-letter中存在连接符的原因
 
-<div class="cnblogs_code">
+<div>
 <pre>p:first-letter {color: red;}    </pre>
 </div>
 
@@ -279,7 +279,7 @@ p:first-child i 匹配所有作为第一个子元素的&lt;p&gt;元素中的所�
 
 　　只能与块级元素关联；只有当选择器部分和左大括号之间有空格时，IE6-浏览器才支持。因为first-line中存在连接符的原因
 
-<div class="cnblogs_code">
+<div>
 <pre>p:first-line{color: red;}    </pre>
 </div>
 
@@ -287,7 +287,7 @@ p:first-child i 匹配所有作为第一个子元素的&lt;p&gt;元素中的所�
 
 　　默认这个伪元素是行内元素，继承元素可继承的属性；所有元素都必须放在出现该伪元素的选择器的最后面。若写成 p:before em 就是不合法的
 
-<div class="cnblogs_code">
+<div>
 <pre>p:before{content:"text"}</pre>
 </div>
 
@@ -295,7 +295,7 @@ p:first-child i 匹配所有作为第一个子元素的&lt;p&gt;元素中的所�
 
 　　默认这个伪元素是行内元素，继承元素可继承的属性
 
-<div class="cnblogs_code">
+<div>
 <pre>p:after{content:"text"}</pre>
 </div>
 
@@ -303,6 +303,21 @@ p:first-child i 匹配所有作为第一个子元素的&lt;p&gt;元素中的所�
 
 　　目前selection只支持color和background两个属性，且只支持双冒号写法(IE8-浏览器不支持)
 
-<div class="cnblogs_code">
+<div>
 <pre>::-moz-selection 　　 firefox浏览器需要添加前缀</pre>
 </div>
+
+### 根元素选择器
+
+　　单独把它拿出来讲，是因为其特殊性。根元素选择器:root用来选择HTML元素，但由于其实质是伪类选择器，所以其优先级更高。在HTML上设置的样式，如果在:root上也设置了同样的样式，则会被覆盖
+
+　　下面是一个例子，常说的rem单位是以根元素的font-size为标准的
+
+<div>
+<pre>html{font-size:20px;}
+:root{font-size:30px;}</pre>
+</div>
+
+　　上面的代码中，最终1rem=30px
+
+&nbsp;
