@@ -22,7 +22,7 @@
 }</pre>
 </div>
 
-　　变量声明就像变普通的样式声明语句一样，也可以使用内联样式
+　　变量声明就像普通的样式声明语句一样，也可以使用内联样式
 
 <div class="cnblogs_code">
 <pre>&lt;body style="--bgColor:#000"&gt;</pre>
