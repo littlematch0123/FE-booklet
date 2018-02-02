@@ -91,3 +91,10 @@
 ![helper_common8](https://pic.xiaohuochai.site/blog/helper_common8.png)
 
 
+### vscode
+
+　　有时，vscode会出现CPU利用率100%的情况，两个rg.exe占用了全部的CPU。解决办法如下
+
+　　文件&gt;首选项&gt;设置, 搜索设置 search.followSymlinks ：false；
+
+&nbsp;
