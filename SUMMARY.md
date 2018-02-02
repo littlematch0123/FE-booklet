@@ -51,6 +51,7 @@
         1. 基础语法
             * [引入CSS](CSS/grammar/grammar_intro.md)
             * [选择器](CSS/grammar/grammar_selector.md)
+            * [选择器新用法](CSS/grammar/grammar_selectorNew.md)
             * [层叠](CSS/grammar/grammar_cascading.md)
             * [单位](CSS/grammar/grammar_Unit.md)
             * [样式关键字](CSS/grammar/grammar_keywords.md)

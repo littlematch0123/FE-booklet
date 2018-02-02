@@ -10,7 +10,7 @@
       1. 基础语法
           * [引入CSS](grammar/grammar_intro.md)
           * [选择器](grammar/grammar_selector.md)
-          * [选择器](grammar/grammar_selectorNew.md)
+          * [选择器新用法](grammar/grammar_selectorNew.md)
           * [层叠](grammar/grammar_cascading.md)
           * [单位](grammar/grammar_Unit.md)
           * [样式关键字](grammar/grammar_keywords.md)
