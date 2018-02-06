@@ -32,13 +32,13 @@
 
 　　有了package.json文件，直接使用npm install命令，就会在当前目录中安装所需要的模块
 
-<div class="cnblogs_code">
+<div>
 <pre>$ npm install</pre>
 </div>
 
 　　如果一个模块不在`package.json`文件之中，可以单独安装这个模块，并使用相应的参数，将其写入`package.json`文件之中
 
-<div class="cnblogs_code">
+<div>
 <pre>$ npm install express --save
 $ npm install express --save-dev</pre>
 </div>
@@ -53,15 +53,34 @@ $ npm install express --save-dev</pre>
 
 　　package.json文件可以手工编写，也可以使用`npm init`命令自动生成
 
-<div class="cnblogs_code">
+<div>
 <pre>$ npm init</pre>
 </div>
 
-　　这个命令采用互动方式，要求用户回答一些问题，然后在当前目录生成一个基本的package.json文件。所有问题之中，只有项目名称（name）和项目版本（version）是必填的，其他都是选填的
+　　这个命令采用互动方式，要求用户回答一些问题，然后在当前目录生成一个基本的package.json文件
+
+　　[注意]npm init -y表示在安装过程中回答的都是yes，会自动生成如下所示的package.json文件
+
+```
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
+　　所有问题之中，只有项目名称（name）和项目版本（version）是必填的，其他都是选填的
 
 　　因此，最简单的package.json文件，只定义两项元数据：项目名称和项目版本
 
-<div class="cnblogs_code">
+<div>
 <pre>{
   "name" : "xxx",
   "version" : "0.0.0",
@@ -70,13 +89,13 @@ $ npm install express --save-dev</pre>
 
 　　1、name&mdash;&mdash;包名。规范定义它需要由小写的字母和数字组成，可以包含.、_和-，但不允许出现空格。包名必须是唯一的，以免对外公布时产生重名冲突的误解。除此之外，NPM还建议不要在包名中附带上node或js来重复标识它是JavaScript或Node模块&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>"name": "livereload"</pre>
 </div>
 
 　　2、version&mdash;&mdash;版本号。一个语义化的版本号，这在[http://semver.org/](http://semver.org/)上有详细定义，通常为major.minor.revision格式。该版本号十分重要，常常用于一些版本控制的场合
 
-<div class="cnblogs_code">
+<div>
 <pre>"version": "0.6.0"</pre>
 </div>
 
@@ -90,7 +109,7 @@ $ npm install express --save-dev</pre>
 
 　　1、description&mdash;&mdash;包简介。方便别人了解该模块作用，搜索的时候也有用
 
-<div class="cnblogs_code">
+<div>
 <pre>"description": "LiveReload server"</pre>
 </div>
 
@@ -102,7 +121,7 @@ $ npm install express --save-dev</pre>
 
 　　[注意]livereload插件并没有设置maintainers中的web属性
 
-<div class="cnblogs_code">
+<div>
 <pre>  "maintainers": [
     {
       "name": "bphogan",
@@ -113,7 +132,7 @@ $ npm install express --save-dev</pre>
 
 　　4、contributors&mdash;&mdash;贡献者列表。在开源社区中，为开源项目提供代码是经常出现的事情，如果名字能出现在知名项目的contributors列表中，是一件比较有荣誉感的事。列表中的第一个贡献应当是包的作者本人。它的格式与维护者列表相同
 
-<div class="cnblogs_code">
+<div>
 <pre>  "contributors": [
     {
       "name": "Brian P. Hogan",
@@ -124,7 +143,7 @@ $ npm install express --save-dev</pre>
 
 　　5、bugs&mdash;&mdash;一个可以反馈bug的网页地址或邮件地址
 
-<div class="cnblogs_code">
+<div>
 <pre>  "bugs": {
     "url": "https://github.com/napcs/node-livereload/issues"
   }</pre>
@@ -132,7 +151,7 @@ $ npm install express --save-dev</pre>
 
 　　6、licenses&mdash;&mdash;当前包所使用的许可证列表，表示这个包可以在哪些许可证下使用
 
-<div class="cnblogs_code">
+<div>
 <pre>  "licenses": [
     {
       "type": "MIT",
@@ -143,7 +162,7 @@ $ npm install express --save-dev</pre>
 
 　　7、repositories&mdash;&mdash;托管源代码的位置列表，表明可以通过哪些方式和地址访问包的源代码
 
-<div class="cnblogs_code">
+<div>
 <pre>  "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/napcs/node-livereload.git"
@@ -159,7 +178,7 @@ $ npm install express --save-dev</pre>
 *   波浪号(tilde)+指定版本：比如~1.2.2，表示安装1.2.x的最新版本(不低于1.2.2)，但是不安装1.3.x，也就是说安装时不改变大版本号和次要版本号。
 *   插入号(caret)+指定版本：比如&circ;1.2.2，表示安装1.x.x的最新版本(不低于1.2.2)，但是不安装2.x.x，也就是说安装时不改变大版本号。需要注意的是，如果大版本号为0，则插入号的行为与波浪号相同，这是因为此时处于开发阶段，即使是次要版本号变动，也可能带来程序的不兼容
 *   latest：安装最新版本
-<div class="cnblogs_code">
+<div>
 <pre>  "devDependencies": {
     "coffee-script": "&gt;= 1.8.0",
     "mocha": "&gt;= 1.0.3",
@@ -177,7 +196,7 @@ $ npm install express --save-dev</pre>
 
 　　1、homepage&mdash;&mdash;当前包的网站地址
 
-<div class="cnblogs_code">
+<div>
 <pre>  "homepage": "https://github.com/napcs/node-livereload#readme",</pre>
 </div>
 
@@ -191,7 +210,7 @@ $ npm install express --save-dev</pre>
 
 　　4、engine&mdash;&mdash;支持的JavaScript引擎列表，有效的引擎取值包括ejs、flusspferd、gpsee、jsc、spidermonkey、narwhal、node和v8
 
-<div class="cnblogs_code">
+<div>
 <pre>  "engines": {
     "node": "&gt;=0.4.0"
   }</pre>
@@ -203,7 +222,7 @@ $ npm install express --save-dev</pre>
 
 　　6、directories&mdash;&mdash;包目录说明
 
-<div class="cnblogs_code">
+<div>
 <pre>"directories": {}</pre>
 </div>
 
@@ -213,7 +232,7 @@ $ npm install express --save-dev</pre>
 
 　　8、scripts&mdash;&mdash;脚本说明对象。它主要被包管理器用来安装、编译、测试和卸载包。`scripts`指定了运行脚本命令的npm命令行缩写，比如start指定了运行`npm run start`时，所要执行的命令
 
-<div class="cnblogs_code">
+<div>
 <pre>  "scripts": {
     "test": "mocha"
   },</pre>
@@ -233,7 +252,7 @@ $ npm install express --save-dev</pre>
 
 　　下面代码指定，livereaload命令对应的可执行文件为 bin 子目录下的 livereload.js。Npm会寻找这个文件，在`node_modules/.bin/`目录下建立符号链接。在上面的例子中，livereaload会建立符号链接`npm_modules/.bin/someTool`。由于`node_modules/.bin/`目录会在运行时加入系统的PATH变量，因此在运行npm时，就可以不带路径，直接通过命令来调用这些脚本
 
-<div class="cnblogs_code">
+<div>
 <pre>  "bin": {
     "livereload": "./bin/livereload.js"
   }</pre>
@@ -241,7 +260,7 @@ $ npm install express --save-dev</pre>
 
 　　因此，像下面这样的写法可以采用简写
 
-<div class="cnblogs_code">
+<div>
 <pre>scripts: {  
   start: './node_modules/livereload.js build'
 }
@@ -255,13 +274,13 @@ scripts: {
 
 　　3、main&mdash;&mdash;加载的入口文件。模块引入方法require()在引入包时，会优先检查这个字段，并将其作为包中其余模块的入口。如果不存在这个字段，require()方法会查找包目录下的index.js、index.node、index.json文件作为默认入口
 
-<div class="cnblogs_code">
+<div>
 <pre>"main": "./lib/livereload.js"</pre>
 </div>
 
 　　4、devDependencies&mdash;&mdash;项目开发所需要的模块。一些模块只在开发时需要依赖。配置这个属性，可以提示包的后续开发者安装依赖包。类比于dependencies字段
 
-<div class="cnblogs_code">
+<div>
 <pre>  "devDependencies": {
     "coffee-script": "&gt;= 1.8.0",
     "mocha": "&gt;= 1.0.3",
