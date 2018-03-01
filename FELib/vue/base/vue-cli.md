@@ -1,55 +1,51 @@
-# Vue命令行工具vue-cli
+# Vue 命令行工具 vue-cli
 
-　　Vue.js 提供一个[官方命令行工具](https://github.com/vuejs/vue-cli)，可用于快速搭建大型单页应用。该工具提供开箱即用的构建工具配置，带来现代化的前端开发流程。只需几分钟即可创建并启动一个带热重载、保存时静态检查以及可用于生产环境的构建配置的项目&nbsp;。本文将详细介绍Vue命令行工具vue-cli
+Vue.js 提供一个[官方命令行工具](https://github.com/vuejs/vue-cli)，可用于快速搭建大型单页应用。该工具提供开箱即用的构建工具配置，带来现代化的前端开发流程。只需几分钟即可创建并启动一个带热重载、保存时静态检查以及可用于生产环境的构建配置的项目&nbsp;。本文将详细介绍 Vue 命令行工具 vue-cli
 
 &nbsp;
 
 ### 概述
 
-　　Vue-cli是Vue官方提供的用于初始化Vue项目的脚手架工具。使用Vue-cli有以下几大优势
+Vue-cli 是 Vue 官方提供的用于初始化 Vue 项目的脚手架工具。使用 Vue-cli 有以下几大优势
 
-　　1、Vue-cli是一套成熟的vue项目架构设计，会跟着Vue版本的更迭而更新
+1、Vue-cli 是一套成熟的 vue 项目架构设计，会跟着 Vue 版本的更迭而更新
 
-　　2、Vue-cli提供了一套本地的热加载的测试服务器
+2、Vue-cli 提供了一套本地的热加载的测试服务器
 
-　　3、Vue-cli集成了一套打包上线的方案，可使用webpack或Browserify等构建工具
+3、Vue-cli 集成了一套打包上线的方案，可使用 webpack 或 Browserify 等构建工具
 
 &nbsp;
 
 ### 安装
 
-　　下面来安装vue-cli
+下面来安装 vue-cli
 
 <div>
 <pre># 全局安装 vue-cli
 $ npm install -g vue-cli</pre>
 </div>
 
-　　[注意]一定要在全局模式下安装vue-cli，否则无法使用vue命令
+[注意]一定要在全局模式下安装 vue-cli，否则无法使用 vue 命令
 
 ![vue_base_vueCli1](https://pic.xiaohuochai.site/blog/vue_base_vueCli1.png)
 
-
-　　全局模式下，安装vue-cli后，才可以正常使用
+全局模式下，安装 vue-cli 后，才可以正常使用
 
 ![vue_base_vueCli2](https://pic.xiaohuochai.site/blog/vue_base_vueCli2.png)
 
-
-　　输入vue命令，会出现如下视图
+输入 vue 命令，会出现如下视图
 
 ![vue_base_vueCli3](https://pic.xiaohuochai.site/blog/vue_base_vueCli3.png)
 
-
-　　输入vue -V命令，可以看出当前vue-cli使用的是2.8.2版本。输入vue list 可以得到推荐的官方模板
+输入 vue -V 命令，可以看出当前 vue-cli 使用的是 2.8.2 版本。输入 vue list 可以得到推荐的官方模板
 
 ![vue_base_vueCli4](https://pic.xiaohuochai.site/blog/vue_base_vueCli4.png)
-
 
 &nbsp;
 
 ### 创建项目
 
-　　接下来，创建一个基于 webpack 模板的新项目
+接下来，创建一个基于 webpack 模板的新项目
 
 <div>
 <pre>$ vue init webpack my-project</pre>
@@ -57,13 +53,11 @@ $ npm install -g vue-cli</pre>
 
 ![vue_base_vueCli5](https://pic.xiaohuochai.site/blog/vue_base_vueCli5.png)
 
-
-　　创建项目后，在当前目录下，会新建my-project文件夹，里面是my-project项目所包含的文件
+创建项目后，在当前目录下，会新建 my-project 文件夹，里面是 my-project 项目所包含的文件
 
 ![vue_base_vueCli6](https://pic.xiaohuochai.site/blog/vue_base_vueCli6.png)
 
-
-　　my-project中的package.json文件中，所依赖的包如下所示
+my-project 中的 package.json 文件中，所依赖的包如下所示
 
 <div>
 <pre>{
@@ -129,7 +123,7 @@ $ npm install -g vue-cli</pre>
 }</pre>
 </div>
 
-　　接下来， 进入my-project文件夹，并安装依赖包
+接下来， 进入 my-project 文件夹，并安装依赖包
 
 <div>
 <pre>$ cd my-project
@@ -138,18 +132,17 @@ $ npm install</pre>
 
 ![vue_base_vueCli7](https://pic.xiaohuochai.site/blog/vue_base_vueCli7.png)
 
-
 &nbsp;
 
 ### 运行项目
 
-　　接下来，输入下列代码来运行项目
+接下来，输入下列代码来运行项目
 
 <div>
 <pre>$ npm run dev</pre>
 </div>
 
-　　以上代码的意思是运行package.json中，scripts脚本中dev指代的程序。类比于，运行node build/dev-server.js
+以上代码的意思是运行 package.json 中，scripts 脚本中 dev 指代的程序。类比于，运行 node build/dev-server.js
 
 <div>
 <pre>  "scripts": {
@@ -161,14 +154,11 @@ $ npm install</pre>
 
 ![vue_base_vueCli8](https://pic.xiaohuochai.site/blog/vue_base_vueCli8.png)
 
-
-　　localhost:8080的网页自动打开，效果如下
+localhost:8080 的网页自动打开，效果如下
 
 ![vue_base_vueCli9](https://pic.xiaohuochai.site/blog/vue_base_vueCli9.png)
 
-
-
-　　打开app.vue文件，在模板中加入&lt;p&gt;小火柴的蓝色理想&lt;/p&gt;&nbsp;这一行代码，并保存
+打开 app.vue 文件，在模板中加入&lt;p&gt;小火柴的蓝色理想&lt;/p&gt;&nbsp;这一行代码，并保存
 
 <div>
 <pre>&lt;template&gt;
@@ -180,16 +170,15 @@ $ npm install</pre>
 &lt;/template&gt;</pre>
 </div>
 
-　　当前浏览器将会自动更新到页面的最新状态，这是vue-cli自带的热更新的功能
+当前浏览器将会自动更新到页面的最新状态，这是 vue-cli 自带的热更新的功能
 
 ![vue_base_vueCli10](https://pic.xiaohuochai.site/blog/vue_base_vueCli10.png)
-
 
 &nbsp;
 
 ### 项目部署
 
-　　接下来，使用npm run build来部署上线的项目
+接下来，使用 npm run build 来部署上线的项目
 
 <div>
 <pre>npm run build</pre>
@@ -197,9 +186,38 @@ $ npm install</pre>
 
 ![vue_base_vueCli11](https://pic.xiaohuochai.site/blog/vue_base_vueCli11.png)
 
-
-　　生成的dist目录，就是打包构建后的项目目录
+生成的 dist 目录，就是打包构建后的项目目录
 
 ![vue_base_vueCli12](https://pic.xiaohuochai.site/blog/vue_base_vueCli12.png)
 
+&nbsp;
 
+### 路由懒加载
+
+vue-cli 的默认配置基本上满足了开发需求。但，如果把不同路由对应的组件分割成不同的代码块，然后当路由被访问的时候才加载对应组件，这样就更加高效了
+
+```
+//router/index.js
+  routes: [
+    {
+      path: '/',
+      component: () => import(/* webpackChunkName:'home' */'@/components/Home'),
+      name: 'home',
+      meta: { index: 0 }
+    },
+    {
+      path: '/topic',
+      component: () => import(/* webpackChunkName:'home' */'@/components/Topic'),
+      name: 'topic',
+      meta: { index: 1 }
+    },
+```
+
+在 webpack.base.config.js 文件中添加 chunkFilename
+
+```
+  output: {
+    path: config.build.assetsRoot,
+    filename: '[name].js',
+    chunkFilename: '[name].js'
+```
