@@ -86,3 +86,4 @@
     * [安全及身份认证](mongodb/auth.md)
     * [聚合](mongodb/aggregate.md)
     * [Mongoose](mongodb/Mongoose.md) 
+    * [mongoose和bcrypt实现加密](mongodb/bcrypt.md)

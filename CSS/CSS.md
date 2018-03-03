@@ -74,6 +74,7 @@
           * [等分布局](layout/layoutMode/equalPart.md)
           * [等高布局](layout/layoutMode/equalHeight.md)
           * [全屏布局](layout/layoutMode/fullScreen.md)
+          * [sticky-footer布局](layout/layoutMode/stickyFooter.md)
   * 渲染
       1. 字体和文本
           * [字体](render/text/font.md)

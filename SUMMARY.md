@@ -560,6 +560,7 @@
       * [webpack 四个重要概念](utils/build/webpackConcept.md)
       * [webpack 模块解析](utils/build/webpackModule.md)
       * [webpack 命令行](utils/build/webpackCli.md)
+      * [webpack 代码优化](utils/build/codeOptimization.md)
   * 版本管理
     * [SVN](utils/version/svn.md)
     * [基础](utils/version/base.md)
@@ -583,8 +584,10 @@
     * [云服务器常用设置](utils/linux/server.md)
   * 辅助工具
     * [sublime](utils/helper/sublime.md)
+    * [vscode常用设置](utils/helper/vscode.md)
     * [chrome 调试工具](utils/helper/chrome.md)
     * [电脑常见问题处理](utils/helper/common.md)
+    * [搜索引擎的使用](utils/helper/searchEngine.md)
     * [markdown](utils/helper/markdown.md)
     * [sass](utils/helper/sass.md)
     * [gitbook](utils/helper/gitbook.md)
@@ -675,5 +678,5 @@
     * [安全及身份认证](BE/mongodb/auth.md)
     * [聚合](BE/mongodb/aggregate.md)
     * [Mongoose](BE/mongodb/Mongoose.md)
-
+    * [mongoose和bcrypt实现加密](BE/mongodb/bcrypt.md)
 * [参考资料](Resources.md)

@@ -15,6 +15,7 @@
       * [响应式原理](vue/base/reactivity.md)
       * [渲染函数](vue/base/renderFunctions.md)
       * [vue-cli](vue/base/vue-cli.md)
+      * [风格指南](vue/base/styleGuide.md)
   * 模板语法
       * [模板内容](vue/template/templateContent.md)
       * [模板逻辑](vue/template/templateLogic.md)  
