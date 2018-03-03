@@ -36,65 +36,18 @@
 
 &nbsp;
 
-### 网站搜索
+### 桌面变灰
 
-　　一般地，我们使用搜索引擎来搜索内容
+　　在使用win10使用过程中，整个屏幕突然变成了黑白色，这是用户不小心按到了windows徽标+ctrl+c 快捷键开启了应用颜色筛选器导致的。只需再次按下 windows徽标键+Ctrl+C 组合键即可将其关闭
 
-【site:网址】
-
-　　如果，想针对指定网站搜索内容是有简单办法的，格式如下
-
-<div class="cnblogs_code">
-<pre>　　site:网站域名  要搜索的内容</pre>
-</div>
-
-　　以博客园搜索小火柴为例
-
-<div class="cnblogs_code">
-<pre>　　site:cnblogs.com 小火柴</pre>
-</div>
-
-![helper_common4](https://pic.xiaohuochai.site/blog/helper_common4.png)
-
-
-【intitle:关键词】
-
-　　这个搜索指令是想告诉搜索引擎，搜索出来的结果，标题一定要包含输入的关键词。不然有时候搜索网页里面也会包括所输入的关键词
-
-
-![helper_common5](https://pic.xiaohuochai.site/blog/helper_common5.png)
-
-
-【关键词】
-
-　　1、双引号
-
-　　把关键词放在双引号里面，是想告诉搜索引擎，搜索出来的结果，必须包含双号里面的所有词语，且顺序一个也不能打乱
-
-
-![helper_common6](https://pic.xiaohuochai.site/blog/helper_common6.png)
-
-
-　　2、中划线
-
-　　使用中划线可以告诉搜索引擎，搜索出来的结果不能带有中划线后的关键词。使用"-推广链接"可以去掉百度中的广告
-
-
-![helper_common7](https://pic.xiaohuochai.site/blog/helper_common7.png)
-
-
-【filetype:文件格式】
-
-　　这个搜索指令是想告诉搜索引擎，结果只显示关键词为某类文件格式的链接
-
-
-![helper_common8](https://pic.xiaohuochai.site/blog/helper_common8.png)
-
-
-### vscode
-
-　　有时，vscode会出现CPU利用率100%的情况，两个rg.exe占用了全部的CPU。解决办法如下
-
-　　文件&gt;首选项&gt;设置, 搜索设置 search.followSymlinks ：false；
+ 
 
 &nbsp;
+
+### github邮件提示
+
+　　对于在github上watch过的项目，对于该项目的通知，github默认会向邮箱发送邮件
+
+　　如果要关闭该功能，首先，点击个人头像，进入Settings，然后选择Notification项，将右侧的Watching下的Email前面的多选框取消勾选即可
+
+![helper_common10](https://pic.xiaohuochai.site/blog/helper_common10.png)
