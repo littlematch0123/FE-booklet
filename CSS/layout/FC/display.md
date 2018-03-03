@@ -34,7 +34,7 @@
 
 **【标签】**
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;address&gt;&lt;article&gt;&lt;aside&gt;&lt;blockquote&gt;&lt;body&gt;&lt;dd&gt;&lt;details&gt;&lt;div&gt;&lt;dl&gt;&lt;dt&gt;&lt;fieldset&gt;&lt;figcaption&gt;&lt;figure&gt;&lt;footer&gt;&lt;form&gt;&lt;h1&gt;&lt;header&gt;&lt;hgroup&gt;&lt;hr&gt;&lt;html&gt;&lt;legend&gt;&lt;menuitem&gt;&lt;nav&gt;&lt;ol&gt;&lt;optgroup&gt;&lt;option&gt;&lt;p&gt;&lt;section&gt;&lt;summary&gt;&lt;ul&gt;</pre>
 </div>
 
@@ -60,7 +60,7 @@
 
 **【标签】**
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;a&gt;&lt;abbr&gt;&lt;area&gt;&lt;b&gt;&lt;bdi&gt;&lt;bdo&gt;&lt;br&gt;&lt;cite&gt;&lt;code&gt;&lt;del&gt;&lt;dfn&gt;&lt;em&gt;&lt;i&gt;&lt;ins&gt;&lt;kbd&gt;&lt;label&gt;&lt;map&gt;&lt;mark&gt;&lt;output&gt;&lt;pre&gt;&lt;q&gt;&lt;rp&gt;&lt;rt&gt;&lt;ruby&gt;&lt;s&gt;&lt;smap&gt;&lt;small&gt;&lt;span&gt;&lt;strong&gt;&lt;sub&gt;&lt;sup&gt;&lt;time&gt;&lt;u&gt;&lt;var&gt;&lt;wbr&gt;</pre>
 </div>
 
@@ -100,9 +100,13 @@
 
 **【标签】**
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio&gt;&lt;button&gt;&lt;canvas&gt;&lt;embed&gt;&lt;iframe&gt;&lt;img&gt;&lt;input&gt;&lt;keygen&gt;&lt;meter&gt;&lt;object&gt;&lt;progress&gt;&lt;select&gt;&lt;textarea&gt;&lt;video&gt;</pre>
 </div>
+
+　　要注意的是，这里说的是inline-block元素是指它们具有inline-block特性，而不是指他们的默认值是display:inline-block
+
+　　如果以默认值为基准，只有表单类元素是纯的inline-block元素，audio、canvas、iframe、img、keygen、object、video都应该算是inline元素
 
 **【不支持的样式】**
 
@@ -112,7 +116,7 @@
 
 　　IE7-浏览器不支持给块级元素设置inline-block样式，解决方法如下：首先将其变成行内元素，使用具有行内元素的特性，然后触发haslayout，使其具有块级元素的特性，如此就可以模拟出inline-block的效果
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     display:inline-block;
     *display: inline;
@@ -131,7 +135,7 @@
 
 **【标签】**
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;base&gt;&lt;link&gt;&lt;meta&gt;&lt;title&gt;&lt;datalist&gt;&lt;dialog&gt;&lt;param&gt;&lt;script&gt;&lt;source&gt;&lt;style&gt;</pre>
 </div>
 
@@ -155,7 +159,7 @@
 
 　　[注意]只有safari和IE8+支持
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;h3 style="display:run-in"&gt;run-in test&lt;/h3&gt;
 &lt;p&gt;paragraph&lt;/p&gt;</pre>
 </div>
@@ -164,7 +168,7 @@
 
 　　若run-in框后面不是块级框时，run-in框本身将成为块级框
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;span style="display:run-in"&gt;run-in test&lt;/span&gt;
 &lt;span&gt;paragraph&lt;/span&gt;</pre>
 </div>
@@ -175,7 +179,7 @@
 
 ## 表格类元素
 
-<div class="cnblogs_code">
+<div>
 <pre>table{display: table;}
 thead{display: table-header-group;}
 tbody{display: table-row-group;}
