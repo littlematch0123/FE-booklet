@@ -541,6 +541,8 @@
     * [屏幕三要素](mobile/base/screen.md)
     * [视口 viewport](mobile/base/viewport.md)
     * [真机测试](mobile/base/phoneTest.md)
+    * [陀螺仪](mobile/base/gyro.md)
+    * [touch事件](mobile/base/touch.md)
 * 前端工具
   * [介绍](utils/utils.md)
   * Photoshop
