@@ -4,3 +4,9 @@
 
 　　小火柴将移动端的知识体系进行了梳理和归纳，总结成以下目录
 
+  * [像素和 DPR](dpr.md)
+  * [屏幕三要素](screen.md)
+  * [视口 viewport](viewport.md)
+  * [真机测试](phoneTest.md)
+  * [陀螺仪](gyro.md)
+  * [touch事件](touch.md)
