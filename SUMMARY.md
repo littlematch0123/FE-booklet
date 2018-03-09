@@ -177,6 +177,7 @@
          * [属性和变量](JS/ECMA/baseGrammer/attr.md)
          * [表达式](JS/ECMA/baseGrammer/expression.md)
          * [严格模式](JS/ECMA/baseGrammer/strict.md)
+         * [事件循环](JS/ECMA/baseGrammer/eventLoop.md)
          * [垃圾收集机制](JS/ECMA/baseGrammer/garbageCollection.md)
          * [动态脚本](JS/ECMA/baseGrammer/dynamicScript.md)
        * 运算符

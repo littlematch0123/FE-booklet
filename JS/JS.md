@@ -16,6 +16,7 @@
          * [属性和变量](ECMA/baseGrammer/attr.md)
          * [表达式](ECMA/baseGrammer/expression.md)
          * [严格模式](ECMA/baseGrammer/strict.md)
+         * [事件循环](ECMA/baseGrammer/eventLoop.md)
          * [垃圾收集机制](ECMA/baseGrammer/garbageCollection.md)
          * [动态脚本](ECMA/baseGrammer/dynamicScript.md)
        * 运算符
