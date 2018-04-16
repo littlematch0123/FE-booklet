@@ -10,43 +10,43 @@
 
 　　[注意]两个--和左中括号[之间不能有空格，否则无效
 
-<div class="cnblogs_code">
-<pre>&lt;!--[if IE]&gt;
-&lt;div class="box" id="box"&gt;&lt;/div&gt;
-&lt;![endif]--&gt;</pre>
-</div>
+```
+<!--[if IE]>
+<div class="box" id="box"></div>
+<![endif]-->
+```
 
 &nbsp;
 
 ### 识别单一IE
 
-<div class="cnblogs_code">
-<pre>6    [if IE 6]
+```
+6    [if IE 6]
 7    [if IE 7]
 8    [if IE 8]
-9    [if IE 9]</pre>
-</div>
-<div class="cnblogs_code">
-<pre>&lt;!--[if IE 7]&gt;
-&lt;div class="box" id="box"&gt;&lt;/div&gt;
-&lt;![endif]--&gt;</pre>
-</div>
+9    [if IE 9]
+```
+```
+<!--[if IE 7]>
+<div class="box" id="box"></div>
+<![endif]-->
+```
 
 &nbsp;
 
 ### 识别范围IE
 
-<div class="cnblogs_code">
-<pre>gt        　大于(greater than)
+```
+gt        　大于(greater than)
 gte     　　 大于等于(greater than or equal)
 lt          小于(less than)
-lte         小于等于(less than or equal) </pre>
-</div>
-<div class="cnblogs_code">
-<pre>&lt;!--[if lte IE 7]&gt;
-&lt;div class="box" id="box"&gt;&lt;/div&gt;
-&lt;![endif]--&gt;</pre>
-</div>
+lte         小于等于(less than or equal) 
+```
+```
+<!--[if lte IE 7]>
+<div class="box" id="box"></div>
+<![endif]-->
+```
 
 &nbsp;
 
@@ -54,8 +54,8 @@ lte         小于等于(less than or equal) </pre>
 
 　　实际上识别的是IE10+浏览器和其他非IE浏览器
 
-<div class="cnblogs_code">
-<pre>&lt;!--[if !IE]&gt;
-&lt;div class="box" id="box"&gt;&lt;/div&gt;
-&lt;![endif]--&gt;</pre>
-</div>
+```
+<!--[if !IE]>
+<div class="box" id="box"></div>
+<![endif]-->
+```
