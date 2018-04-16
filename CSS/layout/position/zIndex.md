@@ -10,7 +10,7 @@
 
 **z-index**
 
-　　值: &lt;integer&gt; | auto | inherit
+　　值: `<integer>` | auto | inherit
 
 　　初始值: auto
 
@@ -38,6 +38,8 @@
 
 <iframe style="width: 100%; height: 361px;" src="https://demo.xiaohuochai.site/css/zindex/z1.html" frameborder="0" width="320" height="240"></iframe>
 
+&nbsp;
+
 ### 堆叠上下文
 
 　　一旦为一个元素指定了z-index值(不是auto)，该元素会建立自己的局部堆叠上下文。这意味着，元素的所有后代相对于该祖先元素都有其自己的叠放顺序
@@ -46,26 +48,26 @@
 
 **默认样式**
 
-<div class="cnblogs_code">
-<pre>&lt;div class="box1"&gt;
-    &lt;ul class="list1"&gt;
-        &lt;li id="one"&gt;1&lt;/li&gt;
-        &lt;li id="two"&gt;2&lt;/li&gt;
-        &lt;li id="three"&gt;3&lt;/li&gt;
-        &lt;li id="four"&gt;4&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;ul class="list2"&gt;
-        &lt;li id="five"&gt;5&lt;/li&gt;
-        &lt;li id="six"&gt;6&lt;/li&gt;
-    &lt;/ul&gt;    
-&lt;/div&gt;
-&lt;div class="box2"&gt;
-    &lt;div id="seven"&gt;7&lt;/div&gt;
-    &lt;div id="eight"&gt;8&lt;/div&gt;
-&lt;/div&gt;</pre>
+```
+<div class="box1">
+    <ul class="list1">
+        <li id="one">1</li>
+        <li id="two">2</li>
+        <li id="three">3</li>
+        <li id="four">4</li>
+    </ul>
+    <ul class="list2">
+        <li id="five">5</li>
+        <li id="six">6</li>
+    </ul>    
 </div>
-<div class="cnblogs_code">
-<pre>.box1{z-index: 1;}
+<div class="box2">
+    <div id="seven">7</div>
+    <div id="eight">8</div>
+</div>
+```
+```
+.box1{z-index: 1;}
 .box2{z-index: auto;}
 .list1{z-index: 2;}
 .list2{z-index: 1;}
@@ -76,10 +78,10 @@
 #five{z-index: 2;}
 #six{z-index: 1;}
 #seven{z-index: 2;}
-#eight{z-index: -1;}</pre>
-</div>
-<div class="cnblogs_code">
-<pre>//堆叠顺序
+#eight{z-index: -1;}
+```
+```
+//堆叠顺序
 .box1                  1
 .box1 .list1           1,2
 .box1 .list1 #one      1,2,-1
@@ -91,14 +93,14 @@
 .box1 .list2 #six      1,1,1
 .box2                  auto
 .box2 #seven           auto,2
-.box2 #eight           auto,-1</pre>
-</div>
+.box2 #eight           auto,-1
+```
 
 　　[注意]auto,2和auto,-1相当于2和-1，因为auto代表未产生堆叠上下文。则#seven和#eight相当于和它们的父级.box2以及.box1处于同一层次
 
 <iframe style="width: 100%; height: 498px;" src="https://demo.xiaohuochai.site/css/zindex/z2.html" frameborder="0" width="320" height="240"></iframe>
 
-　　元素不会叠放在其堆叠上下文(即定位父级z-index为数字值)的背景之下，但可以叠放在其内容之下；当元素没有处于堆叠上下文中，元素不会叠放在&lt;body&gt;元素的背景之下，但可以叠放在其内容之下
+　　元素不会叠放在其堆叠上下文(即定位父级z-index为数字值)的背景之下，但可以叠放在其内容之下；当元素没有处于堆叠上下文中，元素不会叠放在`<body>`元素的背景之下，但可以叠放在其内容之下
 
 <iframe style="width: 100%; height: 393px;" src="https://demo.xiaohuochai.site/css/zindex/z3.html" frameborder="0" width="320" height="240"></iframe>
 
@@ -108,8 +110,8 @@
 
  　　一般地，定位元素的z-index的默认值是auto，而IE7-浏览器定位元素的z-index的默认值是0，二者的区别于IE7-浏览器的定位元素会自动生成堆叠上下文
 
-<div class="cnblogs_code">
-<pre>div{
+```
+div{
     position: absolute;
     border: 1px solid black;
 }    
@@ -132,14 +134,14 @@
     background-color: lightblue;
     z-index: 2;
     border: none;
-}</pre>
+}
+```
+```
+<div class="div1"></div>
+<div class="div2">
+    <div class="in2"></div>
 </div>
-<div class="cnblogs_code">
-<pre>&lt;div class="div1"&gt;&lt;/div&gt;
-&lt;div class="div2"&gt;
-    &lt;div class="in2"&gt;&lt;/div&gt;
-&lt;/div&gt;</pre>
-</div>
+```
 
 　　一般地，div1的堆叠顺序为1;div2的堆叠顺序为auto;in2的堆叠顺序为auto,2相当于2。所以覆盖层次为in2 覆盖 div1 覆盖 div2。但在IE7-浏览器中，div1的堆叠顺序为1;div2的堆叠顺序为0;in2的堆叠顺序为0,2。所以覆盖层次为div1 覆盖 in2 覆盖 div2
 
@@ -149,10 +151,10 @@
 <tbody>
 <tr>
 <td>
-<img src="https://pic.xiaohuochai.site/blog/CSS_layout_ZindexExample1.jpg" alt="ZindexExample1"></td>
+<img src="https://pic.xiaohuochai.site/blog/CSS_layout_ZindexExample1.jpg" alt="ZindexExample1" />
+</td>
 <td>
-
-<img src="https://pic.xiaohuochai.site/blog/CSS_layout_ZindexExample2.jpg" alt="ZindexExample2">
+<img src="https://pic.xiaohuochai.site/blog/CSS_layout_ZindexExample2.jpg" alt="ZindexExample2" />
 </td>
 </tr>
 </tbody>
@@ -160,12 +162,12 @@
 
 &nbsp;
 
-<span style="line-height: 1.5;">【2】IE6-浏览器关于z-index的一个怪异bug
+【2】IE6-浏览器关于z-index的一个怪异bug
 
-<span style="line-height: 1.5;"> 　　当元素本身浮动且不是定位元素(position不是static)，元素父级是relative，则在IE6-浏览器在无论该元素的父级的z-index如何设置都不起作用
+ 　　当元素本身浮动且不是定位元素(position不是static)，元素父级是relative，则在IE6-浏览器在无论该元素的父级的z-index如何设置都不起作用
 
-<div class="cnblogs_code">
-<pre>.div1{
+```
+.div1{
     position: absolute;
     z-index: 1;
     width: 100px;
@@ -181,14 +183,14 @@
     width: 150px;
     height: 50px;
     background-color: lightgreen;
-}</pre>
+}
+```
+```
+<div class="div1"></div>
+<div class="box">
+    <div class="div2"></div>    
 </div>
-<div class="cnblogs_code">
-<pre>&lt;div class="div1"&gt;&lt;/div&gt;
-&lt;div class="box"&gt;
-    &lt;div class="div2"&gt;&lt;/div&gt;    
-&lt;/div&gt;</pre>
-</div>
+```
 
 　　左边是IE6浏览器结果，右边是其他浏览器结果
 
@@ -206,22 +208,22 @@
 
 **解决方法**
 
-　　[1]元素去除浮动
+　　1、元素去除浮动
 
-　　[2]父级元素的相对定位改成绝对定位
+　　2、父级元素的相对定位改成绝对定位
 
-　　[3]元素添加position属性(static除外)
+　　3、元素添加position属性(static除外)
 
 　　以上三个方法任一方法都可以，其实就是在破坏bug成立的条件
 
 &nbsp;
 
-<span style="line-height: 1.5;">【3】IE6-浏览器下select的z-index无效而遮挡div
+【3】IE6-浏览器下select的z-index无效而遮挡div
 
-<span style="line-height: 1.5;"> 　　IE6-浏览器下select设置z-index无效，且默认会堆叠在div上
+ 　　IE6-浏览器下select设置z-index无效，且默认会堆叠在div上
 
-<div class="cnblogs_code">
-<pre>.box{
+```
+.box{
     left: 30px;
     z-index:2;
     position: absolute;
@@ -233,15 +235,15 @@ select{
     width: 100px;
     position: absolute;
     z-index:1;
-}</pre>
-</div>
-<div class="cnblogs_code">
-<pre>&lt;div class="box"&gt;&lt;/div&gt;
-&lt;select name="select" id="slt1"&gt;
-    &lt;option value="1"&gt;第一项&lt;/option&gt;
-    &lt;option value="2"&gt;第二项&lt;/option&gt;
-&lt;/select&gt;</pre>
-</div>
+}
+```
+```
+<div class="box"></div>
+<select name="select" id="slt1">
+    <option value="1">第一项</option>
+    <option value="2">第二项</option>
+</select>
+```
 
 　　左边是IE6浏览器结果，右边是其他浏览器结果
 
@@ -260,23 +262,23 @@ select{
 
  　　在IE6-浏览器中，虽然div无法覆盖select，但是iframe可以select。所以可以设置一个与div宽高相同的iframe。让div覆盖iframe，iframe覆盖select，最终达到select被div覆盖的效果
 
-<div class="cnblogs_code">
-<pre>iframe{
+```
+iframe{
     left: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
     z-index: 2;
-}</pre>
-</div>
-<div class="cnblogs_code">
-<pre>&lt;iframe src="#" frameborder="0"&gt;&lt;/iframe&gt;
-&lt;div class="box"&gt;&lt;/div&gt;
-&lt;select name="select" id="slt1"&gt;
-    &lt;option value="1"&gt;第一项&lt;/option&gt;
-    &lt;option value="2"&gt;第二项&lt;/option&gt;
-&lt;/select&gt;</pre>
-</div>
+}
+```
+```
+<iframe src="#" frameborder="0"></iframe>
+<div class="box"></div>
+<select name="select" id="slt1">
+    <option value="1">第一项</option>
+    <option value="2">第二项</option>
+</select>
+```
 
 &nbsp;
 
@@ -299,8 +301,10 @@ select{
 　　7、[will-change](http://www.cnblogs.com/xiaohuochai/p/6321790.html)指定的属性值为上面的任意一个
 
 　　8、元素的-webkit-overflow-scrolling设置为touch
+    
+　　9、元素的mask属性不是none
 
-　　设置以上8个属性的任意一个，都和设置absolute类似，层叠上下文z-index会生效。下面以opacity透明度为例，进行说明
+　　设置以上9个属性的任意一个，都和设置absolute类似，层叠上下文z-index会生效。下面以opacity透明度为例，进行说明
 
 <iframe style="width: 100%; height: 468px;" src="https://demo.xiaohuochai.site/css/zindex/z4.html" frameborder="0" width="320" height="240"></iframe>
 
