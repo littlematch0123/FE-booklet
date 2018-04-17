@@ -1,12 +1,12 @@
 # HTML标签嵌套规则
 
- 　　在html5中，`<a>`元素的子元素可以是块级元素，这在以前是被认为不符合规则的。本文将详细介绍html5的标签嵌套规则
+&emsp;&emsp;在html5中，`<a>`元素的子元素可以是块级元素，这在以前是被认为不符合规则的。本文将详细介绍html5的标签嵌套规则
 
 &nbsp;
 
 ### 分类
 
- 　　html5出现之前，经常把元素按照block、inline、inline-block来区分。在html5中，元素不再按照display属性来区分，而是按照[内容模型](http://www.cnblogs.com/xiaohuochai/p/5046584.html)来区分，分为元数据型(metadata content)、区块型(sectioning content)、标题型(heading content)、文档流型(flow content)、语句型(phrasing content)、内嵌型(embedded content)、交互型(interactive content)。元素不属于任何一个类别，被称为穿透的；元素可能属于不止一个类别，称为混合的。
+&emsp;&emsp;html5出现之前，经常把元素按照block、inline、inline-block来区分。在html5中，元素不再按照display属性来区分，而是按照[内容模型](http://www.cnblogs.com/xiaohuochai/p/5046584.html)来区分，分为元数据型(metadata content)、区块型(sectioning content)、标题型(heading content)、文档流型(flow content)、语句型(phrasing content)、内嵌型(embedded content)、交互型(interactive content)。元素不属于任何一个类别，被称为穿透的；元素可能属于不止一个类别，称为混合的。
 
 ![标签嵌套](https://pic.xiaohuochai.site/blog/HTML_grammar_tagsNesting.png)
 
@@ -146,7 +146,7 @@ a audio(如果设置了controls属性) button embed iframe img(如果设置了us
 <a>
 ```
 
-　　【3.2】子元素可以没有、可以是<param>元素，也可以是transparent(以它的父元素允许的子元素为准)
+　　【3.2】子元素可以没有、可以是`<param>`元素，也可以是transparent(以它的父元素允许的子元素为准)
 
 ```
 <object></span>
@@ -240,7 +240,7 @@ a audio(如果设置了controls属性) button embed iframe img(如果设置了us
 
 ### 总结
 
- 　　关于每个元素的详细嵌套规则，上部分已经详细介绍。这部分主要对常用标签的嵌套规则进行总结
+&emsp;&emsp;关于每个元素的详细嵌套规则，上部分已经详细介绍。这部分主要对常用标签的嵌套规则进行总结
 
 
 【1】`<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`、`<p>`的子元素是<span style="background-color: #888888;" title="a abbr area (如果它是map元素的子级) audio b bdi bdo br button canvas cite code data datalist del dfn em embed i iframe img input ins kbd keygen label map mark math meter noscript object output progress q ruby s samp script select small span strong sub sup svg template textarea time u var video wbr text">语句型元素</span>
