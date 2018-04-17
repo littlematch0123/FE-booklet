@@ -1,6 +1,6 @@
 # 表单美化
 
- 　　由于一些系统原生的表单控件在各个浏览器中显示效果不一致，且无法设置某些关键CSS样式，为了保证表单在各浏览器中的兼容性，表单美化就是不得不做的一件事了
+&emsp;&emsp;由于一些系统原生的表单控件在各个浏览器中显示效果不一致，且无法设置某些关键CSS样式，为了保证表单在各浏览器中的兼容性，表单美化就是不得不做的一件事了
 
 &nbsp;
 
@@ -12,7 +12,7 @@
 
 【实现过程】
 
-<div class="cnblogs_code">
+<div>
 <pre>body{
     margin: 0;
     font: 16px/20px "宋体";
@@ -50,7 +50,7 @@
     background-position: -14px -218px;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="box" id="box"&gt;https://demo.xiaohuochai.site
     选择一项游戏方式：
     &lt;label for="xiu"&gt;&lt;i&gt;&lt;/i&gt;咻一咻&lt;/label&gt;
@@ -84,7 +84,7 @@ for(var i = 0, leni = aLabel.length; i &lt; leni; i++){
 
 【实现过程】
 
-<div class="cnblogs_code">
+<div>
 <pre>body{
     margin: 0;
     font: 16px/20px "宋体";
@@ -122,7 +122,7 @@ for(var i = 0, leni = aLabel.length; i &lt; leni; i++){
     background-position: -14px -218px;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="box" id="box"&gt;https://demo.xiaohuochai.site
     选择日常手机交易方式(可多选)：
     &lt;label for="a"&gt;&lt;i&gt;&lt;/i&gt;支付宝&lt;/label&gt;
@@ -157,7 +157,7 @@ for(var i = 0, leni = aLabel.length; i &lt; leni; i++){
 
 【实现过程】
 
-<div class="cnblogs_code">
+<div>
 <pre>body{
     margin: 0;
     font: 16px/20px "宋体";
@@ -228,7 +228,7 @@ ul{
     color: red;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="box" id="box"&gt;
     &lt;div class="show"&gt;
         &lt;strong class="show-area"&gt;地址:&lt;/strong&gt;
