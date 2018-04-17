@@ -1,14 +1,14 @@
 # DOM操作表格
 
-　　表格table元素是HTML中最复杂的结构之一。要想创建表格，一般都必须涉及表示表格行、单元格、表头等方面的标签。由于涉及的标签多，因而使用核心DOM方法创建和修改表格往往都免不了要编写大量的代码。本文将详细介绍DOM操作表格的属性和方法
+&emsp;&emsp;表格table元素是HTML中最复杂的结构之一。要想创建表格，一般都必须涉及表示表格行、单元格、表头等方面的标签。由于涉及的标签多，因而使用核心DOM方法创建和修改表格往往都免不了要编写大量的代码。本文将详细介绍DOM操作表格的属性和方法
 
 &nbsp;
 
 ### 需求
 
-　　要通过DOM实现下列格式的表格结构
+&emsp;&emsp;要通过DOM实现下列格式的表格结构
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;table border = "1" width = "100%"&gt;
     &lt;tbody&gt;
         &lt;tr&gt;
@@ -27,9 +27,9 @@
 
 ### DOMcore
 
-　　如果通过DOMcore方法，则方法如下
+&emsp;&emsp;如果通过DOMcore方法，则方法如下
 
-<div class="cnblogs_code">
+<div>
 <pre>//创建表格
 var table = document.createElement("table");
 table.border = "1";
@@ -67,11 +67,11 @@ document.body.appendChild(table);</pre>
 
 ### 属性和方法
 
-　　显然DOM代码很长，为了方便构建表格，HTML DOM为&lt;table&gt;、&lt;tbody&gt;、&lt;tr&gt;元素添加了属性和方法。
+&emsp;&emsp;显然DOM代码很长，为了方便构建表格，HTML DOM为&lt;table&gt;、&lt;tbody&gt;、&lt;tr&gt;元素添加了属性和方法。
 
 【1】为&lt;table&gt;元素添加的属性和方法
 
-<div class="cnblogs_code">
+<div>
 <pre>caption:保存着对&lt;caption&gt;元素的指针
 tBodies:是一个&lt;tbody&gt;元素的HTMLCollection
 tFoot:保存着对&lt;tfoot&gt;元素的指针
@@ -86,7 +86,7 @@ deleteCaption():删除&lt;caption&gt;元素</pre>
 
 【2】为&lt;tbody&gt;元素添加的属性和方法
 
-<div class="cnblogs_code">
+<div>
 <pre>rows:保存着&lt;tbody&gt;元素中行的HTMLCollection
 deleteRow(pos):删除指定位置的行
 insertRow(pos):向rows集合中的指定位置插入一行，返回对新插入行的引用</pre>
@@ -94,7 +94,7 @@ insertRow(pos):向rows集合中的指定位置插入一行，返回对新插入�
 
 【3】为&lt;tr&gt;元素添加的属性和方法
 
-<div class="cnblogs_code">
+<div>
 <pre>cells:保存着&lt;tr&gt;元素中单元格的HTMLCollection
 deleteCell(pos):删除指定位置的单元格
 insertCell(pos):向cells集合中的指定位置插入一个单元格，返回对新插入单元格的引用</pre>
@@ -104,7 +104,7 @@ insertCell(pos):向cells集合中的指定位置插入一个单元格，返回�
 
 ### 代码重写
 
-<div class="cnblogs_code">
+<div>
 <pre>//创建表格
 var table = document.createElement("table");
 table.border = "1";
@@ -136,7 +136,7 @@ document.body.appendChild(table);</pre>
 
 ### 效果展示
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 //创建表格
 var table = document.createElement("table");
