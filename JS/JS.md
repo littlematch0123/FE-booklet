@@ -176,11 +176,11 @@
          * [加载事件](DOM/event/load.md)
          * [焦点管理](DOM/event/focus.md)
     5. 表单脚本
-      * [表单对象](DOM/FormDOM/form_formObj.md)
-      * [表单字段](DOM/FormDOM/form_formEle.md)
-      * [选择文本](DOM/FormDOM/form_select.md)
-      * [选择框脚本](DOM/FormDOM/form_selOption.md)
-      * [富文本编辑](DOM/FormDOM/form_WYSIWYG.md) 
+       * [表单对象](DOM/FormDOM/form_formObj.md)
+       * [表单字段](DOM/FormDOM/form_formEle.md)
+       * [选择文本](DOM/FormDOM/form_select.md)
+       * [选择框脚本](DOM/FormDOM/form_selOption.md)
+       * [富文本编辑](DOM/FormDOM/form_WYSIWYG.md) 
   * BOM
     1. 定时器
        * [setTimeout()和 setInterval()](BOM/setTimeoutAndSetInterval.md)
