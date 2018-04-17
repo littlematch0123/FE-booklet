@@ -27,12 +27,12 @@ HTML被认为是前端知识体系里面最简单的知识，几年前，很多�
 ### 标签
 
 1.  重点标签
-	* [锚点](tags/tags_a.md)
-	* [图片](tags/tags_img.md)  	
-	* [列表](tags/tags_list.md)  	
-	* [框架](tags/tags_frame.md)  	
-	* [表格](tags/tags_table.md)  
-	* [DOM操作表格](tags/tags_DOMTable.md)  	
+	* [锚点](tags/keyTags/tags_a.md)
+	* [图片](tags/keyTags/tags_img.md)  	
+	* [列表](tags/keyTags/tags_list.md)  	
+	* [框架](tags/keyTags/tags_frame.md)  	
+	* [表格](tags/keyTags/tags_table.md)  
+	* [DOM操作表格](tags/keyTags/tags_DOMTable.md)  	
 2.  多媒体	
 	* [音频和视频](tags/media/media.md)  	
 	* [audio和video](tags/media/tags_audioAndVideo.md)  	
@@ -43,9 +43,4 @@ HTML被认为是前端知识体系里面最简单的知识，几年前，很多�
 	* [input元素的type类型](tags/form/form_inputType.md)
 	* [表单控件](tags/form/form_formCont.md)
 	* [表单美化](tags/form/form_formBeau.md)
-4. 表单脚本
-	* [表单对象](tags/form/form_formObj.md)
-	* [表单字段](tags/form/form_formEle.md)
-	* [选择文本](tags/form/form_select.md)
-	* [选择框脚本](tags/form/form_selOption.md)
-	* [富文本编辑](tags/form/form_WYSIWYG.md)
+

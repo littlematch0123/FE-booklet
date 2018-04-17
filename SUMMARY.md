@@ -41,12 +41,6 @@
        * [input 元素的 type 类型](HTML/tags/form/form_inputType.md)
        * [表单控件](HTML/tags/form/form_formCont.md)
        * [表单美化](HTML/tags/form/form_formBeau.md)
-    4. 表单脚本
-       * [表单对象](HTML/tags/form/form_formObj.md)
-       * [表单字段](HTML/tags/form/form_formEle.md)
-       * [选择文本](HTML/tags/form/form_select.md)
-       * [选择框脚本](HTML/tags/form/form_selOption.md)
-       * [富文本编辑](HTML/tags/form/form_WYSIWYG.md)
 
 * CSS
 
@@ -336,6 +330,12 @@
          * [文本事件](JS/DOM/event/text.md)
          * [加载事件](JS/DOM/event/load.md)
          * [焦点管理](JS/DOM/event/focus.md)
+    5. 表单脚本
+      * [表单对象](JS/DOM/FormDOM/form_formObj.md)
+      * [表单字段](JS/DOM/FormDOM/form_formEle.md)
+      * [选择文本](JS/DOM/FormDOM/form_select.md)
+      * [选择框脚本](JS/DOM/FormDOM/form_selOption.md)
+      * [富文本编辑](JS/DOM/FormDOM/form_WYSIWYG.md)  
   * BOM
     1. 定时器
        * [setTimeout()和 setInterval()](JS/BOM/setTimeoutAndSetInterval.md)
