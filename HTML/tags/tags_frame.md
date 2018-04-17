@@ -239,7 +239,7 @@ sandbox="allow-scripts"//允许脚本执行</pre>
 
 ### iframe脚本
 
-&emsp;&emsp;通过getElementsById()等方法获得的是iframe的DOM节点，而并非iframe的window。使用contextWindow属性可以获得iframe节点的包含的window对象，或者使用contentDocument属性获得包含的document对象
+&emsp;&emsp;通过getElementById()等方法获得的是iframe的DOM节点，而并非iframe的window。使用contextWindow属性可以获得iframe节点的包含的window对象，或者使用contentDocument属性获得包含的document对象
 
 &emsp;&emsp;注意：IE7-浏览器不支持contentDocument属性
 
