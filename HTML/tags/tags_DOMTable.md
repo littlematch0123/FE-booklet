@@ -8,20 +8,20 @@
 
 &emsp;&emsp;要通过DOM实现下列格式的表格结构
 
-<div>
-<pre>&lt;table border = "1" width = "100%"&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Cell 1,1&lt;/td&gt;
-            &lt;td&gt;Cell 2,1&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Cell 1,2&lt;/td&gt;
-            &lt;td&gt;Cell 2,2&lt;/td&gt;
-        &lt;/tr&gt;        
-    &lt;/tbody&gt;
-&lt;/table&gt;</pre>
-</div>
+```
+<table border = "1" width = "100%">
+    <tbody>
+        <tr>
+            <td>Cell 1,1</td>
+            <td>Cell 2,1</td>
+        </tr>
+        <tr>
+            <td>Cell 1,2</td>
+            <td>Cell 2,2</td>
+        </tr>        
+    </tbody>
+</table>
+```
 
 &nbsp;
 
@@ -29,8 +29,8 @@
 
 &emsp;&emsp;如果通过DOMcore方法，则方法如下
 
-<div>
-<pre>//创建表格
+```
+//创建表格
 var table = document.createElement("table");
 table.border = "1";
 table.width = "100%";
@@ -60,8 +60,8 @@ cell2_2.appendChild(document.createTextNode("Cell 2,2"));
 row2.appendChild(cell2_2);
 
 //将表格添加到文档主体中
-document.body.appendChild(table);</pre>
-</div>
+document.body.appendChild(table);
+```
 
 &nbsp;
 
@@ -69,7 +69,7 @@ document.body.appendChild(table);</pre>
 
 &emsp;&emsp;显然DOM代码很长，为了方便构建表格，HTML DOM为&lt;table&gt;、&lt;tbody&gt;、&lt;tr&gt;元素添加了属性和方法。
 
-【1】为&lt;table&gt;元素添加的属性和方法
+&emsp;&emsp;【1】为&lt;table&gt;元素添加的属性和方法
 
 <div>
 <pre>caption:保存着对&lt;caption&gt;元素的指针
@@ -84,7 +84,7 @@ deleteTFoot():删除&lt;tfoot&gt;元素
 deleteCaption():删除&lt;caption&gt;元素</pre>
 </div>
 
-【2】为&lt;tbody&gt;元素添加的属性和方法
+&emsp;&emsp;【2】为&lt;tbody&gt;元素添加的属性和方法
 
 <div>
 <pre>rows:保存着&lt;tbody&gt;元素中行的HTMLCollection
@@ -92,7 +92,7 @@ deleteRow(pos):删除指定位置的行
 insertRow(pos):向rows集合中的指定位置插入一行，返回对新插入行的引用</pre>
 </div>
 
-【3】为&lt;tr&gt;元素添加的属性和方法
+&emsp;&emsp;【3】为&lt;tr&gt;元素添加的属性和方法
 
 <div>
 <pre>cells:保存着&lt;tr&gt;元素中单元格的HTMLCollection
@@ -104,40 +104,7 @@ insertCell(pos):向cells集合中的指定位置插入一个单元格，返回�
 
 ### 代码重写
 
-<div>
-<pre>//创建表格
-var table = document.createElement("table");
-table.border = "1";
-table.width = "100%";
-
-//创建tbody
-var tbody = document.createElement("tbody");
-table.appendChild(tbody);
-
-//创建第一行
-tbody.insertRow(0);
-tbody.rows[0].insertCell(0);
-tbody.rows[0].cells[0].appendChild(document.createTextNode("Cell 1,1"));
-tbody.rows[0].insertCell(1);
-tbody.rows[0].cells[1].appendChild(document.createTextNode("Cell 2,1"));
-
-//创建第二行
-tbody.insertRow(1);
-tbody.rows[1].insertCell(0);
-tbody.rows[1].cells[0].appendChild(document.createTextNode("Cell 1,2"));
-tbody.rows[1].insertCell(1);
-tbody.rows[1].cells[1].appendChild(document.createTextNode("Cell 2,2"));
-
-//将表格添加到文档主体中
-document.body.appendChild(table);</pre>
-</div>
-
-&nbsp;
-
-### 效果展示
-
-<div>
-<pre>&lt;script&gt;
+```
 //创建表格
 var table = document.createElement("table");
 table.border = "1";
@@ -163,8 +130,11 @@ tbody.rows[1].cells[1].appendChild(document.createTextNode("Cell 2,2"));
 
 //将表格添加到文档主体中
 document.body.appendChild(table);
-&lt;/script&gt;</pre>
-</div>
+```
+
+&nbsp;
+
+### 效果展示
 
 <iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/html/table/t88.html" frameborder="0" width="320" height="240"></iframe>
 
