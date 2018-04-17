@@ -25,7 +25,7 @@
 
 ### HEAD
 
-&emsp;&emsp;`<head>`标签用于定义文档的头部，它是所有头部元素的容器。;`<head>`大部分不可见，描述了文档的一些基本的属性和信息(可以呈现的是title和icon)。`<head>`元素下的子元素主要包括`<meta>`、`<title>`、`<base>`、`<link>`、`<style>`和`<script>`这六个元素
+&emsp;&emsp;`<head>`标签用于定义文档的头部，它是所有头部元素的容器。`<head>`大部分不可见，描述了文档的一些基本的属性和信息(可以呈现的是title和icon)。`<head>`元素下的子元素主要包括`<meta>`、`<title>`、`<base>`、`<link>`、`<style>`和`<script>`这六个元素
 
 &emsp;&emsp;`<title>`定义文档的标题，它是head部分中唯一必需的元素
 
@@ -61,8 +61,8 @@
     <!DOCTYPE html>
     <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Document</title>
+      <meta charset="UTF-8">
+      <title>Document</title>
     </head>
     <body>
     </body>
@@ -73,13 +73,13 @@
     <!DOCTYPE html>
     <html>
     <head>
-        <meta charset="utf-8"/>
-        <title>Document</title>
-        <meta name="keywords" content=""/>
-        <meta name="description" content=""/>
-        <meta name="viewport" content="width=device-width"/>
-        <link rel="stylesheet" href="5/style.css"/>
-        <link rel="shortcut icon" href="ico.ico"/>
+      <meta charset="utf-8"/>
+      <title>Document</title>
+      <meta name="keywords" content=""/>
+      <meta name="description" content=""/>
+      <meta name="viewport" content="width=device-width"/>
+      <link rel="stylesheet" href="5/style.css"/>
+      <link rel="shortcut icon" href="ico.ico"/>
     </head>
     <body>
     </body>
