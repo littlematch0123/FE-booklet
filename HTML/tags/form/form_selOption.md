@@ -1,32 +1,32 @@
-# 选择框脚本
+# 深入理解表单脚本系列第四篇——选择框脚本
 
-　　选择框是通过&lt;select&gt;和&lt;option&gt;元素创建的，又称为下拉列表框。为了方便与这个控件交互，除了所有表单字段共有的属性和方法外，javascript还提供了一些属性和方法。本文将详细介绍选择框脚本
+&emsp;&emsp;选择框是通过&lt;select&gt;和&lt;option&gt;元素创建的，又称为下拉列表框。为了方便与这个控件交互，除了所有表单字段共有的属性和方法外，javascript还提供了一些属性和方法。本文将详细介绍选择框脚本
 
 &nbsp;
 
 ### select
 
-　　select元素用来定义一个下拉列表，包含任意数量的option和optgroup元素。select元素包含以下javascript属性
+&emsp;&emsp;select元素用来定义一个下拉列表，包含任意数量的option和optgroup元素。select元素包含以下javascript属性
 
-　　autofocus&nbsp;　　　　是否在页面加载后文本区域自动获得焦点(IE9-浏览器不支持)
+&emsp;&emsp;autofocus&emsp;&emsp;是否在页面加载后文本区域自动获得焦点(IE9-浏览器不支持)
 
-　　disabled&nbsp;　　　　 &nbsp;是否禁用该下拉列表
+&emsp;&emsp;disabled&emsp;&emsp;是否禁用该下拉列表
 
-　　form&nbsp;　　　　　　 表示文本区域所属的一个或多个表单
+&emsp;&emsp;form&emsp;&emsp;表示文本区域所属的一个或多个表单
 
-　　multiple&nbsp;　　　　 &nbsp;是否可选择多个选项
+&emsp;&emsp;multiple&emsp;&emsp;是否可选择多个选项
 
-　　name&nbsp;　　　　　　表示下拉列表的名称
+&emsp;&emsp;name&emsp;&emsp;表示下拉列表的名称
 
-　　size&nbsp;　　　　　　 &nbsp;表示下拉列表中可见选项的数目
+&emsp;&emsp;size&emsp;&emsp;表示下拉列表中可见选项的数目
 
-　　options　　　　　 表示所包含的options的数组
+&emsp;&emsp;options&emsp;&emsp;表示所包含的options的数组
 
-　　selectedOptions &nbsp; &nbsp;表示所选择的options的数组(IE浏览器不支持)
+&emsp;&emsp;selectedOptions&emsp;&emsp;表示所选择的options的数组(IE浏览器不支持)
 
-　　selectedIndex &nbsp; &nbsp; &nbsp; 表示所选择的第一个option的索引值
+&emsp;&emsp;selectedIndex&emsp;&emsp;表示所选择的第一个option的索引值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;form id="myForm"&gt;
   &lt;select name="select" id="mySelect"&gt;
     &lt;option value="1" &gt;1&lt;/option&gt;
@@ -48,13 +48,13 @@ console.log(mySelect.disabled);//false
 &lt;/script&gt;</pre>
 </div>
 
-　　下面对一些重要属性进行详细介绍
+&emsp;&emsp;下面对一些重要属性进行详细介绍
 
 **multiple**
 
-　　multiple属性表示是否允许多项选择
+&emsp;&emsp;multiple属性表示是否允许多项选择
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option&gt;1&lt;/option&gt;
     &lt;option&gt;2&lt;/option&gt;
@@ -72,9 +72,9 @@ btn.onclick = function(){
 
 **type**
 
-　　选择框的type属性有两种，一种是'select-one'，表示单选；另一种是'select-multiple'，表示多选
+&emsp;&emsp;选择框的type属性有两种，一种是'select-one'，表示单选；另一种是'select-multiple'，表示多选
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option&gt;1&lt;/option&gt;
     &lt;option&gt;2&lt;/option&gt;
@@ -94,19 +94,19 @@ btn.onclick = function(){
 
 **value**
 
-　　选择框的value属性由当前选中项决定
+&emsp;&emsp;选择框的value属性由当前选中项决定
 
-　　1、如果没有选中的项，则选择框的value属性保存空字符串
+&emsp;&emsp;1、如果没有选中的项，则选择框的value属性保存空字符串
 
-　　2、如果有一个选中项，而且该项的value特性已经在HTML中指定，则选择框的value属性等于选中项的value特性。即使value特性的值是空字符串，也同样遵循此条规则
+&emsp;&emsp;2、如果有一个选中项，而且该项的value特性已经在HTML中指定，则选择框的value属性等于选中项的value特性。即使value特性的值是空字符串，也同样遵循此条规则
 
-　　3、如果有一个选中项，但该项的value特性在HTML中未指定，则选择框的value属性等于该项的文本
+&emsp;&emsp;3、如果有一个选中项，但该项的value特性在HTML中未指定，则选择框的value属性等于该项的文本
 
-　　4、如果有多个选中项，则选择框的value属性将依据前两条规则取得第一个选中项的值
+&emsp;&emsp;4、如果有多个选中项，则选择框的value属性将依据前两条规则取得第一个选中项的值
 
-　　[注意]IE8-浏览器只支持value属性的值，不支持选择的文本值
+&emsp;&emsp;注意：IE8-浏览器只支持value属性的值，不支持选择的文本值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option value="a"&gt;1&lt;/option&gt;
     &lt;option value="b"&gt;2&lt;/option&gt;
@@ -129,9 +129,9 @@ btn2.onclick = function(){
 
 **selectedIndex**
 
-　　selectedIndex属性返回基于0的选中项的索引，如果没有选中项，则值为-1。对于支持多选的控件，只保存选中项中第一项的索引
+&emsp;&emsp;selectedIndex属性返回基于0的选中项的索引，如果没有选中项，则值为-1。对于支持多选的控件，只保存选中项中第一项的索引
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option value="a"&gt;1&lt;/option&gt;
     &lt;option value="b"&gt;2&lt;/option&gt;
@@ -154,9 +154,9 @@ btn2.onclick = function(){
 
 **size**
 
-　　size属性表示选择框的可见行数
+&emsp;&emsp;size属性表示选择框的可见行数
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option value="a"&gt;1&lt;/option&gt;
     &lt;option value="b"&gt;2&lt;/option&gt;
@@ -183,9 +183,9 @@ btn3.onclick = function(){
 
 **options**
 
-　　options属性表示控件中所有的&lt;option&gt;元素
+&emsp;&emsp;options属性表示控件中所有的&lt;option&gt;元素
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option value="a"&gt;1&lt;/option&gt;
     &lt;option value="b"&gt;2&lt;/option&gt;
@@ -201,35 +201,35 @@ console.log(test.options)
 
 ### option
 
-　　在DOM中，每个&lt;option&gt;元素都有一个HTMLOptionElement对象表示。为便于访问数据， HTMLOptionElement对象也定义了一些属性
+&emsp;&emsp;在DOM中，每个&lt;option&gt;元素都有一个HTMLOptionElement对象表示。为便于访问数据， HTMLOptionElement对象也定义了一些属性
 
-　　[注意]IE浏览器不支持为&lt;option&gt;元素设置display:none
+&emsp;&emsp;注意：IE浏览器不支持为&lt;option&gt;元素设置display:none
 
 **index**
 
-　　index属性表示当前选项在options集合中的索引
+&emsp;&emsp;index属性表示当前选项在options集合中的索引
 
 **label**
 
-　　label属性表示当前选项的标签
+&emsp;&emsp;label属性表示当前选项的标签
 
-　　[注意]IE9-浏览器不支持
+&emsp;&emsp;注意：IE9-浏览器不支持
 
 **selected**
 
-　　selected属性表示当前选项是否被选中。将这个属性设置为true可以选中当前选项
+&emsp;&emsp;selected属性表示当前选项是否被选中。将这个属性设置为true可以选中当前选项
 
 **text**
 
-　　text属性表示选项的文本
+&emsp;&emsp;text属性表示选项的文本
 
 **value**
 
-　　value属性表示选项的值
+&emsp;&emsp;value属性表示选项的值
 
-　　[注意]在未指定value特性的情况下，IE8会返回空字符串；而其他浏览器返回text属性的值
+&emsp;&emsp;注意：在未指定value特性的情况下，IE8会返回空字符串；而其他浏览器返回text属性的值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option value="a" selected&gt;1&lt;/option&gt;
     &lt;option value="b"&gt;2&lt;/option&gt;
@@ -249,9 +249,9 @@ console.log(option.value);//a
 
 ### 添加选项
 
-　　【1】添加选项可以使用DOM的appendChild()或insertBefore()方法
+&emsp;&emsp;【1】添加选项可以使用DOM的appendChild()或insertBefore()方法
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option&gt;1&lt;/option&gt;
     &lt;option&gt;3&lt;/option&gt;
@@ -268,11 +268,11 @@ btn.onclick = function(){
 
 <iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f17.html" frameborder="0" width="320" height="240"></iframe>
 
-　　【2】可以使用选择框的add()方法，add(newoption,reloption)方法向控件中插入新&lt;option&gt;元素，其位置在相关项(reloption)之前
+&emsp;&emsp;【2】可以使用选择框的add()方法，add(newoption,reloption)方法向控件中插入新&lt;option&gt;元素，其位置在相关项(reloption)之前
 
-　　使用Option构造函数来创建新选项，接受两个参数：文本(text)和值(value)，第二个参数可选
+&emsp;&emsp;使用Option构造函数来创建新选项，接受两个参数：文本(text)和值(value)，第二个参数可选
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option&gt;1&lt;/option&gt;
     &lt;option&gt;3&lt;/option&gt;
@@ -292,11 +292,11 @@ btn.onclick = function(){
 
 ### 移除选项
 
-　　与添加选项类似，移除选项的方式也有很多种
+&emsp;&emsp;与添加选项类似，移除选项的方式也有很多种
 
-　　【1】使用DOM的removeChild()方法
+&emsp;&emsp;【1】使用DOM的removeChild()方法
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option&gt;1&lt;/option&gt;
     &lt;option&gt;2&lt;/option&gt;
@@ -312,11 +312,11 @@ btn.onclick = function(){
 
 <iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f19.html" frameborder="0" width="320" height="240"></iframe>
 
-　　【2】使用选择框的remove()方法。这个方法接受一个参数，即要移除选项的索引
+&emsp;&emsp;【2】使用选择框的remove()方法。这个方法接受一个参数，即要移除选项的索引
 
-　　[注意]使用该方法的好处是，若不存在被移除选项的索引，不会报错，只是静默失败
+&emsp;&emsp;注意：使用该方法的好处是，若不存在被移除选项的索引，不会报错，只是静默失败
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option&gt;1&lt;/option&gt;
     &lt;option&gt;2&lt;/option&gt;
@@ -332,11 +332,11 @@ btn.onclick = function(){
 
 <iframe style="width: 100%; height: 50px;" src="https://demo.xiaohuochai.site/html/formobj/f20.html" frameborder="0" width="320" height="240"></iframe>
 
-　　【3】将相应选项设置为null
+&emsp;&emsp;【3】将相应选项设置为null
 
-　　[注意]该方法同样不会报错
+&emsp;&emsp;注意：该方法同样不会报错
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;select name="test" id="test"&gt;
     &lt;option&gt;1&lt;/option&gt;
     &lt;option&gt;2&lt;/option&gt;
