@@ -1,33 +1,33 @@
 # audio和video
 
-　　HTML5新增了两个与媒体相关的标签，让开发人员不必依赖任何插件就能在网页中嵌入跨浏览器的音频和视频内容，这两个标签是&lt;audio&gt;和&lt;video&gt;，且不被IE8-浏览器支持
+&emsp;&emsp;HTML5新增了两个与媒体相关的标签，让开发人员不必依赖任何插件就能在网页中嵌入跨浏览器的音频和视频内容，这两个标签是&lt;audio&gt;和&lt;video&gt;，且不被IE8-浏览器支持
 
-&nbsp;　 &nbsp;以视频文件举例，它包含了音频轨道、视频轨道和其他一些元数据(封面、标题、子标题、字幕等)
+&emsp;&emsp;以视频文件举例，它包含了音频轨道、视频轨道和其他一些元数据(封面、标题、子标题、字幕等)
 
 ![audioAndVideo](https://pic.xiaohuochai.site/blog/HTML_tags_audioAndVideo.jpg)
 
 ## HTML元素
 
- 　　使用这两个元素至少要在标签中包含src属性。位于开始和结束标签之间的任何内容都将作为后备内容，在浏览器不支持这两个媒体元素的情况下显示
+&emsp;&emsp;使用这两个元素至少要在标签中包含src属性。位于开始和结束标签之间的任何内容都将作为后备内容，在浏览器不支持这两个媒体元素的情况下显示
 
 ### &lt;audio&gt;
 
-<div class="cnblogs_code">
+<div>
 <pre>autoplay         自动播放
 controls         显示控件
 loop             循环播放
 preload          音频在页面加载时进行加载，并预备播放(若使用autoplay,则忽略该属性)
 src              要播放的音频的URL        </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio controls autoplay loop muted src="song.mp3"&gt; 
   &lt;source src="song.mp3" type="audio/mp3" /&gt;
 &lt;/audio&gt;    </pre>
 </div>
 
-　　[注意]&lt;audio&gt;元素不支持播放wma格式的文件
+&emsp;&emsp;注意：&lt;audio&gt;元素不支持播放wma格式的文件
 
-　　&lt;演示框&gt;点击下列相应属性值可进行演示
+&emsp;&emsp;&lt;演示框&gt;点击下列相应属性值可进行演示
 
 <iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/html/movie/m2.html" frameborder="0" width="320" height="240"></iframe>
 
@@ -35,7 +35,7 @@ src              要播放的音频的URL        </pre>
 
 ### &lt;video&gt;
 
-<div class="cnblogs_code">
+<div>
 <pre>autoplay            自动播放
 controls            显示控件
 height         　　　播放器高度
@@ -48,11 +48,11 @@ preload="meta"     //当页面加载后只载入元数据
 src                 要播放的视频的URL
 poster        　　　 规定视频下载时显示的图像，或者在用户点击播放按钮前显示的图像    </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;video id="test" src="movie.mp4" width="280" height="200" poster="diejia.jpg"&gt;&lt;/video&gt;</pre>
 </div>
 
-　　&lt;演示框&gt;点击下列相应属性值可进行演示
+&emsp;&emsp;&lt;演示框&gt;点击下列相应属性值可进行演示
 
 <iframe style="width: 100%; height: 320px;" src="https://demo.xiaohuochai.site/html/movie/m33.html" frameborder="0" width="320" height="240"></iframe>
 
@@ -60,36 +60,36 @@ poster        　　　 规定视频下载时显示的图像，或者在用户�
 
 ### &lt;source&gt;
 
-　　为&lt;video&gt;和&lt;audio&gt;提供媒介资源
+&emsp;&emsp;为&lt;video&gt;和&lt;audio&gt;提供媒介资源
 
-<div class="cnblogs_code">
+<div>
 <pre>media     规定媒体资源的类型(没有浏览器支持)
 src     　规定媒体文件的URL
 type      规定媒体资源的MIME类型</pre>
 </div>
 
-　　常用类型
+&emsp;&emsp;常用类型
 
-　　　　视频 [1]video/ogg [2]video/mp4 [3]video/webm
+&emsp;&emsp;&emsp;视频 [1]video/ogg [2]video/mp4 [3]video/webm
 
-　　　　音频 [1]audio/ogg [2]audio/mpeg
+&emsp;&emsp;&emsp;音频 [1]audio/ogg [2]audio/mpeg
 
-　　使用&lt;audio&gt;和&lt;video&gt;至少要在标签中包含src属性。位于开始和结束标签之间的任何内容都将作为后备内容，在浏览器不支持这两个媒体元素的情况下显示
+&emsp;&emsp;使用&lt;audio&gt;和&lt;video&gt;至少要在标签中包含src属性。位于开始和结束标签之间的任何内容都将作为后备内容，在浏览器不支持这两个媒体元素的情况下显示
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;video src="#"&gt;
     video player not available.
 &lt;/video&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio src="#"&gt;
     audio player not available.
 &lt;/audio&gt;</pre>
 </div>
 
-　　因为并非所有浏览器都支持所有媒体格式，所以可以指定多个不同的媒体来源。为此，不用在标签中指定src属性，而是使用一个或多个&lt;source&gt;元素
+&emsp;&emsp;因为并非所有浏览器都支持所有媒体格式，所以可以指定多个不同的媒体来源。为此，不用在标签中指定src属性，而是使用一个或多个&lt;source&gt;元素
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;video&gt;
     &lt;source src="video.webm" type="video/webm; codecs='vp8,vorbis'"&gt;
     &lt;source src="video.ogg" type="video/ogg; codecs='theora,vorbis'"&gt;
@@ -97,7 +97,7 @@ type      规定媒体资源的MIME类型</pre>
     video player not available.
 &lt;/video&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio&gt;
     &lt;source src="audio.ogg" type="audio/ogg"&gt;
     &lt;source src="audio.mp3" type="audio/mp3"&gt;
@@ -105,15 +105,15 @@ type      规定媒体资源的MIME类型</pre>
 &lt;/audio&gt;</pre>
 </div>
 
-&nbsp;　　因为并非所有浏览器都支持&lt;audio&gt;和&lt;video&gt;标签，所以更好的解决办法是有备选内容
+&emsp;&emsp;因为并非所有浏览器都支持&lt;audio&gt;和&lt;video&gt;标签，所以更好的解决办法是有备选内容
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio controls="controls" height="100" width="100"&gt;
     &lt;source src="song.mp3" type="audio/mp3" /&gt;
     &lt;embed height="100" width="100" src="song.mp3" /&gt;
 &lt;/audio&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;video width="320" height="240" controls="controls"&gt;
   &lt;source src="movie.mp4" type="video/mp4" /&gt;
   &lt;object data="movie.mp4" width="320" height="240"&gt;
@@ -126,19 +126,19 @@ type      规定媒体资源的MIME类型</pre>
 
 ### &lt;track&gt;
 
-　　&lt;track&gt;元素被当作媒体元素&mdash;&lt;audio&gt;和&lt;video&gt;的子元素来使用。它允许指定计时字幕（或者基于事件的数据），例如自动处理字幕
+&emsp;&emsp;&lt;track&gt;元素被当作媒体元素&mdash;&lt;audio&gt;和&lt;video&gt;的子元素来使用。它允许指定计时字幕（或者基于事件的数据），例如自动处理字幕
 
-　　track&nbsp;给媒体元素添加的数据的类型在kind属性中设置，属性值可以是&nbsp;subtitles,&nbsp;captions,&nbsp;descriptions,&nbsp;chapters&nbsp;或&nbsp;metadata。该元素指向当用户请求额外的数据时浏览器公开的包含定时文本的源文件。一个media元素的任意两个track子元素不能有相同的&nbsp;kind、srclang和&nbsp;label属性
+&emsp;&emsp;track&nbsp;给媒体元素添加的数据的类型在kind属性中设置，属性值可以是&nbsp;subtitles,&nbsp;captions,&nbsp;descriptions,&nbsp;chapters&nbsp;或&nbsp;metadata。该元素指向当用户请求额外的数据时浏览器公开的包含定时文本的源文件。一个media元素的任意两个track子元素不能有相同的&nbsp;kind、srclang和&nbsp;label属性
 
 【default】
 
-　　default属性规定该轨道是默认的，假如没有选择任何轨道
+&emsp;&emsp;default属性规定该轨道是默认的，假如没有选择任何轨道
 
 【kind】
 
-　　kind属性表示轨道属于什么文本类型
+&emsp;&emsp;kind属性表示轨道属于什么文本类型
 
-<div class="cnblogs_code">
+<div>
 <pre>captions 　　　　该轨道定义将在播放器中显示的简短说明
 chapters    　　该轨道定义章节，用于导航媒介资源
 descriptions   该轨道定义描述，用于通过音频描述媒介的内容，假如内容不可播放或不可见
@@ -148,26 +148,26 @@ subtitles    　该轨道定义字幕，用于在视频中显示字幕</pre>
 
 【label】
 
-　　label属性表示轨道的标签或标题
+&emsp;&emsp;label属性表示轨道的标签或标题
 
 【url】
 
-　　URL属性表示字幕文件的URL
+&emsp;&emsp;URL属性表示字幕文件的URL
 
 【srclang】
 
-　　srclang属性表示轨道的语言，若 kind 属性值是 "subtitles"，则该属性必需的。中文为"zh"，英文为"en"
+&emsp;&emsp;srclang属性表示轨道的语言，若 kind 属性值是 "subtitles"，则该属性必需的。中文为"zh"，英文为"en"
 
-　　字幕文件书写格式如下所示，注意，毫秒位的3个0不能省略
+&emsp;&emsp;字幕文件书写格式如下所示，注意，毫秒位的3个0不能省略
 
-<div class="cnblogs_code">
+<div>
 <pre>WEBVTT
 
 1
 00:00:01.000 --&gt; 00:00:08.000
 欢迎来到小火柴的个人网站</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;video width="320" height="240" controls="controls"&gt;
   &lt;source src="mov.mp4" type="video/mp4" /&gt;
   &lt;track src="cn_track.vtt" srclang="zh" default kind="captions" label="欢迎你"&gt;
@@ -181,20 +181,20 @@ subtitles    　该轨道定义字幕，用于在视频中显示字幕</pre>
 
 ## API
 
-　　HTML5 DOM为&lt;audio&gt;和&lt;video&gt;元素提供了方法、属性和事件
+&emsp;&emsp;HTML5 DOM为&lt;audio&gt;和&lt;video&gt;元素提供了方法、属性和事件
 
 ### 方法
 
 1、canPlayType()
 
- 　　检测浏览器是否能播放指定的音频或视频类型，返回值为下列之一：
+&emsp;&emsp;检测浏览器是否能播放指定的音频或视频类型，返回值为下列之一：
 
-<div class="cnblogs_code">
+<div>
 <pre>'probable':浏览器最可能支持该类型
 'maybe':浏览器也许支持该类型
 '':浏览器不支持该类型</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>//常用值
 video/ogg
 video/mp4
@@ -208,7 +208,7 @@ video/webm;codecs="vp8.0,vorbis"
 audio/ogg;codecs="vorbis"
 audio/mp4;codecs="mp4a.40.5"</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="song.mp3"&gt;&lt;/audio&gt;    
 &lt;script&gt;
 var audio = document.getElementById('audio');
@@ -219,9 +219,9 @@ console.log(audio.canPlayType('video/ogg;codecs="theora,vorbis"'));
 
 2、load()
 
-　　重新加载音频或视频元素，用于在更改src来源或其他设置后对音频或视频元素进行更新
+&emsp;&emsp;重新加载音频或视频元素，用于在更改src来源或其他设置后对音频或视频元素进行更新
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="song.mp3" autoplay controls&gt;&lt;/audio&gt;    
 &lt;script&gt;
     var audio = document.getElementById('audio');
@@ -232,19 +232,19 @@ console.log(audio.canPlayType('video/ogg;codecs="theora,vorbis"'));
 
 3、play()
 
-　　开始播放音频或视频
+&emsp;&emsp;开始播放音频或视频
 
 4、pause()
 
-　　暂停当前播放的音频或视频
+&emsp;&emsp;暂停当前播放的音频或视频
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button onclick = 'audio.play();'&gt;播放&lt;/button&gt;
 &lt;button onclick = 'audio.pause();'&gt;暂停&lt;/button&gt;
 &lt;audio id="audio" src="myocean.mp3" controls&gt;&lt;/audio&gt;    </pre>
 </div>
 
-　　&lt;演示框&gt;点击下列相应属性值可进行演示
+&emsp;&emsp;&lt;演示框&gt;点击下列相应属性值可进行演示
 
 <iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/html/movie/m4.html" frameborder="0" width="320" height="240"></iframe>
 
@@ -252,19 +252,19 @@ console.log(audio.canPlayType('video/ogg;codecs="theora,vorbis"'));
 
 ### 属性
 
- 　　[注意]所有属性中，只有videoWidth和videoHeight是立即可用的，在音视频的元数据加载后，其他属性才可用
+&emsp;&emsp;注意：所有属性中，只有videoWidth和videoHeight是立即可用的，在音视频的元数据加载后，其他属性才可用
 
-**【只读】**
+【只读】
 
 1、buffered
 
-<div class="cnblogs_code">
+<div>
 <pre>buffered.length//获取已缓冲范围的数量
 buffered.start(index)//获取某个已缓冲范围的开始位置
 buffered.end(index)//获取某个已缓冲范围的结束位置
 buffered.end(0)//获取当前已缓冲的秒数</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button&gt;获取缓冲时间&lt;/button&gt;
 &lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
@@ -279,9 +279,9 @@ oBtn.onclick = function(){
 
 2、currentSrc
 
- 　　返回当前音频或视频的URL
+&emsp;&emsp;返回当前音频或视频的URL
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 var audio = document.getElementById('audio');
@@ -294,9 +294,9 @@ setInterval(function(){
 
 3、ended
 
-　　返回音频或视频是否已结束
+&emsp;&emsp;返回音频或视频是否已结束
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 document.onclick = function(){
@@ -307,9 +307,9 @@ document.onclick = function(){
 
 4、duration
 
-　　返回当前音频或视频的长度(以秒计)，如果未设置则返回NaN
+&emsp;&emsp;返回当前音频或视频的长度(以秒计)，如果未设置则返回NaN
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 //NaN
@@ -322,15 +322,15 @@ document.onclick = function(){
 
 5、networkState
 
-　　返回音频或视频当前网络状态
+&emsp;&emsp;返回音频或视频当前网络状态
 
-<div class="cnblogs_code">
+<div>
 <pre>networkState:0(尚未初始化)
 networkState:1(已选取资源，但并未使用网络)
 networkState:2(正在下载数据)
 networkState:3(未找到资源来源)</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 //3
@@ -344,13 +344,13 @@ document.onclick = function(){
 
 6、paused
 
-　　返回音频或视频是否已暂停
+&emsp;&emsp;返回音频或视频是否已暂停
 
-<div class="cnblogs_code">
+<div>
 <pre>paused:true;(已暂停)
 paused:false;(未暂停)    </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 console.log(audio.paused)
@@ -362,17 +362,17 @@ document.onclick = function(){
 
 7、played
 
-　　已播范围是指音频或视频的时间范围。如果用户在音频或视频中跳跃，会获得多个播放范围
+&emsp;&emsp;已播范围是指音频或视频的时间范围。如果用户在音频或视频中跳跃，会获得多个播放范围
 
-<div class="cnblogs_code">
+<div>
 <pre>played.length(获得音频或视频已播放范围的数量)
 played.start(index)(获得某个已播范围的开始位置)
 played.end(index)(获得某个已播范围的结束位置)</pre>
 </div>
 
- 　　[注意]首段已播范围的下标是0
+&emsp;&emsp;注意：首段已播范围的下标是0
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 document.onclick = function(){
@@ -383,16 +383,16 @@ document.onclick = function(){
 
 8、readyState
 
-　　返回音频或视频的当前就绪状态
+&emsp;&emsp;返回音频或视频的当前就绪状态
 
-<div class="cnblogs_code">
+<div>
 <pre>readyState:0(没有关于音频或视频是否就绪的信息)
 readyState:1(关于音频或视频就绪的元数据)
 readyState:2(关于当前播放位置的数据是可用的，但没有足够的数据来播放下一帧)
 readyState:3(当前及至少下一帧的数据是可用的)
 readyState:4(可用数据足以开始播放)</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 //0
@@ -406,14 +406,14 @@ document.onclick = function(){
 
 9、seekable
 
-　　返回可寻址范围，可寻址范围是指用户在视频或音频中可寻址(移动播放位置)的时间范围。对于流视频，通常可以寻址到视频中的任何位置，即使其尚未完成缓冲
+&emsp;&emsp;返回可寻址范围，可寻址范围是指用户在视频或音频中可寻址(移动播放位置)的时间范围。对于流视频，通常可以寻址到视频中的任何位置，即使其尚未完成缓冲
 
-<div class="cnblogs_code">
+<div>
 <pre>seekable.length(获得音频或视频中可寻址范围的数量)
 seekable.start(index)(获得可寻址范围的开始位置)
 seekable.end(index)(获得可寻址范围的结束位置)</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 document.onclick = function(){
@@ -424,11 +424,11 @@ document.onclick = function(){
 
 10、seeking
 
-<div class="cnblogs_code">
+<div>
 <pre>seeking:true(用户正在寻址)
 seeking:false(用户没有在寻址)</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 audio.onseeking = function(){
@@ -437,31 +437,31 @@ audio.onseeking = function(){
 &lt;/script&gt;</pre>
 </div>
 
-【**可读写】**
+【可读写】
 
 1、autoplay
 
-<div class="cnblogs_code">
+<div>
 <pre>autoplay:false(默认，不自动播放)
 autoplay:true(自动播放)</pre>
 </div>
 
 2、controls
 
-<div class="cnblogs_code">
+<div>
 <pre>controls:false(默认，不显示控件)
 controls:true(显示控件)</pre>
 </div>
 
 3、crossOrigin
 
-　　设置或返回CORS设置
+&emsp;&emsp;设置或返回CORS设置
 
 4、currentTime
 
-　　设置或返回音频或视频的当前位置(以秒计)
+&emsp;&emsp;设置或返回音频或视频的当前位置(以秒计)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 var audio = document.getElementById('audio');
@@ -475,21 +475,21 @@ document.onclick = function(){
 
 5、defaultMuted(只有chrome支持)
 
-<div class="cnblogs_code">
+<div>
 <pre>defaultMuted:true(初始静音)
 defaultMuted:false(默认，初始不静音)</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>audio.defaultMuted = true;</pre>
 </div>
 
 6、muted
 
-<div class="cnblogs_code">
+<div>
 <pre>muted:true(静音)
 muted:false(不静音)</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button onclick="audio.muted = !audio.muted"&gt;音量开关&lt;/button&gt;
 &lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;</pre>
 </div>
@@ -498,14 +498,14 @@ muted:false(不静音)</pre>
 
 7、defaultPlaybackRate
 
-<div class="cnblogs_code">
+<div>
 <pre>defaultPlaybackRate:1(正常速度)
 defaultPlaybackRate:0.5(半速)
 defaultPlaybackRate:2(倍速)
 defaultPlaybackRate:-1(向后正常速度)
 defaultPlaybackRate:-0.5(向后半速)</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>var audio = document.getElementById('audio');
 setTimeout(function(){
     audio.defaultPlaybackRate = 0.5;
@@ -515,14 +515,14 @@ setTimeout(function(){
 
 8、playbackRate
 
-<div class="cnblogs_code">
+<div>
 <pre>playbackRate:1(正常速度)
 playbackRate:0.5(半速)
 playbackRate:2(倍速)
 playbackRate:-1(向后正常速度)
 playbackRate:-0.5(向后半速)</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 var array = [-1,-0.5,0.5,1,2];
@@ -538,28 +538,28 @@ document.onclick = function(){
 
 9、loop
 
-<div class="cnblogs_code">
+<div>
 <pre>loop:true(循环播放)
 loop:false(默认，不循环播放)</pre>
 </div>
 
 10、preload
 
-　　设置或返回是否在页面加载后立即加载音频或视频
+&emsp;&emsp;设置或返回是否在页面加载后立即加载音频或视频
 
-<div class="cnblogs_code">
+<div>
 <pre>preload:auto;(一旦页面加载，则开始加载音频或视频)
 preload:metadata;(当页面加载后仅加载音频或视频的元数据)
 preload:none;(页面加载后不加载音频或视频)</pre>
 </div>
 
- 　　[注意]当设置autoplay时，该属性无效
+&emsp;&emsp;注意：当设置autoplay时，该属性无效
 
 11、src
 
-　　设置或返回音频或视频的当前来源
+&emsp;&emsp;设置或返回音频或视频的当前来源
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;
 console.log(audio.src);
@@ -574,12 +574,12 @@ document.onclick = function(){
 
 12、volume
 
-　　设置或返回音频或视频的当前音量
+&emsp;&emsp;设置或返回音频或视频的当前音量
 
-<div class="cnblogs_code">
+<div>
 <pre>volume(取得为0-1，0为静音，1为最大，默认为1)    </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button onclick = "if(audio.volume&lt;=0.9)audio.volume+=0.1;"&gt;增大音量&lt;/button&gt;
 &lt;button onclick = "if(audio.volume&gt;=0.1)audio.volume-=0.1;"&gt;减小音量&lt;/button&gt;
 &lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;</pre>
@@ -591,9 +591,9 @@ document.onclick = function(){
 
 ### 事件
 
-　　当音频或视频正在加载过程中，会依次发生以下事件：
+&emsp;&emsp;当音频或视频正在加载过程中，会依次发生以下事件：
 
-<div class="cnblogs_code">
+<div>
 <pre>loadstart:提示浏览器开始寻找指定的音频或视频
 progress:提示浏览器正在下载指定的音频或视频
 durationchange:提示音频或视频的时长已改变
@@ -603,7 +603,7 @@ canplay:提示浏览器能够开始播放指定的音频或视频
 canplaythrough:提示音频或视频能够不停顿地一直播放
 progress:提示浏览器正在下载指定的音频或视频</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="https://demo.xiaohuochai.site/myocean.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;    
 audio.onloadstart = function(){
@@ -630,9 +630,9 @@ audio.oncanplaythrough = function(){
 &lt;/script&gt;</pre>
 </div>
 
-　　影响音频或视频数据加载的事件有以下几个：
+&emsp;&emsp;影响音频或视频数据加载的事件有以下几个：
 
-<div class="cnblogs_code">
+<div>
 <pre>abort:在音频或视频终止加载时触发
 error:在音频或视频加载发生错误时触发
 stalled:在浏览器尝试获取媒体数据，但数据不可用时触发
@@ -640,7 +640,7 @@ suspend:在音频或视频数据被阻止加载时触发(可以是完成加载�
 empted:在发生故障并且文件突然不可用时触发
 </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;video id="video" src="https://demo.xiaohuochai.site/movie.mp4" controls&gt;&lt;/video&gt;
 &lt;script&gt;
 setTimeout(function(){
@@ -672,9 +672,9 @@ video.onemptied = function(){
 
 
 
-　　音频或视频控制按钮发生改变时触发以下事件:
+&emsp;&emsp;音频或视频控制按钮发生改变时触发以下事件:
 
-<div class="cnblogs_code">
+<div>
 <pre>play:音频或视频文件已经就绪可以开始播放时触发
 playing:音频或视频已开始播放时触发
 ended:音频或视频文件播放完毕后触发
@@ -686,7 +686,7 @@ timeupdate:播放位置改变时触发[注意:播放和调整指示定位时都�
 volumechange:音量改变时触发
 waiting:需要缓冲下一帧而停止时触发</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;audio id="audio" src="/honey.mp3" controls&gt;&lt;/audio&gt;
 &lt;script&gt;    
 var i = 1;
@@ -731,12 +731,12 @@ audio.onwaiting = function(){
 
 ### audio专有
 
- 　　&lt;audio&gt;元素在一个原生的javascript构造函数Audio，可以在任何时候播放音频。Audio和Image很像，但Audio不用像Image那样必须插入到文档中，只要创建一个新实例，并传入音频源文件即可
+&emsp;&emsp;&lt;audio&gt;元素在一个原生的javascript构造函数Audio，可以在任何时候播放音频。Audio和Image很像，但Audio不用像Image那样必须插入到文档中，只要创建一个新实例，并传入音频源文件即可
 
-<div class="cnblogs_code">
+<div>
 <pre>var audio = new Audio('test.mp3');    </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 var audio = new Audio('https://demo.xiaohuochai.site/honey.mp3');
 audio.oncanplaythrough = function(){
