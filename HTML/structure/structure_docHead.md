@@ -207,7 +207,7 @@
 &emsp;&emsp;`<style>`元素包含了文档的样式化信息或者文档的一部分，常用于引入内部CSS样式
 
     <style>
-    &emsp;&emsp;body{background-color: red;}
+        body{background-color: red;}
     </style>
 
 &emsp;&emsp;`<style>`主要包含以下属性
