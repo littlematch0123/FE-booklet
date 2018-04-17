@@ -32,7 +32,7 @@
 
 &emsp;&emsp;charset声明声明当前文档所使用的字符编码，但该声明可以被任何一个元素的lang特性的值覆盖。文档的编码一定要与文件本身的编码保持一致，否则会出现乱码，推荐使用UTF-8编码
 
-&emsp;&emsp;[注意]字符编码必须写在`<head>`元素的最开始，如果位于`<title>`标签之后，那么`<title>`标签很可能会乱码
+&emsp;&emsp;注意：字符编码必须写在`<head>`元素的最开始，如果位于`<title>`标签之后，那么`<title>`标签很可能会乱码
 
     <meta charset="utf-8"/>
 
@@ -112,7 +112,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
 
 
-&emsp;&emsp;[注意]关于`<meta>`元素的更多信息[移步至此](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
+&emsp;&emsp;注意：关于`<meta>`元素的更多信息[移步至此](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
 
 
 <p>&nbsp;</p>
@@ -124,7 +124,7 @@
 
 &emsp;&emsp;`<title>`元素详细来说，有以下三个作用：1、定义浏览器工具栏中的标题；2、提供页面被添加到收藏夹时显示的标题；3、显示在搜索引擎结果中的页面标题
 
-&emsp;&emsp;[注意]在所有HTML文档中，`<title>`都是必须的
+&emsp;&emsp;注意：在所有HTML文档中，`<title>`都是必须的
 
     <title>About Me</title>
 
@@ -138,7 +138,7 @@
 
 &emsp;&emsp;`<base>`用于指定文档里所有相对URL地址的基础URL，为页面上所有链接规定默认地址和默认打开方式。文档中的基础URL可以使用document.baseURI进行查询
 
-&emsp;&emsp;[注意]一份文档最多一个`<base>`元素。如果指定了多个`<base`>`元素，只会使用第一个href和target值，其余都会被忽略
+&emsp;&emsp;注意：一份文档最多一个`<base>`元素。如果指定了多个`<base`>`元素，只会使用第一个href和target值，其余都会被忽略
 
     <base href="http://cnblogs.com" target="_blank">
 
@@ -187,7 +187,7 @@
 
     <link rel="icon" href="demo.gif" type="image/gif" sizes="16x16" />  
 
-【引入图标】　　　　
+【引入图标】
 
     <link rel="shortcut icon" href="ico.ico"/>    
 
@@ -196,7 +196,7 @@
     <link rel="stylesheet" type="text/css" href="mystyle.css" />
  
 
-&emsp;&emsp;[注意]关于`<link>`元素的更多信息<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link" target="_blank">移步至此</a>
+&emsp;&emsp;注意：关于`<link>`元素的更多信息<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link" target="_blank">移步至此</a>
 
 
 
@@ -207,7 +207,7 @@
 &emsp;&emsp;`<style>`元素包含了文档的样式化信息或者文档的一部分，常用于引入内部CSS样式
 
     <style>
-    　　body{background-color: red;}
+    &emsp;&emsp;body{background-color: red;}
     </style>
 
 &emsp;&emsp;`<style>`主要包含以下属性
@@ -291,7 +291,7 @@
 
 &emsp;&emsp;两者的区别在于执行时的不同：async脚本在script文件下载完成后会立即执行，并且其执行时间一定在window的load事件触发之前。这意味着多个async脚本很可能不会按其在页面中的出现次序顺序执行；与此相对，浏览器确保多个defer脚本按其在HTML页面中的出现顺序依次执行，且执行时机为DOM解析完成后，document的DOMContentLoaded事件触发之前
 
-&emsp;&emsp;[注意]如果同时设置async和defer，和只设置async属性的效果一致
+&emsp;&emsp;注意：如果同时设置async和defer，和只设置async属性的效果一致
 
 
 &emsp;&emsp;下面展示的是一个需要1秒来下载，以及1秒来解析执行其他操作的例子，整个页面载入花了大约2秒钟
