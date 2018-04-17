@@ -2,9 +2,9 @@
 
 ### 功能实现
 
-　　[1]歌曲播放进度转换成视觉的旋转角度
+&emsp;&emsp;1、歌曲播放进度转换成视觉的旋转角度
 
-　　[2]点击磁盘任意位置歌曲跳转到相应进度
+&emsp;&emsp;2、点击磁盘任意位置歌曲跳转到相应进度
 
 &nbsp;
 
@@ -28,7 +28,7 @@
 
 **HTML**
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="outer"&gt;
     &lt;img src="img/huochai.jpg" alt="match" width="122" height="122"&gt;
     &lt;div id="player" class="box"&gt;
@@ -43,7 +43,7 @@
 
 **CSS**
 
-<div class="cnblogs_code">
+<div>
 <pre>body{
     margin: 0;
 }
@@ -109,11 +109,11 @@ img{
 
 **JS**
 
-<div class="cnblogs_code">
+<div>
 <pre>/*
 功能实现
-[1]播放、暂停
-[2]调整定位指示
+1、播放、暂停
+2、调整定位指示
  */    
 var player = document.getElementById('player');
 var control = player.getElementsByClassName('box-con')[0];
