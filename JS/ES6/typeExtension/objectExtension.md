@@ -293,6 +293,30 @@ Object.assign({}, state, {visibilityFilter: action.filter})
 ```
 　　[注意]在某些情况下，展开运行符的写法不生效
 
+　　在nodejs中使用mongoose数据库筛选数据时要使用Object.assign()。如果使用...t，会输出一些无用的值，如下所示
+
+```
+"$__": {
+    "strictMode": true,
+    "selected": {
+        "_id": 0,
+        "content": 0
+    },
+    "getters": {},
+    "wasPopulated": false,
+    "activePaths": {
+        "paths": {
+            "title": "init",
+            "categories": "default",
+            "comments": "default",
+            "likes": "default",
+            "collections": "default",
+            "createdAt": "init",
+            "updatedAt": "init",
+            "__v": "init"
+        },
+...
+```
 &nbsp;
 
 ### 属性名重复
