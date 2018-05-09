@@ -224,7 +224,10 @@ o + 2;//3
 ```
 var stringValue = 'hello world';
 console.log(stringValue.slice());//'hello world'
+console.log(stringValue.slice(0, 2));//'he'
+console.log(stringValue.slice(0, -2));//'hello wor'
 console.log(stringValue.slice(2));//'llo world'
+console.log(stringValue.slice(-2));//'ld'
 console.log(stringValue.slice(2,undefined));//'llo world'
 console.log(stringValue.slice(2,-5));//'llo '
 console.log(stringValue.slice(2,-20));//''
