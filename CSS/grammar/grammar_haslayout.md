@@ -1,63 +1,64 @@
-# haslayout
+# haslayout详解
 
 ### 定义
 
-　　haslayout是IE7-浏览器的特有属性。hasLayout是一种只读属性，有两种状态：true或false。当其为true时，代表该元素有自己的布局，否则代表该元素的布局继承于父元素。
-	　　[注意]通过element.currentStyle.hasLayout可以得出当前元素的hasLayout情况
+&emsp;&emsp;haslayout是IE7-浏览器的特有属性。hasLayout是一种只读属性，有两种状态：true或false。当其为true时，代表该元素有自己的布局，否则代表该元素的布局继承于父元素
+
+&emsp;&emsp;注意：通过element.currentStyle.hasLayout可以得出当前元素的hasLayout情况
 
 &nbsp;
 
 ### HTML标签
 
-　　默认触发hasLayout的有如下HTML标签：
+&emsp;&emsp;默认触发hasLayout的有如下HTML标签：
 
-  【1】html,body
+&emsp;&emsp;【1】html,body
 
-  【2】table,tr,th,td
+&emsp;&emsp;【2】table,tr,th,td
 
-  【3】img
+&emsp;&emsp;【3】img
 
-  【4】hr
+&emsp;&emsp;【4】hr
 
-  【5】input,button,select,textarea,fieldset
+&emsp;&emsp;【5】input,button,select,textarea,fieldset
 
-  【6】frameset,frame,iframe
+&emsp;&emsp;【6】frameset,frame,iframe
 
 &nbsp;
 
 ### CSS属性
 
-　　可以触发hasLayout的有如下CSS属性：
+&emsp;&emsp;可以触发hasLayout的有如下CSS属性：
 
-　　【1】display:inline-block
+&emsp;&emsp;【1】display:inline-block
 
-　　【2】height/width:除了auto
+&emsp;&emsp;【2】height/width:除了auto
 
-　　【3】float:left/right
+&emsp;&emsp;【3】float:left/right
 
-　　【4】position:absolute
+&emsp;&emsp;【4】position:absolute
 
-　　【5】writing-mode(IE专有属性，设置文本的垂直显示):tb-rl
+&emsp;&emsp;【5】writing-mode(IE专有属性，设置文本的垂直显示):tb-rl
 
-　　【6】zoom(IE专有属性，设置或检索对象的缩放比例):除了normal
+&emsp;&emsp;【6】zoom(IE专有属性，设置或检索对象的缩放比例):除了normal
 
 &nbsp;
 
 【IE7专有的触发hasLayout的CSS属性】
 
-　　【1】min-height/max-height/min-width/max-width:除none
+&emsp;&emsp;【1】min-height/max-height/min-width/max-width:除none
 
-　　【2】overflow\overflow-x\overflow-y:除visible
+&emsp;&emsp;【2】overflow\overflow-x\overflow-y:除visible
 
-　　【3】position:fixed
+&emsp;&emsp;【3】position:fixed
 
 &nbsp;　
 
 ### 用途
 
-  【1】解决IE7-浏览器下父级边框不阻止子级上下margin传递的bug
+&emsp;&emsp;【1】解决IE7-浏览器下父级边框不阻止子级上下margin传递的bug
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -65,7 +66,7 @@
 &lt;title&gt;Document&lt;/title&gt;
 &lt;style&gt;
 body{
-    margin: 0;
+  margin: 0;
 }
 ul{
     margin: 0;
@@ -96,9 +97,9 @@ ul{
 
 &nbsp;
 
-　　【2】配合display:inline让块元素模拟inline-block
+&emsp;&emsp;【2】配合display:inline让块元素模拟inline-block
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -127,9 +128,9 @@ body{
 
 &nbsp;
 
-　　【3】解决在IE7-浏览器下LI4px空隙bug(IE7-浏览器下li有高度或宽度或zoom:1，且仅包含内联元素，且内联元素被设置为display:block，li下会多出3px的垂直间距)
+&emsp;&emsp;【3】解决在IE7-浏览器下LI4px空隙bug(IE7-浏览器下li有高度或宽度或zoom:1，且仅包含内联元素，且内联元素被设置为display:block，li下会多出3px的垂直间距)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -173,9 +174,9 @@ ul{
 
 &nbsp;
 
-　　【4】触发浮动元素的父级的hasLayout，浮动元素会被layout元素自动包含，相当于IE7-浏览器下实现清浮动
+&emsp;&emsp;【4】触发浮动元素的父级的hasLayout，浮动元素会被layout元素自动包含，相当于IE7-浏览器下实现清浮动
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
