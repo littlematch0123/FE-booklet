@@ -67,22 +67,10 @@ setTimeout(function(){
 
 &emsp;&emsp;换句话说，布局视口的默认宽度并不是一个理想的宽度。这就是为什么苹果和其他效仿苹果的浏览器厂商，会引进理想视口。它是对设备来说，最理想的布局视口尺寸。显示在理想视口中的网站拥有最理想的浏览和阅读的宽度，用户刚进入页面时也不再需要缩放
 
-<table border="0">
-<tbody>
-<tr>
-<td>
 
 ![mobile_viewport12](https://pic.xiaohuochai.site/blog/mobile_viewport12.png)
 
-</td>
-<td>
-
 ![mobile_viewport13](https://pic.xiaohuochai.site/blog/mobile_viewport13.png)
-
-</td>
-</tr>
-</tbody>
-</table>
 
 &emsp;&emsp;只有当网站是为手机准备的时候才应该使用理想视口。只有主动地往页面里添加meta视口标签时理想视口才会生效。如果没有meta视口标签声明，那么布局视口将会维持它的默认宽度，理想视口只有当显式地使用它的时候才会产生影响
 
