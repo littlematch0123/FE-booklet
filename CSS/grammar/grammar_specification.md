@@ -1,6 +1,6 @@
 # CSS规范
 
-　　CSS是网页样式的描述语言，CSS规范能够使CSS代码风格保持一致，使得CSS更容易理解和维护。本文将详细介绍CSS规范
+&emsp;&emsp;CSS是网页样式的描述语言，CSS规范能够使CSS代码风格保持一致，使得CSS更容易理解和维护。本文将详细介绍CSS规范
 
 &nbsp;
 
@@ -8,15 +8,15 @@
 
 【选择器】
 
-　　1、`选择器`&nbsp;与&nbsp;`{`&nbsp;之间包含空格
+&emsp;&emsp;1、`选择器`&nbsp;与&nbsp;`{`&nbsp;之间包含空格
 
-<div class="cnblogs_code">
+<div>
 <pre>.selector {}</pre>
 </div>
 
-　　2、`&gt;`、`+`、`~`&nbsp;选择器的两边各保留一个空格
+&emsp;&emsp;2、`&gt;`、`+`、`~`&nbsp;选择器的两边各保留一个空格
 
-<div class="cnblogs_code">
+<div>
 <pre>/* good */
 main &gt; nav{}
 /* bad */
@@ -25,21 +25,21 @@ main&gt;nav {}</pre>
 
 【属性风格】
 
-　　1、`属性名`&nbsp;与之后的&nbsp;`:`&nbsp;之间不包含空格，&nbsp;`:`&nbsp;与&nbsp;`属性值`&nbsp;之间包含空格
+&emsp;&emsp;1、`属性名`&nbsp;与之后的&nbsp;`:`&nbsp;之间不包含空格，&nbsp;`:`&nbsp;与&nbsp;`属性值`&nbsp;之间包含空格
 
-<div class="cnblogs_code">
+<div>
 <pre>margin: 0;</pre>
 </div>
 
-　　2、对于以逗号分隔的属性值，每个逗号后面都应该插入一个空格
+&emsp;&emsp;2、对于以逗号分隔的属性值，每个逗号后面都应该插入一个空格
 
-<div class="cnblogs_code">
+<div>
 <pre>font-family: Arial, sans-serif;</pre>
 </div>
 
-　　3、对于**只包含一条声明**的样式，为了易读性和便于快速编辑，建议将语句放在同一行。对于带有多条声明的样式，应当将声明分为多行
+&emsp;&emsp;3、对于**只包含一条声明**的样式，为了易读性和便于快速编辑，建议将语句放在同一行。对于带有多条声明的样式，应当将声明分为多行
 
-<div class="cnblogs_code">
+<div>
 <pre>.selector {
     margin: 0;
     padding: 0;
@@ -47,9 +47,9 @@ main&gt;nav {}</pre>
 .selector { margin: 0;}</pre>
 </div>
 
-&nbsp;　　4、最后一个属性值也以分号结尾，这样可以减少修改、添加和维护代码时不必要的失误和麻烦
+&emsp;&emsp;4、最后一个属性值也以分号结尾，这样可以减少修改、添加和维护代码时不必要的失误和麻烦
 
-<div class="cnblogs_code">
+<div>
 <pre>/* good */
 .selector {
     margin: 0;
@@ -64,44 +64,44 @@ main&gt;nav {}</pre>
 
 【引号】
 
-　　1、文本内容用双引号包围
+&emsp;&emsp;1、文本内容用双引号包围
 
-<div class="cnblogs_code">
+<div>
 <pre>html[lang|="zh"] q:before {
     font-family: "Microsoft YaHei", sans-serif;
     content: "&ldquo;";
 }</pre>
 </div>
 
-　　2、`url()`&nbsp;函数中的路径不加引号
+&emsp;&emsp;2、`url()`&nbsp;函数中的路径不加引号
 
-<div class="cnblogs_code">
+<div>
 <pre>body {background: url(bg.png);}</pre>
 </div>
 
 【省略】
 
-　　1、对于属性值或颜色参数，省略小于 1 的小数前面的 0&nbsp;
+&emsp;&emsp;1、对于属性值或颜色参数，省略小于 1 的小数前面的 0&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>panel {opacity: .8}</pre>
 </div>
 
-　　2、省略值为0时的单位，为节省不必要的字节同时也使阅读方便，将0px、0em、0%等值缩写为0
+&emsp;&emsp;2、省略值为0时的单位，为节省不必要的字节同时也使阅读方便，将0px、0em、0%等值缩写为0
 
-<div class="cnblogs_code">
+<div>
 <pre>.m-box{margin:0 10px;background-position:50% 0;}</pre>
 </div>
 
 【缩写】
 
-　　1、尽量使用简写形式的十六进制值，例如，用&nbsp;`#fff`&nbsp;代替&nbsp;`#ffffff`
+&emsp;&emsp;1、尽量使用简写形式的十六进制值，例如，用&nbsp;`#fff`&nbsp;代替&nbsp;`#ffffff`
 
-　　2、十六进制值应该全部小写，例如，`#fff`。在扫描文档时，小写字符易于分辨，因为他们的形式更易于区分
+&emsp;&emsp;2、十六进制值应该全部小写，例如，`#fff`。在扫描文档时，小写字符易于分辨，因为他们的形式更易于区分
 
-　　3、在可以使用缩写的情况下，尽量使用属性缩写，它最大的好处就是节省了字节，便于维护，并使阅读更加一目了然
+&emsp;&emsp;3、在可以使用缩写的情况下，尽量使用属性缩写，它最大的好处就是节省了字节，便于维护，并使阅读更加一目了然
 
-<div class="cnblogs_code">
+<div>
 <pre>/* good */
 .post {
     font: 12px/1.5 arial, sans-serif;
@@ -116,9 +116,9 @@ main&gt;nav {}</pre>
 
 【媒体查询】
 
-　　将媒体查询@media放在尽可能相关规则的附近。不要将它们打包放在一个单一样式文件中或者放在文档底部。如果把它们分开了，将来更容易被遗忘
+&emsp;&emsp;将媒体查询@media放在尽可能相关规则的附近。不要将它们打包放在一个单一样式文件中或者放在文档底部。如果把它们分开了，将来更容易被遗忘
 
-<div class="cnblogs_code">
+<div>
 <pre>.element { ... }
 .element-avatar { ... }
 .element-selected { ... }
@@ -136,17 +136,17 @@ main&gt;nav {}</pre>
 
 【单行注释】
 
-　　星号与内容之间保留一个空格，以确保即使在编码错误的情况下也可以正确解析样式
+&emsp;&emsp;星号与内容之间保留一个空格，以确保即使在编码错误的情况下也可以正确解析样式
 
-<div class="cnblogs_code">
+<div>
 <pre>/* 单行注释 */</pre>
 </div>
 
 【块状注释】
 
-　　在必要的情况下，可以使用块状注释，块状注释保持统一的缩进对齐。星号要一列对齐，星号与内容之间保留一个空格
+&emsp;&emsp;在必要的情况下，可以使用块状注释，块状注释保持统一的缩进对齐。星号要一列对齐，星号与内容之间保留一个空格
 
-<div class="cnblogs_code">
+<div>
 <pre>/**
  * 多行注释1
  * 多行注释2
@@ -155,11 +155,11 @@ main&gt;nav {}</pre>
 
 【文件注释】
 
-　　文件顶部必须包含文件注释，星号要一列对齐，星号与内容之间保留一个空格，标识符冒号与内容之间保留一个空格
+&emsp;&emsp;文件顶部必须包含文件注释，星号要一列对齐，星号与内容之间保留一个空格，标识符冒号与内容之间保留一个空格
 
-　　用 @name 标识文件说明，@author标识作者，@description为文件或模块描述，@update为可选项，建议每次改动都更新一下
+&emsp;&emsp;用 @name 标识文件说明，@author标识作者，@description为文件或模块描述，@update为可选项，建议每次改动都更新一下
 
-<div class="cnblogs_code">
+<div>
 <pre>/**
  * @name: 文件名或模块名
  * @description: 文件或模块描述
@@ -173,9 +173,9 @@ main&gt;nav {}</pre>
 
 ### 声明顺序
 
-　　1、私有在前，标准在后，即先写带有浏览器私有标志的，后写W3C标准的
+&emsp;&emsp;1、私有在前，标准在后，即先写带有浏览器私有标志的，后写W3C标准的
 
-<div class="cnblogs_code">
+<div>
 <pre>.m-box {
     -webkit-box-shadow: 0 0 0 #000;
     -moz-box-shadow: 0 0 0 #000;
@@ -183,20 +183,20 @@ main&gt;nav {}</pre>
 }</pre>
 </div>
 
-　　2、相关的属性声明应当归为一组，并按照（布局类属性-&gt;盒模型属性-&gt;文本类属性-&gt;修饰类属性）顺序排列
+&emsp;&emsp;2、相关的属性声明应当归为一组，并按照（布局类属性-&gt;盒模型属性-&gt;文本类属性-&gt;修饰类属性）顺序排列
 
-　　布局属性处在第一位，是因为它可以使一个元素脱离正常文本流，并且覆盖盒模型相关的样式。盒模型紧跟其后，因为它决定了一个组件的大小和位置。其他属性只在组件内部起作用或者不会对前面两种情况的结果产生影响，所以它们排在后面
+&emsp;&emsp;布局属性处在第一位，是因为它可以使一个元素脱离正常文本流，并且覆盖盒模型相关的样式。盒模型紧跟其后，因为它决定了一个组件的大小和位置。其他属性只在组件内部起作用或者不会对前面两种情况的结果产生影响，所以它们排在后面
 
-<div class="cnblogs_code">
+<div>
 <pre>布局类属性     position / top / right / bottom / left / float / display / overflow 等
 盒模型属性   border / margin / padding / width / height 等
 文本类属性     font / line-height / text-align / word-wrap 等
 修饰类属性     background / color / transition / list-style 等</pre>
 </div>
 
-　　另外，如果包含&nbsp;`content`&nbsp;属性，应放在最前面
+&emsp;&emsp;另外，如果包含&nbsp;`content`&nbsp;属性，应放在最前面
 
-<div class="cnblogs_code">
+<div>
 <pre>.sidebar {
     /* formatting model */
     position: absolute;
@@ -223,24 +223,24 @@ main&gt;nav {}</pre>
 
 ### 避免使用
 
-　　1、尽量不使用&nbsp;`!important`&nbsp;声明。&nbsp;当需要强制指定样式且不允许任何场景覆盖时，通过标签内联和&nbsp;`!important`&nbsp;定义样式
+&emsp;&emsp;1、尽量不使用&nbsp;`!important`&nbsp;声明。&nbsp;当需要强制指定样式且不允许任何场景覆盖时，通过标签内联和&nbsp;`!important`&nbsp;定义样式
 
-　　2、避免耗性能的属性，如express和filter。不过有时候需求大于一切
+&emsp;&emsp;2、避免耗性能的属性，如express和filter。不过有时候需求大于一切
 
-<div class="cnblogs_code">
+<div>
 <pre>/* expression */
 .class {width: expression(this.width&gt;100?'100px':'auto');}
 /* filter */
 .class {filter: alpha(opacity=50);}</pre>
 </div>
 
-　　3、避免使用&nbsp;`@import，`与&nbsp;`&lt;link&gt;`&nbsp;标签相比，`@import`&nbsp;指令要慢很多，不光增加了额外的请求次数，还会导致不可预料的问题
+&emsp;&emsp;3、避免使用&nbsp;`@import，`与&nbsp;`&lt;link&gt;`&nbsp;标签相比，`@import`&nbsp;指令要慢很多，不光增加了额外的请求次数，还会导致不可预料的问题
 
-　　4、避免sass中不必要的嵌套,这是因为虽然可以使用嵌套，但是并不意味着应该使用嵌套。只有在必须将样式限制在父元素内（也就是后代选择器），并且存在多个需要嵌套的元素时才使用嵌套
+&emsp;&emsp;4、避免sass中不必要的嵌套,这是因为虽然可以使用嵌套，但是并不意味着应该使用嵌套。只有在必须将样式限制在父元素内（也就是后代选择器），并且存在多个需要嵌套的元素时才使用嵌套
 
-　　5、尽量避免使用hack，由于浏览器自身缺陷，无法避开的时候，可以允许使用适当的Hack。统一使用&ldquo;*&rdquo;和&ldquo;_&rdquo;分别对IE7和6进行Hack
+&emsp;&emsp;5、尽量避免使用hack，由于浏览器自身缺陷，无法避开的时候，可以允许使用适当的Hack。统一使用&ldquo;*&rdquo;和&ldquo;_&rdquo;分别对IE7和6进行Hack
 
-<div class="cnblogs_code">
+<div>
 <pre>/* IE7会显示灰色#888，IE6会显示白色#fff，其他浏览器显示黑色#000 */
 .m-list{
     color:#000;
