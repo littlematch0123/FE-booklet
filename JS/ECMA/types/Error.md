@@ -162,8 +162,8 @@ window.onerror = function(message,url,line){
     alert(message);
 }
 //DOM2级
-window.addEventListener("error",function(message,url,line){
-    alert(message);
+window.addEventListener("error",function(event){
+    alert(event.message);
 });</pre>
 </div>
 
