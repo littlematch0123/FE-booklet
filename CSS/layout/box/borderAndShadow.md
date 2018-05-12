@@ -37,7 +37,7 @@
 
         border-color: transparent/<color>
 
-&emsp;&emsp;[注意]在CSS2.1中，背景定位background-position只能相对于左上角定位。如果需要是相对于右侧，则可以使用一个右侧的透明边框来实现类似的效果
+&emsp;&emsp;注意：在CSS2.1中，背景定位background-position只能相对于左上角定位。如果需要是相对于右侧，则可以使用一个右侧的透明边框来实现类似的效果
 
 &emsp;&emsp;<演示框>点击下列相应属性值可进行演示
 
@@ -98,7 +98,7 @@
 
 &emsp;&emsp;多色边框border-colors可以在一条边框上设置多种颜色
 
-&emsp;&emsp;[注意]只有firefox支持，需要加-moz-前缀，且只能四条边分开写，否则无效
+&emsp;&emsp;注意：只有firefox支持，需要加-moz-前缀，且只能四条边分开写，否则无效
 
         border-colors:<color><color>……
 
@@ -136,7 +136,7 @@
     border-top-left-radius: 10px 20px;
 
 
-&emsp;&emsp;[注意]写圆角单角时不可加/
+&emsp;&emsp;注意：写圆角单角时不可加/
 
 【四值顺序】
 
@@ -272,7 +272,7 @@
     border-image: none(默认)
     border-image: border-image-source || border-image-slice [ / border-image-width? | / border-image-outset ]? || border-image-repeat;
 
-&emsp;&emsp;[注意]该属性的作用是用来替代border-style的，若border-image为none，则显示border-style的值
+&emsp;&emsp;注意：该属性的作用是用来替代border-style的，若border-image为none，则显示border-style的值
 
     border-image: url('img.img') 27 fill / 27 / 27px repeat;
 
@@ -345,7 +345,7 @@
 
 <div><img style="width: 100px;" src="https://pic.xiaohuochai.site/blog/CSS_layout_borderButton.jpg" alt="borderButton" /></div>
 
-###应用
+### 应用
 
 【三道杠效果】
 
