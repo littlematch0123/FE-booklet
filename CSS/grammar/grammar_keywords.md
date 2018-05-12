@@ -1,18 +1,18 @@
-# 样式关键字
+# 样式关键字initial、inherit、unset、revert和all
 
-　　在CSS中，有4个关键字理论上可以应用于任何的CSS属性，它们是initial(初始)、inherit(继承)、unset(未设置)、revert(还原)。而all的取值只能是以上这4个关键字。本文将介绍initial、inherit、unset、revert和all
+&emsp;&emsp;在CSS中，有4个关键字理论上可以应用于任何的CSS属性，它们是initial(初始)、inherit(继承)、unset(未设置)、revert(还原)。而all的取值只能是以上这4个关键字。本文将介绍initial、inherit、unset、revert和all
 
 &nbsp;
 
 ### initial
 
-　　表示元素属性的初始默认值(该默认值由官方CSS规范定义)
+&emsp;&emsp;表示元素属性的初始默认值(该默认值由官方CSS规范定义)
 
-　　兼容性: IE不支持
+&emsp;&emsp;兼容性: IE不支持
 
-　　[注意][关于各属性的初始默认值移步至此](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+&emsp;&emsp;注意：[关于各属性的初始默认值移步至此](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
-<div class="cnblogs_code">
+<div>
 <pre>//display在官方CSS规范中定义的默认值是inline
 &lt;style&gt;
 .test{display: initial;}
@@ -28,11 +28,11 @@
 
 ### inherit
 
-　　表示元素的直接父元素对应属性的计算值
+&emsp;&emsp;表示元素的直接父元素对应属性的计算值
 
-　　兼容性: IE7-不支持
+&emsp;&emsp;兼容性: IE7-不支持
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 .box{
     border: 1px solid black;
@@ -60,13 +60,13 @@
 
 ### unset
 
-　　unset相对于initial和inherit而言，相对复杂一点。表示如果该属性默认可继承，则值为inherit；否则值为initial。实际上，设置unset相当于不设置
+&emsp;&emsp;unset相对于initial和inherit而言，相对复杂一点。表示如果该属性默认可继承，则值为inherit；否则值为initial。实际上，设置unset相当于不设置
 
-　　兼容性: IE不支持，safari9-不支持，ios9.2-不支持，android4.4.4-不支持
+&emsp;&emsp;兼容性: IE不支持，safari9-不支持，ios9.2-不支持，android4.4.4-不支持
 
 【常用默认可继承样式】
 
-<div class="cnblogs_code">
+<div>
 <pre>color
 cursor
 direction
@@ -84,7 +84,7 @@ word-spacing
 word-wrap
 writing-mode</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>//内容为测试一的元素和内容为测试二的元素的样式是一样的
 &lt;style&gt;
 .box{
@@ -110,19 +110,19 @@ writing-mode</pre>
 
 ### revert
 
-　　表示样式表中定义的元素属性的默认值。若用户定义样式表中显式设置，则按此设置；否则，按照浏览器定义样式表中的样式设置；否则，等价于unset&nbsp;
+&emsp;&emsp;表示样式表中定义的元素属性的默认值。若用户定义样式表中显式设置，则按此设置；否则，按照浏览器定义样式表中的样式设置；否则，等价于unset&nbsp;
 
-　　兼容性: 只有safari9.1+和ios9.3+支持
+&emsp;&emsp;兼容性: 只有safari9.1+和ios9.3+支持
 
 &nbsp;
 
 ### all
 
-　　表示重设除unicode-bidi和direction之外的所有CSS属性的属性值，取值只能是initial、inherit、unset和revert
+&emsp;&emsp;表示重设除unicode-bidi和direction之外的所有CSS属性的属性值，取值只能是initial、inherit、unset和revert
 
-　　兼容性: IE不支持，safari9-不支持，ios9.2-不支持，android4.4-不支持
+&emsp;&emsp;兼容性: IE不支持，safari9-不支持，ios9.2-不支持，android4.4-不支持
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 .test{
     border: 1px solid black;
@@ -141,21 +141,21 @@ writing-mode</pre>
 &lt;/div&gt;</pre>
 </div>
 
-　　【1】当all:initial时，.in的所有属性都取默认值
+&emsp;&emsp;【1】当all:initial时，.in的所有属性都取默认值
 
-<div class="cnblogs_code">
+<div>
 <pre>border:none;padding:0;color:black;</pre>
 </div>
 
-　　【2】当all:inherit时，.in的所有属性都取父元素继承值
+&emsp;&emsp;【2】当all:inherit时，.in的所有属性都取父元素继承值
 
-<div class="cnblogs_code">
+<div>
 <pre>border:1px solid black;padding:20px;color:red;</pre>
 </div>
 
-　　【3】当all:unset时，.in的所有属性都相当于不设置值，默认可继承的继承，不可继承的保持默认值
+&emsp;&emsp;【3】当all:unset时，.in的所有属性都相当于不设置值，默认可继承的继承，不可继承的保持默认值
 
-<div class="cnblogs_code">
+<div>
 <pre>border:none;padding:0;color:red;</pre>
 </div>
 
