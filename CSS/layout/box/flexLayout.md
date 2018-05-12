@@ -1,14 +1,14 @@
 # CSS弹性盒模型flex在布局中的应用
 
-　　前面已经详细介绍过flex弹性盒模型的[基本语法](http://www.cnblogs.com/xiaohuochai/p/5323146.html)和[兼容写法](http://www.cnblogs.com/xiaohuochai/p/5334936.html)，本文将介绍flex在布局中的应用
+&emsp;&emsp;前面已经详细介绍过flex弹性盒模型的[基本语法](http://www.cnblogs.com/xiaohuochai/p/5323146.html)和[兼容写法](http://www.cnblogs.com/xiaohuochai/p/5334936.html)，本文将介绍flex在布局中的应用
 
 &nbsp;
 
 ### 元素居中
 
-【1】伸缩容器上使用主轴对齐justify-content和侧轴对齐align-items
+&emsp;&emsp;【1】伸缩容器上使用主轴对齐justify-content和侧轴对齐align-items
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 .parent{
     display: flex;
@@ -17,7 +17,7 @@
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent"  style="background-color: lightgrey; height: 100px; width: 200px;"&gt;
     &lt;div class="in" style="background-color: lightblue;"&gt;DEMO&lt;/div&gt;      
 &lt;/div&gt;</pre>
@@ -25,9 +25,9 @@
 
 <iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/flexshow/f1.html" frameborder="0" width="320" height="240"></iframe>
 
-【2】在伸缩项目上使用margin:auto
+&emsp;&emsp;【2】在伸缩项目上使用margin:auto
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 .parent{
     display: flex;
@@ -37,7 +37,7 @@
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent"  style="background-color: lightgrey;height: 100px;width: 200px;"&gt;
     &lt;div class="in" style="background-color: lightblue;"&gt;DEMO&lt;/div&gt;      
 &lt;/div&gt;</pre>
@@ -49,7 +49,7 @@
 
 ### 两端对齐
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 .parent{
     display: flex;
@@ -57,7 +57,7 @@
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent"  style="background-color: lightgrey;height: 100px;width: 200px;"&gt;
     &lt;div class="in" style="background-color: lightblue;"&gt;DEMO&lt;/div&gt;
     &lt;div class="in" style="background-color: lightgreen;"&gt;DEMO&lt;/div&gt;
@@ -72,7 +72,7 @@
 
 ### 底端对齐
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 .parent{
     display: flex;
@@ -80,7 +80,7 @@
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent"  style="background-color: lightgrey;height: 100px;width: 200px;"&gt;
     &lt;div class="in" style="background-color: lightblue; height:20px;"&gt;DEMO&lt;/div&gt;
     &lt;div class="in" style="background-color: lightgreen; height:30px;"&gt;DEMO&lt;/div&gt;
@@ -95,7 +95,7 @@
 
 ### 输入框按钮
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 .inputBox{
     display: flex;
@@ -106,7 +106,7 @@
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="inputBox"&gt;
   &lt;input class="inputBox-ipt"&gt;
   &lt;button class="inputBox-btn"&gt;按钮&lt;/button&gt;
@@ -119,7 +119,7 @@
 
 ### 等分布局
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .parent{
@@ -134,7 +134,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="child" style="background-color: lightblue;"&gt;1&lt;/div&gt;
     &lt;div class="child" style="background-color: lightgreen;"&gt;2&lt;/div&gt;
@@ -149,7 +149,7 @@ body,p{margin: 0;}
 
 ### 多列自适应布局
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 p{margin: 0;}
 .parent{display: flex;}
@@ -157,7 +157,7 @@ p{margin: 0;}
 .right{flex: 1;}
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="left" style="background-color: lightblue;"&gt;
         &lt;p&gt;left&lt;/p&gt;
@@ -180,7 +180,7 @@ p{margin: 0;}
 
 ### 悬挂布局
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;        
 .box{
     display: flex;
@@ -197,7 +197,7 @@ p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="box"&gt;
     &lt;div class="left"&gt;左侧悬挂&lt;/div&gt;
     &lt;div class="main"&gt;主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容&lt;/div&gt;    
@@ -210,7 +210,7 @@ p{margin: 0;}
 
 ### 全屏布局
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 body,html,.parent{height: 100%;}
@@ -238,7 +238,7 @@ body,html,.parent{height: 100%;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
