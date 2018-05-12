@@ -102,7 +102,7 @@ gulp.task('merge7', function () {
     .pipe(gulp.dest('dist/BE'));
 });
 gulp.task('merge8', function () {
-  return gulp.src(['_book/server/**/*.html'])
+  return gulp.src(['_book/mobile/**/*.html'])
     .pipe(merge({
       '../base.css': ['../**/*.css'],
       '../base.js': ['../**/*.js'],
@@ -111,7 +111,7 @@ gulp.task('merge8', function () {
       '../../../base.css': ['../../../**/*.css'],
       '../../../base.js': ['../../../**/*.js']
     }))
-    .pipe(gulp.dest('dist/server'));
+    .pipe(gulp.dest('dist/mobile'));
 });
 gulp.task('merge9', function () {
   return gulp.src(['_book/optimize/**/*.html'])

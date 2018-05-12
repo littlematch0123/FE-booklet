@@ -66,11 +66,11 @@ $ npm install vue</pre>
 
 　　前面介绍过，对于Vue最简单的应用就是将其当作一个模板引擎，也就是采用模板语法把数据渲染进 DOM。Vue使用双大括号语法来进行文本插值，下面的message相当于一个变量或占位符，最终会表示为真正的文本内容
 
-<div class="cnblogs_code">
-<pre>&lt;div id="app"&gt;
+```
+<div id="app">
   {{ message }}
-&lt;/div&gt;</pre>
 </div>
+```
 
 &nbsp;
 
@@ -116,31 +116,29 @@ $ npm install vue</pre>
 ### 简单实例
 
 　　下面将Vue的模板插值和构造器结合起来，制作一个简单实例
-
-<div class="cnblogs_code">
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id="app"&gt;
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
   {{ message }}
-&lt;/div&gt;
-&lt;script src="vue.js"&gt;&lt;/script&gt;    
-&lt;script&gt;
+</div>
+<script src="vue.js"></script>    
+<script>
 var vm = new Vue({
   el: '#app',
   data: {
     message: 'Hello Vue!'
   }
 })
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
-</div>
-
+</script>
+</body>
+</html>
+```
 　　得到如下所示的结果
 
 ![vue_base_base2](https://pic.xiaohuochai.site/blog/vue_base_base2.png)

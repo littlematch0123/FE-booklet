@@ -9,41 +9,39 @@
 　　data是Vue实例的数据对象。Vue将会递归将data的属性转换为getter/setter，从而让data属性能响应数据变化
 
 　　[注意]不应该对`data`属性使用箭头函数
-
-<div>
-<pre>&lt;div id="app"&gt;
+```
+<div id="app">
   {{ message }}
-&lt;/div&gt;</pre>
 </div>
-<div>
-<div>
-<pre>&lt;script&gt;
+```
+
+```
+<script>
 var values = {message: 'Hello Vue!'}
 var vm = new Vue({
   el: '#app',
   data: values
 })
 console.log(vm);
-&lt;/script&gt;</pre>
-</div>
-</div>
+</script>
+```
 
 ![vue_base_dataOption1](https://pic.xiaohuochai.site/blog/vue_base_dataOptions1.png)
 
 
 　　Vue实例创建之后，可以通过`vm.$data`访问原始数据对象
 
-<div>
-<pre>console.log(vm.$data);</pre>
-</div>
+```
+console.log(vm.$data);
+```
 
 ![vue_base_dataOption2](https://pic.xiaohuochai.site/blog/vue_base_dataOptions2.png)
 
 
 　　Vue实例也代理了data对象上所有的属性
 
-<div>
-<pre>&lt;script&gt;
+```
+<script>
 var values = {message: 'Hello Vue!'}
 var vm = new Vue({
   el: '#app',
@@ -52,8 +50,8 @@ var vm = new Vue({
 console.log(vm.$data === values);//true
 console.log(vm.message);//'Hello Vue!'
 console.log(vm.$data.message);//'Hello Vue!'
-&lt;/script&gt;</pre>
-</div>
+</script>
+```
 
 　　被代理的属性是响应的，也就是说值的任何改变都是触发视图的重新渲染。设置属性也会影响到原始数据，反之亦然
 
@@ -63,8 +61,8 @@ console.log(vm.$data.message);//'Hello Vue!'
 
 　　但是，以`_`或`$`开头的属性不会被Vue实例代理，因为它们可能和Vue内置的属性或方法冲突。可以使用例如`vm.$data._property`的方式访问这些属性
 
-<div>
-<pre>&lt;script&gt;
+```
+<script>
 var values = {
   message: 'Hello Vue!',
   _name: '小火柴'
@@ -75,9 +73,8 @@ var vm = new Vue({
 })
 console.log(vm._name);//undefined
 console.log(vm.$data._name);//'小火柴'
-&lt;/script&gt;</pre>
-</div>
-
+</script>
+```
 &nbsp;
 
 ### computed
@@ -88,14 +85,14 @@ console.log(vm.$data._name);//'小火柴'
 
 　　下面是关于computed的一个例子
 
-<div>
-<pre>&lt;div id="example"&gt;
-  &lt;p&gt;原始字符串: "{{ message }}"&lt;/p&gt;
-  &lt;p&gt;反向字符串: "{{ reversedMessage }}"&lt;/p&gt;
-&lt;/div&gt;</pre>
+```
+<div id="example">
+  <p>原始字符串: "{{ message }}"</p>
+  <p>反向字符串: "{{ reversedMessage }}"</p>
 </div>
-<div>
-<pre>&lt;script&gt;
+```
+```
+<script>
 var vm = new Vue({
   el: '#example',
   data: {
@@ -107,8 +104,8 @@ var vm = new Vue({
     }
   }
 })
-&lt;/script&gt;</pre>
-</div>
+</script>
+```
 
 　　结果如下
 
@@ -118,11 +115,11 @@ var vm = new Vue({
 
 　　这里声明了一个计算属性&nbsp;`reversedMessage`&nbsp;。提供的函数将用作属性&nbsp;`vm.reversedMessage`&nbsp;的 getter&nbsp;
 
-<div>
-<pre>console.log(vm.reversedMessage) // -&gt; '柴火小'
+```
+console.log(vm.reversedMessage) // -> '柴火小'
 vm.message = 'Goodbye'
-console.log(vm.reversedMessage) // -&gt; 'eybdooG'</pre>
-</div>
+console.log(vm.reversedMessage) // -> 'eybdooG'
+```
 
 `　　vm.reversedMessage`&nbsp;的值始终取决于&nbsp;`vm.message`&nbsp;的值。可以像绑定普通属性一样在模板中绑定计算属性。当&nbsp;`vm.message`&nbsp;发生改变时，所有依赖于&nbsp;`vm.reversedMessage`&nbsp;的绑定也会更新
 
@@ -136,8 +133,8 @@ console.log(vm.reversedMessage) // -&gt; 'eybdooG'</pre>
 
 　　计算属性默认只有 getter ，不过在需要时也可以提供一个 setter
 
-<div>
-<pre>&lt;script&gt;
+```
+<script>
 var vm = new Vue({
   data: { a: 1 },
   computed: {
@@ -160,8 +157,8 @@ console.log(vm.aPlus);//2
 vm.aPlus = 3
 console.log(vm.a);//2
 console.log(vm.aDouble);//4
-&lt;/script&gt;</pre>
-</div>
+</script>
+```
 
 &nbsp;
 
@@ -171,14 +168,14 @@ console.log(vm.aDouble);//4
 
 　　[注意]不应该使用箭头函数来定义methods函数
 
-<div>
-<pre>&lt;div id="example"&gt;
-  &lt;p&gt;原始字符串: "{{ message }}"&lt;/p&gt;
-  &lt;p&gt;反向字符串: "{{ reversedMessage() }}"&lt;/p&gt;
-&lt;/div&gt;</pre>
+```
+<div id="example">
+  <p>原始字符串: "{{ message }}"</p>
+  <p>反向字符串: "{{ reversedMessage() }}"</p>
 </div>
-<div>
-<pre>&lt;script&gt;
+```
+```
+<script>
 var vm = new Vue({
   el: '#example',
   data: {
@@ -190,8 +187,8 @@ var vm = new Vue({
     }
   }    
 })
-&lt;/script&gt;</pre>
-</div>
+</script>
+```
 
 【缓存】
 
@@ -201,14 +198,14 @@ var vm = new Vue({
 
 　　相比而言，只要发生重新渲染，method 调用总会执行该函数。如下所示
 
-<div>
-<pre>&lt;div id="example"&gt;
-  &lt;p&gt;计算属性: "{{ time1 }}"&lt;/p&gt;
-  &lt;p&gt;methods方法: "{{ time2() }}"&lt;/p&gt;
-&lt;/div&gt;</pre>
+```
+<div id="example">
+  <p>计算属性: "{{ time1 }}"</p>
+  <p>methods方法: "{{ time2() }}"</p>
 </div>
-<div>
-<pre>&lt;script&gt;
+```
+```
+<script>
 var vm = new Vue({
   el: '#example',
   computed:{
@@ -222,8 +219,8 @@ var vm = new Vue({
     }
   }    
 })
-&lt;/script&gt;</pre>
-</div>
+</script>
+```
 
 ![vue_base_dataOption6](https://pic.xiaohuochai.site/blog/vue_base_dataOption6.gif)
 
@@ -238,14 +235,14 @@ var vm = new Vue({
 
 　　[注意]不应该使用箭头函数来定义 watch 函数
 
-<div>
-<pre>&lt;div id="app"&gt;
-  &lt;button @click="a++"&gt;a加1&lt;/button&gt;
-  &lt;p&gt;{{ message }}&lt;/p&gt;
-&lt;/div&gt;</pre>
+```
+<div id="app">
+  <button @click="a++">a加1</button>
+  <p>{{ message }}</p>
 </div>
-<div>
-<pre>&lt;script&gt;
+```
+```
+<script>
 var vm = new Vue({
   el: '#app',
   data: {
@@ -258,8 +255,8 @@ var vm = new Vue({
     }
   }
 })
-&lt;/script&gt;</pre>
-</div>
+</script>
+```
 
 　　上面代码中，当a的值发生变化时， 通过watch的监控，使message输出相应的内容
 
@@ -269,14 +266,14 @@ var vm = new Vue({
 
 　　除了使用数据选项中的watch方法以外，还可以使用实例对象的$watch方法，&nbsp;该方法的返回值是一个取消观察函数，用来停止触发回调
 
-<div>
-<pre>&lt;div id="app"&gt;
-  &lt;button @click="a++"&gt;a加1&lt;/button&gt;
-  &lt;p&gt;{{ message }}&lt;/p&gt;
-&lt;/div&gt;</pre>
+```
+<div id="app">
+  <button @click="a++">a加1</button>
+  <p>{{ message }}</p>
 </div>
-<div>
-<pre>&lt;script&gt;
+```
+```
+<script>
 var vm = new Vue({
   el: '#app',
   data: {
@@ -290,9 +287,8 @@ var unwatch = vm.$watch('a',function(val, oldVal){
   }
   this.message = 'a的旧值为' + oldVal + '，新值为' + val; 
 })
-&lt;/script&gt;</pre>
-</div>
-
+</script>
+```
 　　上面的代码中，当a的值更新到10时，触发unwatch()，来取消观察。点击按钮时，a的值仍然会变化，但是不再触发watch的回调函数
 
 

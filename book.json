@@ -11,11 +11,6 @@
   "styles":{
     "website":"style.css"
   },
-  "variables": {
-    "demo": "https://demo.xiaohuochai.site",
-    "pic": "https://pic.xiaohuochai.site"
-  },
-
   "plugins": [
     "-lunr",
     "-search",
