@@ -1,6 +1,6 @@
 # CSS兼容性详解
 
-　　对于前端工程师来说，不想面对又不得不面对的一个问题就是兼容性。在几年之前，处理兼容性，一般地就是处理IE低版本浏览器的兼容性。而近几年，随着移动端的发展，工程师也需要注意手机兼容性了。本文将详细介绍CSS兼容性
+&emsp;&emsp;对于前端工程师来说，不想面对又不得不面对的一个问题就是兼容性。在几年之前，处理兼容性，一般地就是处理IE低版本浏览器的兼容性。而近几年，随着移动端的发展，工程师也需要注意手机兼容性了。本文将详细介绍CSS兼容性
 
 &nbsp;&nbsp;
 
@@ -8,7 +8,7 @@
 
 【宽高width/height】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 width
 height
@@ -22,13 +22,13 @@ max-height</pre>
 
 【内边距padding】
 
-<div class="cnblogs_code">
+<div>
 <pre>padding</pre>
 </div>
 
 【边框border】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 border
 border-width
@@ -52,7 +52,7 @@ border-colors</pre>
 
 【外边距margin】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 margin
 
@@ -67,7 +67,7 @@ margin-end
 
 【轮廓outline】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE7-不支持)
 outline
 outline-width
@@ -80,9 +80,9 @@ outline-offset</pre>
 
 【box-sizing】
 
-　　[注意]只有firefox支持padding-box属性值
+&emsp;&emsp;注意：只有firefox支持padding-box属性值
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE7-不支持)
 box-sizing</pre>
 </div>
@@ -93,16 +93,16 @@ box-sizing</pre>
 
 【display】
 
-　　[注意]IE7-浏览器不支持table类属性值
+&emsp;&emsp;注意：IE7-浏览器不支持table类属性值
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 display</pre>
 </div>
 
 【浮动】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 float
 clear</pre>
@@ -110,9 +110,9 @@ clear</pre>
 
 【定位】
 
-　　[注意]IE6-不支持固定定位position:fixed
+&emsp;&emsp;注意：IE6-不支持固定定位position:fixed
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 position
 left
@@ -124,7 +124,7 @@ z-index</pre>
 
 【溢出相关】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 overflow
 overflow-x
@@ -138,7 +138,7 @@ resize</pre>
 
 【flex】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE9-不支持)
 flex-direction
 flex-wrap
@@ -156,7 +156,7 @@ order</pre>
 
 【多列布局】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE10+和chrome浏览器支持标准写法，firefox、safari浏览器及移动端android、IOS需要添加前缀)
 column-width
 column-count
@@ -171,7 +171,7 @@ column-fill</pre>
 
 【grid】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE9-不支持，IE10+需要添加-ms-前缀，android4.4.4-不支持，IOS10.2-不支持)
 grid-template-rows
 grid-template-columns
@@ -201,7 +201,7 @@ align-self</pre>
 
 【字体font】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 font
 font-family
@@ -215,16 +215,16 @@ line-height
 
 【首行缩进text-indent】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 text-indent</pre>
 </div>
 
 【对齐】
 
-　　[注意]IE7-浏览器中vertical-align的百分比值不支持小数行高
+&emsp;&emsp;注意：IE7-浏览器中vertical-align的百分比值不支持小数行高
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 text-align
 vertical-align
@@ -235,7 +235,7 @@ text-align-last</pre>
 
 【间隔】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 word-spacing
 letter-spacing</pre>
@@ -243,34 +243,34 @@ letter-spacing</pre>
 
 【大小写text-transform】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 text-transform</pre>
 </div>
 
 【划线text-decoration】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 text-decoration</pre>
 </div>
 
 【空白符white-space】
 
-　　[注意]IE7-浏览器不支持pre-line和pre-wrap这两个属性值
+&emsp;&emsp;注意：IE7-浏览器不支持pre-line和pre-wrap这两个属性值
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 white-space</pre>
 </div>
 
 【换行】
 
-　　[注意1]W3C建议使用overflow-wrap替换word-wrap
+&emsp;&emsp;注意1：W3C建议使用overflow-wrap替换word-wrap
 
-　　[注意2]移动端目前基本都不支持word-break的属性值keep-all　
+&emsp;&emsp;注意2：移动端目前基本都不支持word-break的属性值keep-all　
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 word-wrap
 word-break
@@ -281,7 +281,7 @@ overflow-wrap</pre>
 
 【文本方向】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 direction
 unicode-bidi
@@ -293,14 +293,14 @@ writing-mode
 
 【文本溢出text-overflow】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 text-overflow</pre>
 </div>
 
 【文本阴影text-shadow】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE9-不支持)
 text-shadow</pre>
 </div>
@@ -311,7 +311,7 @@ text-shadow</pre>
 
 【背景background】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 background
 background-color
@@ -327,7 +327,7 @@ background-size</pre>
 
 【前景和透明度】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 color
 
@@ -337,9 +337,9 @@ opacity</pre>
 
 【颜色模式】
 
-　　[注意]IE7-不支持color:transparent，但支持background-color: transparent和border-color: transparent
+&emsp;&emsp;注意：IE7-不支持color:transparent，但支持background-color: transparent和border-color: transparent
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 命名颜色
 16进制
@@ -354,16 +354,16 @@ HSLA</pre>
 
 【光标cursor】
 
-　　[注意]IE7-不支持拓展样式
+&emsp;&emsp;注意：IE7-不支持拓展样式
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 cursor</pre>
 </div>
 
 【过渡transition】&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE9-不支持，safari3.1-6、IOS3.2-6.1、android2.1-4.3需要添加-webkit-前缀)
 transition-property
 transition-duration
@@ -374,7 +374,7 @@ transition</pre>
 
 【变形transform】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE9-不支持，safari3.1-8、android2.1-4.4.4、IOS3.2-8.4都需要添加前缀)
 transform
 transform-origin
@@ -387,11 +387,11 @@ backface-visibility
 
 【渐变gradient】
 
-<pre>　　IE9-不支持，safari4-5、IOS3.2-4.3、android2.1-3只支持线性渐变，且需要添加-webkit-；safari5.1-6、IOS5.1-6.1、android4-4.3支持线性和径向渐变，且需要添加-webkit-</pre>
+&emsp;&emsp;IE9-不支持，safari4-5、IOS3.2-4.3、android2.1-3只支持线性渐变，且需要添加-webkit-；safari5.1-6、IOS5.1-6.1、android4-4.3支持线性和径向渐变，且需要添加-webkit-
 
 【动画animation】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE9-不支持；safari4-8、IOS3.2-8.4、android2.1-4.4.4需要添加-webkit-前缀)
 animation
 animation-name
@@ -406,7 +406,7 @@ animation-fill-mode</pre>
 
 【混合模式】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE浏览器、android4.4-不支持，safari和IOS需要添加-webkit-前缀)
 mix-blend-mode
 background-blend-mode
@@ -415,18 +415,18 @@ isolation</pre>
 
 【滤镜filter】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE浏览器及android4.3-浏览器不支持，android4.4+需要添加-webkit-前缀)
 filter</pre>
 </div>
 
 【倒影box-reflect】
 
-　　只有chrome和safari浏览器支持，且需要添加-webkit-前缀
+&emsp;&emsp;只有chrome和safari浏览器支持，且需要添加-webkit-前缀
 
 【will-change】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE13+、chrome49+、safari9.1+、IOS9.3+、Android52+)
 will-change</pre>
 </div>
@@ -437,7 +437,7 @@ will-change</pre>
 
 【表格】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 border-collapse
 table-layout
@@ -450,7 +450,7 @@ empty-cells</pre>
 
 【分页】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 page-break-after
 page-break-before
@@ -465,7 +465,7 @@ windows</pre>
 
 【选择器】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 通配选择器   *
 元素选择器   div
@@ -485,7 +485,7 @@ ID选择器     #box
 
 【伪类】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 :link
 :visited
@@ -521,7 +521,7 @@ ID选择器     #box
 
 【伪元素】
 
-<div class="cnblogs_code">
+<div>
 <pre>(只有当选择器部分和左大括号之间有空格时，IE6-浏览器才支持)
 :first-letter
 :first-line
@@ -536,7 +536,7 @@ ID选择器     #box
 
 【关键字】
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE7-浏览器不支持)
 inherit
 
@@ -553,16 +553,16 @@ revert</pre>
 
 【calc】　
 
-　　[注意]android4.4-4.4.4只支持加法和减法。IE9不支持用于backround-position
+&emsp;&emsp;注意：android4.4-4.4.4只支持加法和减法。IE9不支持用于backround-position
 
-<div class="cnblogs_code">
+<div>
 <pre>(IE8-、safari5.1-、ios5.1-、android4.3-不支持)
 calc</pre>
 </div>
 
 【单位】
 
-<div class="cnblogs_code">
+<div>
 <pre>(全兼容)
 px
 in
