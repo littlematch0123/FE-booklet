@@ -266,13 +266,13 @@
 
 &emsp;&emsp;margin-left、padding-left、border-left应用到元素的开始处；而margin-right、padding-right、border-right应用到元素的结尾处
 
-<div class="cnblogs_code">
+<div>
 <pre>div{width: 200px;border: 1px solid red;
 }<br>    
 span{border: 1px solid black;background-color: yellow;padding: 6px;margin: 6px;font-size: 30px;line-height: 50px;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div&gt;&lt;span&gt;测试文字测试文字测试文字&lt;/span&gt;&lt;/div&gt;</pre>
 </div>
 <p><iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/context/c3.html" frameborder="0" width="320" height="240"></iframe></p>
@@ -288,7 +288,7 @@ span{border: 1px solid black;background-color: yellow;padding: 6px;margin: 6px;f
 
 &emsp;&emsp;默认地，行内替换元素位于基线上。如果向替换元素增加下内边距、外边距或边框，内容区会上移。替换元素并没有自己的基线，所以相对来说最好的办法是将其行内框的底端与基线对齐。因此，实际上是下外边距边界与基线对齐
 
-<div class="cnblogs_code">
+<div>
 <pre>div{width: 300px;border: 1px solid red;
 }<br>    
 span{border: 1px solid black;background-color: yellow;font-size: 30px;line-height: 50px;
@@ -296,7 +296,7 @@ span{border: 1px solid black;background-color: yellow;font-size: 30px;line-heigh
 img{height: 26px;padding: 2px;margin: 2px;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div&gt;&lt;span&gt;测试文字测试&lt;<br>img src="backup/lamp.gif" alt="测试图片"&gt;文字测试文字&lt;/span&gt;&lt;/div&gt;</pre>
 </div>
 <p><iframe style="width: 100%; height: 120px;" src="https://demo.xiaohuochai.site/css/context/c4.html" frameborder="0" width="320" height="240"></iframe></p>
