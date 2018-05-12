@@ -171,7 +171,6 @@ document.addEventListener('visibilitychange',function(){
     }else{
         div.style.animationPlayState = 'running';
     }
-
 },false);</pre>
 </div>
 
