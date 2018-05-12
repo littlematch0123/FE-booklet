@@ -195,7 +195,6 @@ ul{
     background-color: lightgreen;
     height: 200px;
 }
-
 .in{
     float: left;
     width: 100px;
