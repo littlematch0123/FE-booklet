@@ -1,30 +1,29 @@
 # 移动端中的陀螺仪 
 
-　　本文将详细介绍移动端中的陀螺仪的概念及相关实现
+&emsp;&emsp;本文将详细介绍移动端中的陀螺仪的概念及相关实现
 
  
-
 &nbsp;
 
 ### 横竖屏
 
-　　window下的orientation属性来表示移动端的横竖屏状态，chrome模拟器不支持该属性，只能在真机上测试
+&emsp;&emsp;window下的orientation属性来表示移动端的横竖屏状态，chrome模拟器不支持该属性，只能在真机上测试
 ```
 window.orientation
 ```
-　　按照上右下左的顺序，该属性的结果分别是0、90、180、-90
+&emsp;&emsp;按照上右下左的顺序，该属性的结果分别是0、90、180、-90
 
-　　[注意]手机头朝下的切换没有实现
+&emsp;&emsp;注意：手机头朝下的切换没有实现
 
-　　window下的orientationchange事件来监测移动端的横竖屏状态
+&emsp;&emsp;window下的orientationchange事件来监测移动端的横竖屏状态
 
-　　[注意]横竖屏切换也会触发resize事件
+&emsp;&emsp;注意：横竖屏切换也会触发resize事件
 ```
-    window.addEventListener('orientationchange',()=>{
-      alert(window.orientation)
-    })
+  window.addEventListener('orientationchange',()=>{
+    alert(window.orientation)
+  })
 ```
-　　测试代码如下
+&emsp;&emsp;测试代码如下
 
 ```
 <style>
@@ -45,7 +44,7 @@ let oBox = document.getElementById('box')
   })
 </script>
 ```
-　　[查看效果](https://demo.xiaohuochai.site/mobile/device/d1.html)
+&emsp;&emsp;[查看效果](https://demo.xiaohuochai.site/mobile/device/d1.html)
 
  
 
@@ -53,13 +52,13 @@ let oBox = document.getElementById('box')
 
 ### 设备方向
 
-　　deviceorientation事件用来监听设备的方向
+&emsp;&emsp;deviceorientation事件用来监听设备的方向
 
-　　设备在三维空间中是靠x、y和z轴来定位的。当设备静止放在水平表面上时，这三个值都是0
+&emsp;&emsp;设备在三维空间中是靠x、y和z轴来定位的。当设备静止放在水平表面上时，这三个值都是0
 
-　　x轴方向是从左往右，y轴方向是从下往上，z轴方向是从后往前
+&emsp;&emsp;x轴方向是从左往右，y轴方向是从下往上，z轴方向是从后往前
 
-　　触发deviceorientation事件时，事件对象中包含着每个轴相对于设备静止状态下发生变化的信息，事件对象包含以下5个属性
+&emsp;&emsp;触发deviceorientation事件时，事件对象中包含着每个轴相对于设备静止状态下发生变化的信息，事件对象包含以下5个属性
 ```
 alpha:在围绕z轴旋转时（即左右旋转时),y轴的度数差；是一个介于0到360之间的浮点数
 beta:在围绕x轴旋转时（即前后旋转时）,z轴的度数差；是一个介于-180到180之间的浮点数
@@ -67,9 +66,9 @@ gamma:在围绕y轴旋转时（即扭转设备时)，z轴的度数差；是一�
 absolute:布尔值，表示设备是否返回—个绝对值
 compassCalibrated:布尔值，表示设备的指南针是否校准过
 ```
-　　手机放置在水平桌面上，android的alpha、beta、gamma值为90、0、0；IOS的alpha、beta、gamma值为0、0、0
+&emsp;&emsp;手机放置在水平桌面上，android的alpha、beta、gamma值为90、0、0；IOS的alpha、beta、gamma值为0、0、0
 
-　　测试代码如下
+&emsp;&emsp;测试代码如下
 
 ```
 <style>
@@ -91,7 +90,7 @@ window.addEventListener('deviceorientation',(e)=>{
 })
 </script>
 ```
-　　[查看效果](https://demo.xiaohuochai.site/mobile/device/d2.html)
+&emsp;&emsp;[查看效果](https://demo.xiaohuochai.site/mobile/device/d2.html)
 
  
 
@@ -99,39 +98,39 @@ window.addEventListener('deviceorientation',(e)=>{
 
 ### 设备移动
 
-　　window.devicemotion事件告诉开发人员设备什么时候移动，而不仅仅是设备方向如何改变
+&emsp;&emsp;window.devicemotion事件告诉开发人员设备什么时候移动，而不仅仅是设备方向如何改变
 
-　　触发devicemotion事件时，事件对象包含以下属性
+&emsp;&emsp;触发devicemotion事件时，事件对象包含以下属性
 ```
 acceleration:一个包含X、y和z属性的对象，在不考虑重力的情况下，告诉你在每个方向上的加速度
 accelerationIncludingGravity： 一个包含x、y和z属性的对象，在考虑z轴自然重力加速度的情况下，告诉你在每个方向上的加速度
 interval:以毫秒表示的时间值，必须在另一个devicemotion事件触发前传入。这个值在每个事件中应该是一个常量
 rotationRate: —个包含表示方向的alpha、beta和gamma属性的对象
 ```
-　　手机在不同方向下，android和IOS的acceleration和accelerationlncludingGravity这两个属性的x、y、z的值表示不同
+&emsp;&emsp;手机在不同方向下，android和IOS的acceleration和accelerationlncludingGravity这两个属性的x、y、z的值表示不同
 
-　　1、放置在水平桌面上
+&emsp;&emsp;1、放置在水平桌面上
 ```
 android x:0 y:0 z:10
 IOS x:0 y:0 z:-10
 ```
-　　2、屏幕朝右
+&emsp;&emsp;2、屏幕朝右
 ```
 android x:-10 y:0 z:0
 IOS x:10 y:0 z:0
 ```
-　　3、屏幕正对人
+&emsp;&emsp;3、屏幕正对人
 ```
 android x:0 y:10 z:0
 IOS x:0 y:-10 z:0
 ```
-　　所以，android和IOS下重力加速度的取值相反
+&emsp;&emsp;所以，android和IOS下重力加速度的取值相反
 
 【元素跟随手机移动】
 
-　　下面利用accelerationlncludingGravity属性实现元素跟随手机移动的效果
+&emsp;&emsp;下面利用accelerationlncludingGravity属性实现元素跟随手机移动的效果
 
-　　测试代码如下
+&emsp;&emsp;测试代码如下
 
 ```
 <style>
@@ -161,13 +160,13 @@ window.addEventListener('devicemotion',(e)=>{
 })
 </script>
 ```
-　　[查看效果](https://demo.xiaohuochai.site/mobile/device/d3.html)
+&emsp;&emsp;[查看效果](https://demo.xiaohuochai.site/mobile/device/d3.html)
 
 【摇一摇】
 
-　　摇一摇的原理非常简单，检测到手机的重力加速忽然有比较大的变化幅度即可。摇一摇时，元素颜色发生变化
+&emsp;&emsp;摇一摇的原理非常简单，检测到手机的重力加速忽然有比较大的变化幅度即可。摇一摇时，元素颜色发生变化
 
-　　测试代码如下
+&emsp;&emsp;测试代码如下
 
 ```
 <style>
@@ -201,4 +200,4 @@ window.addEventListener('devicemotion',(e)=>{
 })
 </script>
 ```
-　　[查看效果](https://demo.xiaohuochai.site/mobile/device/d4.html)
+&emsp;&emsp;[查看效果](https://demo.xiaohuochai.site/mobile/device/d4.html)
