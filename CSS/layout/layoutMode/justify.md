@@ -16,7 +16,7 @@
 
 &emsp;&emsp;如果要考虑flex三个版本的<a href="http://www.cnblogs.com/xiaohuochai/p/5334936.html" target="_blank">兼容</a>，则使用如下代码
 
-&emsp;&emsp;[注意]IE9-浏览器不支持
+&emsp;&emsp;注意：IE9-浏览器不支持
 
     .justify-content_flex-justify{
         -webkit-box-pack: justify;
@@ -67,7 +67,7 @@
 
 &emsp;&emsp;于是把`text-align`属性替换成`text-align-last`。但是，要兼容IE浏览器需要同时设置`text-align:justify`
 
-&emsp;&emsp;[注意]safari浏览器、IOS、androis4.4-浏览器不支持
+&emsp;&emsp;注意：safari浏览器、IOS、androis4.4-浏览器不支持
 
     <style>
     body{margin: 0;}    
@@ -117,7 +117,7 @@
 
 &emsp;&emsp;使用<a href="http://www.cnblogs.com/xiaohuochai/p/5344541.html" target="_blank">多列布局`column`</a>也可以实现类似的效果。`column-count`定义了元素的列数，例子中有3个子元素，所以定义为3列。特别要注意的是，这时需要把子元素设置为block元素才会生效
 
-&emsp;&emsp;[注意]IE9-浏览器不支持
+&emsp;&emsp;注意：IE9-浏览器不支持
 
     <style>
     body{margin: 0;}    
@@ -159,7 +159,7 @@
 
 &emsp;&emsp;<a href="http://www.cnblogs.com/xiaohuochai/p/7083153.html" target="_blank">栅格布局</a>使用`justify-content`的两端对齐属性`space-between`
 
-&emsp;&emsp;[注意]IE10-浏览器不支持
+&emsp;&emsp;注意：IE10-浏览器不支持
 
 
 	<style>
