@@ -93,7 +93,7 @@
 
 &emsp;&emsp;注意：IE7-浏览器中vertical-align的百分比值不支持小数行高，且取baseline、middle、text-bottom等值时与标准浏览器在展示效果不一样，常用的解决办法是将行内元素设置display:inline-block
 
-<div class="cnblogs_code">
+<div>
 <pre>vertical-align:baseline(元素的基线与父元素的基线对齐)
 vertical-align:sub(降低元素的基线到父元素合适的下标位置)
 vertical-align:super(升高元素的基线到父元素合适的上标位置)
@@ -137,7 +137,7 @@ vertical-align:inherit(从父元素继承vertical-align属性的值)</pre>
 
 **【1】单行文本水平垂直居中**
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     line-height: 100px;
     width: 100px;
@@ -145,7 +145,7 @@ vertical-align:inherit(从父元素继承vertical-align属性的值)</pre>
     border: 1px solid black;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div&gt;测试文字&lt;/div&gt;</pre>
 </div>
 
@@ -155,7 +155,7 @@ vertical-align:inherit(从父元素继承vertical-align属性的值)</pre>
 
 **【2】图片近似垂直居中**
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     line-height: 200px;
     text-align: center;
@@ -164,7 +164,7 @@ img{
     vertical-align: middle;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div&gt;
     &lt;img src="#" alt="#"&gt;
 &lt;/div&gt;</pre>
@@ -174,7 +174,7 @@ img{
 
 &emsp;&emsp;注意：IE7浏览器在写块级元素包含行内元素时一定要写成换行写法，而不要写在一行
 
-<div class="cnblogs_code">
+<div>
 <pre>//正确1
 &lt;div&gt;
     &lt;img src="#" alt="#"&gt;
@@ -192,7 +192,7 @@ img{
 
 &emsp;&emsp;在方法2的基础上设置块级元素的font-size为0，则可以设置图片完全垂直居中
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     line-height: 200px;
     text-align: center;
@@ -202,7 +202,7 @@ img{
     vertical-align: middle;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div&gt;
     &lt;img src="#" alt="#"&gt;
 &lt;/div&gt;</pre>
@@ -214,7 +214,7 @@ img{
 
 &emsp;&emsp;由于方法3设置font-size为0的局限性，块级元素里面无法放置文本。方法4主要通过新增元素来实现垂直居中效果，该方法也可用于图片的水平垂直居中
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     height: 100px;
     width: 200px;
@@ -233,7 +233,7 @@ i{
     vertical-align: middle;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>    &lt;div&gt;
         &lt;i&gt;&lt;/i&gt;&lt;span&gt;我是特别长的特别长的特别长的特别长的多行文字&lt;/span&gt;
     &lt;/div&gt;    </pre>
@@ -245,7 +245,7 @@ i{
 
 **1、使用长度负值**
 
-<div class="cnblogs_code">
+<div>
 <pre>img{
     vertical-align: -5px;
 }</pre>
@@ -255,7 +255,7 @@ i{
 
 **2、使用文本底部对齐**
 
-<div class="cnblogs_code">
+<div>
 <pre>img{
     vertical-align: text-bottom;
 }</pre>
