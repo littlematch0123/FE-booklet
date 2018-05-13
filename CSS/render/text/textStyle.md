@@ -30,12 +30,12 @@ text-indent
 
 【悬挂缩进】
 
-<div class="cnblogs_code">
-<pre><span>div{
+<div>
+<pre>div{
     width: 200px;
     border: 1px solid black;
-    text-indent: -<span>1em;//关键代码
-    padding-<span>left: 1em;//关键代码
+    text-indent: -1em;//关键代码
+    padding-left: 1em;//关键代码
 }
 </pre>
 </div>
@@ -44,15 +44,15 @@ text-indent
 
 &nbsp;【首字下沉】
 
-<div class="cnblogs_code">
-<pre><span>div{
+<div>
+<pre>div{
     width: 200px;
     border: 1px solid black;
-    text-indent: 0<span>.5em;
+    text-indent: 0.5em;
 }
-div:first-<span>letter{
-    font-<span>size: 30px;
-    float<span>: left;
+div:first-letter{
+    font-size: 30px;
+    float: left;
 }  </pre>
 </div>
 
@@ -86,7 +86,7 @@ text-align
 
 &emsp;&emsp;对于IE7-浏览器来说，使用text-align不仅会改变文本的水平对齐方式，也会改变后代块级元素的水平对齐方式
 
-<div class="cnblogs_code">
+<div>
 <pre>.box{
     width: 200px;
     height: 200px;
@@ -100,7 +100,7 @@ text-align
     background-color: lightgreen;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="box"&gt;
     &lt;div class="in"&gt;测试文字&lt;/div&gt;
 &lt;/div&gt;</pre>
