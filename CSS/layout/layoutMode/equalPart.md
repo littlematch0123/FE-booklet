@@ -1,6 +1,6 @@
 # 实现CSS等分布局的5种方式
 
-　　等分布局是指子元素平均分配父元素宽度的布局方式，本文将介绍实现等分布局的5种方式
+&emsp;&emsp;等分布局是指子元素平均分配父元素宽度的布局方式，本文将介绍实现等分布局的5种方式
 
 &nbsp;
 
@@ -8,13 +8,13 @@
 
 【思路一】float
 
-　　缺点:结构和样式存在耦合性，IE7-浏览器下对宽度百分比取值存在四舍五入的误差
+&emsp;&emsp;缺点:结构和样式存在耦合性，IE7-浏览器下对宽度百分比取值存在四舍五入的误差
 
 【1】float + padding + background-clip
 
-　　使用padding来实现子元素之间的间距，使用background-clip使子元素padding部分不显示背景
+&emsp;&emsp;使用padding来实现子元素之间的间距，使用background-clip使子元素padding部分不显示背景
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .parentWrap{
@@ -34,7 +34,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parentWrap"&gt;
     &lt;div class="parent" style="background-color: lightgrey;"&gt;
         &lt;div class="child" style="background-color: lightblue;"&gt;1&lt;/div&gt;
@@ -49,9 +49,9 @@ body,p{margin: 0;}
 
 【2】float + margin + calc
 
-　　使用margin实现子元素之间的间距，使用calc()函数计算子元素的宽度
+&emsp;&emsp;使用margin实现子元素之间的间距，使用calc()函数计算子元素的宽度
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .parentWrap{
@@ -69,7 +69,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parentWrap"&gt;
     &lt;div class="parent" style="background-color: lightgrey;"&gt;
         &lt;div class="child" style="background-color: lightblue;"&gt;1&lt;/div&gt;
@@ -84,9 +84,9 @@ body,p{margin: 0;}
 
 【3】float + margin + (fix)
 
-　　使用margin实现子元素之间的间距，通过增加结构来实现兼容
+&emsp;&emsp;使用margin实现子元素之间的间距，通过增加结构来实现兼容
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .parentWrap{
@@ -106,7 +106,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parentWrap"&gt;
     &lt;div class="parent" style="background-color: lightgrey;"&gt;
         &lt;div class="child" style="background-color: blue;"&gt;
@@ -133,11 +133,11 @@ body,p{margin: 0;}
 
 【思路二】inline-block
 
-　　缺点：需要设置垂直对齐方式vertical-align，则需要处理换行符解析成空格的间隙问题。IE7-浏览器不支持给块级元素设置inline-block属性，兼容代码是display:inline;zoom:1;
+&emsp;&emsp;缺点：需要设置垂直对齐方式vertical-align，则需要处理换行符解析成空格的间隙问题。IE7-浏览器不支持给块级元素设置inline-block属性，兼容代码是display:inline;zoom:1;
 
 【1】inline-block + padding + background-clip
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .parentWrap{
@@ -159,7 +159,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parentWrap"&gt;
     &lt;div class="parent" style="background-color: lightgrey;"&gt;
         &lt;div class="child" style="background-color: lightblue;"&gt;1&lt;/div&gt;
@@ -174,7 +174,7 @@ body,p{margin: 0;}
 
 【2】inline-block + margin + calc
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .parentWrap{
@@ -194,7 +194,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parentWrap"&gt;
     &lt;div class="parent" style="background-color: lightgrey;"&gt;
         &lt;div class="child" style="background-color: lightblue;"&gt;1&lt;/div&gt;
@@ -209,7 +209,7 @@ body,p{margin: 0;}
 
 【3】inline-block + margin + (fix)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .parentWrap{
@@ -231,7 +231,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parentWrap"&gt;
     &lt;div class="parent" style="background-color: lightgrey;"&gt;
         &lt;div class="child" style="background-color: blue;"&gt;
@@ -258,9 +258,9 @@ body,p{margin: 0;}
 
 【思路三】table
 
- 　　缺点：元素被设置为table后，内容撑开宽度。若要兼容IE7-浏览器，需要改为&lt;table&gt;结构。table-cell元素无法设置margin，设置padding及background-clip也不可行
+ &emsp;&emsp;缺点：元素被设置为table后，内容撑开宽度。若要兼容IE7-浏览器，需要改为&lt;table&gt;结构。table-cell元素无法设置margin，设置padding及background-clip也不可行
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .parentWrap{
@@ -280,7 +280,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parentWrap"&gt;
     &lt;div class="parent" style="background-color: lightgrey;"&gt;
         &lt;div class="child" style="background-color: blue;"&gt;
@@ -307,7 +307,7 @@ body,p{margin: 0;}
 
 【思路四】flex
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .parent{
@@ -322,7 +322,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="child" style="background-color: lightblue;"&gt;1&lt;/div&gt;
     &lt;div class="child" style="background-color: lightgreen;"&gt;2&lt;/div&gt;
@@ -339,7 +339,7 @@ body,p{margin: 0;}
 
 【思路五】grid
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .parent{
@@ -350,7 +350,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="child" style="background-color: lightblue;"&gt;1&lt;/div&gt;
     &lt;div class="child" style="background-color: lightgreen;"&gt;2&lt;/div&gt;
