@@ -1,6 +1,6 @@
 # CSS颜色模式转换器的实现
 
- 　　在CSS中，颜色的表示方式主要包括关键字、16进制、RGB模式、RGBA模式、HSL模式、HSLA模式。[关于颜色模式的详细信息移步至此](http://www.cnblogs.com/xiaohuochai/p/5204448.html)。本文就16进制、RGB模式及HSL模式的互相转换进行实现。
+&emsp;&emsp;在CSS中，颜色的表示方式主要包括关键字、16进制、RGB模式、RGBA模式、HSL模式、HSLA模式。[关于颜色模式的详细信息移步至此](http://www.cnblogs.com/xiaohuochai/p/5204448.html)。本文就16进制、RGB模式及HSL模式的互相转换进行实现。
 
 &nbsp;
 
@@ -8,11 +8,11 @@
 
 **【1】16进制 -&gt; RGB**
 
-　　16进制是设置颜色值的常用方式，将三个介于00-FF的十六进制数连接起来，若16进制的3组数各自成对，则可简写为3位。
+&emsp;&emsp;16进制是设置颜色值的常用方式，将三个介于00-FF的十六进制数连接起来，若16进制的3组数各自成对，则可简写为3位。
 
-　　16进制与RGB模式的对应关系为：16进制的前两位对应RGB的red部分；16进制的中间两位对应RGB的green部分；16进制的后两位对应RGB的blue部分。而16进制使用的16进制的数字格式，而RGB使用的10进制的数字格式。所以还需要数字进制的变换
+&emsp;&emsp;16进制与RGB模式的对应关系为：16进制的前两位对应RGB的red部分；16进制的中间两位对应RGB的green部分；16进制的后两位对应RGB的blue部分。而16进制使用的16进制的数字格式，而RGB使用的10进制的数字格式。所以还需要数字进制的变换
 
-<div class="cnblogs_code">
+<div>
 <pre>function sixteenToRgb(str){
     var r,g,b,rgb;
     if(str.length == 7){
@@ -38,11 +38,11 @@ console.log(sixteenToRgb('#1234'));//false</pre>
 
 **【2】RGB -&gt; 16进制**
 
-　　通过组合不同的红色、绿色、蓝色分量创造出的颜色成为RGB模式的颜色。显示器是由一个个像素构成，利用电子束来表现色彩。像素把光的三原色:红色(R)、绿色(G)、蓝色(B)组合起来。每像素包含8位元色彩的信息量，有0-255的256个单元，其中0是完全无光状态，255是最亮状态
+&emsp;&emsp;通过组合不同的红色、绿色、蓝色分量创造出的颜色成为RGB模式的颜色。显示器是由一个个像素构成，利用电子束来表现色彩。像素把光的三原色:红色(R)、绿色(G)、蓝色(B)组合起来。每像素包含8位元色彩的信息量，有0-255的256个单元，其中0是完全无光状态，255是最亮状态
 
-　　在RGB模式转换为16进制模式要注意的是，转换的成R、G、B三个分量的16进制值如果是一位数，则需要在前一位补0
+&emsp;&emsp;在RGB模式转换为16进制模式要注意的是，转换的成R、G、B三个分量的16进制值如果是一位数，则需要在前一位补0
 
-<div class="cnblogs_code">
+<div>
 <pre>function rgbToSixteen(str){
     var r16,g16,b16,sixteen;
     if(/^rgb\((\d+)\,(\d+)\,(\d+)\)$/.test(str)){
@@ -75,15 +75,15 @@ console.log(rgbToSixteen('rgb(123)'));//false</pre>
 
 **【3】HSL -&gt; RGB**
 
-　　HSL模式是通过对色调(H)、饱和度(S)、亮度(L)三个颜色通道的变化以及它们相互的叠加得到各式各样的颜色。HSL标准几乎可以包括人类视力所能感知的所有颜色
+&emsp;&emsp;HSL模式是通过对色调(H)、饱和度(S)、亮度(L)三个颜色通道的变化以及它们相互的叠加得到各式各样的颜色。HSL标准几乎可以包括人类视力所能感知的所有颜色
 
-　　h:色调(hue)可以为任意整数。0(或360或-360)表示红色，60表示黄色，120表示绿色，180表示青色，240表示蓝色，300表示洋红(当h值大于360时，实际的值等于该值模360后的值)
+&emsp;&emsp;h:色调(hue)可以为任意整数。0(或360或-360)表示红色，60表示黄色，120表示绿色，180表示青色，240表示蓝色，300表示洋红(当h值大于360时，实际的值等于该值模360后的值)
 
-　　s:饱和度(saturation)，就是指颜色的深浅度和鲜艳程度。取0-100%范围的值，其中0表示灰度(没有该颜色)，100%表示饱和度最高(颜色最鲜艳)
+&emsp;&emsp;s:饱和度(saturation)，就是指颜色的深浅度和鲜艳程度。取0-100%范围的值，其中0表示灰度(没有该颜色)，100%表示饱和度最高(颜色最鲜艳)
 
-　　l:亮度(lightness)，取0-100%范围的值，其中0表示最暗(黑色)，100%表示最亮(白色)
+&emsp;&emsp;l:亮度(lightness)，取0-100%范围的值，其中0表示最暗(黑色)，100%表示最亮(白色)
 
-<div class="cnblogs_code">
+<div>
 <pre>//参考http://stackoverflow.com/questions/2353211/hsl-to-rgb-color-conversion
 function hslToRgb(str){
     var r, g, b;
@@ -127,7 +127,7 @@ console.log(hslToRgb('hsl(300,40%,50%)'));//rgb(179,77,178)    </pre>
 
 **【4】RGB -&gt; HSL**
 
-<div class="cnblogs_code">
+<div>
 <pre>//参考http://stackoverflow.com/questions/2353211/hsl-to-rgb-color-conversion
 function rgbToHsl(str){
     var r,g,b;
