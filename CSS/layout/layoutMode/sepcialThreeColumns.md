@@ -1,6 +1,6 @@
 # 三栏式布局(所谓的圣杯和双飞翼)
 
- 　　常常听说圣杯布局和双飞翼布局，以为是两个很高级的语汇。但实际上，他们只是三栏式布局的两种布局方法而已。本文将介绍三栏式布局的4种思路
+&emsp;&emsp;常常听说圣杯布局和双飞翼布局，以为是两个很高级的语汇。但实际上，他们只是三栏式布局的两种布局方法而已。本文将介绍三栏式布局的4种思路
 
 &nbsp;
 
@@ -8,11 +8,11 @@
 
 【1】圣杯布局
 
- 　　圣杯布局使用float、负margin和relative，不需要添加额外标签。.main元素设置padding，为两侧定宽元素留出位置。内容元素设置100%宽度，占据中间位置。而两侧定宽元素通过设置负margin和relative的偏移属性配合，到达相应位置
+&emsp;&emsp;圣杯布局使用float、负margin和relative，不需要添加额外标签。.main元素设置padding，为两侧定宽元素留出位置。内容元素设置100%宽度，占据中间位置。而两侧定宽元素通过设置负margin和relative的偏移属性配合，到达相应位置
 
-　　缺点:&nbsp;并没有实现等高布局；使用了相对定位，扩展性不好
+&emsp;&emsp;缺点:&nbsp;并没有实现等高布局；使用了相对定位，扩展性不好
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .top,.bottom{
@@ -41,7 +41,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -68,11 +68,11 @@ body,p{margin: 0;}
 
 【2】双飞翼布局
 
- 　　双飞翼布局在圣杯布局的基础上，通过为.main元素外添加一层div结构，不使用相对定位。在.main元素上设置margin。两侧的定宽列通过负margin来占据.main元素的margin区域
+&emsp;&emsp;双飞翼布局在圣杯布局的基础上，通过为.main元素外添加一层div结构，不使用相对定位。在.main元素上设置margin。两侧的定宽列通过负margin来占据.main元素的margin区域
 
-　　缺点:&nbsp;并没有实现等高布局，增加了html结构
+&emsp;&emsp;缺点:&nbsp;并没有实现等高布局，增加了html结构
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .top,.bottom{height: 30px;}
@@ -90,7 +90,7 @@ body,p{margin: 0;}
 .right{margin-left: -100px;}
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -119,11 +119,11 @@ body,p{margin: 0;}
 
 【3】float + box-sizing + background-clip
 
- 　　.main元素的border区域为两侧定宽列的所在区域，实现伪等高效果；设置.main的padding和background-clip来实现元素间隔。两侧元素通过负margin调整到.main元素的border区域
+&emsp;&emsp;.main元素的border区域为两侧定宽列的所在区域，实现伪等高效果；设置.main的padding和background-clip来实现元素间隔。两侧元素通过负margin调整到.main元素的border区域
 
- 　　缺点:&nbsp;兼容性不好
+&emsp;&emsp;缺点:&nbsp;兼容性不好
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .top,.bottom{height: 30px;}
@@ -145,7 +145,7 @@ body,p{margin: 0;}
 .right{margin-left: -100px;}
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -174,11 +174,11 @@ body,p{margin: 0;}
 
 ### absolute
 
-　　设置子元素的top:0;bottom:0;使得所有子元素的高度都和父元素的高度相同，实现等高效果
+&emsp;&emsp;设置子元素的top:0;bottom:0;使得所有子元素的高度都和父元素的高度相同，实现等高效果
 
-　　缺点: 需要为.middle元素设置高度，扩展性较差
+&emsp;&emsp;缺点: 需要为.middle元素设置高度，扩展性较差
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .top,.bottom{height: 30px;}
@@ -202,7 +202,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -231,11 +231,11 @@ body,p{margin: 0;}
 
 ### flex
 
- 　　flex中的伸缩项目默认都拉伸为父元素的高度，可实现等高效果。通过改变伸缩项目的order，可以实现元素顺序调换的效果
+&emsp;&emsp;flex中的伸缩项目默认都拉伸为父元素的高度，可实现等高效果。通过改变伸缩项目的order，可以实现元素顺序调换的效果
 
-　　缺点: 兼容性不高
+&emsp;&emsp;缺点: 兼容性不高
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .top,.bottom{height: 30px;}
@@ -249,7 +249,7 @@ body,p{margin: 0;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -278,7 +278,7 @@ body,p{margin: 0;}
 
 ### grid
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 .top,.bottom{height: 30px;}
@@ -286,7 +286,7 @@ body,p{margin: 0;}
 .main{grid-area:1/2/2/3;}
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -315,4 +315,4 @@ body,p{margin: 0;}
 
 ### 总结
 
- 　　由于限定了主要内容元素在html结构中位于前面，通过css样式改变将其位置调换到中间的前提，所以思路并不是很多。float浮动流的元素可以通过负margin调换位置；absolute绝对定位流的元素可以通过偏移属性调换位置；flex弹性盒模型可以通过order属性调换位置；grid通过grid-area调换位置。而处于正常流中的元素除了使用relative外，使用负margin是无法调换位置的，所以table、inline-block等布局方式在此前提下不是很实用。
+&emsp;&emsp;由于限定了主要内容元素在html结构中位于前面，通过css样式改变将其位置调换到中间的前提，所以思路并不是很多。float浮动流的元素可以通过负margin调换位置；absolute绝对定位流的元素可以通过偏移属性调换位置；flex弹性盒模型可以通过order属性调换位置；grid通过grid-area调换位置。而处于正常流中的元素除了使用relative外，使用负margin是无法调换位置的，所以table、inline-block等布局方式在此前提下不是很实用。
