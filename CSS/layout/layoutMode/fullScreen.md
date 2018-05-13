@@ -1,6 +1,6 @@
 # CSS全屏布局的6种方式
 
-　　全屏布局在实际工作中是很常用的，比如管理系统、监控平台等。本文将介绍关于全屏布局的6种思路
+&emsp;&emsp;全屏布局在实际工作中是很常用的，比如管理系统、监控平台等。本文将介绍关于全屏布局的6种思路
 
 &nbsp;
 
@@ -8,9 +8,9 @@
 
 【1】float + calc
 
-　　通过calc()函数计算出.middle元素的高度，并设置子元素高度为100%
+&emsp;&emsp;通过calc()函数计算出.middle元素的高度，并设置子元素高度为100%
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 body,html,.parent{height: 100%;}
@@ -34,7 +34,7 @@ body,html,.parent{height: 100%;}
 .top,.bottom{height:50px;}
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -59,9 +59,9 @@ body,html,.parent{height: 100%;}
 
 【2】float + absolute + (fix)
 
-　　通过增加结构来提高兼容性，.middle元素设置100%的高度，.top和.bottom设置absolute覆盖在.middle上
+&emsp;&emsp;通过增加结构来提高兼容性，.middle元素设置100%的高度，.top和.bottom设置absolute覆盖在.middle上
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 body,html,.parent{height: 100%;}
@@ -97,7 +97,7 @@ body,html,.parent{height: 100%;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -128,7 +128,7 @@ body,html,.parent{height: 100%;}
 
 【1】inline-block + calc
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 body,html,.parent{height: 100%;}
@@ -157,7 +157,7 @@ body,html,.parent{height: 100%;}
 .top,.bottom{height: 50px;}
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -182,7 +182,7 @@ body,html,.parent{height: 100%;}
 
 【2】inline-block + absolute + (fix)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 body,html,.parent{height: 100%;}
@@ -230,7 +230,7 @@ body,html,.parent{height: 100%;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -261,9 +261,9 @@ body,html,.parent{height: 100%;}
 
 ### table
 
- 　　水平方向子元素的间距可以用border实现。所有浏览器都不支持给table-cell元素设置overflow属性。firefox和IE11浏览器不支持给table-cell元素的设置100%高度的子元素设置overflow属性
+&emsp;&emsp;水平方向子元素的间距可以用border实现。所有浏览器都不支持给table-cell元素设置overflow属性。firefox和IE11浏览器不支持给table-cell元素的设置100%高度的子元素设置overflow属性
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 body,html,.parent{height: 100%;}
@@ -302,7 +302,7 @@ body,html,.parent{height: 100%;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -333,7 +333,7 @@ body,html,.parent{height: 100%;}
 
 ### absolute
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 body,html,.parent{height: 100%;}
@@ -372,7 +372,7 @@ body,html,.parent{height: 100%;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -399,9 +399,9 @@ body,html,.parent{height: 100%;}
 
 ### flex
 
-　　flex常用于小范围的布局，使用全屏布局时会因为性能问题，出现卡顿现象。如果要使用全屏自适应布局，则只有flex才能达到效果
+&emsp;&emsp;flex常用于小范围的布局，使用全屏布局时会因为性能问题，出现卡顿现象。如果要使用全屏自适应布局，则只有flex才能达到效果
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 body,html,.parent{height: 100%;}
@@ -429,7 +429,7 @@ body,html,.parent{height: 100%;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -456,7 +456,7 @@ body,html,.parent{height: 100%;}
 
 ### grid
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 body,p{margin: 0;}
 body,html,.parent{height: 100%;}
@@ -478,7 +478,7 @@ body,html,.parent{height: 100%;}
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="parent" id="parent" style="background-color: lightgrey;"&gt;
     &lt;div class="top" style="background-color: lightblue;"&gt;
         &lt;p&gt;top&lt;/p&gt;
@@ -505,5 +505,5 @@ body,html,.parent{height: 100%;}
 
 ### 总结
 
- 　　全屏布局实际上就是[两列](http://www.cnblogs.com/xiaohuochai/p/5454232.html)或[三列自适应布局](http://www.cnblogs.com/xiaohuochai/p/5455905.html)的扩展形式。由于实现的是全屏效果，高度实际上是固定的，所以思路并没有[等高布局](http://www.cnblogs.com/xiaohuochai/p/5457127.html)局限。水平方向元素之间的间距根据实际情况使用margin、padding、border都可以实现
+&emsp;&emsp;全屏布局实际上就是[两列](http://www.cnblogs.com/xiaohuochai/p/5454232.html)或[三列自适应布局](http://www.cnblogs.com/xiaohuochai/p/5455905.html)的扩展形式。由于实现的是全屏效果，高度实际上是固定的，所以思路并没有[等高布局](http://www.cnblogs.com/xiaohuochai/p/5457127.html)局限。水平方向元素之间的间距根据实际情况使用margin、padding、border都可以实现
 
