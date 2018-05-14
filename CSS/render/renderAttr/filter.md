@@ -8,18 +8,18 @@
 ### 语法
 <p><strong>filter</strong></p>
 
-初始值: none
+&emsp;&emsp;初始值: none
 
-应用于: 所有元素
+&emsp;&emsp;应用于: 所有元素
 
-继承性: 无
+&emsp;&emsp;继承性: 无
 
-值: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url()
+&emsp;&emsp;值: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url()
 
 
-兼容性: IE浏览器及android4.3-浏览器不支持，android4.4+需要添加-webkit-前缀
+&emsp;&emsp;兼容性: IE浏览器及android4.3-浏览器不支持，android4.4+需要添加-webkit-前缀
 
-&emsp;&emsp;[注意]使用空格分隔多个滤镜。滤镜通常使用百分比(如：75%)，也可以使用小数来表示(如：0.75)
+&emsp;&emsp;注意：使用空格分隔多个滤镜。滤镜通常使用百分比(如：75%)，也可以使用小数来表示(如：0.75)
 
  
 <p>&nbsp;</p>
@@ -42,7 +42,7 @@
 
 <p><strong>saturate</strong></p>
 
- &emsp;&emsp;值为0%则是完全不饱和，值为100%则图像无变化。超过100%的值是允许的，表示更高的饱和度。若值未设置，值默认是1
+&emsp;&emsp;值为0%则是完全不饱和，值为100%则图像无变化。超过100%的值是允许的，表示更高的饱和度。若值未设置，值默认是1
 
  <iframe style="width: 100%; height: 220px" src="https://demo.xiaohuochai.site/css/filter/f2.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -54,7 +54,7 @@
 
 <p><strong>sepia</strong></p>
 
- &emsp;&emsp;使用sepia将图像转换为深褐色。值为100%完全是深褐色的，值为0%图像无变化。若未设置，值默认是0
+&emsp;&emsp;使用sepia将图像转换为深褐色。值为100%完全是深褐色的，值为0%图像无变化。若未设置，值默认是0
 
 
 <iframe style="width: 100%; height: 220px" src="https://demo.xiaohuochai.site/css/filter/f3.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -152,7 +152,7 @@
 
 &emsp;&emsp;虽然drop-shadow不支持内阴影，但它可以实现不规则图像的阴影，而box-shadow则无法实现
 
-&emsp;&emsp;[注意]关于盒子阴影的详细信息<a href="http://www.cnblogs.com/xiaohuochai/p/6244492.html#anchor5" target="_blank">移步至此</a>
+&emsp;&emsp;注意：关于盒子阴影的详细信息<a href="http://www.cnblogs.com/xiaohuochai/p/6244492.html#anchor5" target="_blank">移步至此</a>
 
 
 
