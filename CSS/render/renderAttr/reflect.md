@@ -3,17 +3,18 @@
 &emsp;&emsp;CSS倒影目前只有chrome和safari浏览器支持，且需要添加-webkit-前缀。本文将详细介绍CSS倒影box-reflect
 
 <p>&nbsp;</p>
+
 ### 语法
 
 <p><strong>-webkit-box-reflect</strong></p>
 
-初始值: none
+&emsp;&emsp;初始值: none
 
-应用于: 块级元素(包括inline-block)
+&emsp;&emsp;应用于: 块级元素(包括inline-block)
 
-继承性: 无
+&emsp;&emsp;继承性: 无
 
-值: none | `<direction>` `<offset>`? `<mask-box-image>`?
+&emsp;&emsp;值: none | `<direction>` `<offset>`? `<mask-box-image>`?
 
 &emsp;&emsp;`<direction>`(必须)表示box-reflect生成倒影的方向，主要包括以下几个值：
 
