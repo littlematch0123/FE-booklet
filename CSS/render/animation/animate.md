@@ -1,26 +1,26 @@
 # animate.css的使用
 
-　　[animate.css](https://daneden.me/animate/)是一个使用CSS3的[animation](http://www.cnblogs.com/xiaohuochai/p/5391663.html)制作的动画效果的CSS集合，里面预设了很多种常用的动画，且使用非常简单。本文将详细介绍animate.css的使用
+&emsp;&emsp;[animate.css](https://daneden.me/animate/)是一个使用CSS3的[animation](http://www.cnblogs.com/xiaohuochai/p/5391663.html)制作的动画效果的CSS集合，里面预设了很多种常用的动画，且使用非常简单。本文将详细介绍animate.css的使用
 
 &nbsp;
 
 ### 引入
 
-　　animate.css的最新版本是3.5.2，引入animate.css很容易，有以下几种方法
+&emsp;&emsp;animate.css的最新版本是3.5.2，引入animate.css很容易，有以下几种方法
 
-　　1、从官网下载
+&emsp;&emsp;1、从官网下载
 
-　　[https://raw.github.com/daneden/animate.css/master/animate.css](https://raw.github.com/daneden/animate.css/master/animate.css)
+&emsp;&emsp;[https://raw.github.com/daneden/animate.css/master/animate.css](https://raw.github.com/daneden/animate.css/master/animate.css)
 
-　　2、通过npm安装
+&emsp;&emsp;2、通过npm安装
 
-<div class="cnblogs_code">
+<div>
 <pre>$ npm install animate.css</pre>
 </div>
 
-　　3、使用在线cdn
+&emsp;&emsp;3、使用在线cdn
 
-<div class="cnblogs_code">
+<div>
 <pre>https://unpkg.com/animate.css@3.5.2/animate.min.css</pre>
 </div>
 
@@ -28,13 +28,13 @@
 
 ### 效果演示
 
-　　animate.css的使用非常简单，因为它是把不同的动画绑定到了不同的类里，所以想要使用哪种动画，只需要把通用类animated和相应的类添加到元素上就行了
+&emsp;&emsp;animate.css的使用非常简单，因为它是把不同的动画绑定到了不同的类里，所以想要使用哪种动画，只需要把通用类animated和相应的类添加到元素上就行了
 
-　　下面来详细介绍animate.css里面的类，主要包括Attention(晃动效果)、bounce(弹性缓冲效果)、fade(透明度变化效果)、flip(翻转效果)、rotate(旋转效果)、slide(滑动效果)、zoom(变焦效果)、special(特殊效果)这8类
+&emsp;&emsp;下面来详细介绍animate.css里面的类，主要包括Attention(晃动效果)、bounce(弹性缓冲效果)、fade(透明度变化效果)、flip(翻转效果)、rotate(旋转效果)、slide(滑动效果)、zoom(变焦效果)、special(特殊效果)这8类
 
 【Attention(晃动效果)】
 
-<div class="cnblogs_code">
+<div>
 <pre>bounce
 flash
 pulse
@@ -47,9 +47,9 @@ wobble
 jello</pre>
 </div>
 
-　　以在div上使用bounce为例
+&emsp;&emsp;以在div上使用bounce为例
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="animated bounce"&gt;&lt;/div&gt;</pre>
 </div>
 
@@ -57,7 +57,7 @@ jello</pre>
 
 【bounce(弹性缓冲效果)】
 
-<div class="cnblogs_code">
+<div>
 <pre>bounceIn
 bounceInDown
 bounceInLeft
@@ -74,7 +74,7 @@ bounceOutUp</pre>
 
 【fade(透明度变化效果)】
 
-<div class="cnblogs_code">
+<div>
 <pre>fadeIn
 fadeInDown
 fadeInDownBig
@@ -99,7 +99,7 @@ fadeOutUpBig</pre>
 
 【flip(翻转效果)】
 
-<div class="cnblogs_code">
+<div>
 <pre>flip
 flipInX
 flipInY
@@ -111,7 +111,7 @@ flipOutY</pre>
 
 【rotate(旋转效果)】&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>rotateIn
 rotateInDownLeft
 rotateInDownRight
@@ -128,7 +128,7 @@ rotateOutUpRight</pre>
 
 【slide(滑动效果)】&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>slideInDown
 slideInLeft
 slideInRight
@@ -143,7 +143,7 @@ slideOutUp</pre>
 
 【zoom(变焦效果)】
 
-<div class="cnblogs_code">
+<div>
 <pre>zoomIn
 zoomInDown
 zoomInLeft
@@ -160,7 +160,7 @@ zoomOutUp</pre>
 
 【special(特殊效果)】&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>hinge
 rollIn
 rollOut
@@ -174,9 +174,9 @@ lightSpeedOut</pre>
 
 ### 实际应用
 
-　　在一般的使用中，直接在元素上添加animated和对应的类名即可
+&emsp;&emsp;在一般的使用中，直接在元素上添加animated和对应的类名即可
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -195,9 +195,9 @@ lightSpeedOut</pre>
 
 ![animate](https://pic.xiaohuochai.site/blog/CSS_render_animate.gif)
 
-　　通过给JS添加或删除class，可以实现动态效果
+&emsp;&emsp;通过给JS添加或删除class，可以实现动态效果
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -230,9 +230,9 @@ oBtn2.onclick = function(){
 
 <iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/css/animate/a9.html" frameborder="0" width="320" height="240"></iframe>
 
-　　至于动画的配置参数，比如动画持续时间，动画的执行次数等等，可以在元素上自行定义，覆盖掉animate.css里面所定义的就行了&nbsp;
+&emsp;&emsp;至于动画的配置参数，比如动画持续时间，动画的执行次数等等，可以在元素上自行定义，覆盖掉animate.css里面所定义的就行了&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
