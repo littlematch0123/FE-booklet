@@ -1,48 +1,48 @@
 # CSS遮罩mask
 
-　　CSS遮罩是[2008年4月](https://www.webkit.org/blog/181/css-masks)由苹果公司添加到webkit引擎中的。遮罩提供一种基于像素级别的，可以控制元素透明度的能力，类似于png24位或png32位中的alpha透明通道的效果。本文将详细介绍CSS遮罩mask
+&emsp;&emsp;CSS遮罩是[2008年4月](https://www.webkit.org/blog/181/css-masks)由苹果公司添加到webkit引擎中的。遮罩提供一种基于像素级别的，可以控制元素透明度的能力，类似于png24位或png32位中的alpha透明通道的效果。本文将详细介绍CSS遮罩mask
 
 ### 概述
 
-　　遮罩mask的功能就是使用透明的图片或渐变遮罩元素的背景。于是，遮罩mask与背景background非常类似，除了没有color子属性，背景background剩下的6个子属性，mask都有
+&emsp;&emsp;遮罩mask的功能就是使用透明的图片或渐变遮罩元素的背景。于是，遮罩mask与背景background非常类似，除了没有color子属性，背景background剩下的6个子属性，mask都有
 
-　　遮罩mask是一个复合属性，包括mask-image、mask-mode、mask-repeat、mask-position、mask-clip、mask-origin、mask-size、mask-composite这8个属性
+&emsp;&emsp;遮罩mask是一个复合属性，包括mask-image、mask-mode、mask-repeat、mask-position、mask-clip、mask-origin、mask-size、mask-composite这8个属性
 
-　　[注意]IE浏览器不支持，webkit内核的浏览器(包括chrome、safari、IOS、android)需要添加-webkit-前缀。要特别注意的是，firefox浏览器也支持webkit-mask属性
+&emsp;&emsp;注意：IE浏览器不支持，webkit内核的浏览器(包括chrome、safari、IOS、android)需要添加-webkit-前缀。要特别注意的是，firefox浏览器也支持webkit-mask属性
 
 【mask-image】
 
-　　默认值为none，值为透明图片，或透明渐变
+&emsp;&emsp;默认值为none，值为透明图片，或透明渐变
 
 【mask-repeat】
 
-　　默认值为repeat，可选值与background-repeat相同，详细情况[移步至此](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor3)
+&emsp;&emsp;默认值为repeat，可选值与background-repeat相同，详细情况[移步至此](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor3)
 
 【mask-position】
 
-　　默认值为0 0，可选值与background-position相同，详细情况[移步至此](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor4)
+&emsp;&emsp;默认值为0 0，可选值与background-position相同，详细情况[移步至此](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor4)
 
 【mask-clip】
 
-　　默认值为border-box，可选值与background-clip相同，详细情况[移步至此](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor7)
+&emsp;&emsp;默认值为border-box，可选值与background-clip相同，详细情况[移步至此](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor7)
 
 【mask-origin】
 
-　　默认值为border-box，可选值与background-origin相同，详细情况[移步至此](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor6)
+&emsp;&emsp;默认值为border-box，可选值与background-origin相同，详细情况[移步至此](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor6)
 
 【mask-size】
 
-　　默认值为auto，可选值与background-size相同，详细情况[移步至此](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor8)
+&emsp;&emsp;默认值为auto，可选值与background-size相同，详细情况[移步至此](http://www.cnblogs.com/xiaohuochai/p/5221936.html#anchor8)
 
 【mask-mode】
 
-　　默认值为match-source，可选值为alpha、luminance、match-source，或者它们的组合
+&emsp;&emsp;默认值为match-source，可选值为alpha、luminance、match-source，或者它们的组合
 
 【mask-composite】
 
-　　默认值为add，可选值为add、subtract、intersect、exclude
+&emsp;&emsp;默认值为add，可选值为add、subtract、intersect、exclude
 
-　　[注意]只有firefox支持mask-mode和mask-composite
+&emsp;&emsp;注意：只有firefox支持mask-mode和mask-composite
 
 &nbsp;
 
