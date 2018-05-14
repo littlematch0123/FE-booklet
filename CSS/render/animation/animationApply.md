@@ -1,6 +1,6 @@
 # 动画animation的三个应用
 
-　　前面介绍过[动画animation](http://www.cnblogs.com/xiaohuochai/p/5391663.html)的详细用法，本文主要介绍动画animation的三个效果
+&emsp;&emsp;前面介绍过[动画animation](http://www.cnblogs.com/xiaohuochai/p/5391663.html)的详细用法，本文主要介绍动画animation的三个效果
 
 &nbsp;
 
@@ -12,7 +12,7 @@
 
 【简要介绍】
 
- 　　漂浮的白云主要通过远景白云和近景白云来实现立体漂浮效果。远景和近景分别使用两张背景图片，通过改变其背景定位来实现白云移动效果，通过设置不同的动画持续时间来实现交错漂浮的效果
+ &emsp;&emsp;漂浮的白云主要通过远景白云和近景白云来实现立体漂浮效果。远景和近景分别使用两张背景图片，通过改变其背景定位来实现白云移动效果，通过设置不同的动画持续时间来实现交错漂浮的效果
 
 【主要代码】
 
@@ -59,7 +59,7 @@
 
 ** 【简要介绍】**
 
-　　旋转的星球主要通过rotate()旋转函数来实现。实际上，蓝色的地球和黑色的月球并没有发生旋转，只是其父级旋转形成的视觉上的旋转效果
+&emsp;&emsp;旋转的星球主要通过rotate()旋转函数来实现。实际上，蓝色的地球和黑色的月球并没有发生旋转，只是其父级旋转形成的视觉上的旋转效果
 
 **【代码演示】**
 
@@ -138,7 +138,7 @@
 
 【进阶使用】
 
-　　如果要在内侧旋转的球内放文本，并且文本不跟着旋转，则代码如下
+&emsp;&emsp;如果要在内侧旋转的球内放文本，并且文本不跟着旋转，则代码如下
 
 <div class="cnblogs_code">
 <pre>@keyframes spin{100%{transform:rotate(1turn);}}
@@ -149,7 +149,7 @@ div:hover,div:focus{
 }</pre>
 </div>
 
-　　鼠标移入后，动画停止；移出时，动画继续
+&emsp;&emsp;鼠标移入后，动画停止；移出时，动画继续
 
 <iframe style="width: 100%; height: 160px;" src="https://demo.xiaohuochai.site/css/animationApply/a3.html" frameborder="0" width="320" height="240"></iframe>
 
@@ -163,7 +163,7 @@ div:hover,div:focus{
 
 **【简要介绍】**
 
-　　该效果主要通过设置计算后的延迟时间来达到正方体的各个边顺序动画的效果。一次动画结束后，通过触发animationend事件重置animation-name来实现重复动画的效果
+&emsp;&emsp;该效果主要通过设置计算后的延迟时间来达到正方体的各个边顺序动画的效果。一次动画结束后，通过触发animationend事件重置animation-name来实现重复动画的效果
 
 **【代码演示】**
 
