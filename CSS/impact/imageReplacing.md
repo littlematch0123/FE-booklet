@@ -1,14 +1,14 @@
 # CSS以图换字的9种方法
 
-　　CSS以图换字的技术，很久都没人提起了。它是一种在h1标签内，使用图像替换文本元素的技术，使页面在设计和可访问性之间达到平衡。本文将详细介绍CSS以图换字的9种方法
+&emsp;&emsp;CSS以图换字的技术，很久都没人提起了。它是一种在h1标签内，使用图像替换文本元素的技术，使页面在设计和可访问性之间达到平衡。本文将详细介绍CSS以图换字的9种方法
 
 &nbsp;
 
 ### 文字隐藏
 
-　　在h1标签中，新增span标签来保存标题内容，然后将其样式设置为display:none
+&emsp;&emsp;在h1标签中，新增span标签来保存标题内容，然后将其样式设置为display:none
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;style&gt;
     h1 {
       width: 64px;
@@ -31,9 +31,9 @@
 
 ### 负缩进
 
-　　通过使用text-index:-9999px，这样一个比较大的负缩进，使文本移到页面以外的区域
+&emsp;&emsp;通过使用text-index:-9999px，这样一个比较大的负缩进，使文本移到页面以外的区域
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;style&gt;
     h1 {
       width: 64px;
@@ -52,9 +52,9 @@
 
 ### 负margin
 
-　　通过使用margin-left:-2000px，使盒模型向左偏移2000px，然后将宽度设置为2064px，从而页面中只显示2064px中64px的部分。将图片的背景设置为右对齐，且不重复
+&emsp;&emsp;通过使用margin-left:-2000px，使盒模型向左偏移2000px，然后将宽度设置为2064px，从而页面中只显示2064px中64px的部分。将图片的背景设置为右对齐，且不重复
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;style&gt;
     h1 {
       width: 2064px;
@@ -73,9 +73,9 @@
 
 ### 上padding
 
-　　因为背景是显示在padding-box区域中的，而文本是显示在content-box区域中。所以，将height设置为0,用padding-top来替代height，并设置overflow:hidden。则，可以只显示背景不显示文本
+&emsp;&emsp;因为背景是显示在padding-box区域中的，而文本是显示在content-box区域中。所以，将height设置为0，用padding-top来替代height，并设置overflow:hidden。则，可以只显示背景不显示文本
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;style&gt;
     h1 {
       width: 64px;
@@ -95,9 +95,9 @@
 
 ### 0宽高
 
-　　通过新增一个span标签来保存文本内容，并将该标签的宽高设置为0，再设置溢出隐藏即可
+&emsp;&emsp;通过新增一个span标签来保存文本内容，并将该标签的宽高设置为0，再设置溢出隐藏即可
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;style&gt;
     h1 {
       width: 64px;
@@ -116,9 +116,9 @@
 
 ### 文本透明
 
-　　设置文本的颜色为transparent，并设置font-size为1px，即减少行高的影响
+&emsp;&emsp;设置文本的颜色为transparent，并设置font-size为1px，即减少行高的影响
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;style&gt;
     h1 {
       width: 64px;
@@ -133,11 +133,13 @@
 
 <iframe src="https://demo.xiaohuochai.site/CSS/imageReplacement/i6.html" width="80" height="80"></iframe>
 
+&nbsp;
+
 ### 伪元素
 
-　　使用before伪元素，content设置为图片的URL，在h1元素上设置溢出隐藏
+&emsp;&emsp;使用before伪元素，content设置为图片的URL，在h1元素上设置溢出隐藏
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;style&gt;
     h1 {
       width: 64px;
@@ -159,9 +161,9 @@
 
 ### 正缩进
 
-　　设置text-indent:100%，使文本缩进到父元素宽度区域的右侧。然后配合设置white-space:nowrap和overflow:hidden，使文本不换行，并溢出隐藏。从而隐藏文本内容
+&emsp;&emsp;设置text-indent:100%，使文本缩进到父元素宽度区域的右侧。然后配合设置white-space:nowrap和overflow:hidden，使文本不换行，并溢出隐藏。从而隐藏文本内容
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;style&gt;
     h1 {
       width: 64px;
@@ -182,9 +184,9 @@
 
 ### 字体大小
 
-　　通过设置font-size:0，可以将字体大小设置为0
+&emsp;&emsp;通过设置font-size:0，可以将字体大小设置为0
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;style&gt;
     h1 {
       width: 64px;
