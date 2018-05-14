@@ -4,7 +4,7 @@
 
 ### 矩形
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     width: 100px;
     height: 100px;
@@ -18,7 +18,7 @@
 
 ### 圆形
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     width: 100px;
     height: 100px;
@@ -35,7 +35,7 @@
 
 【整个椭圆】
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     width: 100px;
     height: 50px;
@@ -48,7 +48,7 @@
 
 【半椭圆或半圆】
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
   width: 100px;
   height: 100px;
@@ -61,7 +61,7 @@
 
 【四分之一椭圆】
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
   width: 100px;
   height: 100px;
@@ -78,7 +78,7 @@
 
 【直角三角形】
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     width: 0;
     height: 0;
@@ -91,7 +91,7 @@
 
 【正三角形】
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     width: 0;
     height: 0;
@@ -109,7 +109,7 @@
 
 【基本图形】
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     margin-left: 50px;
     width: 100px;
@@ -123,11 +123,11 @@
 
 【改进版本】
 
-　　上面的代码中，不仅形状发生了变形，内容也发生了变形。有两种方法改进
+&emsp;&emsp;上面的代码中，不仅形状发生了变形，内容也发生了变形。有两种方法改进
 
-　　1、元素嵌套
+&emsp;&emsp;1、元素嵌套
 
-<div class="cnblogs_code">
+<div>
 <pre>.outer{
   margin-left:20px;
   width: 100px;
@@ -146,11 +146,11 @@
 
 <iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s9.html" frameborder="0" width="320" height="240"></iframe>
 
-　　2、伪元素
+&emsp;&emsp;2、伪元素
 
-　　把所有样式都应用到伪元素上，然后再对伪元素进行变形
+&emsp;&emsp;把所有样式都应用到伪元素上，然后再对伪元素进行变形
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
   position:relative; 
   margin-left:20px;
@@ -176,7 +176,7 @@ div::before{
 
 【基本版本】
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     width: 50px;
     border: 50px solid transparent;
@@ -188,9 +188,9 @@ div::before{
 
 【增强版本】
 
-　　上面的代码虽然简单且巧妙，但无法在图形内容填充文本。下面是比较复杂的增强版本&nbsp;
+&emsp;&emsp;上面的代码虽然简单且巧妙，但无法在图形内容填充文本。下面是比较复杂的增强版本&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
   height: 100px;
   width: 200px;
@@ -216,7 +216,7 @@ div:before{
 
 【梯形选项卡】
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 a{
   width: 120px;
@@ -261,19 +261,19 @@ nav &gt; a:before{
 
 【五角星】
 
- 　　一个大三角形底部掏掉一个小三角形；两个前面的相同图形叠压
+&emsp;&emsp;一个大三角形底部掏掉一个小三角形；两个前面的相同图形叠压
 
-　　经计算，五角星的夹角为36度，若小三角形的侧边为a，则大三角形的侧边为2a(1+sin18)，两个三角形共同的底边为2a(sin54)
+&emsp;&emsp;经计算，五角星的夹角为36度，若小三角形的侧边为a，则大三角形的侧边为2a(1+sin18)，两个三角形共同的底边为2a(sin54)
 
-<div class="cnblogs_code">
+<div>
 <pre>
 &lt;div class="box"&gt;
-	　　&lt;div class="in"&gt;&lt;/div&gt; 
-	　　&lt;div class="in"&gt;&lt;/div&gt;	
+	&lt;div class="in"&gt;&lt;/div&gt; 
+	&lt;div class="in"&gt;&lt;/div&gt;	
 &lt;/div&gt;
 </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>.box{
     position: relative;
 }
@@ -306,9 +306,9 @@ nav &gt; a:before{
 
 【六角星】
 
-　　两个三角形叠压
+&emsp;&emsp;两个三角形叠压
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     position: relative;
     width: 0;
@@ -336,9 +336,9 @@ div:after{
 
 【六边形】
 
-　　两个梯形拼接
+&emsp;&emsp;两个梯形拼接
 
-<div class="cnblogs_code">
+<div>
 <pre>div{
     position: relative;
     width: 50px;
@@ -360,7 +360,7 @@ div:after{
 
 【八边形】
 
-<div class="cnblogs_code">
+<div>
 <pre>.outer{
   width:100px;
   height: 100px;
@@ -379,7 +379,7 @@ div:after{
 
 【菱形】
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 .outer{
   margin:50px 0 0 50px;
@@ -403,9 +403,9 @@ div:after{
 
 ### 桃心
 
-　　创建一个方形div，分别用css控制div的两个伪元素平移到正方形相邻两边，圆形与边中点重合。最后将总的div旋转45度
+&emsp;&emsp;创建一个方形div，分别用css控制div的两个伪元素平移到正方形相邻两边，圆形与边中点重合。最后将总的div旋转45度
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 div{
     display:inline-block;
@@ -429,7 +429,7 @@ div:after{
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div&gt;&lt;/div&gt;</pre>
 </div>
 
@@ -441,7 +441,7 @@ div:after{
 
 【单角】
 
-<div class="cnblogs_code">
+<div>
 <pre>background: linear-gradient(-45deg,transparent 5%,#58a 0);</pre>
 </div>
 
@@ -449,7 +449,7 @@ div:after{
 
 【双角】
 
-<div class="cnblogs_code">
+<div>
 <pre>  background: linear-gradient(-45deg,transparent 5%,#58a 0) right,linear-gradient(45deg,transparent 5%,#58a 0) left;
   background-size:50% 100%;
   background-repeat:no-repeat;</pre>
@@ -459,7 +459,7 @@ div:after{
 
 【四角】
 
-<div class="cnblogs_code">
+<div>
 <pre>  background: linear-gradient(-135deg,transparent 5%,#58a 0) top right,linear-gradient(135deg,transparent 5%,#58a 0) top left,linear-gradient(-45deg,transparent 5%,#58a 0) bottom right,linear-gradient(45deg,transparent 5%,#58a 0) bottom left;
   background-size:50% 50%;
   background-repeat:no-repeat;</pre>
@@ -469,7 +469,7 @@ div:after{
 
 【弧形切角】
 
-<div class="cnblogs_code">
+<div>
 <pre>  background: radial-gradient(circle at top right,transparent 5%,#58a 0) top right,radial-gradient(circle at top left,transparent 5%,#58a 0) top left,radial-gradient(circle at bottom right,transparent 5%,#58a 0) bottom right,radial-gradient(circle at bottom left,transparent 5%,#58a 0) bottom left;
   background-size:50% 50%;
   background-repeat:no-repeat;</pre>
@@ -481,7 +481,7 @@ div:after{
 
 ### 折角效果
 
-<div class="cnblogs_code">
+<div>
 <pre>background:linear-gradient(to left bottom,transparent 50%,rgba(0,0,0,0.4) 0) no-repeat 100% 0 /2em 2em,linear-gradient(-135deg,transparent 1.414em ,#58a 0);</pre>
 </div>
 
@@ -491,11 +491,11 @@ div:after{
 
 ### 饼图效果
 
-　　饼图在网页中的运用极为普遍，比如简单的统计图表、进度指示器、定时器等
+&emsp;&emsp;饼图在网页中的运用极为普遍，比如简单的统计图表、进度指示器、定时器等
 
 【静态效果】
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 @keyframes spin{
   to{transform: rotate(.5turn);}
@@ -531,7 +531,7 @@ div:after{
 
 【动态效果】
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 @keyframes spin{
   to{transform: rotate(.5turn);}
@@ -563,15 +563,15 @@ div:after{
 &lt;div class="pie"&gt;&lt;/div&gt;</pre>
 </div>
 
-　　鼠标移入时，饼图发生移动
+&emsp;&emsp;鼠标移入时，饼图发生移动
 
 <iframe style="width: 100%; height: 130px;" src="https://demo.xiaohuochai.site/css/shape/s26.html" frameborder="0" width="320" height="240"></iframe>
 
 【SVG实现】
 
-&nbsp;　　让圆形的周长接近于100，方便计算。r = 100/(2*PI) = 16
+&emsp;&emsp;让圆形的周长接近于100，方便计算。r = 100/(2*PI) = 16
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 @keyframes fillup{to{stroke-dasharray:100 100;}}
 svg{
@@ -600,7 +600,7 @@ circle{
 
 ## 最后
 
-　　除了使用CSS画图之后，实现各种形状更简单的方法是使用[clip-path路径裁剪样式](http://www.cnblogs.com/xiaohuochai/p/7509225.html)
+&emsp;&emsp;除了使用CSS画图之后，实现各种形状更简单的方法是使用[clip-path路径裁剪样式](http://www.cnblogs.com/xiaohuochai/p/7509225.html)
 
-　　欢迎交流
+&emsp;&emsp;欢迎交流
 
