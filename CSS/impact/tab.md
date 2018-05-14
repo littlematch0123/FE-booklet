@@ -108,7 +108,6 @@
     .navI:hover{position:relative;z-index:1;}
     .navI:hover .navI-tit{background:#fff;border-bottom:none;}
     </style>
-
     <div class="box">
         <ul class="nav">
             <li class="navI navI_active">
@@ -128,7 +127,7 @@
 
 <iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n3.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-&emsp;&emsp;[缺点]：初始状态时，第一个导航标题无法实现默认被选中的状态(背景白色，无下划线)；鼠标移出导航模块时，导航内容部分无法固定，显示第一个导航内容；鼠标移出导航模块时，导航标题的样式无法固定，恢复到默认状态
+&emsp;&emsp;缺点：初始状态时，第一个导航标题无法实现默认被选中的状态(背景白色，无下划线)；鼠标移出导航模块时，导航内容部分无法固定，显示第一个导航内容；鼠标移出导航模块时，导航标题的样式无法固定，恢复到默认状态
 
 
 
@@ -167,7 +166,6 @@
     .navI-txt:target{position:relative;z-index:1;}
     .navI-txt:target ~ .navI-tit{background:#fff;border-bottom:none;}
     </style>
-
     <div class="box">
         <ul class="nav">
             <li class="navI navI_active">
@@ -187,7 +185,7 @@
 
 <iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n4.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-&emsp;&emsp;[缺点]：初始态默认选中的导航标题样式无法设置；改变了HTML结构；锚点技术本身的局限是锚点目标会尽可能的到达可视区域上方，从而可能会生成页面跳动
+&emsp;&emsp;缺点：初始态默认选中的导航标题样式无法设置；改变了HTML结构；锚点技术本身的局限是锚点目标会尽可能的到达可视区域上方，从而可能会生成页面跳动
 
 【2】使用视觉布局
 
@@ -211,7 +209,6 @@
     .nav-txt{overflow: hidden;}
     .nav-titI:hover{background-color: white;border-bottom: none;}
     </style>
-
     <div class="box">
         <nav class="nav-tit">
             <a class="nav-titI" href="#kc">课程</a>
@@ -227,7 +224,7 @@
 
 <iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n5.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-&emsp;&emsp;[缺点]：初始态默认选中的导航标题样式无法设置；锚点技术本身的局限是锚点目标会尽可能的到达可视区域上方，从而可能会生成页面跳动；hover态与点击态分开，可能会让人犯晕；鼠标移出导航模块时，导航标题的样式无法固定，恢复到默认状态
+&emsp;&emsp;缺点：初始态默认选中的导航标题样式无法设置；锚点技术本身的局限是锚点目标会尽可能的到达可视区域上方，从而可能会生成页面跳动；hover态与点击态分开，可能会让人犯晕；鼠标移出导航模块时，导航标题的样式无法固定，恢复到默认状态
 
 
 
@@ -268,7 +265,6 @@
     .navI-radio:checked + .navI-tit{background:#fff;border-bottom:none;}
     .navI-radio:checked ~ .navI-txt{z-index:1;}
     </style>
-
     <div class="box">
         <ul class="nav">
             <li class="navI">
@@ -291,7 +287,7 @@
 
 <iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n6.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-&emsp;&emsp;[缺点]：HTML结构较复杂
+&emsp;&emsp;缺点：HTML结构较复杂
 
 
 【2】使用视觉布局
@@ -316,7 +312,6 @@
     .nav-txt{overflow: hidden;}
     .nav-titI:hover{background-color: #fff;border-bottom:none;}
     </style>
-
     <div class="box">
         <nav class="nav-tit">
             <label class="nav-titI" for="kc">课程</label>
@@ -332,7 +327,7 @@
 
 <iframe style="width: 100%; height: 250px" src="https://demo.xiaohuochai.site/css/nav/n7.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-&emsp;&emsp;[缺点]：初始态默认选中的导航标题样式无法设置；有时会出现页面跳动的效果；hover态与点击态分开，可能会让人犯晕；鼠标移出导航模块时，导航标题的样式无法固定，恢复到默认状态
+&emsp;&emsp;缺点：初始态默认选中的导航标题样式无法设置；有时会出现页面跳动的效果；hover态与点击态分开，可能会让人犯晕；鼠标移出导航模块时，导航标题的样式无法固定，恢复到默认状态
 
 <p>&nbsp;</p>
 
