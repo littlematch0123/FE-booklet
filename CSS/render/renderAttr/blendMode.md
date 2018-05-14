@@ -14,18 +14,18 @@
 
 <p><strong>mix-blend-mode</strong></p>
 
-初始值: normal
+&emsp;&emsp;初始值: normal
 
-应用于: 所有元素
+&emsp;&emsp;应用于: 所有元素
 
-继承性: 无
+&emsp;&emsp;继承性: 无
 
-值: normal(正常) | multiply(正片叠底) | screen(滤色) | overlay(叠加) | darken(变暗) | lighten(变亮) | color-dodge(颜色减淡) | color-burn(颜色加深) | hard-light(强光) | soft-light(柔光) | difference(差值) | exclusion(排除) | hue(色相) | saturation(饱和度) | color(颜色) | luminosity
+&emsp;&emsp;值: normal(正常) | multiply(正片叠底) | screen(滤色) | overlay(叠加) | darken(变暗) | lighten(变亮) | color-dodge(颜色减淡) | color-burn(颜色加深) | hard-light(强光) | soft-light(柔光) | difference(差值) | exclusion(排除) | hue(色相) | saturation(饱和度) | color(颜色) | luminosity
 (亮度) | initial(初始) | inherit(继承) | unset(复原)
 
-兼容性: IE浏览器、android4.4-不支持，safari和IOS需要添加-webkit-前缀
+&emsp;&emsp;兼容性: IE浏览器、android4.4-不支持，safari和IOS需要添加-webkit-前缀
 
-&emsp;&emsp;[注意]该元素会创建层叠上下文，z-index属性有效
+&emsp;&emsp;注意：该元素会创建层叠上下文，z-index属性有效
 
 
 
@@ -38,16 +38,16 @@
 
 <p><strong>background-blend-mode</strong></p>
 
-初始值: normal
+&emsp;&emsp;初始值: normal
 
-应用于: 所有元素
+&emsp;&emsp;应用于: 所有元素
 
-继承性: 无
+&emsp;&emsp;继承性: 无
 
-值: normal(正常) | multiply(正片叠底) | screen(滤色) | overlay(叠加) | darken(变暗) | lighten(变亮) | color-dodge(颜色减淡) | color-burn(颜色加深) | hard-light(强光) | soft-light(柔光) | difference(差值) | exclusion(排除) | hue(色相) | saturation(饱和度) | color(颜色) | luminosity
+&emsp;&emsp;值: normal(正常) | multiply(正片叠底) | screen(滤色) | overlay(叠加) | darken(变暗) | lighten(变亮) | color-dodge(颜色减淡) | color-burn(颜色加深) | hard-light(强光) | soft-light(柔光) | difference(差值) | exclusion(排除) | hue(色相) | saturation(饱和度) | color(颜色) | luminosity
 (亮度) | initial(初始) | inherit(继承) | unset(复原)
 
-兼容性: IE浏览器、android4.4-不支持，safari和IOS需要添加-webkit-前缀
+&emsp;&emsp;兼容性: IE浏览器、android4.4-不支持，safari和IOS需要添加-webkit-前缀
 
 <iframe style="width: 100%; height: 180px" src="https://demo.xiaohuochai.site/css/mode/m2.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -62,13 +62,13 @@
 
 <p><strong>isolation</strong></p>
 
-初始值: auto
+&emsp;&emsp;初始值: auto
 
-应用于: 所有元素
+&emsp;&emsp;应用于: 所有元素
 
-继承性: 无
+&emsp;&emsp;继承性: 无
 
-值: auto | isolate(创建新的堆叠上下文) | initial | inherit | unset
+&emsp;&emsp;值: auto | isolate(创建新的堆叠上下文) | initial | inherit | unset
 
     <style>
     body{background-color: gray;}
@@ -89,5 +89,5 @@
 
 &emsp;&emsp;如果不使用`isolation: isolate`创建堆叠上下文，由于`.test1`和`.test2`背景颜色透明，则`.in`会和`<body>`背景颜色混合，成为粉色。使用`isolation: isolate`后，`.test2`从`<body>`中隔离出来，不与`<body>`的背景进行混合，从而保留其原先的红色
 
-&emsp;&emsp;[注意]由于`isolation: isolate`的作用就是创建堆叠上下文，所以只要能<a href="http://www.cnblogs.com/xiaohuochai/p/5304619.html#anchor5" target="_blank">创建堆叠上下文</a>，就可以实现隔离的效果，所以，类似地，relative、filter等样式也可以实现类似效果
+&emsp;&emsp;注意：由于`isolation: isolate`的作用就是创建堆叠上下文，所以只要能<a href="http://www.cnblogs.com/xiaohuochai/p/5304619.html#anchor5" target="_blank">创建堆叠上下文</a>，就可以实现隔离的效果，所以，类似地，relative、filter等样式也可以实现类似效果
 
