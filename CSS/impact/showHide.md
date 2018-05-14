@@ -1,21 +1,21 @@
 # 元素显示隐藏的9种思路
 
-　　在网页制作中，元素的显示隐藏是非常常见的需求。本文将介绍元素显示隐藏的9种思路
+&emsp;&emsp;在网页制作中，元素的显示隐藏是非常常见的需求。本文将介绍元素显示隐藏的9种思路
 
 &nbsp;
 
 ### display
 
-　　对于元素显隐来说，最常见就是[display](http://www.cnblogs.com/xiaohuochai/p/5202761.html):none | display:block，但是使用这种方法有个问题，元素的display属性在隐藏前并不都是block，还有可能是inline、inline-block等
+&emsp;&emsp;对于元素显隐来说，最常见就是[display](http://www.cnblogs.com/xiaohuochai/p/5202761.html):none | display:block，但是使用这种方法有个问题，元素的display属性在隐藏前并不都是block，还有可能是inline、inline-block等
 
-　　[注意]如果要适用于任何元素需要提前储存元素的display值
+&emsp;&emsp;注意：如果要适用于任何元素需要提前储存元素的display值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;"&gt;测试文字&lt;/div&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.style.display = 'block';
@@ -32,16 +32,16 @@ hide.onclick = function(){
 
 ### visibility
 
-　　[visibility](http://www.cnblogs.com/xiaohuochai/p/5296829.html):hidden与display:none作为隐藏元素的两种方式，常常被人们拿来比较。其实区别很简单，前者不脱离文档流，保留隐藏之前元素占据的物理区域；而后者则脱离文档流，如果重新显示则需要页面的重新绘制。还有一点区别却很少人提到，如果父级设置display:none;子级设置display:block也不会显示；而如果父级设置visibility:hidden;子级设置visibility:visible时子级会显示出来
+&emsp;&emsp;[visibility](http://www.cnblogs.com/xiaohuochai/p/5296829.html):hidden与display:none作为隐藏元素的两种方式，常常被人们拿来比较。其实区别很简单，前者不脱离文档流，保留隐藏之前元素占据的物理区域；而后者则脱离文档流，如果重新显示则需要页面的重新绘制。还有一点区别却很少人提到，如果父级设置display:none;子级设置display:block也不会显示；而如果父级设置visibility:hidden;子级设置visibility:visible时子级会显示出来
 
-　　[注意]visilibity可应用[transition](http://www.cnblogs.com/xiaohuochai/p/5347930.html)属性。因为visibility是离散步骤，在0到1数字范围之内，0表示隐藏，1表示显示。visibility:hidden可以看成visibility:0；visibility:visible可以看成visibility:1。于是，visibility应用transition等同于0~1之间的过渡效果。实际上，只要visibility的值大于0就是显示的。由于这个现象，我们可以利用transition实现元素的延时显示隐藏
+&emsp;&emsp;注意：visilibity可应用[transition](http://www.cnblogs.com/xiaohuochai/p/5347930.html)属性。因为visibility是离散步骤，在0到1数字范围之内，0表示隐藏，1表示显示。visibility:hidden可以看成visibility:0；visibility:visible可以看成visibility:1。于是，visibility应用transition等同于0~1之间的过渡效果。实际上，只要visibility的值大于0就是显示的。由于这个现象，我们可以利用transition实现元素的延时显示隐藏
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;"&gt;测试文字&lt;/div&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.style.transition = 'none';
@@ -60,16 +60,16 @@ hide.onclick = function(){
 
 ### hidden
 
-　　可能有些人不太熟悉，HTML有个hidden[全局属性](http://www.cnblogs.com/xiaohuochai/p/5033039.html)，专门用于显示隐藏元素，与display:none的作用类似，元素隐藏时脱离文档流，无法接受javascript事件
+&emsp;&emsp;可能有些人不太熟悉，HTML有个hidden[全局属性](http://www.cnblogs.com/xiaohuochai/p/5033039.html)，专门用于显示隐藏元素，与display:none的作用类似，元素隐藏时脱离文档流，无法接受javascript事件
 
-　　[注意]IE10-不支持test.hidden='hidden'写法，只支持test.setAttribute('hidden','hidden')写法
+&emsp;&emsp;注意：IE10-不支持test.hidden='hidden'写法，只支持test.setAttribute('hidden','hidden')写法
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;"&gt;测试文字&lt;/div&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.removeAttribute('hidden');
@@ -88,15 +88,15 @@ hide.onclick = function(){
 
 ### opacity
 
-　　对于元素显隐，[opacity](http://www.cnblogs.com/xiaohuochai/p/5218459.html)的使用频率也挺多。opacity的好处是，即使opacity为0的元素，仍然可以接受javascript事件，这是display:none和visiblity:hidden所不具备的。
+&emsp;&emsp;对于元素显隐，[opacity](http://www.cnblogs.com/xiaohuochai/p/5218459.html)的使用频率也挺多。opacity的好处是，即使opacity为0的元素，仍然可以接受javascript事件，这是display:none和visiblity:hidden所不具备的。
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;button id="reset"&gt;还原&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;"&gt;测试文字&lt;/div&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.style.transition = 'none';
@@ -121,11 +121,11 @@ reset.onclick = function(){
 
 ### overflow
 
-　　CSS中有一个属性是[overflow](http://www.cnblogs.com/xiaohuochai/p/5289653.html)，overflow:hidden代表着溢出隐藏。我们可以利用父级的overflow:hidden配合父级的height:0或width:0来实现元素的显隐
+&emsp;&emsp;CSS中有一个属性是[overflow](http://www.cnblogs.com/xiaohuochai/p/5289653.html)，overflow:hidden代表着溢出隐藏。我们可以利用父级的overflow:hidden配合父级的height:0或width:0来实现元素的显隐
 
-　　[注意]当设置overflow的元素在绝对定位元素和其包含块之间的时候，overflow属性会失效
+&emsp;&emsp;注意：当设置overflow的元素在绝对定位元素和其包含块之间的时候，overflow属性会失效
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 #testWrap{
     height: 70px;
@@ -134,14 +134,14 @@ reset.onclick = function(){
 }
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="testWrap"&gt;
     &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;"&gt;测试内容&lt;/div&gt;        
 &lt;/div&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     testWrap.style.height = '70px';
@@ -158,16 +158,16 @@ hide.onclick = function(){
 
 ### clip
 
-　　CSS裁剪[clip](http://www.cnblogs.com/xiaohuochai/p/5285752.html)这个属性平时用的不多，当clip:rect(top,right,bottom,left)中的top&gt;=bottom，或者left&gt;=right时，可实现元素的隐藏效果，效果类似于visibility:hidden
+&emsp;&emsp;CSS裁剪[clip](http://www.cnblogs.com/xiaohuochai/p/5285752.html)这个属性平时用的不多，当clip:rect(top,right,bottom,left)中的top&gt;=bottom，或者left&gt;=right时，可实现元素的隐藏效果，效果类似于visibility:hidden
 
-　　[注意]clip属性只能应用在绝对定位元素上
+&emsp;&emsp;注意：clip属性只能应用在绝对定位元素上
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;"&gt;测试内容&lt;/div&gt;    </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.style.position ='static';
@@ -186,20 +186,20 @@ hide.onclick = function(){
 
 ### transform
 
-　　CSS变形[transform](http://www.cnblogs.com/xiaohuochai/p/5350254.html)是一些效果的集合，主要是移动、旋转、缩放和倾斜这四种基本操作，还可以通过设置matrix矩阵来实现更复杂的效果。通过不同的变形函数可以实现元素显隐效果
+&emsp;&emsp;CSS变形[transform](http://www.cnblogs.com/xiaohuochai/p/5350254.html)是一些效果的集合，主要是移动、旋转、缩放和倾斜这四种基本操作，还可以通过设置matrix矩阵来实现更复杂的效果。通过不同的变形函数可以实现元素显隐效果
 
-　　[注意]IE9-浏览器不支持，safari3.1-8、android2.1-4.4.4、IOS3.2-8.4都需要添加前缀
+&emsp;&emsp;注意：IE9-浏览器不支持，safari3.1-8、android2.1-4.4.4、IOS3.2-8.4都需要添加前缀
 
 【1】scale
 
-　　transform:scale(0)时，元素被隐藏
+&emsp;&emsp;transform:scale(0)时，元素被隐藏
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;transition: 0.5s;"&gt;测试内容&lt;/div&gt;    </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.style.transform ='scale(1)';
@@ -214,14 +214,14 @@ hide.onclick = function(){
 
 【2】rotate
 
-　　transform:rotateX(90deg)时，元素被隐藏
+&emsp;&emsp;transform:rotateX(90deg)时，元素被隐藏
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;transition: 0.5s;"&gt;测试内容&lt;/div&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.style.transform ='rotateX(0)';
@@ -236,14 +236,14 @@ hide.onclick = function(){
 
 【3】skew
 
-　　transform:skew(90deg)时，元素被隐藏
+&emsp;&emsp;transform:skew(90deg)时，元素被隐藏
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;transition: 0.5s;"&gt;测试内容&lt;/div&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.style.transform ='skew(0)';
@@ -260,9 +260,9 @@ hide.onclick = function(){
 
 ### 覆盖
 
-　　利用定位元素可以覆盖普通流元素的特性。为元素的before伪元素设置相同的尺寸，通过控制[伪元素](http://www.cnblogs.com/xiaohuochai/p/5021121.html)的定位属性，实现显隐效果
+&emsp;&emsp;利用定位元素可以覆盖普通流元素的特性。为元素的before伪元素设置相同的尺寸，通过控制[伪元素](http://www.cnblogs.com/xiaohuochai/p/5021121.html)的定位属性，实现显隐效果
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 #test:hover:before{
     content: "";
@@ -273,7 +273,7 @@ hide.onclick = function(){
 }    
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div style="background:lightblue;width:100px;height:60px;margin-top: 10px;"&gt;测试内容&lt;/div&gt;</pre>
 </div>
 
@@ -285,18 +285,18 @@ hide.onclick = function(){
 
 ### 偏移
 
-　　元素显示隐藏的另一种常见思路是偏移，将元素移动到视窗范围外，也可以实现等价的显隐效果
+&emsp;&emsp;元素显示隐藏的另一种常见思路是偏移，将元素移动到视窗范围外，也可以实现等价的显隐效果
 
 【1】margin-top
 
-　　利用[负margin](http://www.cnblogs.com/xiaohuochai/p/5314289.html)将元素移出视窗外，要注意的是设置负margin的元素并没有脱离普通流，后续元素会跟着一起移动
+&emsp;&emsp;利用[负margin](http://www.cnblogs.com/xiaohuochai/p/5314289.html)将元素移出视窗外，要注意的是设置负margin的元素并没有脱离普通流，后续元素会跟着一起移动
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;transition: 0.5s;"&gt;测试内容&lt;/div&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.style.marginTop ='10px';
@@ -311,9 +311,9 @@ hide.onclick = function(){
 
 【2】left
 
-　　通过设置[相对定位](http://www.cnblogs.com/xiaohuochai/p/5321487.html)或[绝对定位](http://www.cnblogs.com/xiaohuochai/p/5312917.html)元素的[偏移](http://www.cnblogs.com/xiaohuochai/p/5289143.html)属性，将元素移动到视窗外
+&emsp;&emsp;通过设置[相对定位](http://www.cnblogs.com/xiaohuochai/p/5321487.html)或[绝对定位](http://www.cnblogs.com/xiaohuochai/p/5312917.html)元素的[偏移](http://www.cnblogs.com/xiaohuochai/p/5289143.html)属性，将元素移动到视窗外
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 #test{
     position: relative;
@@ -321,12 +321,12 @@ hide.onclick = function(){
 }    
 &lt;/style&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;transition: 0.5s;"&gt;测试内容&lt;/div&gt;    </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.style.left ='0';
@@ -341,12 +341,12 @@ hide.onclick = function(){
 
 【3】translate
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="show"&gt;显示&lt;/button&gt;
 &lt;button id="hide"&gt;隐藏&lt;/button&gt;
 &lt;div id="test" style="background:lightblue;width:100px;height:60px;margin-top: 10px;transition: 0.5s;"&gt;测试内容&lt;/div&gt;    </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
 show.onclick = function(){
     test.style.transform ='translate(0,0)';
