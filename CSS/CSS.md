@@ -68,16 +68,16 @@
           * [绝对定位应用](layout/position/absoluteApply.md)
           * [相对定位和固定定位](layout/position/relativeAndFixed.md)
       5. 布局方式
-        * 布局系统
+          * 布局系统
             1. [Media媒体查询](layout/layoutMode/media.md)
             2. [多列布局](layout/layoutMode/columns.md)
             3. [grid栅格布局](layout/layoutMode/grid.md)
             4. [移动优先的响应式布局](layout/layoutMode/mobileFirst.md)
-        * 居中布局
+          * 居中布局
             1. [水平居中](layout/layoutMode/center.md)
             2. [垂直居中](layout/layoutMode/middle.md)
             3. [水平垂直居中](layout/layoutMode/centerAndMiddle.md)
-        * 常见布局 
+          * 常见布局 
             1. [两端对齐](layout/layoutMode/justify.md)
             2. [单列定宽单列自适应布局](layout/layoutMode/oneFixedAndOneAdaptive.md)
             3. [两列自适应布局](layout/layoutMode/twoAdaptive.md)
