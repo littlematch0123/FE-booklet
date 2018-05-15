@@ -1,25 +1,25 @@
 # 动态脚本
 
-　　动态脚本是指在页面加载时不存在，但将来的某一时刻通过修改DOM动态添加的脚本。和操作HTML元素一样，创建动态脚本也有两种方式：插入外部文件和直接插入内部javascript代码。下面将详细介绍这两种情况
+&emsp;&emsp;动态脚本是指在页面加载时不存在，但将来的某一时刻通过修改DOM动态添加的脚本。和操作HTML元素一样，创建动态脚本也有两种方式：插入外部文件和直接插入内部javascript代码。下面将详细介绍这两种情况
 
 &nbsp;
 
 ### 外部脚本
 
-<div class="cnblogs_code">
+<div>
 <pre>//script.js里面的内容
 box.style.color = "red";</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>var script = document.createElement("script");
 script.type = "text/javascript";
 script.src = "script.js";
 document.body.appendChild(script);</pre>
 </div>
 
-　　使用函数封装如下：
+&emsp;&emsp;使用函数封装如下：
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="box"&gt;测试文字&lt;/div&gt;
 &lt;button id="btn"&gt;动态添加脚本&lt;/button&gt;
 &lt;script&gt;
@@ -44,22 +44,22 @@ btn.onclick = function(){
 
 ### 内部脚本
 
-　　另一种插入动态脚本的方式是插入内部脚本，如下所示
+&emsp;&emsp;另一种插入动态脚本的方式是插入内部脚本，如下所示
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script&gt;
     box.style.color = "red";
 &lt;/script&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>var script = document.createElement("script");
 script.innerHTML = 'box.style.color = "red"';
 document.body.appendChild(script);</pre>
 </div>
 
-　　使用函数封装如下：
+&emsp;&emsp;使用函数封装如下：
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="box"&gt;测试文字&lt;/div&gt;
 &lt;button id="btn"&gt;动态添加样式&lt;/button&gt;
 &lt;script&gt;
@@ -80,15 +80,15 @@ btn.onclick = function(){
 
 <iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/js/active/a2.html" frameborder="0" width="320" height="240"></iframe>
 
-　　在标准浏览器下，上面代码可以正常运行。但是，在IE8-浏览器下却报错。这是因为IE8-浏览器将&lt;script&gt;元素视为一个特殊的元素，不允许DOM访问其子节点，使用appendChild()方法或innerHTML属性都会报错
+&emsp;&emsp;在标准浏览器下，上面代码可以正常运行。但是，在IE8-浏览器下却报错。这是因为IE8-浏览器将&lt;script&gt;元素视为一个特殊的元素，不允许DOM访问其子节点，使用appendChild()方法或innerHTML属性都会报错
 
 &nbsp;
 
 ### 兼容写法
 
-　　动态插入内部脚本存在兼容问题，可使用&lt;script&gt;元素的text属性替代innerHTML属性来指定javascript代码
+&emsp;&emsp;动态插入内部脚本存在兼容问题，可使用&lt;script&gt;元素的text属性替代innerHTML属性来指定javascript代码
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="box"&gt;测试文字&lt;/div&gt;
 &lt;button id="btn"&gt;动态添加样式&lt;/button&gt;
 &lt;script&gt;
