@@ -353,7 +353,7 @@ foo() // ReferenceError: x is not defined
 function pick(object) {
     let result = Object.create(null);
     // 从第二个参数开始处理
-    for (let i = 1, len = arguments.length; i &lt; len; i++) {
+    for (let i = 1, len = arguments.length; i < len; i++) {
         result[arguments[i]] = object[arguments[i]];
     }
     return result;
@@ -381,7 +381,7 @@ console.log(bookData.year); // 2017
 ```
 function pick(object, ...keys) {
     let result = Object.create(null);
-    for (let i = 0, len = keys.length; i &lt; len; i++) {
+    for (let i = 0, len = keys.length; i < len; i++) {
         result[keys[i]] = object[keys[i]];
     }
     return result;
@@ -400,7 +400,7 @@ function pick(object, ...keys) {
 // 语法错误：不能在剩余参数后使用具名参数
 function pick(object, ...keys, last) {
     let result = Object.create(null);
-    for (let i = 0, len = keys.length; i &lt; len; i++) {
+    for (let i = 0, len = keys.length; i < len; i++) {
         result[keys[i]] = object[keys[i]];
     }
     return result;
@@ -1265,7 +1265,7 @@ function doSomething() {
 
 ```
 function factorial(n) {
-    if (n &lt;= 1) {
+    if (n <= 1) {
         return 1;
     } else {
         // 未被优化：在返回之后还要执行乘法
@@ -1280,7 +1280,7 @@ function factorial(n) {
 
 ```
 function factorial(n, p = 1) {
-    if (n &lt;= 1) {
+    if (n <= 1) {
         return 1 * p;
     } else {
         let result = n * p;
@@ -1298,7 +1298,7 @@ function factorial(n, p = 1) {
 
 ```
 function Fibonacci (n) {
-  if ( n &lt;= 1 ) {return 1};
+  if ( n <= 1 ) {return 1};
   return Fibonacci(n - 1) + Fibonacci(n - 2);
 }
 
@@ -1311,7 +1311,7 @@ Fibonacci(500) // 堆栈溢出
 
 ```
 function Fibonacci2 (n , ac1 = 1 , ac2 = 1) {
-  if( n &lt;= 1 ) {return ac2};
+  if( n <= 1 ) {return ac2};
   return Fibonacci2 (n - 1, ac2, ac1 + ac2);
 }
 
