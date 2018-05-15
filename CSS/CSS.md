@@ -35,18 +35,18 @@
           * [CSS编码技巧](grammar/grammar_codingTech.md)
   * 布局
       1. 盒模型
-        * 盒子尺寸 
+          * 盒子尺寸 
             1. [盒模型](layout/box/box.md)
             2. [四个自适应宽高关键字](layout/box/WHkeywords.md)
             3. [边框和阴影](layout/box/borderAndShadow.md)
             4. [margin要点](layout/box/marginKey.md)
             5. [margin负值](layout/box/marginNeg.md)
             6. [轮廓outline](layout/box/outline.md)
-        * 弹性盒模型
+          * 弹性盒模型
             1. [弹性盒模型flex](layout/box/flex.md)
             2. [旧版flex及兼容](layout/box/flexCompatible.md)
             3. [flex布局应用](layout/box/flexLayout.md)
-        * 盒子显示
+          * 盒子显示
             1. [溢出overflow](layout/box/overflow/overflow.md)
             2. [裁剪clip](layout/box/overflow/clip.md)
             3. [拉伸resize](layout/box/overflow/resize.md)
@@ -69,24 +69,24 @@
           * [相对定位和固定定位](layout/position/relativeAndFixed.md)
       5. 布局方式
         * 布局系统
-          1. [Media媒体查询](layout/layoutMode/media.md)
-          2. [多列布局](layout/layoutMode/columns.md)
-          3. [grid栅格布局](layout/layoutMode/grid.md)
-          4. [移动优先的响应式布局](layout/layoutMode/mobileFirst.md)
+            1. [Media媒体查询](layout/layoutMode/media.md)
+            2. [多列布局](layout/layoutMode/columns.md)
+            3. [grid栅格布局](layout/layoutMode/grid.md)
+            4. [移动优先的响应式布局](layout/layoutMode/mobileFirst.md)
         * 居中布局
-          1. [水平居中](layout/layoutMode/center.md)
-          2. [垂直居中](layout/layoutMode/middle.md)
-          3. [水平垂直居中](layout/layoutMode/centerAndMiddle.md)
+            1. [水平居中](layout/layoutMode/center.md)
+            2. [垂直居中](layout/layoutMode/middle.md)
+            3. [水平垂直居中](layout/layoutMode/centerAndMiddle.md)
         * 常见布局 
-          1. [两端对齐](layout/layoutMode/justify.md)
-          2. [单列定宽单列自适应布局](layout/layoutMode/oneFixedAndOneAdaptive.md)
-          3. [两列自适应布局](layout/layoutMode/twoAdaptive.md)
-          4. [三列布局](layout/layoutMode/threeColumns.md)
-          5. [三栏式布局](layout/layoutMode/sepcialThreeColumns.md)
-          6. [等分布局](layout/layoutMode/equalPart.md)
-          7. [等高布局](layout/layoutMode/equalHeight.md)
-          8. [全屏布局](layout/layoutMode/fullScreen.md)
-          9. [sticky-footer布局](layout/layoutMode/stickyFooter.md)
+            1. [两端对齐](layout/layoutMode/justify.md)
+            2. [单列定宽单列自适应布局](layout/layoutMode/oneFixedAndOneAdaptive.md)
+            3. [两列自适应布局](layout/layoutMode/twoAdaptive.md)
+            4. [三列布局](layout/layoutMode/threeColumns.md)
+            5. [三栏式布局](layout/layoutMode/sepcialThreeColumns.md)
+            6. [等分布局](layout/layoutMode/equalPart.md)
+            7. [等高布局](layout/layoutMode/equalHeight.md)
+            8. [全屏布局](layout/layoutMode/fullScreen.md)
+            9. [sticky-footer布局](layout/layoutMode/stickyFooter.md)
   * 渲染
       1. 字体和文本
           * [字体](render/text/font.md)
