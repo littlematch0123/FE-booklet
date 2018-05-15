@@ -1,14 +1,14 @@
 # 深入理解this机制系列第二篇——this绑定优先级
 
-　　上一篇介绍过this的[绑定规则](http://www.cnblogs.com/xiaohuochai/p/5735901.html)，那如果在函数的调用位置上同时存在两种以上的绑定规则应该怎么办呢？本文将介绍this绑定的优先级
+&emsp;&emsp;上一篇介绍过this的[绑定规则](http://www.cnblogs.com/xiaohuochai/p/5735901.html)，那如果在函数的调用位置上同时存在两种以上的绑定规则应该怎么办呢？本文将介绍this绑定的优先级
 
 &nbsp;
 
 ### 显式绑定 pk 隐式绑定
 
-　　显式绑定胜出
+&emsp;&emsp;显式绑定胜出
 
-<div class="cnblogs_code">
+<div>
 <pre>function foo() {
     console.log( this.a );
 }
@@ -31,9 +31,9 @@ obj2.foo.call( obj1 ); // 2</pre>
 
 ### new绑定 pk 隐式绑定
 
-　　new绑定胜出
+&emsp;&emsp;new绑定胜出
 
-<div class="cnblogs_code">
+<div>
 <pre>function foo(something) {
     this.a = something;
 }
@@ -53,9 +53,9 @@ console.log( bar.a ); // 4</pre>
 
 ### new绑定 pk 显式绑定
 
-　　new绑定胜出
+&emsp;&emsp;new绑定胜出
 
-<div class="cnblogs_code">
+<div>
 <pre>function foo(something) {
     this.a = something;
 }
@@ -75,27 +75,27 @@ console.log( baz.a ); // 3</pre>
 
 ### 顺序
 
-　　【1】是否是new绑定？如果是，this绑定的是新创建的对象
+&emsp;&emsp;【1】是否是new绑定？如果是，this绑定的是新创建的对象
 
-<div class="cnblogs_code">
+<div>
 <pre>var bar = new foo();</pre>
 </div>
 
-　　【2】是否是显式绑定？如果是，this绑定的是指定的对象
+&emsp;&emsp;【2】是否是显式绑定？如果是，this绑定的是指定的对象
 
-<div class="cnblogs_code">
+<div>
 <pre>var bar = foo.call(obj2);</pre>
 </div>
 
-　　【3】是否是隐式绑定？如果是，this绑定的是属于的对象
+&emsp;&emsp;【3】是否是隐式绑定？如果是，this绑定的是属于的对象
 
-<div class="cnblogs_code">
+<div>
 <pre>var bar = obj1.foo(); </pre>
 </div>
 
-　　【4】如果都不是，则使用默认绑定
+&emsp;&emsp;【4】如果都不是，则使用默认绑定
 
-<div class="cnblogs_code">
+<div>
 <pre>var bar = foo();</pre>
 </div>
 
