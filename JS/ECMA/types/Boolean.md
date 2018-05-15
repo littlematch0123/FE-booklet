@@ -1,16 +1,16 @@
 # javascript类型系统——布尔Boolean类型
 
-　　布尔值Boolean类型可能是三种包装对象Number、String和Boolean中最简单的一种。[Number](http://www.cnblogs.com/xiaohuochai/p/5586166.html)和[String](http://www.cnblogs.com/xiaohuochai/p/5612962.html)对象拥有大量的实例属性和方法，Boolean却很少。从某种意义上说，为计算机设计程序就是与布尔值打交道，作为最基本的事实，所有的电子电路只能识别和使用布尔数据。本文将介绍布尔Boolean类型
+&emsp;&emsp;布尔值Boolean类型可能是三种包装对象Number、String和Boolean中最简单的一种。[Number](http://www.cnblogs.com/xiaohuochai/p/5586166.html)和[String](http://www.cnblogs.com/xiaohuochai/p/5612962.html)对象拥有大量的实例属性和方法，Boolean却很少。从某种意义上说，为计算机设计程序就是与布尔值打交道，作为最基本的事实，所有的电子电路只能识别和使用布尔数据。本文将介绍布尔Boolean类型
 
 &nbsp;
 
 ### 定义
 
-　　布尔Boolean类型表示逻辑实体，它只有两个值，保留字true和false，分别代表真和假这两个状态
+&emsp;&emsp;布尔Boolean类型表示逻辑实体，它只有两个值，保留字true和false，分别代表真和假这两个状态
 
-　　Boolean包装类型是与布尔值对应的引用类型，在布尔表达式中使用Boolean对象容易造成误解
+&emsp;&emsp;Boolean包装类型是与布尔值对应的引用类型，在布尔表达式中使用Boolean对象容易造成误解
 
-<div class="cnblogs_code">
+<div>
 <pre>var b1 = true;
 var b2 = new Boolean(true);
 console.log(b1,typeof b1);//true 'boolean'
@@ -23,13 +23,13 @@ console.log(b2.valueOf(), typeof b2.valueOf());//true 'boolean'</pre>
 
 ### 应用场景
 
-　　布尔类型主要应用于如下场景：
+&emsp;&emsp;布尔类型主要应用于如下场景：
 
-　　【1】条件和循环语句
+&emsp;&emsp;【1】条件和循环语句
 
-　　布尔值主要应用于条件和循环语句的条件部分。比如，if语句中，如果布尔值为true执行第一段逻辑，如果为false执行另一段逻辑。通常将一个创建布尔值的比较直接与使用这个比较的语句结合在一起
+&emsp;&emsp;布尔值主要应用于条件和循环语句的条件部分。比如，if语句中，如果布尔值为true执行第一段逻辑，如果为false执行另一段逻辑。通常将一个创建布尔值的比较直接与使用这个比较的语句结合在一起
 
-<div class="cnblogs_code">
+<div>
 <pre>if(a &gt; 1){
     //条件为true时，执行此处
 }else{
@@ -37,24 +37,24 @@ console.log(b2.valueOf(), typeof b2.valueOf());//true 'boolean'</pre>
 }</pre>
 </div>
 
-　　【2】逻辑运算符
+&emsp;&emsp;【2】逻辑运算符
 
-　　逻辑运算符又叫布尔运算符。逻辑非运算符总是返回布尔值，而逻辑或和逻辑与操作并非如此
+&emsp;&emsp;逻辑运算符又叫布尔运算符。逻辑非运算符总是返回布尔值，而逻辑或和逻辑与操作并非如此
 
-　　同时使用两个逻辑非操作符，可以将类型转换为布尔型
+&emsp;&emsp;同时使用两个逻辑非操作符，可以将类型转换为布尔型
 
-<div class="cnblogs_code">
+<div>
 <pre>console.log(!!1);//true
 console.log(!!0);//false
 console.log(!!' ');//true
 console.log(!!'');//false</pre>
 </div>
 
-　　【3】关系运算符
+&emsp;&emsp;【3】关系运算符
 
-　　[关系运算符](http://www.cnblogs.com/xiaohuochai/p/5615445.html)用于测试两个值之间的关系，根据关系是否存在而返回true或false，关系表达式总是返回一个布尔值，通常在if、while或for语句中使用关系表达式，用以控制程序的执行流程
+&emsp;&emsp;[关系运算符](http://www.cnblogs.com/xiaohuochai/p/5615445.html)用于测试两个值之间的关系，根据关系是否存在而返回true或false，关系表达式总是返回一个布尔值，通常在if、while或for语句中使用关系表达式，用以控制程序的执行流程
 
-<div class="cnblogs_code">
+<div>
 <pre>console.log( 1 &gt; 2);//false
 console.log( 1 &lt; 2);//true</pre>
 </div>
@@ -63,13 +63,13 @@ console.log( 1 &lt; 2);//true</pre>
 
 ### 转为布尔
 
-　　将一个值转为布尔值可使用Boolean()转型函数
+&emsp;&emsp;将一个值转为布尔值可使用Boolean()转型函数
 
 **假值**
 
-　　转换成false的值称为假值(falsy value)，这7个值包括undefined、null、+0、-0、NaN、false、""(空字符串)
+&emsp;&emsp;转换成false的值称为假值(falsy value)，这7个值包括undefined、null、+0、-0、NaN、false、""(空字符串)
 
-<div class="cnblogs_code">
+<div>
 <pre>console.log(Boolean(undefined));//false
 console.log(Boolean(null));//false
 console.log(Boolean(0));//false
@@ -79,9 +79,9 @@ console.log(Boolean(''));//false
 console.log(Boolean(false));//false</pre>
 </div>
 
-　　[注意]在Number()方法中空字符串和空白字符串都转换为0，而在Boolean方法中，空字符串""转换为false，而空白字符串" "转换为true
+&emsp;&emsp;注意：在Number()方法中空字符串和空白字符串都转换为0，而在Boolean方法中，空字符串""转换为false，而空白字符串" "转换为true
 
-<div class="cnblogs_code">
+<div>
 <pre>console.log(Number(''));//0
 console.log(Number(' '));//0
 
@@ -89,14 +89,13 @@ console.log(Boolean(''));//false
 console.log(Boolean(' '));//true</pre>
 </div>
 
-　　除了这7个假值外，其他的值转换为布尔值都是true，也称为真值(truthy value)
+&emsp;&emsp;除了这7个假值外，其他的值转换为布尔值都是true，也称为真值(truthy value)
 
-　　[注意]所有对象(包括空对象)的转换结果都是true，甚至连false对应的布尔对象new Boolean(false)也是true
+&emsp;&emsp;注意：所有对象(包括空对象)的转换结果都是true，甚至连false对应的布尔对象new Boolean(false)也是true
 
-<div class="cnblogs_code">
+<div>
 <pre>console.log(Boolean({}));//true
 console.log(Boolean([]));//true
-
 console.log(Boolean(new Boolean(false)));//true
 console.log(Boolean(false));//false
 console.log(Boolean(new Boolean(null)));//true
@@ -107,25 +106,24 @@ console.log(Boolean(null));//false</pre>
 
 ### 实例方法
 
-　　Boolean对象是与布尔值对应的包装类型，继承了Object对象的通用方法toString()、toLocaleString()、valueOf()这三个方法
+&emsp;&emsp;Boolean对象是与布尔值对应的包装类型，继承了Object对象的通用方法toString()、toLocaleString()、valueOf()这三个方法
 
 【toString()】
 
-　　toString()方法返回Boolean的字符串值('true'或'false')
+&emsp;&emsp;toString()方法返回Boolean的字符串值('true'或'false')
 
 【toLocaleString()】
 
-　　toLocaleString()方法返回Boolean的字符串值('true'或'false')
+&emsp;&emsp;toLocaleString()方法返回Boolean的字符串值('true'或'false')
 
 【valueOf()】
 
-　　valueOf()方法返回Boolean的原始布尔值(true或false)
+&emsp;&emsp;valueOf()方法返回Boolean的原始布尔值(true或false)
 
-<div class="cnblogs_code">
+<div>
 <pre>console.log(true.valueOf());//true
 console.log(true.toString());//'true'
 console.log(true.toLocaleString());//'true'
-
 console.log((new Boolean(false)).valueOf());//false
 console.log((new Boolean(false)).toString());//'false'
 console.log((new Boolean(false)).toLocaleString());//'false'</pre>
