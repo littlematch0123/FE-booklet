@@ -1,6 +1,6 @@
 # 深入理解DOM节点类型第三篇——注释节点和文档类型节点
 
-　　把注释节点和文档类型节点放在一起是因为IE8-浏览器的一个bug。IE8-浏览器将标签名为"!"的元素视作注释节点，所以文档声明也被视作注释节点。本文将详细介绍这两部分的内容
+&emsp;&emsp;把注释节点和文档类型节点放在一起是因为IE8-浏览器的一个bug。IE8-浏览器将标签名为"!"的元素视作注释节点，所以文档声明也被视作注释节点。本文将详细介绍这两部分的内容
 
 &nbsp;
 
@@ -8,9 +8,9 @@
 
 **【特征】**
 
-　　注释在DOM中是通过Comment类型来表示，注释节点的三个node属性&mdash;&mdash;nodeType、nodeName、nodeValue分别是8、'#comment'和注释的内容，其父节点parentNode可能是Document或Element，注释节点没有子节点
+&emsp;&emsp;注释在DOM中是通过Comment类型来表示，注释节点的三个node属性&mdash;&mdash;nodeType、nodeName、nodeValue分别是8、'#comment'和注释的内容，其父节点parentNode可能是Document或Element，注释节点没有子节点
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body&gt;&lt;!-- 我是注释--&gt;
 &lt;script&gt;
 var oComment = document.body.firstChild;
@@ -21,9 +21,9 @@ console.log(oComment.parentNode,oComment.childNodes)
 &lt;/script&gt;</pre>
 </div>
 
-　　[注意]所有浏览器都识别不出位于&lt;/html&gt;后面的注释
+&emsp;&emsp;注意：所有浏览器都识别不出位于&lt;/html&gt;后面的注释
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -43,17 +43,17 @@ console.log(document.firstChild,document.lastChild)//&lt;!-- --&gt; &lt;html&gt;
 
 **【属性和方法】**
 
-　　注释节点Comment与[文本节点Text](http://www.cnblogs.com/xiaohuochai/p/5815193.html)继承自相同的基类，因此它拥有除了splitText()之外的所有字符串操作方法。与Text类型相似，也可以通过nodeValue或data属性来取得注释的内容
+&emsp;&emsp;注释节点Comment与[文本节点Text](http://www.cnblogs.com/xiaohuochai/p/5815193.html)继承自相同的基类，因此它拥有除了splitText()之外的所有字符串操作方法。与Text类型相似，也可以通过nodeValue或data属性来取得注释的内容
 
 **data**
 
-　　注释节点的data属性与nodeValue属性相同
+&emsp;&emsp;注释节点的data属性与nodeValue属性相同
 
 **length**
 
-　　注释节点的length属性保存着节点字符的数目，而且nodeValue.length、data.length也保存着相同的值
+&emsp;&emsp;注释节点的length属性保存着节点字符的数目，而且nodeValue.length、data.length也保存着相同的值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body&gt;&lt;!--我是注释--&gt;
 &lt;script&gt;
 var oComment = document.body.firstChild;
@@ -67,9 +67,9 @@ console.log(oComment.length,oComment.nodeValue.length,oComment.data.length);
 
 **createComment()**
 
-　　createComment()方法用于创建注释节点，这个方法接收一个参数&mdash;&mdash;要插入节点中的注释文本
+&emsp;&emsp;createComment()方法用于创建注释节点，这个方法接收一个参数&mdash;&mdash;要插入节点中的注释文本
 
-<div class="cnblogs_code">
+<div>
 <pre>var oComment = document.createComment('hello world!');
 var oBase = document.body.firstChild;
 document.body.insertBefore(oComment,oBase);
@@ -79,9 +79,9 @@ console.log(document.body.firstChild);</pre>
 
 **appendData()**
 
-　　appendData(text)方法将text添加到节点的末尾
+&emsp;&emsp;appendData(text)方法将text添加到节点的末尾
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body&gt;&lt;!--我是注释--&gt;
 &lt;script&gt;
 var oComment = document.body.firstChild;
@@ -94,9 +94,9 @@ console.log(oComment.data);//我是注释test
 
 **deleteData()**
 
-　　deleteData(offset,count)方法从offset指定的位置开始删除count个字符
+&emsp;&emsp;deleteData(offset,count)方法从offset指定的位置开始删除count个字符
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body&gt;&lt;!--我是注释--&gt;
 &lt;script&gt;
 var oComment = document.body.firstChild;
@@ -109,9 +109,9 @@ console.log(oComment.data);//是注释
 
 **insertData()**
 
-　　insertData(offset,text)方法在offset指定的位置插入text　
+&emsp;&emsp;insertData(offset,text)方法在offset指定的位置插入text　
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body&gt;&lt;!--我是注释--&gt;
 &lt;script&gt;
 var oComment = document.body.firstChild;
@@ -124,9 +124,9 @@ console.log(oComment.data);//我test是注释
 
 **replaceData()**
 
-　　replaceData(offset,count,text)方法用text替换从offset指定的位置开始到offset+count处为止处的文本
+&emsp;&emsp;replaceData(offset,count,text)方法用text替换从offset指定的位置开始到offset+count处为止处的文本
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body&gt;&lt;!--我是注释--&gt;
 &lt;script&gt;
 var oComment = document.body.firstChild;
@@ -139,9 +139,9 @@ console.log(oComment.data);//我test注释
 
 **substringData()**
 
-　　substringData(offset,count)方法提取从offset指定的位置开始到offset+count为止处的字符串
+&emsp;&emsp;substringData(offset,count)方法提取从offset指定的位置开始到offset+count为止处的字符串
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body&gt;&lt;!--我是注释--&gt;
 &lt;script&gt;
 var oComment = document.body.firstChild;
@@ -158,11 +158,11 @@ console.log(oComment.data);//我是注释
 
 【特征】
 
-　　文档类型节点DocumentType的三个node属性&mdash;&mdash;nodeType、nodeName、nodeValue分别是10、doctype的名称和null，其父节点parentNode是Document，文档类型节点没有子节点
+&emsp;&emsp;文档类型节点DocumentType的三个node属性&mdash;&mdash;nodeType、nodeName、nodeValue分别是10、doctype的名称和null，其父节点parentNode是Document，文档类型节点没有子节点
 
-　　文档类型节点有一个快捷写法是document.doctype，但是该写法IE8-浏览器不支持
+&emsp;&emsp;文档类型节点有一个快捷写法是document.doctype，但是该写法IE8-浏览器不支持
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -186,23 +186,23 @@ if(oDoctype){
 
 【属性】
 
-　　文档类型节点DocumentType对象有3个属性:name、entities、notations
+&emsp;&emsp;文档类型节点DocumentType对象有3个属性:name、entities、notations
 
 **name**
 
-　　name表示文档类型的名称，与nodeName的属性相同
+&emsp;&emsp;name表示文档类型的名称，与nodeName的属性相同
 
 **entities**
 
-　　entities表示由文档类型描述的实体的NamedNodeMap对象
+&emsp;&emsp;entities表示由文档类型描述的实体的NamedNodeMap对象
 
 **notations**
 
-　　notations表示由文档类型描述的符号的NamedNodeMap对象
+&emsp;&emsp;notations表示由文档类型描述的符号的NamedNodeMap对象
 
-　　通常浏览器中的文档使用的都是HTML或XHTML文档类型，因而entites和notations都是空列表(列表中的项来自行内文档类型声明)
+&emsp;&emsp;通常浏览器中的文档使用的都是HTML或XHTML文档类型，因而entites和notations都是空列表(列表中的项来自行内文档类型声明)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -224,9 +224,9 @@ if(oDoctype){
 
 【IE8-Bug】
 
-　　IE8-浏览器将标签名为"!"的元素视作注释节点，所以文档声明也被视作注释节点
+&emsp;&emsp;IE8-浏览器将标签名为"!"的元素视作注释节点，所以文档声明也被视作注释节点
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
