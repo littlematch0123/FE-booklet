@@ -1,31 +1,31 @@
 # javascript运算符语法概述
 
-　　javascript中的运算符大多由标点符号表示，少数由关键字表示，它们的语法言简意赅，它们的数量却着实不少。运算符始终都遵循着一些固定语法，只有了解并掌握这些内容，才能正确使用运算符。本文将主要介绍javascript运算符语法概述
+&emsp;&emsp;javascript中的运算符大多由标点符号表示，少数由关键字表示，它们的语法言简意赅，它们的数量却着实不少。运算符始终都遵循着一些固定语法，只有了解并掌握这些内容，才能正确使用运算符。本文将主要介绍javascript运算符语法概述
 
 &nbsp;
 
 ### 操作数个数
 
-　　javascript的运算符总共有46个，如果根据其操作数的个数进行分类，则大多数是二元运算符(binary operator)，它们的操作数都是两个，它们将两个表达式合并成复杂表达式
+&emsp;&emsp;javascript的运算符总共有46个，如果根据其操作数的个数进行分类，则大多数是二元运算符(binary operator)，它们的操作数都是两个，它们将两个表达式合并成复杂表达式
 
-<div class="cnblogs_code">
+<div>
 <pre>1 + 2;
 true || false;</pre>
 </div>
 
-<span style="line-height: 1.5;">　　javascript中的一元运算符(unary operator)将一个表达式转换为另一个稍复杂的表达式，主要包括以下9个：
+&emsp;&emsp;javascript中的一元运算符(unary operator)将一个表达式转换为另一个稍复杂的表达式，主要包括以下9个：
 
-<div class="cnblogs_code">
+<div>
 <pre>++ -- - + ~ ! delete typeof void</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>a++;
 typeof true;</pre>
 </div>
 
-<span style="line-height: 1.5;">　　javascript只有一个三元运算符(ternary operator)，是条件判断运算符?:，它将三个表达式合并成一个表达式
+&emsp;&emsp;javascript只有一个三元运算符(ternary operator)，是条件判断运算符?:，它将三个表达式合并成一个表达式
 
-<div class="cnblogs_code">
+<div>
 <pre>2&gt;1 ? 2 : 1;</pre>
 </div>
 
@@ -33,11 +33,11 @@ typeof true;</pre>
 
 ### 优先级
 
-　　运算符优先级控制着运算符的执行顺序，优先级高的运算符的执行总是先于优先级运算符低的运算符
+&emsp;&emsp;运算符优先级控制着运算符的执行顺序，优先级高的运算符的执行总是先于优先级运算符低的运算符
 
-　　46个运算符总共分为14级的优先级，从高到低依次是：
+&emsp;&emsp;46个运算符总共分为14级的优先级，从高到低依次是：
 
-<div class="cnblogs_code">
+<div>
 <pre>1  ++ -- - + ~ ! delete typeof void
 2  * / %
 3  + -
@@ -54,46 +54,46 @@ typeof true;</pre>
 14 ,</pre>
 </div>
 
-　　由这14级的运算符优先级等级可以看出：
+&emsp;&emsp;由这14级的运算符优先级等级可以看出：
 
-<div class="cnblogs_code">
+<div>
 <pre>一元运算符 &gt; 算术运算符 &gt; 比较运算符 &gt; 逻辑运算符 &gt; 三元运算符 &gt; 赋值运算符 &gt; 逗号运算符</pre>
 </div>
 
-　　[注意]逻辑取反运算符属于一元运算符，其优先级最高
+&emsp;&emsp;[注意]逻辑取反运算符属于一元运算符，其优先级最高
 
 **例子**
 
-<div class="cnblogs_code">
+<div>
 <pre>!2&lt;1&amp;&amp;4*3+1;</pre>
 </div>
 
-　　像上面这种情况就比较复杂，逐步来分解其运算顺序
+&emsp;&emsp;像上面这种情况就比较复杂，逐步来分解其运算顺序
 
-　　先计算一元运算符!，!2;//false
+&emsp;&emsp;先计算一元运算符!，!2;//false
 
-<div class="cnblogs_code">
+<div>
 <pre>//于是表达式变为
 false &lt; 1 &amp;&amp; 4*3 + 1;</pre>
 </div>
 
-　　计算算术运算符4*3+1;//13
+&emsp;&emsp;计算算术运算符4*3+1;//13
 
-<div class="cnblogs_code">
+<div>
 <pre>//于是表达式变为
 false &lt; 1 &amp;&amp; 13;</pre>
 </div>
 
-　　计算比较运算符&lt;，false&lt;1;//true
+&emsp;&emsp;计算比较运算符&lt;，false&lt;1;//true
 
-<div class="cnblogs_code">
+<div>
 <pre>//于是表达式变为:
 true &amp;&amp; 13;//13</pre>
 </div>
 
-　　可以使用圆括号来强行指定运算次序
+&emsp;&emsp;可以使用圆括号来强行指定运算次序
 
-<div class="cnblogs_code">
+<div>
 <pre>2+3*5;//17
 (2+3)*5;//25;</pre>
 </div>
@@ -102,66 +102,66 @@ true &amp;&amp; 13;//13</pre>
 
 ### 结合性
 
-　　运算符具有两种结合性，一种是从左向右结合，记号为L，一种是从右向左结合，记号为R。结合性指定了在多个具有同样优先级的运算符表达式中的运算顺序
+&emsp;&emsp;运算符具有两种结合性，一种是从左向右结合，记号为L，一种是从右向左结合，记号为R。结合性指定了在多个具有同样优先级的运算符表达式中的运算顺序
 
-　　多数运算符都具有从左向右的结合性，只有一元运算符、条件运算符和赋值运算符具有从右向左的结合性
+&emsp;&emsp;多数运算符都具有从左向右的结合性，只有一元运算符、条件运算符和赋值运算符具有从右向左的结合性
 
-<div class="cnblogs_code">
+<div>
 <pre>w = x + y + z;
 //等价于:
 w = ((x + y)+ z);</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>w = x = y = z;
 //等价于:
 w = (x = (y = z));</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>q = a ? b : c ? d : e ? f : g;
 //等价于:
 q = a ? b : (c ? d : (e ? f : g));    </pre>
 </div>
 
-<span style="line-height: 1.5;">　　运算符的优先级和结合性决定了它们在复杂表达式中的运算顺序，但子表达式相互有影响时，顺序会发生变化
+&emsp;&emsp;运算符的优先级和结合性决定了它们在复杂表达式中的运算顺序，但子表达式相互有影响时，顺序会发生变化
 
 **例子**
 
-<div class="cnblogs_code">
+<div>
 <pre>a = 1;
 b = a++ + a-- * a++;</pre>
 </div>
 
-　　先分析该表达式中，根据优先级的顺序，分别运算递增运算符、乘法运算符、加法运算符和赋值运算符
+&emsp;&emsp;先分析该表达式中，根据优先级的顺序，分别运算递增运算符、乘法运算符、加法运算符和赋值运算符
 
-　　先计算第一个a++;//结果为1，a为2
+&emsp;&emsp;先计算第一个a++;//结果为1，a为2
 
-<div class="cnblogs_code">
+<div>
 <pre>//表达式变成
 b = 1 + a-- * a++;</pre>
 </div>
 
-　　计算a--;//结果为2，a为1
+&emsp;&emsp;计算a--;//结果为2，a为1
 
-<div class="cnblogs_code">
+<div>
 <pre>//表达式变成
 b = 1 + 2 * a++;</pre>
 </div>
 
-　　计算第二个a++;//结果为1，a为2
+&emsp;&emsp;计算第二个a++;//结果为1，a为2
 
-<div class="cnblogs_code">
+<div>
 <pre>//表达式变成
 b = 1 + 2 * 1;</pre>
 </div>
 
-　　所以，最终a = 2; b = 3;
+&emsp;&emsp;所以，最终a = 2; b = 3;
 
-<div class="cnblogs_code">
+<div>
 <pre>a = 1;
 b = a++ + a-- * a++;
 console.log(a,b);//2 3</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>//类似地
 a = 1;
 b = a-- * a++ + a++;
@@ -172,17 +172,17 @@ console.log(a,b);//2,1</pre>
 
 ### 类型
 
-　　一些运算符可以作用于任何数据类型，但仍然希望它们的操作数是指定类型的数据，并且大多数运算符返回一个特定类型的值，在下面的运算符规则表中，箭头前为运算符操作数的类型，箭头后为运算结果的类型
+&emsp;&emsp;一些运算符可以作用于任何数据类型，但仍然希望它们的操作数是指定类型的数据，并且大多数运算符返回一个特定类型的值，在下面的运算符规则表中，箭头前为运算符操作数的类型，箭头后为运算结果的类型
 
 【左值】
 
-　　左值(lvalue)是一个古老的术语，指表达式只能出现在运算符的左侧
+&emsp;&emsp;左值(lvalue)是一个古老的术语，指表达式只能出现在运算符的左侧
 
-　　在javascript中，变量、对象属性和数组元素都是左值
+&emsp;&emsp;在javascript中，变量、对象属性和数组元素都是左值
 
-　　递增运算符++、递减运算符--和赋值运算符的操作数类型是左值
+&emsp;&emsp;递增运算符++、递减运算符--和赋值运算符的操作数类型是左值
 
-<div class="cnblogs_code">
+<div>
 <pre>var a = 3;
 a++;//3
 3--;//报错
@@ -194,7 +194,7 @@ a++;//3
 
 ### 运算符规则表
 
-<div class="cnblogs_code">
+<div>
 <pre>**运算符**             **操作**                 **类型
 **++                增量                 lval-&gt;num
 --                减量                 lval-&gt;num
