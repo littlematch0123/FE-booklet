@@ -1,24 +1,24 @@
 # 区分元素特性attribute和对象属性property
 
-　　其实attribute和property两个单词，翻译出来都是属性，但是《javascript高级程序设计》将它们翻译为特性和属性，以示区分。本文将详细介绍特性和属性的不同之处
+&emsp;&emsp;其实attribute和property两个单词，翻译出来都是属性，但是《javascript高级程序设计》将它们翻译为特性和属性，以示区分。本文将详细介绍特性和属性的不同之处
 
 &nbsp;
 
 ### 定义
 
-　　元素特性attribute是指HTML元素标签的特性
+&emsp;&emsp;元素特性attribute是指HTML元素标签的特性
 
-　　下面的id、class、title、a都是特性，其中a叫做自定义特性
+&emsp;&emsp;下面的id、class、title、a都是特性，其中a叫做自定义特性
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="id1" class="class1" title="title1" a='a1'&gt;&lt;/div&gt;</pre>
 </div>
 
-　　对象属性property是指元素节点的属性
+&emsp;&emsp;对象属性property是指元素节点的属性
 
-　　下面的id、title、b都是属性，其中b叫做自定义属性
+&emsp;&emsp;下面的id、title、b都是属性，其中b叫做自定义属性
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 test.id = 'id2';
@@ -31,11 +31,11 @@ test.b = 'b2';
 
 ### 共有
 
-　　id、title等既是属性，也是特性。修改属性，其对应的特性会发生改变；修改特性，属性也会改变
+&emsp;&emsp;id、title等既是属性，也是特性。修改属性，其对应的特性会发生改变；修改特性，属性也会改变
 
-　　【1】修改元素特性(以title为例)
+&emsp;&emsp;【1】修改元素特性(以title为例)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" title='123'&gt;测试内容&lt;/div&gt;
 &lt;script&gt;
 console.log(test.title);//123
@@ -48,9 +48,9 @@ document.onclick = function(){
 
 <iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/js/attrAndPro/a1.html" frameborder="0" width="320" height="240"></iframe>
 
-　　【2】修改对象属性
+&emsp;&emsp;【2】修改对象属性
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" title='123'&gt;测试内容&lt;/div&gt;
 &lt;script&gt;
 console.log(test.getAttribute('title'));//123
@@ -65,11 +65,11 @@ document.onclick = function(){
 
 ### 例外
 
-　　class和for这两个元素特性是例外，因为class和for是[保留字](http://www.cnblogs.com/xiaohuochai/p/5543930.html#anchor4)，无法直接在对象属性中使用。所以在对象属性中，class变成了className，而for变成了htmlFor
+&emsp;&emsp;class和for这两个元素特性是例外，因为class和for是[保留字](http://www.cnblogs.com/xiaohuochai/p/5543930.html#anchor4)，无法直接在对象属性中使用。所以在对象属性中，class变成了className，而for变成了htmlFor
 
-　　【1】class
+&emsp;&emsp;【1】class
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" class="class1"&gt;测试内容&lt;/div&gt;
 &lt;script&gt;
 console.log(test.getAttribute('class'));//'class1'
@@ -78,9 +78,9 @@ console.log(test.class);//undefined
 &lt;/script&gt;</pre>
 </div>
 
-　　【2】for
+&emsp;&emsp;【2】for
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;label id="test" for="input"&gt;&lt;/label&gt;
 &lt;script&gt;
 console.log(test.getAttribute('for'));//'input'
@@ -93,13 +93,13 @@ console.log(test.for);//undefined
 
 ### 特殊
 
-　　style和onclick是两个特殊的特性，它们虽然有对应的属性名，但属性值与通过getAttribute()返回的值并不相同
+&emsp;&emsp;style和onclick是两个特殊的特性，它们虽然有对应的属性名，但属性值与通过getAttribute()返回的值并不相同
 
-　　【1】style
+&emsp;&emsp;【1】style
 
-　　通过getAttribute()访问时，返回的style特性值中包含的是CSS文本，而通过属性来访问它则会返回一个CSSStyleDeclaration对象
+&emsp;&emsp;通过getAttribute()访问时，返回的style特性值中包含的是CSS文本，而通过属性来访问它则会返回一个CSSStyleDeclaration对象
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" style="height: 100px;width: 100px;"&gt;&lt;/div&gt;
 &lt;script&gt;
 console.log(test.getAttribute('style'));//'height: 100px;width: 100px;'
@@ -110,13 +110,13 @@ console.log(test.style.height);//'100px'
 &lt;/script&gt;</pre>
 </div>
 
-　　【2】onclick
+&emsp;&emsp;【2】onclick
 
-　　如果通过getAttribute()访问，会返回相应代码的字符串。而访问onclick属性时，会返回一个javascript函数
+&emsp;&emsp;如果通过getAttribute()访问，会返回相应代码的字符串。而访问onclick属性时，会返回一个javascript函数
 
-　　[注意]其他事件处理程序也类似
+&emsp;&emsp;注意：其他事件处理程序也类似
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" onclick = "alert(1)"&gt;测试内容&lt;/div&gt;
 &lt;script&gt;    
 console.log(test.getAttribute('onclick'));//'alert(1)'
@@ -125,9 +125,9 @@ console.log(typeof test.onclick);//'function'
 &lt;/script&gt;</pre>
 </div>
 
-　　[注意]如果通过对象属性设置onclick属性，则不会有对应的元素特性
+&emsp;&emsp;注意：如果通过对象属性设置onclick属性，则不会有对应的元素特性
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;测试内容&lt;/div&gt;
 &lt;script&gt;
 test.onclick = function(){
@@ -143,11 +143,11 @@ console.log(typeof test.onclick);//'function'
 
 ### 自定义
 
-　　【1】自定义特性
+&emsp;&emsp;【1】自定义特性
 
-　　自定义特性用来在HTML元素上绑定一些额外的信息。但是自定义特性无法在对象属性中有所体现
+&emsp;&emsp;自定义特性用来在HTML元素上绑定一些额外的信息。但是自定义特性无法在对象属性中有所体现
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" index='1'&gt;&lt;/div&gt;
 &lt;script&gt;
 console.log(test.getAttribute('index'));//'1'
@@ -155,19 +155,19 @@ console.log(test.index);//undefined
 &lt;/script&gt;</pre>
 </div>
 
-　　HTML5新增了数据集属性dataset(规范的自定义特性)，用于存储页面或应用程序的私有定制数据。数据集属性以'data-'为前缀，可以使用javascript中对象属性dataset访问data-*的值
+&emsp;&emsp;HTML5新增了数据集属性dataset(规范的自定义特性)，用于存储页面或应用程序的私有定制数据。数据集属性以'data-'为前缀，可以使用javascript中对象属性dataset访问data-*的值
 
-　　由于元素特性的值以'-'做间隔，在对象属性中将转换为首字母大写的形式
+&emsp;&emsp;由于元素特性的值以'-'做间隔，在对象属性中将转换为首字母大写的形式
 
-<div class="cnblogs_code">
+<div>
 <pre>data-index-one -&gt; dataset.indexOne</pre>
 </div>
 
-　　所以，元素特性的值一定不要出现大写，否则对象属性会解释出错
+&emsp;&emsp;所以，元素特性的值一定不要出现大写，否则对象属性会解释出错
 
-　　[注意]IE10-浏览器不支持dataset
+&emsp;&emsp;注意：IE10-浏览器不支持dataset
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" data-index-one="1"&gt;&lt;/div&gt;
 &lt;script&gt;
 console.log(test.getAttribute('data-index-one'));//'1'
@@ -178,7 +178,7 @@ console.log(test.dataset.indexOne);//'1'
 
 【兼容代码】
 
-<div class="cnblogs_code">
+<div>
 <pre>function getDataSet(element){
     if(element.dataset){
         return element.dataset;
@@ -201,11 +201,11 @@ console.log(test.dataset.indexOne);//'1'
 var dataset = getDataSet(box);</pre>
 </div>
 
-　　【2】自定义属性
+&emsp;&emsp;【2】自定义属性
 
-　　自定义属性在javascript中非常常用，是一种常用的编程技术。但元素特性上并不会有所体现
+&emsp;&emsp;自定义属性在javascript中非常常用，是一种常用的编程技术。但元素特性上并不会有所体现
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 test.index = 1;
@@ -214,9 +214,9 @@ console.log(test.getAttribute('index'));//null
 &lt;/script&gt;</pre>
 </div>
 
-　　[注意]可以使用数据集属性的逆向操作来实现自定义属性向元素特性的对应&nbsp;
+&emsp;&emsp;注意：可以使用数据集属性的逆向操作来实现自定义属性向元素特性的对应&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 test.dataset.index = 1;
@@ -228,15 +228,15 @@ console.log(test.getAttribute('data-index'));//1
 
 ### 混淆
 
-　　IE7-浏览器下会混淆元素特性attribute和对象属性property。在下列情况下，IE7-浏览器通过getAttribute()返回的值与对象属性相同
+&emsp;&emsp;IE7-浏览器下会混淆元素特性attribute和对象属性property。在下列情况下，IE7-浏览器通过getAttribute()返回的值与对象属性相同
 
-　　【1】class
+&emsp;&emsp;【1】class
 
-　　设置对象属性className，在IE7-浏览器下，访问元素特性时，参数也设置为className才有效
+&emsp;&emsp;设置对象属性className，在IE7-浏览器下，访问元素特性时，参数也设置为className才有效
 
-　　[注意]for也有类似效果，不再赘述
+&emsp;&emsp;注意：for也有类似效果，不再赘述
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 test.className = 'class1';
@@ -248,13 +248,13 @@ console.log(test.getAttribute('class'));
 &lt;/script&gt;</pre>
 </div>
 
-　　【2】style
+&emsp;&emsp;【2】style
 
-　　IE7-浏览器通过getAttribute()方法返回的元素特性与对象属性一样，都是CSSStyleDeclaration对象
+&emsp;&emsp;IE7-浏览器通过getAttribute()方法返回的元素特性与对象属性一样，都是CSSStyleDeclaration对象
 
-　　[注意]click等事件处理程序也有类似效果，不再赘述
+&emsp;&emsp;注意：click等事件处理程序也有类似效果，不再赘述
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" style="width: 100px;"&gt;&lt;/div&gt;
 &lt;script&gt;
 //IE7-浏览器下，返回CSSStyleDeclaration对象；其他浏览器返回'width: 100px;'
@@ -264,11 +264,11 @@ console.log(test.getAttribute('style') === test.style);
 &lt;/script&gt;</pre>
 </div>
 
-　　【3】自定义
+&emsp;&emsp;【3】自定义
 
-　　在IE8-浏览器下，自定义特性会自动对应为对象属性，自定义属性也会自动对应为元素特性
+&emsp;&emsp;在IE8-浏览器下，自定义特性会自动对应为对象属性，自定义属性也会自动对应为元素特性
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" a='a1'&gt;&lt;/div&gt;
 &lt;script&gt;
 test.b = 'b1';
@@ -283,15 +283,15 @@ console.log(test.getAttribute('b'));
 
 ### 总结
 
-　　对象节点对于HTML标签元素说来，是元素DOM化的结果。与此相对应，对象属性也是元素特性的DOM化结果
+&emsp;&emsp;对象节点对于HTML标签元素说来，是元素DOM化的结果。与此相对应，对象属性也是元素特性的DOM化结果
 
-　　由于javascript中保留字的限制，存在class和for这两种例外情况
+&emsp;&emsp;由于javascript中保留字的限制，存在class和for这两种例外情况
 
-　　与普通的元素特性不同，通过style实现的脚本化CSS机制和通过onclick等实现的事件处理机制是DOM的两大功能，它们被DOM实现为对象，而不仅仅是普通的字符串
+&emsp;&emsp;与普通的元素特性不同，通过style实现的脚本化CSS机制和通过onclick等实现的事件处理机制是DOM的两大功能，它们被DOM实现为对象，而不仅仅是普通的字符串
 
-　　自定义特性和自定义属性非常有用，但却没有对应关系。HTML5新增的数据集属性dataset建立了两者的联系
+&emsp;&emsp;自定义特性和自定义属性非常有用，但却没有对应关系。HTML5新增的数据集属性dataset建立了两者的联系
 
-　　最后，IE7-浏览器对元素特性和对象属性有所混淆。如果网站仍然需要兼容IE7-浏览器，就要非常小心
+&emsp;&emsp;最后，IE7-浏览器对元素特性和对象属性有所混淆。如果网站仍然需要兼容IE7-浏览器，就要非常小心
 
-　　欢迎交流
+&emsp;&emsp;欢迎交流
 
