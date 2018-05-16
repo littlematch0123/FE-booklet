@@ -37,7 +37,6 @@ console.log(test.getBoundingClientRect().height)
 
 <div>
 <pre>Element.getBoundingClientRect().width =  border-left-width + padding-left + width + padding-right + border-right-width
-
 Element.getBoundingClientRect().height =  border-top-width + padding-top + height + padding-bottom + border-bottom-width</pre>
 </div>
 
@@ -71,7 +70,6 @@ right = left + width</pre>
 //chrome/firefox/safari/IE8+ 0 72(50+10+10+1+1)
 //IE7- 2 74(72+2)
 console.log(test.getBoundingClientRect().top,test.getBoundingClientRect().bottom)
-
 //chrome/firefox/safari/IE8+ 0 122(100+10+10+1+1)
 //IE71 2 124(122+2)
 console.log(test.getBoundingClientRect().left,test.getBoundingClientRect().right)
