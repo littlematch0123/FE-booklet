@@ -1,14 +1,14 @@
 # BOM之navigator对象和用户代理检测
 
-　　navigator对象现在已经成为识别客户端浏览器的事实标准，navigator对象是所有支持javascript的浏览器所共有的。本文将详细介绍navigator对象和用户代理检测
+&emsp;&emsp;navigator对象现在已经成为识别客户端浏览器的事实标准，navigator对象是所有支持javascript的浏览器所共有的。本文将详细介绍navigator对象和用户代理检测
 
 &nbsp;
 
 ### 属性
 
-　　与其他BOM对象的情况一样，每个浏览器中的navigator对象也都有一套自己的属性。下表列出了存在于所有浏览器中的属性和方法，以及支持它们的浏览器版本
+&emsp;&emsp;与其他BOM对象的情况一样，每个浏览器中的navigator对象也都有一套自己的属性。下表列出了存在于所有浏览器中的属性和方法，以及支持它们的浏览器版本
 
-<div class="cnblogs_code">
+<div>
 <pre>属性                    说明
 
 appCodeName             浏览器名称[所有浏览器都返回Mozilla]
@@ -38,20 +38,20 @@ oscpu                   操作系统或使用的CPU[firefox返回Windows NT 10.0
 
 ### 检测插件
 
-　　检测浏览器插件是一种最常见的检测例程
+&emsp;&emsp;检测浏览器插件是一种最常见的检测例程
 
-　　对于非IE浏览器，可以使用plugins数组来达到这个目的该数组中的每一项都包含下列属性
+&emsp;&emsp;对于非IE浏览器，可以使用plugins数组来达到这个目的该数组中的每一项都包含下列属性
 
-<div class="cnblogs_code">
+<div>
 <pre>name:插件的名字　
 description:插件的描述
 filename:插件的文件名
 length:插件所处理的MIME类型数量</pre>
 </div>
 
-　　通过循环迭代每个插件并将插件的name与给定的名字进行比较
+&emsp;&emsp;通过循环迭代每个插件并将插件的name与给定的名字进行比较
 
-<div class="cnblogs_code">
+<div>
 <pre>function hasPlugin(name){
     name = name.toLowerCase();
     for(var i = 0; i &lt; navigator.plugins.length; i++){
@@ -64,9 +64,9 @@ length:插件所处理的MIME类型数量</pre>
 console.log(hasPlugin("Flash"));//true   </pre>
 </div>
 
-　　对于IE浏览器，检测插件的办法是使用专有的ActiveXObject类型，并尝试创建一个特定插件的实例。IE是使用COM对象来实现插件的，而COM对象使用唯一标识符来标识。因此，想检查特定的插件就必须知道其COM标识符。例如，Flash的标识符是ShockwaveFlash.ShockwaveFlash
+&emsp;&emsp;对于IE浏览器，检测插件的办法是使用专有的ActiveXObject类型，并尝试创建一个特定插件的实例。IE是使用COM对象来实现插件的，而COM对象使用唯一标识符来标识。因此，想检查特定的插件就必须知道其COM标识符。例如，Flash的标识符是ShockwaveFlash.ShockwaveFlash
 
-<div class="cnblogs_code">
+<div>
 <pre>function hasIEPlugin(name){
     try{
         new ActiveXObject(name);
@@ -81,7 +81,7 @@ console.log(hasIEPlugin("ShockwaveFlash.ShockwaveFlash"))//true</pre>
 
 【兼容写法】
 
-<div class="cnblogs_code">
+<div>
 <pre>//检测非IE中的插件
 function hasPlugin(name){
     name = name.toLowerCase();
@@ -114,87 +114,87 @@ console.log(hasFlash());//true</pre>
 
 ### 用户代理检测
 
-　　navigator对象中最重要的作用就是使用useragent实现用户代理检测。用户代理检测是一种万不得已的做法，优先级排在前面介绍过的[能力检测](http://www.cnblogs.com/xiaohuochai/p/6381029.html)之后
+&emsp;&emsp;navigator对象中最重要的作用就是使用useragent实现用户代理检测。用户代理检测是一种万不得已的做法，优先级排在前面介绍过的[能力检测](http://www.cnblogs.com/xiaohuochai/p/6381029.html)之后
 
 **发展历史**
 
-　　1、1993年美国NCSA国家超级计算机中心发布了世界上第一款web浏览器Mosaic，该浏览器的用户代理字符串为Mosaic/0.9
+&emsp;&emsp;1、1993年美国NCSA国家超级计算机中心发布了世界上第一款web浏览器Mosaic，该浏览器的用户代理字符串为Mosaic/0.9
 
-　　2、Netscape公司进入浏览器开发领域，将自己产品的代号定名了Mozilla(Mosaic Killer)的简写，用户代理字符串格式为Mozilla/版本号 [语言] (平台；加密类型)
+&emsp;&emsp;2、Netscape公司进入浏览器开发领域，将自己产品的代号定名了Mozilla(Mosaic Killer)的简写，用户代理字符串格式为Mozilla/版本号 [语言] (平台；加密类型)
 
-　　3、IE赢得用户广泛认可的web浏览器IE3发布时，Netscape已经占据了绝对市场份额，为了让服务器能够检测到IE，IE将用户代理字符串修改成兼容Netscape的形式：Mozilla/2.0(compatible;MSIE版本号；操作系统)
+&emsp;&emsp;3、IE赢得用户广泛认可的web浏览器IE3发布时，Netscape已经占据了绝对市场份额，为了让服务器能够检测到IE，IE将用户代理字符串修改成兼容Netscape的形式：Mozilla/2.0(compatible;MSIE版本号；操作系统)
 
-　　4、各浏览器陆续出现，用户代理字符串的显示格式也越来越类似&hellip;&hellip;
+&emsp;&emsp;4、各浏览器陆续出现，用户代理字符串的显示格式也越来越类似&hellip;&hellip;
 
-　　HTTP规范明确规定，浏览器应该发送简短的用户代理字符串，指明浏览器的名称和版本号。但现实中却没有这么简单，各浏览器的检测结果如下所示
+&emsp;&emsp;HTTP规范明确规定，浏览器应该发送简短的用户代理字符串，指明浏览器的名称和版本号。但现实中却没有这么简单，各浏览器的检测结果如下所示
 
 **检测结果**
 
 【IE3】
 
-　　　Mozilla/2.0 (compatible; MSIE3.02; windows 95)
+&emsp;&emsp;Mozilla/2.0 (compatible; MSIE3.02; windows 95)
 
 【IE6】
 
-　　　Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+&emsp;&emsp;Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
 
 【IE7】
 
-　　　Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)
+&emsp;&emsp;Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)
 
 【IE8】
 
-　　　Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0)
+&emsp;&emsp;Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0)
 
 【IE9】
 
-　　　Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+&emsp;&emsp;Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
 
 【IE10】
 
-　　　Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)
+&emsp;&emsp;Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)
 
 【IE11】
 
-　　　Mozilla/5.0 (MSIE 9.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; InfoPath.3; GWX:QUALIFIED; rv:11.0) like Gecko
+&emsp;&emsp;Mozilla/5.0 (MSIE 9.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; InfoPath.3; GWX:QUALIFIED; rv:11.0) like Gecko
 
 【chrome】
 
-　　Mozilla/5.0 (Windows NT 6.1; WOW64)G AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36
+&emsp;&emsp;Mozilla/5.0 (Windows NT 6.1; WOW64)G AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36
 
 【safari】
 
-　　Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2
+&emsp;&emsp;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2
 
 【firefox】
 
-　　Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0
+&emsp;&emsp;Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0
 
 【opera】
 
-　　Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36 OPR/32.0.1948.25
+&emsp;&emsp;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36 OPR/32.0.1948.25
 
 【ipad】
 
-　　Mozilla/5.0 (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53
+&emsp;&emsp;Mozilla/5.0 (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53
 
 【iphone】
 
-　　Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4
+&emsp;&emsp;Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4
 
 【android】
 
-　　Mozilla/5.0 (Linux; Android 4.2.2; GT-I9505 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36
+&emsp;&emsp;Mozilla/5.0 (Linux; Android 4.2.2; GT-I9505 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36
 
 &nbsp;
 
 ### 识别内核
 
-　　常见的内核有Trident、Gecko和Webkit
+&emsp;&emsp;常见的内核有Trident、Gecko和Webkit
 
-　　[注意]因为Trident和Webkit的用户代理字符串中可能会出现like Gecko的字眼，所以最后再测Gecko
+&emsp;&emsp;注意：因为Trident和Webkit的用户代理字符串中可能会出现like Gecko的字眼，所以最后再测Gecko
 
-<div class="cnblogs_code">
+<div>
 <pre>function whichEngine(){
     var ua = navigator.userAgent;
     //Trident内核
@@ -219,9 +219,9 @@ console.log(whichEngine());//IE11下显示"Trident"</pre>
 
 【1】IE
 
-　　IE3-IE10都可以通过MSIE的版本号来判断，因为有的IE11并不出现MSIE字符，且safari中也有rv字段，所以IE11需要通过rv后的版本号和Trident来配合判断
+&emsp;&emsp;IE3-IE10都可以通过MSIE的版本号来判断，因为有的IE11并不出现MSIE字符，且safari中也有rv字段，所以IE11需要通过rv后的版本号和Trident来配合判断
 
-<div class="cnblogs_code">
+<div>
 <pre>function isIE(){
     var ua = navigator.userAgent;
     //检测Trident引擎，IE8+
@@ -245,7 +245,7 @@ console.log(isIE());//只有IE会返回版本号，其他浏览器都返回undef
 
 【2】chrome
 
-<div class="cnblogs_code">
+<div>
 <pre>function isChrome(){
     var ua = navigator.userAgent;
     //先排除opera,因为opera只是在chrome的userAgent后加入了自己的标识
@@ -260,7 +260,7 @@ console.log(isChrome());//只有Chrome会返回版本号45.0.2454.93，其他浏
 
 【3】safari
 
-<div class="cnblogs_code">
+<div>
 <pre>function isSafari(){
     var ua = navigator.userAgent;
     //先排除opera
@@ -279,7 +279,7 @@ console.log(isSafari());//只有safari会返回版本号5.1.7，其他浏览器�
 
 【4】firefox
 
-<div class="cnblogs_code">
+<div>
 <pre>function isFireFox(){
     if(/Firefox\/(\S+)/.test(navigator.userAgent)){
         return RegExp["$1"];
@@ -290,7 +290,7 @@ console.log(isFireFox());//只有firefox会返回版本号40.0，其他浏览器
 
 【5】opera
 
-<div class="cnblogs_code">
+<div>
 <pre>function isOpera(){
     if(/OPR\/(\S+)/.test(navigator.userAgent)){
         return RegExp["$1"];
@@ -303,11 +303,11 @@ console.log(isOpera());//只有opera会返回版本号32.0.1948.25，其他浏�
 
 ### 识别操作系统
 
-　　使用navigator.platform检测操作系统更加简单，因为其可能包括的值为&ldquo;Win32&rdquo;、&ldquo;Win64&rdquo;、&ldquo;MacPPC&rdquo;、&ldquo;MacIntel&rdquo;、&ldquo;X11&rdquo;和"Linux i686"等，且在不同浏览器中是一致的
+&emsp;&emsp;使用navigator.platform检测操作系统更加简单，因为其可能包括的值为&ldquo;Win32&rdquo;、&ldquo;Win64&rdquo;、&ldquo;MacPPC&rdquo;、&ldquo;MacIntel&rdquo;、&ldquo;X11&rdquo;和"Linux i686"等，且在不同浏览器中是一致的
 
-　　而通过navigator.userAgent可以来得到window系统的详细信息
+&emsp;&emsp;而通过navigator.userAgent可以来得到window系统的详细信息
 
-<div class="cnblogs_code">
+<div>
 <pre>windows版本                        -&gt;             内核版本
 Windows XP                        -&gt;             5.1
 Windows Vista                     -&gt;             6.0
@@ -315,9 +315,9 @@ Windows 7                         -&gt;             6.1
 Windows 8                         -&gt;             6.2
 Windows 8.1                       -&gt;             6.3
 Windows 10技术预览版             　 -&gt;             6.4
-Windows 10.0　　　　　　            -&gt;             10.0 </pre>
+Windows 10.0    　　　　            -&gt;             10.0 </pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>function whichSyStem(){
     var ua = navigator.userAgent;
     var pf = navigator.platform;
@@ -356,7 +356,7 @@ console.log(whichSyStem())//Windows 10</pre>
 
 ### 识别移动端
 
-<div class="cnblogs_code">
+<div>
 <pre>function whichMobile(){
     var ua = navigator.userAgent;
     if(/iPhone OS (\d+_\d+)/.test(ua)){
