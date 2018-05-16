@@ -115,7 +115,6 @@ history.pushState(null, null, 'https://twitter.com/hello');</pre>
 <pre>history.pushState({page: 1}, 'title 1', '?page=1');
 history.pushState({page: 2}, 'title 2', '?page=2');
 history.replaceState({page: 3}, 'title 3', '?page=3');
-
 history.back()
 // url显示为http://example.com/example.html?page=1
 history.back()
