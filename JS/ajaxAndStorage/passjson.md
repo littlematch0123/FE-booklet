@@ -1,12 +1,12 @@
 # 深入理解ajax系列第七篇——传递JSON
 
-　　虽然ajax全称是asynchronous javascript and XML。但目前使用ajax技术时，传递[JSON](http://www.cnblogs.com/xiaohuochai/p/5887754.html)已经成为事实上的标准。因为相较于XML而言，JSON简单且方便。本文将上一篇中的实例进行改写，以JSON的方式来进行数据传递
+&emsp;&emsp;虽然ajax全称是asynchronous javascript and XML。但目前使用ajax技术时，传递[JSON](http://www.cnblogs.com/xiaohuochai/p/5887754.html)已经成为事实上的标准。因为相较于XML而言，JSON简单且方便。本文将上一篇中的实例进行改写，以JSON的方式来进行数据传递
 
 &nbsp;
 
 ### 前端页面
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- 前端页面 --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -165,7 +165,7 @@ oSave.onclick = function(){
 
 ### 后端页面
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php 
 //用于过滤不安全的字符
 function test_input($data) {
@@ -197,7 +197,6 @@ function search(){
         echo '{"success":false,"msg":"参数错误"}';
         return;
     }
-
     global $staff;
     $number = test_input($_GET['number']);
     $result = '{"success":false,"msg":"没有找到员工"}';
