@@ -8,7 +8,7 @@
 
 &emsp;&emsp;NodeList实例对象是一个类数组对象，它的成员是节点对象，包括childNodes和[querySelectorAll()方法](http://www.cnblogs.com/xiaohuochai/p/5798014.html#anchor1)返回值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 console.log(test.childNodes);//[]
@@ -16,7 +16,7 @@ console.log(test.childNodes);//[]
 console.log(test.childNodes instanceof NodeList)
 &lt;/script&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 console.log(document.querySelectorAll('div'));//[div#test]
@@ -27,7 +27,7 @@ console.log(document.querySelectorAll('div') instanceof NodeList)
 
 &emsp;&emsp;动态集合是指DOM结构的变化能够自动反映到所保存的对象中
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 var childN = test.childNodes;
@@ -41,7 +41,7 @@ console.log(childN);//[div]
 
 &emsp;&emsp;注意：NodeList并不都是动态集合，其中querySelectorAll()返回值就是静态集合NodeStaticList
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 var seles = test.querySelectorAll('div');
@@ -56,7 +56,7 @@ console.log(test.querySelectorAll('div'));//[div]
 
 &emsp;&emsp;由于NodeList是类数组对象，并不是真正的[数组](http://www.cnblogs.com/xiaohuochai/p/5679605.html)对象，可以使用slice()方法将其变成真正的数组
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 var childN = test.childNodes;
@@ -68,7 +68,7 @@ console.log(childNew instanceof Array);//true
 
 &emsp;&emsp;但是，由于IE8-浏览器将NodeList实现为一个COM对象，不能使用Array.prototype.slice()方法，必须手动枚举所有成员
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 var childN = test.childNodes;
@@ -101,7 +101,7 @@ console.log(childNew instanceof Array);//true
 
 &emsp;&emsp;HTMLCollection集合包括getElementsByTagName()、getElementsByClassName()、getElementsByName()等方法的返回值，以及children、document.links、document.forms等元素集合
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 var childN = test.children;
@@ -117,7 +117,7 @@ console.log(tags instanceof HTMLCollection);
 
 &emsp;&emsp;与NodeList对象不同，所有的HTMLCollection对象都是动态的
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 var childN = test.children;
@@ -136,7 +136,7 @@ console.log(childN,tags);//[div]、[div]
 
 &emsp;&emsp;可能一些人没有听过NamedNodeMap对象，该对象的常见实例对象是[attributes属性](http://www.cnblogs.com/xiaohuochai/p/5819638.html#anchor4)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 var attrs = test.attributes;
@@ -148,7 +148,7 @@ console.log(attrs instanceof NamedNodeMap);//true
 
 &emsp;&emsp;该对象也是一个动态集合
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test"&gt;&lt;/div&gt;
 &lt;script&gt;
 var attrs = test.attributes;
@@ -164,7 +164,7 @@ console.log(attrs);//NamedNodeMap {0: id, 1: title, length: 2}
 
 &emsp;&emsp;动态集合是个很实用的概念，但在使用循环时一定要千万小心。可能会因为忽略集合的动态性，造成死循环
 
-<div class="cnblogs_code">
+<div>
 <pre>var divs = document.getElementsByTagName("div");
 for(var i = 0 ; i &lt; divs.length; i++){
     document.body.appendChild(document.createElement("div"));
@@ -175,7 +175,7 @@ for(var i = 0 ; i &lt; divs.length; i++){
 
 &emsp;&emsp;为了避免此情况，一般地，可以写为下面形式
 
-<div class="cnblogs_code">
+<div>
 <pre>var divs = document.getElementsByTagName("div");
 for(var i = 0,len = divs.length; i &lt; len; i++){
     document.body.appendChild(document.createElement("div"));
