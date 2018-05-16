@@ -1,14 +1,14 @@
 # 深入理解脚本化CSS系列第三篇——脚本化CSS类
 
-　　在实际工作中，我们使用javascript操作CSS样式时，如果要改变大量样式，会使用脚本化CSS类的技术，本文将详细介绍脚本化CSS类
+&emsp;&emsp;在实际工作中，我们使用javascript操作CSS样式时，如果要改变大量样式，会使用脚本化CSS类的技术，本文将详细介绍脚本化CSS类
 
 &nbsp;
 
 ### style
 
-　　我们在改变元素的少部分样式时，一般会直接改变其[行间样式](http://www.cnblogs.com/xiaohuochai/p/5837478.html)
+&emsp;&emsp;我们在改变元素的少部分样式时，一般会直接改变其[行间样式](http://www.cnblogs.com/xiaohuochai/p/5837478.html)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" style="height:100px;width:100px;background-color:blue;"&gt;&lt;/div&gt;
 &lt;script&gt;
 test.onclick = function(){
@@ -21,9 +21,9 @@ test.onclick = function(){
 
 ### cssText
 
-　　改变元素的较多样式时，可以使用cssText
+&emsp;&emsp;改变元素的较多样式时，可以使用cssText
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" style="height:100px;width:100px;background-color:blue;"&gt;&lt;/div&gt;
 &lt;script&gt;
 test.onclick = function(){
@@ -36,9 +36,9 @@ test.onclick = function(){
 
 ### css类
 
-　　更常用的是使用css类，将更改前和更改后的样式提前设置为类名。只要更改其类名即可
+&emsp;&emsp;更常用的是使用css类，将更改前和更改后的样式提前设置为类名。只要更改其类名即可
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 .big{
     height:100px;
@@ -51,7 +51,6 @@ test.onclick = function(){
     background-color:green;
 }    
 &lt;/style&gt;
-
 &lt;div id="test" class="big"&gt;&lt;/div&gt;
 &lt;script&gt;
 test.onclick = function(){
@@ -64,11 +63,11 @@ test.onclick = function(){
 
 ### classList
 
-　　如果要改变多个类名，使用[classList](http://www.cnblogs.com/xiaohuochai/p/5797111.html#anchor2)更为方便
+&emsp;&emsp;如果要改变多个类名，使用[classList](http://www.cnblogs.com/xiaohuochai/p/5797111.html#anchor2)更为方便
 
-　　[注意]IE9-浏览器不支持
+&emsp;&emsp;注意：IE9-浏览器不支持
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 .big{
     height:100px;
@@ -102,7 +101,7 @@ btn2.onclick = function(){
 
 ### 性能
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="test" style="height:100px;width:100px;background-color:blue;"&gt;&lt;/div&gt;
 &lt;script&gt;
 test.onclick = function(){
@@ -151,16 +150,16 @@ test.onclick = function(){
 &lt;/script&gt;</pre>
 </div>
 
-　　在1万次循环中，改变style属性中的具体样式花费了59.937ms，改变style属性中的cssText花费了38.065ms，而改变css类名只花费了9.534ms
+&emsp;&emsp;在1万次循环中，改变style属性中的具体样式花费了59.937ms，改变style属性中的cssText花费了38.065ms，而改变css类名只花费了9.534ms
 
-　　由此可见，使用脚本化CSS类的方式可以大大地提高性能
+&emsp;&emsp;由此可见，使用脚本化CSS类的方式可以大大地提高性能
 
 &nbsp;
 
 ## 最后
 
-　　脚本化CSS的场景非常常见，一直提倡使用脚本化CSS类的方式来操作CSS，以为只是为了方便。感觉脚本化CSS类应该和使用cssText的性能差不多，但没想到最终结果竟然不是同一个数量级的，改变CSS类名的性能竟然提升这么多
+&emsp;&emsp;脚本化CSS的场景非常常见，一直提倡使用脚本化CSS类的方式来操作CSS，以为只是为了方便。感觉脚本化CSS类应该和使用cssText的性能差不多，但没想到最终结果竟然不是同一个数量级的，改变CSS类名的性能竟然提升这么多
 
-　　少一点感性认识，多一些理性测试
+&emsp;&emsp;少一点感性认识，多一些理性测试
 
-　　欢迎交流
+&emsp;&emsp;欢迎交流
