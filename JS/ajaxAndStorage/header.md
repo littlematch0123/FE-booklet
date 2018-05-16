@@ -1,14 +1,14 @@
 # 深入理解ajax系列第六篇——头部信息
 
-　　每个HTTP请求和响应都会带有相应的头部信息，其中有的对开发人员有用。XHR对象提供了操作头部信息的方法。本文将详细介绍HTTP的头部信息
+&emsp;&emsp;每个HTTP请求和响应都会带有相应的头部信息，其中有的对开发人员有用。XHR对象提供了操作头部信息的方法。本文将详细介绍HTTP的头部信息
 
 &nbsp;
 
 ### 默认信息
 
-　　默认情况下，在发送XHR请求的同时，还会发送下列头部信息
+&emsp;&emsp;默认情况下，在发送XHR请求的同时，还会发送下列头部信息
 
-<div class="cnblogs_code">
+<div>
 <pre>Accept: 浏览器能够处理的内容类型
 Accept-Charset: 浏览器能够显示的字符集
 Accept-Encoding: 浏览器能够处理的压缩编码
@@ -20,7 +20,7 @@ User-Agent: 浏览器的用户代理字符串
 Referer: 发出请求的页面的URI</pre>
 </div>
 
-　　[注意]HTTP规范将这个头部字段拼错了，而为保证与规范一致，也只能将错就错(正确拼写应该是referrer)
+&emsp;&emsp;注意：HTTP规范将这个头部字段拼错了，而为保证与规范一致，也只能将错就错(正确拼写应该是referrer)
 
 ![header](https://pic.xiaohuochai.site/blog/js_ajax_header.png)
 
@@ -28,33 +28,33 @@ Referer: 发出请求的页面的URI</pre>
 
 ### 设置头部
 
-　　使用setRequestHeader()方法可以设置自定义的请求头部信息。这个方法接受两个参数：头部字段的名称头部字段的值。要成功发送请求头部信息，必须在调用open()方法之后且调用send()方法之前调用setRequestHeader()方法&nbsp;
+&emsp;&emsp;使用setRequestHeader()方法可以设置自定义的请求头部信息。这个方法接受两个参数：头部字段的名称头部字段的值。要成功发送请求头部信息，必须在调用open()方法之后且调用send()方法之前调用setRequestHeader()方法&nbsp;
 
-　　setRequestHeader()方法的一个常用用途是使用POST请求时，将Content-Type的头部信息设置为表单提交的内容类型
+&emsp;&emsp;setRequestHeader()方法的一个常用用途是使用POST请求时，将Content-Type的头部信息设置为表单提交的内容类型
 
-<div class="cnblogs_code">
+<div>
 <pre>xhr.open('post','service.php',true);
 xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 xhr.send('data=test123');</pre>
 </div>
 
-　　[注意]尽量使用自定义头部字段名称，不要使用浏览器正常发送的字段名称，否则可能会影响服务器的响应
+&emsp;&emsp;注意：尽量使用自定义头部字段名称，不要使用浏览器正常发送的字段名称，否则可能会影响服务器的响应
 
-<div class="cnblogs_code">
+<div>
 <pre>xhr.open('get','test.php',true);
 xhr.setRequestHeader('myHeader','myValue');
 xhr.send();    </pre>
 </div>
 
-　　经测试，浏览器无法将自定义的头部字段添加到报文中
+&emsp;&emsp;经测试，浏览器无法将自定义的头部字段添加到报文中
 
 &nbsp;
 
 ### 获取头部
 
-　　调用XHR对象的getResponseHeader()方法并传入头部字段名称，可以取得相应的响应头部信息。而调用getAllResponseHeaders()方法则可以取得一个包含所有头部信息的长字符串
+&emsp;&emsp;调用XHR对象的getResponseHeader()方法并传入头部字段名称，可以取得相应的响应头部信息。而调用getAllResponseHeaders()方法则可以取得一个包含所有头部信息的长字符串
 
-<div class="cnblogs_code">
+<div>
 <pre>var xhr;
 if(window.XMLHttpRequest){
     xhr = new XMLHttpRequest();
@@ -86,9 +86,9 @@ xhr.open('get','test.php',true);
 xhr.send();    </pre>
 </div>
 
-　　在PHP中，可以调用apache_request_headers()方法来获取请求报文的头部信息
+&emsp;&emsp;在PHP中，可以调用apache_request_headers()方法来获取请求报文的头部信息
 
-<div class="cnblogs_code">
+<div>
 <pre>/*
 array (size=8)
   'Host' =&gt; string '127.0.0.1' (length=9)
