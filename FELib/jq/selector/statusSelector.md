@@ -1,6 +1,6 @@
 # jQuery状态选择器
 
-　　过滤选择器的内容非常多，本文介绍过滤选择器的最后一部分&mdash;&mdash;状态选择器
+&emsp;&emsp;过滤选择器的内容非常多，本文介绍过滤选择器的最后一部分&mdash;&mdash;状态选择器
 
 &nbsp;
 
@@ -8,9 +8,9 @@
 
 **:focus**
 
-　　:focus选择器选择当前获得焦点的元素
+&emsp;&emsp;:focus选择器选择当前获得焦点的元素
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div&gt;
    &lt;button&gt;btn1&lt;/button&gt;
    &lt;button&gt;btn2&lt;/button&gt;
@@ -25,15 +25,15 @@ document.onclick = function(){
 
 <iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/jquery/selector/s28.html" frameborder="0" width="320" height="240"></iframe>
 
-　　对应于CSS选择器[:focus](http://www.cnblogs.com/xiaohuochai/p/5518943.html#anchor1)
+&emsp;&emsp;对应于CSS选择器[:focus](http://www.cnblogs.com/xiaohuochai/p/5518943.html#anchor1)
 
-<div class="cnblogs_code">
+<div>
 <pre>:focus{color:red}</pre>
 </div>
 
-　　如果用javascript实现类似效果
+&emsp;&emsp;如果用javascript实现类似效果
 
-<div class="cnblogs_code">
+<div>
 <pre>var tags = document.getElementsByTagName('*');
 for(var i = 0; i &lt; tags.length; i++){
     tags[i].onfocus = function(){
@@ -48,9 +48,9 @@ for(var i = 0; i &lt; tags.length; i++){
 
 **:target**
 
-　　:target选择器用于匹配锚点对应的目标元素
+&emsp;&emsp;:target选择器用于匹配锚点对应的目标元素
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div&gt;
     &lt;a href="#test"&gt;锚点&lt;/a&gt;
     &lt;div id="test"&gt;变色&lt;/div&gt;
@@ -63,9 +63,9 @@ $(':target').css('color','red');
 
 <iframe style="width: 100%; height: 60px;" src="https://demo.xiaohuochai.site/jquery/selector/s29.html" frameborder="0" width="320" height="240"></iframe>
 
-　　对应的CSS选择器是:target选择器，用于匹配锚点对应的目标元素
+&emsp;&emsp;对应的CSS选择器是:target选择器，用于匹配锚点对应的目标元素
 
-<div class="cnblogs_code">
+<div>
 <pre>:target{color:red;}</pre>
 </div>
 
@@ -75,9 +75,9 @@ $(':target').css('color','red');
 
 **:animated**
 
-　　:animated选择器选择所有正在执行动画效果的元素
+&emsp;&emsp;:animated选择器选择所有正在执行动画效果的元素
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn"&gt;run&lt;/button&gt;
 &lt;div id="mover" style="height:30px;width: 30px;background-color: green;"&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -97,29 +97,29 @@ btn.onclick = function(){
 
 **:hidden**
 
-　　:hidden选择器选择所有隐藏的元素，返回集合元素
+&emsp;&emsp;:hidden选择器选择所有隐藏的元素，返回集合元素
 
 **隐藏**
 
-　　元素不可见并不是隐藏，元素被认为隐藏有以下几种情况：
+&emsp;&emsp;元素不可见并不是隐藏，元素被认为隐藏有以下几种情况：
 
-　　【1】display:none
+&emsp;&emsp;【1】display:none
 
-　　【2】表单元素的type='hidden'
+&emsp;&emsp;【2】表单元素的type='hidden'
 
-　　【3】宽度和高度都设置为0
+&emsp;&emsp;【3】宽度和高度都设置为0
 
-　　【4】祖先元素是隐藏的
+&emsp;&emsp;【4】祖先元素是隐藏的
 
-　　[注意]元素visibility: hidden或opacity: 0被认为是可见的，因为他们仍然占据布局空间
+&emsp;&emsp;注意：元素visibility: hidden或opacity: 0被认为是可见的，因为他们仍然占据布局空间
 
 **:visible**
 
-　　:visible选择器选择所有可见的元素，如果元素占据文档一定的空间，元素被认为是可见的
+&emsp;&emsp;:visible选择器选择所有可见的元素，如果元素占据文档一定的空间，元素被认为是可见的
 
-　　[注意]隐藏元素上做动画，元素被认为是可见的，直到动画结束
+&emsp;&emsp;注意：隐藏元素上做动画，元素被认为是可见的，直到动画结束
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn1"&gt;$('#test :hidden')&lt;/button&gt;
 &lt;button id="btn2"&gt;$('#test :visible')&lt;/button&gt;
 &lt;button id="reset"&gt;还原&lt;/button&gt;
