@@ -1,6 +1,6 @@
 # jQuery子元素选择器
 
-　　在[上一篇](http://www.cnblogs.com/xiaohuochai/p/5800164.html)中已经介绍过基础选择器和层级选择器，本文开始介绍过滤选择器。过滤选择器是jQuery选择器中最为庞大也是最为出彩的一部分。以[CSS结构伪类选择器](http://www.cnblogs.com/xiaohuochai/p/5518943.html#anchor3)为基础，jQuery过滤选择器增加了很多扩展功能。本文先从与CSS选择器最相近的子元素过滤选择器开始说起
+&emsp;&emsp;在[上一篇](http://www.cnblogs.com/xiaohuochai/p/5800164.html)中已经介绍过基础选择器和层级选择器，本文开始介绍过滤选择器。过滤选择器是jQuery选择器中最为庞大也是最为出彩的一部分。以[CSS结构伪类选择器](http://www.cnblogs.com/xiaohuochai/p/5518943.html#anchor3)为基础，jQuery过滤选择器增加了很多扩展功能。本文先从与CSS选择器最相近的子元素过滤选择器开始说起
 
 &nbsp;
 
@@ -8,14 +8,14 @@
 
 **$(':nth-child(index)')**
 
-　　$(':nth-child(index)')选择每个父元素的第index个子元素(index从1算起)，返回集合元素
+&emsp;&emsp;$(':nth-child(index)')选择每个父元素的第index个子元素(index从1算起)，返回集合元素
 
-<div class="cnblogs_code">
-<pre>$(':nth-child(1)') 　　　　　　 每个父元素下第1个子元素
-$('span:nth-child(1)') 　　　　每个父元素下第1个子元素，且该子元素为span元素
+<div>
+<pre>$(':nth-child(1)') &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 每个父元素下第1个子元素
+$('span:nth-child(1)') &emsp;&emsp;&emsp;&emsp;每个父元素下第1个子元素，且该子元素为span元素
 $('div span:nth-child(1)')    每个为div元素的父元素下第1个子元素，且该子元素为span元素</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn1" style="color: red;"&gt;$(':nth-child(1)')&lt;/button&gt;
 &lt;button id="btn2" style="color: blue;"&gt;$('span:nth-child(1)')&lt;/button&gt;
 &lt;button id="btn3" style="color: green;"&gt;$('div span:nth-child(1)')&lt;/button&gt;
@@ -36,7 +36,7 @@ $('div span:nth-child(1)')    每个为div元素的父元素下第1个子元素�
 &lt;script&gt;
 reset.onclick = function(){history.go();}
 //匹配每个父元素的第1个子元素，结果是1.1、2.1和3.1
-//[注意]实际上，&lt;head&gt;元素作为&lt;html&gt;元素的第1个子元素，也被设置为color:red
+//注意：实际上，&lt;head&gt;元素作为&lt;html&gt;元素的第1个子元素，也被设置为color:red
 btn1.onclick = function(){$(':nth-child(1)').css('color','red');}
 //匹配每个父元素的第1个子元素，且该子元素是span元素，结果是2.1和3.1
 btn2.onclick = function(){$('span:nth-child(1)').css('color','blue');}
@@ -47,21 +47,21 @@ btn3.onclick = function(){$('div span:nth-child(1)').css('color','green');}
 
 <iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/jquery/selector/s10.html" frameborder="0" width="320" height="240"></iframe>
 
-　　对应于CSS的结构伪类选择器nth-child(n)
+&emsp;&emsp;对应于CSS的结构伪类选择器nth-child(n)
 
-　　nth-child(n)选择器用于选择每个父元素下的第n个子元素(n从1开始)
+&emsp;&emsp;nth-child(n)选择器用于选择每个父元素下的第n个子元素(n从1开始)
 
-　　如果要完成同样的上面三个功能，选择器格式分别为：
+&emsp;&emsp;如果要完成同样的上面三个功能，选择器格式分别为：
 
-<div class="cnblogs_code">
+<div>
 <pre>:nth-child(1){color:red;}
 span:nth-child(1){color:blue;}
 div span:nth-child(1){color:green;}</pre>
 </div>
 
-　　如果上面的第三个功能要使用javascript实现，则表现如下：
+&emsp;&emsp;如果上面的第三个功能要使用javascript实现，则表现如下：
 
-<div class="cnblogs_code">
+<div>
 <pre>var divs = document.getElementsByTagName('div');
 for(var i = 0; i &lt; divs.length; i++){
     var firstChild = divs[i].firstElementChild;
@@ -73,15 +73,15 @@ for(var i = 0; i &lt; divs.length; i++){
 
 **参数**
 
-　　当然$(':nth-child(index)')选择器作为通用的子元素过滤选择器，可以有多种参数选择
+&emsp;&emsp;当然$(':nth-child(index)')选择器作为通用的子元素过滤选择器，可以有多种参数选择
 
-　　【1】$(':nth-child(even)')  选取每个父元素下的索引值为偶数的元素
+&emsp;&emsp;【1】$(':nth-child(even)')  选取每个父元素下的索引值为偶数的元素
 
-　　【2】$(':nth-child(odd)')  选取每个父元素下的索引值为奇数的元素
+&emsp;&emsp;【2】$(':nth-child(odd)')  选取每个父元素下的索引值为奇数的元素
 
-　　【3】$(':nth-child(3n+1)')  选取每个父元素下的索引值为(3n+1)的元素
+&emsp;&emsp;【3】$(':nth-child(3n+1)')  选取每个父元素下的索引值为(3n+1)的元素
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn1" style="color: red;"&gt;$(':nth-child(even)')&lt;/button&gt;
 &lt;button id="btn2" style="color: blue;"&gt;$(':nth-child(odd)')&lt;/button&gt;
 &lt;button id="btn3" style="color: green;"&gt;$(':nth-child(3n+1)')&lt;/button&gt;
@@ -111,9 +111,9 @@ btn3.onclick = function(){$('ul :nth-child(3n+1)').css('color','green');}
 
 **$(':nth-last-child(index)')**
 
-　　$(':nth-last-child(index)')选择器选择每个父元素的反向第index个子元素(index从最后一个元素计数到第一个元素为止)，返回集合元素
+&emsp;&emsp;$(':nth-last-child(index)')选择器选择每个父元素的反向第index个子元素(index从最后一个元素计数到第一个元素为止)，返回集合元素
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn1" style="color: red;"&gt;$(':nth-last-child(even)')&lt;/button&gt;
 &lt;button id="btn2" style="color: blue;"&gt;$(':nth-last-child(odd)')&lt;/button&gt;
 &lt;button id="btn3" style="color: green;"&gt;$(':nth-last-child(3n+1)')&lt;/button&gt;
@@ -142,17 +142,17 @@ btn3.onclick = function(){$('ul :nth-last-child(3n+1)').css('color','green');}
 
 ### 首尾子元素
 
-　　为了方便，jQuery还定义了第一个子元素和最后一个子元素的获取方式
+&emsp;&emsp;为了方便，jQuery还定义了第一个子元素和最后一个子元素的获取方式
 
 **$(':first-child')**
 
-　　:first-child选择器是:nth-child(1)选择器的简写形式，选取每个父元素的第1个子元素
+&emsp;&emsp;:first-child选择器是:nth-child(1)选择器的简写形式，选取每个父元素的第1个子元素
 
 **$(':last-child')**
 
-　　类似地，$(':last-child')选择器选取每个父元素的最后1个子元素
+&emsp;&emsp;类似地，$(':last-child')选择器选取每个父元素的最后1个子元素
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn1" style="color: red;"&gt;$('div :first-child')&lt;/button&gt;
 &lt;button id="btn2" style="color: blue;"&gt;$('div :last-child')&lt;/button&gt;
 &lt;button id="btn3" style="color: green;"&gt;$('div span:first-child')&lt;/button&gt;
@@ -175,13 +175,10 @@ btn3.onclick = function(){$('ul :nth-last-child(3n+1)').css('color','green');}
 reset.onclick = function(){history.go();}
 //匹配每个div元素为父元素的第1个子元素，结果是1.1和3.1
 btn1.onclick = function(){$('div :first-child').css('color','red');}
-
 //匹配每个div元素为父元素的最后1个子元素，结果是1.2和3.2
 btn2.onclick = function(){$('div :last-child').css('color','blue');}
-
 //匹配每个div元素为父元素的第1个子元素，且该子元素是span元素，结果是3.1
 btn3.onclick = function(){$('div span:first-child').css('color','green');}
-
 //匹配每个div元素为父元素的最后1个子元素，且该子元素是span元素，结果是1.2
 btn4.onclick = function(){$('div span:last-child').css('color','pink');}
 &lt;/script&gt;</pre>
@@ -189,20 +186,20 @@ btn4.onclick = function(){$('div span:last-child').css('color','pink');}
 
 <iframe style="width: 100%; height: 140px;" src="https://demo.xiaohuochai.site/jquery/selector/s13.html" frameborder="0" width="320" height="240"></iframe>
 
-　　首尾子元素选择器分别对应于CSS中的:first-child和:last-child
+&emsp;&emsp;首尾子元素选择器分别对应于CSS中的:first-child和:last-child
 
-　　如果要完成同样的功能，选择器格式分别为：
+&emsp;&emsp;如果要完成同样的功能，选择器格式分别为：
 
-<div class="cnblogs_code">
+<div>
 <pre>div :first-child{color:red;}
 div :last-child{color:blue;}
 div span:first-child{color:green;}
 div span:last-child{color:pink;}</pre>
 </div>
 
-　　如果使用javascript选择器要完成上面的最后一个功能，则如下所示
+&emsp;&emsp;如果使用javascript选择器要完成上面的最后一个功能，则如下所示
 
-<div class="cnblogs_code">
+<div>
 <pre>var divs = document.getElementsByTagName('div');
 for(var i = 0; i &lt; divs.length; i++){
     var lastChild = divs[i].lastElementChild;
@@ -218,21 +215,21 @@ for(var i = 0; i &lt; divs.length; i++){
 
 **$(':only-child')**
 
-　　$(':only-child')选择器的匹配规则为：如果某个元素是它父元素中的唯一的子元素，才会被匹配
+&emsp;&emsp;$(':only-child')选择器的匹配规则为：如果某个元素是它父元素中的唯一的子元素，才会被匹配
 
-<div class="cnblogs_code">
+<div>
 <pre>$('div span:only-child').css('color','green');</pre>
 </div>
 
-　　对应于CSS的:only-child选择器
+&emsp;&emsp;对应于CSS的:only-child选择器
 
-<div class="cnblogs_code">
+<div>
 <pre>div span:only-child{color:green;}</pre>
 </div>
 
-　　如果使用javascript实现，则如下所示
+&emsp;&emsp;如果使用javascript实现，则如下所示
 
-<div class="cnblogs_code">
+<div>
 <pre>var divs = document.getElementsByTagName('div');
 for(var i = 0; i &lt; divs.length; i++){
     var children = divs[i].children;
@@ -241,7 +238,7 @@ for(var i = 0; i &lt; divs.length; i++){
     }
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn1" style="color: green;"&gt;$('div span:only-child')&lt;/button&gt;
 &lt;button id="reset"&gt;还原&lt;/button&gt;
 &lt;div&gt;
@@ -263,6 +260,6 @@ btn1.onclick = function(){$('div span:only-child').css('color','green');}
 
 ## 最后
 
-　　在CSS结构伪类选择器中，nth-child(n)和nth-of-type(n)选择器经常容易混淆，需要小心区分才能避免出错。类似地，在jQuery过滤选择器中，子元素选择器和索引选择器也是非常相近，容易混淆。在选择器系列下一篇中，将类比于本文的子元素选择器，详细介绍索引选择器
+&emsp;&emsp;在CSS结构伪类选择器中，nth-child(n)和nth-of-type(n)选择器经常容易混淆，需要小心区分才能避免出错。类似地，在jQuery过滤选择器中，子元素选择器和索引选择器也是非常相近，容易混淆。在选择器系列下一篇中，将类比于本文的子元素选择器，详细介绍索引选择器
 
-　　欢迎交流
+&emsp;&emsp;欢迎交流
