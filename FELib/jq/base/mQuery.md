@@ -1,30 +1,30 @@
 # 简易版jQuery——mQuery
 
-　　虽然[jQuery](http://www.cnblogs.com/xiaohuochai/p/6489658.html)已经日渐式微，但它里面的许多思想，如选择器、链式调用、方法函数化、取赋值合体等，有的已经变成了标准，有的一直影响到现在。所以，jQuery是一个伟大的前端框架。前端世界日新月异，由于实在是没有时间去精读源码，于是自己封装一个简易版本的jQuery，来梳理jQuery的核心思路
+&emsp;&emsp;虽然[jQuery](http://www.cnblogs.com/xiaohuochai/p/6489658.html)已经日渐式微，但它里面的许多思想，如选择器、链式调用、方法函数化、取赋值合体等，有的已经变成了标准，有的一直影响到现在。所以，jQuery是一个伟大的前端框架。前端世界日新月异，由于实在是没有时间去精读源码，于是自己封装一个简易版本的jQuery，来梳理jQuery的核心思路
 
 &nbsp;
 
 ### 基本构架
 
-　　由于火柴的英文是match，应该将这个简单框架称为mQuery。使用面向对象的写法来写mQuery，构造函数是Mquery()，调用$()方法，将根据Mquery()构造函数，创建一个实例对象
+&emsp;&emsp;由于火柴的英文是match，应该将这个简单框架称为mQuery。使用面向对象的写法来写mQuery，构造函数是Mquery()，调用$()方法，将根据Mquery()构造函数，创建一个实例对象
 
-<div class="cnblogs_code">
+<div>
 <pre>//构造函数
 function Mquery(arg){}</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>function $(arg){
   return new Mquery(arg);
 } </pre>
 </div>
 
-　　jquery几大特征：
+&emsp;&emsp;jquery几大特征：
 
-　　1、通过$()选择的元素都是一个集合，即使仅仅是一个元素
+&emsp;&emsp;1、通过$()选择的元素都是一个集合，即使仅仅是一个元素
 
-　　因此，创建一个elements属性为一个数组，去接收获取的元素
+&emsp;&emsp;因此，创建一个elements属性为一个数组，去接收获取的元素
 
-<div class="cnblogs_code">
+<div>
 <pre>//构造函数
 function Mquery(arg){
   //保存所选择的元素
@@ -32,39 +32,39 @@ function Mquery(arg){
 }</pre>
 </div>
 
-　　2、链式调用
+&emsp;&emsp;2、链式调用
 
-　　所以，原型函数要返回this，以实现链式调用的效果
+&emsp;&emsp;所以，原型函数要返回this，以实现链式调用的效果
 
 &nbsp;
 
 ### $函数
 
-　　$函数根据参数类型的不同，用途也不同
+&emsp;&emsp;$函数根据参数类型的不同，用途也不同
 
-　　1、参数为函数时，则直接运行
+&emsp;&emsp;1、参数为函数时，则直接运行
 
-<div class="cnblogs_code">
+<div>
 <pre>$(function(){
     console.log(1)
 })</pre>
 </div>
 
-　　2、参数为对象时，则把DOM对象转换为$对象
+&emsp;&emsp;2、参数为对象时，则把DOM对象转换为$对象
 
-<div class="cnblogs_code">
+<div>
 <pre>$(document.body)</pre>
 </div>
 
-　　3、参数为字符串时，则根据字符串选择出元素，并转换为$对象
+&emsp;&emsp;3、参数为字符串时，则根据字符串选择出元素，并转换为$对象
 
-<div class="cnblogs_code">
+<div>
 <pre>$('#box')</pre>
 </div>
 
-　　下面根据以上三个分类，来编写Mquery构建函数
+&emsp;&emsp;下面根据以上三个分类，来编写Mquery构建函数
 
-<div class="cnblogs_code">
+<div>
 <pre>//事件绑定兼容写法
 function _addEvent(target,type,handler){
     if(target.addEventListener){
@@ -90,7 +90,7 @@ function _toArray(arrayLike){
   return Array.prototype.slice.call(arrayLike);
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>//构造函数
 function Mquery(arg){
   //保存所选择的元素
@@ -120,15 +120,15 @@ function Mquery(arg){
 
 ### HTML、CSS及特性设置
 
-　　下面来介绍常用的HTML、CSS及特性设置
+&emsp;&emsp;下面来介绍常用的HTML、CSS及特性设置
 
 【HTML】
 
-　　对于文本内容来说，一般地，有三种方法：html()、text()和val()。本文只实现最常用的html()方法
+&emsp;&emsp;对于文本内容来说，一般地，有三种方法：html()、text()和val()。本文只实现最常用的html()方法
 
-　　当html()方法没有参数时，表示获取内容；有一个参数时，表示设置内容
+&emsp;&emsp;当html()方法没有参数时，表示获取内容；有一个参数时，表示设置内容
 
-<div class="cnblogs_code">
+<div>
 <pre>//HTML获取与设置
 Mquery.prototype.html = function(str){
   //设置
@@ -146,15 +146,15 @@ Mquery.prototype.html = function(str){
 
 【CSS】
 
-　　对于CSS来说，有两种参数格式：一种是json格式，一种是字符串格式
+&emsp;&emsp;对于CSS来说，有两种参数格式：一种是json格式，一种是字符串格式
 
-　　当第一个参数为对象时，则判断为json格式，否则为字符串格式
+&emsp;&emsp;当第一个参数为对象时，则判断为json格式，否则为字符串格式
 
-　　对于字符串格式来说，只有一个参数时，为获取样式，两个参数时，为设置样式
+&emsp;&emsp;对于字符串格式来说，只有一个参数时，为获取样式，两个参数时，为设置样式
 
-　　获取样式时，仅获取当前集合中第0个元素的样式；设置样式时，则设置当前集合中所有元素的样式
+&emsp;&emsp;获取样式时，仅获取当前集合中第0个元素的样式；设置样式时，则设置当前集合中所有元素的样式
 
-<div class="cnblogs_code">
+<div>
 <pre>//获取计算样式兼容写法
 function _getCSS(obj,style){
     if(window.getComputedStyle){
@@ -163,7 +163,7 @@ function _getCSS(obj,style){
     return obj.currentStyle[style];
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>//CSS获取与设置
 Mquery.prototype.css = function(attr,value){
   //如果是对象的形式，以对象的形式设置
@@ -191,9 +191,9 @@ Mquery.prototype.css = function(attr,value){
 
 【attr】
 
-　　特性设置与获取的思路与CSS类似，只是方法变成了setAttribute()和getAttribute()
+&emsp;&emsp;特性设置与获取的思路与CSS类似，只是方法变成了setAttribute()和getAttribute()
 
-<div class="cnblogs_code">
+<div>
 <pre>//attr获取与设置
 Mquery.prototype.attr = function(attr,value){
   //如果是对象的形式
@@ -225,9 +225,9 @@ Mquery.prototype.attr = function(attr,value){
 
 【on】
 
-　　在jQuery中，最常用的事件绑定方法就是on方法。在on方法中要特别注意的是this的绑定，由于函数fn中的this实际上是window，所以应该将fn的this绑定到当前元素
+&emsp;&emsp;在jQuery中，最常用的事件绑定方法就是on方法。在on方法中要特别注意的是this的绑定，由于函数fn中的this实际上是window，所以应该将fn的this绑定到当前元素
 
-<div class="cnblogs_code">
+<div>
 <pre>//事件绑定
 Mquery.prototype.on = function(eventType,fn){
   for(var i = 0; i &lt; this.elements.length; i++){
@@ -239,18 +239,18 @@ Mquery.prototype.on = function(eventType,fn){
 
 【click和hover】
 
-　　click方法是一个简写方法
+&emsp;&emsp;click方法是一个简写方法
 
-<div class="cnblogs_code">
+<div>
 <pre>Mquery.prototype.click = function(fn){
   this.on('click',fn);
   return this;
 }</pre>
 </div>
 
-　　hover方法是mouseover和mouseout的合成方法
+&emsp;&emsp;hover方法是mouseover和mouseout的合成方法
 
-<div class="cnblogs_code">
+<div>
 <pre>Mquery.prototype.hover = function(fnOver,fnOut){
   this.on('mouseover',fnOver);
   this.on('mouseout',fnOut);
@@ -260,9 +260,9 @@ Mquery.prototype.on = function(eventType,fn){
 
 【return false】
 
-　　在jQuery中，使用return false可以同时阻止默认行为和阻止冒泡
+&emsp;&emsp;在jQuery中，使用return false可以同时阻止默认行为和阻止冒泡
 
-<div class="cnblogs_code">
+<div>
 <pre>//事件绑定兼容写法
 function _addEvent(target,type,handler){
     if(target.addEventListener){
@@ -289,11 +289,11 @@ function _addEvent(target,type,handler){
 
 ### 其他设置
 
-　　jQuery的功能非常强大。下面选择一些常用功能进行实现
+&emsp;&emsp;jQuery的功能非常强大。下面选择一些常用功能进行实现
 
 【显示隐藏】
 
-<div class="cnblogs_code">
+<div>
 <pre>//隐藏
 Mquery.prototype.hide = function(){
   for(var i = 0; i &lt; this.elements.length; i++){
@@ -316,7 +316,7 @@ Mquery.prototype.show = function(){
 
 【插件设置】
 
-<div class="cnblogs_code">
+<div>
 <pre>$.extend = function(json){ 
   for(var attr in json){
     $[attr] = json[attr];
@@ -332,7 +332,7 @@ $.fn.extend = function(json){
 
 【索引设置】
 
-<div class="cnblogs_code">
+<div>
 <pre>//根据索引选择元素
 Mquery.prototype.eq = function(number){
   return $(this.elements[number]);
@@ -350,7 +350,7 @@ Mquery.prototype.index = function(){
 
 【子级筛选】
 
-<div class="cnblogs_code">
+<div>
 <pre>//筛选出当前匹配的元素集合中每个元素的后代
 Mquery.prototype.find = function(str){
   var arr = [];
@@ -365,9 +365,9 @@ Mquery.prototype.find = function(str){
 
 ### 完整源码
 
-　　下面是[mQuery](https://files.cnblogs.com/files/xiaohuochai/mQuery.js)的完整源码
+&emsp;&emsp;下面是[mQuery](https://files.cnblogs.com/files/xiaohuochai/mQuery.js)的完整源码
 
-<div class="cnblogs_code">
+<div>
 <pre>//事件绑定兼容写法
 function _addEvent(target,type,handler){
     if(target.addEventListener){
@@ -558,9 +558,9 @@ function $(arg){
 
 ### 实际应用
 
-　　下面使用mQuery来实现一个简单的效果
+&emsp;&emsp;下面使用mQuery来实现一个简单的效果
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;style&gt;
 div { width:60px; height:60px; margin:5px; float:left; }
 &lt;/style&gt;
@@ -577,8 +577,8 @@ $("div").click(function(){
 &lt;/script&gt; </pre>
 </div>
 
-　　点击不同颜色的元素块，将在右侧显示具体的颜色值
+&emsp;&emsp;点击不同颜色的元素块，将在右侧显示具体的颜色值
 
 <iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/jquery/base/b1.html" frameborder="0" width="320" height="240"></iframe>
 
-　　
+&emsp;&emsp;
