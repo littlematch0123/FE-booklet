@@ -1,20 +1,20 @@
 # jQuery文本内容
 
-　　在javascript中，[描述元素内容](http://www.cnblogs.com/xiaohuochai/p/5823716.html)有5个属性，分别是[innerHTML](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor1)、[outerHTML](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor2)、[innerText](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor3)、[outerText](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor4)和[textContent](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor5)。这5个属性各自有各自的功能，且兼容性不同。jQuery针对这样的处理提供了3个便捷的方法，分别是：html()、text()和val()。本文将详细介绍jQuery描述文本内容的这3个方法
+&emsp;&emsp;在javascript中，[描述元素内容](http://www.cnblogs.com/xiaohuochai/p/5823716.html)有5个属性，分别是[innerHTML](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor1)、[outerHTML](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor2)、[innerText](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor3)、[outerText](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor4)和[textContent](http://www.cnblogs.com/xiaohuochai/p/5823716.html#anchor5)。这5个属性各自有各自的功能，且兼容性不同。jQuery针对这样的处理提供了3个便捷的方法，分别是：html()、text()和val()。本文将详细介绍jQuery描述文本内容的这3个方法
 
 &nbsp;
 
 ### html()
 
-　　html()方法类似于javascript中的innerHTML属性，用来获取集合中第一个匹配元素的HTML内容或设置每一个匹配元素的html内容，具体有3种用法：
+&emsp;&emsp;html()方法类似于javascript中的innerHTML属性，用来获取集合中第一个匹配元素的HTML内容或设置每一个匹配元素的html内容，具体有3种用法：
 
 【1】html()
 
-　　html()不传入值可以用来获取集合中第一个匹配元素的HTML内容
+&emsp;&emsp;html()不传入值可以用来获取集合中第一个匹配元素的HTML内容
 
-　　[注意]与innerHTML属性的问题相同，IE8-浏览器会将所有标签转换成大写形式，且不包含空白文本节点；而其他浏览器则原样返回
+&emsp;&emsp;注意：与innerHTML属性的问题相同，IE8-浏览器会将所有标签转换成大写形式，且不包含空白文本节点；而其他浏览器则原样返回
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="test"&gt;
     &lt;div&gt;Demonstration Box&lt;/div&gt;
 &lt;/div&gt;
@@ -30,9 +30,9 @@ console.log($('.test').html());
 
 【2】html(htmlString)
 
-　　html(htmlString)方法设置每一个匹配元素的html内容，这些元素中的任何内容会完全被新的内容取代。此外，用新的内容替换这些元素前，jQuery从子元素删除其他结构，如数据和事件处理程序，这样可以防止内存溢出
+&emsp;&emsp;html(htmlString)方法设置每一个匹配元素的html内容，这些元素中的任何内容会完全被新的内容取代。此外，用新的内容替换这些元素前，jQuery从子元素删除其他结构，如数据和事件处理程序，这样可以防止内存溢出
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="demo-container"&gt;
   &lt;div class="demo-box"&gt;Demonstration Box&lt;/div&gt;
 &lt;/div&gt;
@@ -45,9 +45,9 @@ $('div.demo-container').html('123');
 
 【3】html(function(index, oldhtml))&nbsp;
 
-　　html(function(index, oldhtml))用来返回设置HTML内容的一个函数。接收元素的索引位置和元素原先的HTML作为参数。jQuery的调用这个函数之前会清空元素，使用oldhtml参数引用先前的内容。在这个函数中，this指向元素集合中的当前元素
+&emsp;&emsp;html(function(index, oldhtml))用来返回设置HTML内容的一个函数。接收元素的索引位置和元素原先的HTML作为参数。jQuery的调用这个函数之前会清空元素，使用oldhtml参数引用先前的内容。在这个函数中，this指向元素集合中的当前元素
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="demo-container"&gt;123&lt;/div&gt;
 &lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -60,9 +60,9 @@ $('div.demo-container').html(function(index,oldhtml) {
 
 **使用范围**
 
-　　与innerHTML属性相同，html()方法只能应用于双标签，单标签无效
+&emsp;&emsp;与innerHTML属性相同，html()方法只能应用于双标签，单标签无效
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;input id="test" value="123"&gt;
 &lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -75,13 +75,13 @@ console.log($('#test').html())//''
 
 ### text()
 
-　　text()方法类似于javascript中的innerText属性，得到匹配元素集合中每个元素的文本内容结合，包括他们的后代，或设置匹配元素集合中每个元素的文本内容为指定的文本内容，具体有3种用法：
+&emsp;&emsp;text()方法类似于javascript中的innerText属性，得到匹配元素集合中每个元素的文本内容结合，包括他们的后代，或设置匹配元素集合中每个元素的文本内容为指定的文本内容，具体有3种用法：
 
 【1】text()
 
-　　text()方法得到匹配元素集合中每个元素的合并文本，包括他们的后代
+&emsp;&emsp;text()方法得到匹配元素集合中每个元素的合并文本，包括他们的后代
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;p id="test"&gt;This is a &lt;i&gt;simple&lt;/i&gt; document&lt;/p&gt;
 &lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -89,7 +89,7 @@ console.log($('#test').html())//''
 console.log($('#test').text());
 &lt;/script&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div&gt;1&lt;/div&gt;
 &lt;div&gt;2&lt;/div&gt;
 &lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
@@ -101,9 +101,9 @@ console.log($('div').text());
 
 【2】text(textString)
 
-　　text(textString)用来设置匹配元素集合中每个元素的文本内容为指定的文本内容
+&emsp;&emsp;text(textString)用来设置匹配元素集合中每个元素的文本内容为指定的文本内容
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;p id="test"&gt;This is a &lt;i&gt;simple&lt;/i&gt; document&lt;/p&gt;
 &lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -115,9 +115,9 @@ console.log($('#test').text());
 
 【3】text(function(index, text))
 
-　　text(function(index, text))方法通过使用一个函数来设置文本内容，该函数接收元素的索引位置和文本值作为参数，返回设置的文本内容
+&emsp;&emsp;text(function(index, text))方法通过使用一个函数来设置文本内容，该函数接收元素的索引位置和文本值作为参数，返回设置的文本内容
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;p id="test"&gt;This is a &lt;i&gt;simple&lt;/i&gt; document&lt;/p&gt;
 &lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -129,9 +129,9 @@ console.log($('#test').text());
 &lt;/script&gt;</pre>
 </div>
 
-　　该方法常用于数据初始化，使用html()方法也可以实现同样效果
+&emsp;&emsp;该方法常用于数据初始化，使用html()方法也可以实现同样效果
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;ul&gt;
     &lt;li&gt;&lt;/li&gt;
     &lt;li&gt;&lt;/li&gt;
@@ -151,11 +151,11 @@ console.log($('li').html());
 
 **使用范围**
 
-　　与innerText属性相同，text()方法不能使用在input元素。在IE8-浏览器下，text()方法不能使用在script元素上
+&emsp;&emsp;与innerText属性相同，text()方法不能使用在input元素。在IE8-浏览器下，text()方法不能使用在script元素上
 
-　　input元素可以使用val()方法获取或设置文本值；script元素可以使用html()方法
+&emsp;&emsp;input元素可以使用val()方法获取或设置文本值；script元素可以使用html()方法
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;input id="test1" value="123"&gt;
 &lt;script id="test2"&gt;
 var a = 1;
@@ -174,13 +174,13 @@ console.log($('#test2').html());//'var a = 1;'
 
 ### val()
 
-　　val()方法类似于javascript中的value属性，主要是用于处理表单元素的值，用于获取匹配的元素集合中第一个元素的当前值或设置匹配的元素集合中每个元素的值
+&emsp;&emsp;val()方法类似于javascript中的value属性，主要是用于处理表单元素的值，用于获取匹配的元素集合中第一个元素的当前值或设置匹配的元素集合中每个元素的值
 
 **val()**
 
-　　当val()方法没有参数时，表示获取元素的value值
+&emsp;&emsp;当val()方法没有参数时，表示获取元素的value值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;input id="test" value="text"&gt;
 &lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -188,9 +188,9 @@ console.log($('#test').val());//'text'
 &lt;/script&gt;</pre>
 </div>
 
-　　[注意]通过val()方法从textarea元素中取得的值是不含有回车(\r)字符的。但是如果该值是通过XHR传递给服务器的，回车(\r)字符会被保留(或者是被浏览器添加的，但是在原始数据中并不包含回车(\r))。可以使用下面的valHook方法解决这个问题
+&emsp;&emsp;注意：通过val()方法从textarea元素中取得的值是不含有回车(\r)字符的。但是如果该值是通过XHR传递给服务器的，回车(\r)字符会被保留(或者是被浏览器添加的，但是在原始数据中并不包含回车(\r))。可以使用下面的valHook方法解决这个问题
 
-<div class="cnblogs_code">
+<div>
 <pre>$.valHooks.textarea = {
   get: function(elem){
     return elem.value.replace(/\r?\n/g,"\r\n");
@@ -198,9 +198,9 @@ console.log($('#test').val());//'text'
 };</pre>
 </div>
 
-　　val()方法主要用于获取表单元素的值，比如input，select和textarea。对 &lt;select multiple="multiple"&gt;元素，val()方法返回一个包含每个选择项的数组，如果没有选择性被选中，它返回null
+&emsp;&emsp;val()方法主要用于获取表单元素的值，比如input，select和textarea。对 &lt;select multiple="multiple"&gt;元素，val()方法返回一个包含每个选择项的数组，如果没有选择性被选中，它返回null
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;textarea id="test1"&gt;1&lt;/textarea&gt;
 &lt;input id="test2" value="2"&gt;
 &lt;select id="test3"&gt;
@@ -216,9 +216,9 @@ console.log($('#test3').val());//3
 
 **val(value)**
 
-　　val(value)用来设置表单元素的value值
+&emsp;&emsp;val(value)用来设置表单元素的value值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;input id="test" value="2"&gt;
 &lt;button id="btn"&gt;按钮&lt;/button&gt;
 &lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
@@ -234,9 +234,9 @@ btn.onclick = function(){
 
 **val(function(index, value))**
 
-　　val()方法可以接受一个函数作为参数，函数中的this指向当前元素。接收的集合中的元素，旧的值作为参数的索引位置，返回设置的值
+&emsp;&emsp;val()方法可以接受一个函数作为参数，函数中的this指向当前元素。接收的集合中的元素，旧的值作为参数的索引位置，返回设置的值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;input id="test" value="2"&gt;
 &lt;button id="btn"&gt;按钮&lt;/button&gt;
 &lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
@@ -255,10 +255,10 @@ btn.onclick = function(){
 
 ### 总结
 
-　　html()、text()、val()三种方法都是用来读取选定元素的内容；html()是用来读取元素的html内容，text()用来读取元素的纯文本内容，val()是用来读取表单元素的value值。其中html()和text()方法不能使用在表单元素上，而val()只能使用在表单元素上
+&emsp;&emsp;html()、text()、val()三种方法都是用来读取选定元素的内容；html()是用来读取元素的html内容，text()用来读取元素的纯文本内容，val()是用来读取表单元素的value值。其中html()和text()方法不能使用在表单元素上，而val()只能使用在表单元素上
 
-　　html()和val()方法使用在多个元素上时，只读取第一个元素；而text()方法应用在多个元素上时，将会读取所有选中元素的文本内容
+&emsp;&emsp;html()和val()方法使用在多个元素上时，只读取第一个元素；而text()方法应用在多个元素上时，将会读取所有选中元素的文本内容
 
-　　html(htmlString)、text(textString)和val(value)三种方法都是用来替换选中元素的内容，如果三个方法同时运用在多个元素上时，那么将会替换所有选中元素的内容
+&emsp;&emsp;html(htmlString)、text(textString)和val(value)三种方法都是用来替换选中元素的内容，如果三个方法同时运用在多个元素上时，那么将会替换所有选中元素的内容
 
-　　html()、text()、val()都可以使用回调函数的返回值来动态改变多个元素的内容
+&emsp;&emsp;html()、text()、val()都可以使用回调函数的返回值来动态改变多个元素的内容
