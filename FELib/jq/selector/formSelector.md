@@ -1,6 +1,6 @@
 # jQuery表单选择器
 
-　　无论是提交还是传递数据，表单元素在动态交互页面的作用是非常重要的。jQuery专门加入了表单选择器，从而能够极其方便地获取到某个类型的表单元素
+&emsp;&emsp;无论是提交还是传递数据，表单元素在动态交互页面的作用是非常重要的。jQuery专门加入了表单选择器，从而能够极其方便地获取到某个类型的表单元素
 
 &nbsp;
 
@@ -8,49 +8,49 @@
 
 **:input**
 
-　　:input选择器选择input、textarea、select和button元素　　
+&emsp;&emsp;:input选择器选择input、textarea、select和button元素
 
 **:text**
 
-　:text选择器选择所有的单行文本框　
+&emsp;&emsp;:text选择器选择所有的单行文本框
 
 **:password**
 
-　　:password选择器选择所有的密码框
+&emsp;&emsp;:password选择器选择所有的密码框
 
 **:radio**
 
-　　:radio选择器选择所有的单选框
+&emsp;&emsp;:radio选择器选择所有的单选框
 
 **:checkbox**
 
-　　:checkbox选择器选择所有的多选框
+&emsp;&emsp;:checkbox选择器选择所有的多选框
 
 **:submit**
 
-　　:submit选择器选择所有的提交按钮
+&emsp;&emsp;:submit选择器选择所有的提交按钮
 
 **:image**
 
-　　:image选择器选择所有的图像按钮
+&emsp;&emsp;:image选择器选择所有的图像按钮
 
 **:reset**
 
-　　:reset选择器选择所有的重置按钮
+&emsp;&emsp;:reset选择器选择所有的重置按钮
 
 **:button**
 
-　　:button选择器选择所有的按钮
+&emsp;&emsp;:button选择器选择所有的按钮
 
 **:file**
 
-　　:file选择器选择所有的文件上传域
+&emsp;&emsp;:file选择器选择所有的文件上传域
 
-　　[注意]大部分表单类别筛选器可以使用属性筛选器替换
+&emsp;&emsp;注意：大部分表单类别筛选器可以使用属性筛选器替换
 
-　　':password'可以写为'[type=password]'
+&emsp;&emsp;':password'可以写为'[type=password]'
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn1" style="color: red;"&gt;$(':input')&lt;/button&gt;
 &lt;button id="btn2" style="color: #A2CD5A;"&gt;$(':text')&lt;/button&gt;
 &lt;button id="btn3" style="color: yellow;"&gt;$(':password')&lt;/button&gt;
@@ -94,13 +94,13 @@ btn10.onclick = function(){$(':reset').css("background", "pink"); }
 
 **:enabled**
 
-　　:enabled选择器选择可用的表单元素
+&emsp;&emsp;:enabled选择器选择可用的表单元素
 
 **:disabled**
 
-　　:disabled选择器选择不可用的表单元素
+&emsp;&emsp;:disabled选择器选择不可用的表单元素
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn1" style="color: red;"&gt;$(':enabled')&lt;/button&gt;
 &lt;button id="btn2" style="color: #A2CD5A;"&gt;$(':disabled')&lt;/button&gt;
 &lt;button id="reset"&gt;还原&lt;/button&gt;
@@ -121,9 +121,9 @@ btn2.onclick = function(){ $(':disabled').css("background", "#A2CD5A");}
 
 **:checked**
 
-　　:checked选择器选择被选中的&lt;input&gt;元素(单选框、复选框)
+&emsp;&emsp;:checked选择器选择被选中的&lt;input&gt;元素(单选框、复选框)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn1"&gt;$(':checked')&lt;/button&gt;
 &lt;button id="reset"&gt;还原&lt;/button&gt;
 &lt;form&gt;
@@ -142,9 +142,9 @@ btn1.onclick = function(){$(':checked').removeAttr('checked')}
 
 **:selected**
 
-　　:selected选择器选择被选中的&lt;option&gt;元素(下拉列表)
+&emsp;&emsp;:selected选择器选择被选中的&lt;option&gt;元素(下拉列表)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button id="btn1"&gt;$(':selected')&lt;/button&gt;
 &lt;button id="reset"&gt;还原&lt;/button&gt;
 &lt;select  multiple&gt;
