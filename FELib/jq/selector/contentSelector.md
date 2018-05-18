@@ -11,7 +11,6 @@
 <div>
 <pre>//返回所有文本内容包含'test'的元素
 $(':contains("test")')
-
 //返回所有文本内容包含'test'的span元素
 $('span:contains("test")')</pre>
 </div>
@@ -104,7 +103,6 @@ for(var i = 0; i &lt; divs.length; i++){
 <pre>&lt;style&gt; 
 div div{height: 20px;width: 20px;}
 &lt;/style&gt;
-
 &lt;button id="btn1" style="color: red;"&gt;$('div :empty')&lt;/button&gt;
 &lt;button id="btn2" style="color: blue;"&gt;$('div :parent')&lt;/button&gt;
 &lt;button id="reset"&gt;还原&lt;/button&gt;
