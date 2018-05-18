@@ -1,16 +1,16 @@
 # jQuery事件对象
 
-　　在触发DOM上的某个事件时，会产生一个[事件对象event](http://www.cnblogs.com/xiaohuochai/p/5862775.html)，这个对象中包含着所有与事件有关的信息。所有浏览器都支持event对象，但支持方式不同。jQuery在遵循W3C规范的情况下，对事件对象的常用属性进行了封装，使得事件处理在各个浏览器下都可以正常运行而不需要进行浏览器类型判断，本文将详细介绍jQuery事件对象
+&emsp;&emsp;在触发DOM上的某个事件时，会产生一个[事件对象event](http://www.cnblogs.com/xiaohuochai/p/5862775.html)，这个对象中包含着所有与事件有关的信息。所有浏览器都支持event对象，但支持方式不同。jQuery在遵循W3C规范的情况下，对事件对象的常用属性进行了封装，使得事件处理在各个浏览器下都可以正常运行而不需要进行浏览器类型判断，本文将详细介绍jQuery事件对象
 
 &nbsp;
 
 ### 获取
 
-　　对于DOM事件对象来说，标准浏览器和IE8-浏览器的事件对象获取方式不一致。标准浏览器的事件对象是事件处理程序中的第一个参数，而IE8-浏览器的事件对象是直接使用event变量
+&emsp;&emsp;对于DOM事件对象来说，标准浏览器和IE8-浏览器的事件对象获取方式不一致。标准浏览器的事件对象是事件处理程序中的第一个参数，而IE8-浏览器的事件对象是直接使用event变量
 
-　　jQuery采用了标准写法，并兼容低版本IE浏览器&nbsp;
+&emsp;&emsp;jQuery采用了标准写法，并兼容低版本IE浏览器&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;div id="box" style="height:30px;width:200px;background:pink;"&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -24,9 +24,9 @@ $('#box').click(function(event){
 
 ### 事件类型
 
-　　事件有很多类型，事件对象中的type属性表示被触发的事件的类型
+&emsp;&emsp;事件有很多类型，事件对象中的type属性表示被触发的事件的类型
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;div id="box" style="height:30px;width:200px;background:pink;"&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -40,9 +40,9 @@ $('#box').on('click mouseover mouseout',function(event){
 
 ### 事件目标
 
-　　事件目标target属性返回事件当前所在的节点，即正在执行的监听函数所绑定的那个节点
+&emsp;&emsp;事件目标target属性返回事件当前所在的节点，即正在执行的监听函数所绑定的那个节点
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;ul id="box"&gt;
     &lt;li class="in"&gt;1&lt;/li&gt;
@@ -62,9 +62,9 @@ $('#box').on('mouseout',function(event){
 
 ### 当前元素
 
-　　currentTarget属性始终指向事件绑定的当前DOM元素，与this值始终相等
+&emsp;&emsp;currentTarget属性始终指向事件绑定的当前DOM元素，与this值始终相等
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;ul id="box"&gt;
     &lt;li class="in"&gt;1&lt;/li&gt;
@@ -84,13 +84,13 @@ $('#box').on('mouseout',function(event){
 
 ### 事件冒泡
 
-　　[DOM事件流](http://www.cnblogs.com/xiaohuochai/p/5859476.html)分为三个阶段：事件捕获、处于目标和事件冒泡，由于IE8-浏览器不支持事件捕获。jQuery也不支持事件捕获
+&emsp;&emsp;[DOM事件流](http://www.cnblogs.com/xiaohuochai/p/5859476.html)分为三个阶段：事件捕获、处于目标和事件冒泡，由于IE8-浏览器不支持事件捕获。jQuery也不支持事件捕获
 
 **stopPropagation()**
 
-　　jQuery采用标准写法stopPropagation()来实现阻止事件冒泡
+&emsp;&emsp;jQuery采用标准写法stopPropagation()来实现阻止事件冒泡
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;button id="btn1"&gt;按钮&lt;/button&gt;
 &lt;button id="btn2"&gt;阻止冒泡&lt;/button&gt;
@@ -114,9 +114,9 @@ $('#btn2').on('click',function(event){
 
 **isPropagationStopped()**
 
-　　event.isPropagationStopped()方法用来检测事件对象中是否调用过event.stopPropagation()
+&emsp;&emsp;event.isPropagationStopped()方法用来检测事件对象中是否调用过event.stopPropagation()
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;div id="box" style="height: 30px;background:lightblue"&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -132,9 +132,9 @@ $('#box').click(function(event){
 
 **stopImmediatePropagation()**
 
-　　stopImmediatePropagation()方法不仅可以取消事件的进一步冒泡，而且可以阻止同一个事件的其他监听函数被调用
+&emsp;&emsp;stopImmediatePropagation()方法不仅可以取消事件的进一步冒泡，而且可以阻止同一个事件的其他监听函数被调用
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;button id="btn1"&gt;按钮一&lt;/button&gt;
 &lt;button id="btn2"&gt;按钮二&lt;/button&gt;
@@ -163,9 +163,9 @@ $(document).on('click',function(){
 
 **isImmediatePropagationStopped()**
 
-　　isImmediatePropagationStopped()方法用来检测事件对象中是否调用过stopImmediatePropagation()
+&emsp;&emsp;isImmediatePropagationStopped()方法用来检测事件对象中是否调用过stopImmediatePropagation()
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;div id="box" style="height: 30px;background:lightblue"&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -181,9 +181,9 @@ $('#box').click(function(event){
 
 ### 默认行为
 
-　　jQuery使用event.preventDefault()方法来阻止默认行为
+&emsp;&emsp;jQuery使用event.preventDefault()方法来阻止默认行为
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;div id="box" style="height: 30px;background:lightblue"&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -197,9 +197,9 @@ $('#box').contextmenu(function(event){
 
 **isDefaultPrevented()**
 
-　　event.isDefaultPrevented()方法可以用来检测当前事件是否阻止默认行为
+&emsp;&emsp;event.isDefaultPrevented()方法可以用来检测当前事件是否阻止默认行为
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;div id="box" style="height: 30px;background:lightblue"&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -215,9 +215,9 @@ $('#box').contextmenu(function(event){
 
 ### 命名空间
 
-　　event.namespace属性返回事件的命名空间
+&emsp;&emsp;event.namespace属性返回事件的命名空间
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;div id="box" style="height: 30px;background:lightblue"&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -234,11 +234,11 @@ $('#box').click(function(){
 
 ### 返回值
 
-　　event.result是事件被触发的一个事件处理程序的最后返回值
+&emsp;&emsp;event.result是事件被触发的一个事件处理程序的最后返回值
 
-　　[注意]当使用return false时，既可以阻止冒泡，也可以阻止默认行为
+&emsp;&emsp;注意：当使用return false时，既可以阻止冒泡，也可以阻止默认行为
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;div id="box" style="height: 30px;background:lightblue"&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -255,11 +255,11 @@ $('#box').click(function(event){
 
 ### 键值
 
-　　鼠标事件中需要判断左键、右键还是滚轮。键盘事件中需要判断按下键盘的哪个按键
+&emsp;&emsp;鼠标事件中需要判断左键、右键还是滚轮。键盘事件中需要判断按下键盘的哪个按键
 
-　　jQuery使用事件对象event.whitch属性来确定鼠标事件和键盘事件键值
+&emsp;&emsp;jQuery使用事件对象event.whitch属性来确定鼠标事件和键盘事件键值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;button id="box" style="height: 30px;width: 50px;background:lightblue"&gt;按钮&lt;/button&gt;
 &lt;script&gt;
