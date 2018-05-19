@@ -1,18 +1,18 @@
 # Bootstrap选项卡
 
-　　选项卡Tabs是Web中一种非常常用的功能。用户点击对菜单项，能切换出对应的内容。本文将详细介绍Bootstrap选项卡
+&emsp;&emsp;选项卡Tabs是Web中一种非常常用的功能。用户点击对菜单项，能切换出对应的内容。本文将详细介绍Bootstrap选项卡
 
 ### 基本用法
 
-　　Bootstrap框架中的选项卡主要有两部分内容组成：
+&emsp;&emsp;Bootstrap框架中的选项卡主要有两部分内容组成：
 
-　　1、选项卡菜单组件，对应的是 Bootstrap的&nbsp;nav-tabs
+&emsp;&emsp;1、选项卡菜单组件，对应的是 Bootstrap的&nbsp;nav-tabs
 
-　　2、可以切换的选项卡面板组件，在 Bootstrap 中通常&nbsp;tab-pane&nbsp;来表示
+&emsp;&emsp;2、可以切换的选项卡面板组件，在 Bootstrap 中通常&nbsp;tab-pane&nbsp;来表示
 
-　　在Bootstrap框架中选项卡nav-tabs已带有样式，而对于面板内容tab-pane都是隐藏的，只有当前面板内容才是显示的
+&emsp;&emsp;在Bootstrap框架中选项卡nav-tabs已带有样式，而对于面板内容tab-pane都是隐藏的，只有当前面板内容才是显示的
 
-<div class="cnblogs_code">
+<div>
 <pre>.tab-content &gt; .tab-pane {
     display: none;
 }
@@ -21,15 +21,15 @@
 }</pre>
 </div>
 
-　　选项卡定义data属性来触发切换效果。当然前提要先加载bootstrap.js或者是tab.js。声明式触发选项卡需要满足以下几点要求：
+&emsp;&emsp;选项卡定义data属性来触发切换效果。当然前提要先加载bootstrap.js或者是tab.js。声明式触发选项卡需要满足以下几点要求：
 
-　　1、选项卡导航链接中要设置&nbsp;data-toggle="tab"
+&emsp;&emsp;1、选项卡导航链接中要设置&nbsp;data-toggle="tab"
 
-　　2、并且设置&nbsp;data-target="对应内容面板的选择符(一般是ID)"；如果是链接的话，还可以通过&nbsp;href="对应内容面板的选择符(一般是ID)"，主要作用是用户点击的时候能找到该选择符所对应的面板内容 tab-pane。
+&emsp;&emsp;2、并且设置&nbsp;data-target="对应内容面板的选择符(一般是ID)"；如果是链接的话，还可以通过&nbsp;href="对应内容面板的选择符(一般是ID)"，主要作用是用户点击的时候能找到该选择符所对应的面板内容 tab-pane。
 
-　　3、面板内容统一放在 tab-content 容器中，而且每个内容面板 tab-pane 都需要设置一个独立的选择符（最好是ID）与选项卡中的&nbsp;data-target&nbsp;或&nbsp;href&nbsp;的值匹配
+&emsp;&emsp;3、面板内容统一放在 tab-content 容器中，而且每个内容面板 tab-pane 都需要设置一个独立的选择符（最好是ID）与选项卡中的&nbsp;data-target&nbsp;或&nbsp;href&nbsp;的值匹配
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- 选项卡菜单--&gt;
 &lt;ul id="myTab" class="nav nav-tabs" role="tablist"&gt;
     &lt;li class="active"&gt;&lt;a href="#bulletin" role="tab" data-toggle="tab"&gt;公告&lt;/a&gt;&lt;/li&gt;
@@ -52,11 +52,11 @@
 
 【渐入效果】
 
-　　为了让面板的隐藏与显示在切换的过程效果更流畅，可以在面板中添加类名&nbsp;fade，让其产生渐入的效果。
+&emsp;&emsp;为了让面板的隐藏与显示在切换的过程效果更流畅，可以在面板中添加类名&nbsp;fade，让其产生渐入的效果。
 
-　　在添加 fade 样式时，最初的默认显示的内容面板一定要加上&nbsp;in&nbsp;类名，不然用户无法看到其内容
+&emsp;&emsp;在添加 fade 样式时，最初的默认显示的内容面板一定要加上&nbsp;in&nbsp;类名，不然用户无法看到其内容
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- 选项卡菜单--&gt;
 &lt;ul id="myTab" class="nav nav-tabs" role="tablist"&gt;
     &lt;li class="active"&gt;&lt;a href="#bulletin" role="tab" data-toggle="tab"&gt;公告&lt;/a&gt;&lt;/li&gt;
@@ -79,9 +79,9 @@
 
 【胶囊式选项卡】
 
-　　在Bootstrap除了可以让&nbsp;nav-tabs&nbsp;具有选项卡的切换功能之外，还可以让胶囊式&nbsp;nav-pills&nbsp;导航也具有选项卡的功能。只需要将 nav-tabs 换成 nav-pills，另外关键一点是将&nbsp;`data-toggle="tab"`换成`data-toggle="pill"`
+&emsp;&emsp;在Bootstrap除了可以让&nbsp;nav-tabs&nbsp;具有选项卡的切换功能之外，还可以让胶囊式&nbsp;nav-pills&nbsp;导航也具有选项卡的功能。只需要将 nav-tabs 换成 nav-pills，另外关键一点是将&nbsp;`data-toggle="tab"`换成`data-toggle="pill"`
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- 选项卡菜单--&gt;
 &lt;ul id="myTab" class="nav nav-pills" role="tablist"&gt;
     &lt;li class="active"&gt;&lt;a href="#bulletin" role="tab" data-toggle="pill"&gt;公告&lt;/a&gt;&lt;/li&gt;
@@ -106,11 +106,11 @@
 
 ### JS触发
 
-　　除了在HTML设置 data-toggle 来触发选项卡之外，还可以通过JavaScript直接调用。
+&emsp;&emsp;除了在HTML设置 data-toggle 来触发选项卡之外，还可以通过JavaScript直接调用。
 
-　　在每个链接的单击事件中调用`tab("show")`方法，显示对应的标签面板内容。针对上面的示例，删除HTML中自定义的 data-toggle="tab" 或 data-toggle="pill" 的属性，然后通过下面的脚本来调用
+&emsp;&emsp;在每个链接的单击事件中调用`tab("show")`方法，显示对应的标签面板内容。针对上面的示例，删除HTML中自定义的 data-toggle="tab" 或 data-toggle="pill" 的属性，然后通过下面的脚本来调用
 
-<div class="cnblogs_code">
+<div>
 <pre>$(function(){
     $("#myTab a").click(function(e){
         e.preventDefault();
@@ -118,7 +118,7 @@
     });
 })</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- 选项卡菜单--&gt;
 &lt;ul id="myTab" class="nav nav-pills" role="tablist"&gt;
     &lt;li class="active"&gt;&lt;a href="#bulletin" role="tab"&gt;公告&lt;/a&gt;&lt;/li&gt;
@@ -149,13 +149,13 @@ $(function(){
 
 【事件订阅】
 
-<div class="cnblogs_code">
+<div>
 <pre>show.bs.tab        show方法调用之后立即触发该事件
-shown.bs.tab   　　 此事件在tab已经显示出来（并且同时在 CSS 过渡效果完成）之后被触发
+shown.bs.tab   &emsp;&emsp; 此事件在tab已经显示出来（并且同时在 CSS 过渡效果完成）之后被触发
 hide.bs.tab        hide方法调用之后立即触发该事件。
 hidden.bs.tab    　此事件在tab被隐藏（并且同时在 CSS 过渡效果完成）之后被触发</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- 选项卡菜单--&gt;
 &lt;ul id="myTab" class="nav nav-pills" role="tablist"&gt;
     &lt;li class="active"&gt;&lt;a href="#bulletin" role="tab"&gt;公告&lt;/a&gt;&lt;/li&gt;
@@ -195,9 +195,9 @@ $(function(){
 
 【1】IIFE
 
-　　使用立即调用函数，防止插件内代码外泄，从而形成一个闭环，并且只能从jQuery的fn里进行扩展
+&emsp;&emsp;使用立即调用函数，防止插件内代码外泄，从而形成一个闭环，并且只能从jQuery的fn里进行扩展
 
-<div class="cnblogs_code">
+<div>
 <pre>+function ($) {
     //使用es5严格模式
     'use strict';
@@ -207,7 +207,7 @@ $(function(){
 
 【2】初始设置
 
-<div class="cnblogs_code">
+<div>
 <pre>  var Tab = function (element) {
     //指定当前元素
     this.element = $(element)
@@ -330,7 +330,7 @@ $(function(){
 
 【4】jQuery插件定义
 
-<div class="cnblogs_code">
+<div>
 <pre>  function Plugin(option) {
     //根据选择器，遍历所有符合规则的元素
     return this.each(function () {
@@ -352,7 +352,7 @@ $(function(){
 
 【5】防冲突处理
 
-<div class="cnblogs_code">
+<div>
 <pre>  $.fn.tab.noConflict = function () {
      //恢复以前的旧代码
     $.fn.tab = old
@@ -363,14 +363,13 @@ $(function(){
 
 【6】绑定触发事件
 
-<div class="cnblogs_code">
+<div>
 <pre>  var clickHandler = function (e) {
     //阻止默认行为
     e.preventDefault()
     //触发show()方法
     Plugin.call($(this), 'show')
   }
-
   $(document)
     //在document上绑定单击事件
     .on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler)
