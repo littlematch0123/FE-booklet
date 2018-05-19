@@ -1,28 +1,28 @@
 # Bootstrap滚动监控器
 
-　　滚动监听插件是用来根据滚动条所处的位置来自动更新导航项的。滚动导航条下面的区域并关注导航项的变化，下拉菜单中的条目也会自动高亮显示。本文将详细介绍Bootstrap滚动监控器
+&emsp;&emsp;滚动监听插件是用来根据滚动条所处的位置来自动更新导航项的。滚动导航条下面的区域并关注导航项的变化，下拉菜单中的条目也会自动高亮显示。本文将详细介绍Bootstrap滚动监控器
 
 &nbsp;
 
 ### 基本用法
 
-　　滚动监听插件是根据滚动的位置自动更新导航条中相应的导航项的，该插件可自动检测到达哪个位置了，然后在需要高亮的菜单父元素上加了一个active样式
+&emsp;&emsp;滚动监听插件是根据滚动的位置自动更新导航条中相应的导航项的，该插件可自动检测到达哪个位置了，然后在需要高亮的菜单父元素上加了一个active样式
 
-　　如果导航里有下拉菜单，并且滚动区域的内容到达下拉菜单子项所对应的区域，除了子菜单高亮之外，子菜单的父元素(dropdown按钮)也会高亮
+&emsp;&emsp;如果导航里有下拉菜单，并且滚动区域的内容到达下拉菜单子项所对应的区域，除了子菜单高亮之外，子菜单的父元素(dropdown按钮)也会高亮
 
-　　在平时使用的过程中，滚动监听一般有两种用法，一种是固定一个元素的高度，进行滚动，然后对相应的菜单进行高亮显示；另外一种是对整个页面(body)进行滚动监听。两种方式的用法一样，都需要有如下3个步骤：
+&emsp;&emsp;在平时使用的过程中，滚动监听一般有两种用法，一种是固定一个元素的高度，进行滚动，然后对相应的菜单进行高亮显示；另外一种是对整个页面(body)进行滚动监听。两种方式的用法一样，都需要有如下3个步骤：
 
-　　1、设置滚动容器，即在所要监听的元素上设置data-target="#selector" data-spy="scroll"属性
+&emsp;&emsp;1、设置滚动容器，即在所要监听的元素上设置data-target="#selector" data-spy="scroll"属性
 
-　　2、设置菜单链接容器，该容器的id(或样式)和data-target属性所对应的选择符要一致
+&emsp;&emsp;2、设置菜单链接容器，该容器的id(或样式)和data-target属性所对应的选择符要一致
 
-　　3、在菜单容器内，必须有.nav样式的元素，并且在其内容有li元素，li内包含的a元素也是可以侦测高亮的菜单链接，即符合.nav li &gt; a这种选择符的条件
+&emsp;&emsp;3、在菜单容器内，必须有.nav样式的元素，并且在其内容有li元素，li内包含的a元素也是可以侦测高亮的菜单链接，即符合.nav li &gt; a这种选择符的条件
 
-　　4、无论何种实现方式，滚动监听都需要被监听的组件是&nbsp;`position: relative;`&nbsp;即相对定位方式
+&emsp;&emsp;4、无论何种实现方式，滚动监听都需要被监听的组件是&nbsp;`position: relative;`&nbsp;即相对定位方式
 
 【固定元素高度】
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation" style="position:relative"&gt;
      &lt;ul class="nav navbar-nav"&gt;
         &lt;li&gt;&lt;a href="#html" tabindex="-1"&gt;HTML&lt;/a&gt;&lt;/li&gt;
@@ -47,7 +47,7 @@
 
 【body元素】
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body data-spy="scroll" data-target="#myNavbar" style="height:300px;position:relative"&gt;
 &lt;div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation"&gt;
      &lt;ul class="nav navbar-nav"&gt;
@@ -74,9 +74,9 @@
 
 ### JS调用
 
-　　在Bootstrap框架中，使用JavaScript方法触发滚动监控器相对来说较为简单，只需要指定两个容器的名称即可
+&emsp;&emsp;在Bootstrap框架中，使用JavaScript方法触发滚动监控器相对来说较为简单，只需要指定两个容器的名称即可
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation"&gt;
      &lt;ul class="nav navbar-nav"&gt;
         &lt;li&gt;&lt;a href="#html" tabindex="-1"&gt;HTML&lt;/a&gt;&lt;/li&gt;
@@ -106,30 +106,30 @@ $('#scrollspy').scrollspy({ target: '#myNavbar' })
 
 ### 方法
 
-　　当使用滚动监听插件的同时在 DOM 中添加或删除元素后，需要像下面这样调用此刷新（ refresh） 方法&nbsp;
+&emsp;&emsp;当使用滚动监听插件的同时在 DOM 中添加或删除元素后，需要像下面这样调用此刷新（ refresh） 方法&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>$('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 })</pre>
 </div>
 
-　　要注意的是，这种refresh方法只对声明式用法有效。如果使用的是JS触发，并且需要刷新DOM，则需要重新应用该插件；或者从data-scrollspy属性上获取该实例，然后再调用refresh方法
+&emsp;&emsp;要注意的是，这种refresh方法只对声明式用法有效。如果使用的是JS触发，并且需要刷新DOM，则需要重新应用该插件；或者从data-scrollspy属性上获取该实例，然后再调用refresh方法
 
 【参数】
 
-　　可以通过 data 属性或 JavaScript 传递参数。对于 data 属性，其名称是将参数名附着到&nbsp;`data-`&nbsp;后面组成，例如&nbsp;`data-offset=""`
+&emsp;&emsp;可以通过 data 属性或 JavaScript 传递参数。对于 data 属性，其名称是将参数名附着到&nbsp;`data-`&nbsp;后面组成，例如&nbsp;`data-offset=""`
 
-　　滚动监控提供了一个offset参数，此参数默认值为10。默认情况下，滚动内容距离滚动容器10px以内的话，就高亮显示所对应的菜单项
+&emsp;&emsp;滚动监控提供了一个offset参数，此参数默认值为10。默认情况下，滚动内容距离滚动容器10px以内的话，就高亮显示所对应的菜单项
 
 【事件】
 
-　　滚动监控也支持事件的订阅和触发功能，目前只支持一个activate事件
+&emsp;&emsp;滚动监控也支持事件的订阅和触发功能，目前只支持一个activate事件
 
-<div class="cnblogs_code">
+<div>
 <pre>activate.bs.scrollspy    每当一个新条目被激活后都将由滚动监听插件触发此事件。</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation"&gt;
      &lt;ul class="nav navbar-nav"&gt;
         &lt;li&gt;&lt;a href="#html" tabindex="-1"&gt;HTML&lt;/a&gt;&lt;/li&gt;
@@ -166,9 +166,9 @@ $(function(){
 
 【1】IIFE
 
-　　使用立即调用函数，防止插件内代码外泄，从而形成一个闭环，并且只能从jQuery的fn里进行扩展
+&emsp;&emsp;使用立即调用函数，防止插件内代码外泄，从而形成一个闭环，并且只能从jQuery的fn里进行扩展
 
-<div class="cnblogs_code">
+<div>
 <pre>+function ($) {
     //使用es5严格模式
     'use strict';
@@ -178,7 +178,7 @@ $(function(){
 
 【2】初始设置
 
-<div class="cnblogs_code">
+<div>
 <pre>  function ScrollSpy(element, options) {
     this.$body          = $(document.body)
     //判断滚动容器是否是body，如果是则使用window，如果不是则使用该元素本身
@@ -216,12 +216,10 @@ $(function(){
     //获取特定滚动容器的滚动高度，如果没有则获取body元素的滚动高度
     return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
   }
-
   ScrollSpy.prototype.refresh = function () {
     var that          = this
     var offsetMethod  = 'offset'
     var offsetBase    = 0
-
     this.offsets      = []
     this.targets      = []
     this.scrollHeight = this.getScrollHeight()
@@ -351,7 +349,7 @@ $(function(){
 
 【5】防冲突处理
 
-<div class="cnblogs_code">
+<div>
 <pre>  $.fn.scrollspy.noConflict = function () {
      //恢复以前的旧代码
     $.fn.scrollspy = old
@@ -362,7 +360,7 @@ $(function(){
 
 【6】绑定触发事件
 
-<div class="cnblogs_code">
+<div>
 <pre>  $(window).on('load.bs.scrollspy.data-api', function () {
     //遍历所有符合条件的滚动容器
     $('[data-spy="scroll"]').each(function () {
