@@ -1,31 +1,31 @@
 # Bootstrap提示框
 
-　　提示框是一个比较常见的功能，一般来说是鼠标移动到特定元素上时，显示相关的提示语。本文将详细介绍Bootstrap提示框
+&emsp;&emsp;提示框是一个比较常见的功能，一般来说是鼠标移动到特定元素上时，显示相关的提示语。本文将详细介绍Bootstrap提示框
 
 &nbsp;
 
 ### 基本用法
 
-　　Bootstrap框架中的提示框，结构非常简单，常常使用的是按钮&lt;button&gt;标签或者链接&lt;a&gt;标签来制作。不管是使用按钮还是链接来制作提示框，他们都需要满足下列条件：
+&emsp;&emsp;Bootstrap框架中的提示框，结构非常简单，常常使用的是按钮&lt;button&gt;标签或者链接&lt;a&gt;标签来制作。不管是使用按钮还是链接来制作提示框，他们都需要满足下列条件：
 
-　　1、通过&nbsp;title&nbsp;属性的值来定义提示信息(也可以使用自定义属性&nbsp;data-original-title&nbsp;来设置提示信息)，title属性的优先级高
+&emsp;&emsp;1、通过&nbsp;title&nbsp;属性的值来定义提示信息(也可以使用自定义属性&nbsp;data-original-title&nbsp;来设置提示信息)，title属性的优先级高
 
-　　2、通过&nbsp;data-placement&nbsp;自定义属性来控制提示信息框的位置，根据四种不同的位置，data-placement具有四个值：top、right、bottom和left，分别表示提示框出现的位置在顶部、右边、底部和左边
+&emsp;&emsp;2、通过&nbsp;data-placement&nbsp;自定义属性来控制提示信息框的位置，根据四种不同的位置，data-placement具有四个值：top、right、bottom和left，分别表示提示框出现的位置在顶部、右边、底部和左边
 
-　　3、还有一个最重要的参数不可缺少，data-toggle="tooltip"
+&emsp;&emsp;3、还有一个最重要的参数不可缺少，data-toggle="tooltip"
 
 【触发方式】
 
-　　Bootstrap框架中的提示框的触发方式和前面介绍的插件略有不同。不能直接通过自定义的属性 data- 来触发。必须得依赖于JavaScript的代码触发
+&emsp;&emsp;Bootstrap框架中的提示框的触发方式和前面介绍的插件略有不同。不能直接通过自定义的属性 data- 来触发。必须得依赖于JavaScript的代码触发
 
-　　最简单的触发方式如下：
+&emsp;&emsp;最简单的触发方式如下：
 
-<div class="cnblogs_code">
+<div>
 <pre>$(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body style="margin:80px;"&gt;
 &lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" data-original-title="提示框居左" title="左边提示框"&gt;提示框居左&lt;/button&gt;
 &lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" data-original-title="提示框在顶部"&gt;提示框在顶部&lt;/button&gt;
@@ -44,11 +44,11 @@ $(function(){
 
 ### 属性参数
 
-　　提示框组件提供了7个自定义属性参数，用来对提示框进行设置
+&emsp;&emsp;提示框组件提供了7个自定义属性参数，用来对提示框进行设置
 
 ![bs_plug5](https://pic.xiaohuochai.site/blog/bs_plug5.jpg)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body style="margin-top:80px;"&gt;
 &lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" data-original-title="无动画" data-animation="false" &gt;无动画&lt;/button&gt;
 &lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" data-original-title="有动画" &gt;有动画&lt;/button&gt;
@@ -69,15 +69,15 @@ $(function(){
 
 ### JS触发
 
-　　除了上面所说的最简单的一种触发方法，也可以单独指定一个元素，在该元素上调用Tooltip组件，并且还可以提供各种javascript形式的自定义参数，而无需使用以data-开头的元素自定义属性
+&emsp;&emsp;除了上面所说的最简单的一种触发方法，也可以单独指定一个元素，在该元素上调用Tooltip组件，并且还可以提供各种javascript形式的自定义参数，而无需使用以data-开头的元素自定义属性
 
-<div class="cnblogs_code">
+<div>
 <pre>$(element).tooltip(options);</pre>
 </div>
 
 ![bs_plug6](https://pic.xiaohuochai.site/blog/bs_plug6.jpg)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button type="button" class="btn btn-default" data-toggle="tooltip" &gt;按钮&lt;/button&gt;
 &lt;script&gt;
 $(function(){
@@ -93,9 +93,9 @@ $(function(){
 
 【关键字】
 
-　　除了使用options对象，还可以使用关键字，'show'、'hide'、'toggle'、'destroy'
+&emsp;&emsp;除了使用options对象，还可以使用关键字，'show'、'hide'、'toggle'、'destroy'
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;body style="margin-top:50px;"&gt;
 &lt;button type="button" class="btn btn-default" data-toggle="tooltip" title="提示信息" id="btn1"&gt;按钮1&lt;/button&gt;
 &lt;button type="button" class="btn btn-default" data-toggle="tooltip" title="提示信息"  id="btn2"&gt;按钮2&lt;/button&gt;
@@ -116,16 +116,16 @@ $(function(){
 
 【事件】
 
-　　该插件支持5种类型的事件订阅
+&emsp;&emsp;该插件支持5种类型的事件订阅
 
-<div class="cnblogs_code">
+<div>
 <pre>show.bs.tooltip        show方法调用之后立即触发该事件
-shown.bs.tooltip   　　 此事件在tooltip已经显示出来（并且同时在 CSS 过渡效果完成）之后被触发
+shown.bs.tooltip   &emsp;&emsp; 此事件在tooltip已经显示出来（并且同时在 CSS 过渡效果完成）之后被触发
 hide.bs.tooltip        hide方法调用之后立即触发该事件。
 hidden.bs.tooltip    　此事件在tooltip被隐藏（并且同时在 CSS 过渡效果完成）之后被触发
 inserted.bs.tooltip    当tooltip模板加载到DOM中上时，在show.bs.tooltip触发后，触发该事件</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="提示信息" id="btn"&gt;按钮&lt;/button&gt;
 &lt;script&gt;
 $(function(){
