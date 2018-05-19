@@ -1,20 +1,20 @@
 # Bootstrap模态弹出框
 
-　　在 Bootstrap 框架中把模态弹出框统一称为 Modal。这种弹出框效果在大多数 Web 网站的交互中都可见。比如点击一个按钮弹出一个框，弹出的框可能是一段文件描述，也可能带有按钮操作，也有可能弹出的是一张图片。本文将详细介绍Bootstrap模态弹出框
+&emsp;&emsp;在 Bootstrap 框架中把模态弹出框统一称为 Modal。这种弹出框效果在大多数 Web 网站的交互中都可见。比如点击一个按钮弹出一个框，弹出的框可能是一段文件描述，也可能带有按钮操作，也有可能弹出的是一张图片。本文将详细介绍Bootstrap模态弹出框
 
 &nbsp;
 
 ### 结构分析
 
-　　Bootstrap框架中的模态弹出框，分别运用了&ldquo;modal&rdquo;、&ldquo;modal-dialog&rdquo;和&ldquo;modal-content&rdquo;样式，而弹出窗真正的内容都放置在&ldquo;modal-content&rdquo;中，其主要又包括三个部分：
+&emsp;&emsp;Bootstrap框架中的模态弹出框，分别运用了&ldquo;modal&rdquo;、&ldquo;modal-dialog&rdquo;和&ldquo;modal-content&rdquo;样式，而弹出窗真正的内容都放置在&ldquo;modal-content&rdquo;中，其主要又包括三个部分：
 
-　　☑&nbsp;弹出框头部，一般使用&ldquo;modal-header&rdquo;表示，主要包括标题和关闭按钮
+&emsp;&emsp;☑&nbsp;弹出框头部，一般使用&ldquo;modal-header&rdquo;表示，主要包括标题和关闭按钮
 
-　　☑&nbsp;弹出框主体，一般使用&ldquo;modal-body&rdquo;表示，弹出框的主要内容
+&emsp;&emsp;☑&nbsp;弹出框主体，一般使用&ldquo;modal-body&rdquo;表示，弹出框的主要内容
 
-　　☑&nbsp;弹出框脚部，一般使用&ldquo;modal-footer&rdquo;表示，主要放置操作按钮
+&emsp;&emsp;☑&nbsp;弹出框脚部，一般使用&ldquo;modal-footer&rdquo;表示，主要放置操作按钮
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="modal show"&gt;
     &lt;div class="modal-dialog"&gt;
         &lt;div class="modal-content"&gt;
@@ -36,9 +36,9 @@
 
 <iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/bootstrap/module/m1.html" frameborder="0" width="320" height="240"></iframe>
 
-　　对于弹窗而言，modal-content是样式的关键。主要设置了弹窗的边框、边距、背景色和阴影等样式&nbsp;
+&emsp;&emsp;对于弹窗而言，modal-content是样式的关键。主要设置了弹窗的边框、边距、背景色和阴影等样式&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>.modal-content {
   position: relative;
   background-color: #fff;
@@ -53,9 +53,9 @@
 }</pre>
 </div>
 
-　　除此之外，modal-content中的modal-header、modal-body和modal-footer三个部分样式设置如下
+&emsp;&emsp;除此之外，modal-content中的modal-header、modal-body和modal-footer三个部分样式设置如下
 
-<div class="cnblogs_code">
+<div>
 <pre>.modal-header {
   min-height: 16.42857143px;
   padding: 15px;
@@ -79,9 +79,9 @@
 }</pre>
 </div>
 
-　　这三个部分主要控制一些间距的样式。而modal-footer都是用来放置按钮，所以底部还对包含的按钮做了一定的样式处理
+&emsp;&emsp;这三个部分主要控制一些间距的样式。而modal-footer都是用来放置按钮，所以底部还对包含的按钮做了一定的样式处理
 
-<div class="cnblogs_code">
+<div>
 <pre>.modal-footer .btn + .btn {
   margin-bottom: 0;
   margin-left: 5px;
@@ -98,11 +98,11 @@
 
 ### 触发方式
 
-　　众所周知，模态弹出窗在页面加载完成时，是被隐藏在页面中的，只有通过一定的动作（事件）才能触发模态弹出窗的显示。在Bootstrap框架中实现方法有2种
+&emsp;&emsp;众所周知，模态弹出窗在页面加载完成时，是被隐藏在页面中的，只有通过一定的动作（事件）才能触发模态弹出窗的显示。在Bootstrap框架中实现方法有2种
 
-　　在介绍触发方式之前，首先要说明.show和.fade这两个方法。只有模态弹出窗默认是隐藏的，才能触发其显示
+&emsp;&emsp;在介绍触发方式之前，首先要说明.show和.fade这两个方法。只有模态弹出窗默认是隐藏的，才能触发其显示
 
-<div class="cnblogs_code">
+<div>
 <pre>.fade {
     opacity: 0;
     -webkit-transition: opacity .15s linear;
@@ -116,13 +116,13 @@
 
 【方法一】
 
-　　模态弹出窗声明，只需要自定义两个必要的属性：data-toggle和data-target（bootstrap中声明式触发方法一般依赖于这些自定义的data-xxx 属性。比如data-toggle="" 或者 data-dismiss=""）
+&emsp;&emsp;模态弹出窗声明，只需要自定义两个必要的属性：data-toggle和data-target（bootstrap中声明式触发方法一般依赖于这些自定义的data-xxx 属性。比如data-toggle="" 或者 data-dismiss=""）
 
-　　data-toggle必须设置为modal(toggle中文翻译过来就是触发器)；
+&emsp;&emsp;data-toggle必须设置为modal(toggle中文翻译过来就是触发器)；
 
-　　data-target可以设置为CSS的选择符，也可以设置为模态弹出窗的ID值，一般情况设置为模态弹出窗的ID值，因为ID值是唯一的值
+&emsp;&emsp;data-target可以设置为CSS的选择符，也可以设置为模态弹出窗的ID值，一般情况设置为模态弹出窗的ID值，因为ID值是唯一的值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- 触发模态弹出窗的元素 --&gt;
 &lt;button type="button" data-toggle="modal" data-target="#mymodal" class="btn btn-primary"&gt;点击&lt;/button&gt;
 &lt;!-- 模态弹出窗 --&gt;
@@ -149,11 +149,11 @@
 
 【方法二】
 
-　　触发模态弹出窗也可以是一个链接&lt;a&gt;元素，那么可以使用链接元素自带的href属性替代data-target属性&nbsp;
+&emsp;&emsp;触发模态弹出窗也可以是一个链接&lt;a&gt;元素，那么可以使用链接元素自带的href属性替代data-target属性&nbsp;
 
-　　不过建议还是使用统一使用data-target的方式来触发
+&emsp;&emsp;不过建议还是使用统一使用data-target的方式来触发
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- 触发模态弹出窗的元素 --&gt;
 &lt;a data-toggle="modal" href="#mymodal" class=" btn btn-primary" &gt;点击&lt;/a&gt;
 &lt;!-- 模态弹出窗 --&gt;
@@ -182,11 +182,11 @@
 
 ### 尺寸
 
-　　Bootstrap框架为模态弹出窗提供了不同尺寸，一个是大尺寸样式&ldquo;modal-lg&rdquo;，另一个是小尺寸样式&ldquo;modal-sm&rdquo;。其结构上稍做调整
+&emsp;&emsp;Bootstrap框架为模态弹出窗提供了不同尺寸，一个是大尺寸样式&ldquo;modal-lg&rdquo;，另一个是小尺寸样式&ldquo;modal-sm&rdquo;。其结构上稍做调整
 
-　　[注意].bs-example-modal-lg和.bs-example-modal-sm是自定义的名称，而非必须
+&emsp;&emsp;注意：.bs-example-modal-lg和.bs-example-modal-sm是自定义的名称，而非必须
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- 大尺寸模态弹出窗 --&gt;
 &lt;div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"&gt;
     &lt;div class="modal-dialog modal-lg"&gt;
@@ -200,7 +200,7 @@
     &lt;/div&gt;
 &lt;/div&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"&gt;大尺寸&lt;/button&gt;
 &lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"&gt;默认尺寸&lt;/button&gt;
 &lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm"&gt;小尺寸&lt;/button&gt;
@@ -239,21 +239,21 @@
 
 ### CSS解析
 
-　　bootstrap中的&ldquo;模态弹出框&rdquo;有以下几个特点：
+&emsp;&emsp;bootstrap中的&ldquo;模态弹出框&rdquo;有以下几个特点：
 
-　　1、模态弹出窗是固定在浏览器中的。
+&emsp;&emsp;1、模态弹出窗是固定在浏览器中的。
 
-　　2、单击右侧全屏按钮，在全屏状态下，模态弹出窗宽度是自适应的，而且modal-dialog水平居中。
+&emsp;&emsp;2、单击右侧全屏按钮，在全屏状态下，模态弹出窗宽度是自适应的，而且modal-dialog水平居中。
 
-　　3、当浏览器视窗大于768px时，模态弹出窗的宽度为600px
+&emsp;&emsp;3、当浏览器视窗大于768px时，模态弹出窗的宽度为600px
 
-　　4、模态弹出窗的背景常常有一个透明的蒙层效果
+&emsp;&emsp;4、模态弹出窗的背景常常有一个透明的蒙层效果
 
-　　5、触发弹窗时，弹窗是从上到下、逐渐浮现到页面前的
+&emsp;&emsp;5、触发弹窗时，弹窗是从上到下、逐渐浮现到页面前的
 
 【固定在浏览器实现】
 
-<div class="cnblogs_code">
+<div>
 <pre>.modal {
   position: fixed;
   top: 0;
@@ -270,7 +270,7 @@
 
 【水平居中实现】
 
-<div class="cnblogs_code">
+<div>
 <pre>.modal-dialog {
   position: relative;
   width: auto;
@@ -280,7 +280,7 @@
 
 【当浏览器视窗大于768px时，模态弹出窗的宽度为600px实现】
 
-<div class="cnblogs_code">
+<div>
 <pre>@media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
@@ -298,14 +298,14 @@
 
 【蒙版】
 
-　　弹窗弹出时为&nbsp;`&lt;body&gt;`&nbsp;元素添加&nbsp;`.modal-open`类，从而覆盖页面默认的滚动行为，并且还会自动生成一个&nbsp;`.modal-backdrop`&nbsp;元素用于提供一个可点击的区域，点击此区域就即可关闭模态框
+&emsp;&emsp;弹窗弹出时为&nbsp;&lt;body&gt;&nbsp;元素添加&nbsp;`.modal-open`类，从而覆盖页面默认的滚动行为，并且还会自动生成一个&nbsp;`.modal-backdrop`&nbsp;元素用于提供一个可点击的区域，点击此区域就即可关闭模态框
 
-<div class="cnblogs_code">
+<div>
 <pre>.modal-open {
     overflow: hidden;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>.modal-backdrop {
   position: fixed;
   top: 0;
@@ -317,9 +317,9 @@
 }</pre>
 </div>
 
-　　给其添加了一个过渡动画，从fade到in，把opacity值从0变成了0.5
+&emsp;&emsp;给其添加了一个过渡动画，从fade到in，把opacity值从0变成了0.5
 
-<div class="cnblogs_code">
+<div>
 <pre>.modal-backdrop.fade {
   filter: alpha(opacity=0);
   opacity: 0;
@@ -332,9 +332,9 @@
 
 【动画效果】
 
-　　弹窗的动画内容是从-25%的top值位置到top:0的位置
+&emsp;&emsp;弹窗的动画内容是从-25%的top值位置到top:0的位置
 
-<div class="cnblogs_code">
+<div>
 <pre>.modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
        -o-transition:      -o-transform .3s ease-out;
@@ -351,9 +351,9 @@
 }</pre>
 </div>
 
-　　如果不需要模态框弹出时的动画效果（淡入淡出效果），删掉&nbsp;`.fade`&nbsp;类即可
+&emsp;&emsp;如果不需要模态框弹出时的动画效果（淡入淡出效果），删掉&nbsp;`.fade`&nbsp;类即可
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!-- 触发模态弹出窗的元素 --&gt;
 &lt;button type="button" data-toggle="modal" data-target="#mymodal" class="btn btn-primary"&gt;点击&lt;/button&gt;
 &lt;!-- 模态弹出窗 --&gt;
@@ -380,17 +380,17 @@
 
 ### 参数说明
 
-　　除了通过data-toggle和data-target来控制模态弹出窗之外，Bootstrap框架针对模态弹出框还提供了其他自定义data-属性，来控制模态弹出窗。有关Modal弹出窗自定义属性相关说明如下所示
+&emsp;&emsp;除了通过data-toggle和data-target来控制模态弹出窗之外，Bootstrap框架针对模态弹出框还提供了其他自定义data-属性，来控制模态弹出窗。有关Modal弹出窗自定义属性相关说明如下所示
 
-　　该参数设置在按钮上，或者弹窗上都可以。出于方便，一般地，在按钮上设置
+&emsp;&emsp;该参数设置在按钮上，或者弹窗上都可以。出于方便，一般地，在按钮上设置
 
-　　[注意]属性值一定要加引号，如data-backdrop="false"
+&emsp;&emsp;注意：属性值一定要加引号，如data-backdrop="false"
 
-　　如果想要支持esc键关闭弹窗，需要在弹窗上设置tabindex="-1"
+&emsp;&emsp;如果想要支持esc键关闭弹窗，需要在弹窗上设置tabindex="-1"
 
 ![bs_plug1](https://pic.xiaohuochai.site/blog/bs_plug1.jpg)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button type="button" data-toggle="modal" data-target="#mymodal1" class="btn btn-primary"&gt;默认样式&lt;/button&gt;
 &lt;button type="button" data-toggle="modal" data-target="#mymodal2" data-backdrop="false" class="btn btn-primary"&gt;无蒙版&lt;/button&gt;
 &lt;button type="button" data-toggle="modal" data-target="#mymodal3" data-keyboard="false" class="btn btn-primary"&gt;ESC失效&lt;/button&gt;
@@ -455,14 +455,14 @@
 
 ### JS触发
 
-　　除了使用自定义属性data-触发模态弹出框之外，还可以通过JavaScript方法来触发模态弹出窗。比如说给按钮设置一个单击事件，然后触发模态弹出窗&nbsp;
+&emsp;&emsp;除了使用自定义属性data-触发模态弹出框之外，还可以通过JavaScript方法来触发模态弹出窗。比如说给按钮设置一个单击事件，然后触发模态弹出窗&nbsp;
 
-　　只需一行 JavaScript 代码，即可通过元素的 id&nbsp;`myModal`&nbsp;调用模态框
+&emsp;&emsp;只需一行 JavaScript 代码，即可通过元素的 id&nbsp;`myModal`&nbsp;调用模态框
 
-<div class="cnblogs_code">
+<div>
 <pre>$('#myModal').modal()</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button type="button" class="btn btn-primary"&gt;点击&lt;/button&gt;
 &lt;div class="modal fade"  tabindex="-1" id="mymodal"&gt;
     &lt;div class="modal-dialog"&gt;
@@ -488,17 +488,17 @@ $(function(){
 
 <iframe style="width: 100%; height: 148px;" src="https://demo.xiaohuochai.site/bootstrap/module/m7.html" frameborder="0" width="320" height="240"></iframe>
 
-　　使用JavaScript触发模态弹出窗时，Bootstrap框架提供了一些设置，主要包括属性设置、参数设置和事件设置
+&emsp;&emsp;使用JavaScript触发模态弹出窗时，Bootstrap框架提供了一些设置，主要包括属性设置、参数设置和事件设置
 
 【属性设置】
 
-　　模态弹出窗默认支持的自定义属性主要有
+&emsp;&emsp;模态弹出窗默认支持的自定义属性主要有
 
 ![bs_plug2](https://pic.xiaohuochai.site/blog/bs_plug2.jpg)
 
-　　不想让用户按ESC键关闭模态弹出窗，可以这样做&nbsp;
+&emsp;&emsp;不想让用户按ESC键关闭模态弹出窗，可以这样做&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>$(function(){
     $(".btn").click(function(){
         $("#mymodal").modal({
@@ -510,11 +510,11 @@ $(function(){
 
 【参数设置】
 
-　　在Bootstrap框架中还为模态弹出窗提供了三种参数设置，具体说明如下
+&emsp;&emsp;在Bootstrap框架中还为模态弹出窗提供了三种参数设置，具体说明如下
 
 ![bs_plug3](https://pic.xiaohuochai.site/blog/bs_plug3.png)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button type="button" class="btn btn-primary" id="btn" style="position:absolute;z-index:9999"&gt;打开(关闭)&lt;/button&gt;
 &lt;div class="modal"  tabindex="-1" id="mymodal" &gt;
     &lt;div class="modal-dialog"&gt;
@@ -542,11 +542,11 @@ $(function(){
 
 【事件设置】
 
-　　模态弹窗还支持五种类型的事件，分别是模态弹出窗的弹出前、弹出后，关闭前、关闭后及远端数据加载后，具体描述如下：&nbsp;
+&emsp;&emsp;模态弹窗还支持五种类型的事件，分别是模态弹出窗的弹出前、弹出后，关闭前、关闭后及远端数据加载后，具体描述如下：&nbsp;
 
 ![bs_plug4](https://pic.xiaohuochai.site/blog/bs_plug4.png)
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button type="button" class="btn btn-primary" id="btn" style="position:absolute;z-index:9999"&gt;打开&lt;/button&gt;
 &lt;div class="modal"  tabindex="-1" id="mymodal" &gt;
     &lt;div class="modal-dialog"&gt;
@@ -584,9 +584,9 @@ $(function(){
 
 【1】IIFE
 
-　　使用立即调用函数，防止插件内代码外泄，从而形成一个闭环，并且只能从jQuery的fn里进行扩展
+&emsp;&emsp;使用立即调用函数，防止插件内代码外泄，从而形成一个闭环，并且只能从jQuery的fn里进行扩展
 
-<div class="cnblogs_code">
+<div>
 <pre>+function ($) {
     //使用es5严格模式
     'use strict';
@@ -596,7 +596,7 @@ $(function(){
 
 【2】初始设置
 
-<div class="cnblogs_code">
+<div>
 <pre>  var Modal = function (element, options) {
     this.options             = options//options是设置选项
     this.$body               = $(document.body)//body元素
@@ -632,9 +632,9 @@ $(function(){
 
 【3】插件核心代码
 
-　　主要是Modal核心类函数的定义、默认参数的定义和9个原型方法的定义，这9个原型方法主要是处理弹窗的反转、打开、关闭和弹窗背景设置、取消等操作
+&emsp;&emsp;主要是Modal核心类函数的定义、默认参数的定义和9个原型方法的定义，这9个原型方法主要是处理弹窗的反转、打开、关闭和弹窗背景设置、取消等操作
 
-<div class="cnblogs_code">
+<div>
 <pre>  // 反转弹窗(打开或关闭)
   Modal.prototype.toggle = function (_relatedTarget) {
     //如果弹窗处于显示状态，则调用hide()方法，关闭它；否则，调用show()方法，打开弹窗
@@ -841,9 +841,9 @@ $(function(){
 
 【4】滚动条处理
 
-　　在弹窗插件中，使用了大量的代码对滚动条进行处理
+&emsp;&emsp;在弹窗插件中，使用了大量的代码对滚动条进行处理
 
-<div class="cnblogs_code">
+<div>
 <pre>  Modal.prototype.handleUpdate = function () {
     this.adjustDialog()
   }
@@ -906,9 +906,9 @@ $(function(){
 
 【5】jQuery插件定义
 
-　　在jQuery上定义插件，有点特殊的代码是options参数的收集和合并，主要收集了3个部分：插件的默认参数DEFAULTS、modal元素上的data-属性，执行插件时传入的option对象，这三个部分的优先级依次升高
+&emsp;&emsp;在jQuery上定义插件，有点特殊的代码是options参数的收集和合并，主要收集了3个部分：插件的默认参数DEFAULTS、modal元素上的data-属性，执行插件时传入的option对象，这三个部分的优先级依次升高
 
-<div class="cnblogs_code">
+<div>
 <pre>  function Plugin(option, _relatedTarget) {
     //根据选择器，遍历所有符合规则的元素
     return this.each(function () {
@@ -934,7 +934,7 @@ $(function(){
 
 【6】防冲突处理
 
-<div class="cnblogs_code">
+<div>
 <pre>  $.fn.modal.noConflict = function () {
     //恢复以前的旧代码
     $.fn.modal = old
@@ -945,7 +945,7 @@ $(function(){
 
 【7】绑定触发事件
 
-<div class="cnblogs_code">
+<div>
 <pre>  //监测所有拥有自定义属性data-toggle="modal"的元素上的单击事件
   $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
     var $this   = $(this)
