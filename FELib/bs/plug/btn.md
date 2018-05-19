@@ -1,18 +1,18 @@
 # Bootstrap按钮插件
 
-　　按钮插件提供了一组可以控制按钮多种状态的功能，比如按钮的禁用状态、正在加载状态、正常状态等。本文将详细介绍Bootstrap按钮插件
+&emsp;&emsp;按钮插件提供了一组可以控制按钮多种状态的功能，比如按钮的禁用状态、正在加载状态、正常状态等。本文将详细介绍Bootstrap按钮插件
 
 &nbsp;
 
 ### 加载状态
 
-　　通过按钮可以设计状态提示，当单击按钮时，会显示loading状态信息。例如，点击&ldquo;加载&rdquo;按钮，会触发按钮的加载的状态
+&emsp;&emsp;通过按钮可以设计状态提示，当单击按钮时，会显示loading状态信息。例如，点击&ldquo;加载&rdquo;按钮，会触发按钮的加载的状态
 
-　　通过添加&nbsp;`data-loading-text="Loading..."`&nbsp;可以为按钮设置正在加载的状态，但从 v3.3.5 版本开始，此特性不再建议使用，并且已经在 v4 版本中删除了
+&emsp;&emsp;通过添加&nbsp;`data-loading-text="Loading..."`&nbsp;可以为按钮设置正在加载的状态，但从 v3.3.5 版本开始，此特性不再建议使用，并且已经在 v4 版本中删除了
 
-　　[注意]如果不设置`data-loading-text`，则按钮文本在Loading状态时，默认显示的是'loading...'
+&emsp;&emsp;注意：如果不设置`data-loading-text`，则按钮文本在Loading状态时，默认显示的是'loading...'
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button class="btn btn-primary" data-loading-text="正在加载中,请稍等..." type="button" id="loaddingBtn"&gt;加载&lt;/button&gt;
 &lt;script&gt;
 $(function(){
@@ -32,11 +32,11 @@ $(function(){
 
 ### 模拟单选
 
-　　模拟单选按钮是通过一组按钮来实现单选择操作。使用按钮组来模拟单选按钮组，能够让设计更具个性化，可以定制出更美观的单选按钮组
+&emsp;&emsp;模拟单选按钮是通过一组按钮来实现单选择操作。使用按钮组来模拟单选按钮组，能够让设计更具个性化，可以定制出更美观的单选按钮组
 
-　　在Bootstrap框架中按钮插件中，可以通过给按钮组自定义属性`data-toggle="buttons"`
+&emsp;&emsp;在Bootstrap框架中按钮插件中，可以通过给按钮组自定义属性`data-toggle="buttons"`
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="btn-group" data-toggle="buttons"&gt;
     &lt;label class="btn btn-primary"&gt;
         &lt;input type="radio" name="options" id="options1"&gt;男
@@ -53,9 +53,9 @@ $(function(){
 
 ### 模拟多选
 
-　　使用按钮组来模拟复选按钮和模拟单选按钮是一样的，具有同等效果，也是通过在按钮组上自定义`data-toggle="buttons"`来实现。唯一不同的是，将input[type="radio"]换成input[type="checkbox"]
+&emsp;&emsp;使用按钮组来模拟复选按钮和模拟单选按钮是一样的，具有同等效果，也是通过在按钮组上自定义`data-toggle="buttons"`来实现。唯一不同的是，将input[type="radio"]换成input[type="checkbox"]
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="btn-group" data-toggle="buttons"&gt;
     &lt;label class="btn btn-primary"&gt;
         &lt;input type="checkbox" name="options" id="options1"&gt;电影
@@ -78,9 +78,9 @@ $(function(){
 
 ### 按钮状态
 
-　　使用&nbsp;data-toggle&nbsp;属性还可以激活按钮的行为状态，实现在激活和未激活之间进行状态切换。单击时将按钮激活，再单击可以让按钮恢复到默认状态
+&emsp;&emsp;使用&nbsp;data-toggle&nbsp;属性还可以激活按钮的行为状态，实现在激活和未激活之间进行状态切换。单击时将按钮激活，再单击可以让按钮恢复到默认状态
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button type="button" data-toggle="button" class="btn btn-primary"&gt;有状态的按钮&lt;/button&gt;
 &lt;button type="button" class="btn btn-primary"&gt;普通按钮&lt;/button&gt;</pre>
 </div>
@@ -91,14 +91,14 @@ $(function(){
 
 ### JS触发
 
-　　按钮插件可以通过调用button函数，然后给button函数传入具体的参数，实现不同的效果。而其中有两个参数是固定不变的，即toggle和reset。其他的都可以随意定义：
+&emsp;&emsp;按钮插件可以通过调用button函数，然后给button函数传入具体的参数，实现不同的效果。而其中有两个参数是固定不变的，即toggle和reset。其他的都可以随意定义：
 
-<div class="cnblogs_code">
+<div>
 <pre>$("#mybutton").button("toggle");//反转按钮状态
 $("#mybutton").button("reset");//重置按钮状态
 $("#mybutton").button("任意字符参数名");//替换 data-任意字符参数名-text 的属性值为&ldquo;按钮上显示的文本值</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;button class="btn btn-primary" data-complete-text="加载完成" type="button" id="mybutton"&gt;加载&lt;/button&gt;
 &lt;script&gt;
 $(function(){
@@ -120,9 +120,9 @@ $(function(){
 
 【1】IIFE
 
-　　使用立即调用函数，防止插件内代码外泄，从而形成一个闭环，并且只能从jQuery的fn里进行扩展
+&emsp;&emsp;使用立即调用函数，防止插件内代码外泄，从而形成一个闭环，并且只能从jQuery的fn里进行扩展
 
-<div class="cnblogs_code">
+<div>
 <pre>+function ($) {
     //使用es5严格模式
     'use strict';
@@ -132,7 +132,7 @@ $(function(){
 
 【2】初始设置
 
-<div class="cnblogs_code">
+<div>
 <pre>  var Button = function (element, options) {
     //要触发的元素
     this.$element  = $(element)
@@ -224,7 +224,7 @@ $(function(){
 
 【4】jQuery插件定义
 
-<div class="cnblogs_code">
+<div>
 <pre>  function Plugin(option) {
     //根据选择器，遍历所有符合规则的元素
     return this.each(function () {
@@ -249,7 +249,7 @@ $(function(){
 
 【5】防冲突处理
 
-<div class="cnblogs_code">
+<div>
 <pre>  $.fn.button.noConflict = function () {
     //恢复以前的旧代码
     $.fn.button = old
@@ -260,7 +260,7 @@ $(function(){
 
 【6】绑定触发事件
 
-<div class="cnblogs_code">
+<div>
 <pre>  $(document)
     //查询所有以button开头，data-toggle属性的值，绑定click事件
     .on('click.bs.button.data-api', '[data-toggle^="button"]', function (e) {
