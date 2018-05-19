@@ -1,16 +1,16 @@
 # Bootstrap缩略图
 
-　　缩略图在网站中最常用的地方就是产品列表页面，一行显示几张图片，有的在图片底部（左侧或右侧）带有标题、描述等信息。Bootstrap框架将这一部独立成一个模块组件，本文将详细介绍Bootstrap缩略图
+&emsp;&emsp;缩略图在网站中最常用的地方就是产品列表页面，一行显示几张图片，有的在图片底部（左侧或右侧）带有标题、描述等信息。Bootstrap框架将这一部独立成一个模块组件，本文将详细介绍Bootstrap缩略图
 
 &nbsp;
 
 ### 概述
 
-　　Boostrap 缩略图的默认设计仅需最少的标签就能展示带链接的图片，通过&ldquo;thumbnail&rdquo;样式配合bootstrap的网格系统来实现缩略图
+&emsp;&emsp;Boostrap 缩略图的默认设计仅需最少的标签就能展示带链接的图片，通过&ldquo;thumbnail&rdquo;样式配合bootstrap的网格系统来实现缩略图
 
-　　thumbnail中文翻译是拇指指甲，确实有些像缩略图，中间是图片，图片周围是一小圈空白，外面是边框和圆角，下面是文字
+&emsp;&emsp;thumbnail中文翻译是拇指指甲，确实有些像缩略图，中间是图片，图片周围是一小圈空白，外面是边框和圆角，下面是文字
 
-<div class="cnblogs_code">
+<div>
 <pre>.thumbnail {
   display: block;
   padding: 4px;
@@ -37,7 +37,7 @@ a.thumbnail.active {
   color: #333;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="container"&gt;
     &lt;div class="row"&gt;
         &lt;div class="col-xs-6 col-md-3"&gt;
@@ -70,15 +70,15 @@ a.thumbnail.active {
 
 ### 自定义内容
 
-　　在仅有缩略图的基础上，添加了一个div名为&ldquo;caption&ldquo;的容器，在这个容器中放置其他内容，比如标题，文本描述，按钮等
+&emsp;&emsp;在仅有缩略图的基础上，添加了一个div名为&ldquo;caption&ldquo;的容器，在这个容器中放置其他内容，比如标题，文本描述，按钮等
 
-<div class="cnblogs_code">
+<div>
 <pre>.thumbnail .caption {
   padding: 9px;
   color: #333;
 }</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div class="container"&gt;
     &lt;div class="row"&gt;
         &lt;div class="col-xs-6 col-md-3"&gt;
