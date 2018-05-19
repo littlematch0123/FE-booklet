@@ -1,30 +1,30 @@
 # Bootstrap图片轮播
 
-　　图片轮播效果在Web中常常能看到，很多人也称之为幻灯片。其主要显示的效果就是多幅图片轮流播放。鼠标悬停在图片时会暂停播放，如果鼠标悬停或单击右下角圆点时，会显示对应的图片。这种图片轮播效果，在Bootstrap框架中是通过Carousel插件来实现的。本文将详细介绍Bootstrap图片轮播
+&emsp;&emsp;图片轮播效果在Web中常常能看到，很多人也称之为幻灯片。其主要显示的效果就是多幅图片轮流播放。鼠标悬停在图片时会暂停播放，如果鼠标悬停或单击右下角圆点时，会显示对应的图片。这种图片轮播效果，在Bootstrap框架中是通过Carousel插件来实现的。本文将详细介绍Bootstrap图片轮播
 
 &nbsp;
 
 ### 结构
 
-　　一个轮播图片主要包括三个部分：
+&emsp;&emsp;一个轮播图片主要包括三个部分：
 
-　　&nbsp;☑&nbsp;轮播的图片
+&emsp;&emsp;&nbsp;☑&nbsp;轮播的图片
 
-　　☑&nbsp;轮播图片的计数器
+&emsp;&emsp;☑&nbsp;轮播图片的计数器
 
-　　☑&nbsp;轮播图片的控制器
+&emsp;&emsp;☑&nbsp;轮播图片的控制器
 
-　　复杂一点的轮播图片，每个轮播区会带有对应的标题和描述内容。那么在 Bootstrap 框架中，轮播图是如何设计的呢？
+&emsp;&emsp;复杂一点的轮播图片，每个轮播区会带有对应的标题和描述内容。那么在 Bootstrap 框架中，轮播图是如何设计的呢？
 
-　　第一步：设计轮播图片的容器。在 Bootstrap 框架中采用 carousel 样式，并且给这个容器定义一个 ID 值，方便后面采用 data 属性来声明触发
+&emsp;&emsp;第一步：设计轮播图片的容器。在 Bootstrap 框架中采用 carousel 样式，并且给这个容器定义一个 ID 值，方便后面采用 data 属性来声明触发
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="slidershow" class="carousel"&gt;&lt;/div&gt;</pre>
 </div>
 
-　　第二步：设计轮播图片计数器。在容器 div.carousel 的内部添加轮播图片计算器，采用 carousel-indicators 样式，其主要功能是显示当前图片的播放顺序(有几张图片就放置几个li)，一般采用有序列表来制作：
+&emsp;&emsp;第二步：设计轮播图片计数器。在容器 div.carousel 的内部添加轮播图片计算器，采用 carousel-indicators 样式，其主要功能是显示当前图片的播放顺序(有几张图片就放置几个li)，一般采用有序列表来制作：
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="slidershow" class="carousel"&gt;
 &lt;!-- 设置图片轮播的顺序 --&gt;
     &lt;ol class="carousel-indicators"&gt;
@@ -38,9 +38,9 @@
 &lt;/div&gt;</pre>
 </div>
 
-　　在 Bootstrap 框架中，轮播图片计数器，都是以圆点呈现
+&emsp;&emsp;在 Bootstrap 框架中，轮播图片计数器，都是以圆点呈现
 
-<div class="cnblogs_code">
+<div>
 <pre>.carousel-indicators {
     position: absolute; /*整个计数区域绝对定位*/
     bottom: 10px; /*距容器carousel底部10px*/
@@ -74,9 +74,9 @@
 }</pre>
 </div>
 
-　　第三步：设计轮播图片播放区。轮播图整个效果中，播放区是最关键的一个区域，这个区域主要用来放置需要轮播的图片。这个区域使用&nbsp;carousel-inner&nbsp;样式来控制，而且其同样放置在&nbsp;carousel&nbsp;容器内，并且通过&nbsp;item&nbsp;容器来放置每张轮播的图片
+&emsp;&emsp;第三步：设计轮播图片播放区。轮播图整个效果中，播放区是最关键的一个区域，这个区域主要用来放置需要轮播的图片。这个区域使用&nbsp;carousel-inner&nbsp;样式来控制，而且其同样放置在&nbsp;carousel&nbsp;容器内，并且通过&nbsp;item&nbsp;容器来放置每张轮播的图片
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="slidershow" class="carousel"&gt;
     &lt;!-- 设置图片轮播的顺序 --&gt;
     &lt;ol class="carousel-indicators"&gt;
@@ -99,9 +99,9 @@
 &lt;/div&gt;</pre>
 </div>
 
-　　在很多轮播图片效果中，在每个图片上还对应有自己的标题和描述内容。其实 Bootstrap 框架中的 Carousel 也提供类似的效果。只需要在 item 中图片底部添加对应的代码：
+&emsp;&emsp;在很多轮播图片效果中，在每个图片上还对应有自己的标题和描述内容。其实 Bootstrap 框架中的 Carousel 也提供类似的效果。只需要在 item 中图片底部添加对应的代码：
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="slidershow" class="carousel"&gt;
     &lt;!-- 设置图片轮播的顺序 --&gt;
     &lt;ol class="carousel-indicators"&gt;
@@ -123,9 +123,9 @@
 &lt;/div&gt;</pre>
 </div>
 
-　　第四步：设计轮播图片控制器。很多时候轮播图片还具有一个向前播放和向后播放的控制器。在 Carousel 中通过&nbsp;carousel-control&nbsp;样式配合 left 和 right 来实现。其中left表示向前播放，right表示向后播放。其同样放在carousel容器内
+&emsp;&emsp;第四步：设计轮播图片控制器。很多时候轮播图片还具有一个向前播放和向后播放的控制器。在 Carousel 中通过&nbsp;carousel-control&nbsp;样式配合 left 和 right 来实现。其中left表示向前播放，right表示向后播放。其同样放在carousel容器内
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;div id="slidershow" class="carousel"&gt;
     &lt;!-- 设置图片轮播的顺序 --&gt;
     &lt;ol class="carousel-indicators"&gt;
@@ -146,29 +146,29 @@
 &lt;/div&gt;</pre>
 </div>
 
-　　通过两个 a 链接在内部定义要显示的小图标，一个是向前，一个是向后。这两个图标都显示在图片容器的上面（z-index的值大于carousel-inner的）
+&emsp;&emsp;通过两个 a 链接在内部定义要显示的小图标，一个是向前，一个是向后。这两个图标都显示在图片容器的上面（z-index的值大于carousel-inner的）
 
 &nbsp;
 
 ### 声明式触发
 
-　　声明式方法是通过定义 data 属性来实现，data 属性可以很容易地控制轮播的位置。其主要包括以下几种：
+&emsp;&emsp;声明式方法是通过定义 data 属性来实现，data 属性可以很容易地控制轮播的位置。其主要包括以下几种：
 
-　　1、data-ride 属性：取值 carousel，并且将其定义在 carousel 上
+&emsp;&emsp;1、data-ride 属性：取值 carousel，并且将其定义在 carousel 上
 
-　　2、data-target 属性：取值 carousel 定义的 ID 名或者其他样式识别符，如前面示例所示，取值为&ldquo;#slidershow&rdquo;，并且将其定义在轮播图计数器的每个 li 上
+&emsp;&emsp;2、data-target 属性：取值 carousel 定义的 ID 名或者其他样式识别符，如前面示例所示，取值为&ldquo;#slidershow&rdquo;，并且将其定义在轮播图计数器的每个 li 上
 
-_　　3、_data-slide 属性：取值包括 prev，next。prev表示向后滚动，next 表示向前滚动。该属性值同样定义在轮播图控制器的 a 链接上，同时设置控制器 href 值为容器 carousel 的 ID 名或其他样式识别符
+&emsp;&emsp;3、_data-slide 属性：取值包括 prev，next。prev表示向后滚动，next 表示向前滚动。该属性值同样定义在轮播图控制器的 a 链接上，同时设置控制器 href 值为容器 carousel 的 ID 名或其他样式识别符
 
-　　4、data-slide-to 属性：用来传递某个帧的下标，比如 data-slide-to="2"，可以直接跳转到这个指定的帧（下标从0开始计），同样定义在轮播图计数器的每个 li 上
+&emsp;&emsp;4、data-slide-to 属性：用来传递某个帧的下标，比如 data-slide-to="2"，可以直接跳转到这个指定的帧（下标从0开始计），同样定义在轮播图计数器的每个 li 上
 
-　　[注意]可以为 #slidershow 层添加 slide 样式，使用图片与图片切换效果有平滑感
+&emsp;&emsp;注意：可以为 #slidershow 层添加 slide 样式，使用图片与图片切换效果有平滑感
 
-　　除了data-ride="carousel"、data-slide、data-slide-to 以外，轮播组件还支持其他三个自定义属性
+&emsp;&emsp;除了data-ride="carousel"、data-slide、data-slide-to 以外，轮播组件还支持其他三个自定义属性
 
 ![bs_plug9](https://pic.xiaohuochai.site/blog/bs_plug9.png)
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;div id="slidershow" class="carousel slide" data-ride="carousel" style="width:300px"&gt;
     &lt;!-- 设置图片轮播的顺序 --&gt;
     &lt;ol class="carousel-indicators"&gt;
@@ -215,19 +215,19 @@ _　　3、_data-slide 属性：取值包括 prev，next。prev表示向后滚�
 
 ### JS触发
 
-　　默认情况下，如果 carousel 容器上定义了 data-ride="carousel" 属性，页面加载之后就会自动加载轮播图片切换效果。如果没有定义 data-ride 属性，可以通过 JavaScript 方法来触发轮播图片切换。具体使用方法如下
+&emsp;&emsp;默认情况下，如果 carousel 容器上定义了 data-ride="carousel" 属性，页面加载之后就会自动加载轮播图片切换效果。如果没有定义 data-ride 属性，可以通过 JavaScript 方法来触发轮播图片切换。具体使用方法如下
 
-<div class="cnblogs_code">
+<div>
 <pre>$(".carousel").carousel();</pre>
 </div>
 
-　　在 carousel() 方法中可以设置具体的参数，如
+&emsp;&emsp;在 carousel() 方法中可以设置具体的参数，如
 
 ![bs_plug10](https://pic.xiaohuochai.site/blog/bs_plug10.png)
 
 &nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;div id="slidershow" class="carousel slide" style="width:300px"&gt;
     &lt;!-- 设置图片轮播的顺序 --&gt;
     &lt;ol class="carousel-indicators"&gt;
@@ -277,9 +277,9 @@ $("#slidershow").carousel({
 
 【关键字】
 
-　　实际上，给carousel()方法配置参数之后，轮播效果就能自动切换。但 Bootstrap 框架中的 carousel 插件还提供了几种特殊的调用方法，简单说明如下：&nbsp;
+&emsp;&emsp;实际上，给carousel()方法配置参数之后，轮播效果就能自动切换。但 Bootstrap 框架中的 carousel 插件还提供了几种特殊的调用方法，简单说明如下：&nbsp;
 
-<div class="cnblogs_code">
+<div>
 <pre>.carousel("cycle")：从左向右循环播放；
 .carousel("pause")：停止循环播放；
 .carousel("number")：循环到指定的帧，下标从0开始，类似数组；
@@ -289,13 +289,13 @@ $("#slidershow").carousel({
 
 【事件】
 
-　　该插件只提供两种事件类型
+&emsp;&emsp;该插件只提供两种事件类型
 
-<div class="cnblogs_code">
+<div>
 <pre>slide.bs.carousel    此事件在slide方法被调用之后 ，但还没开始处理下一张图片之前触发
 slid.bs.carousel      此事件在一张图片轮播之后触发</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>  &lt;div id="slidershow" class="carousel slide" data-ride="carousel" style="width:300px"&gt;
     &lt;!-- 设置图片轮播的顺序 --&gt;
     &lt;ol class="carousel-indicators"&gt;
@@ -362,4 +362,4 @@ $(function(){
 
 <iframe style="width: 100%; height: 284px;" src="https://demo.xiaohuochai.site/bootstrap/carousel/c3.html" frameborder="0" width="320" height="240"></iframe>
 
-　　
+&emsp;&emsp;
