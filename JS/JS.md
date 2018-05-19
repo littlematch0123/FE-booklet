@@ -1,8 +1,6 @@
 # JS知识结构
 
-　　如果某些事情就像魔法一样，那意味着看到了新生事物的曙光，任何足够先进的技术都和魔法无异。
-
-　　javascript就如同魔法一样，它是一门充满活力、简单易用的语言，又是一门具有许多复杂微妙技术的语言。即使是经验丰富的javascript开发者，如果没有认真学习的话，也无法真正理解它们，这就是javascript的矛盾之处。由于javascript不必理解就可以使用，因此通常来说很难真正理解语言本身，这就是我们面临的挑战。不满足于只是让代码正常工作，而是想要弄清楚为什么，勇于挑战这条崎岖颠簸的少有人走的路，拥抱整个javascript
+　　javascript是一门充满活力、简单易用的语言，又是一门具有许多复杂微妙技术的语言。即使是经验丰富的javascript开发者，如果没有认真学习的话，也无法真正理解它们，这就是javascript的矛盾之处。由于javascript不必理解就可以使用，因此通常来说很难真正理解语言本身，这就是我们面临的挑战。不满足于只是让代码正常工作，而是想要弄清楚为什么，勇于挑战这条崎岖颠簸的少有人走的路，拥抱整个javascript
 
 　　纷繁复杂的库，大多都以javascript为基础。实际上，前端工程师很大程度上指javascript工程师。前端入门容易精通难，说的是前端，更指的是javascript。如果把掌握HTML和CSS作为进入”前端大学“的高中知识贮备，那么javascript就是”前端大学“的主修课程，如何在”毕业“后成功开启自己的前端人生，要看javascript知识学得深不深，理解得透彻不透彻，所以在javascript上投入多少时间都不为过
 
@@ -16,7 +14,6 @@
          * [属性和变量](ECMA/baseGrammer/attr.md)
          * [表达式](ECMA/baseGrammer/expression.md)
          * [严格模式](ECMA/baseGrammer/strict.md)
-         * [事件循环](ECMA/baseGrammer/eventLoop.md)
          * [垃圾收集机制](ECMA/baseGrammer/garbageCollection.md)
          * [动态脚本](ECMA/baseGrammer/dynamicScript.md)
        * 运算符
@@ -77,33 +74,42 @@
          * [对象的属性操作](ECMA/types/objectAttr.md)
          * [对象的属性描述符](ECMA/types/objectPropertyDescriptor.md)
          * [对象拷贝](ECMA/types/objectCopy.md)
-    3. 作用域
-       * [内部原理](ECMA/scope/compilerTheory.md)
-       * [词法作用域和动态作用域](ECMA/scope/lexicalAndDynamicScope.md)
-       * [声明提升(hosting)](ECMA/scope/hosting.md)
-       * [块作用域](ECMA/scope/blockScope.md)
-       * [一张图理解执行环境和作用域](ECMA/scope/executionContextAndScope.md)
-    4. 闭包
-       * [到底什么才闭包](ECMA/closure/definition.md)
-       * [从执行环境角度看闭包](ECMA/closure/definitionFromExecutionContext.md)
-       * [IIFE](ECMA/closure/IIFE.md)
-       * [常见的一个循环和闭包的错误详解](ECMA/closure/commonError.md)
-       * [闭包的 10 种形式](ECMA/closure/allFormsOfClosure.md)
-    5. this
-       * [this 的 4 种绑定规则](ECMA/this/binding.md)
-       * [this 绑定优先级](ECMA/this/order.md)
-       * [箭头函数](ECMA/this/ArrowFunction.md)
-    6. 继承
-       * [一张图理解 prototype、proto 和 constructor 的三角关系](ECMA/inheritance/prototypeProtoAndConstructor.md)
-       * [构造函数和原型对象](ECMA/inheritance/functionAndObject.md)
-       * [创建对象的 5 种模式](ECMA/inheritance/createObject.md)
-       * [实现继承的 3 种形式](ECMA/inheritance/inheritance.md)
-       * [面向对象的 6 个概念](ECMA/inheritance/conception.md)
-       * [继承实例之选项卡的实现](ECMA/inheritance/tab.md)
-       * [继承实例之拖拽](ECMA/inheritance/drag.md)
+    3. 难点重点
+        1. 作用域
+            * [内部原理](ECMA/scope/compilerTheory.md)
+            * [词法作用域和动态作用域](ECMA/scope/lexicalAndDynamicScope.md)
+            * [声明提升(hosting)](ECMA/scope/hosting.md)
+            * [块作用域](ECMA/scope/blockScope.md)
+            * [一张图理解执行环境和作用域](ECMA/scope/executionContextAndScope.md)
+        2. 闭包
+          * [到底什么才闭包](ECMA/closure/definition.md)
+          * [从执行环境角度看闭包](ECMA/closure/definitionFromExecutionContext.md)
+          * [IIFE](ECMA/closure/IIFE.md)
+          * [常见的一个循环和闭包的错误详解](ECMA/closure/commonError.md)
+          * [闭包的 10 种形式](ECMA/closure/allFormsOfClosure.md)
+        3. this
+          * [this 的 4 种绑定规则](ECMA/this/binding.md)
+          * [this 绑定优先级](ECMA/this/order.md)
+          * [箭头函数](ECMA/this/ArrowFunction.md)
+        4. 继承
+          * [一张图理解 prototype、proto 和 constructor 的三角关系](ECMA/inheritance/prototypeProtoAndConstructor.md)
+          * [构造函数和原型对象](ECMA/inheritance/functionAndObject.md)
+          * [创建对象的 5 种模式](ECMA/inheritance/createObject.md)
+          * [实现继承的 3 种形式](ECMA/inheritance/inheritance.md)
+          * [面向对象的 6 个概念](ECMA/inheritance/conception.md)
+        5. 模块化
+          * [实现 javascript 下的模块组织](ECMA/modular/ModuleOrganization.md)
+          * [CommonJS 规范及 Node 模块实现](ECMA/modular/commonjs.md)
+          * [使用 Browserify 来实现 CommonJS 的浏览器加载](ECMA/modular/Browserify.md)
+          * [AMD 及 requireJS](ECMA/modular/requirejs.md)
+          * [r.js 打包](ECMA/modular/r.md)
+          * [CMD 及 seaJS](ECMA/modular/seajs.md)
+          * [ES6 中的 Module](ECMA/modular/es6Modula.md) 
+    4. 规范
+        * [编码标准](ECMA/optimize/codingStandard.md)
+        * [代码优化](ECMA/optimize/codeOptimization.md)          
   * ES6
-    * [介绍](ES6/ES6.md)
-    * 类型扩展
+    1. 类型扩展
       * [数字扩展](ES6/typeExtension/numberExtension.md)
       * [字符串扩展](ES6/typeExtension/stringExtension.md)
       * [模板字面量](ES6/typeExtension/templateLiteral.md)
@@ -115,14 +121,14 @@
       * [Set 和 Map 集合](ES6/typeExtension/setAndMap.md)
       * [数组扩展](ES6/typeExtension/arrayExtension.md)
       * [定型数组](ES6/typeExtension/arrayBuffer.md)
-    * 功能扩展
+    2. 功能扩展
       * [块级作用域](ES6/abilityExtension/blockScope.md)
       * [解构赋值](ES6/abilityExtension/destructuring.md)
       * [类](ES6/abilityExtension/class.md)
       * [代理(Proxy)和反射(Reflection)](ES6/abilityExtension/proxyAndReflection.md)
       * [模块](ES6/abilityExtension/module.md)
       * [修饰器 Decorator](ES6/abilityExtension/decorator.md)
-    * 异步操作
+    3. 异步操作
       * [迭代器(Iterator)和生成器(Generator)](ES6/async/IteratorAndGenerator.md)
       * [Promise 和异步编程](ES6/async/promise.md)
       * [async](ES6/async/async.md)
@@ -167,6 +173,7 @@
          * [事件处理程序](DOM/event/eventHandler.md)
          * [事件对象](DOM/event/eventObject.md)
          * [事件模拟](DOM/event/eventImitate.md)
+         * [事件循环](DOM/event/eventLoop.md)
        * 事件类型
          * [鼠标事件](DOM/event/mouse.md)
          * [键盘事件](DOM/event/keyboard.md)
@@ -180,29 +187,54 @@
        * [表单字段](DOM/FormDOM/form_formEle.md)
        * [选择文本](DOM/FormDOM/form_select.md)
        * [选择框脚本](DOM/FormDOM/form_selOption.md)
-       * [富文本编辑](DOM/FormDOM/form_WYSIWYG.md) 
-  * BOM
-    1. 定时器
-       * [setTimeout()和 setInterval()](BOM/setTimeoutAndSetInterval.md)
-       * [requestAnimationFrame()](BOM/requestAnimationFrame.md)
-       * [定时器应用(时钟、倒计时、秒表和闹钟)](BOM/timerApp.md)
-    2. window 属性
-       * [对话框](BOM/alert.md)
-       * [窗口操作](BOM/window.md)
-       * [location 对象](BOM/location.md)
-       * [history 对象](BOM/history.md)
-       * [screen 对象](BOM/screen.md)
-       * [navigator 对象和用户代理检测](BOM/navigator.md)
-       * [能力检测](BOM/abilityTest.md)
-  * 模块化
-    * [实现 javascript 下的模块组织](modular/ModuleOrganization.md)
-    * [CommonJS 规范及 Node 模块实现](modular/commonjs.md)
-    * [使用 Browserify 来实现 CommonJS 的浏览器加载](modular/Browserify.md)
-    * [AMD 及 requireJS](modular/requirejs.md)
-    * [r.js 打包](modular/r.md)
-    * [CMD 及 seaJS](modular/seajs.md)
-    * [ES6 中的 Module](modular/es6Modula.md)
-  * AJAX 和存储
+       * [富文本编辑](DOM/FormDOM/form_WYSIWYG.md)
+  * 动画
+    1. canvas
+       * [基础语法](animation/canvas/base.md)
+       * [图形处理和进阶用法](animation/canvas/advance.md)
+       * [图形绘制](animation/canvas/graphic.md)
+       * [图像编辑](animation/canvas/image.md)
+       * [贝塞尔曲线](animation/canvas/bezier.md)
+       * [圆形时钟](animation/canvas/clock.md)
+       * [粒子时钟](animation/canvas/digitClock.md)
+       * [动态小球重叠效果](animation/canvas/ball.md)
+       * [探照灯效果](animation/canvas/clip.md)
+       * [粒子系统](animation/canvas/particle.md)
+    2. svg
+       * [基本形状和样式设置](animation/svg/base.md)
+       * [文本](animation/svg/text.md)
+       * [路径](animation/svg/path.md)
+       * [贝塞尔曲线](animation/svg/bezier.md)
+       * [辅助标签](animation/svg/helper.md)
+       * [视野](animation/svg/view.md)
+       * [坐标系统及图形变换](animation/svg/coordinate.md)
+       * [渐变](animation/svg/gradient.md)
+       * [图案](animation/svg/pattern.md)
+       * [裁切和蒙版](animation/svg/clip.md)
+       * [动画](animation/svg/animate.md)
+       * [基本操作API](animation/svg/example.md)
+    3. 拖拽
+       * [原生拖放](animation/animation/dnd.md)
+       * [模拟拖拽](animation/animation/simulation.md)
+       * [磁性吸附](animation/animation/adsorption.md)
+       * [碰撞检测](animation/animation/checkImpact.md)
+       * [拖拽改变元素大小](animation/animation/size.md)
+       * [模拟滚动条](animation/animation/scrollbar.md)
+    4. 运动
+       * [匀速运动](animation/movement/linear.md)
+       * [变速运动](animation/movement/variable.md)
+       * [曲线运动](animation/movement/curve.md)
+       * [抖动](animation/movement/shake.md)
+       * [缓冲运动和弹性运动](animation/movement/elastic.md)
+       * [投掷和轨迹](animation/movement/track.md)
+       * [鼠标跟随运动](animation/movement/mouse.md)
+       * [碰壁运动](animation/movement/collision.md)
+       * [碰撞运动](animation/movement/collision2.md)
+       * [时间版运动](animation/movement/time.md)
+       * [velocity](animation/movement/velocity.md)
+       * [tween](animation/movement/tween.md) 
+       * [帧动画](animation/movement/frame.md) 
+  * AJAX
     1. 基础
        * [JSON](ajaxAndStorage/JSON.md)
        * [XHR 对象](ajaxAndStorage/XHR.md)
@@ -219,14 +251,26 @@
        * [图片 Ping](ajaxAndStorage/imgPing.md)
        * [JSONP](ajaxAndStorage/JSONP.md)
        * [iframe 跨域](ajaxAndStorage/iframe.md)
-    3. 存储
-       * [Cookie](ajaxAndStorage/cookie.md)
-       * [IE userData](ajaxAndStorage/userData.md)
-       * [Web Storage](ajaxAndStorage/storage.md)
-  * HTML5
-    * [二进制数组](HTML5/arrayBuffer.md)
-    * [Blob](HTML5/blob.md)
-    * [文件 File](HTML5/file.md)
-  * 代码优化
-    * [编码标准](optimize/codingStandard.md)
-    * [代码优化](optimize/codeOptimization.md)
+  * 存储
+    1. [Cookie](ajaxAndStorage/cookie.md)
+    2. [IE userData](ajaxAndStorage/userData.md)
+    3. [Web Storage](ajaxAndStorage/storage.md)
+    4. [文件 File](ajaxAndStorage/file.md)
+    5. [Blob](ajaxAndStorage/blob.md)
+  * BOM
+    1. 定时器
+       * [setTimeout()和 setInterval()](BOM/setTimeoutAndSetInterval.md)
+       * [requestAnimationFrame()](BOM/requestAnimationFrame.md)
+       * [定时器应用(时钟、倒计时、秒表和闹钟)](BOM/timerApp.md)
+    2. window 属性
+       * [对话框](BOM/alert.md)
+       * [窗口操作](BOM/window.md)
+       * [location 对象](BOM/location.md)
+       * [history 对象](BOM/history.md)
+       * [screen 对象](BOM/screen.md)
+       * [navigator 对象和用户代理检测](BOM/navigator.md)
+       * [能力检测](BOM/abilityTest.md)
+    3. HTML5
+      * [web计时机制](HTML5/performance.md)
+      * [web worker](HTML5/webWorker.md)
+      
