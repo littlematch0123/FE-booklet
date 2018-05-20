@@ -216,7 +216,7 @@ npm uninstall <pkgName>
 npm uninstall <pkgname> --save-dev
 ```
 
-&emsp;&emsp;[注意]使用cnpm也可以删除安装包，且删除速度更快
+&emsp;&emsp;注意：使用cnpm也可以删除安装包，且删除速度更快
 
 ```
 cnpm uninstall <pkgname> --save-dev
