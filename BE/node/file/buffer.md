@@ -1,4 +1,4 @@
-# buffer对象
+# nodeJS之二进制buffer对象
 
 &emsp;&emsp;在ES6引入[TypedArray](http://www.cnblogs.com/xiaohuochai/p/6534621.html)之前，JavaScript语言没有读取或操作二进制数据流的机制。Buffer类被引入作为Nodejs的API的一部分，使其可以在TCP流和文件系统操作等场景中处理二进制数据流。现在TypedArray已经被添加进ES6中，Buffer类以一种更优与更适合Node.js用例的方式实现了[Uint8Array](http://www.cnblogs.com/xiaohuochai/p/6534621.html#anchor3)。本文将详细介绍buffer对象
 
