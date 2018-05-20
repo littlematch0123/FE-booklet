@@ -1,32 +1,32 @@
-# PHP错误处理
+# 前端学PHP之错误处理
 
-　　错误处理对于程序开发至关重要，不能提前预测到可能发生的错误，不能提前采取恢复策略，可能导致较差的用户体验。本文将详细介绍PHP的错误处理
+&emsp;&emsp;错误处理对于程序开发至关重要，不能提前预测到可能发生的错误，不能提前采取恢复策略，可能导致较差的用户体验。本文将详细介绍PHP的错误处理
 
-　　[注意]关于javascript的错误处理机制[移步至此](http://www.cnblogs.com/xiaohuochai/p/5677490.html)
+&emsp;&emsp;注意：关于javascript的错误处理机制[移步至此](http://www.cnblogs.com/xiaohuochai/p/5677490.html)
 
 &nbsp;
 
 ### 错误报告
 
-　　PHP程序的错误发生一般归属于下列三个领域：
+&emsp;&emsp;PHP程序的错误发生一般归属于下列三个领域：
 
-　　1、语法错误
+&emsp;&emsp;1、语法错误
 
-　　语法错误最常见，并且也容易修复。如：代码中遗漏一个分号。这类错误会阻止脚本的执行
+&emsp;&emsp;语法错误最常见，并且也容易修复。如：代码中遗漏一个分号。这类错误会阻止脚本的执行
 
-　　2、运行时错误
+&emsp;&emsp;2、运行时错误
 
-　　这种错误一般不会阻止PHP脚本的执行，但会阻止当前要做的事情。输出一条错误，但php脚本继续执行
+&emsp;&emsp;这种错误一般不会阻止PHP脚本的执行，但会阻止当前要做的事情。输出一条错误，但php脚本继续执行
 
-　　3、逻辑错误
+&emsp;&emsp;3、逻辑错误
 
-　　这种错误最麻烦，既不阻止脚本执行，也不输出错误消息
+&emsp;&emsp;这种错误最麻烦，既不阻止脚本执行，也不输出错误消息
 
-　　[注意]若将php.ini配置文件中的display_errors从默认的on设置为off，将不显示任何错误
+&emsp;&emsp;注意：若将php.ini配置文件中的display_errors从默认的on设置为off，将不显示任何错误
 
-　　在PHP脚本中可调用ini_set()函数，动态设置php.ini配置文件
+&emsp;&emsp;在PHP脚本中可调用ini_set()函数，动态设置php.ini配置文件
 
-<div class="cnblogs_code">
+<div>
 <pre>ini_set("display_errors","On"); //显示所有错误信息</pre>
 </div>
 
@@ -38,9 +38,9 @@
 
 ![error2](https://pic.xiaohuochai.site/blog/php_common_error2.jpg)
 
-　　实际上，表格中的13个错误类型可以分为3类：注意级别、警告级别和错误级别。一般地，在开发过程中，忽略注意级别的错误
+&emsp;&emsp;实际上，表格中的13个错误类型可以分为3类：注意级别、警告级别和错误级别。一般地，在开发过程中，忽略注意级别的错误
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
     getType($a);//未定义变量，注意级别
     echo "1111111111111111&lt;br&gt;";
@@ -59,11 +59,11 @@
 
 ![error4](https://pic.xiaohuochai.site/blog/php_common_error4.jpg)
 
-　　错误级别默认为提示所有级别的错误：error_reporting = E_ALL
+&emsp;&emsp;错误级别默认为提示所有级别的错误：error_reporting = E_ALL
 
-　　把error_reporting = E_ALL改为error_reporting = E_ALL &amp; ~E_NOTICE 表示不提示注意级别的错误。然后，重启服务生效
+&emsp;&emsp;把error_reporting = E_ALL改为error_reporting = E_ALL &amp; ~E_NOTICE 表示不提示注意级别的错误。然后，重启服务生效
 
-<div class="cnblogs_code">
+<div>
 <pre>error_reporting = E_ALL &amp; ~E_NOTICE    抛出任何非注意的错误，默认值
 error_reporting = E_ERROR | E_PARSE | E_CORE_ERROR    只考虑致命的运行时错误、新解析错误和核心错误
 error_reporting = E_ALL &amp; ~(E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE)    报告除用户导致的错误之外的所有错误</pre>
@@ -71,9 +71,9 @@ error_reporting = E_ALL &amp; ~(E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE)  
 
 2、第二种错误处理方法是使用错误处理函数
 
-　　在PHP脚本可以通过error_reporting( )函数动态设置错误报告级别
+&emsp;&emsp;在PHP脚本可以通过error_reporting( )函数动态设置错误报告级别
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
     error_reporting(E_ALL &amp; ~E_NOTICE);
     getType($a);//注意级别
@@ -91,11 +91,11 @@ error_reporting = E_ALL &amp; ~(E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE)  
 
 ### 自定义错误处理
 
-　　自定义错误报告的处理方式，可以完全绕过标准的PHP错误处理函数，这样就可以按自己定义的格式打印错误报告，或改变错误报告打印的位置，以下几种情况可以考虑自定义错误处理：1、记下错误的信息，及时发现一些生产环境出现的问题；2、屏蔽错误；3、控制错误的输出; 4、作为调试工具
+&emsp;&emsp;自定义错误报告的处理方式，可以完全绕过标准的PHP错误处理函数，这样就可以按自己定义的格式打印错误报告，或改变错误报告打印的位置，以下几种情况可以考虑自定义错误处理：1、记下错误的信息，及时发现一些生产环境出现的问题；2、屏蔽错误；3、控制错误的输出; 4、作为调试工具
 
-　　使用set_error_handler()函数来设置用户自定义错误处理
+&emsp;&emsp;使用set_error_handler()函数来设置用户自定义错误处理
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
     //error_reporting(E_ALL &amp; ~E_NOTICE);
     //在php中注册一个函数来处理错误报告，替代默认的方式
@@ -121,11 +121,11 @@ error_reporting = E_ALL &amp; ~(E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE)  
 
 ### 错误日志
 
-　　一般地，程序都会保存错误日志，用来记录程序运行时的错误信息。且错误日志都有其默认的存储位置。对于错误信息和错误日志的位置，我们都可以进行修改
+&emsp;&emsp;一般地，程序都会保存错误日志，用来记录程序运行时的错误信息。且错误日志都有其默认的存储位置。对于错误信息和错误日志的位置，我们都可以进行修改
 
-　　在PHP.ini配置文件中，有以下几项可以对错误日志进行设置
+&emsp;&emsp;在PHP.ini配置文件中，有以下几项可以对错误日志进行设置
 
-<div class="cnblogs_code">
+<div>
 <pre>error_reporting = E_ALL  //将向PHP发送每个错误
 display_errors=Off       //不显示错误报告
 log_errors=On            //决定日志语句记录的位置
@@ -133,9 +133,9 @@ log_errors_max_log=1024  //每个日志项的最大长度
 error_log=G:/myerror.log //指定错误写进的文件</pre>
 </div>
 
-　　在php文件中，我们可以使用函数error_log()来自定义错误信息
+&emsp;&emsp;在php文件中，我们可以使用函数error_log()来自定义错误信息
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 error_log("登录失败了！");
 ?&gt;</pre>
@@ -147,9 +147,9 @@ error_log("登录失败了！");
 
 ### 异常处理
 
-　　异常(Exception)处理用于在指定的错误发生时改变脚本的正常流程，是PHP5中的一个新的重要特性。异常处理是一种可扩展、易维护的错误处理机制，并提供了一种新的面向对象的错误处理方式
+&emsp;&emsp;异常(Exception)处理用于在指定的错误发生时改变脚本的正常流程，是PHP5中的一个新的重要特性。异常处理是一种可扩展、易维护的错误处理机制，并提供了一种新的面向对象的错误处理方式
 
-<div class="cnblogs_code">
+<div>
 <pre>try{  
     使用try去包含可能会发生异常的代码
     一旦出现异常try进行捕获异常，交给catch处理。
@@ -160,7 +160,7 @@ error_log("登录失败了！");
     .. .. ..
 }]</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
     try {
         $error = 'Always throw this error';
@@ -179,9 +179,9 @@ error_log("登录失败了！");
 
 ### 自定义异常
 
-　　用户可以用自定义的异常处理类来扩展PHP内置的异常处理类。以下的代码说明了在内置的异常处理类中，哪些属性和方法在子类中是可访问和可继承的
+&emsp;&emsp;用户可以用自定义的异常处理类来扩展PHP内置的异常处理类。以下的代码说明了在内置的异常处理类中，哪些属性和方法在子类中是可访问和可继承的
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class Exception
 {
@@ -207,9 +207,9 @@ class Exception
 ?&gt;</pre>
 </div>
 
-　　[注意]如果使用自定义的类来扩展内置异常处理类，并且要重新定义构造函数的话，建议同时调用parent::__construct()来检查所有的变量是否已被赋值。当对象要输出字符串的时候，可以重载__toString() 并自定义输出的样式
+&emsp;&emsp;注意：如果使用自定义的类来扩展内置异常处理类，并且要重新定义构造函数的话，建议同时调用parent::__construct()来检查所有的变量是否已被赋值。当对象要输出字符串的时候，可以重载__toString() 并自定义输出的样式
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
     /* 自定义的一个异常处理类，但必须是扩展内异常处理类的子类 */
     class MyException extends Exception{
@@ -230,7 +230,7 @@ class Exception
     }
 ?&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
    try { //使用自定义的异常类捕获一个异常，并处理异常
         $error = '允许抛出这个错误';       
