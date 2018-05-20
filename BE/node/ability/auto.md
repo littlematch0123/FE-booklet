@@ -1,20 +1,20 @@
 # 使用nodeJS实现前端项目自动化
 
-　　一般地，我们使用构建工具来完成项目的自动化操作。本文主要介绍如何使用nodeJS来实现简单的项目结构构建和文件合并
+&emsp;&emsp;一般地，我们使用构建工具来完成项目的自动化操作。本文主要介绍如何使用nodeJS来实现简单的项目结构构建和文件合并
 
 &nbsp;
 
 ### 项目构建
 
-　　假设，最终实现的项目名称为'test'，结构如下图所示
+&emsp;&emsp;假设，最终实现的项目名称为'test'，结构如下图所示
 
 
 ![auto1](https://pic.xiaohuochai.site/blog/nodejs_auto1.png)
 
 
-　　那么，首先需要先设置一个JSON对象来保存要创建的目录结构
+&emsp;&emsp;那么，首先需要先设置一个JSON对象来保存要创建的目录结构
 
-<div class="cnblogs_code">
+<div>
 <pre>var projectData = {
     'name' : 'test',
     'fileData' : [
@@ -39,9 +39,9 @@
 };</pre>
 </div>
 
-　　目录结构的创建逻辑如下
+&emsp;&emsp;目录结构的创建逻辑如下
 
-<div class="cnblogs_code">
+<div>
 <pre>var fs = require('fs');
 if ( projectData.name ) {
     fs.mkdirSync(projectData.name);
@@ -72,26 +72,26 @@ if ( projectData.name ) {
 
 ### 文件合并
 
-　　假设，目标是合并'test'目录下的所有js文件。'test'目录结构如下所示，包含1.js，以及js文件夹内的2.js
+&emsp;&emsp;假设，目标是合并'test'目录下的所有js文件。'test'目录结构如下所示，包含1.js，以及js文件夹内的2.js
 
-<div class="cnblogs_code">
+<div>
 <pre>1.js
 js
     2.js</pre>
 </div>
 
-　　其中，1.js与2.js的内容如下
+&emsp;&emsp;其中，1.js与2.js的内容如下
 
-<div class="cnblogs_code">
+<div>
 <pre>//1.js
 console.log(1);
 //2.js
 console.log(2);</pre>
 </div>
 
-　　在合并这两个文件之前，首先需要实现一个目录遍历函数来遍历'test'目录，根据[nodejs之文件操作](http://www.cnblogs.com/xiaohuochai/p/6938104.html)博客中的[目录遍历](http://www.cnblogs.com/xiaohuochai/p/6938104.html#anchor5)章节，可得到如下代码
+&emsp;&emsp;在合并这两个文件之前，首先需要实现一个目录遍历函数来遍历'test'目录，根据[nodejs之文件操作](http://www.cnblogs.com/xiaohuochai/p/6938104.html)博客中的[目录遍历](http://www.cnblogs.com/xiaohuochai/p/6938104.html#anchor5)章节，可得到如下代码
 
-<div class="cnblogs_code">
+<div>
 <pre>function travel(dir, callback) {
     fs.readdirSync(dir).forEach(function (file) {
         var pathname = path.join(dir, file);
@@ -104,9 +104,9 @@ console.log(2);</pre>
 }</pre>
 </div>
 
-　　文件合并的逻辑如下
+&emsp;&emsp;文件合并的逻辑如下
 
-<div class="cnblogs_code">
+<div>
 <pre>var fs = require('fs');
 var path = require('path');var path = require('path');
 var filedir = './test';
@@ -139,7 +139,7 @@ fs.watch(filedir, function(ev, file) {
 });</pre>
 </div>
 
-　　这样，当1.js文件内容发生改变时，合并后的结果文件result.js会立刻生效，并重新合并为最新内容
+&emsp;&emsp;这样，当1.js文件内容发生改变时，合并后的结果文件result.js会立刻生效，并重新合并为最新内容
 
 
 ![auto3](https://pic.xiaohuochai.site/blog/nodejs_auto3.gif)
