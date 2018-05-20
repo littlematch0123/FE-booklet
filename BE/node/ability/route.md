@@ -1,17 +1,17 @@
-# 路由
+# nodeJS实现路由功能
 
-　　本文将使用NodeJS实现较复杂应用的路由功能
+&emsp;&emsp;本文将使用NodeJS实现较复杂应用的路由功能
 
 &nbsp;
 
 ### 结构
 
-　　项目结构如下
+&emsp;&emsp;项目结构如下
 
 ![route1](https://pic.xiaohuochai.site/blog/nodejs_route1.png)
 
 
-　　代码如下
+&emsp;&emsp;代码如下
 
 ![route2](https://pic.xiaohuochai.site/blog/nodejs_route2.png)
 
@@ -22,7 +22,7 @@
 
 【router.js】
 
-<div class="cnblogs_code">
+<div>
 <pre>// 加载所需模块
 var http = require('http');
 var url = require('url');
@@ -58,7 +58,7 @@ http.createServer(function(req,res){
 
 【404.html】
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -73,7 +73,7 @@ http.createServer(function(req,res){
 
 【about.html】
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -88,7 +88,7 @@ about
 
 【home.html】
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
