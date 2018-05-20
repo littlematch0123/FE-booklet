@@ -1,6 +1,6 @@
 # PHP基础语法
 
- &emsp;&emsp;PHP是一种创建动态交互性站点的强有力的服务器端脚本语言。PHP能够包含文本、HTML、CSS以及PHP代码，在服务器上执行，结果以纯文本返回浏览器。PHP是从C和Perl发展而来的一种非常简单的语言，但是它看上去更像Java，同时也非常灵活，但学习其语法和结构需要一些规则。本文将详细介绍PHP的基础语法
+&emsp;&emsp;PHP是一种创建动态交互性站点的强有力的服务器端脚本语言。PHP能够包含文本、HTML、CSS以及PHP代码，在服务器上执行，结果以纯文本返回浏览器。PHP是从C和Perl发展而来的一种非常简单的语言，但是它看上去更像Java，同时也非常灵活，但学习其语法和结构需要一些规则。本文将详细介绍PHP的基础语法
 
 &nbsp;
 
@@ -60,7 +60,7 @@
 
 &emsp;&emsp;echo能够输出一个以上的字符串，echo比print稍快，因为它不返回任何值&emsp;&emsp;
 
- &emsp;&emsp;注意：echo和print都是语言结构，有无括号都可以使用echo或echo()，以及print或print()，且echo或print关键字与字符串之间至少要有一个空格
+&emsp;&emsp;注意：echo和print都是语言结构，有无括号都可以使用echo或echo()，以及print或print()，且echo或print关键字与字符串之间至少要有一个空格
 
 <div>
 <pre>&lt;?php
