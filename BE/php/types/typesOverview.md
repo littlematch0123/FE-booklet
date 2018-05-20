@@ -1,18 +1,18 @@
 # php数据类型
 
-　　同javascript一样，php也是一门弱类型语言，或者说成类型松散的语言。在强类型语言中，变量要先指定类型，然后才可以对应指定类型的值。而php则不必告知变量的数据类型，会根据它的值，自动把变量转换成正确的数据类型。下面将详细介绍php的数据类型
+&emsp;&emsp;同javascript一样，php也是一门弱类型语言，或者说成类型松散的语言。在强类型语言中，变量要先指定类型，然后才可以对应指定类型的值。而php则不必告知变量的数据类型，会根据它的值，自动把变量转换成正确的数据类型。下面将详细介绍php的数据类型
 
 &nbsp;
 
 ### 总括
 
-　　PHP数据类型包括8种：其中包括四种标量类型、两种复合类型和两种特殊类型。具体是：字符串、整数、浮点数、布尔、数组、对象、NULL、资源
+&emsp;&emsp;PHP数据类型包括8种：其中包括四种标量类型、两种复合类型和两种特殊类型。具体是：字符串、整数、浮点数、布尔、数组、对象、NULL、资源
 
 ![types1](https://pic.xiaohuochai.site/blog/php_base_types1.jpg)
 
-　　如果想查看某个表达式的值和类型，可以使用函数var_dump()
+&emsp;&emsp;如果想查看某个表达式的值和类型，可以使用函数var_dump()
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
     $var = 1;
     //int 1
@@ -37,11 +37,11 @@
 
 ### 布尔型
 
-　　布尔型是最简单的类型。boolean表达了真值，可以为TRUE或FALSE
+&emsp;&emsp;布尔型是最简单的类型。boolean表达了真值，可以为TRUE或FALSE
 
-　　要指定一个布尔值，使用关键字 TRUE 或 FALSE。两个都不区分大小写
+&emsp;&emsp;要指定一个布尔值，使用关键字 TRUE 或 FALSE。两个都不区分大小写
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $foo = True; // assign the value TRUE to $foo
 ?&gt;</pre>
@@ -49,29 +49,29 @@ $foo = True; // assign the value TRUE to $foo
 
 **转换**
 
-　　要明确地将一个值转换成 boolean，用 (bool) 或者 (boolean) 来强制转换
+&emsp;&emsp;要明确地将一个值转换成 boolean，用 (bool) 或者 (boolean) 来强制转换
 
 **假值**
 
-　　当转换为boolean时，以下值被认为是 FALSE：
+&emsp;&emsp;当转换为boolean时，以下值被认为是 FALSE：
 
-　　布尔值 FALSE 本身
+&emsp;&emsp;布尔值 FALSE 本身
 
-　　整型值 0
+&emsp;&emsp;整型值 0
 
-　　浮点型值 0.0
+&emsp;&emsp;浮点型值 0.0
 
-　　空字符串，以及字符串 "0"
+&emsp;&emsp;空字符串，以及字符串 "0"
 
-　　不包括任何元素的数组
+&emsp;&emsp;不包括任何元素的数组
 
-　　不包括任何成员变量的对象(仅 PHP 4.0 适用)
+&emsp;&emsp;不包括任何成员变量的对象(仅 PHP 4.0 适用)
 
-　　特殊类型 NULL(包括尚未赋值的变量)
+&emsp;&emsp;特殊类型 NULL(包括尚未赋值的变量)
 
-　　从空标记生成的SimpleXML对象
+&emsp;&emsp;从空标记生成的SimpleXML对象
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 var_dump((bool) "");        // bool(false)
 var_dump((bool) 1);         // bool(true)
@@ -86,19 +86,18 @@ var_dump((bool) "false");   // bool(true)
 
 **检测**
 
-　　is_bool()函数用来检测变量是否是布尔型
+&emsp;&emsp;is_bool()函数用来检测变量是否是布尔型
 
-<div class="cnblogs_code">
+<div>
 <pre>bool is_bool ( mixed $var )</pre>
 </div>
 
-　　如果 var 是 boolean 则返回 TRUE
+&emsp;&emsp;如果 var 是 boolean 则返回 TRUE
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $a = false;
 $b = 0;
-
 // 因为 $a 是布尔型，所以结果为真
 if (is_bool($a)) {
     print "Yes, this is a boolean";
@@ -114,15 +113,15 @@ if (is_bool($b)) {
 
 ### 整型
 
-　　PHP整数必须至少有一个数字，不能包含逗号或空格，不能有小数点，正负均可
+&emsp;&emsp;PHP整数必须至少有一个数字，不能包含逗号或空格，不能有小数点，正负均可
 
-　　整型值可以使用十进制，十六进制，八进制或二进制表示，前面可以加上可选的符号(- 或者 +)
+&emsp;&emsp;整型值可以使用十进制，十六进制，八进制或二进制表示，前面可以加上可选的符号(- 或者 +)
 
-　　二进制表达的 integer 自 PHP 5.4.0 起可用
+&emsp;&emsp;二进制表达的 integer 自 PHP 5.4.0 起可用
 
-　　要使用八进制表达，数字前必须加上 0（零）。要使用十六进制表达，数字前必须加上 0x。要使用二进制表达，数字前必须加上 0b
+&emsp;&emsp;要使用八进制表达，数字前必须加上 0（零）。要使用十六进制表达，数字前必须加上 0x。要使用二进制表达，数字前必须加上 0b
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $a = 1234; // 十进制数
 $a = -123; // 负数
@@ -131,9 +130,9 @@ $a = 0x1A; // 十六进制数(等于十进制 26)
 ?&gt;</pre>
 </div>
 
-　　整型数的字长和平台有关，尽管通常最大值是大约二十亿(32 位有符号)。64位平台下的最大值通常是大约 9E18。PHP不支持无符号整数。Integer 值的字长可以用常量 PHP_INT_SIZE来表示，自 PHP 4.4.0 和 PHP 5.0.5后，最大值可以用常量 PHP_INT_MAX 来表示
+&emsp;&emsp;整型数的字长和平台有关，尽管通常最大值是大约二十亿(32 位有符号)。64位平台下的最大值通常是大约 9E18。PHP不支持无符号整数。Integer 值的字长可以用常量 PHP_INT_SIZE来表示，自 PHP 4.4.0 和 PHP 5.0.5后，最大值可以用常量 PHP_INT_MAX 来表示
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 echo PHP_INT_SIZE;//4
 echo PHP_INT_MAX;//2147483647
@@ -142,9 +141,9 @@ echo PHP_INT_MAX;//2147483647
 
 **溢出**
 
-　　如果给定的一个数超出了 integer 的范围，将会被解释为 float。同样如果执行的运算结果超出了 integer 范围，也会返回 float
+&emsp;&emsp;如果给定的一个数超出了 integer 的范围，将会被解释为 float。同样如果执行的运算结果超出了 integer 范围，也会返回 float
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $large_number = 2147483647;
 var_dump($large_number);  // int(2147483647)
@@ -158,9 +157,9 @@ var_dump($large_number); // float(50000000000)
 
 **转换**
 
-　　要明确地将一个值转换为 integer，用 (int) 或 (integer) 强制转换。还可以通过函数 intval() 来将一个值转换成整型
+&emsp;&emsp;要明确地将一个值转换为 integer，用 (int) 或 (integer) 强制转换。还可以通过函数 intval() 来将一个值转换成整型
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 echo intval(42);                      // 42
 echo intval(4.2);                     // 4
@@ -179,9 +178,9 @@ echo intval(array('foo', 'bar'));     // 1
 ?&gt;</pre>
 </div>
 
-　　从布尔值转换，FALSE 将产生出 0，TRUE 将产生出 1；从浮点型转换，当从浮点数转换成整数时，将向下取整；从字符串转换，如果该字符串没有包含 '.'，'e' 或 'E' 并且其数字值在整型的范围之内，该字符串将被当成 integer 来取值。其它所有情况下都被作为float来取值。该字符串的开始部分决定了它的值。如果该字符串以合法的数值开始，则使用该数值。否则其值为0。合法数值由可选的正负号，后面跟着一个或多个数字(可能有小数点)，再跟着可选的指数部分。指数部分由'e'或'E'后面跟着一个或多个数字构成
+&emsp;&emsp;从布尔值转换，FALSE 将产生出 0，TRUE 将产生出 1；从浮点型转换，当从浮点数转换成整数时，将向下取整；从字符串转换，如果该字符串没有包含 '.'，'e' 或 'E' 并且其数字值在整型的范围之内，该字符串将被当成 integer 来取值。其它所有情况下都被作为float来取值。该字符串的开始部分决定了它的值。如果该字符串以合法的数值开始，则使用该数值。否则其值为0。合法数值由可选的正负号，后面跟着一个或多个数字(可能有小数点)，再跟着可选的指数部分。指数部分由'e'或'E'后面跟着一个或多个数字构成
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 echo (int)true;//1
 echo (int)false;//0
@@ -193,13 +192,12 @@ echo (int)'px';//0
 
 **检测**
 
-　　is_int()、is_integer()、is_long()这三个函数可以用来检测变量是否是整数
+&emsp;&emsp;is_int()、is_integer()、is_long()这三个函数可以用来检测变量是否是整数
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $a = 1;
 $b = 1.0;
-
 var_dump(is_int($a));//true
 var_dump(is_int($b));//false
 var_dump(is_integer($a));//true
@@ -213,9 +211,9 @@ var_dump(is_long($b));//false
 
 ### 浮点型
 
-　　浮点型（也叫浮点数 float，双精度数 double 或实数 real）
+&emsp;&emsp;浮点型（也叫浮点数 float，双精度数 double 或实数 real）
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $a = 1.234; 
 $b = 1.2e3; 
@@ -223,11 +221,11 @@ $c = 7E-10;
 ?&gt;</pre>
 </div>
 
-　　PHP 通常使用 IEEE 754 双精度格式，则由于取整而导致的最大相对误差为 1.11e-16。非基本数学运算可能会给出更大误差，并且要考虑到进行复合运算时的误差传递
+&emsp;&emsp;PHP 通常使用 IEEE 754 双精度格式，则由于取整而导致的最大相对误差为 1.11e-16。非基本数学运算可能会给出更大误差，并且要考虑到进行复合运算时的误差传递
 
-　　以十进制能够精确表示的有理数如 0.1 或 0.7，无论有多少尾数都不能被内部所使用的二进制精确表示，因此不能在不丢失一点点精度的情况下转换为二进制的格式。这就会造成混乱的结果：例如，floor((0.1+0.7)*10) 通常会返回 7 而不是预期中的 8，因为该结果内部的表示其实是类似 7.9999999999999991118...
+&emsp;&emsp;以十进制能够精确表示的有理数如 0.1 或 0.7，无论有多少尾数都不能被内部所使用的二进制精确表示，因此不能在不丢失一点点精度的情况下转换为二进制的格式。这就会造成混乱的结果：例如，floor((0.1+0.7)*10) 通常会返回 7 而不是预期中的 8，因为该结果内部的表示其实是类似 7.9999999999999991118...
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 echo floor((0.1+0.7)*10);//7
 ?&gt;</pre>
@@ -235,16 +233,15 @@ echo floor((0.1+0.7)*10);//7
 
 **转换**
 
-　　要明确地将一个值转换为 float，用(float)强制转换。还可以通过函数 floatval()、doubleval()来将一个值转换成整型。除了字符串类型之外，一般地，都是先将值转换成整型，然后再转换成浮点数
+&emsp;&emsp;要明确地将一个值转换为 float，用(float)强制转换。还可以通过函数 floatval()、doubleval()来将一个值转换成整型。除了字符串类型之外，一般地，都是先将值转换成整型，然后再转换成浮点数
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $var1 = '122.34343The';
 $float_value1_of_var1 = floatval ($var1);
 $float_value1_of_var1 = doubleval ($var1);
 print $float_value1_of_var1; // 打印出 122.34343
 print $float_value1_of_var1; // 打印出 122.34343
-
 $var2 = true;
 $float_value2_of_var2 = floatval ($var2);
 $float_value2_of_var2 = doubleval ($var2);
@@ -255,16 +252,15 @@ print $float_value2_of_var2; // 打印出 1
 
 **比较浮点数**
 
-　　比较两个浮点数是否相等是有问题的。不过还是有迂回的方法来比较浮点数值的
+&emsp;&emsp;比较两个浮点数是否相等是有问题的。不过还是有迂回的方法来比较浮点数值的
 
-　　要测试浮点数是否相等，要使用一个仅比该数值大一丁点的最小误差值。该值也被称为机器极小值（epsilon）或最小单元取整数，是计算中所能接受的最小的差别值
+&emsp;&emsp;要测试浮点数是否相等，要使用一个仅比该数值大一丁点的最小误差值。该值也被称为机器极小值（epsilon）或最小单元取整数，是计算中所能接受的最小的差别值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $a = 1.23456789;
 $b = 1.23456780;
 $epsilon = 0.00001;
-
 if(abs($a-$b) &lt; $epsilon) {
     echo "true";
 }
@@ -273,11 +269,11 @@ if(abs($a-$b) &lt; $epsilon) {
 
 **NaN**
 
-　　某些数学运算会产生一个由常量 NAN 所代表的结果。此结果代表着一个在浮点数运算中未定义或不可表述的值。任何拿此值与其它任何值进行的松散或严格比较的结果都是 FALSE
+&emsp;&emsp;某些数学运算会产生一个由常量 NAN 所代表的结果。此结果代表着一个在浮点数运算中未定义或不可表述的值。任何拿此值与其它任何值进行的松散或严格比较的结果都是 FALSE
 
-　　由于 NAN 代表着任何不同值，不应拿 NAN 去和其它值进行比较，包括其自身，应该用 is_nan() 来检查
+&emsp;&emsp;由于 NAN 代表着任何不同值，不应拿 NAN 去和其它值进行比较，包括其自身，应该用 is_nan() 来检查
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $nan = acos(8);
 var_dump($nan, is_nan($nan));//float NAN boolean true
@@ -286,9 +282,9 @@ var_dump($nan, is_nan($nan));//float NAN boolean true
 
 **检测**
 
-　　is_real()、is_float()这两个函数可以用来检测变量是否是浮点数
+&emsp;&emsp;is_real()、is_float()这两个函数可以用来检测变量是否是浮点数
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 isfloat("5.0" + 0);  // true
 isfloat("5.0");  // false
@@ -302,19 +298,19 @@ isfloat('a' + 0);  // false
 
 ### 字符串
 
-　　一个字符串string就是由一系列的字符组成，其中每个字符等同于一个字节
+&emsp;&emsp;一个字符串string就是由一系列的字符组成，其中每个字符等同于一个字节
 
-　　一个字符串可以用 4 种方式表达：单引号、双引号、heredoc语法结构、nowdoc语法结构(自 PHP 5.3.0 起)
+&emsp;&emsp;一个字符串可以用 4 种方式表达：单引号、双引号、heredoc语法结构、nowdoc语法结构(自 PHP 5.3.0 起)
 
 **单引号**
 
-　　定义一个字符串的最简单的方法是用单引号把它包围起来
+&emsp;&emsp;定义一个字符串的最简单的方法是用单引号把它包围起来
 
-　　要表达一个单引号自身，需在它的前面加个反斜线(\)来转义。要表达一个反斜线自身，则用两个反斜线(\\)。其它任何方式的反斜线都不会被当成反斜线：也就是说如果想使用其它转义序列例如 \r 或者 \n，并不代表任何特殊含义，就单纯是这两个字符本身
+&emsp;&emsp;要表达一个单引号自身，需在它的前面加个反斜线(\)来转义。要表达一个反斜线自身，则用两个反斜线(\\)。其它任何方式的反斜线都不会被当成反斜线：也就是说如果想使用其它转义序列例如 \r 或者 \n，并不代表任何特殊含义，就单纯是这两个字符本身
 
-　　[注意]在单引号字符串中的变量和特殊字符的转义序列将不会被替换
+&emsp;&emsp;注意：在单引号字符串中的变量和特殊字符的转义序列将不会被替换
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 echo 'this is a simple string';
 // 可以录入多行
@@ -336,11 +332,11 @@ echo 'Variables do not $expand $either';
 
 **双引号**
 
-　　如果字符串是包围在双引号中， PHP将对一些特殊的字符进行解析。用双引号定义的字符串最重要的特征是变量会被解析
+&emsp;&emsp;如果字符串是包围在双引号中， PHP将对一些特殊的字符进行解析。用双引号定义的字符串最重要的特征是变量会被解析
 
 【转义字符】
 
-<div class="cnblogs_code">
+<div>
 <pre>序列       含义
 \n        换行(ASCII 字符集中的 LF 或 0x0A (10))
 \r        回车(ASCII 字符集中的 CR 或 0x0D (13))
@@ -357,13 +353,13 @@ echo 'Variables do not $expand $either';
 
 **Heredoc结构**
 
-　　第三种表达字符串的方法是用heredoc句法结构(又叫做定界符)：&lt;&lt;&lt;。在该运算符之后要提供一个标识符，然后换行。接下来是字符串string 本身，最后要用前面定义的标识符作为结束标志
+&emsp;&emsp;第三种表达字符串的方法是用heredoc句法结构(又叫做定界符)：&lt;&lt;&lt;。在该运算符之后要提供一个标识符，然后换行。接下来是字符串string 本身，最后要用前面定义的标识符作为结束标志
 
-　　结束时所引用的标识符必须在该行的第一列，而且，标识符的命名也要像其它标签一样遵守 PHP 的规则：只能包含字母、数字和下划线，并且必须以字母和下划线作为开头
+&emsp;&emsp;结束时所引用的标识符必须在该行的第一列，而且，标识符的命名也要像其它标签一样遵守 PHP 的规则：只能包含字母、数字和下划线，并且必须以字母和下划线作为开头
 
-　　[注意]结束标识符这行除了可能有一个分号外，绝对不能包含其它字符。这意味着标识符不能缩进，分号的前后也不能有任何空白或制表符
+&emsp;&emsp;注意：结束标识符这行除了可能有一个分号外，绝对不能包含其它字符。这意味着标识符不能缩进，分号的前后也不能有任何空白或制表符
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php 
 $str = &lt;&lt;&lt; G
 123
@@ -372,9 +368,9 @@ echo $str;//123
 ?&gt;</pre>
 </div>
 
-　　Heredoc结构就像是没有使用双引号的双引号字符串，这就是说在heredoc 结构中单引号不用被转义，但是转义序列还可以使用。变量将被替换
+&emsp;&emsp;Heredoc结构就像是没有使用双引号的双引号字符串，这就是说在heredoc 结构中单引号不用被转义，但是转义序列还可以使用。变量将被替换
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $str = &lt;&lt;&lt;EOD
 Example of string
@@ -406,9 +402,9 @@ EOT;
 
 **Nowdoc结构**
 
-　　就像 heredoc 结构类似于双引号字符串，Nowdoc 结构是类似于单引号字符串的。Nowdoc 结构很像&nbsp;heredoc 结构，但是 nowdoc 中不进行解析操作。这种结构很适合用于嵌入 PHP 代码或其它大段文本而无需对其中的特殊字符进行转义
+&emsp;&emsp;就像 heredoc 结构类似于双引号字符串，Nowdoc 结构是类似于单引号字符串的。Nowdoc 结构很像&nbsp;heredoc 结构，但是 nowdoc 中不进行解析操作。这种结构很适合用于嵌入 PHP 代码或其它大段文本而无需对其中的特殊字符进行转义
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $str = &lt;&lt;&lt;'EOD'
 Example of string
@@ -442,21 +438,21 @@ EOT;
 
 **转换**
 
-　　一个值可以通过在其前面加上 (string) 或用 strval() 函数来转变成字符串。在一个需要字符串的表达式中，会自动转换为string。比如在使用函数echo或print时，或在一个变量和一个 string 进行比较时，就会发生这种转换
+&emsp;&emsp;一个值可以通过在其前面加上 (string) 或用 strval() 函数来转变成字符串。在一个需要字符串的表达式中，会自动转换为string。比如在使用函数echo或print时，或在一个变量和一个 string 进行比较时，就会发生这种转换
 
-　　NULL 总是被转变成空字符串
+&emsp;&emsp;NULL 总是被转变成空字符串
 
-　　一个布尔值 boolean 的 TRUE 被转换成 string 的 "1"。Boolean 的 FALSE 被转换成 ""（空字符串）。这种转换可以在 boolean 和 string 之间相互进行
+&emsp;&emsp;一个布尔值 boolean 的 TRUE 被转换成 string 的 "1"。Boolean 的 FALSE 被转换成 ""（空字符串）。这种转换可以在 boolean 和 string 之间相互进行
 
-　　一个整数 integer 或浮点数 float 被转换为数字的字面样式的 string（包括 float 中的指数部分）。使用指数计数法的浮点数（4.1E+6）也可转换
+&emsp;&emsp;一个整数 integer 或浮点数 float 被转换为数字的字面样式的 string（包括 float 中的指数部分）。使用指数计数法的浮点数（4.1E+6）也可转换
 
-　　当一个字符串被当作一个数值来取值，其结果和类型如下
+&emsp;&emsp;当一个字符串被当作一个数值来取值，其结果和类型如下
 
-　　如果该字符串没有包含 '.'，'e' 或 'E' 并且其数字值在整型的范围之内（由 PHP_INT_MAX 所定义），该字符串将被当成 integer 来取值。其它所有情况下都被作为 float 来取值
+&emsp;&emsp;如果该字符串没有包含 '.'，'e' 或 'E' 并且其数字值在整型的范围之内（由 PHP_INT_MAX 所定义），该字符串将被当成 integer 来取值。其它所有情况下都被作为 float 来取值
 
-　　该字符串的开始部分决定了它的值。如果该字符串以合法的数值开始，则使用该数值。否则其值为 0（零）。合法数值由可选的正负号，后面跟着一个或多个数字（可能有小数点），再跟着可选的指数部分。指数部分由 'e' 或 'E' 后面跟着一个或多个数字构成
+&emsp;&emsp;该字符串的开始部分决定了它的值。如果该字符串以合法的数值开始，则使用该数值。否则其值为 0（零）。合法数值由可选的正负号，后面跟着一个或多个数字（可能有小数点），再跟着可选的指数部分。指数部分由 'e' 或 'E' 后面跟着一个或多个数字构成
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $foo = 1 + "10.5";                // $foo is float (11.5)
 $foo = 1 + "-1.3e3";              // $foo is float (-1299)
@@ -469,19 +465,19 @@ $foo = "10.0 pigs " + 1.0;        // $foo is float (11)
 ?&gt;</pre>
 </div>
 
-　　直接把 array，object 或 resource 转换成 string 不会得到除了其类型之外的任何有用信息
+&emsp;&emsp;直接把 array，object 或 resource 转换成 string 不会得到除了其类型之外的任何有用信息
 
 **检测**
 
-　　is_string()函数用来检测变量是否是字符串
+&emsp;&emsp;is_string()函数用来检测变量是否是字符串
 
-<div class="cnblogs_code">
+<div>
 <pre>bool is_string ( mixed $var )</pre>
 </div>
 
-　　如果 var 是 string 则返回 TRUE，否则返回 FALSE
+&emsp;&emsp;如果 var 是 string 则返回 TRUE，否则返回 FALSE
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 var_dump(is_string('123'));//boolean true
 var_dump(is_string(123));//boolean false
@@ -492,28 +488,27 @@ var_dump(is_string(123));//boolean false
 
 ### 数组
 
-　　PHP 中的数组实际上是一个有序映射。映射是一种把 values 关联到 keys 的类型
+&emsp;&emsp;PHP 中的数组实际上是一个有序映射。映射是一种把 values 关联到 keys 的类型
 
-　　由于数组元素的值也可以是另一个数组，树形结构和多维数组也是允许的
+&emsp;&emsp;由于数组元素的值也可以是另一个数组，树形结构和多维数组也是允许的
 
 **构建**
 
-　　可以用 array() 语言结构来新建一个数组。它接受任意数量用逗号分隔的 键（key） =&gt; 值（value）对
+&emsp;&emsp;可以用 array() 语言结构来新建一个数组。它接受任意数量用逗号分隔的 键（key） =&gt; 值（value）对
 
-<div class="cnblogs_code">
+<div>
 <pre>array(  key =&gt;  value
      , ...
      )
 // 键（key）可是是一个整数 integer 或字符串 string
 // 值（value）可以是任意类型的值</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array = array(
     "foo" =&gt; "bar",
     "bar" =&gt; "foo",
 );
-
 // 自 PHP 5.4 起
 $array = [
     "foo" =&gt; "bar",
@@ -522,23 +517,23 @@ $array = [
 ?&gt;</pre>
 </div>
 
-　　key可以是integer或者string。value可以是任意类型
+&emsp;&emsp;key可以是integer或者string。value可以是任意类型
 
-　　此外key会有如下的强制转换
+&emsp;&emsp;此外key会有如下的强制转换
 
-　　包含有合法整型值的字符串会被转换为整型。例如键名 "8" 实际会被储存为 8。但是 "08" 则不会强制转换，因为其不是一个合法的十进制数值
+&emsp;&emsp;包含有合法整型值的字符串会被转换为整型。例如键名 "8" 实际会被储存为 8。但是 "08" 则不会强制转换，因为其不是一个合法的十进制数值
 
-　　浮点数也会被转换为整型，意味着其小数部分会被舍去。例如键名 8.7 实际会被储存为 8
+&emsp;&emsp;浮点数也会被转换为整型，意味着其小数部分会被舍去。例如键名 8.7 实际会被储存为 8
 
-　　布尔值也会被转换成整型。即键名 true 实际会被储存为 1 而键名 false 会被储存为 0
+&emsp;&emsp;布尔值也会被转换成整型。即键名 true 实际会被储存为 1 而键名 false 会被储存为 0
 
-　　Null 会被转换为空字符串，即键名 null 实际会被储存为 ""
+&emsp;&emsp;Null 会被转换为空字符串，即键名 null 实际会被储存为 ""
 
-　　数组和对象不能被用为键名
+&emsp;&emsp;数组和对象不能被用为键名
 
-　　如果在数组定义中多个单元都使用了同一个键名，则只使用了最后一个，之前的都被覆盖了
+&emsp;&emsp;如果在数组定义中多个单元都使用了同一个键名，则只使用了最后一个，之前的都被覆盖了
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array = array(
     1    =&gt; "a",
@@ -556,9 +551,9 @@ var_dump($array);
 ?&gt;</pre>
 </div>
 
-　　key 为可选项。如果未指定，PHP 将自动使用之前用过的最大 integer 键名加上 1 作为新的键名
+&emsp;&emsp;key 为可选项。如果未指定，PHP 将自动使用之前用过的最大 integer 键名加上 1 作为新的键名
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array = array("foo", "bar", "hallo", "world");
 /*
@@ -575,7 +570,6 @@ array(4) {
  */
 var_dump($array);
 ?&gt;
-
 &lt;?php
 $array = array(
          "a",
@@ -601,11 +595,11 @@ var_dump($array);
 
 **访问**
 
-　　数组单元可以通过 array[key] 语法来访问
+&emsp;&emsp;数组单元可以通过 array[key] 语法来访问
 
-　　[注意]数组的中括号[]可以用花括号{}代替
+&emsp;&emsp;注意：数组的中括号[]可以用花括号{}代替
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array = array(
     "foo" =&gt; "bar",
@@ -627,11 +621,11 @@ var_dump($array["multi"]["dimensional"]["array"]);
 ?&gt;</pre>
 </div>
 
-　　要修改某个值，通过其键名给该单元赋一个新值。要删除某键值对，对其调用 unset() 函数
+&emsp;&emsp;要修改某个值，通过其键名给该单元赋一个新值。要删除某键值对，对其调用 unset() 函数
 
-　　[注意]如果给出方括号但没有指定键名，则取当前最大整数索引值，新的键名将是该值加上 1（但是最小为 0）。如果当前还没有整数索引，则键名将为 0
+&emsp;&emsp;注意：如果给出方括号但没有指定键名，则取当前最大整数索引值，新的键名将是该值加上 1（但是最小为 0）。如果当前还没有整数索引，则键名将为 0
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $arr = array(5 =&gt; 1, 12 =&gt; 2);
 $arr[] = 56;    // This is the same as $arr[13] = 56;
@@ -645,9 +639,9 @@ unset($arr);    // This deletes the whole array
 
 **删除**
 
-　　如果将数组中的某个值置为null，则value为空，键值仍然存在
+&emsp;&emsp;如果将数组中的某个值置为null，则value为空，键值仍然存在
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $arr = [0,1,2,3];
 $arr[1] = null;
@@ -662,9 +656,9 @@ var_dump($arr);
 ?&gt;</pre>
 </div>
 
-　　如果将数组中的某个值使用unset()，则键值对都不存在
+&emsp;&emsp;如果将数组中的某个值使用unset()，则键值对都不存在
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $arr = [0,1,2,3];
 unset($arr[1]);
@@ -680,9 +674,9 @@ var_dump($arr);
 
 【array_values】
 
-　　array_values() 函数可以返回数组中所有的值并给其建立数字索引
+&emsp;&emsp;array_values() 函数可以返回数组中所有的值并给其建立数字索引
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $arr = [0,1,2,3];
 unset($arr[1]);
@@ -699,9 +693,9 @@ var_dump($arr);
 
 **遍历**
 
-　　foreach 语法结构提供了遍历数组的简单方式。foreach 仅能够应用于数组和对象，如果尝试应用于其他数据类型的变量，或者未初始化的变量将发出错误信息
+&emsp;&emsp;foreach 语法结构提供了遍历数组的简单方式。foreach 仅能够应用于数组和对象，如果尝试应用于其他数据类型的变量，或者未初始化的变量将发出错误信息
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $arr = array(1, 2, 3, 4);
 foreach ($arr as &amp;$value) {
@@ -712,9 +706,9 @@ unset($value); // 最后取消掉引用
 ?&gt;</pre>
 </div>
 
-　　一般地，可以使用foreach()语句将二维数组遍历成一个表格的形式
+&emsp;&emsp;一般地，可以使用foreach()语句将二维数组遍历成一个表格的形式
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $group = [
         "name"=&gt;"第三组",
@@ -725,7 +719,6 @@ $group = [
         ["name"=&gt;"d", "age"=&gt;31, "sex"=&gt;"女", "email"=&gt;"4@bbb.com"], 
         ["name"=&gt;"e", "age"=&gt;20, "sex"=&gt;"女", "email"=&gt;"5@bbb.com"]
 ];
-
 echo '&lt;table border="1" width="800" align="center"&gt;';
 echo '&lt;caption&gt;&lt;h1&gt;数组转为表格&lt;h1&gt;&lt;/caption&gt;';
 foreach($group as $k=&gt;$row) {
@@ -747,9 +740,9 @@ echo '&lt;/table&gt;';
 
 &nbsp;【list()】
 
-　　list()函数可以将数组中的值赋给变量
+&emsp;&emsp;list()函数可以将数组中的值赋给变量
 
-<div class="cnblogs_code">
+<div>
 <pre>list($a,$b,$c) = [1,2,3];
 echo $a;//1
 echo $b;//2
@@ -766,11 +759,11 @@ var_dump($bar); // NULL</pre>
 
 【each()】
 
-　　each()函数用于返回数组中当前的键／值对并将数组指针向前移动一步
+&emsp;&emsp;each()函数用于返回数组中当前的键／值对并将数组指针向前移动一步
 
-　　[注意]如果内部指针越过了数组的末端，则 each() 返回 FALSE
+&emsp;&emsp;注意：如果内部指针越过了数组的末端，则 each() 返回 FALSE
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $foo = array("bob", "fred", "jussi", "jouni");
 $bar = each($foo);
@@ -779,9 +772,9 @@ print_r($bar);
 ?&gt;</pre>
 </div>
 
-　　each()函数常常和list()配合来遍历数组
+&emsp;&emsp;each()函数常常和list()配合来遍历数组
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $foo = array("bob", "fred", "jussi", "jouni");
 while(list($key,$val) = each($foo)){
@@ -791,9 +784,9 @@ while(list($key,$val) = each($foo)){
 ?&gt;</pre>
 </div>
 
-　　在执行each() 之后，数组指针将停留在数组中的下一个单元或者当碰到数组结尾时停留在最后一个单元。如果要再用each 遍历数组，必须使用 reset()
+&emsp;&emsp;在执行each() 之后，数组指针将停留在数组中的下一个单元或者当碰到数组结尾时停留在最后一个单元。如果要再用each 遍历数组，必须使用 reset()
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $foo = array("bob", "fred", "jussi", "jouni");
 while(list($key,$val) = each($foo)){
@@ -810,9 +803,9 @@ while(list($key,$val) = each($foo)){
 
 **内部指针**
 
-　　前面提到的reset()函数就是数组内部指针函数的一种，数组内部指针函数包括key()、current()、next()、prev()、end()和reset()
+&emsp;&emsp;前面提到的reset()函数就是数组内部指针函数的一种，数组内部指针函数包括key()、current()、next()、prev()、end()和reset()
 
-<div class="cnblogs_code">
+<div>
 <pre>key()      获取当前下标
 current()  获取当前值
 next()     指针向后移动
@@ -820,7 +813,7 @@ prev()     指针向左移动
 reset()    指针指向数组中第一个元素
 end()      指针指向数组中最后一个元素</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $arr = ['a','b','c','d'];
 echo key($arr);//0
@@ -842,23 +835,23 @@ echo current($arr);//a
 
 **转换**
 
-　　将 NULL 转换为 array 会得到一个空的数组
+&emsp;&emsp;将 NULL 转换为 array 会得到一个空的数组
 
-　　对于任意 integer，float，string，boolean 和 resource 类型，如果将一个值转换为数组，将得到一个仅有一个元素的数组，其下标为 0，该元素即为此标量的值
+&emsp;&emsp;对于任意 integer，float，string，boolean 和 resource 类型，如果将一个值转换为数组，将得到一个仅有一个元素的数组，其下标为 0，该元素即为此标量的值
 
-　　如果一个 object 类型转换为 array，则结果为一个数组，其单元为该对象的属性。键名将为成员变量名，不过有几点例外：整数属性不可访问；私有变量前会加上类名作前缀；保护变量前会加上一个 '*' 做前缀。这些前缀的前后都各有一个 NULL 字符
+&emsp;&emsp;如果一个 object 类型转换为 array，则结果为一个数组，其单元为该对象的属性。键名将为成员变量名，不过有几点例外：整数属性不可访问；私有变量前会加上类名作前缀；保护变量前会加上一个 '*' 做前缀。这些前缀的前后都各有一个 NULL 字符
 
 **比较**
 
-　　array_diff()函数用来计算数组的差集
+&emsp;&emsp;array_diff()函数用来计算数组的差集
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_diff ( array $array1 , array $array2 [, array $... ] )</pre>
 </div>
 
-　　对比返回在 array1 中但是不在 array2 及任何其它参数数组中的值
+&emsp;&emsp;对比返回在 array1 中但是不在 array2 及任何其它参数数组中的值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array1 = array("a" =&gt; "green", "red", "blue", "red");
 $array2 = array("b" =&gt; "green", "yellow", "red");
@@ -875,9 +868,9 @@ print_r($result);
 
 **检测**
 
-　　is_array()函数用来检测变量是否是数组
+&emsp;&emsp;is_array()函数用来检测变量是否是数组
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 var_dump(is_array([]));//boolean true
 var_dump(is_array(''));//boolean false
@@ -888,9 +881,9 @@ var_dump(is_array(''));//boolean false
 
 ### 对象
 
-　　要创建一个新的对象 object，使用 new 语句实例化一个类
+&emsp;&emsp;要创建一个新的对象 object，使用 new 语句实例化一个类
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class foo
 {
@@ -906,9 +899,9 @@ $bar-&gt;do_foo();
 
 **转换**
 
-　　如果将一个对象转换成对象，它将不会有任何变化。如果其它任何类型的值被转换成对象，将会创建一个内置类 stdClass 的实例。如果该值为 NULL，则新的实例为空。数组转换成对象将使键名成为属性名并具有相对应的值。对于任何其它的值，名为 scalar 的成员变量将包含该值
+&emsp;&emsp;如果将一个对象转换成对象，它将不会有任何变化。如果其它任何类型的值被转换成对象，将会创建一个内置类 stdClass 的实例。如果该值为 NULL，则新的实例为空。数组转换成对象将使键名成为属性名并具有相对应的值。对于任何其它的值，名为 scalar 的成员变量将包含该值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $obj = (object) 'ciao';
 echo $obj-&gt;scalar;  // outputs 'ciao'
@@ -917,9 +910,9 @@ echo $obj-&gt;scalar;  // outputs 'ciao'
 
 **检测**
 
-　　is_object()方法用来检测变量是否是一个对象
+&emsp;&emsp;is_object()方法用来检测变量是否是一个对象
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 var_dump(is_object(''));//boolean false
 var_dump(is_object((object)''));//boolean true
@@ -930,9 +923,9 @@ var_dump(is_object((object)''));//boolean true
 
 ### NULL
 
-　　PHP中的NULL是空类型，对大小写不敏感，NULL类型只有一个取值，表示一个变量没有值，当被赋值为NULL，或者尚未被赋值，或者被unset()，这三种情况下变量被认为为NULL
+&emsp;&emsp;PHP中的NULL是空类型，对大小写不敏感，NULL类型只有一个取值，表示一个变量没有值，当被赋值为NULL，或者尚未被赋值，或者被unset()，这三种情况下变量被认为为NULL
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php 
  error_reporting(0); //禁止显示PHP警告提示
  $var;
@@ -949,13 +942,13 @@ var_dump(is_object((object)''));//boolean true
 
 **转换**
 
-　　使用 (unset) $var 将一个变量转换为 null 将不会删除该变量或 unset 其值。仅是返回 NULL 值而已
+&emsp;&emsp;使用 (unset) $var 将一个变量转换为 null 将不会删除该变量或 unset 其值。仅是返回 NULL 值而已
 
 **检测**
 
-　　is_null()函数用来检测变量是否为 NULL
+&emsp;&emsp;is_null()函数用来检测变量是否为 NULL
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php 
 var_dump(is_null(NULL));//boolean true
 var_dump(is_null(''));//boolean false
@@ -966,9 +959,9 @@ var_dump(is_null(''));//boolean false
 
 ### 资源
 
-　　PHP资源是由专门的函数来建立和使用的，例如打开文件、数据连接、图形画布。可以对资源进行操作（创建、使用和释放）。任何资源，在不需要的时候应该被及时释放。如果我们忘记了释放资源，系统自动启用垃圾回收机制，在页面执行完毕后回收资源，以避免内存被消耗殆尽
+&emsp;&emsp;PHP资源是由专门的函数来建立和使用的，例如打开文件、数据连接、图形画布。可以对资源进行操作（创建、使用和释放）。任何资源，在不需要的时候应该被及时释放。如果我们忘记了释放资源，系统自动启用垃圾回收机制，在页面执行完毕后回收资源，以避免内存被消耗殆尽
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $file=fopen("data/webroot/resource/f.txt","r");   //打开文件
 $con=mysql_connect("127.0.0.1","root","root");  //连接数据库
