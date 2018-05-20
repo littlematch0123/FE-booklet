@@ -1,23 +1,23 @@
-# php数组函数
+# 前端学PHP之数组函数
 
-　　PHP中的数组功能非常强大，数组处理函数有着强大、灵活、高效的特点。PHP5提供了近100个操作数组的系统函数，包括排序函数、替换函数、数组计算函数等。下面将详细介绍数组函数
+&emsp;&emsp;PHP中的数组功能非常强大，数组处理函数有着强大、灵活、高效的特点。PHP5提供了近100个操作数组的系统函数，包括排序函数、替换函数、数组计算函数等。下面将详细介绍数组函数
 
-　　[注意]关于javascript数组的22种方法[移步至此](http://www.cnblogs.com/xiaohuochai/p/5682621.html)
+&emsp;&emsp;注意：关于javascript数组的22种方法[移步至此](http://www.cnblogs.com/xiaohuochai/p/5682621.html)
 
 &nbsp;
 
 ### 键值操作
 
-　　数组的每个元素都是由键值对组成，通过元素的键名来访问对应的键值。关于键值操作有array_values()、array_keys()、in_array()、array_flip()和array_reverse()这5个常用函数
+&emsp;&emsp;数组的每个元素都是由键值对组成，通过元素的键名来访问对应的键值。关于键值操作有array_values()、array_keys()、in_array()、array_flip()和array_reverse()这5个常用函数
 
 **array_values**
 
-　　array_values() 返回 input 数组中所有的值并给其建立数字索引
+&emsp;&emsp;array_values() 返回 input 数组中所有的值并给其建立数字索引
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_values ( array $input )</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array = array("size" =&gt; "XL", "color" =&gt; "gold");
 //Array ( [0] =&gt; XL [1] =&gt; gold )
@@ -27,17 +27,17 @@ print_r(array_values($array));
 
 **array_keys**
 
-　　array_keys() 返回 input 数组中的数字或者字符串的键名
+&emsp;&emsp;array_keys() 返回 input 数组中的数字或者字符串的键名
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_keys ( array $array [, mixed $search_value [, bool $strict = false ]] )</pre>
 </div>
 
-　　如果指定了可选参数 search_value，则只返回该值的键名。否则 input 数组中的所有键名都会被返回
+&emsp;&emsp;如果指定了可选参数 search_value，则只返回该值的键名。否则 input 数组中的所有键名都会被返回
 
-　　如果指定了可选参数 strict，表示判断在搜索的时候是否该使用严格的比较（===）
+&emsp;&emsp;如果指定了可选参数 strict，表示判断在搜索的时候是否该使用严格的比较（===）
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array = array(0 =&gt; 100, "color" =&gt; "red");
 //Array ( [0] =&gt; 0 [1] =&gt; color ) 
@@ -54,15 +54,15 @@ print_r(array_keys($array));
 
 **in_array**
 
-　　in_array &mdash; 检查数组中是否存在某个值
+&emsp;&emsp;in_array &mdash; 检查数组中是否存在某个值
 
-<div class="cnblogs_code">
+<div>
 <pre>bool in_array ( mixed $needle , array $haystack [, bool $strict = FALSE ] )</pre>
 </div>
 
-　　如果第三个参数 strict 的值为 TRUE 则 in_array() 函数还会检查 needle 的类型是否和 haystack 中的相同
+&emsp;&emsp;如果第三个参数 strict 的值为 TRUE 则 in_array() 函数还会检查 needle 的类型是否和 haystack 中的相同
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $os = array("Mac", "NT", "Irix", "Linux");
 if (in_array("Irix", $os)) {
@@ -77,19 +77,19 @@ if (in_array("mac", $os)) {
 
 **array_flip**
 
-　　array_flip &mdash; 交换数组中的键和值，成功时返回交换后的数组，如果失败返回 NULL
+&emsp;&emsp;array_flip &mdash; 交换数组中的键和值，成功时返回交换后的数组，如果失败返回 NULL
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_flip ( array $trans )</pre>
 </div>
 
-　　array_flip() 返回一个反转后的 array，例如 trans 中的键名变成了值，而 trans 中的值成了键名
+&emsp;&emsp;array_flip() 返回一个反转后的 array，例如 trans 中的键名变成了值，而 trans 中的值成了键名
 
-　　如果同一个值出现了多次，则最后一个键名将作为它的值，所有其它的都丢失了
+&emsp;&emsp;如果同一个值出现了多次，则最后一个键名将作为它的值，所有其它的都丢失了
 
-　　[注意]trans中的值需要能够作为合法的键名，例如需要是 integer 或者 string。如果值的类型不对将发出一个警告，并且有问题的键／值对将不会反转
+&emsp;&emsp;注意：trans中的值需要能够作为合法的键名，例如需要是 integer 或者 string。如果值的类型不对将发出一个警告，并且有问题的键／值对将不会反转
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $trans = array("a" =&gt; 1, "b" =&gt; 1, "c" =&gt; 2);
 $trans = array_flip($trans);
@@ -100,15 +100,15 @@ print_r($trans);
 
 **array_reverse**
 
-　　array_reverse &mdash; 返回一个单元顺序相反的数组
+&emsp;&emsp;array_reverse &mdash; 返回一个单元顺序相反的数组
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_reverse ( array $array [, bool $preserve_keys = false ] )</pre>
 </div>
 
-　　如果参数preserve_keys设置为 TRUE 会保留数字的键。非数字的键则不受这个设置的影响，总是会被保留
+&emsp;&emsp;如果参数preserve_keys设置为 TRUE 会保留数字的键。非数字的键则不受这个设置的影响，总是会被保留
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $input  = array("php", 4.0, array("green", "red"));
 $result = array_reverse($input);
@@ -142,15 +142,15 @@ var_dump($result_keyed);
 
 **count**
 
-　　count &mdash; 计算数组中的单元数目或对象中的属性个数
+&emsp;&emsp;count &mdash; 计算数组中的单元数目或对象中的属性个数
 
-<div class="cnblogs_code">
+<div>
 <pre>int count ( mixed $var [, int $mode = COUNT_NORMAL ] )</pre>
 </div>
 
-　　如果可选的 mode 参数设为 COUNT_RECURSIVE（或 1），count() 将递归地对数组计数。对计算多维数组的所有单元尤其有用。mode 的默认值是 0。count() 识别不了无限递归
+&emsp;&emsp;如果可选的 mode 参数设为 COUNT_RECURSIVE（或 1），count() 将递归地对数组计数。对计算多维数组的所有单元尤其有用。mode 的默认值是 0。count() 识别不了无限递归
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $a[0] = 1;
 $a[1] = 3;
@@ -168,7 +168,7 @@ $result = count(false);
 // $result == 1
 ?&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $food = array('fruits' =&gt; array('orange', 'banana', 'apple'),
               'veggie' =&gt; array('carrot', 'collard', 'pea'));
@@ -179,12 +179,12 @@ echo count($food); // output 2
 
 **array_count_values**
 
-　　array_count_values &mdash; 统计数组中所有的值出现的次数
+&emsp;&emsp;array_count_values &mdash; 统计数组中所有的值出现的次数
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_count_values ( array $input )</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array = array(1, "hello", 1, "world", "hello");
 //Array ( [1] =&gt; 2 [hello] =&gt; 2 [world] =&gt; 1 )
@@ -194,15 +194,15 @@ print_r(array_count_values($array));
 
 **array_unique**
 
-　　array_unique &mdash; 移除数组中重复的值
+&emsp;&emsp;array_unique &mdash; 移除数组中重复的值
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_unique ( array $array [, int $sort_flags = SORT_STRING ] )</pre>
 </div>
 
-　　[注意]键名保留不变。array_unique() 先将值作为字符串排序，然后对每个值只保留第一个遇到的键名，接着忽略所有后面的键名。这并不意味着在未排序的 array 中同一个值的第一个出现的键名会被保留
+&emsp;&emsp;注意：键名保留不变。array_unique() 先将值作为字符串排序，然后对每个值只保留第一个遇到的键名，接着忽略所有后面的键名。这并不意味着在未排序的 array 中同一个值的第一个出现的键名会被保留
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $input = array("a" =&gt; "green", "red", "b" =&gt; "green", "blue", "red");
 $result = array_unique($input);
@@ -213,11 +213,11 @@ print_r($result);
 
 **array_sum**
 
-　　array_sum &mdash; 计算数组中所有值的和
+&emsp;&emsp;array_sum &mdash; 计算数组中所有值的和
 
-　　array_sum() 将数组中的所有值的和以整数或浮点数的结果返回
+&emsp;&emsp;array_sum() 将数组中的所有值的和以整数或浮点数的结果返回
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $a = array(2, 4, 6, 8);
 //sum(a) = 20
@@ -234,24 +234,24 @@ echo "sum(b) = " . array_sum($b) . "\n";
 
 **array_filter**
 
-　　array_filter &mdash; 用回调函数过滤数组中的单元
+&emsp;&emsp;array_filter &mdash; 用回调函数过滤数组中的单元
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_filter ( array $array [, callable $callback [, int $flag = 0 ]] )</pre>
 </div>
 
-　　依次将 array 数组中的每个值传递到 callback 函数。如果 callback 函数返回 TRUE，则 input 数组的当前值会被包含在返回的结果数组中。数组的键名保留不变
+&emsp;&emsp;依次将 array 数组中的每个值传递到 callback 函数。如果 callback 函数返回 TRUE，则 input 数组的当前值会被包含在返回的结果数组中。数组的键名保留不变
 
-　　[注意]如果没有提供 callback 函数， 将删除 input 中所有等值为 FALSE 的条目
+&emsp;&emsp;注意：如果没有提供 callback 函数， 将删除 input 中所有等值为 FALSE 的条目
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $entry = array(0 =&gt; 'foo',1 =&gt; false,2 =&gt; -1,3 =&gt; null,4 =&gt; '');
 //Array ( [0] =&gt; foo [2] =&gt; -1 )
 print_r(array_filter($entry));
 ?&gt;</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 function odd($var)
 {
@@ -274,19 +274,19 @@ print_r(array_filter($array2, "even"));
 
 **array_walk**
 
-　　array_walk &mdash; 使用用户自定义函数对数组中的每个元素做回调处理
+&emsp;&emsp;array_walk &mdash; 使用用户自定义函数对数组中的每个元素做回调处理
 
-<div class="cnblogs_code">
+<div>
 <pre>bool array_walk ( array &amp;$array , callable $callback [, mixed $userdata = NULL ] )</pre>
 </div>
 
-　　将用户自定义函数 funcname 应用到 array 数组中的每个单元。array_walk() 不会受到 array 内部数组指针的影响。array_walk() 会遍历整个数组而不管指针的位置
+&emsp;&emsp;将用户自定义函数 funcname 应用到 array 数组中的每个单元。array_walk() 不会受到 array 内部数组指针的影响。array_walk() 会遍历整个数组而不管指针的位置
 
-　　典型情况下 callback 接受两个参数。array 参数的值作为第一个，键名作为第二个
+&emsp;&emsp;典型情况下 callback 接受两个参数。array 参数的值作为第一个，键名作为第二个
 
-　　如果提供了可选参数 userdata，将被作为第三个参数传递给 callback funcname
+&emsp;&emsp;如果提供了可选参数 userdata，将被作为第三个参数传递给 callback funcname
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $fruits = array("d" =&gt; "lemon", "a" =&gt; "orange", "b" =&gt; "banana", "c" =&gt; "apple");
 function test_alter(&amp;$item1, $key, $prefix)
@@ -310,15 +310,15 @@ array_walk($fruits, 'test_print');
 
 **array_map**
 
-　　array_map &mdash; 将回调函数作用到给定数组的单元上
+&emsp;&emsp;array_map &mdash; 将回调函数作用到给定数组的单元上
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_map ( callable $callback , array $arr1 [, array $... ] )</pre>
 </div>
 
-　　array_map() 返回一个数组，该数组包含了 arr1 中的所有单元经过 callback 作用过之后的单元。callback 接受的参数数目应该和传递给 array_map() 函数的数组数目一致
+&emsp;&emsp;array_map() 返回一个数组，该数组包含了 arr1 中的所有单元经过 callback 作用过之后的单元。callback 接受的参数数目应该和传递给 array_map() 函数的数组数目一致
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 function cube($n)
 {
@@ -337,17 +337,17 @@ print_r($b);
 
 **array_slice**
 
-　　array_slice &mdash; 从数组中取出一段
+&emsp;&emsp;array_slice &mdash; 从数组中取出一段
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_slice ( array $array , int $offset [, int $length = NULL [, bool $preserve_keys = false ]] )</pre>
 </div>
 
-　　array_slice() 返回根据 offset 和 length 参数所指定的 array 数组中的一段序列
+&emsp;&emsp;array_slice() 返回根据 offset 和 length 参数所指定的 array 数组中的一段序列
 
-　　[注意]array_slice()默认会重新排序并重置数组的数字索引。可以通过将 preserve_keys 设为 TRUE 来改变此行为
+&emsp;&emsp;注意：array_slice()默认会重新排序并重置数组的数字索引。可以通过将 preserve_keys 设为 TRUE 来改变此行为
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $input = array("a", "b", "c", "d", "e");
 // returns "c", "d", and "e"
@@ -365,17 +365,17 @@ print_r(array_slice($input, 2, -1, true));
 
 **array_splice**
 
-　　array_splice &mdash; 把数组中的一部分去掉并用其它值取代，返回一个包含有被移除单元的数组，而原数组为变化后的数组
+&emsp;&emsp;array_splice &mdash; 把数组中的一部分去掉并用其它值取代，返回一个包含有被移除单元的数组，而原数组为变化后的数组
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_splice ( array &amp;$input , int $offset [, int $length = 0 [, mixed $replacement ]] )</pre>
 </div>
 
-　　把 input 数组中由 offset 和 length 指定的单元去掉，如果提供了 replacement 参数，则用其中的单元取代
+&emsp;&emsp;把 input 数组中由 offset 和 length 指定的单元去掉，如果提供了 replacement 参数，则用其中的单元取代
 
-　　[注意]input 中的数字键名不被保留
+&emsp;&emsp;注意：input 中的数字键名不被保留
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $input = array("red", "green", "blue", "yellow");
 print_r(array_splice($input, 2));//Array ( [0] =&gt; blue [1] =&gt; yellow )
@@ -388,15 +388,15 @@ print_r($input);//Array ( [0] =&gt; red [1] =&gt; green [2] =&gt; blue [3] =&gt;
 
 **array_combine**
 
-　　array_combine &mdash; 创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值
+&emsp;&emsp;array_combine &mdash; 创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_combine ( array $keys , array $values )</pre>
 </div>
 
-　　[注意]如果作为keys的数组和作为values的数组的元素个数不一样，将会抛出一个警告错误
+&emsp;&emsp;注意：如果作为keys的数组和作为values的数组的元素个数不一样，将会抛出一个警告错误
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $a = array('green', 'red', 'yellow');
 $b = array('avocado', 'apple', 'banana');
@@ -408,19 +408,19 @@ print_r($c);
 
 **array_merge**
 
-　　array_merge &mdash; 合并一个或多个数组
+&emsp;&emsp;array_merge &mdash; 合并一个或多个数组
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_merge ( array $array1 [, array $... ] )</pre>
 </div>
 
-　　array_merge() 将一个或多个数组的单元合并起来，一个数组中的值附加在前一个数组的后面。返回作为结果的数组
+&emsp;&emsp;array_merge() 将一个或多个数组的单元合并起来，一个数组中的值附加在前一个数组的后面。返回作为结果的数组
 
-　　如果输入的数组中有相同的字符串键名，则该键名后面的值将覆盖前一个值。然而，如果数组包含数字键名，后面的值将不会覆盖原来的值，而是附加到后面
+&emsp;&emsp;如果输入的数组中有相同的字符串键名，则该键名后面的值将覆盖前一个值。然而，如果数组包含数字键名，后面的值将不会覆盖原来的值，而是附加到后面
 
-　　如果只给了一个数组并且该数组是数字索引的，则键名会以连续方式重新索引
+&emsp;&emsp;如果只给了一个数组并且该数组是数字索引的，则键名会以连续方式重新索引
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array1 = array("color" =&gt; "red", 2, 4);
 $array2 = array("a", "b", "color" =&gt; "green", "shape" =&gt; "trapezoid", 4);
@@ -432,11 +432,11 @@ print_r($result);
 
 【+】
 
-　　如果想完全保留原有数组并只想新的数组附加到后面，用 + 运算符
+&emsp;&emsp;如果想完全保留原有数组并只想新的数组附加到后面，用 + 运算符
 
-　　[注意]如果输入的数组中有相同的字符串键名，则该键名前面的值将覆盖后面的值
+&emsp;&emsp;注意：如果输入的数组中有相同的字符串键名，则该键名前面的值将覆盖后面的值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array1 = array(0 =&gt; 'zero_a', 2 =&gt; 'two_a', 3 =&gt; 'three_a');
 $array2 = array(1 =&gt; 'one_a', 2 =&gt; 'three_a', 3 =&gt; 'four_a');
@@ -448,17 +448,17 @@ print_r($result);
 
 **array_intersect**
 
-　　array_intersect &mdash; 计算数组的交集
+&emsp;&emsp;array_intersect &mdash; 计算数组的交集
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_intersect ( array $array1 , array $array2 [, array $ ... ] )</pre>
 </div>
 
-　　array_intersect() 返回一个数组，该数组包含了所有在 array1 中也同时出现在所有其它参数数组中的值
+&emsp;&emsp;array_intersect() 返回一个数组，该数组包含了所有在 array1 中也同时出现在所有其它参数数组中的值
 
-　　[注意]键名保留不变
+&emsp;&emsp;注意：键名保留不变
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array1 = array("a" =&gt; "green", "red", "blue");
 $array2 = array("b" =&gt; "green", "yellow", "red");
@@ -470,15 +470,15 @@ print_r($result);
 
 **array_diff**
 
-　　array_diff &mdash; 计算数组的差集
+&emsp;&emsp;array_diff &mdash; 计算数组的差集
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_diff ( array $array1 , array $array2 [, array $... ] )</pre>
 </div>
 
-　　对比返回在 array1 中但是不在 array2 及任何其它参数数组中的值
+&emsp;&emsp;对比返回在 array1 中但是不在 array2 及任何其它参数数组中的值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $array1 = array("a" =&gt; "green", "red", "blue", "red");
 $array2 = array("b" =&gt; "green", "yellow", "red");
@@ -490,15 +490,15 @@ print_r($result);
 
 **array_fill**
 
-　　array_fill &mdash; 用给定的值填充数组，返回填充后的数组
+&emsp;&emsp;array_fill &mdash; 用给定的值填充数组，返回填充后的数组
 
-<div class="cnblogs_code">
+<div>
 <pre>array array_fill ( int $start_index , int $num , mixed $value )</pre>
 </div>
 
-　　array_fill() 用 value 参数的值将一个数组填充 num 个条目，键名由 start_index 参数指定的开始
+&emsp;&emsp;array_fill() 用 value 参数的值将一个数组填充 num 个条目，键名由 start_index 参数指定的开始
 
-<div class="cnblogs_code">
+<div>
 <pre>?php
 $a = array_fill(5, 6, 'banana');
 $b = array_fill(-2, 4, 'pear');
@@ -511,15 +511,15 @@ print_r($b);
 
 **range**
 
-　　range &mdash; 建立一个包含指定范围单元的数组，返回的数组中从 start 到 limit 的单元，包括它们本身
+&emsp;&emsp;range &mdash; 建立一个包含指定范围单元的数组，返回的数组中从 start 到 limit 的单元，包括它们本身
 
-<div class="cnblogs_code">
+<div>
 <pre>array range ( mixed $start , mixed $limit [, number $step = 1 ] )</pre>
 </div>
 
-　　如果给出了 step 的值，它将被作为单元之间的步进值。step 应该为正值。如果未指定，step 则默认为 1
+&emsp;&emsp;如果给出了 step 的值，它将被作为单元之间的步进值。step 应该为正值。如果未指定，step 则默认为 1
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 // array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
 foreach (range(0, 12) as $number) {
@@ -546,15 +546,15 @@ foreach (range('c', 'a') as $letter) {
 
 **array_pop**
 
-　　array_pop &mdash; 将数组最后一个单元弹出（出栈）
+&emsp;&emsp;array_pop &mdash; 将数组最后一个单元弹出（出栈）
 
-<div class="cnblogs_code">
+<div>
 <pre>mixed array_pop ( array &amp;$array )</pre>
 </div>
 
-　　array_pop() 弹出并返回 array 数组的最后一个单元，并将数组 array 的长度减一。如果 array 为空（或者不是数组）将返回 NULL
+&emsp;&emsp;array_pop() 弹出并返回 array 数组的最后一个单元，并将数组 array 的长度减一。如果 array 为空（或者不是数组）将返回 NULL
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $stack = array("orange", "banana", "apple", "raspberry");
 $fruit = array_pop($stack);
@@ -565,15 +565,15 @@ print_r($stack);
 
 **array_push**
 
-　　array_push &mdash; 将一个或多个单元压入数组的末尾（入栈），返回处理之后数组的元素个数
+&emsp;&emsp;array_push &mdash; 将一个或多个单元压入数组的末尾（入栈），返回处理之后数组的元素个数
 
-<div class="cnblogs_code">
+<div>
 <pre>int array_push ( array &amp;$array , mixed $var [, mixed $... ] )</pre>
 </div>
 
-　　array_push() 将 array 当成一个栈，并将传入的变量压入 array 的末尾。array 的长度将根据入栈变量的数目增加
+&emsp;&emsp;array_push() 将 array 当成一个栈，并将传入的变量压入 array 的末尾。array 的长度将根据入栈变量的数目增加
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $stack = array("orange", "banana");
 array_push($stack, "apple", "raspberry");
@@ -584,15 +584,15 @@ print_r($stack);
 
 **array_shift**
 
-　　array_shift &mdash; 将数组开头的单元移出数组
+&emsp;&emsp;array_shift &mdash; 将数组开头的单元移出数组
 
-<div class="cnblogs_code">
+<div>
 <pre>mixed array_shift ( array &amp;$array )</pre>
 </div>
 
-　　array_shift() 将 array 的第一个单元移出并作为结果返回，将 array 的长度减一并将所有其它单元向前移动一位。所有的数字键名将改为从零开始计数，文字键名将不变
+&emsp;&emsp;array_shift() 将 array 的第一个单元移出并作为结果返回，将 array 的长度减一并将所有其它单元向前移动一位。所有的数字键名将改为从零开始计数，文字键名将不变
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $stack = array("orange", "banana", "apple", "raspberry");
 $fruit = array_shift($stack);
@@ -603,15 +603,15 @@ print_r($stack);
 
 **array_unshift**
 
-　　array_unshift &mdash; 在数组开头插入一个或多个单元，返回 array 数组新的单元数目
+&emsp;&emsp;array_unshift &mdash; 在数组开头插入一个或多个单元，返回 array 数组新的单元数目
 
-<div class="cnblogs_code">
+<div>
 <pre>int array_unshift ( array &amp;$array , mixed $var [, mixed $... ] )</pre>
 </div>
 
-　　array_unshift() 将传入的单元插入到 array 数组的开头。注意单元是作为整体被插入的，因此传入单元将保持同样的顺序。所有的数值键名将修改为从零开始重新计数，所有的文字键名保持不变
+&emsp;&emsp;array_unshift() 将传入的单元插入到 array 数组的开头。注意单元是作为整体被插入的，因此传入单元将保持同样的顺序。所有的数值键名将修改为从零开始重新计数，所有的文字键名保持不变
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $queue = array("orange", "banana");
 array_unshift($queue, "apple", "raspberry");
@@ -626,15 +626,15 @@ print_r($queue);
 
 **array_rand**
 
-　　array_rand &mdash; 从数组中随机取出一个或多个单元，并返回随机条目的一个或多个键
+&emsp;&emsp;array_rand &mdash; 从数组中随机取出一个或多个单元，并返回随机条目的一个或多个键
 
-<div class="cnblogs_code">
+<div>
 <pre>mixed array_rand ( array $input [, int $num_req = 1 ] )</pre>
 </div>
 
-　　[注意]如果只取出一个，array_rand() 返回一个随机单元的键名，否则就返回一个包含随机键名的数组
+&emsp;&emsp;注意：如果只取出一个，array_rand() 返回一个随机单元的键名，否则就返回一个包含随机键名的数组
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $input = array("Neo", "Morpheus", "Trinity", "Cypher", "Tank");
 $rand_keys = array_rand($input, 2);
@@ -647,12 +647,12 @@ echo $input[$rand_keys[1]] . "\n";
 
 **shuffle**
 
-　　shuffle &mdash; 将数组打乱，成功时返回 TRUE， 或者在失败时返回 FALSE
+&emsp;&emsp;shuffle &mdash; 将数组打乱，成功时返回 TRUE， 或者在失败时返回 FALSE
 
-<div class="cnblogs_code">
+<div>
 <pre>bool shuffle ( array &amp;$array )</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 $numbers = range(1, 20);
 shuffle($numbers);
