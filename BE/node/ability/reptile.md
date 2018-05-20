@@ -1,17 +1,17 @@
-# 爬虫
+# nodeJS实现简单网页爬虫功能
 
-　　本文将使用nodeJS实现一个简单的网页爬虫功能
+&emsp;&emsp;本文将使用nodeJS实现一个简单的网页爬虫功能
 
 &nbsp;
 
 ### 网页源码
 
-　　使用http.get()方法获取网页源码，以hao123网站的头条页面为例
+&emsp;&emsp;使用http.get()方法获取网页源码，以hao123网站的头条页面为例
 
-<div class="cnblogs_code">
+<div>
 <pre>http://tuijian.hao123.com/hotrank</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>var http = require('http');
 http.get('http://tuijian.hao123.com/hotrank',function(res){
     var data = '';
@@ -30,25 +30,25 @@ http.get('http://tuijian.hao123.com/hotrank',function(res){
 
 ### 筛选数据
 
-　　以网页中的综艺热点部分
+&emsp;&emsp;以网页中的综艺热点部分
 
 ![reptile1](https://pic.xiaohuochai.site/blog/nodejs_reptile1.png)
 
 
-　　相关源代码如下
+&emsp;&emsp;相关源代码如下
 
 ![reptile2](https://pic.xiaohuochai.site/blog/nodejs_reptile2.png)
 
 
-　　通过分析可知，&lsquo;综艺&rsquo;模块与其他模块都位于&lt;div class="top-wrap"&gt;中，其中，综艺模块的内层div的monkey='zy'，综艺模块的10条综艺节目的信息都位于&lt;div class="poinr clearfix"&gt;中，综艺节目的名称位于&lt;span class="point-title"&gt;中
+&emsp;&emsp;通过分析可知，&lsquo;综艺&rsquo;模块与其他模块都位于&lt;div class="top-wrap"&gt;中，其中，综艺模块的内层div的monkey='zy'，综艺模块的10条综艺节目的信息都位于&lt;div class="poinr clearfix"&gt;中，综艺节目的名称位于&lt;span class="point-title"&gt;中
 
 &nbsp;
 
 ### cheerio
 
-　　我们怎么从源代码中获取到有用的数据呢？首先，nodeJS不支持document对象。如果要使用笨办法，只能使用正则表达式来处理
+&emsp;&emsp;我们怎么从源代码中获取到有用的数据呢？首先，nodeJS不支持document对象。如果要使用笨办法，只能使用正则表达式来处理
 
-　　cheerio 是nodejs特别为服务端定制的，能够快速灵活的对JQuery核心进行实现。它工作于DOM模型上，且解析、操作、呈送都很高效
+&emsp;&emsp;cheerio 是nodejs特别为服务端定制的，能够快速灵活的对JQuery核心进行实现。它工作于DOM模型上，且解析、操作、呈送都很高效
 
 【安装】
 
@@ -57,9 +57,9 @@ http.get('http://tuijian.hao123.com/hotrank',function(res){
 
 【使用】
 
-　　它的使用方法和jQuery相当类似，上手非常容易。以获取综艺热度前10名的节目名称为例
+&emsp;&emsp;它的使用方法和jQuery相当类似，上手非常容易。以获取综艺热度前10名的节目名称为例
 
-<div class="cnblogs_code">
+<div>
 <pre>var http = require('http');
 var cheerio = require('cheerio');
 http.get('http://tuijian.hao123.com/hotrank',function(res){
@@ -91,14 +91,14 @@ function filter(data){
 
 ### 爬虫代码
 
-　　下面将hao123网页中的'实时热点'、'今日热点'、'民生热点'、'电影'、'电视剧'、'综艺'这6部分的排名爬下来，分别到对象名为'result'中的数组中，分别命令为'ss'、'jr'、'ms'、'dy'、'dsj'、'zy'
+&emsp;&emsp;下面将hao123网页中的'实时热点'、'今日热点'、'民生热点'、'电影'、'电视剧'、'综艺'这6部分的排名爬下来，分别到对象名为'result'中的数组中，分别命令为'ss'、'jr'、'ms'、'dy'、'dsj'、'zy'
 
 ![reptile4](https://pic.xiaohuochai.site/blog/nodejs_reptile4.png)
 
 
 【代码如下】
 
-<div class="cnblogs_code">
+<div>
 <pre>var http = require('http');
 var cheerio = require('cheerio');
 http.get('http://tuijian.hao123.com/hotrank',function(res){
@@ -139,7 +139,7 @@ function filter(data){
 
 【结果如下】
 
-<div class="cnblogs_code">
+<div>
 <pre>{ '实时热点': 
    [ '美国逮捕女斯诺登',
      '成都隐秘母乳买卖',
