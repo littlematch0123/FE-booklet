@@ -1,22 +1,22 @@
-# php魔术方法
+# 前端学PHP之面向对象系列第二篇——魔术方法
 
-　　php在面向对象部分有很多相关的魔术方法，这些方法为面向对象实现提供了便利，本文将详细介绍魔术方法
+&emsp;&emsp;php在面向对象部分有很多相关的魔术方法，这些方法为面向对象实现提供了便利，本文将详细介绍魔术方法
 
 &nbsp;
 
 ### 构造方法
 
-　　大多数类都有一种称为构造函数的特殊方法。当创建一个对象时，它将自动调用构造函数，通常用它执行一些有用的初始化任务
+&emsp;&emsp;大多数类都有一种称为构造函数的特殊方法。当创建一个对象时，它将自动调用构造函数，通常用它执行一些有用的初始化任务
 
-　　构造函数的声明与其它操作的声明一样，只是其名称必须是两个下划线__construct( )。这是PHP5中的变化；PHP4的版本中，构造函数的名称必须与类名相同。为了向下兼容，如果一个类中没有名为__construct( )的方法，PHP将搜索一个与类名相同的方法
+&emsp;&emsp;构造函数的声明与其它操作的声明一样，只是其名称必须是两个下划线__construct( )。这是PHP5中的变化；PHP4的版本中，构造函数的名称必须与类名相同。为了向下兼容，如果一个类中没有名为__construct( )的方法，PHP将搜索一个与类名相同的方法
 
-<div class="cnblogs_code">
+<div>
 <pre>void __construct ([ mixed $args [, $... ]] )</pre>
 </div>
 
-　　如果子类中定义了构造函数则不会隐式调用其父类的构造函数。要执行父类的构造函数，需要在子类的构造函数中调用 parent::__construct()。如果子类没有定义构造函数则会如同一个普通的类方法一样从父类继承（假如没有被定义为 private 的话）
+&emsp;&emsp;如果子类中定义了构造函数则不会隐式调用其父类的构造函数。要执行父类的构造函数，需要在子类的构造函数中调用 parent::__construct()。如果子类没有定义构造函数则会如同一个普通的类方法一样从父类继承（假如没有被定义为 private 的话）
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class BaseClass {
    function __construct() {
@@ -45,11 +45,11 @@ $obj = new OtherSubClass();
 
 ### 析构方法
 
-　　与构造方法相对的就是析构方法。析构方法是PHP5新添加的内容，在PHP4中没有析构方法。析构方法是在对象被销毁之前自动调用的方法，主要执行一些特定的操作，例如关闭文件，释放结果集等
+&emsp;&emsp;与构造方法相对的就是析构方法。析构方法是PHP5新添加的内容，在PHP4中没有析构方法。析构方法是在对象被销毁之前自动调用的方法，主要执行一些特定的操作，例如关闭文件，释放结果集等
 
-　　与构造方法类似，一个类的析构方法名称必须是两个下划线 __destruct( )。析构函数不能带有任何参数
+&emsp;&emsp;与构造方法类似，一个类的析构方法名称必须是两个下划线 __destruct( )。析构函数不能带有任何参数
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class MyDestructableClass {
    function __construct() {
@@ -71,12 +71,12 @@ $obj = new MyDestructableClass();
 
 **get()**
 
-　　读取不可访问属性(protected、private)时，__get()会被调用，并将属性名以第一个参数(string)传进此方法中
+&emsp;&emsp;读取不可访问属性(protected、private)时，__get()会被调用，并将属性名以第一个参数(string)传进此方法中
 
-<div class="cnblogs_code">
+<div>
 <pre>public mixed __get ( string $name )</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class demo{
     protected $protected = 1;
@@ -95,12 +95,12 @@ $d1-&gt;private;//111private111
 
 **set()**
 
-　　在给不可访问属性(protected、private)赋值时，__set() 会被调用，并将属性名以第一个参数(string)，值作为第二参数(mixed)传进此方法中
+&emsp;&emsp;在给不可访问属性(protected、private)赋值时，__set() 会被调用，并将属性名以第一个参数(string)，值作为第二参数(mixed)传进此方法中
 
-<div class="cnblogs_code">
+<div>
 <pre>public void __set ( string $name , mixed $value )</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class demo{
     protected $protected = 1;
@@ -119,12 +119,12 @@ $d1-&gt;private = '3';//0private03
 
 **isset()**
 
-　　当对不可访问属性(protected、private)调用 isset() 或 empty() 时，__isset() 会被调用
+&emsp;&emsp;当对不可访问属性(protected、private)调用 isset() 或 empty() 时，__isset() 会被调用
 
-<div class="cnblogs_code">
+<div>
 <pre>public bool __isset ( string $name )</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class demo{
     protected $protected = 1;
@@ -143,12 +143,12 @@ empty($d1-&gt;private);//0private0
 
 **unset()**
 
-　　当对不可访问属性(protected、private)调用unset()时，__unset()会被调用
+&emsp;&emsp;当对不可访问属性(protected、private)调用unset()时，__unset()会被调用
 
-<div class="cnblogs_code">
+<div>
 <pre>public void __unset ( string $name )</pre>
 </div>
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class demo{
     protected $protected = 1;
@@ -171,11 +171,11 @@ unset($d1-&gt;private);//0private0
 
 **clone()**
 
-　　在对象克隆时会自动调用clone()方法，这方法不需要任何参数，可以通过该方法对克隆后的副本重新初始化
+&emsp;&emsp;在对象克隆时会自动调用clone()方法，这方法不需要任何参数，可以通过该方法对克隆后的副本重新初始化
 
-　　clone()方法会自动包含this和that两个对象的引用，this是副本对象的引用，that是原本对象的引用
+&emsp;&emsp;clone()方法会自动包含this和that两个对象的引用，this是副本对象的引用，that是原本对象的引用
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
     class Person{
         private $name;
@@ -206,9 +206,9 @@ unset($d1-&gt;private);//0private0
 
 **toString()**
 
-　　__toString()方法用于一个类被当成字符串时应怎样回应，它是快速获取对象的字符串表示的最便捷的方式，是直接输出对象引用时自动调用的方法
+&emsp;&emsp;__toString()方法用于一个类被当成字符串时应怎样回应，它是快速获取对象的字符串表示的最便捷的方式，是直接输出对象引用时自动调用的方法
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class TestClass
 {
@@ -232,13 +232,13 @@ echo $class;//Hello
 
 **call()**
 
-　　在对象中调用一个不可访问方法时，__call()会被调用
+&emsp;&emsp;在对象中调用一个不可访问方法时，__call()会被调用
 
 **callStatic()**
 
-　　在静态上下文中调用一个不可访问方法时，__callStatic()会被调用
+&emsp;&emsp;在静态上下文中调用一个不可访问方法时，__callStatic()会被调用
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class MethodTest 
 {
@@ -267,14 +267,13 @@ MethodTest::runTest('in static context');
 
 **autoload()**
 
-　　在PHP5中，可以定义一个__autoload()函数，它会在试图使用尚未被定义的类时自动调用。通过调用此函数，脚本引擎在PHP出错失败前有了最后一个机会加载所需的类
+&emsp;&emsp;在PHP5中，可以定义一个__autoload()函数，它会在试图使用尚未被定义的类时自动调用。通过调用此函数，脚本引擎在PHP出错失败前有了最后一个机会加载所需的类
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 function __autoload($class_name) {
     require_once $class_name . '.php';
 }
-
 $obj  = new MyClass1();
 $obj2 = new MyClass2();
 ?&gt;</pre>
@@ -286,17 +285,17 @@ $obj2 = new MyClass2();
 
 **sleep()**
 
-　　在调用serialize()函数将对象串行化时，检查类中是否存在一个魔术方法 __sleep()。如果存在，该方法会先被调用，然后才执行序列化操作。此功能可以用于清理对象，并返回一个包含对象中所有应被序列化的变量名称的数组。如果该方法未返回任何内容，则 NULL 被序列化，并产生一个 E_NOTICE 级别的错误
+&emsp;&emsp;在调用serialize()函数将对象串行化时，检查类中是否存在一个魔术方法 __sleep()。如果存在，该方法会先被调用，然后才执行序列化操作。此功能可以用于清理对象，并返回一个包含对象中所有应被序列化的变量名称的数组。如果该方法未返回任何内容，则 NULL 被序列化，并产生一个 E_NOTICE 级别的错误
 
-　　__sleep()函数不需要接受任何参数，但需要返回一个数组，在数组中包含需要串行化的属性。未被包含在数组中的属性将在串行化时被忽略。如果没有在类中声明__sleep()方法，对象中的所有属性都将被串行化
+&emsp;&emsp;__sleep()函数不需要接受任何参数，但需要返回一个数组，在数组中包含需要串行化的属性。未被包含在数组中的属性将在串行化时被忽略。如果没有在类中声明__sleep()方法，对象中的所有属性都将被串行化
 
 **wakeup()**
 
-　　在调用unserialize()函数将对象反串行化对象时，则会自动调用对象中的__wakeup()方法，用来在二进制串重新组成一个对象时，为新对象中的成员属性重新初始化
+&emsp;&emsp;在调用unserialize()函数将对象反串行化对象时，则会自动调用对象中的__wakeup()方法，用来在二进制串重新组成一个对象时，为新对象中的成员属性重新初始化
 
-　　wakeup()经常用在反序列化操作中，例如重新建立数据库连接，或执行其它初始化操作
+&emsp;&emsp;wakeup()经常用在反序列化操作中，例如重新建立数据库连接，或执行其它初始化操作
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class Connection 
 {
@@ -333,9 +332,9 @@ class Connection
 
 **invoke()**
 
-　　当尝试以调用函数的方式调用一个对象时，__invoke()方法会被自动调用
+&emsp;&emsp;当尝试以调用函数的方式调用一个对象时，__invoke()方法会被自动调用
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class CallableClass 
 {
@@ -353,11 +352,11 @@ var_dump(is_callable($obj));//bool(true)
 
 **set_state()**
 
-　　当调用var_export()导出类时，set_state()方法会被调用，本方法的唯一参数是一个数组，其中包含按 array('property' =&gt; value, ...) 格式排列的类属性
+&emsp;&emsp;当调用var_export()导出类时，set_state()方法会被调用，本方法的唯一参数是一个数组，其中包含按 array('property' =&gt; value, ...) 格式排列的类属性
 
-　　[注意]var_export()返回关于传递给该函数的变量的结构信息，它和var_dump()类似，不同的是其返回的表示是合法的PHP代码，也就是说，var_export返回的代码，可以直接当作php代码赋给一个变量。 而这个变量就会取得和被var_export一样的类型的值
+&emsp;&emsp;注意：var_export()返回关于传递给该函数的变量的结构信息，它和var_dump()类似，不同的是其返回的表示是合法的PHP代码，也就是说，var_export返回的代码，可以直接当作php代码赋给一个变量。 而这个变量就会取得和被var_export一样的类型的值
 
-<div class="cnblogs_code">
+<div>
 <pre>&lt;?php
 class A
 {
