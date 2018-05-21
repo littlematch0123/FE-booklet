@@ -1,16 +1,16 @@
 # 使用mongoose和bcrypt实现用户密码加密 
 
-　　最近在做的个人项目中，需要对密码进行加密保存，对该操作的详细步骤记录如下
+&emsp;&emsp;最近在做的个人项目中，需要对密码进行加密保存，对该操作的详细步骤记录如下
 
 &nbsp;
 
 ### 介绍
 
-　　关于mongoose已经写过博客就不再赘述，下面主要介绍bcrypt
+&emsp;&emsp;关于mongoose已经写过博客就不再赘述，下面主要介绍bcrypt
 
-　　bcrypt是一个由两个外国人根据Blowfish加密算法所设计的密码散列函数。实现中bcrypt会使用一个加盐的流程以防御彩虹表攻击，同时bcrypt还是适应性函数，它可以借由增加迭代之次数来抵御暴力破解法
+&emsp;&emsp;bcrypt是一个由两个外国人根据Blowfish加密算法所设计的密码散列函数。实现中bcrypt会使用一个加盐的流程以防御彩虹表攻击，同时bcrypt还是适应性函数，它可以借由增加迭代之次数来抵御暴力破解法
 
-　　使用npm安装即可
+&emsp;&emsp;使用npm安装即可
 ```
 npm install --save bcrypt
 ```
@@ -19,7 +19,7 @@ npm install --save bcrypt
 
 ### 用户模型
 
-　　下面来创建代码用户user的schema，用户名不能重复
+&emsp;&emsp;下面来创建代码用户user的schema，用户名不能重复
 
 ```
 var mongoose = require('mongoose'),
@@ -36,7 +36,7 @@ module.exports = mongoose.model('User', UserSchema);
 &nbsp;
 
 ### 加密
-　　下面加入用户模型的是Mongoose的中间件，该中间件使用pre前置钩子，在密码保存之前，自动地把密码变成hash。详细代码如下
+&emsp;&emsp;下面加入用户模型的是Mongoose的中间件，该中间件使用pre前置钩子，在密码保存之前，自动地把密码变成hash。详细代码如下
 
 ```
 let SALT_WORK_FACTOR = 5
@@ -61,7 +61,7 @@ UserSchema.pre('save', function(next) {
     });
 });
 ```
-　　在node.bcrypt.js中SALT_WORK_FACTOR默认使用的是10，这里设置为5
+&emsp;&emsp;在node.bcrypt.js中SALT_WORK_FACTOR默认使用的是10，这里设置为5
 
  
 
@@ -69,7 +69,7 @@ UserSchema.pre('save', function(next) {
 
 ### 验证
 
-　　加密之后，密码原文被替换为密文了。我们无法解密，只能通过bcrypt的compare方法，对再次传入的密码和数据库中保存的加密后的密码进行比较，如果匹配，则登录成功
+&emsp;&emsp;加密之后，密码原文被替换为密文了。我们无法解密，只能通过bcrypt的compare方法，对再次传入的密码和数据库中保存的加密后的密码进行比较，如果匹配，则登录成功
 
 ```
 UserSchema.methods.comparePassword = function(candidatePassword, cb) {
@@ -79,7 +79,7 @@ UserSchema.methods.comparePassword = function(candidatePassword, cb) {
     });
 };
 ```
-　　把上面的几个步骤串在一起，完整代码如下
+&emsp;&emsp;把上面的几个步骤串在一起，完整代码如下
 
 ```
 var mongoose = require('mongoose'),
@@ -128,7 +128,7 @@ module.exports = mongoose.model('User', UserSchema);
 
 ### 测试
 
-　　把上面的代码保存成user-model.js，然后运行下面代码来实际测试
+&emsp;&emsp;把上面的代码保存成user-model.js，然后运行下面代码来实际测试
 
 ```
 var mongoose = require('mongoose'),
@@ -168,11 +168,11 @@ testUser.save(function(err) {
     });
 });
 ```
-　　控制台中输入如下数据：
+&emsp;&emsp;控制台中输入如下数据：
 
 ![bcrypt1](https://pic.xiaohuochai.site/blog/bcrypt1.png)
 
-　　数据库数据如下：
+&emsp;&emsp;数据库数据如下：
 
 ![bcrypt2](https://pic.xiaohuochai.site/blog/bcrypt2.png)
 
