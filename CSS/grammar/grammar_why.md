@@ -62,6 +62,8 @@ div{height: 100px;}
 
 &emsp;&emsp;正向解析是在试错，而逆向匹配则是在挑选正确的元素。因为匹配的情况远远低于不匹配的情况，所以逆向匹配带来的优势是巨大的
 
+&nbsp;
+
 ### Why Hack
 
 &emsp;&emsp;[CSS Hack](http://www.cnblogs.com/xiaohuochai/p/6383384.html)是实现浏览器样式兼容的兜底办法，能不用就尽量不要使用。但是，针对一些浏览器的bug，比如老版本IE的bug，有时使用CSS Hack是不得已而为之的做法
@@ -155,7 +157,7 @@ vmax:布局视口高度和宽度之间的最大值的 1/100</pre>
 
 &emsp;&emsp;在W3C的标准模型下，宽度和高度仅仅包含了内容宽度，除去了边框和内边距两个区域，这样为web设计师处理效果带来了不少麻烦。为了解决这个问题，CSS3新增了一个盒模型属性box-sizing，能够事先定义盒模型的尺寸解析方式
 
-<iframe style="width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/css/base/b13.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 340px;" src="https://demo.xiaohuochai.site/css/box/b33.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -175,7 +177,7 @@ vmax:布局视口高度和宽度之间的最大值的 1/100</pre>
 
 &emsp;&emsp;该属性用于设置margin是否重叠，作用于发生margin重叠的两个元素之一。如果，两个都使用该属性，一个设置为discard，一个设置为separate，则最终效果为重叠collase
 
-<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/base/b14.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 380px" src="https://demo.xiaohuochai.site/css/margin/m66.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 &nbsp;
 
@@ -281,19 +283,19 @@ vmax:布局视口高度和宽度之间的最大值的 1/100</pre>
 
 &emsp;&emsp;&lt;说明&gt;通过改变内容为BFC背景为红色的盒子的属性值，使其成为BFC，以此阻止被绿色的浮动盒子覆盖
 
-<iframe style="line-height: 1.5; width: 100%; height: 350px;" src="https://demo.xiaohuochai.site/css/base/b15.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="line-height: 1.5; width: 100%; height: 437px;" src="https://demo.xiaohuochai.site/css/bfc/b1.html" frameborder="0" width="320" height="240"></iframe>
 
 &emsp;&emsp;2、包含浮动元素
 
 &emsp;&emsp;&lt;说明&gt;通过改变高度塌陷的黑色边框的盒子的属性值，使其成为BFC，以此来包含绿色的浮动盒子&nbsp;
 
-<iframe style="width: 100%; height: 350px;" src="https://demo.xiaohuochai.site/css/base/b16.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 349px;" src="https://demo.xiaohuochai.site/css/bfc/b2.html" frameborder="0" width="320" height="240"></iframe>
 
 &emsp;&emsp;3、属于同一个BFC的两个相邻块级子元素的上下margin会发生重叠，(设置writing-mode:tb-rl时，水平margin会发生重叠)。所以当两个相邻块级子元素分属于不同的BFC时可以阻止margin重叠
 
 &emsp;&emsp;&lt;说明&gt;淡红色背景的块级盒子二的外面包一个div，通过改变此div的属性使红色盒子与绿色盒子分属于两个不同的BFC，以此来阻止margin重叠&nbsp;
 
-<iframe style="width: 100%; height: 350px;" src="https://demo.xiaohuochai.site/css/base/b17.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 453px;" src="https://demo.xiaohuochai.site/css/bfc/b3.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
@@ -322,13 +324,13 @@ vmax:布局视口高度和宽度之间的最大值的 1/100</pre>
 
 &emsp;&emsp;对于居中对齐的行内元素来说，将元素设置为absolute或fixed会发生[静态位置](http://www.cnblogs.com/xiaohuochai/p/5312917.html#anchor5)跳动问题。而relative或static则不会有此问题。这是因为元素默认的居中对齐是元素的内容中线对应父级块级元素中线，而当元素绝对定位或固定定位之后，定位元素左边界将与其父级块级元素的中线对齐
 
-<iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/css/base/b18.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 218px;" src="https://demo.xiaohuochai.site/css/absolute/a7.html" frameborder="0" width="320" height="240"></iframe>
 
 【为什么overflow属性会失效】
 
 &emsp;&emsp;当overflow在绝对定位元素和其包含块之间时，绝对定位元素不会被父级overflow属性剪裁
 
-<iframe style="width: 100%; height: 210px;" src="https://demo.xiaohuochai.site/css/base/b19.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 295px;" src="https://demo.xiaohuochai.site/css/absolute/a8.html" frameborder="0" width="320" height="240"></iframe>
 
 &emsp;&emsp;解决办法就是有两种， 一种是让overflow元素自身成为包含块，给父级设置position:absolute或fixed或relative；另一种是设置overflow元素的子元素为包含块，在绝对定位元素和overflow元素之间增加一个元素并设置position:absolute或fixed或relative
 
@@ -368,7 +370,9 @@ vmax:布局视口高度和宽度之间的最大值的 1/100</pre>
 
 &emsp;&emsp;8、元素的-webkit-overflow-scrolling设置为touch
 
-&emsp;&emsp;设置以上8个属性的任意一个，都和设置absolute类似，层叠上下文z-index会生效
+&emsp;&emsp;9、元素的mask属性不是none
+
+&emsp;&emsp;设置以上9个属性的任意一个，都和设置absolute类似，层叠上下文z-index会生效
 
 &nbsp;
 
@@ -378,15 +382,14 @@ vmax:布局视口高度和宽度之间的最大值的 1/100</pre>
 
 &emsp;&emsp;overflow-x和overflow-y的属性原本是IE浏览器独自拓展的属性，后来被CSS3采用，并标准化。overflow-x主要用来定义对水平方向内容溢出的剪切，而overflow-y主要用来定义对垂直方向内容溢出的剪切
 
-<iframe style="width: 100%; height: 340px;" src="https://demo.xiaohuochai.site/css/base/b20.html" frameborder="0" width="320" height="240"></iframe>
+<iframe style="width: 100%; height: 300px;" src="https://demo.xiaohuochai.site/css/overflow/o2.html" frameborder="0" width="320" height="240"></iframe>
 
-&emsp;&emsp;当overflow设置为auto或scroll或hidden时可以触发BFC，使得overflow可以实现一些相关应用&nbsp;
+&emsp;&emsp;当overflow设置为auto或scroll或hidden时可以触发BFC，使得overflow可以实现一些相关应用
 
 【为什么会出现滚动条】
 
 &emsp;&emsp;滚动条和overflow是紧密相关的。只有当父级的overflow的值是auto或scroll，并且元素的内容超出元素区域时，才有可能出现滚动条
 
-<iframe style="width: 100%; height: 260px;" src="https://demo.xiaohuochai.site/css/base/b21.html" frameborder="0" width="320" height="240"></iframe>
 
 &emsp;&emsp;无论什么浏览器，默认滚动条均来自&lt;html&gt;，而不是&lt;body&gt;。因为&lt;body&gt;元素默认有8px的margin。若滚动条来自&lt;body&gt;元素，则滚动条与页面则应该有8px的间距，实际上并没有间距，所以滚动条来自&lt;html&gt;元素
 
@@ -426,5 +429,4 @@ vmax:布局视口高度和宽度之间的最大值的 1/100</pre>
 
 &emsp;&emsp;CSS新增了多列布局特性，可以让浏览器确定何时结束一列和开始下一列，无需任何额外的标记。简单来说，就是CSS3多列布局可以自动将内容按指定的列数排列，这种特性实现的布局效果和报纸、杂志类排版非常相似
 
-<iframe style="width: 100%; height: 420px;" src="https://demo.xiaohuochai.site/css/base/b22.html" frameborder="0" width="320" height="240"></iframe>
-
+<iframe style="width: 100%; height: 430px;" src="https://demo.xiaohuochai.site/css/column/c7.html" frameborder="0" width="320" height="240"></iframe>
