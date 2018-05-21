@@ -1,14 +1,14 @@
 # MongoDB数据库的数据类型和$type操作符
 
-　　本文将详细介绍MongoDB数据库的数据类型和$type操作符
+&emsp;&emsp;本文将详细介绍MongoDB数据库的数据类型和$type操作符
 
 &nbsp;
 
 ### 数据类型
 
-　　MongoDB支持以下数据类型
+&emsp;&emsp;MongoDB支持以下数据类型
 
-<div class="cnblogs_code">
+<div>
 <pre>类型        数字          备注
 Double        1         双精度浮点数 - 此类型用于存储浮点值
 String        2         字符串 - 这是用于存储数据的最常用的数据类型。MongoDB中的字符串必须为UTF-8
@@ -35,25 +35,25 @@ Max key                  127    最大键 - 此类型用于将值与最大BSON�
 
 ### $type
 
-　　$type操作符是基于BSON类型来检索集合中匹配的数据类型，并返回结果
+&emsp;&emsp;$type操作符是基于BSON类型来检索集合中匹配的数据类型，并返回结果
 
 
 ![types1](https://pic.xiaohuochai.site/blog/mongo_types1.png)
 
 
-　　查找值类型为数字的x，数字的$type为1
+&emsp;&emsp;查找值类型为数字的x，数字的$type为1
 
 
 ![types2](https://pic.xiaohuochai.site/blog/mongo_types2.png)
 
 
-　　查找值类型为字符串的x，字符串的$type为2
+&emsp;&emsp;查找值类型为字符串的x，字符串的$type为2
 
 
 ![types3](https://pic.xiaohuochai.site/blog/mongo_types3.png)
 
 
-　　查找值类型为布尔值的x，布尔值的$type为8
+&emsp;&emsp;查找值类型为布尔值的x，布尔值的$type为8
 
 
 ![types4](https://pic.xiaohuochai.site/blog/mongo_types4.png)
