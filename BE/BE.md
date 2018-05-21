@@ -28,6 +28,11 @@
         * [正则表达式语法](php/common/regexp.md)
         * [正则表达式函数](php/common/regexpFunction.md)
         * [错误处理](php/common/error.md) 
+        * [日期和时间](php/common/time.md)
+        * [文件操作](php/common/file.md)
+        * [会话session](php/common/session.md)
+        * [自定义模板引擎](php/common/template.md)
+        * [smarty模板引擎](php/common/smarty.md)
     * 数据库开发
         * [mysql扩展函数](php/mysql/mysqlSpreadFunction.md)
         * [PDO基础操作](php/mysql/pdoBase.md)
@@ -87,3 +92,5 @@
     * [聚合](mongodb/aggregate.md)
     * [Mongoose](mongodb/Mongoose.md) 
     * [mongoose和bcrypt实现加密](mongodb/bcrypt.md)
+    * [mongo-express](mongodb/mongoExpress.md)
+    * [jwt](mongodb/jwt.md)
