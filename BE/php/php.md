@@ -38,6 +38,11 @@
       * [正则表达式语法](BE/php/common/regexp.md)
       * [正则表达式函数](BE/php/common/regexpFunction.md)
       * [错误处理](BE/php/common/error.md) 
+      * [日期和时间](BE/php/common/time.md)
+      * [文件操作](BE/php/common/file.md)
+      * [会话session](BE/php/common/session.md)
+      * [自定义模板引擎](BE/php/common/template.md)
+      * [smarty模板引擎](BE/php/common/smarty.md)
   * 数据库开发
       * [mysql扩展函数](BE/php/mysql/mysqlSpreadFunction.md)
       * [PDO基础操作](BE/php/mysql/pdoBase.md)
