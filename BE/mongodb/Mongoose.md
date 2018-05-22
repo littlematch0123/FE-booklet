@@ -1653,56 +1653,58 @@ module.exports = mongoose.model('Post', PostSchema)
 ```
   /* 加载所有类别 */
   app.get('/categories', (req, res) => {
-    Category.find().populate('posts','title').select("number name description recommend index").exec((err, docs) => {
-      if (err) return res.status(500).json({code: 0, message: err.message, err})
-      return res.status(200).json({code: 1, message: '获取类别成功', result: {docs}})
+    Category.find().populate('posts', 'title').select('number name description recommend index').exec((err, docs) => {
+      if (err) return res.status(500).json({ code: 2, message: err.message, err })
+      return res.status(200).json({ code: 0, message: '获取类别成功', result: { docs } })
     })
   })
 
   /* 新增一个类别 */
   app.post('/categories', adminAuth, (req, res) => {
     new Category(req.body).save((err, doc) => {
-      if (err) return res.status(500).json({code: 0, message: err.message, err})
-      doc.populate({path:'posts',select:'title'}, (err, doc) => {
-        if (err) return res.status(500).json({code:0, message: err.message, err})
-        return res.status(200).json({code: 1, message: '新增成功', result: {doc}})
-      })      
+      if (err) return res.status(500).json({ code: 2, message: err.message, err })
+      doc.populate({ path: 'posts', select: 'title' }, (err, doc) => {
+        if (err) return res.status(500).json({ code: 2, message: err.message, err })
+        return res.status(201).json({ code: 0, message: '新增成功', result: { doc } })
+      })
     })
   })
-...
+  ...
 ```
 &emsp;&emsp;在对文章的操作中，则需要显示出类别category的number属性
 
 ```
   /* 按照id加载一篇文章 */
   app.get('/posts/:id', (req, res) => {
-    Post.findById(req.params.id).populate('category','number').exec((err, doc) => {
-      if (err) return res.status(500).json({code:0, message:err.message, err})
-      if (doc === null) return res.status(404).json({code:0, message:'文章不存在'})
-      return res.status(200).json({code:1, message:'获取文章成功', result:{doc}})
+    Post.findById(req.params.id).populate('category', 'number').exec((err, doc) => {
+      if (err) return res.status(500).json({ code: 2, message: err.message, err })
+      if (doc === null) return res.status(404).json({ code: 1, message: '文章不存在' })
+      return res.status(200).json({ code: 0, message: '获取文章成功', result: { doc } })
     })
   })
 
   /* 加载所有文章 */
   app.get('/posts', (req, res) => {
-    Post.find().select("title likes comments recommend imgUrl index").populate('category','number').sort("-createdAt").exec((err, docs) => {
-      if (err) return res.status(500).json({code: 0, message: err.message, err})
-      return res.status(200).json({code: 1, message: '获取文章成功', result: {docs}})
+    Post.find().select("title likes comments recommend imgUrl index").populate('category', 'number').sort("-createdAt").exec((err, docs) => {
+      if (err) return res.status(500).json({ code: 2, message: err.message, err })
+      return res.status(200).json({ code: 0, message: '获取文章成功', result: { docs } })
     })
+  })
+  ...
 ```
 &emsp;&emsp;在新增、更新和删除文章的操作中，都需要重建与category的关联
 
 ```
 // 关联category的posts数组
-fnRelatedCategory = _id => {
+const fnRelatedCategory = (_id, res) => {
   Category.findById(_id).exec((err, categoryDoc) => {
-    if (err) return res.status(500).json({ code: 0, message: err.message, err })
-    if (categoryDoc === null) return res.status(404).json({code:0, message:'该类别不存在，请刷新后再试'})
+    if (err) return res.status(500).json({ code: 2, message: err.message, err })
+    if (categoryDoc === null) return res.status(404).json({ code: 1, message: '该类别不存在，请刷新后再试' })
     Post.find({ category: _id }).exec((err, postsDocs) => {
-      if (err) return res.status(500).json({ code: 0, message: err.message, err })
+      if (err) return res.status(500).json({ code: 2, message: err.message, err })
       categoryDoc.posts = postsDocs.map(t => t._id)
       categoryDoc.save(err => {
-        if (err) return res.status(500).json({ code: 0, message: err.message, err })
+        if (err) return res.status(500).json({ code: 2, message: err.message, err })
       })
     })
   })
@@ -1711,17 +1713,18 @@ fnRelatedCategory = _id => {
   /* 按照id更新一篇文章 */
   app.put('/posts/:id', adminAuth, (req, res) => {
     Post.findById(req.params.id).exec((err, doc) => {
-      if (err) return res.status(500).json({code: 0, message: err.message, err})
-      if (doc === null) return res.status(404).json({code: 0, message: '文章不存在，请刷新后再试'})
-      for (prop in req.body) {
-        doc[prop] = req.body[prop]
-      }
+      if (err) return res.status(500).json({ code: 2, message: err.message, err })
+      if (doc === null) return res.status(404).json({ code: 1, message: '文章不存在，请刷新后再试' })
+      Object.entries(req.body).forEach(temp => {
+        const [key, value] = temp
+        doc[key] = value
+      })
       doc.save((err) => {
-        if (err) return res.status(500).json({code: 0, message: err.message, err})
-        doc.populate({path:'category',select:'number'}, (err, doc) => {
-          if (err) return res.status(500).json({code:0, message: err.message, err})
-          fnRelatedCategory(doc.category._id)        
-          return res.status(200).json({code: 1, message: '更新成功', result: {doc}})
+        if (err) return res.status(500).json({ code: 2, message: err.message, err })
+        doc.populate({path: 'category', select: 'number' }, (err, doc) => {
+          if (err) return res.status(500).json({ code: 2, message: err.message, err })
+          fnRelatedCategory(doc.category._id, res)        
+          return res.status(201).json({ code: 0, message: '更新成功', result: { doc } })
         })
       })
     })
@@ -1729,7 +1732,6 @@ fnRelatedCategory = _id => {
 ...
 ```
   
-
 &nbsp;
 
 ## 最后
