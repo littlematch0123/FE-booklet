@@ -107,7 +107,8 @@
             * [ES6 中的 Module](ECMA/modular/es6Modula.md) 
     4. 规范
         * [编码标准](ECMA/optimize/codingStandard.md)
-        * [代码优化](ECMA/optimize/codeOptimization.md)          
+        * [代码优化](ECMA/optimize/codeOptimization.md)
+        * [eslint](ECMA/optimize/eslint.md)         
   * ES6
     1. 类型扩展
         * [数字扩展](ES6/typeExtension/numberExtension.md)
