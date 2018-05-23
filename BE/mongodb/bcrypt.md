@@ -14,6 +14,13 @@
 ```
 npm install --save bcrypt
 ```
+&emsp;&emsp;注意：bcrypt以前是可以直接安装的，但是最近发现无法正常安装，可以使用cnpm安装bcryptjs来替代
+```
+cnpm install --save bcryptjs
+```
+```
+const bcrypt = require('bcryptjs')
+```
 
 &nbsp;
 
