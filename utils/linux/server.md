@@ -397,7 +397,12 @@ server{
 
 ![linux_server19](https://pic.xiaohuochai.site/blog/linux_server19.png)
 
-
+&emsp;&emsp;如果是nodejs服务，可在index.js中添加如下代码
+```
+app.get('/.well-known/pki-validation/fileauth.txt', (req, res) => {
+  res.send('201805241123015e8cztxfk647v077o6dyjl24yel3y3485lmgjznf840gzw')
+})
+```
 &emsp;&emsp;当浏览器能够通过`http://static.xiaohuochai.site/.well-known/pki-validation/fileauth.txt`，成功访问，并输出上述内容时，即配置成功
 
 &emsp;&emsp;等待几分钟，证书便会下发
