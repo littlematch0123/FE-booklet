@@ -110,3 +110,23 @@
 
 &emsp;&emsp;rebase可以产生一个更为整洁的提交历史，但若使用rebase操作，一定要确保没有其他人会使用被删除的分支
 
+&emsp;&emsp;7、回退版本
+
+&emsp;&emsp;有时候可能会遇到git提交错误的情况，比如提交了敏感的信息或者提交了错误的版本。这个时候想将提交到代码库的记录删除
+
+&emsp;&emsp;首先要找到提交点的hash，通过git log命令可以获取提交的历史找到需要回滚到的提交点
+
+
+![](https://pic.xiaohuochai.site/blog/git_test1.png)
+
+
+&emsp;&emsp;由图中得到，要返回添加测试文件的前一个版本，即更新项目说明的版本，hash值是d5ba961
+
+&emsp;&emsp;接着，使用git reset --hard commit_hash命令，返回该版本
+
+![](https://pic.xiaohuochai.site/blog/git_test2.png)
+
+
+&emsp;&emsp;再使用git push origin head --force即可
+
+![](https://pic.xiaohuochai.site/blog/git_test3.png)
