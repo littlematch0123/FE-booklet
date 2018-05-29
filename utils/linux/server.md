@@ -403,6 +403,15 @@ app.get('/.well-known/pki-validation/fileauth.txt', (req, res) => {
   res.send('201805241123015e8cztxfk647v077o6dyjl24yel3y3485lmgjznf840gzw')
 })
 ```
+
+&emsp;&emsp;如果是静态网站，则需要再nginx中配置如下类似代码
+
+```
+location /.well-known/pki-validation {
+    alias /home/xiaohuochai/www/blog/admin/source/build;
+}
+```
+
 &emsp;&emsp;当浏览器能够通过`http://static.xiaohuochai.site/.well-known/pki-validation/fileauth.txt`，成功访问，并输出上述内容时，即配置成功
 
 &emsp;&emsp;等待几分钟，证书便会下发
@@ -591,6 +600,18 @@ git push origin master</pre>
 
 ![linux_server22](https://pic.xiaohuochai.site/blog/linux_server22.png)
 
+&emsp;&emsp;【3】升级
+
+&emsp;&emsp;使用npm升级nodejs版本后，需要重新安装cnpm及pm2
+```
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install pm2 -g
+```
+&emsp;&emsp;虽然pm2命令可以使用了，但是pm2守护的nodejs版本仍然是旧版本的nodejs，这时需要在pm2部署文件中指定node版本
+```
+"exec_interpreter": "~/nvm/versions/node/v8.11.2/bin/node"
+```
+&emsp;&emsp;这时，pm2可以正常工作了
 
 &nbsp;
 
