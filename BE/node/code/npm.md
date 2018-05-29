@@ -79,11 +79,31 @@ npm install <tarball file>
 npm install <tarball url>    
 npm install <folder>
 ```
+【镜像安装】
 
 &emsp;&emsp;如果不能通过官方源安装，可以通过镜像源安装。在执行命令时，添加`--registry=http://registry.url`即可，示例如下：
-
 ```
 npm install underscore --registry=http://registry.url
+```
+&emsp;&emsp;或者
+```
+npm install underscore  registry "http://registry.npm.taobao.org"
+```
+&emsp;&emsp;使用如下命令可以取消镜像
+```
+npm config delete registry
+```
+&emsp;&emsp;如果使用npm安装插件时，出现npm err! registry error parsing json错误，是镜像的问题，取消镜像即可
+```
+npm err! registry error parsing json
+```
+&emsp;&emsp;如果出现ResponseError: Hostname/IP doesn't match certificate's altnames，错误。是因为淘宝镜像需要使用http，而不是https
+```
+ResponseError: Hostname/IP doesn't match certificate's altnames:
+```
+&emsp;&emsp;更改为如下镜像即可
+```
+npm install underscore  registry "http://registry.npm.taobao.org"
 ```
 
 【版本】
