@@ -9,6 +9,7 @@
     * [数据传输](base/transport.md)
     * [网站架构演化](base/WebArchitecture.md)
     * [连接管理](base/connect.md)
+    * [缓存](base/cache.md) 
 * 组成
     * [URL](composition/URL.md)
     * [报文起始行](composition/StartingLine.md)
@@ -16,7 +17,6 @@
 * 结构
     * [Web服务器](structure/server.md)
     * [代理](structure/proxy.md)
-    * [缓存](structure/cache.md) 
     * [网关、隧道和中继](structure/others.md) 
 * 安全
     * [Web攻击技术](security/webAttack.md)
