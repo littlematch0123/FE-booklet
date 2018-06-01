@@ -290,3 +290,47 @@ add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsaf
 &emsp;&emsp;3、使用JWT。并将其存储在本地存储localStorage中
 
 ![](https://pic.xiaohuochai.site/blog/mongodb_jwt1.png)
+
+
+&nbsp;
+
+### HTTP2
+
+&emsp;&emsp;HTTP/2（超文本传输协议第2版，最初命名为HTTP 2.0），简称为h2（基于TLS/1.2或以上版本的加密连接）或h2c（非加密连接），是HTTP协议的的第二个主要版本，使用于万维网。 HTTP/2是HTTP协议自1999年HTTP 1.1发布后的首个更新，主要基于SPDY协议。它由互联网工程任务组（IETF）的Hypertext Transfer Protocol Bis（httpbis）工作小组进行开发。该组织于2014年12月将HTTP/2标准提议递交至IESG进行讨论，于2015年2月17日被批准
+
+&emsp;&emsp;HTTP/2标准于2015年5月以RFC 7540正式发表。多数主流浏览器已经在2015年底支持了该协议。此外，根据W3Techs的数据，在2017年5月，在排名前一千万的网站中，有13.7%支持了HTTP/2
+
+&emsp;&emsp;HTTP/2的出现，相比于 HTTP 1.x ，大幅度的提升了 web 性能。在与 HTTP/1.1 完全语义兼容的基础上，进一步减少了网络延迟
+
+【多路复用】
+
+&emsp;&emsp;多路复用允许同时通过单一的 HTTP/2 连接发起多重的请求-响应消息
+
+&emsp;&emsp;众所周知 ，在 HTTP/1.1 协议中，浏览器客户端在同一时间，针对同一域名下的请求有一定数量限制。超过限制数目的请求会被阻塞。chrome下是6个，这也是为何一些站点会有多个静态资源 CDN 域名的原因之一
+
+&emsp;&emsp;而HTTP/2 的多路复用(Multiplexing) 则允许同时通过单一的 HTTP/2 连接发起多重的请求-响应消息
+
+![](https://pic.xiaohuochai.site/blog/http2_1.jpg)
+
+&emsp;&emsp;因此 HTTP/2 可以很容易的去实现多流并行而不用依赖建立多个 TCP 连接，HTTP/2 把 HTTP 协议通信的基本单位缩小为一个一个的帧，这些帧对应着逻辑流中的消息。并行地在同一个 TCP 连接上双向交换消息
+
+【二进制分帧】
+
+&emsp;&emsp;HTTP/2 所有性能增强的核心在于新的二进制分帧层，它定义了如何封装 HTTP 消息并在客户端与服务器之间传输
+
+![](https://pic.xiaohuochai.site/blog/http2_2.jpg)
+
+&emsp;&emsp;这里所谓的“层”，指的是位于套接字接口与应用可见的高级 HTTP API 之间一个经过优化的新编码机制：HTTP 的语义（包括各种动词、方法、标头）都不受影响，不同的是传输期间对它们的编码方式变了。HTTP/1.x 协议以换行符作为纯文本的分隔符，而 HTTP/2 将所有传输的信息分割为更小的消息和帧，并采用二进制格式对它们编码
+
+【首部压缩】
+
+&emsp;&emsp;每个 HTTP 传输都承载一组标头，这些标头说明了传输的资源及其属性。 在 HTTP/1.x 中，此元数据始终以纯文本形式，通常会给每个传输增加 500–800 字节的开销。如果使用 HTTP Cookie，增加的开销有时会达到上千字节。为了减少此开销和提升性能，HTTP/2 使用 HPACK 压缩格式压缩请求和响应标头元数据
+
+![](https://pic.xiaohuochai.site/blog/http2_3.jpg)
+
+【服务器端推送】
+
+&emsp;&emsp;HTTP/2 新增的另一个强大的新功能是，服务器可以对一个客户端请求发送多个响应。 换句话说，除了对最初请求的响应外，服务器还可以向客户端推送额外资源，而无需客户端明确地请求
+
+![](https://pic.xiaohuochai.site/blog/http2_4.jpg)
+
