@@ -1,4 +1,4 @@
-# sass
+# sass简明学习
 
 
 &emsp;&emsp;"CSS预处理器"(css preprocessor)的基本思想是，用一种专门的编程语言，进行网页样式设计，然后再编译成正常的CSS文件。SASS是一种CSS的开发工具，提供了许多便利的写法，大大节省了设计者的时间，使得CSS的开发，变得简单和可维护。本文将详细介绍sass的使用
@@ -14,7 +14,11 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
 
 【SASS和SCSS】
 
-&emsp;&emsp;Sass和SCSS其实是同一种东西，我们平时都称之为Sass，两者之间不同之处有以下两点：1、文件扩展名不同，Sass是以“.sass”后缀为扩展名，而SCSS是以“.scss”后缀为扩展名；2、语法书写方式不同，Sass是以严格的缩进式语法规则来书写，不带大括号({})和分号(;)，而SCSS的语法书写和我们的CSS语法书写方式非常类似
+&emsp;&emsp;Sass和SCSS其实是同一种东西，我们平时都称之为Sass，两者之间不同之处有以下两点
+
+&emsp;&emsp;1、文件扩展名不同，Sass是以“.sass”后缀为扩展名，而SCSS是以“.scss”后缀为扩展名；
+
+&emsp;&emsp;2、语法书写方式不同，Sass是以严格的缩进式语法规则来书写，不带大括号({})和分号(;)，而SCSS的语法书写和我们的CSS语法书写方式非常类似
 
 &emsp;&emsp;下面为Sass语法
 
@@ -49,8 +53,7 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
 
 ### 安装
 
-&emsp;&emsp;在Windows平台下安装Ruby需要先有Ruby安装包。Ruby安装文件
-<a href="http://rubyinstaller.org/downloads" target="_blank">下载</a>好后，可以按应用软件安装步骤进行安装Ruby
+&emsp;&emsp;在Windows平台下安装Ruby需要先有Ruby安装包。Ruby安装文件<a href="http://rubyinstaller.org/downloads" target="_blank">下载</a>好后，可以按应用软件安装步骤进行安装Ruby
 
 &emsp;&emsp;在安装过程中选择第二个选项(若不选中，就会出现编译时找不到Ruby环境的情况)，如下图所示
 
@@ -87,7 +90,7 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
 
 &emsp;&emsp;Sass的编译包括以下几种方法：命令编译、GUI工具编译和自动化编译
 
-&emsp;&emsp;[注意]在编译sass时，常见的两个错误是字符编码错误(不支持gbk编码)和路径错误(不支持中文)
+&emsp;&emsp;注意：在编译sass时，常见的两个错误是字符编码错误(不支持gbk编码)和路径错误(不支持中文)
 
 1、命令编译
 
@@ -106,7 +109,7 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
 
 &emsp;&emsp;在实际编译过程中，会发现上面的命令只能一次性编译。每次保存“.scss”文件之后，都得重新执行一次这样的命令。如此操作太麻烦，其实还有一种方法，就是在编译Sass时，开启“watch”功能，这样只要代码进行任何修改，都能自动监测到代码的变化，并且直接编译出来：
 
-&emsp;&emsp;[注意]冒号的左右两侧一定不要留空格
+&emsp;&emsp;注意：冒号的左右两侧一定不要留空格
 
     sass --watch <要编译的Sass文件路径>/style.scss:<要输出CSS文件路径>/style.css
 
@@ -251,7 +254,7 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
 
     $side : left;
     .rounded {
-    　　border-#{$side}-radius: 5px;
+    &emsp;&emsp;border-#{$side}-radius: 5px;
     }
 
 【默认变量】
@@ -330,7 +333,7 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
 
 【选择器嵌套】
 
-&emsp;&emsp;[注意]在sass嵌套嵌套中，可以使用&表示父元素选择器
+&emsp;&emsp;注意：在sass嵌套嵌套中，可以使用&表示父元素选择器
 
     #top_nav{
       line-height: 40px;
@@ -369,7 +372,7 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
 
 &emsp;&emsp;CSS有一些属性前缀相同，只是后缀不一样，比如：border-top/border-right，与这个类似的还有 margin、padding、font等
 
-&emsp;&emsp;[注意]border后面必须有冒号
+&emsp;&emsp;注意：border后面必须有冒号
 
     //css
     .box {
@@ -578,7 +581,7 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
     @for $i from <start> through <end>
     @for $i from <start> to <end>
 
-这两个的区别是关键字through表示包括end，而to则不包括end
+&emsp;&emsp;这两个的区别是关键字through表示包括end，而to则不包括end
 
     //scss
     @for $i from 1 through 3 {
@@ -825,7 +828,7 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
 
 &emsp;&emsp;`min()`取最小值，`max()`取最大值
 
-&emsp;&emsp;[注意]min()和max()都只可以比较相同单位的数值，否则会报错
+&emsp;&emsp;注意：min()和max()都只可以比较相同单位的数值，否则会报错
 
     //scss
     div{
@@ -1035,7 +1038,7 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
 
 &emsp;&emsp;lighten()和darken()两个函数都是围绕颜色的亮度值做调整的，其中lighten()函数会让颜色变得更亮，与之相反的darken()函数会让颜色变得更暗。这个亮度值可以是0~1之间，不过常用的一般都在3%~20%之间
 
-&emsp;&emsp;[注意]当颜色亮度值接近或大于100%，颜色会变成白色；反之颜色亮度值接近或小于0时，颜色会变成黑色
+&emsp;&emsp;注意：当颜色亮度值接近或大于100%，颜色会变成白色；反之颜色亮度值接近或小于0时，颜色会变成黑色
 
     //SCSS
     $baseColor: #ad141e;
@@ -1620,7 +1623,7 @@ Sass能够提供更简洁、更优雅的语法，同时提供多种功能来创�
 
 &emsp;&emsp;l:亮度(lightness)，取0-100%范围的值，其中0表示最暗(黑色)，100%表示最亮(白色)   
 
-&emsp;&emsp;[注意]关于CSS中HSL模式的详细信息<a href="http://www.cnblogs.com/xiaohuochai/p/5204448.html#anchor5" target="_blank">移步至此</a>
+&emsp;&emsp;注意：关于CSS中HSL模式的详细信息<a href="http://www.cnblogs.com/xiaohuochai/p/5204448.html#anchor5" target="_blank">移步至此</a>
 
 
 &emsp;&emsp;由于对色彩知识并没有深入的了解，就以图片表观上从左到右亮度逐渐变小为依据，来写CSS
