@@ -165,11 +165,11 @@ import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa
 
 &emsp;&emsp;7、m5e &nbsp; -&gt; margin: 5em
 
-&emsp;&emsp;[8]@f&nbsp;　 &nbsp;-&gt;@font-face
+&emsp;&emsp;8、@f&nbsp;　 &nbsp;-&gt;@font-face
 
-&emsp;&emsp;[9]$&emsp;&emsp;-&gt;从1开始的递增值
+&emsp;&emsp;9、$&emsp;&emsp;-&gt;从1开始的递增值
 
-&emsp;&emsp;[10]{}&nbsp;　-&gt;元素内容
+&emsp;&emsp;10、{}&nbsp;　-&gt;元素内容
 
 ![helper_sublime5](https://pic.xiaohuochai.site/blog/helper_sublime5.gif)
 
