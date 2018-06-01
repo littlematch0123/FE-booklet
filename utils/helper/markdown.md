@@ -2,7 +2,7 @@
 
 &emsp;&emsp;我个人理解，Markdown就是一个富文本编辑器语言，类似于sass对于css的功能，Markdown也可以叫做HTML预处理器，只不过它是一门轻量级的标记语言，可以更简单的实现HTML文档。本文将详细介绍Markdown的内容
 
-<p>&nbsp;</p>
+&nbsp;
 
 ### 概述
 
@@ -11,14 +11,14 @@
 &emsp;&emsp;Markdown的语法全由一些符号所组成，它的语法种类很少，只对应HTML标记的一小部分。由于Markdown实际上就是简化版的HTML，所以直接写HTML也是可以的
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 
 ### 段落
 
 
 &emsp;&emsp;不加任何符号的一段字符，就是一个段落。多个段落之间用空行分隔
-&emsp;&emsp;[注意]在markdown中，多个空行会合并为一个空行显示
+&emsp;&emsp;注意：在markdown中，多个空行会合并为一个空行显示
 
     p1   
 
@@ -33,7 +33,7 @@
     <p>p2</p>
     <p>p3</p>
 
-<p>&nbsp;</p>
+&nbsp;
 
 
 
@@ -52,7 +52,7 @@
        p3</p>
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 ### 标题
 
@@ -75,13 +75,14 @@
     <h5>h5</h5>
     <h6>h6</h6>
 
-<p>&nbsp;</p>
+&nbsp;
 
 
 
 ### 区块
 
 &emsp;&emsp;说起区块，可能听说的人比较少。它用'>'这个符号来表示，对应于HTML中的`<blockquote>`标签，用于引用块元素。《Head first HTML And CSS》一书中，还专门针对`<blockquote>`和`<q>`进行了详细的区分，但实际用的比较少
+
 &emsp;&emsp;但是，markdown对应区块引用的实现上，并不能完整表达`<blockquote>`标签的语义，应该可以引用多个段落，但实际上markdown的'>'符号只能引用一个段落
 
     >p1
@@ -98,7 +99,7 @@
 
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 ### 列表
 
@@ -142,10 +143,10 @@
         <li>green</li>
     </ol>
 
-&emsp;&emsp;[注意]如果在项目之间插入空行，那项目的内容会用`<p>`包起来
+&emsp;&emsp;注意：如果在项目之间插入空行，那项目的内容会用`<p>`包起来
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 ### 分隔线
 
@@ -166,13 +167,13 @@
     <hr>
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 ### 链接
 
 &emsp;&emsp;Markdown支持三种形式的链接语法：行内、参考和自动。行内和参考链接都使用角括号把文字转成链接
 
-&emsp;&emsp;[注意]由于Markdown默认产生的链接是当前页打开，且无法实现_blank，所以，就个人而言还是直接使用`<a>`更方便
+&emsp;&emsp;注意：由于Markdown默认产生的链接是当前页打开，且无法实现_blank，所以，就个人而言还是直接使用`<a>`更方便
 
 【行内链接】
 
@@ -206,7 +207,7 @@
 
 &emsp;&emsp;Markdown支持比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用方括号包起来，Markdown就会自动把它转成链接，链接的文字就和链接位置一样
 
-&emsp;&emsp;[注意]在网址前一定要加http://，否则将不会被识别为URL
+&emsp;&emsp;注意：在网址前一定要加http://，否则将不会被识别为URL
 
     <http://cnblogs.com/>
 
@@ -216,7 +217,7 @@
 
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 
 ### 图片
@@ -240,7 +241,7 @@
 
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 ### 代码
 
@@ -270,7 +271,7 @@
     <pre><code>&lt;blockquote&gt;&lt;p&gt;For example.&lt;/p&gt;&lt;/blockquote&gt;</code></pre>
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 
 ### 强调
@@ -287,7 +288,7 @@
 
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 
 ### 转义
@@ -310,7 +311,7 @@
     !   惊叹号
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 
 ### 表格
@@ -352,14 +353,14 @@
     </tbody>
     </table>
     
-<p>&nbsp;</p>
+&nbsp;
 
 ### 空两格
 
 &emsp;&emsp;使用markdown排版时，很常用的需求是实现首行缩进，一般使用两个全角空格`&emsp$emsp`来实现
 
 
-<p>&nbsp;</p>
+&nbsp;
 
 
 ### 注意
