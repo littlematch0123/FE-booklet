@@ -239,7 +239,6 @@ nav &gt; a:before{
   border:1px solid black;
   border-radius: .5em .5em 0 0 ;
   box-shadow: 0 .15em white inset;
-
   transform:scaleY(1.3) perspective(.5em) rotateX(5deg);
   transform-origin: bottom;
 }
@@ -537,7 +536,6 @@ div:after{
   to{transform: rotate(.5turn);}
 }
 @keyframes bg{50%{background:#655;}}
-
 .pie{
   width: 100px;height: 100px;
   position:relative;
