@@ -1,12 +1,12 @@
 # Vue数组更新及过滤排序
 
-　　Vue为了增加列表渲染的功能，增加了一组观察数组的方法，而且可以显示一个数组的过滤或排序的副本。本文将详细介绍Vue数组更新及过滤排序
+&emsp;&emsp;Vue为了增加列表渲染的功能，增加了一组观察数组的方法，而且可以显示一个数组的过滤或排序的副本。本文将详细介绍Vue数组更新及过滤排序
 
 &nbsp;
 
 ### 变异方法
 
-　　Vue 包含一组观察数组的变异方法，它们将会触发视图更新，包含以下方法
+&emsp;&emsp;Vue 包含一组观察数组的变异方法，它们将会触发视图更新，包含以下方法
 
 <div>
 <pre>push() 接收任意数量的参数，把它们逐个添加到数组末尾，并返回修改后数组的长度
@@ -17,6 +17,7 @@ splice() 删除原数组的一部分成员，并可以在被删除的位置添�
 sort() 调用每个数组项的toString()方法，然后比较得到的字符串排序，返回经过排序之后的数组
 reverse() 用于反转数组的顺序，返回经过排序之后的数组</pre>
 </div>
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;div&gt;
@@ -35,6 +36,7 @@ reverse() 用于反转数组的顺序，返回经过排序之后的数组</pre>
   &lt;/ul&gt;  
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
@@ -80,7 +82,7 @@ var example = new Vue({
 
 ### 非变异方法
 
-　　变异方法(mutation method)，顾名思义，会改变被这些方法调用的原始数组。相比之下，也有非变异(non-mutating method)方法，例如： `filter()`, `concat()`, `slice()` 。这些不会改变原始数组，但总是返回一个新数组。当使用非变异方法时，可以用新数组替换旧数组
+&emsp;&emsp;变异方法(mutation method)，顾名思义，会改变被这些方法调用的原始数组。相比之下，也有非变异(non-mutating method)方法，例如： `filter()`, `concat()`, `slice()` 。这些不会改变原始数组，但总是返回一个新数组。当使用非变异方法时，可以用新数组替换旧数组
 
 <div>
 <pre>concat() 先创建当前数组一个副本，然后将接收到的参数添加到这个副本的末尾，最后返回新构建的数组
@@ -89,6 +91,7 @@ map() 对数组的每一项运行给定函数，返回每次函数调用的结�
 filter() 对数组中的每一项运行给定函数，该函数会返回true的项组成的数组
 </pre>
 </div>
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;div&gt;
@@ -104,6 +107,7 @@ filter() 对数组中的每一项运行给定函数，该函数会返回true的�
   &lt;/ul&gt;  
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
@@ -136,18 +140,18 @@ var example = new Vue({
 
 <iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/vue/template/t4.html" frameborder="0" width="320" height="240"></iframe>
 
-　　以上操作并不会导致Vue丢弃现有DOM并重新渲染整个列表。Vue实现了一些智能启发式方法来最大化DOM元素重用，所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作
+&emsp;&emsp;以上操作并不会导致Vue丢弃现有DOM并重新渲染整个列表。Vue实现了一些智能启发式方法来最大化DOM元素重用，所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作
 
 &nbsp;
 
 ### 无法检测
 
-　　由于JS的限制， Vue 不能检测以下变动的数组：
+&emsp;&emsp;由于JS的限制， Vue 不能检测以下变动的数组：
 
-　　1、利用索引直接设置一个项时，例如： `vm.items[indexOfItem] = newValue`
+&emsp;&emsp;1、利用索引直接设置一个项时，例如： `vm.items[indexOfItem] = newValue`
 
-　　2、修改数组的长度时，例如： `vm.items.length = newLength`
-
+&emsp;&emsp;2、修改数组的长度时，例如： `vm.items.length = newLength`
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;div&gt;
@@ -161,6 +165,7 @@ var example = new Vue({
   &lt;p&gt;{{ message }}&lt;/p&gt; 
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var watchFunc = function(){
@@ -193,11 +198,11 @@ var example = new Vue({
 &lt;/script&gt;</pre>
 </div>
 
-　　以上代码中，直接设置值和长度使用watch不能检测到变化
+&emsp;&emsp;以上代码中，直接设置值和长度使用watch不能检测到变化
 
 <iframe style="width: 100%; height: 150px;" src="https://demo.xiaohuochai.site/vue/template/t5.html" frameborder="0" width="320" height="240"></iframe>
 
-　　以下两种方式都可以实现和`vm.items[indexOfItem]=newValue`相同的效果， 同时也将触发状态更新
+&emsp;&emsp;以下两种方式都可以实现和`vm.items[indexOfItem]=newValue`相同的效果， 同时也将触发状态更新
 
 <div>
 <pre>// Vue.set
@@ -208,11 +213,12 @@ Vue.set(example1.items, indexOfItem, newValue)</pre>
 example1.items.splice(indexOfItem, 1, newValue)</pre>
 </div>
 
-&nbsp;　　为了解决第二类问题，可以使用 `splice`
+&nbsp;&emsp;&emsp;为了解决第二类问题，可以使用 `splice`
 
 <div>
 <pre>example1.items.splice(newLength)</pre>
 </div>
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;div&gt;
@@ -226,6 +232,7 @@ example1.items.splice(indexOfItem, 1, newValue)</pre>
   &lt;p&gt;{{ message }}&lt;/p&gt; 
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var watchFunc = function(){
@@ -264,10 +271,10 @@ var example = new Vue({
 
 ### 过滤排序
 
-　　有时，要显示一个数组的过滤或排序副本，而不实际改变或重置原始数据。在这种情况下，可以创建返回过滤或排序数组的计算属性
+&emsp;&emsp;有时，要显示一个数组的过滤或排序副本，而不实际改变或重置原始数据。在这种情况下，可以创建返回过滤或排序数组的计算属性
 
 【computed】
-
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;ul&gt;
@@ -275,6 +282,7 @@ var example = new Vue({
   &lt;/ul&gt; 
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
@@ -295,8 +303,8 @@ var example = new Vue({
 
 【methods】
 
-　　在计算属性不适用的情况下 (例如，在嵌套 `v-for` 循环中) 可以使用一个 method 方法
-
+&emsp;&emsp;在计算属性不适用的情况下 (例如，在嵌套 `v-for` 循环中) 可以使用一个 method 方法
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;ul&gt;
@@ -304,6 +312,7 @@ var example = new Vue({
   &lt;/ul&gt; 
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
