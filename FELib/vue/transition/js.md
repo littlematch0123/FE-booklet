@@ -1,12 +1,12 @@
 # Vue过渡效果之JS过渡
 
-　　与[CSS过渡](http://www.cnblogs.com/xiaohuochai/p/7383979.html)不同，JS过渡主要通过事件进行触发。本文将详细介绍Vue过渡效果之JS过渡
+&emsp;&emsp;与[CSS过渡](http://www.cnblogs.com/xiaohuochai/p/7383979.html)不同，JS过渡主要通过事件进行触发。本文将详细介绍Vue过渡效果之JS过渡
 
 &nbsp;
 
 ### 事件钩子
 
-　　JS过渡主要通过事件监听事件钩子来触发过渡，共包括如下的事件钩子
+&emsp;&emsp;JS过渡主要通过事件监听事件钩子来触发过渡，共包括如下的事件钩子
 
 <div>
 <pre>&lt;transition
@@ -23,7 +23,7 @@
 &lt;/transition&gt;</pre>
 </div>
 
-　　下面各个方法中，函数中的参数el表示要过渡的元素，可以设置不同情况下，el的位置、颜色等来控制其动画的改变
+&emsp;&emsp;下面各个方法中，函数中的参数el表示要过渡的元素，可以设置不同情况下，el的位置、颜色等来控制其动画的改变
 
 <div>
 <pre>// ...
@@ -68,13 +68,13 @@ methods: {
 }</pre>
 </div>
 
-　　上面方法中，有两个方法比较特殊，是enter()和leave()方法，它们接受了第二个参数done。当进入完毕或离开完毕后，会调用done()方法来进行接下来的操作
+&emsp;&emsp;上面方法中，有两个方法比较特殊，是enter()和leave()方法，它们接受了第二个参数done。当进入完毕或离开完毕后，会调用done()方法来进行接下来的操作
 
-　　[注意]对于仅使用JS过渡的元素添加 `v-bind:css="false"`，Vue 会跳过 CSS 的检测。这也可以避免过渡过程中 CSS 的影响
+&emsp;&emsp;注意：对于仅使用JS过渡的元素添加 `v-bind:css="false"`，Vue 会跳过 CSS 的检测。这也可以避免过渡过程中 CSS 的影响
 
 【简单事例】
 
-　　下面是一个JS过渡的简单事例
+&emsp;&emsp;下面是一个JS过渡的简单事例
 
 <div>
 <pre>&lt;div id="demo"&gt;
@@ -116,7 +116,7 @@ new Vue({
 
 ### 初始渲染过渡
 
-　　可以通过 `appear` 特性设置节点的在初始渲染的过渡，自定义 JavaScript 钩子
+&emsp;&emsp;可以通过 `appear` 特性设置节点的在初始渲染的过渡，自定义 JavaScript 钩子
 
 <div>
 <pre>&lt;transition
@@ -130,7 +130,7 @@ new Vue({
 &lt;/transition&gt;</pre>
 </div>
 
-　　下面是一个例子
+&emsp;&emsp;下面是一个例子
 
 <div>
 <pre>&lt;div id="demo"&gt;
