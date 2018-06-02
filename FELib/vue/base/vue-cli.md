@@ -1,43 +1,43 @@
 # Vue 命令行工具 vue-cli
 
-Vue.js 提供一个[官方命令行工具](https://github.com/vuejs/vue-cli)，可用于快速搭建大型单页应用。该工具提供开箱即用的构建工具配置，带来现代化的前端开发流程。只需几分钟即可创建并启动一个带热重载、保存时静态检查以及可用于生产环境的构建配置的项目&nbsp;。本文将详细介绍 Vue 命令行工具 vue-cli
+&emsp;&emsp;Vue.js 提供一个[官方命令行工具](https://github.com/vuejs/vue-cli)，可用于快速搭建大型单页应用。该工具提供开箱即用的构建工具配置，带来现代化的前端开发流程。只需几分钟即可创建并启动一个带热重载、保存时静态检查以及可用于生产环境的构建配置的项目&nbsp;。本文将详细介绍 Vue 命令行工具 vue-cli
 
 &nbsp;
 
 ### 概述
 
-Vue-cli 是 Vue 官方提供的用于初始化 Vue 项目的脚手架工具。使用 Vue-cli 有以下几大优势
+&emsp;&emsp;Vue-cli 是 Vue 官方提供的用于初始化 Vue 项目的脚手架工具。使用 Vue-cli 有以下几大优势
 
-1、Vue-cli 是一套成熟的 vue 项目架构设计，会跟着 Vue 版本的更迭而更新
+&emsp;&emsp;1、Vue-cli 是一套成熟的 vue 项目架构设计，会跟着 Vue 版本的更迭而更新
 
-2、Vue-cli 提供了一套本地的热加载的测试服务器
+&emsp;&emsp;2、Vue-cli 提供了一套本地的热加载的测试服务器
 
-3、Vue-cli 集成了一套打包上线的方案，可使用 webpack 或 Browserify 等构建工具
+&emsp;&emsp;3、Vue-cli 集成了一套打包上线的方案，可使用 webpack 或 Browserify 等构建工具
 
 &nbsp;
 
 ### 安装
 
-下面来安装 vue-cli
+&emsp;&emsp;下面来安装 vue-cli
 
 <div>
 <pre># 全局安装 vue-cli
 $ npm install -g vue-cli</pre>
 </div>
 
-[注意]一定要在全局模式下安装 vue-cli，否则无法使用 vue 命令
+&emsp;&emsp;注意：一定要在全局模式下安装 vue-cli，否则无法使用 vue 命令
 
 ![vue_base_vueCli1](https://pic.xiaohuochai.site/blog/vue_base_vueCli1.png)
 
-全局模式下，安装 vue-cli 后，才可以正常使用
+&emsp;&emsp;全局模式下，安装 vue-cli 后，才可以正常使用
 
 ![vue_base_vueCli2](https://pic.xiaohuochai.site/blog/vue_base_vueCli2.png)
 
-输入 vue 命令，会出现如下视图
+&emsp;&emsp;输入 vue 命令，会出现如下视图
 
 ![vue_base_vueCli3](https://pic.xiaohuochai.site/blog/vue_base_vueCli3.png)
 
-输入 vue -V 命令，可以看出当前 vue-cli 使用的是 2.8.2 版本。输入 vue list 可以得到推荐的官方模板
+&emsp;&emsp;输入 vue -V 命令，可以看出当前 vue-cli 使用的是 2.8.2 版本。输入 vue list 可以得到推荐的官方模板
 
 ![vue_base_vueCli4](https://pic.xiaohuochai.site/blog/vue_base_vueCli4.png)
 
@@ -45,7 +45,7 @@ $ npm install -g vue-cli</pre>
 
 ### 创建项目
 
-接下来，创建一个基于 webpack 模板的新项目
+&emsp;&emsp;接下来，创建一个基于 webpack 模板的新项目
 
 <div>
 <pre>$ vue init webpack my-project</pre>
@@ -53,11 +53,11 @@ $ npm install -g vue-cli</pre>
 
 ![vue_base_vueCli5](https://pic.xiaohuochai.site/blog/vue_base_vueCli5.png)
 
-创建项目后，在当前目录下，会新建 my-project 文件夹，里面是 my-project 项目所包含的文件
+&emsp;&emsp;创建项目后，在当前目录下，会新建 my-project 文件夹，里面是 my-project 项目所包含的文件
 
 ![vue_base_vueCli6](https://pic.xiaohuochai.site/blog/vue_base_vueCli6.png)
 
-my-project 中的 package.json 文件中，所依赖的包如下所示
+&emsp;&emsp;my-project 中的 package.json 文件中，所依赖的包如下所示
 
 <div>
 <pre>{
@@ -123,7 +123,7 @@ my-project 中的 package.json 文件中，所依赖的包如下所示
 }</pre>
 </div>
 
-接下来， 进入 my-project 文件夹，并安装依赖包
+&emsp;&emsp;接下来， 进入 my-project 文件夹，并安装依赖包
 
 <div>
 <pre>$ cd my-project
@@ -136,13 +136,13 @@ $ npm install</pre>
 
 ### 运行项目
 
-接下来，输入下列代码来运行项目
+&emsp;&emsp;接下来，输入下列代码来运行项目
 
 <div>
 <pre>$ npm run dev</pre>
 </div>
 
-以上代码的意思是运行 package.json 中，scripts 脚本中 dev 指代的程序。类比于，运行 node build/dev-server.js
+&emsp;&emsp;以上代码的意思是运行 package.json 中，scripts 脚本中 dev 指代的程序。类比于，运行 node build/dev-server.js
 
 <div>
 <pre>  "scripts": {
@@ -154,11 +154,11 @@ $ npm install</pre>
 
 ![vue_base_vueCli8](https://pic.xiaohuochai.site/blog/vue_base_vueCli8.png)
 
-localhost:8080 的网页自动打开，效果如下
+&emsp;&emsp;localhost:8080 的网页自动打开，效果如下
 
 ![vue_base_vueCli9](https://pic.xiaohuochai.site/blog/vue_base_vueCli9.png)
 
-打开 app.vue 文件，在模板中加入&lt;p&gt;小火柴的蓝色理想&lt;/p&gt;&nbsp;这一行代码，并保存
+&emsp;&emsp;打开 app.vue 文件，在模板中加入&lt;p&gt;小火柴的蓝色理想&lt;/p&gt;&nbsp;这一行代码，并保存
 
 <div>
 <pre>&lt;template&gt;
@@ -170,7 +170,7 @@ localhost:8080 的网页自动打开，效果如下
 &lt;/template&gt;</pre>
 </div>
 
-当前浏览器将会自动更新到页面的最新状态，这是 vue-cli 自带的热更新的功能
+&emsp;&emsp;当前浏览器将会自动更新到页面的最新状态，这是 vue-cli 自带的热更新的功能
 
 ![vue_base_vueCli10](https://pic.xiaohuochai.site/blog/vue_base_vueCli10.png)
 
@@ -178,7 +178,7 @@ localhost:8080 的网页自动打开，效果如下
 
 ### 项目部署
 
-接下来，使用 npm run build 来部署上线的项目
+&emsp;&emsp;接下来，使用 npm run build 来部署上线的项目
 
 <div>
 <pre>npm run build</pre>
@@ -186,7 +186,7 @@ localhost:8080 的网页自动打开，效果如下
 
 ![vue_base_vueCli11](https://pic.xiaohuochai.site/blog/vue_base_vueCli11.png)
 
-生成的 dist 目录，就是打包构建后的项目目录
+&emsp;&emsp;生成的 dist 目录，就是打包构建后的项目目录
 
 ![vue_base_vueCli12](https://pic.xiaohuochai.site/blog/vue_base_vueCli12.png)
 
@@ -194,7 +194,7 @@ localhost:8080 的网页自动打开，效果如下
 
 ### 路由懒加载
 
-vue-cli 的默认配置基本上满足了开发需求。但，如果把不同路由对应的组件分割成不同的代码块，然后当路由被访问的时候才加载对应组件，这样就更加高效了
+&emsp;&emsp;vue-cli 的默认配置基本上满足了开发需求。但，如果把不同路由对应的组件分割成不同的代码块，然后当路由被访问的时候才加载对应组件，这样就更加高效了
 
 ```
 //router/index.js
@@ -213,7 +213,7 @@ vue-cli 的默认配置基本上满足了开发需求。但，如果把不同路
     },
 ```
 
-在 webpack.base.config.js 文件中添加 chunkFilename
+&emsp;&emsp;在 webpack.base.config.js 文件中添加 chunkFilename
 
 ```
   output: {
