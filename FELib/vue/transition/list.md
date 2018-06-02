@@ -1,16 +1,16 @@
 # Vue列表过渡
 
-　　本文将详细介绍Vue列表过渡
+&emsp;&emsp;本文将详细介绍Vue列表过渡
 
 &nbsp;
 
 ### 概述
 
-　　前面分别介绍了单元素[CSS过渡](http://www.cnblogs.com/xiaohuochai/p/7383979.html)和[JS过渡](http://www.cnblogs.com/xiaohuochai/p/7398088.html)，以及[多元素过渡](http://www.cnblogs.com/xiaohuochai/p/7411864.html)。如何同时渲染整个列表呢？在这种情景中，需要使用&lt;transition-group&gt;组件
+&emsp;&emsp;前面分别介绍了单元素[CSS过渡](http://www.cnblogs.com/xiaohuochai/p/7383979.html)和[JS过渡](http://www.cnblogs.com/xiaohuochai/p/7398088.html)，以及[多元素过渡](http://www.cnblogs.com/xiaohuochai/p/7411864.html)。如何同时渲染整个列表呢？在这种情景中，需要使用&lt;transition-group&gt;组件
 
 【&lt;transition-group&gt;】
 
-　　&lt;transition-group&gt;不同于&nbsp;&lt;transition&gt;， 它会以一个真实元素呈现：默认为一个&nbsp;&lt;span&gt;。也可以通过&nbsp;`tag`&nbsp;特性更换为其他元素。而且其内部元素总是需要提供唯一的&nbsp;`key`&nbsp;属性值
+&emsp;&emsp;&lt;transition-group&gt;不同于&nbsp;&lt;transition&gt;， 它会以一个真实元素呈现：默认为一个&nbsp;&lt;span&gt;。也可以通过&nbsp;`tag`&nbsp;特性更换为其他元素。而且其内部元素总是需要提供唯一的&nbsp;`key`&nbsp;属性值
 
 <div>
 <pre>&lt;transition-group name="list" tag="p"&gt;
@@ -22,8 +22,8 @@
 
 ### 普通过渡
 
-　　下面是一个添加和删除列表项的例子
-
+&emsp;&emsp;下面是一个添加和删除列表项的例子
+<!-- {% raw %} -->
 <div>
 <pre>&lt;style&gt;
 .list-item {display: inline-block;margin-right: 10px;}
@@ -40,6 +40,7 @@
   &lt;/transition-group&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 new Vue({
@@ -69,17 +70,17 @@ new Vue({
 
 ### 平滑过渡
 
-　　上面这个例子有个问题，当添加和移除元素的时候，周围的元素会瞬间移动到他们的新布局的位置，而不是平滑的过渡
+&emsp;&emsp;上面这个例子有个问题，当添加和移除元素的时候，周围的元素会瞬间移动到他们的新布局的位置，而不是平滑的过渡
 
 【v-move】
 
-　　&lt;transition-group&gt;&nbsp;组件还有一个特殊之处。不仅可以进入和离开动画，还可以改变定位。要使用这个新功能只需了解新增的&nbsp;`v-move`&nbsp;特性，它会在元素的改变定位的过程中应用。像之前的类名一样，可以通过&nbsp;`name`&nbsp;属性来自定义前缀，也可以通过&nbsp;`move-class`&nbsp;属性手动设置
+&emsp;&emsp;&lt;transition-group&gt;&nbsp;组件还有一个特殊之处。不仅可以进入和离开动画，还可以改变定位。要使用这个新功能只需了解新增的&nbsp;`v-move`&nbsp;特性，它会在元素的改变定位的过程中应用。像之前的类名一样，可以通过&nbsp;`name`&nbsp;属性来自定义前缀，也可以通过&nbsp;`move-class`&nbsp;属性手动设置
 
-　　在上面代码中基础上，做出如下改进：
+&emsp;&emsp;在上面代码中基础上，做出如下改进：
 
-　　1、增加.list-move的样式，使元素在进入时实现过渡效果
+&emsp;&emsp;1、增加.list-move的样式，使元素在进入时实现过渡效果
 
-　　2、在.list-leave-active中设置绝对定位，使元素在离开时实现过渡效果
+&emsp;&emsp;2、在.list-leave-active中设置绝对定位，使元素在离开时实现过渡效果
 
 <div>
 <pre>&lt;style&gt;
@@ -96,8 +97,8 @@ new Vue({
 
 ### 变换过渡
 
-　　下面接着利用move属性，进行变换过渡，即一个列表中的列表项既不增加也不减少，只是不断地变换其位置
-
+&emsp;&emsp;下面接着利用move属性，进行变换过渡，即一个列表中的列表项既不增加也不减少，只是不断地变换其位置
+<!-- {% raw %} -->
 <div>
 <pre>&lt;style&gt;
 .list-move{transition: transform 1s;}
@@ -111,6 +112,7 @@ new Vue({
   &lt;/transition-group&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 new Vue({
@@ -127,13 +129,13 @@ new Vue({
 &lt;/script&gt;</pre>
 </div>
 
-　　下面的效果看起来很神奇，内部的实现，Vue 使用了一个叫&nbsp;[FLIP](https://aerotwist.com/blog/flip-your-animations/)&nbsp;简单的动画队列，使用 transforms 将元素从之前的位置平滑过渡新的位置
+&emsp;&emsp;下面的效果看起来很神奇，内部的实现，Vue 使用了一个叫&nbsp;[FLIP](https://aerotwist.com/blog/flip-your-animations/)&nbsp;简单的动画队列，使用 transforms 将元素从之前的位置平滑过渡新的位置
 
 <iframe style="width: 100%; height: 250px;" src="https://demo.xiaohuochai.site/vue/transition/t27.html" frameborder="0" width="320" height="240"></iframe>
 
-　　下面将进入离开的例子和这个技术结合，&nbsp;使列表的一切变动都会有动画过渡
+&emsp;&emsp;下面将进入离开的例子和这个技术结合，&nbsp;使列表的一切变动都会有动画过渡
 
-　　[注意]使用 FLIP 过渡的元素不能设置为&nbsp;`display: inline`&nbsp;。作为替代方案，可以设置为&nbsp;`display: inline-block`&nbsp;或者放置于 flex 中
+&emsp;&emsp;注意：使用 FLIP 过渡的元素不能设置为&nbsp;`display: inline`&nbsp;。作为替代方案，可以设置为&nbsp;`display: inline-block`&nbsp;或者放置于 flex 中
 
 <div>
 <pre>&lt;style&gt;
@@ -144,7 +146,7 @@ new Vue({
 &lt;/style&gt;</pre>
 </div>
 
-　　以上代码中，由于move、enter和leave都需要设置transition。因此，直接在元素上设置transition即可
+&emsp;&emsp;以上代码中，由于move、enter和leave都需要设置transition。因此，直接在元素上设置transition即可
 
 <div>
 <pre>&lt;style&gt;
@@ -154,8 +156,8 @@ new Vue({
 &lt;/style&gt;</pre>
 </div>
 
-　　下面是完整代码
-
+&emsp;&emsp;下面是完整代码
+<!-- {% raw %} -->
 <div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -204,15 +206,15 @@ new Vue({
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 </div>
-
+<!-- {% endraw %} -->
 <iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/vue/transition/t28.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
 ### 多维列表
 
-　　FLIP 动画不仅可以实现单列过渡，多维网格的过渡也同样简单
-
+&emsp;&emsp;FLIP 动画不仅可以实现单列过渡，多维网格的过渡也同样简单
+<!-- {% raw %} -->
 <div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -255,17 +257,17 @@ new Vue({
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 </div>
-
+<!-- {% endraw %} -->
 <iframe style="width: 100%; height: 330px;" src="https://demo.xiaohuochai.site/vue/transition/t29.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
 ### 渐进过渡
 
-　　通过 data 属性与 JavaScript 通信 ，就可以实现列表的渐进过渡
+&emsp;&emsp;通过 data 属性与 JavaScript 通信 ，就可以实现列表的渐进过渡
 
-　　下面是使用CSS过渡实现的一个例子
-
+&emsp;&emsp;下面是使用CSS过渡实现的一个例子
+<!-- {% raw %} -->
 <div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -305,11 +307,11 @@ new Vue({
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 </div>
-
+<!-- {% endraw %} -->
 <iframe style="width: 100%; height: 170px;" src="https://demo.xiaohuochai.site/vue/transition/t30.html" frameborder="0" width="320" height="240"></iframe>
 
-　　上面的效果中，列表项是一齐运动的。如果要实现依次运动的效果，则需要使用JS过渡来实现
-
+&emsp;&emsp;上面的效果中，列表项是一齐运动的。如果要实现依次运动的效果，则需要使用JS过渡来实现
+<!-- {% raw %} -->
 <div>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -360,5 +362,5 @@ new Vue({
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 </div>
-
+<!-- {% endraw %} -->
 <iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/vue/transition/t31.html" frameborder="0" width="320" height="240"></iframe>
