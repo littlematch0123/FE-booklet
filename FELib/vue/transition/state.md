@@ -1,13 +1,13 @@
 # Vue过渡状态
 
-　　Vue 的过渡系统提供了非常多简单的方法设置进入、离开和列表的动效。那么对于数据元素本身的动效呢？包括数字和运算、颜色的显示、SVG 节点的位置、元素的大小和其他的属性等。所有的原始数字都被事先存储起来，可以直接转换到数字。做到这一步，我们就可以结合 Vue 的响应式和组件系统，使用第三方库来实现切换元素的过渡状态
+&emsp;&emsp;Vue 的过渡系统提供了非常多简单的方法设置进入、离开和列表的动效。那么对于数据元素本身的动效呢？包括数字和运算、颜色的显示、SVG 节点的位置、元素的大小和其他的属性等。所有的原始数字都被事先存储起来，可以直接转换到数字。做到这一步，我们就可以结合 Vue 的响应式和组件系统，使用第三方库来实现切换元素的过渡状态
 
 &nbsp;
 
 ### 状态动画
 
-　　通过watcher，能监听到任何数值属性的数值更新
-
+&emsp;&emsp;通过watcher，能监听到任何数值属性的数值更新
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="animated-number-demo"&gt;
   &lt;input v-model.number="number" type="number" step="20"&gt;
@@ -43,11 +43,11 @@ new Vue({
 })    
 &lt;/script&gt;  </pre>
 </div>
-
+<!-- {% endraw %} -->
 <iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/vue/transition/t33.html" frameborder="0" width="320" height="240"></iframe>
 
-　　当把数值更新时，就会触发动画。这个是一个不错的演示，但是对于不能直接像数字一样存储的值，比如 CSS 中的 color 的值，通过下面的例子来通过 Color.js 实现一个例子：
-
+&emsp;&emsp;当把数值更新时，就会触发动画。这个是一个不错的演示，但是对于不能直接像数字一样存储的值，比如 CSS 中的 color 的值，通过下面的例子来通过 Color.js 实现一个例子：
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;input v-model="colorQuery" @keyup.enter="updateColor" placeholder="Enter a color"&gt;
@@ -108,15 +108,15 @@ new Vue({
 })
 &lt;/script&gt;  </pre>
 </div>
-
+<!-- {% endraw %} -->
 <iframe style="width: 100%; height: 200px;" src="https://demo.xiaohuochai.site/vue/transition/t34.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
 ### 动态状态转换
 
-　　就像 Vue 的过渡组件一样，数据背后状态转换会实时更新，这对于原型设计十分有用。当修改一些变量，即使是一个简单的 SVG 多边形也可以实现很多难以想象的效果
-
+&emsp;&emsp;就像 Vue 的过渡组件一样，数据背后状态转换会实时更新，这对于原型设计十分有用。当修改一些变量，即使是一个简单的 SVG 多边形也可以实现很多难以想象的效果
+<!-- {% raw %} -->
 <div>
 <pre>&lt;style&gt;
 svg,input[type="range"]{display:block;}    
@@ -209,7 +209,6 @@ new Vue({
     }
   }
 })
-
 function valueToPoint (value, index, total) {
   var x     = 0
   var y     = -value * 0.9
@@ -230,15 +229,15 @@ function generatePoints (stats) {
 }
 &lt;/script&gt;  </pre>
 </div>
-
+<!-- {% endraw %} -->
 <iframe style="width: 100%; height: 360px;" src="https://demo.xiaohuochai.site/vue/transition/t35.html" frameborder="0" width="320" height="240"></iframe>
 
 &nbsp;
 
 ### 组件组织过渡
 
-　　管理太多的状态转换会很快的增加 Vue 实例或者组件的复杂性，幸好很多的动画可以提取到专用的子组件
-
+&emsp;&emsp;管理太多的状态转换会很快的增加 Vue 实例或者组件的复杂性，幸好很多的动画可以提取到专用的子组件
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;input v-model.number="firstNumber" type="number" step="20"&gt; +
@@ -306,6 +305,6 @@ new Vue({
 })
 &lt;/script&gt;  </pre>
 </div>
-
+<!-- {% endraw %} -->
 <iframe style="width: 100%; height: 100px;" src="https://demo.xiaohuochai.site/vue/transition/t36.html" frameborder="0" width="320" height="240"></iframe>
 
