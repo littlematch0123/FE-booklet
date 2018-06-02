@@ -1,15 +1,15 @@
 # Vue组件实例间的直接访问
 
-　　有时候需要父组件访问子组件，子组件访问父组件，或者是子组件访问根组件。 在组件实例中，Vue提供了相应的属性，包括$parent、$children、$refs和$root，这些属性都挂载在组件的this上。本文将详细介绍Vue组件实例间的直接访问
+&emsp;&emsp;有时候需要父组件访问子组件，子组件访问父组件，或者是子组件访问根组件。 在组件实例中，Vue提供了相应的属性，包括$parent、$children、$refs和$root，这些属性都挂载在组件的this上。本文将详细介绍Vue组件实例间的直接访问
 
 &nbsp;
 
 ### $parent
 
-　　$parent表示父组件的实例，该属性只读
+&emsp;&emsp;`$parent`表示父组件的实例，该属性只读
 
-　　下面是一个简易实例
-
+&emsp;&emsp;下面是一个简易实例
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;parent-component&gt;&lt;/parent-component&gt;
@@ -26,10 +26,11 @@
   &lt;div class="child"&gt;
     &lt;h3&gt;我是子组件&lt;/h3&gt;
     &lt;p&gt;{{msg}}&lt;/p&gt;
-    &lt;button v-on:click="showData"&gt;显示父组件数据&lt;/button&gt;    
+    &lt;button v-on:click="showData"&gt;显示父组件数据&lt;/button&gt;
   &lt;/div&gt;
 &lt;/template&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 // 注册
@@ -69,8 +70,8 @@ new Vue({
 
 ### $root
 
-　　$root表示当前组件树的根 Vue 实例。如果当前实例没有父实例，此实例将会是其自己。该属性只读
-
+&emsp;&emsp;`$root`表示当前组件树的根 Vue 实例。如果当前实例没有父实例，此实例将会是其自己。该属性只读
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;h3&gt;我是根组件&lt;/h3&gt;
@@ -98,6 +99,7 @@ new Vue({
   &lt;/div&gt;
 &lt;/template&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 // 注册
@@ -144,8 +146,8 @@ new Vue({
 
 ### $children
 
-　　$children表示当前实例的直接子组件。需要注意`$children`并不保证顺序，也不是响应式的。如果正在尝试使用`$children`来进行数据绑定，考虑使用一个数组配合`v-for`来生成子组件，并且使用Array作为真正的来源
-
+&emsp;&emsp;`$children`表示当前实例的直接子组件。需要注意`$children`并不保证顺序，也不是响应式的。如果正在尝试使用`$children`来进行数据绑定，考虑使用一个数组配合`v-for`来生成子组件，并且使用Array作为真正的来源
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;parent-component&gt;&lt;/parent-component&gt;
@@ -175,6 +177,7 @@ new Vue({
   &lt;/div&gt;
 &lt;/template&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 // 注册
@@ -227,17 +230,17 @@ new Vue({
 
 ### $refs
 
-　　组件个数较多时，难以记住各个组件的顺序和位置，通过序号访问子组件不是很方便
+&emsp;&emsp;组件个数较多时，难以记住各个组件的顺序和位置，通过序号访问子组件不是很方便
 
-　　在子组件上使用ref属性，可以给子组件指定一个索引ID：
+&emsp;&emsp;在子组件上使用ref属性，可以给子组件指定一个索引ID：
 
 <div>
 <pre>&lt;child-component1 ref="c1"&gt;&lt;/child-component1&gt;
 &lt;child-component2 ref="c2"&gt;&lt;/child-component2&gt;</pre>
 </div>
 
-　　在父组件中，则通过`$refs._索引ID_`访问子组件的实例
-
+&emsp;&emsp;在父组件中，则通过`$refs._索引ID_`访问子组件的实例
+<!-- {% raw %} -->
 <div>
 <pre>this.$refs.c1
 this.$refs.c2</pre>
@@ -276,6 +279,7 @@ this.$refs.c2</pre>
   &lt;/div&gt;
 &lt;/template&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 // 注册
@@ -327,5 +331,5 @@ new Vue({
 
 ### 总结
 
-　　虽然vue提供了以上方式对组件实例进行直接访问，但并不推荐这么做。这会导致组件间紧密耦合，且自身状态难以理解，所以尽量使用[props](http://www.cnblogs.com/xiaohuochai/p/7388866.html)、[自定义事件](http://www.cnblogs.com/xiaohuochai/p/7389934.html)以及[内容分发slot](http://www.cnblogs.com/xiaohuochai/p/7392384.html)来传递数据
+&emsp;&emsp;虽然vue提供了以上方式对组件实例进行直接访问，但并不推荐这么做。这会导致组件间紧密耦合，且自身状态难以理解，所以尽量使用[props](http://www.cnblogs.com/xiaohuochai/p/7388866.html)、[自定义事件](http://www.cnblogs.com/xiaohuochai/p/7389934.html)以及[内容分发slot](http://www.cnblogs.com/xiaohuochai/p/7392384.html)来传递数据
 
