@@ -1,22 +1,22 @@
 # HTTP库Axios
 
-　　本文将详细介绍HTTP库Axios
+&emsp;&emsp;本文将详细介绍HTTP库Axios
 
 &nbsp;
 
 ### 概述
 
-　　Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中
+&emsp;&emsp;Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中
 
 【安装】
 
-　　在Vue中使用，最好安装两个模块axios 和vue-axios
+&emsp;&emsp;在Vue中使用，最好安装两个模块axios 和vue-axios
 
 <div>
 <pre>$ npm install axios vue-axios --save</pre>
 </div>
 
-　　然后引用并使用模块
+&emsp;&emsp;然后引用并使用模块
 
 <div>
 <pre>import Axios from 'axios'
@@ -26,7 +26,7 @@ import VueAxios from 'vue-axios'</pre>
 <pre>Vue.use(VueAxios,Axios)</pre>
 </div>
 
-　　在组件中通过如下方式进行使用
+&emsp;&emsp;在组件中通过如下方式进行使用
 
 <div>
 <pre>this.$http[method]()</pre>
@@ -34,31 +34,31 @@ import VueAxios from 'vue-axios'</pre>
 
 【特性】
 
-　　1、可以从浏览器中创建[XHR对象](http://www.cnblogs.com/xiaohuochai/p/6036475.html)
+&emsp;&emsp;1、可以从浏览器中创建[XHR对象](http://www.cnblogs.com/xiaohuochai/p/6036475.html)
 
-　　2、可以从[nodeJS](http://www.cnblogs.com/xiaohuochai/p/6940560.html)中创建[HTTP](http://www.cnblogs.com/xiaohuochai/p/6392010.html)请求
+&emsp;&emsp;2、可以从[nodeJS](http://www.cnblogs.com/xiaohuochai/p/6940560.html)中创建[HTTP](http://www.cnblogs.com/xiaohuochai/p/6392010.html)请求
 
-　　3、支持[Promise](http://www.cnblogs.com/xiaohuochai/p/7261905.html) API&nbsp;
+&emsp;&emsp;3、支持[Promise](http://www.cnblogs.com/xiaohuochai/p/7261905.html) API&nbsp;
 
-　　4、可以拦截请求和响应
+&emsp;&emsp;4、可以拦截请求和响应
 
-　　5、可以转换请求数据和响应数据
+&emsp;&emsp;5、可以转换请求数据和响应数据
 
-　　6、可以取消请求
+&emsp;&emsp;6、可以取消请求
 
-　　7、可以自动转换JSON数据
+&emsp;&emsp;7、可以自动转换JSON数据
 
-　　8、客户端支持防御XSRF
+&emsp;&emsp;8、客户端支持防御XSRF
 
 &nbsp;
 
 ### 使用
 
-　　下面是一些简单的请求实例
+&emsp;&emsp;下面是一些简单的请求实例
 
 【get请求】
 
-　　仅仅向后端请求数据
+&emsp;&emsp;仅仅向后端请求数据
 
 <div>
 <pre>axios.get('index.php')
@@ -70,15 +70,15 @@ import VueAxios from 'vue-axios'</pre>
   });</pre>
 </div>
 
-　　通过URL向后端发送数据，要使用params属性，params属性包含即将与请求一起发送的数据
+&emsp;&emsp;通过URL向后端发送数据，要使用params属性，params属性包含即将与请求一起发送的数据
 
-　　运行下列代码后，请求URL变更为index.php?id=12345&amp;text=%E5%B0%8F%E7%81%AB%E6%9F%B4
+&emsp;&emsp;运行下列代码后，请求URL变更为index.php?id=12345&amp;text=%E5%B0%8F%E7%81%AB%E6%9F%B4
 
 <div>
 <pre>axios.get('index.php',{
   params:{
     id:12345,
-　　 text:'小火柴'
+&emsp;&emsp; text:'小火柴'
   }
 }).then((response)=&gt;{
   console.log(response)
@@ -87,7 +87,7 @@ import VueAxios from 'vue-axios'</pre>
 })</pre>
 </div>
 
-　　当然，也可以把数据直接写到URL中
+&emsp;&emsp;当然，也可以把数据直接写到URL中
 
 <div>
 <pre>// 为给定 ID 的 user 创建请求
@@ -104,11 +104,11 @@ axios.get('/user?ID=12345')
 
 【post请求】
 
-　　一般来说，post请求更多的是要提交数据，params属性里的数据会出现在请求主体中
+&emsp;&emsp;一般来说，post请求更多的是要提交数据，params属性里的数据会出现在请求主体中
 
-　　[注意]如果是axios.create()方法中的params属性，则其里面的数据会出现在URL参数中
+&emsp;&emsp;注意：如果是axios.create()方法中的params属性，则其里面的数据会出现在URL参数中
 
-　　但实际上，post方法不需要使用params属性，它的第二个参数就是要发送的数据
+&emsp;&emsp;但实际上，post方法不需要使用params属性，它的第二个参数就是要发送的数据
 
 <div>
 <pre>axios.post('index.php',{
@@ -142,7 +142,7 @@ axios.all([getUserAccount(), getUserPermissions()])
 
 【axios()】
 
-　　可以通过向&nbsp;`axios`&nbsp;传递相关配置来创建请求
+&emsp;&emsp;可以通过向&nbsp;`axios`&nbsp;传递相关配置来创建请求
 
 **axios(config)**
 
@@ -167,7 +167,7 @@ axios('/user/12345');</pre>
 
 【别名】
 
-　　为方便起见，为所有支持的请求方法提供了别名
+&emsp;&emsp;为方便起见，为所有支持的请求方法提供了别名
 
 <div>
 <pre>axios.request(config)
@@ -179,11 +179,11 @@ axios.put(url[, data[, config]])
 axios.patch(url[, data[, config]])</pre>
 </div>
 
-　　[注意]在使用别名方法时，&nbsp;`url`、`method`、`data`&nbsp;这些属性都不必在配置中指定
+&emsp;&emsp;注意：在使用别名方法时，&nbsp;`url`、`method`、`data`&nbsp;这些属性都不必在配置中指定
 
 【并发】
 
-　　处理并发请求的助手函数
+&emsp;&emsp;处理并发请求的助手函数
 
 <div>
 <pre>axios.all(iterable)
@@ -196,7 +196,7 @@ axios.spread(callback)</pre>
 
 【创建实例】
 
-　　可以使用自定义配置新建一个 axios 实例
+&emsp;&emsp;可以使用自定义配置新建一个 axios 实例
 
 <div>
 <pre>axios.create([config])</pre>
@@ -211,7 +211,7 @@ axios.spread(callback)</pre>
 
 【实例方法】
 
-　　以下是可用的实例方法。指定的配置将与实例的配置合并
+&emsp;&emsp;以下是可用的实例方法。指定的配置将与实例的配置合并
 
 <div>
 <pre>axios#request(config)
@@ -225,7 +225,7 @@ axios#patch(url[, data[, config]])</pre>
 
 【请求配置】
 
-　　这些是创建请求时可以用的配置选项。只有&nbsp;`url`&nbsp;是必需的。如果没有指定&nbsp;`method`，请求将默认使用&nbsp;`get`&nbsp;方法
+&emsp;&emsp;这些是创建请求时可以用的配置选项。只有&nbsp;`url`&nbsp;是必需的。如果没有指定&nbsp;`method`，请求将默认使用&nbsp;`get`&nbsp;方法
 
 ```
 {
@@ -336,7 +336,7 @@ axios#patch(url[, data[, config]])</pre>
 }　
 ```
 
-　　下面是一个实例
+&emsp;&emsp;下面是一个实例
 
 <div>
 <pre>let HTTP = axios.create({
@@ -356,7 +356,7 @@ HTTP.post('index.php',{
 })</pre>
 </div>
 
-　　结果如下
+&emsp;&emsp;结果如下
 
 ![axios1](https://pic.xiaohuochai.site/blog/axios1.png)
 
@@ -364,7 +364,7 @@ HTTP.post('index.php',{
 
 ### 响应结构
 
-　　某个请求的响应包含以下信息
+&emsp;&emsp;某个请求的响应包含以下信息
 
 <div>
 <pre>{
@@ -381,7 +381,7 @@ HTTP.post('index.php',{
 }</pre>
 </div>
 
-　　使用&nbsp;`then`&nbsp;时，将接收下面这样的响应：
+&emsp;&emsp;使用&nbsp;`then`&nbsp;时，将接收下面这样的响应：
 
 <div>
 <pre>  .then(function(response) {
@@ -397,7 +397,7 @@ HTTP.post('index.php',{
 
 ### 配置默认值
 
-　　可以指定将被用在各个请求的配置默认值
+&emsp;&emsp;可以指定将被用在各个请求的配置默认值
 
 【全局的axios默认值】
 
@@ -414,14 +414,13 @@ axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded
 var instance = axios.create({
   baseURL: 'https://api.example.com'
 });
-
 // 在实例已创建后修改默认值
 instance.defaults.headers.common['Authorization'] = AUTH_TOKEN;</pre>
 </div>
 
 【配置优先顺序】
 
-　　配置会以一个优先顺序进行合并。这个顺序是：在&nbsp;`lib/defaults.js`&nbsp;找到的库的默认值，然后是实例的&nbsp;`defaults`&nbsp;属性，最后是请求的&nbsp;`config`&nbsp;参数。后者将优先于前者
+&emsp;&emsp;配置会以一个优先顺序进行合并。这个顺序是：在&nbsp;`lib/defaults.js`&nbsp;找到的库的默认值，然后是实例的&nbsp;`defaults`&nbsp;属性，最后是请求的&nbsp;`config`&nbsp;参数。后者将优先于前者
 
 <div>
 <pre>// 使用由库提供的配置的默认值来创建实例
@@ -440,7 +439,7 @@ instance.get('/longRequest', {
 
 ### 拦截器
 
-　　在请求或响应被&nbsp;`then`&nbsp;或&nbsp;`catch`&nbsp;处理前拦截它们
+&emsp;&emsp;在请求或响应被&nbsp;`then`&nbsp;或&nbsp;`catch`&nbsp;处理前拦截它们
 
 <div>
 <pre>// 添加请求拦截器
@@ -451,7 +450,6 @@ axios.interceptors.request.use(function (config) {
     // 对请求错误做些什么
     return Promise.reject(error);
   });
-
 // 添加响应拦截器
 axios.interceptors.response.use(function (response) {
     // 对响应数据做点什么
@@ -462,14 +460,14 @@ axios.interceptors.response.use(function (response) {
   });</pre>
 </div>
 
-　　如果想在稍后移除拦截器，可以这样：
+&emsp;&emsp;如果想在稍后移除拦截器，可以这样：
 
 <div>
 <pre>var myInterceptor = axios.interceptors.request.use(function () {/*...*/});
 axios.interceptors.request.eject(myInterceptor);</pre>
 </div>
 
-　　可以为自定义 axios 实例添加拦截器
+&emsp;&emsp;可以为自定义 axios 实例添加拦截器
 
 <div>
 <pre>var instance = axios.create();
@@ -496,7 +494,7 @@ instance.interceptors.request.use(function () {/*...*/});</pre>
   });</pre>
 </div>
 
-　　可以使用&nbsp;`validateStatus`&nbsp;配置选项定义一个自定义 HTTP 状态码的错误范围
+&emsp;&emsp;可以使用&nbsp;`validateStatus`&nbsp;配置选项定义一个自定义 HTTP 状态码的错误范围
 
 <div>
 <pre>axios.get('/user/12345', {
@@ -510,7 +508,7 @@ instance.interceptors.request.use(function () {/*...*/});</pre>
 
 ### 取消
 
-　　可以使用&nbsp;`CancelToken.source`&nbsp;工厂方法创建 cancel token，像这样：
+&emsp;&emsp;可以使用&nbsp;`CancelToken.source`&nbsp;工厂方法创建 cancel token，像这样：
 
 <div>
 <pre>var CancelToken = axios.CancelToken;
@@ -528,7 +526,7 @@ axios.get('/user/12345', {
 source.cancel('Operation canceled by the user.');</pre>
 </div>
 
-　　还可以通过传递一个 executor 函数到&nbsp;`CancelToken`&nbsp;的构造函数来创建 cancel token
+&emsp;&emsp;还可以通过传递一个 executor 函数到&nbsp;`CancelToken`&nbsp;的构造函数来创建 cancel token
 
 <div>
 <pre>var CancelToken = axios.CancelToken;
@@ -543,9 +541,9 @@ axios.get('/user/12345', {
 cancel();</pre>
 </div>
 
-　　[注意]&nbsp;可以使用同一个 cancel token 取消多个请求
+&emsp;&emsp;注意：&nbsp;可以使用同一个 cancel token 取消多个请求
 
-　　下面是一个实例
+&emsp;&emsp;下面是一个实例
 
 <div>
 <pre>let CancelToken = axios.CancelToken;
@@ -573,7 +571,7 @@ HTTP.post('index.php',{
 source.cancel('Operation canceled by the user.'); </pre>
 </div>
 
-　　最终在控制台中打印出如下信息
+&emsp;&emsp;最终在控制台中打印出如下信息
 
 <div>
 <pre>Request canceled Operation canceled by the user.</pre>
