@@ -1,27 +1,28 @@
 # Vue事件处理
 
-　　Vue事件监听的方式貌似违背了关注点分离(separation of concern)的传统理念。实际上，所有的Vue.js事件处理方法和表达式都严格绑定在当前视图的ViewModel上，它不会导致维护上的困难。使用`v-on`有以下好处：
+&emsp;&emsp;Vue事件监听的方式貌似违背了关注点分离(separation of concern)的传统理念。实际上，所有的Vue.js事件处理方法和表达式都严格绑定在当前视图的ViewModel上，它不会导致维护上的困难。使用`v-on`有以下好处：
 
-　　1、扫一眼HTML模板便能轻松定位在JS代码里对应的方法
+&emsp;&emsp;1、扫一眼HTML模板便能轻松定位在JS代码里对应的方法
 
-　　2、无须在JS里手动绑定事件，ViewModel代码可以是非常纯粹的逻辑，和DOM完全解耦，更易于测试
+&emsp;&emsp;2、无须在JS里手动绑定事件，ViewModel代码可以是非常纯粹的逻辑，和DOM完全解耦，更易于测试
 
-　　3、当一个ViewModel被销毁时，所有的事件处理器都会自动被删除。无须担心如何自己清理它们
+&emsp;&emsp;3、当一个ViewModel被销毁时，所有的事件处理器都会自动被删除。无须担心如何自己清理它们
 
-　　本文将详细介绍Vue事件处理
+&emsp;&emsp;本文将详细介绍Vue事件处理
 
 &nbsp;
 
 ### 事件监听
 
-　　通过`v-on`指令来绑定事件监听器
-
+&emsp;&emsp;通过`v-on`指令来绑定事件监听器
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;button v-on:click="counter += 1"&gt;增加 1&lt;/button&gt;
   &lt;p&gt;这个按钮被点击了 {{ counter }} 次。&lt;/p&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
@@ -37,16 +38,17 @@ var example = new Vue({
 
 【方法】
 
-　　许多事件处理的逻辑都很复杂，所以直接把JS代码写在&nbsp;`v-on`&nbsp;指令中有时并不可行。`v-on`指令可以接收一个定义的方法来调用
+&emsp;&emsp;许多事件处理的逻辑都很复杂，所以直接把JS代码写在&nbsp;`v-on`&nbsp;指令中有时并不可行。`v-on`指令可以接收一个定义的方法来调用
 
-　　[注意]不应该使用箭头函数来定义methods函数，因为箭头函数绑定了父级作用域的上下文，所以this将不会按照期望指向 Vue 实例
-
+&emsp;&emsp;注意：不应该使用箭头函数来定义methods函数，因为箭头函数绑定了父级作用域的上下文，所以this将不会按照期望指向 Vue 实例
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
    &lt;button v-on:click="num"&gt;测试按钮&lt;/button&gt;
    &lt;p&gt;{{message}}&lt;/p&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
@@ -70,8 +72,8 @@ var example = new Vue({
 
 【内联语句】
 
-　　除了直接绑定到一个方法，也可以用内联JS语句
-
+&emsp;&emsp;除了直接绑定到一个方法，也可以用内联JS语句
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;button v-on:click="say('hi')"&gt;Say hi&lt;/button&gt;
@@ -79,6 +81,7 @@ var example = new Vue({
    &lt;p&gt;{{message}}&lt;/p&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
@@ -95,8 +98,8 @@ var example = new Vue({
 
 <iframe src="https://demo.xiaohuochai.site/vue/event/e3.html" frameborder="0" width="320" height="100"></iframe>
 
-　　有时也需要在内联语句处理器中访问原生 DOM 事件。可以用特殊变量&nbsp;`$event`&nbsp;把它传入方法&nbsp;
-
+&emsp;&emsp;有时也需要在内联语句处理器中访问原生 DOM 事件。可以用特殊变量&nbsp;`$event`&nbsp;把它传入方法&nbsp;
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;button v-on:click="say('hi',$event)"&gt;Say hi&lt;/button&gt;
@@ -104,6 +107,7 @@ var example = new Vue({
    &lt;p&gt;{{message}}&lt;/p&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
@@ -127,9 +131,9 @@ var example = new Vue({
 
 ### 事件修饰符
 
-　　在事件处理程序中调用`event.preventDefault()`或`event.stopPropagation()`是非常常见的需求。尽管可以在methods中轻松实现这点，但更好的方式：methods只有纯粹的数据逻辑，而不是去处理 DOM 事件细节
+&emsp;&emsp;在事件处理程序中调用`event.preventDefault()`或`event.stopPropagation()`是非常常见的需求。尽管可以在methods中轻松实现这点，但更好的方式：methods只有纯粹的数据逻辑，而不是去处理 DOM 事件细节
 
-　　为了解决这个问题， Vue.js 为`v-on`提供了事件修饰符。通过由点(.)表示的指令后缀来调用修饰符
+&emsp;&emsp;为了解决这个问题， Vue.js 为`v-on`提供了事件修饰符。通过由点(.)表示的指令后缀来调用修饰符
 
 <div>
 <pre>.stop 阻止冒泡
@@ -139,7 +143,7 @@ var example = new Vue({
 .once 只触发一次</pre>
 </div>
 
-　　下面是一些例子
+&emsp;&emsp;下面是一些例子
 
 <div>
 <pre>&lt;!-- 阻止单击事件冒泡 --&gt;
@@ -158,12 +162,12 @@ var example = new Vue({
 &lt;a v-on:click.once="doThis"&gt;&lt;/a&gt;</pre>
 </div>
 
-　　[注意]使用修饰符时，顺序很重要；相应的代码会以同样的顺序产生。因此，用&nbsp;`@click.prevent.self`&nbsp;会阻止所有的点击，而&nbsp;`@click.self.prevent`&nbsp;只会阻止元素上的点击
+&emsp;&emsp;注意：使用修饰符时，顺序很重要；相应的代码会以同样的顺序产生。因此，用&nbsp;`@click.prevent.self`&nbsp;会阻止所有的点击，而&nbsp;`@click.self.prevent`&nbsp;只会阻止元素上的点击
 
 【stop】
 
-　　阻止冒泡
-
+&emsp;&emsp;阻止冒泡
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example" @click="setVal1" style="border:1px solid black;width:300px;"&gt;
   &lt;button @click="setVal"&gt;普通按钮&lt;/button&gt;
@@ -172,6 +176,7 @@ var example = new Vue({
   &lt;div&gt;{{result}}&lt;/div&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;var example = new Vue({
   el: '#example',
@@ -197,7 +202,7 @@ var example = new Vue({
 
 【prevent】
 
-　　取消默认事件
+&emsp;&emsp;取消默认事件
 
 <div>
 <pre>&lt;div id="example"&gt;
@@ -217,8 +222,8 @@ var example = new Vue({
 
 【capture】
 
-　　事件捕获模式
-
+&emsp;&emsp;事件捕获模式
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example" @click.capture="setVal1" style="border:1px solid black;width:300px;"&gt;
   &lt;button @click.capture="setVal"&gt;事件捕获&lt;/button&gt;
@@ -226,6 +231,7 @@ var example = new Vue({
   &lt;div&gt;{{result}}&lt;/div&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;var example = new Vue({
   el: '#example',
@@ -299,8 +305,8 @@ var example = new Vue({
 
 【once】
 
-　　只触发一次
-
+&emsp;&emsp;只触发一次
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;button @click="setVal"&gt;普通按钮&lt;/button&gt;
@@ -309,6 +315,7 @@ var example = new Vue({
   &lt;div&gt;{{result}}&lt;/div&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
@@ -332,8 +339,8 @@ var example = new Vue({
 
 ### 鼠标修饰符
 
-　　这些修饰符会限制处理程序监听特定的滑鼠按键
-
+&emsp;&emsp;这些修饰符会限制处理程序监听特定的滑鼠按键
+<!-- {% raw %} -->
 <div>
 <pre>.left 左键
 .right 右键
@@ -344,6 +351,7 @@ var example = new Vue({
   &lt;button @mouseup.right="right" @mouseup.middle="middle" @mouseup.left="left"&gt;{{message}}&lt;/button&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
@@ -372,14 +380,14 @@ var example = new Vue({
 
 ### 键值修饰符
 
-　　在监听键盘事件时，经常需要监测常见的键值。 Vue 允许为&nbsp;`v-on`&nbsp;在监听键盘事件时添加关键修饰符
+&emsp;&emsp;在监听键盘事件时，经常需要监测常见的键值。 Vue 允许为&nbsp;`v-on`&nbsp;在监听键盘事件时添加关键修饰符
 
 <div>
 <pre>&lt;!-- 只有在 keyCode 是 13 时调用 vm.submit() --&gt;
 &lt;input v-on:keyup.13="submit"&gt;</pre>
 </div>
 
-　　记住所有的 keyCode 比较困难，所以 Vue 为最常用的按键提供了别名：
+&emsp;&emsp;记住所有的 keyCode 比较困难，所以 Vue 为最常用的按键提供了别名：
 
 <div>
 <pre>.enter 回车
@@ -392,11 +400,13 @@ var example = new Vue({
 .left 左
 .right 右</pre>
 </div>
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;button @keyup.enter="enter" @keyup.tab="tab" @keyup.delete="delete1" @keyup.esc="esc" @keyup.space="space" @keyup.up="up" @keyup.down="down" @keyup.left="left" @keyup.right="right"&gt;{{message}}&lt;/button&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
@@ -439,8 +449,8 @@ var example = new Vue({
 
 <iframe style="width: 100%; height: 40px;" src="https://demo.xiaohuochai.site/vue/event/e10.html" frameborder="0" width="320" height="240"></iframe>
 
-　　可以通过全局&nbsp;`config.keyCodes`&nbsp;对象自定义键值修饰符别名
-
+&emsp;&emsp;可以通过全局&nbsp;`config.keyCodes`&nbsp;对象自定义键值修饰符别名
+<!-- {% raw %} -->
 <div>
 <pre>// 可以使用 v-on:keyup.a
 Vue.config.keyCodes.a = 65</pre>
@@ -450,6 +460,7 @@ Vue.config.keyCodes.a = 65</pre>
   &lt;button @keyup.a="a"  @keyup.b="b"&gt;{{message}}&lt;/button&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 Vue.config.keyCodes.a = 65;
@@ -477,7 +488,7 @@ var example = new Vue({
 
 ### 修饰键
 
-　　可以用如下修饰符开启鼠标或键盘事件监听，使在按键按下时发生响应
+&emsp;&emsp;可以用如下修饰符开启鼠标或键盘事件监听，使在按键按下时发生响应
 
 <div>
 <pre>.ctrl
@@ -492,13 +503,14 @@ var example = new Vue({
 &lt;div @click.ctrl="doSomething"&gt;Do something&lt;/div&gt;</pre>
 </div>
 
-&nbsp;　　下面一个例子
-
+&nbsp;&emsp;&emsp;下面一个例子
+<!-- {% raw %} -->
 <div>
 <pre>&lt;div id="example"&gt;
   &lt;button @click.ctrl="ctrl"  @click.alt="alt"  @click.shift="shift"  @click.meta="meta"&gt;{{message}}&lt;/button&gt;
 &lt;/div&gt;</pre>
 </div>
+<!-- {% endraw %} -->
 <div>
 <pre>&lt;script&gt;
 var example = new Vue({
