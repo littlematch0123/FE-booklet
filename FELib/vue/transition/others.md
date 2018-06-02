@@ -1,12 +1,12 @@
 # Vue可复用过渡和动态过渡
 
-　　本文将详细介绍Vue可复用过渡和动态过渡
+&emsp;&emsp;本文将详细介绍Vue可复用过渡和动态过渡
 
 &nbsp;
 
 ### 可复用过渡
 
-　　过渡可以通过 Vue 的组件系统实现复用。要创建一个可复用过渡组件，需要做的就是将&nbsp;&lt;transition&gt;&nbsp;或者&nbsp;&lt;transition-group&gt;&nbsp;作为根组件，然后将任何子组件放置在其中就可以了
+&emsp;&emsp;过渡可以通过 Vue 的组件系统实现复用。要创建一个可复用过渡组件，需要做的就是将&nbsp;&lt;transition&gt;&nbsp;或者&nbsp;&lt;transition-group&gt;&nbsp;作为根组件，然后将任何子组件放置在其中就可以了
 
 <div>
 <pre>Vue.component('my-transition', {
@@ -26,7 +26,7 @@
 })</pre>
 </div>
 
-　　函数组件更适合完成这个任务
+&emsp;&emsp;函数组件更适合完成这个任务
 
 <div>
 <pre>Vue.component('my-special-transition', {
@@ -55,7 +55,7 @@
 
 ### 动态过渡
 
-　　在 Vue 中即使是过渡也是数据驱动的！动态过渡最基本的例子是通过&nbsp;`name`&nbsp;特性来绑定动态值
+&emsp;&emsp;在 Vue 中即使是过渡也是数据驱动的！动态过渡最基本的例子是通过&nbsp;`name`&nbsp;特性来绑定动态值
 
 <div>
 <pre>&lt;transition v-bind:name="transitionName"&gt;
@@ -63,9 +63,9 @@
 &lt;/transition&gt;</pre>
 </div>
 
-　　用 Vue 的过渡系统来定义的 CSS 过渡/动画 在不同过渡间切换会非常有用
+&emsp;&emsp;用 Vue 的过渡系统来定义的 CSS 过渡/动画 在不同过渡间切换会非常有用
 
-　　所有的过渡特性都是动态绑定。它不仅是简单的特性，通过事件的钩子函数方法，可以在获取到相应上下文数据。这意味着，可以根据组件的状态通过 JavaScript 过渡设置不同的过渡效果
+&emsp;&emsp;所有的过渡特性都是动态绑定。它不仅是简单的特性，通过事件的钩子函数方法，可以在获取到相应上下文数据。这意味着，可以根据组件的状态通过 JavaScript 过渡设置不同的过渡效果
 
 <div>
 <pre>&lt;!DOCTYPE html&gt;
