@@ -401,9 +401,9 @@ server{
 
 &nbsp;
 
-### 前端项目
+### 后台项目
 
-&emsp;&emsp;前端项目起名为admin-xiaohuochai-cc-3001.conf。由于项目采用react构建，与普通的静态网站有些不同
+&emsp;&emsp;后台项目起名为admin-xiaohuochai-cc-3001.conf。由于项目采用react构建，与普通的静态网站有些不同
 
 &emsp;&emsp;1、前端路由
 
@@ -465,4 +465,56 @@ server{
 }         
 ```
 
-&emsp;&emsp;上面是后台项目的配置，前台项目的配置也类似，就不再赘述
+
+ 
+
+&nbsp;
+
+### 前台项目
+
+&emsp;&emsp;前台项目起名为www-xiaohuochai-cc-3002.conf。项目采用vue构建。该项目与后台项目类似，但稍有些不同。不同之处在于，使用主域名xiaohuochai.cc或二级域名www.xiaohuochai.cc都需要跳转
+```
+server{
+        listen 443 http2;
+        server_name www.xiaohuochai.cc xiaohuochai.cc;
+...
+```
+&emsp;&emsp;详细配置如下
+
+```
+upstream client {
+        server 127.0.0.1:3002;
+}
+server{
+    listen 80;
+    server_name www.xiaohuochai.cc xiaohuochai.cc;
+    return 301 https://www.xiaohuochai.cc$request_uri;
+    root /home/www/blog/client/dist;
+    index index.html;
+}
+server{
+        listen 443 http2;
+        server_name www.xiaohuochai.cc xiaohuochai.cc;
+        ssl on;
+        ssl_certificate /home/www/blog/client/crt/www.xiaohuochai.cc.crt;
+        ssl_certificate_key /home/www/blog/client/crt/www.xiaohuochai.cc.key;
+        ssl_session_timeout 5m;
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_prefer_server_ciphers on;
+        if ($ssl_protocol = "") {
+                rewrite ^(.*)https://$host$1 permanent;
+        }
+    location /api/ {
+        proxy_pass http://api/;
+    
+    }
+    location / {
+        index index.html;
+        root /home/www/blog/client/source/dist;
+        expires 7d;
+        add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.xiaohuochai.site ; img-src 'self' data: https://pic.xiaohuochai.site https://static.xiaohuochai.site; style-src 'self' 'unsafe-inline' https://static.xiaohuochai.site; frame-src https://demo.xiaohuochai.site https://xiaohuochai.site https://www.xiaohuochai.site;";
+        try_files $uri $uri/ /index.html = 404;
+    }
+} 
+```
