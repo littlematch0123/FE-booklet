@@ -190,34 +190,3 @@ $ npm install</pre>
 
 ![vue_base_vueCli12](https://pic.xiaohuochai.site/blog/vue_base_vueCli12.png)
 
-&nbsp;
-
-### 路由懒加载
-
-&emsp;&emsp;vue-cli 的默认配置基本上满足了开发需求。但，如果把不同路由对应的组件分割成不同的代码块，然后当路由被访问的时候才加载对应组件，这样就更加高效了
-
-```
-//router/index.js
-  routes: [
-    {
-      path: '/',
-      component: () => import(/* webpackChunkName:'home' */'@/components/Home'),
-      name: 'home',
-      meta: { index: 0 }
-    },
-    {
-      path: '/topic',
-      component: () => import(/* webpackChunkName:'home' */'@/components/Topic'),
-      name: 'topic',
-      meta: { index: 1 }
-    },
-```
-
-&emsp;&emsp;在 webpack.base.config.js 文件中添加 chunkFilename
-
-```
-  output: {
-    path: config.build.assetsRoot,
-    filename: '[name].js',
-    chunkFilename: '[name].js'
-```
