@@ -10,7 +10,6 @@
     * [雪碧图](ps/sprite.md)
     * [自动切图](ps/autoCut.md)
 * 构建工具
-    * [r.js](build/r.md)
     * [grunt](build/grunt.md)
     * [gulp.js](build/gulp.md)
     * webpack
@@ -41,12 +40,17 @@
     * [软件安装](linux/softSetup.md)
     * [nodeJS 和 MongoDB 安装](linux/nodeJSAndMongoDB.md)
     * [云服务器常用设置](linux/server.md)
+    * [vim简明学习](linux/vim.md)
+    * [使用nginx配置网站](linux/nginx.md)
+    * [使用jenkins部署前端项目](linux/jenkins.md)
+* 文本编辑
+    * [sublime](editor/sublime.md)
+    * [vscode常用设置](editor/vscode.md)
+    * [markdown](editor/markdown.md)
+    * [sass](editor/sass.md)
+    * [gitbook](editor/gitbook.md)
+    * [editorConfig](editor/config.md)
 * 辅助工具
-    * [sublime](helper/sublime.md)
-    * [vscode常用设置](helper/vscode.md)
     * [chrome 调试工具](helper/chrome.md)
     * [电脑常见问题处理](helper/common.md)
-    * [搜索引擎的使用](helper/searchEngine.md)
-    * [markdown](helper/markdown.md)
-    * [sass](helper/sass.md)
-    * [gitbook](helper/gitbook.md)
+    * [搜索引擎的使用](helper/searchEngine.md)   
