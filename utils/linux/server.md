@@ -583,6 +583,12 @@ git push origin master</pre>
 <pre>pm2 deploy ecosystem.json production setup</pre>
 </div>
 
+&emsp;&emsp;注意：在window环境下，如果在vscode的集成终端中输入命令，会有如下错误提示
+```
+if (fn === null) throw new Error("Callback was already called.");
+```
+&emsp;&emsp;使用git bash则正常显示
+
 &emsp;&emsp;出现如下标识，表示设置成功
 
 
