@@ -8,3 +8,6 @@
 .markdown-section h3{
   font-size:120%;
 }
+.book-body{
+  overflow-y: visible;
+}
