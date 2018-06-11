@@ -464,8 +464,6 @@ server{
     }
 }         
 ```
-
-
  
 
 &nbsp;
@@ -515,6 +513,49 @@ server{
         expires 7d;
         add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.xiaohuochai.site ; img-src 'self' data: https://pic.xiaohuochai.site https://static.xiaohuochai.site; style-src 'self' 'unsafe-inline' https://static.xiaohuochai.site; frame-src https://demo.xiaohuochai.site https://xiaohuochai.site https://www.xiaohuochai.site;";
         try_files $uri $uri/ /index.html = 404;
+    }
+} 
+```
+
+&nbsp;
+
+### SSR项目
+
+&emsp;&emsp;如果前端项目是服务器端渲染的SSR项目，则与普通的前端项目有很大不同，它不仅需要守护后端程序，还有前端静态资源的处理，如果是首页，还需要处理www
+
+&emsp;&emsp;详细配置如下
+```
+upstream client {
+        server 127.0.0.1:3002;
+}
+server{
+        listen 80;
+        server_name www.xiaohuochai.cc xiaohuochai.cc;
+    return 301 https://www.xiaohuochai.cc$request_uri;
+}
+server{
+        listen 443 http2;
+        server_name www.xiaohuochai.cc xiaohuochai.cc;
+        ssl on;
+        ssl_certificate /home/blog/client/crt/www.xiaohuochai.cc.crt;
+        ssl_certificate_key /home/blog/client/crt/www.xiaohuochai.cc.key;
+        ssl_session_timeout 5m;
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_prefer_server_ciphers on;
+    if ($host = 'xiaohuochai.cc'){
+        rewrite ^/(.*)$ http://www.xiaohuochai.cc/$1 permanent;
+    }
+    location / {
+        expires 7d;
+        add_header Content-Security-Policy "default-src 'self' https://static.xiaohuochai.site; connect-src https://api.xiaohuochai.cc; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.xiaohuochai.site ; img-src 'self' data: https://pic.xiaohuochai.site https://static.xiaohuochai.site; style-src 'self' 'unsafe-inline' https://static.xiaohuochai.site; frame-src https://demo.xiaohuochai.site https://xiaohuochai.site https://www.xiaohuochai.site;";
+        proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-Nginx-Proxy true;
+                proxy_pass http://client;
+                proxy_redirect off;
+
     }
 } 
 ```
