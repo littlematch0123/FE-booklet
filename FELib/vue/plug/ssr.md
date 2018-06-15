@@ -73,9 +73,14 @@ build
     - webpack.dev.conf.js
     - webpack.prod.conf.js
 ```
-&emsp;&emsp;前面4个文件无需修改，只需修改webpack.*.conf.js文件
+&emsp;&emsp;前面3个文件无需修改，只需修改*.*.conf.js文件
 
-&emsp;&emsp;1、修改webpack.base.conf.js
+&emsp;&emsp;1、修改vue-loader.conf.js，将extract的值设置为false，因为服务器端渲染会自动将CSS内置。如果使用该extract，则会引入link标签载入CSS，从而导致相同的CSS资源重复加载
+```
+-    extract: isProduction
++    extract: false
+```
+&emsp;&emsp;2、修改webpack.base.conf.js
 
 &emsp;&emsp;只需修改entry入门配置即可
 
@@ -89,7 +94,7 @@ module.exports = {
   },
 ...
 ```
-&emsp;&emsp;2、修改webpack.prod.conf.js
+&emsp;&emsp;3、修改webpack.prod.conf.js
 
 &emsp;&emsp;包括应用vue-server-renderer、去除HtmlWebpackPlugin、增加client环境变量
 
@@ -136,7 +141,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 ...
 module.exports = webpackConfig
 ```
-&emsp;&emsp;3、新增webpack.server.conf.js
+&emsp;&emsp;4、新增webpack.server.conf.js
 
 ```
 const webpack = require('webpack')
@@ -144,8 +149,7 @@ const merge = require('webpack-merge')
 const nodeExternals = require('webpack-node-externals')
 const baseConfig = require('./webpack.base.conf.js')
 const VueSSRServerPlugin = require('vue-server-renderer/server-plugin')
-// 去除打包css的配置
-baseConfig.module.rules[1].options = ''
+
 module.exports = merge(baseConfig, {
   entry: './src/entry-server.js',
   target: 'node',
@@ -419,7 +423,7 @@ export default {
 -  },
 ...
 ```
-&emsp;&emsp;4、将全局css从main.js移动到App.vue中，因为main.js中未设置css文件解析
+&emsp;&emsp;4、将全局css从main.js移动到App.vue的内联style样式中，因为main.js中未设置css文件解析
 
 ```
 // main.js
@@ -427,7 +431,6 @@ export default {
 // App.vue
 ...
 <style module lang="postcss">
-+ @import 'assets/style.css';
 ...
 </style>
 ```
@@ -444,11 +447,16 @@ export default {
 
 &emsp;&emsp;1、在根目录下，新建server.js文件
 
+&emsp;&emsp;由于在webpack中去掉了HTMLWebpackPlugin插件，而是通过nodejs来处理模板，同时也就缺少了该插件设置的HTML文件压缩功能
+
+&emsp;&emsp;需要在server.js文件中安装html-minifier来实现HTML文件压缩
+
 ```
 const express = require('express')
 const fs = require('fs')
 const path = require('path')
 const { createBundleRenderer } = require('vue-server-renderer')
+const { minify } = require('html-minifier')
 const app = express()
 const resolve = file => path.resolve(__dirname, file)
 
@@ -482,13 +490,13 @@ app.get('*', (req, res) => {
     if (err) {
       return handleError(err)
     }
-    res.send(html)
+    res.send(minify(html, { collapseWhitespace: true, minifyCSS: true}))
   })
 })
 
 app.on('error', err => console.log(err))
 app.listen(8080, () => {
-  console.log(`vue ssr started at localhost:8080`)
+  console.log(`vue ssr started at localhost: 8080`)
 })
 ```
 &emsp;&emsp;2、修改package.json文件

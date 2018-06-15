@@ -45,3 +45,4 @@
       * [Vuex](plug/Vuex.md) 
       * [Vuex的API](plug/VuexAPI.md) 
       * [axios](plug/axios.md) 
+      * [SSR](plug/ssr.md)
