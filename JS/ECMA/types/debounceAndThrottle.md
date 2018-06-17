@@ -22,14 +22,18 @@
 
 &nbsp;
 
-### 函数防抖
+### 定时器管理
 
-&emsp;&emsp;函数防抖的原理是将即将被执行的函数用setTimeout延迟一段时间执行。对于正在执行的函数和新触发的函数冲突问题有两种处理，也分别对应了定时器管理的两种机制
+&emsp;&emsp;在介绍函数防抖和函数节流之前，首先要介绍一下定时器管理
 
-&emsp;&emsp;第一种是只要当前函数没有执行完成，任何新触发的函数都会被忽略，简易代码如下
+&emsp;&emsp;定时器管理有两种机制：
 
-<div>
-<pre>function debounce(method, context) {
+&emsp;&emsp;第一种是只要当前函数没有执行完成，任何新触发的函数都会被忽略，可以实现在持续触发事件的情况下，一段时间内只执行一次事件的效果，即函数节流
+
+&emsp;&emsp;简易代码如下
+
+```
+function fn(method, context) {
   //忽略新函数
   if(method.tId){
     return false;
@@ -37,98 +41,107 @@
   method.tId = setTimeout(function() {
     method.call(context);
   }, 1000);
-}</pre>
-</div>
-
-&emsp;&emsp;第二种是只要有新触发的函数，就立即停止执行当前函数，转而执行新函数，简易代码如下
-
-<div>
-<pre>function debounce(method, context) {
+}
+```
+&emsp;&emsp;第二种是只要有新触发的函数，就立即停止执行当前函数，转而执行新函数，可以实现在持续触发事件的情况下，一定在事件触发n秒后执行，如果n秒内又触发了这个事件，则以新的事件的时间为准，还是n秒后执行，即函数防抖，简易代码如下
+```
+function fn(method, context) {
  //停止当前函数
   clearTimeout(method.tId);
   method.tId = setTimeout(function() {
     method.call(context);
   }, 1000);
-}</pre>
-</div>
+}
+```
+&nbsp;
 
-&emsp;&emsp;当然，不论是哪种处理，函数去抖的目的是让要执行的函数停止一段时间之后才执行
+### 函数防抖
 
-&emsp;&emsp;下面是一个比较完整的防抖函数（debounce），该函数接受2个参数，第一个参数为需要被延迟执行的函数，第二个参数为延迟执行的时间
+&emsp;&emsp;函数防抖，字面上来说，是利用函数来防止抖动。在执行触发事件的情况下，元素的位置或尺寸属性快速地发生变化，造成页面回流，出现元素抖动的现象。通过函数防抖，使得元素的位置或尺寸属性延迟变化，从而减少页面回流
 
-<div>
-<pre>var debounce = function ( fn, interval ) {
-  var  _self = fn,    // 保存需要被延迟执行的函数引用
-      timer,    // 定时器
-      firstTime = true;    // 是否是第一次调用
-  return function () {
-    var args = arguments,
-    _me = this;
-    if ( firstTime ) {    // 如果是第一次调用，不需延迟执行
-      _self.apply( me, args);
-      return firstTime = false;
-    }
-    if ( timer ) {    // 如果定时器还在，说明前一次延迟执行还没有完成
-      return false;
-    }
-    timer = setTimeout(function () { // 延迟一段时间执行
-      clearTimeout(timer); 
-      timer = null;
-      _self.apply(_me, args);
-    }, interval || 500 );
-  };
-};
-window.onresize = debounce(function(){ 
-  console.log( 1 );
-}, 500 );</pre>
-</div>
+&emsp;&emsp;简单的防抖函数代码如下，该函数接受2个参数，第一个参数为需要被延迟执行的函数，第二个参数为延迟执行的时间
+
+```
+<style>
+body {
+  margin: 0;
+}
+.show{
+  width: 260px;
+  height: 100px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+  background: lightgreen;
+}
+</style>
+<div class="show" id="show">0</div>
+<script>
+let count = 0
+const oShow = document.getElementById('show')
+const changeValue = () => { oShow.innerHTML = count ++ }
+const debounce = (fn, wait=30) => {
+  return () => {
+    clearTimeout(fn.timer)
+    fn.timer = setTimeout(fn, wait)
+  }
+}
+oShow.addEventListener('mousemove', debounce(changeValue))
+</script>
+```
+&emsp;&emsp;效果如下：
+
+<iframe src="https://demo.xiaohuochai.site/scroll/s3.html" width="280" height="120"></iframe>
+
+&emsp;&emsp;但是，changeValue()方法中的this指向window，下面来修正this指向
+
+```
+const debounce = (fn, wait=30) =>{
+  return function() {
+    clearTimeout(fn.timer)
+    fn.timer = setTimeout(fn.bind(this), wait)
+  }
+}
+```
+&emsp;&emsp;还有一个问题，changeValue()方法中的e为undefined，下面来修正e的值
+```
+const debounce = (fn, wait=30) =>{
+  return function() {
+    clearTimeout(fn.timer)
+    fn.timer = setTimeout(fn.bind(this, ...arguments), wait)
+  }
+}
+```
+&emsp;&emsp;或者，使用apply方法
+```
+const debounce = (fn, wait=30) =>{
+  return function() {
+    clearTimeout(fn.timer)
+    fn.timer = setTimeout(() => {
+      fn.apply(this, arguments)
+    }, wait)
+  }
+}
+```
+
 
 &nbsp;
 
 ### 函数节流
 
-&emsp;&emsp;函数节流使得连续的函数执行，变为固定时间段间断地执行。关于节流的实现，有两种主流的实现方式，一种是使用时间戳，一种是设置定时器
+&emsp;&emsp;函数节流，即限制函数的执行频率，在持续触发事件的情况下，间断地执行函数；实现方法对应定时器管理的第一种策略，只要当前函数没有执行完成，任何新触发的函数都会被忽略
 
-【使用时间戳】
-
-&emsp;&emsp;触发事件时，取出当前的时间戳，然后减去之前的时间戳(最一开始值设为 0 )，如果大于设置的时间周期，就执行函数，然后更新时间戳为当前的时间戳，如果小于，就不执行
-
-<div>
-<pre>function throttle(func, wait) {
-    var context, args;
-    var previous = 0;
-    return function() {
-        var now = +new Date();
-        context = this;
-        args = arguments;
-        if (now - previous &gt; wait) {
-            func.apply(context, args);
-            previous = now;
-        }
-    }
-}</pre>
-</div>
-
-【使用定时器】
-
-&emsp;&emsp;触发事件时，设置一个定时器，再触发事件的时候，如果定时器存在，就不执行，直到定时器执行，然后执行函数，清空定时器，这样就可以设置下个定时器
-
-<div>
-<pre>function throttle(func, wait) {
-    var timeout,args,context;
-    var previous = 0;
-    return function() {
-        context = this;
-        args = arguments;
-        if (!timeout) {
-            timeout = setTimeout(function(){
-                timeout = null;
-                func.apply(context, args)
-            }, wait)
-        }
-    }
-}</pre>
-</div>
+```
+const throttle = (fn, wait=100) =>{
+  return function() {
+    if(fn.timer) return
+    fn.timer = setTimeout(() => {
+      fn.apply(this, arguments)
+      fn.timer = null
+    }, wait)
+  }
+}
+```
 
 &nbsp;
 
