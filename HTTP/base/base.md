@@ -293,6 +293,29 @@ add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsaf
 
 
 &nbsp;
+### DDOS
+
+&emsp;&emsp;典型的 DDoS 攻击，全称是 Distributed Denial of Service，翻译成中文就是分布式拒绝服务。一般来说是指攻击者利用“肉鸡”对目标网站在较短的时间内发起大量请求，大规模消耗目标网站的主机资源，让它无法正常服务。在线游戏、互联网金融等领域是 DDoS 攻击的高发行业
+
+&emsp;&emsp;如何应对DDOS攻击？
+
+&emsp;&emsp;1、高防服务器
+
+&emsp;&emsp;高防服务器主要是指能独立硬防御 50Gbps 以上的服务器，能够帮助网站拒绝服务攻击，定期扫描网络主节点等，这东西是不错，就是贵
+
+&emsp;&emsp;2、黑名单
+
+&emsp;&emsp;设置黑名单，但也会封锁正常流量，影响到正常业务
+
+&emsp;&emsp;3、DDOS清洗
+
+&emsp;&emsp;对用户请求数据进行实时监控，及时发现DOS攻击等异常流量，在不影响正常业务开展的情况下清洗掉这些异常流量
+
+&emsp;&emsp;4、CDN
+
+&emsp;&emsp;在现实中，CDN 服务将网站访问流量分配到了各个节点中，这样一方面隐藏网站的真实 IP，另一方面即使遭遇 DDoS 攻击，也可以将流量分散到各个节点中，防止源站崩溃
+
+&nbsp;
 
 ### HTTP2
 
