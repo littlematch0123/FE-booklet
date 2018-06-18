@@ -100,6 +100,8 @@ window.addEventListener('deviceorientation',(e)=>{
 
 &emsp;&emsp;window.devicemotion事件告诉开发人员设备什么时候移动，而不仅仅是设备方向如何改变
 
+&emsp;&emsp;要特别注意的是，移动端chrome65有一个[bug](https://bugs.chromium.org/p/chromium/issues/detail?id=805146)，devicemotion和deviceorientation事件只能监听一个
+
 &emsp;&emsp;触发devicemotion事件时，事件对象包含以下属性
 ```
 acceleration:一个包含X、y和z属性的对象，在不考虑重力的情况下，告诉你在每个方向上的加速度
