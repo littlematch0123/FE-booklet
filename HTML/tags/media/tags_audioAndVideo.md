@@ -743,5 +743,9 @@ audio.oncanplaythrough = function(){
     audio.controls = true;
     document.body.appendChild(audio);
 }
+// 为兼容IOS
+audio.load()
 &lt;/script&gt;</pre>
 </div>
+
+&emsp;&emsp;特别注意的是，IOS不能直接使用oncanplaythrough事件，需要添加audio.load()方法，否则该事件不生效
