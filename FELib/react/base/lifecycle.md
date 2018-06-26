@@ -134,3 +134,33 @@ componentDidCatch()
 &emsp;&emsp;调用forceUpdate()将会导致组件的 render()方法被调用，并忽略shouldComponentUpdate()。这将会触发每一个子组件的生命周期方法，涵盖每个子组件的shouldComponentUpdate() 方法。若当标签改变，React仅会更新DOM
 
 &emsp;&emsp;通常应该尝试避免所有forceUpdate() 的用法并仅在render()函数里从this.props和this.state读取数据
+
+&nbsp;
+
+### 常见问题
+
+&emsp;&emsp;1、使用getDerivedStateFromProps生命周期函数时，如果不设置constructor，会有如下警告
+```
+Did not properly initialize state during construction. Expected state to be an object, but it was undefined.
+```
+&emsp;&emsp;添加空state即可解决
+```
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+```
+&emsp;&emsp;2、使用componentDidMount生命周期函数时，如果在该函数中直接使用this.setState()，会有如下警告
+```
+Do not use setState in componentDidMount  react/no-did-mount-set-state
+```
+&emsp;&emsp;将state设置转移到then方法，或者另一个函数中即可
+
+```
+componentDidMount() {
+  this.test()
+}
+test() {
+  this.setState({ name: '' })
+}
+```
