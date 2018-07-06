@@ -384,6 +384,18 @@ promise.catch(function(error) {
 
 &emsp;&emsp;为了简化这种常见的用例，执行器会捕获所有抛出的错误，但只有当拒绝处理程序存在时才会记录执行器中抛出的错误，否则错误会被忽略掉。在早期的时候，开发人员使用Promise会遇到这种问题，后来，JS环境提供了一些捕获己拒绝Promise的钩子函数来解决这个问题
 
+【利用promise实现一个休眠函数】
+
+```
+function sleep(time){
+  return new Promise(function(resolve, reject){
+    setTimeout(resolve, time)
+  })
+}
+sleep(100).then(function() {
+  console.log('113')
+})
+```
 &nbsp;
 
 ### 拒绝处理
