@@ -5,12 +5,11 @@
   "language": "zh-hans",
   "links": {
     "sidebar": {
-      "前端博客": "https://cnblogs.com/xiaohuochai",
-      "前端小站": "https://xiaohuochai.cc"
+      "前端博客": "https://cnblogs.com/xiaohuochai"
     }
   },
-  "styles":{
-    "website":"style.css"
+  "styles": {
+    "website": "style.css"
   },
   "plugins": [
     "-lunr",
@@ -21,12 +20,11 @@
     "search-plus",
     "splitter",
     "github",
-   "back-to-top-button"
+    "back-to-top-button"
   ],
   "pluginsConfig": {
     "github": {
       "url": "https://github.com/littlematch0123/FE-booklet"
     }
   }
-
 }
